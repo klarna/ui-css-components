@@ -1,0 +1,43 @@
+$ie8: false !default;
+
+// ================================================================
+//  Typography
+// ================================================================
+$base-font-family: $helvetica !default;
+$base-font-size: 16px !default;
+$base-line-height: 21px !default;
+
+$h1-font-size: 2 * $base-font-size !default;
+$h2-font-size: 1.5 * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1 * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+
+// ================================================================
+//  Page widths
+// ================================================================
+$max-width: 640px !default;
+$mobile-max-width: 569px !default;
+
+
+// ================================================================
+//  Fields
+// ================================================================
+$field-horizontal-margin: 2% !default;
+
+
+// ================================================================
+//  EDITORS
+// ================================================================
+$editor-height: 43px !default;
+
+
+// ================================================================
+//  Colors
+// ================================================================
+$klarna-blue: #0089cf !default;
+$text-color-black: #31393e;
+$alert-red: #fd7070;
+$border-color: #ddd !default;

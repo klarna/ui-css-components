@@ -1,0 +1,59 @@
+@import "shared/all";
+@import "vendor/all";
+
+// ================================================================
+//  SETTINGS
+// ================================================================
+
+$checkbox-size: 24px !default;
+$checkbox-background: #0089cf !default;
+$checkbox-border: #ddd !default;
+$checkbox-font-size: 13px !default;
+
+
+// ================================================================
+//  ATOMS
+// ================================================================
+
+/**
+ * Regular checkbox
+ */
+.cui__checkbox {
+    @include appearance(none);
+    background: #fff;
+    border: 1px solid darken($checkbox-border, 10%);
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px 2px #F0F0F0;
+    display: inline-block;
+    height: $checkbox-size;
+    margin: 0 12px 0 6px;
+    outline: none;
+    position: relative;
+    width: $checkbox-size;
+}
+
+
+/**
+ * Checked checkbox
+ */
+.cui__checkbox.is-checked {
+    background: $checkbox-background;
+    box-shadow: none;
+    border-color: $checkbox-background;
+
+    &:after {
+        @include font-size($checkbox-font-size);
+
+        color: #FFF;
+        content: "\2713";
+        display: block;
+        font-family: "SSPika";
+        font-weight: normal;
+        height: $checkbox-size;
+        line-height: $checkbox-size;
+        position: absolute;
+        text-align: center;
+        top: 2px;
+        width: $checkbox-size;
+    }
+}

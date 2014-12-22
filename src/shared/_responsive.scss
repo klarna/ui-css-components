@@ -1,0 +1,5 @@
+@mixin respond-to-wide() {
+    @media screen and (min-width: $mobile-max-width) {
+        @content;
+    }
+}

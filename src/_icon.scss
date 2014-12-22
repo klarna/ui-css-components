@@ -1,0 +1,33 @@
+// ================================================================
+//  SETTINGS
+// ================================================================
+
+// $input-line-height copied from _input.scss
+$input-line-height: 14px * 1.5 !default;
+
+
+
+// ================================================================
+//  ATOMS
+// ================================================================
+
+.cui__icon {
+    color: #aaa;
+    font-size: 15px;
+    line-height: normal;
+    padding: 12px 0;
+    position: absolute;
+    left: 10px;
+    // TODO: Investigate why -4px
+    bottom: -3px; // Must be set to prevent IE8 from crashing.
+    width: 20px;
+    z-index: 10;
+}
+
+.cui__icon.is-invalid {
+    bottom: -9px;
+}
+
+.cui__editor--text:focus + .cui__icon {
+    color: $klarna-blue;
+}

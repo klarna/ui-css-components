@@ -1,0 +1,44 @@
+/**
+* This bootstrap includes mixins and functions and can be
+* used by any file.
+*
+* It's strictly important that it doesn't contain any global
+* definitions, such as normalize. That's being taken care
+* of elsewhere.
+*/
+
+//=========================================================
+// BOURBON
+//=========================================================
+
+// Addons & other mixins
+@import "vendor/bourbon/addons/font-family";
+@import "vendor/bourbon/addons/prefixer";
+@import "vendor/bourbon/addons/retina-image";
+@import "vendor/bourbon/addons/timing-functions";
+@import "vendor/bourbon/addons/triangle";
+
+// CSS3 Mixins
+@import "vendor/bourbon/css3/animation";
+@import "vendor/bourbon/css3/appearance";
+@import "vendor/bourbon/css3/background-image";
+@import "vendor/bourbon/css3/box-sizing";
+@import "vendor/bourbon/css3/font-face";
+@import "vendor/bourbon/css3/hidpi-media-query";
+@import "vendor/bourbon/css3/keyframes";
+@import "vendor/bourbon/css3/placeholder";
+@import "vendor/bourbon/css3/transform";
+
+// Functions
+@import "vendor/bourbon/functions/modular-scale";
+
+// Helpers
+@import "vendor/bourbon/helpers/linear-gradient-parser";
+@import "vendor/bourbon/helpers/linear-side-corner-parser";
+
+// Settings
+@import "vendor/bourbon/settings/prefixer";
+@import "vendor/bourbon/settings/asset-pipeline";
+
+// FIXME: Deprecated!
+@import "vendor/bourbon/functions/golden-ratio";
