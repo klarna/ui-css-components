@@ -1,11 +1,3 @@
-/**
-* This bootstrap includes mixins and functions and can be
-* used by any file.
-*
-* It's strictly important that it doesn't contain any global
-* definitions, such as normalize. That's being taken care
-* of elsewhere.
-*/
 .cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
   -webkit-animation-name: animate-modal-in;
   -moz-animation-name: animate-modal-in;
@@ -119,16 +111,9 @@
     -o-transform: rotate(1turn);
     transform: rotate(1turn); } }
 
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
+/*
+* Mixins for settings dimensions for elements
+*/
 /*******************************************************************************
 .some-css-selector1,
 .some-css-selector2 {
@@ -153,6 +138,30 @@ padding-top: 22px;
 }
 ******************************************************************************
 */
+/**
+ * Convert px to rem
+ */
+/**
+ * Render font size in rem, with fallback to px
+ */
+/**
+ * Render calc() with vendor prefixes
+ * Provide $fallback for not supportin browsers (IE8)
+ */
+/**
+ * Convert px to rem
+ */
+/**
+ * Render font size in rem, with fallback to px
+ */
+/**
+ * Calculate rhythm units
+ * http://compass-style.org/reference/compass/typography/vertical_rhythm/#function-rhythm
+ */
+/**
+ * Apply a border and whitespace to any side without destroying the vertical rhythm. The whitespace must be greater than the width of the border.
+ * http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-apply-side-rhythm-border
+ */
 /*
 * Symbolset
 * www.symbolset.com
@@ -2132,7 +2141,7 @@ html:hover [class^="ss-"] {
   -o-appearance: none;
   appearance: none;
   background-image: -webkit-linear-gradient(#fff 90%, #f3f3f3 100%);
-  background-image: linear-gradient(to -position-flipper(#fff) -position-flipper(90%) -position-flipper(), #f3f3f3 100%);
+  background-image: linear-gradient(to   , #f3f3f3 100%);
   font-size: 15px;
   font-size: 0.9375rem;
   border: 1px solid #a6a6a6;
@@ -2211,7 +2220,7 @@ html:hover [class^="ss-"] {
       background: #f6f6f6 url('img/toolkit/select/select-arrow.png') 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay {
     background-image: url('img/toolkit/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url('img/toolkit/select/select-arrow.png'), linear-gradient(to -position-flipper(#fff) -position-flipper(75%) -position-flipper(), #f3f3f3 100%);
+    background-image: url('img/toolkit/select/select-arrow.png'), linear-gradient(to   , #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled {
       background-image: url('img/toolkit/select/select-arrow.png');

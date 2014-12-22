@@ -1,11 +1,3 @@
-/**
-* This bootstrap includes mixins and functions and can be
-* used by any file.
-*
-* It's strictly important that it doesn't contain any global
-* definitions, such as normalize. That's being taken care
-* of elsewhere.
-*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

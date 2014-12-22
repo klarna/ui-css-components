@@ -209,7 +209,6 @@
     $width: 22px;
     $height: 22px;
     $image-type: 'png';
-    $retina-suffix: '@2x';
 
     @include retina-image($buy-button-loader-image-url, $width $height, $image-type, null, $retina-suffix);
     @include animation(spin 0.8s linear infinite);
