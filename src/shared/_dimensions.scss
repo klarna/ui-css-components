@@ -1,0 +1,36 @@
+/*
+* Mixins for settings dimensions for elements
+*/
+
+
+// Set dimensions of a field
+@mixin field-width-and-margin(
+    $width,
+    $desktop-width: $width,
+    $desktop-has-element-right: false,
+    $desktop-has-element-left: false
+) {
+    width: $width;
+
+    @include respond-to-wide {
+        $new-width: $desktop-width;
+        $margin: $field-horizontal-margin / 2;
+
+        @if $desktop-has-element-right {
+            $new-width: $new-width - $margin;
+            margin-right: $margin;
+        } @else {
+            margin-right: 0;
+        }
+
+        @if $desktop-has-element-left {
+            $new-width: $new-width - $margin;
+            margin-left: $margin;
+        } @else {
+            margin-left: 0;
+            clear: left;
+        }
+
+        width: $new-width;
+    }
+}
