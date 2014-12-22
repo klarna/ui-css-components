@@ -1,0 +1,40 @@
+/**
+* This bootstrap includes mixins and functions and can be
+* used by any file.
+*
+* It's strictly important that it doesn't contain any global
+* definitions, such as normalize. That's being taken care
+* of elsewhere.
+*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 4em; }
+
+pre {
+  margin: 0;
+  white-space: nowrap; }
+
+code {
+  background: #ddd;
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+  white-space: pre-wrap; }
+
+.component-presentation--tooltip [class^="cui__tooltip--small"], .component-presentation--tooltip [class^="cui__tooltip--large"] {
+  left: 50%; }
+
+button {
+  width: 100%; }
+
+input {
+  width: 100%; }

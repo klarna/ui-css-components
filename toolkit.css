@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
 * This bootstrap includes mixins and functions and can be
 * used by any file.
@@ -24,13 +23,17 @@
 @-webkit-keyframes animate-modal-in {
   from {
     -webkit-transform: scale(0); }
+
   to {
     -webkit-transform: scale(1); } }
+
 @-moz-keyframes animate-modal-in {
   from {
     -moz-transform: scale(0); }
+
   to {
     -moz-transform: scale(1); } }
+
 @keyframes animate-modal-in {
   from {
     -webkit-transform: scale(0);
@@ -38,12 +41,14 @@
     -ms-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   to {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 .cui__field__error-tooltip {
   -webkit-animation-name: show-tooltip;
   -moz-animation-name: show-tooltip;
@@ -67,16 +72,20 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(10px); }
+
   100% {
     -webkit-transform: translateY(0px);
     opacity: 1; } }
+
 @-moz-keyframes show-tooltip {
   0% {
     opacity: 0;
     -moz-transform: translateY(10px); }
+
   100% {
     -moz-transform: translateY(0px);
     opacity: 1; } }
+
 @keyframes show-tooltip {
   0% {
     opacity: 0;
@@ -85,6 +94,7 @@
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
     transform: translateY(10px); }
+
   100% {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -92,12 +102,15 @@
     -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1; } }
+
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(1turn); } }
+
 @-moz-keyframes spin {
   to {
     -moz-transform: rotate(1turn); } }
+
 @keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
@@ -105,315 +118,7 @@
     -ms-transform: rotate(1turn);
     -o-transform: rotate(1turn);
     transform: rotate(1turn); } }
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
-/*******************************************************************************
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie { // Targets all IE browsers
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie(8) { // Targets only IE 8
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
-padding-top: 22px;
-}
-}
-******************************************************************************
-*/
-/**
- * A flat button
- */
-/**
- * A gradient button
- * Provide either background-color or the gradient stops.
- * The stops will be calculated if only background color given.
- */
-/**
- * Regular blue button
- */
-.cui__highlighted-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  border: none;
-  background: #0089cf;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  font-weight: bold;
-  padding: 13px;
-  vertical-align: top;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1); }
-  .cui__highlighted-button:hover {
-    background: #0082c5; }
-  .cui__highlighted-button:active {
-    background: #007bbb;
-    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
-  .ie .cui__highlighted-button {
-    padding: 12px 14px 11px; }
-  @media screen and (min-width: 569px) {
-    .cui__highlighted-button {
-      padding: 14px; } }
 
-.cui__highlighted-button__loader {
-  background-image: url("../img/loaders/button.loader.png");
-  -webkit-animation: spin 0.8s linear infinite;
-  -moz-animation: spin 0.8s linear infinite;
-  animation: spin 0.8s linear infinite;
-  display: inline-block;
-  overflow: hidden;
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom;
-  font-size: 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-    .cui__highlighted-button__loader {
-      background-image: url("../img/loaders/button.loader_2x.png");
-      background-size: 14px 14px; } }
-  .ie8 .cui__highlighted-button__loader, .ie9 .cui__highlighted-button__loader {
-    font-size: 15px;
-    font-size: 0.9375rem;
-    width: 100%;
-    height: 19px;
-    background-image: none; }
-
-/**
- * Regular grey button
- */
-.cui__non-highlighted-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  border: none;
-  background: #fff;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  color: #555;
-  font-weight: bold;
-  padding: 13px;
-  vertical-align: top;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.075); }
-  .cui__non-highlighted-button:hover {
-    background: #fcfcfc; }
-  .ie .cui__non-highlighted-button {
-    padding: 11px 13px 10px; }
-  .ie8 .cui__non-highlighted-button {
-    border: 1px solid #d8d8d8; }
-  .cui__non-highlighted-button:active {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background: #fafafa;
-    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
-
-/**
- * The buy button
- */
-.cui__buy-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  font-size: 20px;
-  font-size: 1.25rem;
-  border: none;
-  background: #0089cf;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  font-weight: bold;
-  padding: 13px;
-  vertical-align: top;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
-  line-height: 1;
-  padding: 18px;
-  border-radius: 5px; }
-  .cui__buy-button:hover {
-    background: #0082c5; }
-  .cui__buy-button:active {
-    background: #007bbb;
-    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
-  .cui__buy-button.is-disabled {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    font-size: 20px;
-    font-size: 1.25rem;
-    border: none;
-    background: #eee;
-    border-radius: 3px;
-    outline: none;
-    cursor: pointer;
-    color: #999;
-    font-weight: bold;
-    padding: 13px;
-    vertical-align: top;
-    border-radius: 5px;
-    padding: 18px;
-    box-shadow: none;
-    opacity: 0.75; }
-    .cui__buy-button.is-disabled:hover {
-      background: #eee; }
-  .cui__buy-button.is-loading {
-    height: 56px; }
-
-.cui__buy-button__loader {
-  background-image: url("../img/loaders/buy-button-loader.png");
-  -webkit-animation: spin 0.8s linear infinite;
-  -moz-animation: spin 0.8s linear infinite;
-  animation: spin 0.8s linear infinite;
-  margin: 0 auto;
-  width: 22px;
-  height: 22px;
-  font-size: 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-    .cui__buy-button__loader {
-      background-image: url("../img/loaders/buy-button-loader_2x.png");
-      background-size: 22px 22px; } }
-  .cui__buy-button__loader:before {
-    content: url("../img/loaders/buy-button-loader.png");
-    width: 0;
-    height: 0;
-    display: none; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .cui__buy-button__loader:before {
-        content: url("../img/loaders/buy-button-loader@2x.png"); } }
-  .ie8 .cui__buy-button__loader, .ie9 .cui__buy-button__loader {
-    font-size: 20px;
-    font-size: 1.25rem;
-    width: 100%;
-    background-image: none; }
-
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  -webkit-animation-name: animate-modal-in;
-  -moz-animation-name: animate-modal-in;
-  animation-name: animate-modal-in;
-  -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-@-moz-keyframes animate-modal-in {
-  from {
-    -moz-transform: scale(0); }
-  to {
-    -moz-transform: scale(1); } }
-@keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
-.cui__field__error-tooltip {
-  -webkit-animation-name: show-tooltip;
-  -moz-animation-name: show-tooltip;
-  animation-name: show-tooltip;
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; } }
-@-moz-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(10px); }
-  100% {
-    -moz-transform: translateY(0px);
-    opacity: 1; } }
-@keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1; } }
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn); } }
-@-moz-keyframes spin {
-  to {
-    -moz-transform: rotate(1turn); } }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    -moz-transform: rotate(1turn);
-    -ms-transform: rotate(1turn);
-    -o-transform: rotate(1turn);
-    transform: rotate(1turn); } }
 /**
  * Convert px to rem
  */
@@ -461,17 +166,14 @@ padding-top: 22px;
   font-family: SSPika;
   font-weight: normal;
   font-style: normal;
-  src: url("toolkit/vendor/ss-pika/ss-pika.eot");
-  src: url("toolkit/vendor/ss-pika/ss-pika.eot?#iefix") format("embedded-opentype"), url("toolkit/vendor/ss-pika/ss-pika.woff") format("woff"), url("toolkit/vendor/ss-pika/ss-pika.ttf") format("truetype"), url("toolkit/vendor/ss-pika/ss-pika.svg#SSPika") format("svg"); }
+  src: url('fonts/ss-pika/ss-pika.eot');
+  src: url('fonts/ss-pika/ss-pika.eot?#iefix') format('embedded-opentype'), url('fonts/ss-pika/ss-pika.woff') format('woff'), url('fonts/ss-pika/ss-pika.ttf') format('truetype'), url('fonts/ss-pika/ss-pika.svg#SSPika') format('svg'); }
+
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
 
-.ss-icon, .cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"], .ss-icon.ss-pika, .cui__tooltip--small--up .ss-pika[class$="__button"], .cui__tooltip--small--down .ss-pika[class$="__button"], .cui__tooltip--large--up .ss-pika[class$="__button"], .cui__tooltip--large--down .ss-pika[class$="__button"],
-[class^="ss-"]:before, [class*=" ss-"]:before,
-[class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before,
-[class^="ss-"].right:after, [class*=" ss-"].right:after,
-[class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
+.ss-icon, .cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"], .ss-icon.ss-pika, .cui__tooltip--small--up .ss-pika[class$="__button"], .cui__tooltip--small--down .ss-pika[class$="__button"], .cui__tooltip--large--up .ss-pika[class$="__button"], .cui__tooltip--large--down .ss-pika[class$="__button"], [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
   font-family: "SSPika";
   font-style: normal;
   font-weight: normal;
@@ -486,8 +188,7 @@ html:hover [class^="ss-"] {
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased; }
 
-[class^="ss-"].right:before,
-[class*=" ss-"].right:before {
+[class^="ss-"].right:before, [class*=" ss-"].right:before {
   display: none;
   content: ''; }
 
@@ -2004,6 +1705,183 @@ html:hover [class^="ss-"] {
   content: ''; }
 
 /**
+ * A flat button
+ */
+/**
+ * A gradient button
+ * Provide either background-color or the gradient stops.
+ * The stops will be calculated if only background color given.
+ */
+/**
+ * Regular blue button
+ */
+.cui__highlighted-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  border: none;
+  background: #0089cf;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 13px;
+  vertical-align: top;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1); }
+  .cui__highlighted-button:hover {
+    background: #0082c5; }
+  .cui__highlighted-button:active {
+    background: #007bbb;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
+  .ie .cui__highlighted-button {
+    padding: 12px 14px 11px; }
+  @media screen and (min-width: 569px) {
+    .cui__highlighted-button {
+      padding: 14px; } }
+
+.cui__highlighted-button__loader {
+  background-image: url("img/loaders/button.loader.png");
+  -webkit-animation: spin 0.8s linear infinite;
+  -moz-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  overflow: hidden;
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+  font-size: 0; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .cui__highlighted-button__loader {
+      background-image: url("img/loaders/button.loader_2x.png");
+      background-size: 14px 14px; } }
+  .ie8 .cui__highlighted-button__loader, .ie9 .cui__highlighted-button__loader {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    width: 100%;
+    height: 19px;
+    background-image: none; }
+
+/**
+ * Regular grey button
+ */
+.cui__non-highlighted-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  border: none;
+  background: #fff;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  color: #555;
+  font-weight: bold;
+  padding: 13px;
+  vertical-align: top;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.075); }
+  .cui__non-highlighted-button:hover {
+    background: #fcfcfc; }
+  .ie .cui__non-highlighted-button {
+    padding: 11px 13px 10px; }
+  .ie8 .cui__non-highlighted-button {
+    border: 1px solid #d8d8d8; }
+  .cui__non-highlighted-button:active {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fafafa;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
+
+/**
+ * The buy button
+ */
+.cui__buy-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border: none;
+  background: #0089cf;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 13px;
+  vertical-align: top;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: 18px;
+  border-radius: 5px; }
+  .cui__buy-button:hover {
+    background: #0082c5; }
+  .cui__buy-button:active {
+    background: #007bbb;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
+  .cui__buy-button.is-disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    font-size: 1.25rem;
+    border: none;
+    background: #eee;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    color: #999;
+    font-weight: bold;
+    padding: 13px;
+    vertical-align: top;
+    border-radius: 5px;
+    padding: 18px;
+    box-shadow: none;
+    opacity: 0.75; }
+    .cui__buy-button.is-disabled:hover {
+      background: #eee; }
+  .cui__buy-button.is-loading {
+    height: 56px; }
+
+.cui__buy-button__loader {
+  background-image: url("img/loaders/buy-button-loader.png");
+  -webkit-animation: spin 0.8s linear infinite;
+  -moz-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto;
+  width: 22px;
+  height: 22px;
+  font-size: 0; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .cui__buy-button__loader {
+      background-image: url("img/loaders/buy-button-loader@2x.png");
+      background-size: 22px 22px; } }
+  .cui__buy-button__loader:before {
+    content: url('img/loaders/buy-button-loader.png');
+    width: 0;
+    height: 0;
+    display: none; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .cui__buy-button__loader:before {
+        content: url('img/loaders/buy-button-loader@2x.png'); } }
+  .ie8 .cui__buy-button__loader, .ie9 .cui__buy-button__loader {
+    font-size: 20px;
+    font-size: 1.25rem;
+    width: 100%;
+    background-image: none; }
+
+/**
  * Regular checkbox
  */
 .cui__checkbox {
@@ -2070,138 +1948,6 @@ html:hover [class^="ss-"] {
     background: #F5BB42;
     bottom: 0; }
 
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  -webkit-animation-name: animate-modal-in;
-  -moz-animation-name: animate-modal-in;
-  animation-name: animate-modal-in;
-  -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-@-moz-keyframes animate-modal-in {
-  from {
-    -moz-transform: scale(0); }
-  to {
-    -moz-transform: scale(1); } }
-@keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
-.cui__field__error-tooltip {
-  -webkit-animation-name: show-tooltip;
-  -moz-animation-name: show-tooltip;
-  animation-name: show-tooltip;
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; } }
-@-moz-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(10px); }
-  100% {
-    -moz-transform: translateY(0px);
-    opacity: 1; } }
-@keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1; } }
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn); } }
-@-moz-keyframes spin {
-  to {
-    -moz-transform: rotate(1turn); } }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    -moz-transform: rotate(1turn);
-    -ms-transform: rotate(1turn);
-    -o-transform: rotate(1turn);
-    transform: rotate(1turn); } }
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
-/*******************************************************************************
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie { // Targets all IE browsers
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie(8) { // Targets only IE 8
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
-padding-top: 22px;
-}
-}
-******************************************************************************
-*/
 /**
  * Main header
  */
@@ -2245,138 +1991,6 @@ padding-top: 22px;
 .cui__editor--text:focus + .cui__icon {
   color: #0089cf; }
 
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  -webkit-animation-name: animate-modal-in;
-  -moz-animation-name: animate-modal-in;
-  animation-name: animate-modal-in;
-  -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-@-moz-keyframes animate-modal-in {
-  from {
-    -moz-transform: scale(0); }
-  to {
-    -moz-transform: scale(1); } }
-@keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
-.cui__field__error-tooltip {
-  -webkit-animation-name: show-tooltip;
-  -moz-animation-name: show-tooltip;
-  animation-name: show-tooltip;
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; } }
-@-moz-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(10px); }
-  100% {
-    -moz-transform: translateY(0px);
-    opacity: 1; } }
-@keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1; } }
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn); } }
-@-moz-keyframes spin {
-  to {
-    -moz-transform: rotate(1turn); } }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    -moz-transform: rotate(1turn);
-    -ms-transform: rotate(1turn);
-    -o-transform: rotate(1turn);
-    transform: rotate(1turn); } }
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
-/*******************************************************************************
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie { // Targets all IE browsers
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie(8) { // Targets only IE 8
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
-padding-top: 22px;
-}
-}
-******************************************************************************
-*/
 /**
  * Field
  */
@@ -2518,7 +2132,7 @@ padding-top: 22px;
   -o-appearance: none;
   appearance: none;
   background-image: -webkit-linear-gradient(#fff 90%, #f3f3f3 100%);
-  background-image: linear-gradient(to _position-flipper(#fff) _position-flipper(90%) _position-flipper(), #f3f3f3 100%);
+  background-image: linear-gradient(to -position-flipper(#fff) -position-flipper(90%) -position-flipper(), #f3f3f3 100%);
   font-size: 15px;
   font-size: 0.9375rem;
   border: 1px solid #a6a6a6;
@@ -2534,8 +2148,8 @@ padding-top: 22px;
   padding-right: 43px;
   color: #595959;
   /* Since IE10- doesn't support pointer-events, the CSS based triangled
-   * must be replace with a background image.
-   * The CSS based is kept for retina support. */ }
+     * must be replace with a background image.
+     * The CSS based is kept for retina support. */ }
   .cui__select-overlay.is-placeholder {
     font-weight: normal;
     color: #a9a9a9; }
@@ -2591,16 +2205,16 @@ padding-top: 22px;
     .ie8 .cui__select-overlay:before, .ie9 .cui__select-overlay:before, .ie10 .cui__select-overlay:before {
       display: none; }
   .ie8 .cui__select-overlay, .ie9 .cui__select-overlay {
-    background-image: url("../img/toolkit/select/select-arrow.png");
+    background-image: url("img/toolkit/select/select-arrow.png");
     background-position: 100% 1.2em; }
     .ie8 .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled {
-      background: #f6f6f6 url("../img/toolkit/select/select-arrow.png") 100% 1.2em no-repeat !important; }
+      background: #f6f6f6 url("img/toolkit/select/select-arrow.png") 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay {
-    background-image: url("../img/toolkit/select/select-arrow.png"), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url("../img/toolkit/select/select-arrow.png"), linear-gradient(to _position-flipper(#fff) _position-flipper(75%) _position-flipper(), #f3f3f3 100%);
+    background-image: url("img/toolkit/select/select-arrow.png"), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
+    background-image: url("img/toolkit/select/select-arrow.png"), linear-gradient(to -position-flipper(#fff) -position-flipper(75%) -position-flipper(), #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled {
-      background-image: url("../img/toolkit/select/select-arrow.png");
+      background-image: url("img/toolkit/select/select-arrow.png");
       background-position: 100% 1.2em;
       background-color: #f6f6f6; }
 
@@ -2628,138 +2242,6 @@ padding-top: 22px;
   .ie .cui__select-dropdown {
     height: 43px; }
 
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  -webkit-animation-name: animate-modal-in;
-  -moz-animation-name: animate-modal-in;
-  animation-name: animate-modal-in;
-  -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-@-moz-keyframes animate-modal-in {
-  from {
-    -moz-transform: scale(0); }
-  to {
-    -moz-transform: scale(1); } }
-@keyframes animate-modal-in {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0); }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
-.cui__field__error-tooltip {
-  -webkit-animation-name: show-tooltip;
-  -moz-animation-name: show-tooltip;
-  animation-name: show-tooltip;
-  -webkit-animation-duration: 0.7s;
-  -moz-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; } }
-@-moz-keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(10px); }
-  100% {
-    -moz-transform: translateY(0px);
-    opacity: 1; } }
-@keyframes show-tooltip {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px); }
-  100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1; } }
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn); } }
-@-moz-keyframes spin {
-  to {
-    -moz-transform: rotate(1turn); } }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-    -moz-transform: rotate(1turn);
-    -ms-transform: rotate(1turn);
-    -o-transform: rotate(1turn);
-    transform: rotate(1turn); } }
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
-/*******************************************************************************
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie { // Targets all IE browsers
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie(8) { // Targets only IE 8
-padding-top: 22px;
-}
-}
-.some-css-selector1,
-.some-css-selector2 {
-padding: 20px;
-@include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
-padding-top: 22px;
-}
-}
-******************************************************************************
-*/
 /**
  * Adds an arrow
  */
