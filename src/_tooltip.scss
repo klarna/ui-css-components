@@ -1,17 +1,4 @@
 // ================================================================
-//  SETTINGS
-// ================================================================
-
-$tooltip-button-color: #c9c9c9 !default;
-$tooltip-content-width: 190px !default;
-$tooltip-arrow-size: 16px !default;
-$tooltip-arrow-color: #ededed !default;
-$tooltip-icon-size-small: 14px !default;
-$tooltip-icon-size-large: 17px !default;
-
-
-
-// ================================================================
 //  MIXINS
 // ================================================================
 @mixin tooltip-button($size) {

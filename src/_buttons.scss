@@ -1,26 +1,4 @@
 // ================================================================
-//  SETTINGS
-// ================================================================
-
-// This properties can be overriden by the merchant styling
-$custom-color-button-background: #0089cf;
-$custom-color-button-color: #fff;
-
-// This properties are *not* merchant overridable
-$bright-button-border: rgba(0, 0, 0, 0.15);
-$bright-button-background: #fff;
-$bright-button-background-hover: hsla(0, 0%, 0%, 0.12);
-$bright-button-background-light: #fff;
-$bright-button-background-dark: #e6e6e6;
-$bright-button-color: #555;
-
-$buy-button-font-size: 20px;
-
-$flat-button-bevel: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
-$flat-button-font-size: 15px;
-
-
-// ================================================================
 //  MIXINS
 // ================================================================
 
@@ -134,7 +112,7 @@ $flat-button-font-size: 15px;
     $width: 14px;
     $height: 14px;
 
-    @include retina-image("img/loaders/button.loader", $width $height, png);
+    @include retina-image($button-loader-image-url, $width $height, png);
     @include animation(spin 0.8s linear infinite);
 
     display: inline-block;
@@ -230,11 +208,10 @@ $flat-button-font-size: 15px;
 .cui__buy-button__loader {
     $width: 22px;
     $height: 22px;
-    $image-url: 'img/loaders/buy-button-loader';
     $image-type: 'png';
     $retina-suffix: '@2x';
 
-    @include retina-image($image-url, $width $height, $image-type, null, $retina-suffix);
+    @include retina-image($buy-button-loader-image-url, $width $height, $image-type, null, $retina-suffix);
     @include animation(spin 0.8s linear infinite);
 
     margin: 0 auto;
@@ -244,13 +221,13 @@ $flat-button-font-size: 15px;
 
     // Preload the image
     &:before {
-        content: url($image-url + '.' + $image-type);
+        content: url($buy-button-loader-image-url + '.' + $image-type);
         width: 0;
         height: 0;
         display: none;
 
         @include hidpi {
-            content: url($image-url + '@2x.' + $image-type);
+            content: url($buy-button-loader-image-url + '@2x.' + $image-type);
         }
     }
 

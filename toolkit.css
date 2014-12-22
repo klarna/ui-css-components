@@ -2205,16 +2205,16 @@ html:hover [class^="ss-"] {
     .ie8 .cui__select-overlay:before, .ie9 .cui__select-overlay:before, .ie10 .cui__select-overlay:before {
       display: none; }
   .ie8 .cui__select-overlay, .ie9 .cui__select-overlay {
-    background-image: url("img/toolkit/select/select-arrow.png");
+    background-image: url('img/toolkit/select/select-arrow.png');
     background-position: 100% 1.2em; }
     .ie8 .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled {
-      background: #f6f6f6 url("img/toolkit/select/select-arrow.png") 100% 1.2em no-repeat !important; }
+      background: #f6f6f6 url('img/toolkit/select/select-arrow.png') 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay {
-    background-image: url("img/toolkit/select/select-arrow.png"), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url("img/toolkit/select/select-arrow.png"), linear-gradient(to -position-flipper(#fff) -position-flipper(75%) -position-flipper(), #f3f3f3 100%);
+    background-image: url('img/toolkit/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
+    background-image: url('img/toolkit/select/select-arrow.png'), linear-gradient(to -position-flipper(#fff) -position-flipper(75%) -position-flipper(), #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled {
-      background-image: url("img/toolkit/select/select-arrow.png");
+      background-image: url('img/toolkit/select/select-arrow.png');
       background-position: 100% 1.2em;
       background-color: #f6f6f6; }
 
