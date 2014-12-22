@@ -1,0 +1,30 @@
+{
+  "name": "ui-toolkit",
+  "authors": [
+    "Team Douglas <team.douglas@klarna.com>"
+  ],
+  "description": "KCO UI Toolkit",
+  "main": "toolkit.css",
+  "keywords": [
+    "klarna",
+    "ui",
+    "toolkit",
+    "kco"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "support",
+    "package.json",
+    "dev.css",
+    "Gemfile*",
+    "gulpfile.js",
+    "index.html",
+    "Makefile",
+    "README.md"
+  ]
+}
