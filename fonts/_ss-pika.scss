@@ -8,7 +8,7 @@
 * <link href="webfonts/ss-pika.css" rel="stylesheet" />
 */
 
-@include font-face(SSPika, 'toolkit/vendor/ss-pika/ss-pika');
+@include font-face(SSPika, 'fonts/ss-pika/ss-pika');
 
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"]{-ms-zoom: 1;}
@@ -18,19 +18,19 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 [class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before,
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
 [class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
-  font-family: "SSPika";
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-  text-rendering: optimizeLegibility;
-  white-space: nowrap;
-  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
+    font-family: "SSPika";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
 }
 
 [class^="ss-"].right:before,
