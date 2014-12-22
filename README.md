@@ -9,6 +9,8 @@ Development
 Clone this repo and run:
 
 ```sh
+nvm 0.10
+make install
 make dev
 ```
 
@@ -16,5 +18,7 @@ Build
 -----
 
 ```sh
+nvm 0.10
+make install
 make build
 ```

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>KCO UI Toolkit</title>
+    <link rel="stylesheet" href="toolkit.css">
+    <link rel="stylesheet" href="dev.css">
+    <!--[if IE 8]><link rel="stylesheet" href=".tmp/ie8/toolkit.css"><![endif]-->
+</head>
+<body>
+    <div class="component-presentation">
+        <h2>Highlighted button</h2>
+        <button class="cui__highlighted-button">Highlighted button</button>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Non highlighted button</h2>
+        <button class="cui__non-highlighted-button">Non highlighted button</button>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Buy button</h2>
+        <button class="cui__buy-button">Buy button</button>
+        <button class="cui__buy-button is-loading">
+            <div class="cui__buy-button__loader"></div>
+        </button>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Buy button disabled</h2>
+        <button class="cui__buy-button is-disabled">Buy button disabled</button>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Main Header</h2>
+        <div class="cui__main-header">
+            <h1>Main Header</h1>
+        </div>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Subtle Header</h2>
+        <div class="cui__subtle-header">
+            <h3>Subtle Header</h3>
+        </div>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Label</h2>
+        <label class="cui__label">Name</label>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Checkbox</h2>
+        <p>
+            This is not a real checkbox styling. The elements shown are span tags. Widgets using checkboxes should simulate checkbox behavior.
+        </p>
+        <span class="cui__checkbox"></span>
+        <span class="cui__checkbox is-checked"></span>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Input</h2>
+        <p>
+            The toolkit doesn't provide a placeholder shim for IE8, 9. Use <a href="https://github.com/mathiasbynens/jquery-placeholder">jquery.placeholder</a> (or a corresponding lib) in the application.
+        </p>
+        <h3>Normal input</h3>
+        <input type="text" class="cui__editor--text" placeholder="Input text">
+
+        <h3>Input with error</h3>
+        <div class="cui__field">
+            <span class="cui__field__error-tooltip">Error</span>
+            <input type="text" class="cui__editor--text is-invalid" placeholder="Input text">
+        </div>
+    </div>
+
+    <div class="component-presentation">
+        <h3>Select</h3>
+        <p>The application is responsible for setting the selected value in the overlay.</p>
+        <div class="cui__field">
+            <span class="cui__select-overlay" data-cid="overlay.selector">Name</span>
+            <select class="cui__select-dropdown" data-cid="select.selector">
+                <option value="" data-placeholder="Placeholder"></option>
+                <option>Alice</option>
+                <option>Bob</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Main header</h2>
+        <header class="cui__main-header">
+            <h1>Header</h1>
+        </header>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>Links</h2>
+        <p>
+            <a href="#" class="cui__highlighted-link">Highlighted</a>
+        </p>
+        <p>
+            <a href="#" class="cui__non-highlighted-link">Highlighted</a><br>
+            <a href="#" class="cui__non-highlighted-link--standalone">Highlighted, standalone</a>
+        </p>
+    </div>
+
+
+    <div class="component-presentation component-presentation--tooltip">
+        <h2>Tooltip</h2>
+        <p>
+            The tooltips don't show on some touch devices natively. This must be implemented by the application.
+        </p>
+        <h3>Small up</h3>
+        <div class="cui__tooltip--small--up">
+            <div class="cui__tooltip__button"></div>
+            <div class="cui__tooltip__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+
+        <h3>Small down</h3>
+        <div class="cui__tooltip--small--down">
+            <div class="cui__tooltip__button"></div>
+            <div class="cui__tooltip__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+
+        <h3>Large up</h3>
+        <div class="cui__tooltip--large--up">
+            <div class="cui__tooltip__button"></div>
+            <div class="cui__tooltip__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+
+        <h3>Large down</h3>
+        <div class="cui__tooltip--large--down">
+            <div class="cui__tooltip__button"></div>
+            <div class="cui__tooltip__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="component-presentation">
+        <h2>German flag</h2>
+        <figure class="cui__flag--germany"></figure>
+    </div>
+</body>
+</html>
