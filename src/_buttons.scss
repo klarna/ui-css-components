@@ -186,18 +186,18 @@
 
     &.is-disabled {
         @include flat-button(
-            $background-color: #eee,
-            $background-color-hover: #eee,
-            $border-color: #aaa,
+            $background-color: $custom-color-button-background,
+            $background-color-hover: $custom-color-button-background,
             $box-shadow-active: false,
-            $text-color: #999,
+            $text-color: $custom-color-button-color,
             $font-size: $buy-button-font-size
         );
 
         border-radius: 5px;
         padding: $padding;
         box-shadow: none;
-        opacity: 0.75;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        opacity: 0.4;
     }
 
     &.is-loading {

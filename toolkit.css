@@ -1846,20 +1846,21 @@ html:hover [class^="ss-"] {
     font-size: 20px;
     font-size: 1.25rem;
     border: none;
-    background: #eee;
+    background: #0089cf;
     border-radius: 3px;
     outline: none;
     cursor: pointer;
-    color: #999;
+    color: #fff;
     font-weight: bold;
     padding: 13px;
     vertical-align: top;
     border-radius: 5px;
     padding: 18px;
     box-shadow: none;
-    opacity: 0.75; }
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4; }
     .cui__buy-button.is-disabled:hover {
-      background: #eee; }
+      background: #0089cf; }
   .cui__buy-button.is-loading {
     height: 56px; }
 
