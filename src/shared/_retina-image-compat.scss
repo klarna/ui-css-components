@@ -1,0 +1,3 @@
+@mixin retina-image-compat($filename, $background-size, $extension: png, $retina-filename: null, $retina-suffix: '@2x', $asset-pipeline: $asset-pipeline) {
+    @include retina-image($filename, $background-size, $extension, $retina-filename, $retina-suffix, $asset-pipeline);
+}

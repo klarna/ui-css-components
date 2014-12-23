@@ -112,7 +112,7 @@
     $width: 14px;
     $height: 14px;
 
-    @include retina-image($button-loader-image-url, $width $height, png);
+    @include retina-image-compat($button-loader-image-url, $width $height);
     @include animation(spin 0.8s linear infinite);
 
     display: inline-block;
@@ -210,7 +210,7 @@
     $height: 22px;
     $image-type: 'png';
 
-    @include retina-image($buy-button-loader-image-url, $width $height, $image-type, null, $retina-suffix);
+    @include retina-image-compat($buy-button-loader-image-url, $width $height);
     @include animation(spin 0.8s linear infinite);
 
     margin: 0 auto;
