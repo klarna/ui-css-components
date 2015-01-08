@@ -1,0 +1,23 @@
+{
+  "name": "ui-toolkit",
+  "version": "1.0.0",
+  "description": "KCO UI Toolkit",
+  "devDependencies": {
+    "browser-sync": "1.8.1",
+    "gulp": "3.8.10",
+    "gulp-sass": "1.2.4"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git"
+  },
+  "keywords": [
+    "ui",
+    "toolkit",
+    "kco"
+  ],
+  "author": "Team Douglas <team.douglas@klarna.com>"
+}

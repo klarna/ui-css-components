@@ -1,0 +1,36 @@
+// ================================================================
+//  ATOMS
+// ================================================================
+
+/**
+ * German flag
+ */
+.cui__flag--germany {
+
+  background: $german-flag-red;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 darken($german-flag-yellow, 20%);
+  height: $flag-height;
+  margin: 0;
+  overflow: hidden;
+  width: floor(golden-ratio($flag-height, 1));
+  position: absolute;
+
+  &:before, &:after {
+    content: "";
+    height: $flag-height / 3;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  &:before {
+    background: $german-flag-black;
+    top: 0;
+  }
+
+  &:after {
+    background: $german-flag-yellow;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,133 @@
+$ie8: false !default;
+
+// ================================================================
+//  Images
+// ================================================================
+$button-loader-image-url: 'img/loaders/button.loader';
+$buy-button-loader-image-url: 'img/loaders/buy-button-loader';
+$select-overlay-triangle-image: 'img/toolkit/select/select-arrow.png';
+
+// ================================================================
+//  Typography
+// ================================================================
+$ss-pika-path: 'fonts/ss-pika/ss-pika';
+
+$base-font-family: $helvetica !default;
+$base-font-size: 16px !default;
+$base-line-height: 21px !default;
+
+$h1-font-size: 2 * $base-font-size !default;
+$h2-font-size: 1.5 * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1 * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+$buy-button-font-size: 20px;
+$flat-button-font-size: 15px;
+
+// ================================================================
+//  Page widths
+// ================================================================
+$max-width: 640px !default;
+$mobile-max-width: 569px !default;
+
+// ================================================================
+//  Fields
+// ================================================================
+$field-horizontal-margin: 2% !default;
+
+
+// ================================================================
+//  EDITORS
+// ================================================================
+$editor-height: 43px !default;
+
+
+// ================================================================
+//  Colors
+// ================================================================
+$klarna-blue: #0089cf !default;
+$text-color-black: #31393e;
+$alert-red: #fd7070;
+$border-color: #ddd !default;
+
+// This properties can be overriden by the merchant styling
+$custom-color-button-background: #0089cf;
+$custom-color-button-color: #fff;
+
+// This properties are *not* merchant overridable
+$bright-button-border: rgba(0, 0, 0, 0.15);
+$bright-button-background: #fff;
+$bright-button-background-hover: hsla(0, 0%, 0%, 0.12);
+$bright-button-background-light: #fff;
+$bright-button-background-dark: #e6e6e6;
+$bright-button-color: #555;
+
+$tooltip-button-color: #c9c9c9 !default;
+$tooltip-arrow-color: #ededed !default;
+
+$input-box-shadow-color: #a6a6a6 !default;
+$input-box-shadow-color-inset: #d3d3d3 !default;
+$input-disabled-color: rgb(84, 84, 84) !default;
+$input-disabled-border-color: #a6a6a6;
+$input-disabled-bg: #f6f6f6;
+$input-border-color-focus: #0089CF !default;
+$input-tooltip-bg: #FD7070 !default;
+$input-editor-color: #595959 !default;
+$editor-placeholder-color: #a9a9a9 !default;
+
+
+// ================================================================
+//  Checkbox
+// ================================================================
+$checkbox-size: 24px !default;
+$checkbox-background: #0089cf !default;
+$checkbox-border: #ddd !default;
+$checkbox-font-size: 13px !default;
+
+
+// ================================================================
+//  Icon
+// ================================================================
+// $input-line-height copied from _input.scss
+$input-line-height: 14px * 1.5 !default;
+
+
+// ================================================================
+//  Input
+// ================================================================
+$input-line-height: 14px * 1.5 !default;
+$input-border-radius: 3px !default;
+$invalid-text-top-offset: 1.5;
+
+
+// ================================================================
+//  Flags
+// ================================================================
+$flag-height: 15px !default;
+
+$german-flag-black: #434A54 !default;
+$german-flag-red: #ED5565 !default;
+$german-flag-yellow: #F5BB42 !default;
+
+
+// ================================================================
+//  Header
+// ================================================================
+$header-margin: 16px !default;
+
+
+// ================================================================
+//  Buttons
+// ================================================================
+$flat-button-bevel: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+// ================================================================
+//  Tooltip
+// ================================================================
+$tooltip-content-width: 190px !default;
+$tooltip-arrow-size: 16px !default;
+$tooltip-icon-size-small: 14px !default;
+$tooltip-icon-size-large: 17px !default;

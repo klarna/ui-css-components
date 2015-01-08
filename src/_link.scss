@@ -1,0 +1,28 @@
+// ================================================================
+//  ATOMS
+// ================================================================
+.cui__highlighted-link {
+    @include font-size(13px);
+
+    color: #0089cf;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.cui__non-highlighted-link {
+    @include font-size(12px);
+
+    color: #aaa;
+    text-decoration: underline;
+}
+
+
+.cui__non-highlighted-link--standalone {
+    @extend .cui__non-highlighted-link;
+
+    text-decoration: none;
+}

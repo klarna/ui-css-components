@@ -1,0 +1,197 @@
+// ================================================================
+//  MIXINS
+// ================================================================
+
+@mixin tooltip-nub ($size: 30px, $triangle-pos: down, $y-offset: bottom 0, $x-offset: left 50%) {
+  position: relative;
+
+  $y-pos: nth($y-offset, 1);
+  $x-pos: nth($x-offset, 1);
+  $y-offset: nth($y-offset, 2);
+  $x-offset: nth($x-offset, 2);
+
+  &:before, &:after {
+    content: "";
+    margin-#{$y-pos}: -$size/2 + $y-offset;
+    position: absolute;
+    margin-left: -$size/1.5;
+    #{$y-pos}: -$size/2;
+    #{$x-pos}: $x-offset;
+  }
+
+  &:before {
+    @include triangle($size + 2, $base-border-color, $triangle-pos);
+    margin-#{$y-pos}: -$size/2 - 1 + $y-offset;
+    #{$y-pos}: -$size/2 - 2;
+    margin-left: -$size/1.5 - 1;
+  }
+
+  &:after {
+    @include triangle($size, #fff, $triangle-pos);
+    margin-right: 1px;
+  }
+}
+
+
+
+// ================================================================
+//  ATOMS
+// ================================================================
+
+/**
+ * Field
+ */
+.cui__field {
+  @include box-sizing(border-box);
+  position: relative;
+  margin-bottom: $input-line-height / 2;
+
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+
+
+/**
+ * Generic editor
+ */
+.cui__editor {
+  @include box-sizing(border-box);
+  width: 100%;
+}
+
+/**
+ * Placeholder styling
+ */
+.cui__placeholder {
+    font-weight: normal;
+    color: $editor-placeholder-color;
+}
+
+/**
+ * Text editor
+ */
+.cui__editor--text {
+  @extend .cui__editor;
+
+
+  @include appearance(none);
+  @include font-size(15px);
+
+  @include placeholder {
+    font-weight: normal;
+    color: $editor-placeholder-color;
+  }
+
+  background-color: white;
+  border-radius: $input-border-radius;
+  border: 1px solid $input-box-shadow-color;
+  line-height: 19px;
+  font-weight: 600;
+  color: $input-editor-color;
+  padding: 12px;
+  position: relative;
+
+  @if $ie8 {
+    border: 1px solid $input-box-shadow-color;
+  }
+
+  &:focus, &:hover {
+    outline: none;
+  }
+
+  &:focus {
+
+    border: 1px solid $input-border-color-focus;
+    border-radius: 2px;
+
+    box-shadow:
+      inset 0 1px 1px 0 $input-box-shadow-color-inset,
+      inset 0 1px 3px hsla(0, 0%, 0%, 0.06),
+      0 0 3px 1px $input-border-color-focus;
+
+      z-index: 1;
+
+      @if $ie8 {
+        border: 1px solid $input-border-color-focus;
+      }
+  }
+
+  &::-webkit-input-placeholder {
+      color: $editor-placeholder-color;
+  }
+
+  // Firefox 4-18
+  &:-moz-placeholder {
+      color: $editor-placeholder-color;
+      opacity: 1;
+  }
+
+  //  Firefox 19+
+  &::-moz-placeholder {
+      color: $editor-placeholder-color;
+      opacity: 1;
+  }
+
+  &[disabled]{
+    background: $input-disabled-bg;
+    color: $input-disabled-color;
+    -webkit-text-fill-color: $input-disabled-color;
+    opacity: 1;
+
+    &::-webkit-input-placeholder {
+        color: $editor-placeholder-color;
+    }
+
+    // Firefox 4-18
+    &:-moz-placeholder {
+        color: $input-disabled-color;
+        opacity: 1;
+    }
+
+    //  Firefox 19+
+    &::-moz-placeholder {
+        color: $input-disabled-color;
+        opacity: 1;
+    }
+
+  }
+
+}
+
+.cui__editor.is-invalid {
+  $offset: $invalid-text-top-offset;
+  padding-bottom: (2-$offset)*($input-line-height / 1.7);
+  padding-top: ($offset)*($input-line-height / 1.7);
+}
+
+// TODO: do not allow word wrap (one line only) + ellipsis on too long?
+.cui__field__error-tooltip {
+  @extend %show-tooltip;
+  @include font-size(11px);
+  @include box-sizing(border-box);
+
+  width: 100%;
+
+  background: $input-tooltip-bg;
+  border-radius: 3px 3px 0 0;
+  color: #FFF;
+  display: none;
+  font-weight: bold;
+  line-height: 1em;
+  margin: -10px 0 0 0;
+  bottom: 27px;
+  padding: 3px 10px 4px;
+  position: absolute;
+
+  z-index: 10;
+
+  &:after {
+
+    @if $ie8 {
+      display: none;
+    }
+  }
+}
