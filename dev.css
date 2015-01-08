@@ -25,6 +25,10 @@ code {
 .component-presentation--tooltip [class^="cui__tooltip--small"], .component-presentation--tooltip [class^="cui__tooltip--large"] {
   left: 50%; }
 
+.icon-container {
+  position: relative;
+  padding: 20px; }
+
 button {
   width: 100%; }
 
