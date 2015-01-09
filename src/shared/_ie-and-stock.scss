@@ -1,0 +1,8 @@
+@mixin respond-to-ie-and-stock($ie-versions: ('')) {
+    @include respond-to-ie($ie-versions) {
+        @content;
+    }
+    .android--stock & {
+        @content;
+    }
+}
