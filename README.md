@@ -49,7 +49,7 @@ Development
 Clone this repo and run:
 
 ```sh
-nvm 0.10
+nvm 0.10.31
 make install
 make dev
 ```
@@ -58,7 +58,7 @@ Build
 -----
 
 ```sh
-nvm 0.10
+nvm 0.10.31
 make install
 make build
 ```
