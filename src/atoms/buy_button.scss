@@ -1,61 +1,67 @@
 .cui__buy-button {
-    $padding: 18px;
-    @include flat-button(
-    $background-color: $custom-color-button-background,
-    $background-color-hover: darken($custom-color-button-background, 2%),
-    $box-shadow-active: inset 0 3px 0 rgba(#000, .1),
-    $text-color: $custom-color-button-color,
-    $font-size: $buy-button-font-size
-    );
-    box-shadow: $flat-button-bevel;
+    @include appearance(none);
+    @include font-size($buy-button-font-size);
 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    vertical-align: top;
+
+    box-shadow: $flat-button-bevel;
+    background: $custom-color-button-background;
+    color: $custom-color-button-color;
     line-height: 1;
-    padding: $padding;
+    padding: 18px;
     border-radius: 5px;
 
-    &.is-disabled {
-        @include flat-button(
-        $background-color: $custom-color-button-background,
-        $background-color-hover: $custom-color-button-background,
-        $box-shadow-active: false,
-        $text-color: $custom-color-button-color,
-        $font-size: $buy-button-font-size
-        );
+    &:hover {
+        background: darken($custom-color-button-background, 2%);
+    }
 
-        border-radius: 5px;
-        padding: $padding;
+    &:active {
+        background: darken($custom-color-button-background, 4%);
+        box-shadow: inset 0 3px 0 rgba(#000, .1);
+    }
+
+    &.is-disabled {
         box-shadow: none;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
         opacity: 0.4;
+
+        &:hover {
+            background: $custom-color-button-background;
+        }
+
+        &:active {
+            background: $custom-color-button-background;
+            box-shadow: none;
+        }
     }
 
     &.is-loading {
-        height: $buy-button-font-size + ($padding * 2)
+        height: $buy-button-font-size + (18px * 2)
     }
 }
 
 .cui__buy-button__loader {
-    $width: 22px;
-    $height: 22px;
-    $image-type: 'png';
-
-    @include retina-image-compat($buy-button-loader-image-url, $width $height);
+    @include retina-image-compat($buy-button-loader-image-url, 22px 22px);
     @include animation(spin 0.8s linear infinite);
 
     margin: 0 auto;
-    width: $width;
-    height: $height;
+    width: 22px;
+    height: 22px;
     font-size: 0;
 
     // Preload the image
     &:before {
-        content: url($buy-button-loader-image-url + '.' + $image-type);
+        content: url($buy-button-loader-image-url + '.png');
         width: 0;
         height: 0;
         display: none;
 
         @include hidpi {
-            content: url($buy-button-loader-image-url + '@2x.' + $image-type);
+            content: url($buy-button-loader-image-url + '@2x.png');
         }
     }
 

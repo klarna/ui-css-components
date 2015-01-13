@@ -166,12 +166,6 @@
  * Apply a border and whitespace to any side without destroying the vertical rhythm. The whitespace must be greater than the width of the border.
  * http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-apply-side-rhythm-border
  */
-/**
- * A flat button
- */
-/**
- * Regular blue button
- */
 .cui__highlighted-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -181,25 +175,25 @@
   font-size: 15px;
   font-size: 0.9375rem;
   border: none;
-  background: #0089cf;
-  border-radius: 3px;
   outline: none;
   cursor: pointer;
-  color: #fff;
   font-weight: bold;
-  padding: 13px;
   vertical-align: top;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1); }
-  .cui__highlighted-button:hover {
-    background: #0082c5; }
-  .cui__highlighted-button:active {
-    background: #007bbb;
-    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
+  border-radius: 3px;
+  background: #0089cf;
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 13px; }
   .ie .cui__highlighted-button {
     padding: 12px 14px 11px; }
   @media screen and (min-width: 569px) {
     .cui__highlighted-button {
       padding: 14px; } }
+  .cui__highlighted-button:hover {
+    background: #0082c5; }
+  .cui__highlighted-button:active {
+    background: #007bbb;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
 
 .cui__highlighted-button__loader {
   background-image: url("img/loaders/button.loader.png");
@@ -223,9 +217,6 @@
     height: 19px;
     background-image: none; }
 
-/**
- * Regular grey button
- */
 .cui__non-highlighted-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -234,23 +225,22 @@
   appearance: none;
   font-size: 15px;
   font-size: 0.9375rem;
-  border: none;
-  background: #fff;
-  border-radius: 3px;
   outline: none;
   cursor: pointer;
-  color: #555;
   font-weight: bold;
-  padding: 13px;
   vertical-align: top;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.075); }
-  .cui__non-highlighted-button:hover {
-    background: #fcfcfc; }
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.075);
+  border-radius: 3px;
+  background: #fff;
+  color: #555;
+  padding: 13px; }
   .ie .cui__non-highlighted-button {
     padding: 11px 13px 10px; }
   .ie8 .cui__non-highlighted-button {
     border: 1px solid #d8d8d8; }
+  .cui__non-highlighted-button:hover {
+    background: #fafafa; }
   .cui__non-highlighted-button:active {
     border: 1px solid rgba(0, 0, 0, 0.15);
     background: #fafafa;
@@ -265,15 +255,13 @@
   font-size: 20px;
   font-size: 1.25rem;
   border: none;
-  background: #0089cf;
-  border-radius: 3px;
   outline: none;
   cursor: pointer;
-  color: #fff;
   font-weight: bold;
-  padding: 13px;
   vertical-align: top;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #0089cf;
+  color: #fff;
   line-height: 1;
   padding: 18px;
   border-radius: 5px; }
@@ -283,29 +271,14 @@
     background: #007bbb;
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
   .cui__buy-button.is-disabled {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    font-size: 20px;
-    font-size: 1.25rem;
-    border: none;
-    background: #0089cf;
-    border-radius: 3px;
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    padding: 13px;
-    vertical-align: top;
-    border-radius: 5px;
-    padding: 18px;
     box-shadow: none;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     opacity: 0.4; }
     .cui__buy-button.is-disabled:hover {
       background: #0089cf; }
+    .cui__buy-button.is-disabled:active {
+      background: #0089cf;
+      box-shadow: none; }
   .cui__buy-button.is-loading {
     height: 56px; }
 
