@@ -12,7 +12,7 @@ $select-overlay-triangle-image: 'img/select/select-arrow.png';
 // ================================================================
 $ss-pika-path: 'fonts/ss-pika/ss-pika';
 
-$base-font-family: $helvetica !default;
+$base-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $base-font-size: 16px !default;
 $base-line-height: 21px !default;
 
@@ -100,16 +100,6 @@ $input-line-height: 14px * 1.5 !default;
 $input-line-height: 14px * 1.5 !default;
 $input-border-radius: 3px !default;
 $invalid-text-top-offset: 1.5;
-
-
-// ================================================================
-//  Flags
-// ================================================================
-$flag-height: 15px !default;
-
-$german-flag-black: #434A54 !default;
-$german-flag-red: #ED5565 !default;
-$german-flag-yellow: #F5BB42 !default;
 
 
 // ================================================================

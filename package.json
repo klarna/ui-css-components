@@ -19,5 +19,8 @@
     "toolkit",
     "kco"
   ],
-  "author": "Team Douglas <team.douglas@klarna.com>"
+  "author": "Team Douglas <team.douglas@klarna.com>",
+  "dependencies": {
+    "coffee-script": "^1.8.0"
+  }
 }
