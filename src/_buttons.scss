@@ -83,8 +83,7 @@
     font-size: 0;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
-    .ie8 &,
-    .ie9 & {
+    @include respond-to-ie((8,9)) {
         @include font-size($flat-button-font-size);
         width: 100%;
         height: 19px;

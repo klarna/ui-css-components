@@ -1721,11 +1721,6 @@ html:hover [class^="ss-"] {
  * A flat button
  */
 /**
- * A gradient button
- * Provide either background-color or the gradient stops.
- * The stops will be calculated if only background color given.
- */
-/**
  * Regular blue button
  */
 .cui__highlighted-button {
@@ -1895,9 +1890,6 @@ html:hover [class^="ss-"] {
     width: 100%;
     background-image: none; }
 
-/**
- * Regular checkbox
- */
 .cui__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1914,57 +1906,25 @@ html:hover [class^="ss-"] {
   outline: none;
   position: relative;
   width: 24px; }
+  .cui__checkbox.is-checked {
+    background: #0089cf;
+    box-shadow: none;
+    border-color: #0089cf; }
+    .cui__checkbox.is-checked:after {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      color: #FFF;
+      content: "\2713";
+      display: block;
+      font-family: "SSPika";
+      font-weight: normal;
+      height: 24px;
+      line-height: 24px;
+      position: absolute;
+      text-align: center;
+      top: 2px;
+      width: 24px; }
 
-/**
- * Checked checkbox
- */
-.cui__checkbox.is-checked {
-  background: #0089cf;
-  box-shadow: none;
-  border-color: #0089cf; }
-  .cui__checkbox.is-checked:after {
-    font-size: 13px;
-    font-size: 0.8125rem;
-    color: #FFF;
-    content: "\2713";
-    display: block;
-    font-family: "SSPika";
-    font-weight: normal;
-    height: 24px;
-    line-height: 24px;
-    position: absolute;
-    text-align: center;
-    top: 2px;
-    width: 24px; }
-
-/**
- * German flag
- */
-.cui__flag--germany {
-  background: #ED5565;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 #c68a0b;
-  height: 15px;
-  margin: 0;
-  overflow: hidden;
-  width: 24px;
-  position: absolute; }
-  .cui__flag--germany:before, .cui__flag--germany:after {
-    content: "";
-    height: 5px;
-    left: 0;
-    position: absolute;
-    right: 0; }
-  .cui__flag--germany:before {
-    background: #434A54;
-    top: 0; }
-  .cui__flag--germany:after {
-    background: #F5BB42;
-    bottom: 0; }
-
-/**
- * Main header
- */
 .cui__main-header {
   position: relative; }
   .cui__main-header h1 {
@@ -1998,16 +1958,12 @@ html:hover [class^="ss-"] {
   bottom: -3px;
   width: 20px;
   z-index: 10; }
-
-.cui__icon.is-invalid {
-  bottom: -9px; }
+  .cui__icon.is-invalid {
+    bottom: -9px; }
 
 .cui__editor--text:focus + .cui__icon {
   color: #0089cf; }
 
-/**
- * Field
- */
 .cui__field {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2017,25 +1973,16 @@ html:hover [class^="ss-"] {
   .cui__field.is-hidden {
     display: none; }
 
-/**
- * Generic editor
- */
 .cui__editor, .cui__editor--text, .cui__select-overlay {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%; }
 
-/**
- * Placeholder styling
- */
 .cui__placeholder {
   font-weight: normal;
   color: #a9a9a9; }
 
-/**
- * Text editor
- */
 .cui__editor--text {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2092,10 +2039,9 @@ html:hover [class^="ss-"] {
     .cui__editor--text[disabled]::-moz-placeholder {
       color: #545454;
       opacity: 1; }
-
-.cui__editor.is-invalid, .is-invalid.cui__editor--text, .is-invalid.cui__select-overlay {
-  padding-bottom: 6.17647px;
-  padding-top: 18.52941px; }
+  .cui__editor--text.is-invalid {
+    padding-bottom: 6.17647px;
+    padding-top: 18.52941px; }
 
 .cui__field__error-tooltip {
   font-size: 11px;
