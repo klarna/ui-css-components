@@ -42,46 +42,6 @@
 
 
 
-/**
- * A gradient button
- * Provide either background-color or the gradient stops.
- * The stops will be calculated if only background color given.
- */
-@mixin gradient-button(
-    $border-color: null,
-    $gradient-light: null,
-    $gradient-dark: null,
-    $background-color: null,
-    $text-color: null,
-    $font-size: null
-) {
-
-    @include flat-button (
-        $border-color: $border-color,
-        $background-color: $background-color,
-        $text-color: $text-color,
-        $font-size: $font-size
-    );
-
-    @if $background-color {
-        $gradient-light: $background-color;
-        $gradient-dark: adjust-hue($gradient-light, 8deg);
-    }
-    @include linear-gradient($gradient-light, $gradient-dark, $fallback: $gradient-dark);
-
-    &:active {
-        @if $background-color {
-            $gradient-light: $background-color;
-        }
-        $gradient-light: darken($gradient-light, 6%);
-        $gradient-dark: adjust-hue($gradient-light, 8deg);
-
-        @include linear-gradient($gradient-light, $gradient-dark);
-    }
-}
-
-
-
 // ================================================================
 //  ATOMS
 // ================================================================
