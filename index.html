@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="toolkit.css">
     <link rel="stylesheet" href="support/doc.css">
     <!--[if IE 8]><link rel="stylesheet" href=".tmp/ie8/toolkit.css"><![endif]-->
+
+    <script type="text/javascript" src="js/ui-toolkit.js"></script>
 </head>
 <body>
     <nav>
@@ -20,7 +22,7 @@
         </div>
     </nav>
 
-    <main id="home">
+    <div class="main" id="home">
         <h2 id="buttons" class="presentation">Buttons</h2>
 
         <div class="component-presentation">
@@ -80,7 +82,7 @@
 </pre>
         </div>
 
-
+        <!-- HEADERS -->
         <h2 id="headers" class="presentation">Headers</h2>
         <div class="component-presentation">
             <h3>Main Header</h3>
@@ -107,7 +109,9 @@
 &lt;/div&gt;
 </pre>
         </div>
+        <!-- /HEADERS -->
 
+        <!-- FORM -->
         <h2 id="form" class="presentation">Form elements</h2>
         <div class="component-presentation">
             <h3>Checkbox</h3>
@@ -120,7 +124,19 @@
 
         <div class="component-presentation">
             <h4>Normal input</h4>
-            <input type="text" class="cui__editor--text" placeholder="Input text">
+
+            <div class="cui__field">
+                <span class="cui__field__error-tooltip">
+                    Error
+                </span>
+                <div class="cui__editor-wrapper" data-placeholder="Input text">
+                    <input
+                        type="text"
+                        class="cui__editor--text"
+                        placeholder="Input text" />
+                </div>
+            </div>
+
 <pre>&lt;input type="text" class="cui__editor--text" placeholder="Input text" /&gt;</pre>
 
             <h4>Input with error</h4>
@@ -128,10 +144,12 @@
                 <span class="cui__field__error-tooltip is-visible">
                     Error
                 </span>
-                <input
-                    type="text"
-                    class="cui__editor--text is-invalid"
-                    placeholder="Input text" />
+                <div class="cui__editor-wrapper is-invalid" data-placeholder="Input text">
+                    <input
+                        type="text"
+                        class="cui__editor--text is-invalid"
+                        placeholder="Input text" />
+                </div>
             </div>
 
 <pre>
@@ -145,6 +163,15 @@
         placeholder="Input text" /&gt;
 &lt;/div&gt;
 </pre>
+
+            <script type="text/javascript">
+                var cuiEditorWrappers = document.querySelectorAll('.cui__editor-wrapper');
+                var cuiEditors = document.querySelectorAll('.cui__editor--text');
+
+                for (var i = 0; i < cuiEditorWrappers.length; i ++) {
+                    UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+                }
+            </script>
         </div>
 
         <div class="component-presentation">
@@ -176,9 +203,11 @@
 &lt;/div>
 </pre>
         </div>
+        <!-- /FORM -->
 
 
 
+        <!-- LINKS -->
         <h2 id="links" class="presentation">Links</h2>
         <div class="component-presentation">
             <p><strong>Highlighted</strong></p>
@@ -201,6 +230,7 @@
 </pre>
             </p>
         </div>
+        <!-- /LINKS -->
 
         <h2 id="icons" class="presentation">Icons</h2>
         <div class="component-presentation">
@@ -209,6 +239,6 @@
                 <span class="cui__icon ss-pika ss-cursor"></span>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>

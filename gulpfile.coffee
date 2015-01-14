@@ -20,8 +20,13 @@ gulp.task 'sass', ->
     .pipe reload({stream:true})
 
 
-gulp.task 'reload', ->
+gulp.task 'reload:html', ->
   gulp.src 'index.html'
+    .pipe reload({stream: true})
+
+
+gulp.task 'reload:js', ->
+  gulp.src 'js/*.js'
     .pipe reload({stream: true})
 
 
@@ -30,4 +35,5 @@ gulp.task 'reload', ->
 gulp.task 'default', ['sass', 'browser-sync'], ->
   gulp.watch 'src/**/*.scss', ['sass']
   gulp.watch 'builds/**/*.scss', ['sass']
-  gulp.watch 'index.html', ['reload']
+  gulp.watch 'js/*.ks', ['reload:js']
+  gulp.watch 'index.html', ['reload:html']

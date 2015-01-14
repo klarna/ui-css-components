@@ -11,8 +11,8 @@ body {
   padding-bottom: 4em;
   text-align: center; }
 
-main {
-  max-width: 480px;
+div.main {
+  width: 480px;
   margin: 0 auto;
   text-align: left;
 }

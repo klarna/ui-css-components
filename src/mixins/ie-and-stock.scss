@@ -5,4 +5,9 @@
     .android--stock & {
         @content;
     }
+
+    [data-cui-browser-ie] &,
+    [data-cui-browser-android--stock] & {
+        @content;
+    }
 }
