@@ -2,6 +2,7 @@ gulp        = require 'gulp'
 browserSync = require 'browser-sync'
 reload      = browserSync.reload
 sass        = require 'gulp-sass'
+jade        = require 'gulp-jade'
 
 
 # browser-sync task for starting the server.
@@ -20,6 +21,13 @@ gulp.task 'sass', ->
     .pipe reload({stream:true})
 
 
+gulp.task 'jade', ->
+  gulp.src '*.jade'
+    .pipe jade()
+    .pipe gulp.dest('./')
+    .pipe reload({stream: true})
+
+
 gulp.task 'reload:html', ->
   gulp.src 'index.html'
     .pipe reload({stream: true})
@@ -32,8 +40,10 @@ gulp.task 'reload:js', ->
 
 
 # Default task to be run with `gulp`
-gulp.task 'default', ['sass', 'browser-sync'], ->
+gulp.task 'default', ['sass', 'jade', 'browser-sync'], ->
   gulp.watch 'src/**/*.scss', ['sass']
   gulp.watch 'builds/**/*.scss', ['sass']
-  gulp.watch 'js/*.ks', ['reload:js']
+  gulp.watch '*.jade', ['jade']
+  gulp.watch 'snippets/*.html', ['jade']
+  gulp.watch 'js/*.js', ['reload:js']
   gulp.watch 'index.html', ['reload:html']
