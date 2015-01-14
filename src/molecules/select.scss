@@ -1,6 +1,11 @@
 $select-overlay-triangle-y: 1.35em;
 $select-overlay-triangle-y-ie: 1.2em;
 
+.cui__select {
+    @extend .cui__field;
+    height: 44px;
+}
+
 .cui__select-overlay {
     @extend .cui__editor;
 

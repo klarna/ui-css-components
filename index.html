@@ -9,157 +9,206 @@
     <!--[if IE 8]><link rel="stylesheet" href=".tmp/ie8/toolkit.css"><![endif]-->
 </head>
 <body>
-    <div class="component-presentation">
-        <h2>Highlighted button</h2>
-        <button class="cui__highlighted-button">Highlighted button</button>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Non highlighted button</h2>
-        <button class="cui__non-highlighted-button">Non highlighted button</button>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Buy button</h2>
-        <button class="cui__buy-button">Buy button</button>
-        <button class="cui__buy-button is-loading">
-            <div class="cui__buy-button__loader"></div>
-        </button>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Buy button disabled</h2>
-        <button class="cui__buy-button is-disabled">Buy button disabled</button>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Main Header</h2>
-        <div class="cui__main-header">
-            <h1>Main Header</h1>
+    <nav>
+        <div class="inner">
+            <a href="#home"><span class="ss-pika ss-home"></span></a>
+            <a href="#buttons">Buttons</a>
+            <a href="#headers">Headers</a>
+            <a href="#form">Form</a>
+            <a href="#links">Links</a>
+            <a href="#icons">Icons</a>
         </div>
-    </div>
+    </nav>
+
+    <main id="home">
+        <h2 id="buttons" class="presentation">Buttons</h2>
+
+        <div class="component-presentation">
+            <h3>Highlighted button</h3>
+            <button class="cui__highlighted-button">
+                Highlighted button
+            </button>
+            <pre>
+&lt;button class="cui__highlighted-button"&gt;
+    Highlighted button
+&lt;/button&gt;</pre>
+        </div>
 
 
-    <div class="component-presentation">
-        <h2>Subtle Header</h2>
-        <div class="cui__subtle-header">
+        <div class="component-presentation">
+            <h3>Non highlighted button</h3>
+            <button class="cui__non-highlighted-button">
+                Non highlighted button
+            </button>
+            <pre>
+&lt;button class="cui__non-highlighted-button"&gt;
+    Non highlighted button
+&lt;/button&gt;</pre>
+        </div>
+
+
+        <div class="component-presentation">
+            <h3>Buy button</h3>
+            <button class="cui__buy-button">
+                Buy button
+            </button>
+<pre>
+&lt;button class="cui__buy-button"&gt;
+    Buy button
+&lt;/button&gt;
+</pre>
+
+            <p><strong>Loading</strong></p>
+            <button class="cui__buy-button is-loading">
+                <div class="cui__buy-button__loader"></div>
+            </button>
+<pre>
+&lt;button class="cui__buy-button is-loading"&gt;
+    &lt;div class="cui__buy-button__loader"&gt;&lt;/div&gt;
+&lt;/button&gt;
+</pre>
+
+            <p><strong>Buy button disabled</strong></p>
+
+            <button class="cui__buy-button is-disabled">
+                Buy button disabled
+            </button>
+<pre>
+&lt;button class="cui__buy-button is-disabled"&gt;
+    Buy button disabled
+&lt;/button&gt;
+</pre>
+        </div>
+
+
+        <h2 id="headers" class="presentation">Headers</h2>
+        <div class="component-presentation">
+            <h3>Main Header</h3>
+            <div class="cui__main-header">
+                <h1>Billing Address</h1>
+            </div>
+<pre>
+&lt;div class="cui__main-header"&gt;
+    &lt;h1&gt;Billing Address&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+        </div>
+
+
+        <div class="component-presentation">
             <h3>Subtle Header</h3>
+            <div class="cui__subtle-header">
+                <h3>Subtle Header</h3>
+            </div>
+
+<pre>
+&lt;div class="cui__subtle-header"&gt;
+    &lt;h3&gt;Subtle Header&lt;/h3&gt;
+&lt;/div&gt;
+</pre>
         </div>
-    </div>
 
+        <h2 id="form" class="presentation">Form elements</h2>
+        <div class="component-presentation">
+            <h3>Checkbox</h3>
+            <span class="cui__checkbox"></span>
+<pre>&lt;span class="cui__checkbox"&gt;&lt;/span&gt;</pre>
 
-    <div class="component-presentation">
-        <h2>Label</h2>
-        <label class="cui__label">Name</label>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Checkbox</h2>
-        <p>
-            This is not a real checkbox styling. The elements shown are span tags. Widgets using checkboxes should simulate checkbox behavior.
-        </p>
-        <span class="cui__checkbox"></span>
-        <span class="cui__checkbox is-checked"></span>
-    </div>
-
-
-    <div class="component-presentation">
-        <h2>Input</h2>
-        <p>
-            The toolkit doesn't provide a placeholder shim for IE8, 9. Use <a href="https://github.com/mathiasbynens/jquery-placeholder">jquery.placeholder</a> (or a corresponding lib) in the application.
-        </p>
-        <h3>Normal input</h3>
-        <input type="text" class="cui__editor--text" placeholder="Input text">
-
-        <h3>Input with error</h3>
-        <div class="cui__field">
-            <span class="cui__field__error-tooltip">Error</span>
-            <input type="text" class="cui__editor--text is-invalid" placeholder="Input text">
+            <span class="cui__checkbox is-checked"></span>
+<pre>&lt;span class="cui__checkbox is-checked"&gt;&lt;/span&gt;</pre>
         </div>
-    </div>
 
-    <div class="component-presentation">
-        <h3>Select</h3>
-        <p>The application is responsible for setting the selected value in the overlay.</p>
-        <div class="cui__field">
-            <span class="cui__select-overlay" data-cid="overlay.selector">Name</span>
-            <select class="cui__select-dropdown" data-cid="select.selector">
-                <option value="" data-placeholder="Placeholder"></option>
-                <option>Alice</option>
-                <option>Bob</option>
-            </select>
+        <div class="component-presentation">
+            <h4>Normal input</h4>
+            <input type="text" class="cui__editor--text" placeholder="Input text">
+<pre>&lt;input type="text" class="cui__editor--text" placeholder="Input text" /&gt;</pre>
+
+            <h4>Input with error</h4>
+            <div class="cui__field is-invalid">
+                <span class="cui__field__error-tooltip is-visible">
+                    Error
+                </span>
+                <input
+                    type="text"
+                    class="cui__editor--text is-invalid"
+                    placeholder="Input text" />
+            </div>
+
+<pre>
+&lt;div class="cui__field is-invalid"&gt;
+    &lt;span class="cui__field__error-tooltip is-visible"&gt;
+        Error
+    &lt;/span&gt;
+    &lt;input
+        type="text"
+        class="cui__editor--text is-invalid"
+        placeholder="Input text" /&gt;
+&lt;/div&gt;
+</pre>
         </div>
-    </div>
+
+        <div class="component-presentation">
+            <h3>Label</h3>
+            <label class="cui__label">Name</label>
+<pre>&lt;label class="cui__label"&gt;Name&lt;/label&gt;</pre>
+        </div>
+
+        <div class="component-presentation">
+            <h3>Select</h3>
+            <p>The application is responsible for setting the selected value in the overlay.</p>
+            <div class="cui__select">
+                <span class="cui__select-overlay" data-cid="overlay.selector">Name</span>
+                <select class="cui__select-dropdown" data-cid="select.selector">
+                    <option value="" data-placeholder="Placeholder"></option>
+                    <option>Alice</option>
+                    <option>Bob</option>
+                </select>
+            </div>
+            <div class="clearfix"></div>
+<pre>
+&lt;div class="cui__field"&gt;
+    &lt;span class="cui__select-overlay" data-cid="overlay.selector"&gt;Name&lt;/span&gt;
+    &lt;select class="cui__select-dropdown" data-cid="select.selector"&gt;
+        &lt;option value="" data-placeholder="Placeholder"&gt;&lt;/option&gt;
+        &lt;option&gt;Alice&lt;/option&gt;
+        &lt;option&gt;Bob&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div>
+</pre>
+        </div>
 
 
-    <div class="component-presentation">
-        <h2>Main header</h2>
-        <header class="cui__main-header">
-            <h1>Header</h1>
-        </header>
-    </div>
 
+        <h2 id="links" class="presentation">Links</h2>
+        <div class="component-presentation">
+            <p><strong>Highlighted</strong></p>
+            <p>
+                <a href="#" class="cui__highlighted-link">Other page</a>
+<pre>&lt;a href="#" class="cui__highlighted-link"&gt;Highlighted&lt;/a&gt;</pre>
+            </p>
+            <p><strong>Non highlighted</strong></p>
+            <p>
+                <a href="#" class="cui__non-highlighted-link">Regular link</a>
+<pre>&lt;a href="#" class="cui__non-highlighted-link"&gt;Regular non highlighted&lt;/a&gt;</pre>
+            </p>
+            <p><strong>Non highlighted, standalone</strong></p>
+            <p>
+                <a href="#" class="cui__non-highlighted-link--standalone">Non highlighted, standalone</a>
+<pre>
+&lt;a href="#" class="cui__non-highlighted-link--standalone"&gt;
+    Non highlighted, standalone
+&lt;/a&gt;
+</pre>
+            </p>
+        </div>
 
-    <div class="component-presentation">
-        <h2>Links</h2>
-        <p>
-            <a href="#" class="cui__highlighted-link">Highlighted</a>
-        </p>
-        <p>
-            <a href="#" class="cui__non-highlighted-link">Highlighted</a><br>
-            <a href="#" class="cui__non-highlighted-link--standalone">Highlighted, standalone</a>
-        </p>
-    </div>
-
-
-    <div class="component-presentation component-presentation--tooltip">
-        <h2>Tooltip</h2>
-        <p>
-            The tooltips don't show on some touch devices natively. This must be implemented by the application.
-        </p>
-        <h3>Small up</h3>
-        <div class="cui__tooltip--small--up">
-            <div class="cui__tooltip__button"></div>
-            <div class="cui__tooltip__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <h2 id="icons" class="presentation">Icons</h2>
+        <div class="component-presentation">
+            <h3>SS Pika Icon</h3>
+            <div class="icon-container">
+                <span class="cui__icon ss-pika ss-cursor"></span>
             </div>
         </div>
-
-        <h3>Small down</h3>
-        <div class="cui__tooltip--small--down">
-            <div class="cui__tooltip__button"></div>
-            <div class="cui__tooltip__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-        </div>
-
-        <h3>Large up</h3>
-        <div class="cui__tooltip--large--up">
-            <div class="cui__tooltip__button"></div>
-            <div class="cui__tooltip__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-        </div>
-
-        <h3>Large down</h3>
-        <div class="cui__tooltip--large--down">
-            <div class="cui__tooltip__button"></div>
-            <div class="cui__tooltip__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-        </div>
-    </div>
-
-    <div class="component-presentation">
-        <h3>SS Pika Icon</h3>
-        <div class="icon-container">
-            <span class="cui__icon ss-pika ss-cursor"></span>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

@@ -114,7 +114,6 @@
     }
 }
 
-// TODO: do not allow word wrap (one line only) + ellipsis on too long?
 .cui__field__error-tooltip {
     @extend %show-tooltip;
     @include font-size(11px);
@@ -139,5 +138,9 @@
         @include respond-to-ie(8) {
             display: none;
         }
+    }
+
+    &.is-visible {
+        display: block;
     }
 }

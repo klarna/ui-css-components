@@ -20,7 +20,14 @@ gulp.task 'sass', ->
     .pipe reload({stream:true})
 
 
+gulp.task 'reload', ->
+  gulp.src 'index.html'
+    .pipe reload({stream: true})
+
+
+
 # Default task to be run with `gulp`
 gulp.task 'default', ['sass', 'browser-sync'], ->
   gulp.watch 'src/**/*.scss', ['sass']
   gulp.watch 'builds/**/*.scss', ['sass']
+  gulp.watch 'index.html', ['reload']
