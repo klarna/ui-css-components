@@ -2215,7 +2215,7 @@ html:hover [class^="ss-"] {
     z-index: 1;
     box-sizing: border-box; }
   .ie .cui__editor-wrapper.is-invalid:after {
-    padding-top: 6px; }
+    padding-top: 7px; }
   .ie .cui__editor-wrapper.is-placeholder-hidden:after {
     display: none; }
   .android--stock .cui__editor-wrapper:after {
@@ -2234,7 +2234,7 @@ html:hover [class^="ss-"] {
     z-index: 1;
     box-sizing: border-box; }
   .android--stock .cui__editor-wrapper.is-invalid:after {
-    padding-top: 6px; }
+    padding-top: 7px; }
   .android--stock .cui__editor-wrapper.is-placeholder-hidden:after {
     display: none; }
   [data-cui-browser-ie] .cui__editor-wrapper:after, [data-cui-browser-android--stock] .cui__editor-wrapper:after {
@@ -2253,7 +2253,7 @@ html:hover [class^="ss-"] {
     z-index: 1;
     box-sizing: border-box; }
   [data-cui-browser-ie] .cui__editor-wrapper.is-invalid:after, [data-cui-browser-android--stock] .cui__editor-wrapper.is-invalid:after {
-    padding-top: 6px; }
+    padding-top: 7px; }
   [data-cui-browser-ie] .cui__editor-wrapper.is-placeholder-hidden:after, [data-cui-browser-android--stock] .cui__editor-wrapper.is-placeholder-hidden:after {
     display: none; }
 
