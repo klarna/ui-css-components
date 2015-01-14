@@ -22,8 +22,10 @@
     "package.json",
     "dev.css",
     "Gemfile*",
-    "gulpfile.js",
+    "gulpfile.coffee",
     "index.html",
+    "index.jade",
+    "snippets",
     "Makefile",
     "README.md"
   ]
