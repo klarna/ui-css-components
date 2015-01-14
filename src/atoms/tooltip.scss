@@ -45,7 +45,7 @@
         #{$position-property}: -1px - $tooltip-arrow-size;
 
         // IE8 doesn't support shadows
-        @if $ie8 {
+        @include respond-to-ie(8) {
             #{$position-property}: -$tooltip-arrow-size;
         }
     }

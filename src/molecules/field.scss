@@ -42,7 +42,7 @@
     padding: 12px;
     position: relative;
 
-    @if $ie8 {
+    @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
     }
 
@@ -62,7 +62,7 @@
 
         z-index: 1;
 
-        @if $ie8 {
+        @include respond-to-ie(8) {
           border: 1px solid $input-border-color-focus;
         }
     }
@@ -84,7 +84,7 @@
     }
 
     &[disabled]{
-        background: $input-disabled-bg;
+        background: $input-disabled-background-color;
         color: $input-disabled-color;
         -webkit-text-fill-color: $input-disabled-color;
         opacity: 1;
@@ -122,7 +122,7 @@
 
     width: 100%;
 
-    background: $input-tooltip-bg;
+    background: $input-tooltip-background-color;
     border-radius: 3px 3px 0 0;
     color: #FFF;
     display: none;
@@ -136,8 +136,7 @@
     z-index: 10;
 
     &:after {
-
-        @if $ie8 {
+        @include respond-to-ie(8) {
             display: none;
         }
     }

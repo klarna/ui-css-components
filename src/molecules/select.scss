@@ -27,7 +27,7 @@ $select-overlay-triangle-y-ie: 1.2em;
     }
 
     &.is-disabled {
-        background: $input-disabled-bg;
+        background: $input-disabled-background-color;
         color: $input-disabled-color;
         -webkit-text-fill-color: $input-disabled-color;
         font-weight: bold;
@@ -103,7 +103,7 @@ $select-overlay-triangle-y-ie: 1.2em;
         background-position: 100% $select-overlay-triangle-y-ie;
 
         &.is-disabled {
-            background: $input-disabled-bg url($select-overlay-triangle-image) 100% $select-overlay-triangle-y-ie no-repeat !important;
+            background: $input-disabled-background-color url($select-overlay-triangle-image) 100% $select-overlay-triangle-y-ie no-repeat !important;
         }
     }
 
@@ -117,7 +117,7 @@ $select-overlay-triangle-y-ie: 1.2em;
         &.is-disabled {
             background-image: url($select-overlay-triangle-image);
             background-position: 100% $select-overlay-triangle-y-ie;
-            background-color: $input-disabled-bg;
+            background-color: $input-disabled-background-color;
         }
     }
 }

@@ -1,5 +1,3 @@
-$ie8: false;
-
 // ================================================================
 //  Images
 // ================================================================
@@ -15,13 +13,6 @@ $ss-pika-path: 'fonts/ss-pika/ss-pika';
 $base-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 21px;
-
-$h1-font-size: 2 * $base-font-size;
-$h2-font-size: 1.5 * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
-$h4-font-size: 1 * $base-font-size;
-$h5-font-size: 0.83 * $base-font-size;
-$h6-font-size: 0.67 * $base-font-size;
 
 $buy-button-font-size: 20px;
 $flat-button-font-size: 15px;
@@ -39,41 +30,27 @@ $field-horizontal-margin: 2%;
 
 
 // ================================================================
-//  EDITORS
-// ================================================================
-$editor-height: 43px;
-
-
-// ================================================================
 //  Colors
 // ================================================================
 $klarna-blue: #0089cf;
-$text-color-black: #31393e;
-$alert-red: #fd7070;
-$border-color: #ddd;
 
 // This properties can be overriden by the merchant styling
 $custom-color-button-background: #0089cf;
 $custom-color-button-color: #fff;
 
 // This properties are *not* merchant overridable
-$bright-button-border: rgba(0, 0, 0, 0.15);
 $bright-button-background: #fff;
-$bright-button-background-hover: hsla(0, 0%, 0%, 0.12);
-$bright-button-background-light: #fff;
-$bright-button-background-dark: #e6e6e6;
 $bright-button-color: #555;
 
-$tooltip-button-color: #c9c9c9;
 $tooltip-arrow-color: #ededed;
 
 $input-box-shadow-color: #a6a6a6;
 $input-box-shadow-color-inset: #d3d3d3;
 $input-disabled-color: rgb(84, 84, 84);
 $input-disabled-border-color: #a6a6a6;
-$input-disabled-bg: #f6f6f6;
+$input-disabled-background-color: #f6f6f6;
 $input-border-color-focus: #0089CF;
-$input-tooltip-bg: #FD7070;
+$input-tooltip-background-color: #FD7070;
 $input-editor-color: #595959;
 $editor-placeholder-color: #a9a9a9;
 
@@ -85,13 +62,6 @@ $checkbox-size: 24px;
 $checkbox-background: #0089cf;
 $checkbox-border: #ddd;
 $checkbox-font-size: 13px;
-
-
-// ================================================================
-//  Icon
-// ================================================================
-// $input-line-height copied from _input.scss
-$input-line-height: 14px * 1.5;
 
 
 // ================================================================

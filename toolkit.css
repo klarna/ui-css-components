@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
   -webkit-animation-name: animate-modal-in;
   -moz-animation-name: animate-modal-in;
@@ -15,17 +16,13 @@
 @-webkit-keyframes animate-modal-in {
   from {
     -webkit-transform: scale(0); }
-
   to {
     -webkit-transform: scale(1); } }
-
 @-moz-keyframes animate-modal-in {
   from {
     -moz-transform: scale(0); }
-
   to {
     -moz-transform: scale(1); } }
-
 @keyframes animate-modal-in {
   from {
     -webkit-transform: scale(0);
@@ -33,14 +30,12 @@
     -ms-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
-
   to {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
-
 .cui__field__error-tooltip {
   -webkit-animation-name: show-tooltip;
   -moz-animation-name: show-tooltip;
@@ -64,20 +59,16 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(10px); }
-
   100% {
     -webkit-transform: translateY(0px);
     opacity: 1; } }
-
 @-moz-keyframes show-tooltip {
   0% {
     opacity: 0;
     -moz-transform: translateY(10px); }
-
   100% {
     -moz-transform: translateY(0px);
     opacity: 1; } }
-
 @keyframes show-tooltip {
   0% {
     opacity: 0;
@@ -86,7 +77,6 @@
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
     transform: translateY(10px); }
-
   100% {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -94,15 +84,12 @@
     -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1; } }
-
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(1turn); } }
-
 @-moz-keyframes spin {
   to {
     -moz-transform: rotate(1turn); } }
-
 @keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
@@ -110,7 +97,6 @@
     -ms-transform: rotate(1turn);
     -o-transform: rotate(1turn);
     transform: rotate(1turn); } }
-
 /*
 * Mixins for settings dimensions for elements
 */
@@ -206,7 +192,7 @@
   height: 14px;
   vertical-align: text-bottom;
   font-size: 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__highlighted-button__loader {
       background-image: url("img/loaders/button.loader@2x.png");
       background-size: 14px 14px; } }
@@ -291,18 +277,18 @@
   width: 22px;
   height: 22px;
   font-size: 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__buy-button__loader {
       background-image: url("img/loaders/buy-button-loader@2x.png");
       background-size: 22px 22px; } }
   .cui__buy-button__loader:before {
-    content: url('img/loaders/buy-button-loader.png');
+    content: url("img/loaders/buy-button-loader.png");
     width: 0;
     height: 0;
     display: none; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__buy-button__loader:before {
-        content: url('img/loaders/buy-button-loader@2x.png'); } }
+        content: url("img/loaders/buy-button-loader@2x.png"); } }
   .ie8 .cui__buy-button__loader, .ie9 .cui__buy-button__loader {
     font-size: 20px;
     font-size: 1.25rem;
@@ -387,14 +373,17 @@
   font-family: SSPika;
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/ss-pika/ss-pika.eot');
-  src: url('fonts/ss-pika/ss-pika.eot?#iefix') format('embedded-opentype'), url('fonts/ss-pika/ss-pika.woff') format('woff'), url('fonts/ss-pika/ss-pika.ttf') format('truetype'), url('fonts/ss-pika/ss-pika.svg#SSPika') format('svg'); }
-
+  src: url("fonts/ss-pika/ss-pika.eot");
+  src: url("fonts/ss-pika/ss-pika.eot?#iefix") format("embedded-opentype"), url("fonts/ss-pika/ss-pika.woff") format("woff"), url("fonts/ss-pika/ss-pika.ttf") format("truetype"), url("fonts/ss-pika/ss-pika.svg#SSPika") format("svg"); }
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
 
-.ss-icon, .cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"], .ss-icon.ss-pika, .cui__tooltip--small--up .ss-pika[class$="__button"], .cui__tooltip--small--down .ss-pika[class$="__button"], .cui__tooltip--large--up .ss-pika[class$="__button"], .cui__tooltip--large--down .ss-pika[class$="__button"], [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
+.ss-icon, .cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"], .ss-icon.ss-pika, .cui__tooltip--small--up .ss-pika[class$="__button"], .cui__tooltip--small--down .ss-pika[class$="__button"], .cui__tooltip--large--up .ss-pika[class$="__button"], .cui__tooltip--large--down .ss-pika[class$="__button"],
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
   font-family: "SSPika";
   font-style: normal;
   font-weight: normal;
@@ -409,7 +398,8 @@ html:hover [class^="ss-"] {
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased; }
 
-[class^="ss-"].right:before, [class*=" ss-"].right:before {
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
   display: none;
   content: ''; }
 
@@ -2020,6 +2010,8 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-top: 8px solid #ededed;
     bottom: -17px; }
+    .ie8 .cui__tooltip--small--up [class$="__content"]:after {
+      bottom: -16px; }
 
 /**
  * Small tooltip, below the tooltip icon
@@ -2044,6 +2036,8 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #ededed;
     top: -17px; }
+    .ie8 .cui__tooltip--small--down [class$="__content"]:after {
+      top: -16px; }
 
 /**
  * Large tooltip, above the tooltip icon
@@ -2068,6 +2062,8 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-top: 8px solid #ededed;
     bottom: -17px; }
+    .ie8 .cui__tooltip--large--up [class$="__content"]:after {
+      bottom: -16px; }
 
 /**
  * Large tooltip, below the tooltip icon
@@ -2092,6 +2088,8 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #ededed;
     top: -17px; }
+    .ie8 .cui__tooltip--large--down [class$="__content"]:after {
+      top: -16px; }
 
 .cui__field {
   -webkit-box-sizing: border-box;
@@ -2140,6 +2138,8 @@ html:hover [class^="ss-"] {
   .cui__editor--text:-ms-input-placeholder {
     font-weight: normal;
     color: #a9a9a9; }
+  .ie8 .cui__editor--text {
+    border: 1px solid #a6a6a6; }
   .cui__editor--text:focus, .cui__editor--text:hover {
     outline: none; }
   .cui__editor--text:focus {
@@ -2147,6 +2147,8 @@ html:hover [class^="ss-"] {
     border-radius: 2px;
     box-shadow: inset 0 1px 1px 0 #d3d3d3, inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 3px 1px #0089CF;
     z-index: 1; }
+    .ie8 .cui__editor--text:focus {
+      border: 1px solid #0089CF; }
   .cui__editor--text::-webkit-input-placeholder {
     color: #a9a9a9; }
   .cui__editor--text:-moz-placeholder {
@@ -2190,6 +2192,8 @@ html:hover [class^="ss-"] {
   padding: 3px 10px 4px;
   position: absolute;
   z-index: 10; }
+  .ie8 .cui__field__error-tooltip:after {
+    display: none; }
 
 .cui__select-overlay {
   -webkit-appearance: none;
@@ -2214,8 +2218,8 @@ html:hover [class^="ss-"] {
   padding-right: 43px;
   color: #595959;
   /* Since IE10- doesn't support pointer-events, the CSS based triangled
-     * must be replace with a background image.
-     * The CSS based is kept for retina support. */ }
+   * must be replace with a background image.
+   * The CSS based is kept for retina support. */ }
   .cui__select-overlay.is-placeholder {
     font-weight: normal;
     color: #a9a9a9; }
@@ -2271,16 +2275,16 @@ html:hover [class^="ss-"] {
     .ie8 .cui__select-overlay:before, .ie9 .cui__select-overlay:before, .ie10 .cui__select-overlay:before {
       display: none; }
   .ie8 .cui__select-overlay, .ie9 .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png');
+    background-image: url("img/select/select-arrow.png");
     background-position: 100% 1.2em; }
     .ie8 .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled {
-      background: #f6f6f6 url('img/select/select-arrow.png') 100% 1.2em no-repeat !important; }
+      background: #f6f6f6 url("img/select/select-arrow.png") 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url('img/select/select-arrow.png'), linear-gradient(to   , #f3f3f3 100%);
+    background-image: url("img/select/select-arrow.png"), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
+    background-image: url("img/select/select-arrow.png"), linear-gradient(to   , #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled {
-      background-image: url('img/select/select-arrow.png');
+      background-image: url("img/select/select-arrow.png");
       background-position: 100% 1.2em;
       background-color: #f6f6f6; }
 

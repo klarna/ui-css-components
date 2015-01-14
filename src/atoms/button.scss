@@ -55,8 +55,6 @@
 
 // Regular grey button
 .cui__non-highlighted-button {
-    @extend .cui__flat-button;
-
     @include appearance(none);
     @include font-size($flat-button-font-size);
 
@@ -86,7 +84,7 @@
 
     &:active {
         border: 1px solid rgba(0, 0, 0, 0.15);
-        background: darken($bright-button-background-light, 2%);
+        background: darken($bright-button-background, 2%);
         box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06);
     }
 }
