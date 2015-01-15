@@ -62,6 +62,8 @@
       var callback;
 
       if (UIToolkit.browser.isIE() || UIToolkit.browser.isAndroidStock()) {
+        UIToolkit.toggleFakePlaceholders(editor, wrapper);
+
         callback = function () {
           UIToolkit.toggleFakePlaceholders(editor, wrapper);
         }
