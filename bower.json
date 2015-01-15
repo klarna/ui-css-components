@@ -27,6 +27,7 @@
     "index.jade",
     "snippets",
     "Makefile",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ]
 }
