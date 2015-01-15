@@ -4,7 +4,7 @@ install:
 	npm install
 
 build:
-	bundle exec sass builds/toolkit.scss > toolkit.css
+	bundle exec sass builds/ui-toolkit.scss > ui-toolkit.css
 
 dev:
 	npm start

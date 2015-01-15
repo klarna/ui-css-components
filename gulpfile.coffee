@@ -15,7 +15,7 @@ gulp.task 'browser-sync', ->
 # Sass task, will run when any SCSS files change & BrowserSync
 # will auto-update browsers
 gulp.task 'sass', ->
-  gulp.src 'builds/toolkit.scss'
+  gulp.src 'builds/ui-toolkit.scss'
     .pipe sass()
     .pipe gulp.dest('./')
     .pipe reload({stream:true})
