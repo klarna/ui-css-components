@@ -26,6 +26,10 @@
         return navigator.userAgent.toLowerCase().indexOf('msie') > -1;
       },
 
+      isIE8: function () {
+        return navigator.userAgent.toLowerCase().indexOf('msie 8') > -1;
+      },
+
       isAndroidStock: function () {
         return  navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 &&
                 navigator.userAgent.toLowerCase().indexOf('android') > -1 &&
@@ -45,6 +49,12 @@
         document
           .querySelector('html')
           .setAttribute('data-cui-browser-ie', 'true');
+      }
+
+      if (UIToolkit.browser.isIE8()) {
+        document
+          .querySelector('html')
+          .setAttribute('data-cui-browser-ie8', 'true')
       }
     },
 
@@ -93,6 +103,16 @@
         }
 
         wrapper.className = newClasses.join(' ');
+
+        // In IE8, adding/removing the class "is-placeholder-hidden"
+        // isn't triggering a repaint on the element. This is a fix
+        // to force a repaint by _touching_ the attr in question.
+        // Derp, deeerp....
+        if (UIToolkit.browser.isIE8()) {
+          wrapper.setAttribute(
+            'data-placeholder',
+            wrapper.getAttribute('data-placeholder') );
+        }
       }, 0); // Will be 4, it's always 4, but still faster than the eye.
     }
   }
