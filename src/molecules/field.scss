@@ -10,12 +10,6 @@
 }
 
 
-.cui__editor {
-    @include box-sizing(border-box);
-    width: 100%;
-}
-
-
 .cui__placeholder {
     font-weight: normal;
     color: $editor-placeholder-color;
@@ -23,8 +17,7 @@
 
 
 .cui__editor--text {
-    @extend .cui__editor;
-
+    @include box-sizing(border-box);
     @include appearance(none);
     @include font-size(15px);
 
@@ -33,6 +26,7 @@
         color: $editor-placeholder-color;
     }
 
+    width: 100%;
     background-color: white;
     border-radius: $input-border-radius;
     border: 1px solid $input-box-shadow-color;
@@ -119,6 +113,12 @@
     }
 }
 
+.cui__editor--with-icon {
+    @extend .cui__editor--text;
+
+    padding-left: 36px;
+}
+
 .cui__editor-wrapper {
     position: relative;
     height: 44px;
@@ -146,6 +146,16 @@
 
         &.is-placeholder-hidden:after {
             display: none;
+        }
+    }
+}
+
+.cui__editor-wrapper--with-icon {
+    @extend .cui__editor-wrapper;
+
+    @include respond-to-ie-and-stock {
+        &:after {
+            padding-left: 36px;
         }
     }
 }

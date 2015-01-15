@@ -34,7 +34,7 @@ gulp.task 'reload:html', ->
 
 
 gulp.task 'reload:js', ->
-  gulp.src 'js/*.js'
+  gulp.src '*.js'
     .pipe reload({stream: true})
 
 
@@ -45,5 +45,5 @@ gulp.task 'default', ['sass', 'jade', 'browser-sync'], ->
   gulp.watch 'builds/**/*.scss', ['sass']
   gulp.watch '*.jade', ['jade']
   gulp.watch 'snippets/*.html', ['jade']
-  gulp.watch 'js/*.js', ['reload:js']
+  gulp.watch '*.js', ['reload:js']
   gulp.watch 'index.html', ['reload:html']

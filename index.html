@@ -48,10 +48,9 @@
     <span class="cui__field__error-tooltip">
         Error
     </span>
-    
+
     <div
-        class="cui__editor-wrapper"
-        data-placeholder="Please write your email address">
+        class="cui__editor-wrapper">
         <input
             type="text"
             class="cui__editor--text"
@@ -63,10 +62,9 @@
     &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
         Error
     &lt;/span&gt;
-    
+
     &lt;div
-        class=&quot;cui__editor-wrapper&quot;
-        data-placeholder=&quot;Please write your email address&quot;&gt;
+        class=&quot;cui__editor-wrapper&quot;&gt;
         &lt;input
             type=&quot;text&quot;
             class=&quot;cui__editor--text&quot;
@@ -74,14 +72,45 @@
             value=&quot;&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+</pre><p>With icon</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper--with-icon">
+        <input
+            type="text"
+            class="cui__editor--with-icon"
+            placeholder="Write your query and find out"
+            value="" />
+        <span
+            class="cui__icon ss-pika ss-search"></span>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper--with-icon&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--with-icon&quot;
+            placeholder=&quot;Write your query and find out&quot;
+            value=&quot;&quot; /&gt;
+        &lt;span
+            class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </pre><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
     <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
     </span>
-    
+
     <div
-        class="cui__editor-wrapper is-invalid"
-        data-placeholder="Please write your email address">
+        class="cui__editor-wrapper is-invalid">
         <input
             type="text"
             class="cui__editor--text is-invalid"
@@ -93,10 +122,9 @@
     &lt;span class=&quot;cui__field__error-tooltip is-visible&quot;&gt;
         The email address is invalid
     &lt;/span&gt;
-    
+
     &lt;div
-        class=&quot;cui__editor-wrapper is-invalid&quot;
-        data-placeholder=&quot;Please write your email address&quot;&gt;
+        class=&quot;cui__editor-wrapper is-invalid&quot;&gt;
         &lt;input
             type=&quot;text&quot;
             class=&quot;cui__editor--text is-invalid&quot;
@@ -104,8 +132,12 @@
             value=&quot;engineering@+klarna.com&quot; /&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre><script>var cuiEditorWrappers = document.querySelectorAll('.cui__editor-wrapper');
-var cuiEditors = document.querySelectorAll('.cui__editor--text');
+</pre><script>var cuiEditorWrappers = document
+  .querySelectorAll(
+    '.cui__editor-wrapper, .cui__editor-wrapper--with-icon');
+var cuiEditors = document
+  .querySelectorAll(
+    '.cui__editor--text, .cui__editor--with-icon');
 
 for (var i = 0; i < cuiEditorWrappers.length; i ++) 
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
@@ -156,7 +188,7 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++)
 </div><pre>&lt;a href=&quot;#&quot; class=&quot;cui__non-highlighted-link--standalone&quot;&gt;
     Non highlighted, standalone
 &lt;/a&gt;
-</pre><h2 id="icons" class="presentation"></h2><h3>SS Pika Icon</h3><div class="presentation-example"><div class="icon-container">
+</pre><h2 id="icons" class="presentation">Icons</h2><h3>SS Pika Icon</h3><div class="presentation-example"><div class="icon-container">
     <span class="cui__icon ss-pika ss-cursor"></span>
 </div>
 

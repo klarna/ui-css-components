@@ -7,12 +7,12 @@ $select-overlay-triangle-y-ie: 1.2em;
 }
 
 .cui__select-overlay {
-    @extend .cui__editor;
-
+    @include box-sizing(border-box);
     @include appearance(none);
     @include background-image(linear-gradient(#fff 90%, #f3f3f3 100%));
     @include font-size(15px);
 
+    width: 100%;
     border: 1px solid $input-box-shadow-color;
     border-radius: $input-border-radius;
     display: inline-block;

@@ -61,12 +61,22 @@
     fakePlaceholders: function (editor, wrapper) {
       var callback;
 
+      // Only for IE and Android Stock, that behave differently from others
       if (UIToolkit.browser.isIE() || UIToolkit.browser.isAndroidStock()) {
+
         UIToolkit.toggleFakePlaceholders(editor, wrapper);
 
         callback = function () {
-          UIToolkit.toggleFakePlaceholders(editor, wrapper);
+          setTimeout(function () {
+            UIToolkit.toggleFakePlaceholders(editor, wrapper)
+          }, 0);
         }
+
+        wrapper.setAttribute(
+          'data-placeholder',
+          editor.getAttribute('placeholder'));
+
+        editor.removeAttribute('placeholder');
 
         if (editor.addEventListener) {
           editor.addEventListener('keydown', callback, false);
@@ -83,39 +93,37 @@
     },
 
     toggleFakePlaceholders: function (editor, wrapper) {
-      setTimeout(function () {
-        var className = wrapper.className;
-        var classes;
-        var newClasses = [];
-        var i;
+      var className = wrapper.className;
+      var classes;
+      var newClasses = [];
+      var i;
 
-        if (! editor.value) {
-          classes = className.split(' ');
+      if (! editor.value) {
+        classes = className.split(' ');
 
-          for (i = 0; i < classes.length; i ++) {
-            if (classes[i] !== 'is-placeholder-hidden') {
-              newClasses.push(classes[i]);
-            }
+        for (i = 0; i < classes.length; i ++) {
+          if (classes[i] !== 'is-placeholder-hidden') {
+            newClasses.push(classes[i]);
           }
         }
+      }
 
-        else {
-          newClasses = className.split(' ');
-          newClasses.push('is-placeholder-hidden');
-        }
+      else {
+        newClasses = className.split(' ');
+        newClasses.push('is-placeholder-hidden');
+      }
 
-        wrapper.className = newClasses.join(' ');
+      wrapper.className = newClasses.join(' ');
 
-        // In IE8, adding/removing the class "is-placeholder-hidden"
-        // isn't triggering a repaint on the element. This is a fix
-        // to force a repaint by _touching_ the attr in question.
-        // Derp, deeerp....
-        if (UIToolkit.browser.isIE8()) {
-          wrapper.setAttribute(
-            'data-placeholder',
-            wrapper.getAttribute('data-placeholder') );
-        }
-      }, 0); // Will be 4, it's always 4, but still faster than the eye.
+      // In IE8, adding/removing the class "is-placeholder-hidden"
+      // isn't triggering a repaint on the element. This is a fix
+      // to force a repaint by _touching_ the attr in question.
+      // Derp, deeerp....
+      if (UIToolkit.browser.isIE8()) {
+        wrapper.setAttribute(
+          'data-placeholder',
+          wrapper.getAttribute('data-placeholder') );
+      }
     }
   }
 
