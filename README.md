@@ -19,7 +19,7 @@ Usage
 
 ### CSS / SASS
 
-There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
+There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
 
 ```html
 <link rel="stylesheet" href="bower_components/ui-toolkit/ui-toolkit.css" />
