@@ -29,14 +29,16 @@ If you do this, however, you are going to miss on all the SASS mixins and variab
 
 Alternatively, you can integrate directly the SASS files. To do that, you can either import `builds/ui-toolkit.scss` into your SASS or import only the mixins, atoms and molecules that you are interested in. If you select manually a subset of atoms and molecules, please bear in mind that you might need to provide defaults for some variables and you might also need to include mixins and Bourbon for the components to build properly.
 
+#### Easiest way with SASS
+
 The easiest way of getting started with the UI Toolkit on SASS is to copy the contents of `src/settings.scss` into your own settings file and then create a SASS file containing:
 
 ```scss
-@import 'your-settings-file';
+@import 'your-own-settings-file';
 @import 'path/to/toolkit/builds/ui-toolkit-no-settings';
 ```
 
-# JS
+### JS
 
 The UI Toolkit includes a JS library. Include that with:
 
@@ -46,7 +48,35 @@ The UI Toolkit includes a JS library. Include that with:
   src="bower_components/ui-toolkit/ui-toolkit.js"></script>
 ```
 
-Documentation for the library is pending.
+Documentation for the JS library is patchy.
+
+#### Fake placeholders for IE and Android
+
+The UI Toolkit provides fake placeholders for the `field` component. You have to initialize them after rendering. For example:
+
+```html
+<div class="cui__field">
+  <span class="cui__field__error-tooltip">
+    Error
+  </span>
+
+  <div
+    class="cui__editor-wrapper">
+    <input
+      type="text"
+      class="cui__editor--text"
+      placeholder="Please write your email address"
+      value="" />
+  </div>
+</div>
+
+<script type="text/javascript">
+  var editor  = document.querySelector('.cui__editor--text');
+  var wrapper = document.querySelector('.cui__editor-wrapper');
+
+  UIToolkit.fakePlaceholders(editor, wrapper);
+</script>
+```
 
 Development
 -----------
