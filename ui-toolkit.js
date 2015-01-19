@@ -1,5 +1,5 @@
 (function (name, definition) {
-  
+
   'use strict';
 
   // AMD
@@ -95,15 +95,15 @@
     },
 
     toggleFakePlaceholders: function (editor, wrapper) {
-      var className = wrapper.className;
-      var classes;
-      var newClasses = [];
-      var i;
+      var className = wrapper.className,
+          classes, i, length,
+          newClasses = [];
 
       if (! editor.value) {
         classes = className.split(' ');
+        length = classes.length;
 
-        for (i = 0; i < classes.length; i ++) {
+        for (i = 0; i < length; i ++) {
           if (classes[i] !== 'is-placeholder-hidden') {
             newClasses.push(classes[i]);
           }
