@@ -2109,6 +2109,8 @@ html:hover [class^="ss-"] {
   margin-bottom: 10.5px; }
   .cui__field.is-hidden, .is-hidden.cui__select {
     display: none; }
+  .cui__field:focus, .cui__select:focus {
+    outline: none; }
 
 .cui__placeholder {
   font-weight: normal;

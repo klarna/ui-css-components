@@ -21,42 +21,39 @@
 
   'use strict';
 
+  var ua = (navigator.userAgent || '').toLowerCase(),
+      rootEl = document.documentElement;
+
   var UIToolkit = {
 
     browser: {
       isIE: function () {
-        return navigator.userAgent.toLowerCase().indexOf('msie') > -1;
+        return ua.indexOf('msie') > -1;
       },
 
       isIE8: function () {
-        return navigator.userAgent.toLowerCase().indexOf('msie 8') > -1;
+        return ua.indexOf('msie 8') > -1;
       },
 
       isAndroidStock: function () {
-        return  navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 &&
-                navigator.userAgent.toLowerCase().indexOf('android') > -1 &&
-                navigator.userAgent.toLowerCase().indexOf('applewebkit') > -1 &&
-                navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+        return  ua.indexOf('mozilla/5.0') > -1 &&
+                ua.indexOf('android') > -1 &&
+                ua.indexOf('applewebkit') > -1 &&
+                ua.indexOf('chrome') > -1;
       }
     },
 
     scopeBrowser: function () {
       if (UIToolkit.browser.isAndroidStock()) {
-        document
-          .querySelector('html')
-          .setAttribute('data-cui-browser-android--stock', 'true');
+        rootEl.setAttribute('data-cui-browser-android--stock', 'true');
       }
 
       if (UIToolkit.browser.isIE()) {
-        document
-          .querySelector('html')
-          .setAttribute('data-cui-browser-ie', 'true');
+        rootEl.setAttribute('data-cui-browser-ie', 'true');
       }
 
       if (UIToolkit.browser.isIE8()) {
-        document
-          .querySelector('html')
-          .setAttribute('data-cui-browser-ie8', 'true');
+        rootEl.setAttribute('data-cui-browser-ie8', 'true');
       }
     },
 
@@ -95,7 +92,7 @@
     },
 
     toggleFakePlaceholders: function (editor, wrapper) {
-      var className = wrapper.className,
+      var className = wrapper.className || '',
           classes, i, length,
           newClasses = [];
 
@@ -108,9 +105,7 @@
             newClasses.push(classes[i]);
           }
         }
-      }
-
-      else {
+      } else {
         newClasses = className.split(' ');
         newClasses.push('is-placeholder-hidden');
       }
