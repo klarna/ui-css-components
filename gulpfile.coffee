@@ -15,14 +15,14 @@ gulp.task 'browser-sync', ->
 
 # Sass task, will run when any SCSS files change & BrowserSync
 # will auto-update browsers
-gulp.task 'sass', ->
+gulp.task 'reload:sass', ->
   gulp.src 'builds/ui-toolkit.scss'
     .pipe sass()
     .pipe gulp.dest('./')
     .pipe reload({stream:true})
 
 
-gulp.task 'jade', ->
+gulp.task 'reload:jade', ->
   gulp.src '*.jade'
     .pipe jade()
     .pipe gulp.dest('./')
@@ -43,10 +43,10 @@ gulp.task 'reload:js', ->
 
 
 # Default task to be run with `gulp`
-gulp.task 'default', ['sass', 'jade', 'browser-sync'], ->
-  gulp.watch 'src/**/*.scss', ['sass']
-  gulp.watch 'builds/**/*.scss', ['sass']
-  gulp.watch '*.jade', ['jade']
-  gulp.watch 'snippets/*.html', ['jade']
+gulp.task 'default', ['reload:sass', 'reload:jade', 'browser-sync'], ->
+  gulp.watch 'src/**/*.scss', ['reload:sass']
+  gulp.watch 'builds/**/*.scss', ['reload:sass']
+  gulp.watch '*.jade', ['reload:jade']
+  gulp.watch 'snippets/*.html', ['reload:jade']
   gulp.watch '*.js', ['reload:js']
   gulp.watch 'index.html', ['reload:html']

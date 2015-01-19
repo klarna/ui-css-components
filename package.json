@@ -21,8 +21,8 @@
   ],
   "author": "Team Douglas <team.douglas@klarna.com>",
   "dependencies": {
-    "coffee-script": "^1.8.0",
-    "gulp-jade": "^0.10.0",
-    "gulp-jshint": "^1.9.0"
+    "coffee-script": "1.8.0",
+    "gulp-jade": "0.10.0",
+    "gulp-jshint": "1.9.0"
   }
 }
