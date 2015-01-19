@@ -3,6 +3,7 @@ browserSync = require 'browser-sync'
 reload      = browserSync.reload
 sass        = require 'gulp-sass'
 jade        = require 'gulp-jade'
+jshint      = require 'gulp-jshint'
 
 
 # browser-sync task for starting the server.
@@ -35,6 +36,8 @@ gulp.task 'reload:html', ->
 
 gulp.task 'reload:js', ->
   gulp.src '*.js'
+    .pipe jshint()
+    .pipe jshint.reporter('default')
     .pipe reload({stream: true})
 
 

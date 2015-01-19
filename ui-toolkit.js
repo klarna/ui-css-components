@@ -1,6 +1,6 @@
-'use strict';
-
 (function (name, definition) {
+  
+  'use strict';
 
   // AMD
   if (typeof define === 'function') {
@@ -18,6 +18,8 @@
   }
 
 })('UIToolkit', function () {
+
+  'use strict';
 
   var UIToolkit = {
 
@@ -54,7 +56,7 @@
       if (UIToolkit.browser.isIE8()) {
         document
           .querySelector('html')
-          .setAttribute('data-cui-browser-ie8', 'true')
+          .setAttribute('data-cui-browser-ie8', 'true');
       }
     },
 
@@ -68,9 +70,9 @@
 
         callback = function () {
           setTimeout(function () {
-            UIToolkit.toggleFakePlaceholders(editor, wrapper)
+            UIToolkit.toggleFakePlaceholders(editor, wrapper);
           }, 0);
-        }
+        };
 
         wrapper.setAttribute(
           'data-placeholder',
@@ -125,7 +127,8 @@
           wrapper.getAttribute('data-placeholder') );
       }
     }
-  }
+  };
+
 
   UIToolkit.scopeBrowser();
 
