@@ -1,0 +1,13 @@
+@mixin respond-to-ie-and-stock($ie-versions: ('')) {
+    @include respond-to-ie($ie-versions) {
+        @content;
+    }
+    .android--stock & {
+        @content;
+    }
+
+    [data-cui-browser-ie] &,
+    [data-cui-browser-android--stock] & {
+        @content;
+    }
+}

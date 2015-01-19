@@ -1,6 +1,6 @@
 {
   "name": "ui-toolkit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "KCO UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",
@@ -19,5 +19,9 @@
     "toolkit",
     "kco"
   ],
-  "author": "Team Douglas <team.douglas@klarna.com>"
+  "author": "Team Douglas <team.douglas@klarna.com>",
+  "dependencies": {
+    "gulp-jade": "0.10.0",
+    "gulp-jshint": "1.9.0"
+  }
 }
