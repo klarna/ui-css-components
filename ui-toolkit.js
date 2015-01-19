@@ -5,15 +5,13 @@
   // AMD
   if (typeof define === 'function') {
     define(definition);
-  }
 
   // Node.js
-  else if (typeof module !== 'undefined' && module.exports) {
+  } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = definition();
-  }
 
   // Browser
-  else {
+  } else {
     window[name] = definition();
   }
 
@@ -81,9 +79,7 @@
           editor.addEventListener('keydown', callback, false);
           editor.addEventListener('change', callback, false);
           editor.addEventListener('mouseup', callback, false);
-        }
-
-        else {
+        } else {
           editor.attachEvent('onkeydown', callback);
           editor.attachEvent('onchange', callback);
           editor.attachEvent('onmouseup', callback);
