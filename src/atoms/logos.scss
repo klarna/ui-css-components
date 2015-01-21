@@ -17,3 +17,33 @@
         background-image: url($ui_toolkit_path + $visaelectron_18px_png);
     }
 }
+
+.cui__logo--mastercard-18px {
+    background-image: url($ui_toolkit_path + $mastercard_18px_svg);
+    width: 25px;
+    height: 18px;
+
+    @include respond-to-ie(8) {
+        background-image: url($ui_toolkit_path + $mastercard_18px_png);
+    }
+}
+
+.cui__logo--maestro-18px {
+    background-image: url($ui_toolkit_path + $maestro_18px_svg);
+    width: 25px;
+    height: 18px;
+
+    @include respond-to-ie(8) {
+        background-image: url($ui_toolkit_path + $maestro_18px_png);
+    }
+}
+
+.cui__logo--amex-18px {
+    background-image: url($ui_toolkit_path + $amex_18px_svg);
+    width: 20px;
+    height: 18px;
+
+    @include respond-to-ie(8) {
+        background-image: url($ui_toolkit_path + $amex_18px_png);
+    }
+}

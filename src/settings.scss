@@ -1,4 +1,9 @@
 // ================================================================
+//  General
+// ================================================================
+$ui_toolkit-path: "";
+
+// ================================================================
 //  Images
 // ================================================================
 $button-loader-image-url: 'img/loaders/button.loader';
@@ -92,3 +97,22 @@ $tooltip-content-width: 190px;
 $tooltip-arrow-size: 16px;
 $tooltip-icon-size-small: 14px;
 $tooltip-icon-size-large: 17px;
+
+
+// ================================================================
+//  Logos
+// ================================================================
+$visa_18px_svg: 'img/logos/svg-size-optimized/18px-height/visa.svg';
+$visa_18px_png: 'img/logos/png/18px-height/visa.png';
+
+$visaelectron_18px_svg: 'img/logos/svg-size-optimized/18px-height/visa-electron.svg';
+$visaelectron_18px_png: 'img/logos/png/18px-height/visa-electron.png';
+
+$mastercard_18px_svg: 'img/logos/svg-size-optimized/18px-height/mastercard.svg';
+$mastercard_18px_png: 'img/logos/png/18px-height/mastercard.png';
+
+$maestro_18px_svg: 'img/logos/svg-size-optimized/18px-height/maestro.svg';
+$maestro_18px_png: 'img/logos/png/18px-height/maestro.png';
+
+$amex_18px_svg: 'img/logos/svg-size-optimized/18px-height/amex-solid.svg';
+$amex_18px_png: 'img/logos/png/18px-height/amex-solid.png';
