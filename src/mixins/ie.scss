@@ -31,6 +31,7 @@
     $selectors: ();
     @each $version in $versions {
         $selectors: $selectors, unquote('.ie#{$version} &');
+        $selectors: $selectors, unquote('[data-cui-browser-ie#{$version}] &');
     }
     #{$selectors} {
         @content;

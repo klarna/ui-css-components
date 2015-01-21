@@ -1,0 +1,19 @@
+.cui__logo--visa-18px {
+    background-image: url($ui_toolkit_path + $visa_18px_svg);
+    width: 26px;
+    height: 18px;
+
+    @include respond-to-ie(8) {
+        background-image: url($ui_toolkit_path + $visa_18px_png);
+    }
+}
+
+.cui__logo--visaelectron-18px {
+    background-image: url($ui_toolkit_path + $visaelectron_18px_svg);
+    width: 30px;
+    height: 18px;
+
+    @include respond-to-ie(8) {
+        background-image: url($ui_toolkit_path + $visaelectron_18px_png);
+    }
+}
