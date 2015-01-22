@@ -2101,40 +2101,40 @@ html:hover [class^="ss-"] {
     .ie8 .cui__tooltip--large--down [class$="__content"]:after, [data-cui-browser-ie8] .cui__tooltip--large--down [class$="__content"]:after {
       top: -16px; }
 
-.cui__logo--visa-18px {
-  background-image: url("img/logos/svg-size-optimized/18px-height/visa.svg");
-  width: 26px;
-  height: 18px; }
-  .ie8 .cui__logo--visa-18px, [data-cui-browser-ie8] .cui__logo--visa-18px {
-    background-image: url("img/logos/png/18px-height/visa.png"); }
+.cui__logo--visa--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/visa.svg");
+  width: 31px;
+  height: 22px; }
+  .ie .cui__logo--visa--tiny, [data-cui-browser-ie] .cui__logo--visa--tiny {
+    background-image: url("img/logos/png/22px-height/visa.png"); }
 
-.cui__logo--visaelectron-18px {
-  background-image: url("img/logos/svg-size-optimized/18px-height/visa-electron.svg");
+.cui__logo--visa-electron--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/visa-electron.svg");
+  width: 36px;
+  height: 22px; }
+  .ie .cui__logo--visa-electron--tiny, [data-cui-browser-ie] .cui__logo--visa-electron--tiny {
+    background-image: url("img/logos/png/22px-height/visa-electron.png"); }
+
+.cui__logo--mastercard--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/mastercard.svg");
   width: 30px;
-  height: 18px; }
-  .ie8 .cui__logo--visaelectron-18px, [data-cui-browser-ie8] .cui__logo--visaelectron-18px {
-    background-image: url("img/logos/png/18px-height/visa-electron.png"); }
+  height: 22px; }
+  .ie .cui__logo--mastercard--tiny, [data-cui-browser-ie] .cui__logo--mastercard--tiny {
+    background-image: url("img/logos/png/22px-height/mastercard.png"); }
 
-.cui__logo--mastercard-18px {
-  background-image: url("img/logos/svg-size-optimized/18px-height/mastercard.svg");
+.cui__logo--maestro--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/maestro.svg");
+  width: 30px;
+  height: 22px; }
+  .ie .cui__logo--maestro--tiny, [data-cui-browser-ie] .cui__logo--maestro--tiny {
+    background-image: url("img/logos/png/22px-height/maestro.png"); }
+
+.cui__logo--amex--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/amex-solid.svg");
   width: 25px;
-  height: 18px; }
-  .ie8 .cui__logo--mastercard-18px, [data-cui-browser-ie8] .cui__logo--mastercard-18px {
-    background-image: url("img/logos/png/18px-height/mastercard.png"); }
-
-.cui__logo--maestro-18px {
-  background-image: url("img/logos/svg-size-optimized/18px-height/maestro.svg");
-  width: 25px;
-  height: 18px; }
-  .ie8 .cui__logo--maestro-18px, [data-cui-browser-ie8] .cui__logo--maestro-18px {
-    background-image: url("img/logos/png/18px-height/maestro.png"); }
-
-.cui__logo--amex-18px {
-  background-image: url("img/logos/svg-size-optimized/18px-height/amex-solid.svg");
-  width: 20px;
-  height: 18px; }
-  .ie8 .cui__logo--amex-18px, [data-cui-browser-ie8] .cui__logo--amex-18px {
-    background-image: url("img/logos/png/18px-height/amex-solid.png"); }
+  height: 22px; }
+  .ie .cui__logo--amex--tiny, [data-cui-browser-ie] .cui__logo--amex--tiny {
+    background-image: url("img/logos/png/22px-height/amex-solid.png"); }
 
 .cui__field, .cui__select {
   -webkit-box-sizing: border-box;

@@ -47,7 +47,7 @@ gulp.task('reload:js', function() {
 gulp.task('images:1x', function () {
     gulp.src('img/logos/svg/**/*.svg')
         .pipe(svg2png())
-        .pipe(gulp.dest('img/logos/png'));
+        .pipe(gulp.dest('img/logos/png/22px-height'));
 });
 
 gulp.task('images:2x', function () {
@@ -56,7 +56,7 @@ gulp.task('images:2x', function () {
         .pipe(rename({
             suffix: '@2x'
         }))
-        .pipe(gulp.dest('img/logos/png'))
+        .pipe(gulp.dest('img/logos/png/22px-height'))
 });
 
 gulp.task('images', ['images:1x', 'images:2x']);
