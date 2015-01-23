@@ -22,6 +22,8 @@
   "author": "Team Douglas <team.douglas@klarna.com>",
   "dependencies": {
     "gulp-jade": "0.10.0",
-    "gulp-jshint": "1.9.0"
+    "gulp-jshint": "1.9.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-svg2png": "^0.3.0"
   }
 }

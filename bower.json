@@ -21,6 +21,7 @@
     "support",
     "package.json",
     "dev.css",
+    "gulpfile.js",
     "Gemfile*",
     "gulpfile.coffee",
     "index.html",

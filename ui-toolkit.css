@@ -184,7 +184,7 @@
   color: #fff;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 13px; }
-  .ie .cui__highlighted-button {
+  .ie .cui__highlighted-button, [data-cui-browser-ie] .cui__highlighted-button {
     padding: 12px 14px 11px; }
   @media screen and (min-width: 569px) {
     .cui__highlighted-button {
@@ -210,7 +210,7 @@
     .cui__highlighted-button__loader {
       background-image: url("img/loaders/button.loader@2x.png");
       background-size: 14px 14px; } }
-  .ie8 .cui__highlighted-button__loader, .ie9 .cui__highlighted-button__loader {
+  .ie8 .cui__highlighted-button__loader, [data-cui-browser-ie8] .cui__highlighted-button__loader, .ie9 .cui__highlighted-button__loader, [data-cui-browser-ie9] .cui__highlighted-button__loader {
     font-size: 15px;
     font-size: 0.9375rem;
     width: 100%;
@@ -235,9 +235,9 @@
   background: #fff;
   color: #555;
   padding: 13px; }
-  .ie .cui__non-highlighted-button {
+  .ie .cui__non-highlighted-button, [data-cui-browser-ie] .cui__non-highlighted-button {
     padding: 11px 13px 10px; }
-  .ie8 .cui__non-highlighted-button {
+  .ie8 .cui__non-highlighted-button, [data-cui-browser-ie8] .cui__non-highlighted-button {
     border: 1px solid #d8d8d8; }
   .cui__non-highlighted-button:hover {
     background: #fafafa; }
@@ -2020,7 +2020,7 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-top: 8px solid #ededed;
     bottom: -17px; }
-    .ie8 .cui__tooltip--small--up [class$="__content"]:after {
+    .ie8 .cui__tooltip--small--up [class$="__content"]:after, [data-cui-browser-ie8] .cui__tooltip--small--up [class$="__content"]:after {
       bottom: -16px; }
 
 /**
@@ -2046,7 +2046,7 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #ededed;
     top: -17px; }
-    .ie8 .cui__tooltip--small--down [class$="__content"]:after {
+    .ie8 .cui__tooltip--small--down [class$="__content"]:after, [data-cui-browser-ie8] .cui__tooltip--small--down [class$="__content"]:after {
       top: -16px; }
 
 /**
@@ -2072,7 +2072,7 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-top: 8px solid #ededed;
     bottom: -17px; }
-    .ie8 .cui__tooltip--large--up [class$="__content"]:after {
+    .ie8 .cui__tooltip--large--up [class$="__content"]:after, [data-cui-browser-ie8] .cui__tooltip--large--up [class$="__content"]:after {
       bottom: -16px; }
 
 /**
@@ -2098,8 +2098,43 @@ html:hover [class^="ss-"] {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #ededed;
     top: -17px; }
-    .ie8 .cui__tooltip--large--down [class$="__content"]:after {
+    .ie8 .cui__tooltip--large--down [class$="__content"]:after, [data-cui-browser-ie8] .cui__tooltip--large--down [class$="__content"]:after {
       top: -16px; }
+
+.cui__logo--visa--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/visa.svg");
+  width: 31px;
+  height: 22px; }
+  .ie .cui__logo--visa--tiny, [data-cui-browser-ie] .cui__logo--visa--tiny {
+    background-image: url("img/logos/png/22px-height/visa.png"); }
+
+.cui__logo--visa-electron--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/visa-electron.svg");
+  width: 36px;
+  height: 22px; }
+  .ie .cui__logo--visa-electron--tiny, [data-cui-browser-ie] .cui__logo--visa-electron--tiny {
+    background-image: url("img/logos/png/22px-height/visa-electron.png"); }
+
+.cui__logo--mastercard--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/mastercard.svg");
+  width: 30px;
+  height: 22px; }
+  .ie .cui__logo--mastercard--tiny, [data-cui-browser-ie] .cui__logo--mastercard--tiny {
+    background-image: url("img/logos/png/22px-height/mastercard.png"); }
+
+.cui__logo--maestro--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/maestro.svg");
+  width: 30px;
+  height: 22px; }
+  .ie .cui__logo--maestro--tiny, [data-cui-browser-ie] .cui__logo--maestro--tiny {
+    background-image: url("img/logos/png/22px-height/maestro.png"); }
+
+.cui__logo--amex--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/amex-solid.svg");
+  width: 25px;
+  height: 22px; }
+  .ie .cui__logo--amex--tiny, [data-cui-browser-ie] .cui__logo--amex--tiny {
+    background-image: url("img/logos/png/22px-height/amex-solid.png"); }
 
 .cui__field, .cui__select {
   -webkit-box-sizing: border-box;
@@ -2148,9 +2183,9 @@ html:hover [class^="ss-"] {
   .cui__editor--text:-ms-input-placeholder, .cui__editor--with-icon:-ms-input-placeholder {
     font-weight: normal;
     color: #a9a9a9; }
-  .ie8 .cui__editor--text, .ie8 .cui__editor--with-icon {
+  .ie8 .cui__editor--text, .ie8 .cui__editor--with-icon, [data-cui-browser-ie8] .cui__editor--text, [data-cui-browser-ie8] .cui__editor--with-icon {
     border: 1px solid #a6a6a6; }
-  .ie .cui__editor--text, .ie .cui__editor--with-icon {
+  .ie .cui__editor--text, .ie .cui__editor--with-icon, [data-cui-browser-ie] .cui__editor--text, [data-cui-browser-ie] .cui__editor--with-icon {
     background-color: transparent;
     background-image: url('img/background/input-background-1x1.png');
     z-index: 2; }
@@ -2169,7 +2204,7 @@ html:hover [class^="ss-"] {
     border-radius: 2px;
     box-shadow: inset 0 1px 1px 0 #d3d3d3, inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 3px 1px #0089CF;
     z-index: 1; }
-    .ie8 .cui__editor--text:focus, .ie8 .cui__editor--with-icon:focus {
+    .ie8 .cui__editor--text:focus, .ie8 .cui__editor--with-icon:focus, [data-cui-browser-ie8] .cui__editor--text:focus, [data-cui-browser-ie8] .cui__editor--with-icon:focus {
       border: 1px solid #0089CF; }
   .cui__editor--text::-webkit-input-placeholder, .cui__editor--with-icon::-webkit-input-placeholder {
     color: #a9a9a9; }
@@ -2202,7 +2237,7 @@ html:hover [class^="ss-"] {
 .cui__editor-wrapper, .cui__editor-wrapper--with-icon {
   position: relative;
   height: 44px; }
-  .ie .cui__editor-wrapper:after, .ie .cui__editor-wrapper--with-icon:after {
+  .ie .cui__editor-wrapper:after, .ie .cui__editor-wrapper--with-icon:after, [data-cui-browser-ie] .cui__editor-wrapper:after, [data-cui-browser-ie] .cui__editor-wrapper--with-icon:after {
     font-size: 15px;
     font-size: 0.9375rem;
     width: 100%;
@@ -2217,9 +2252,9 @@ html:hover [class^="ss-"] {
     display: block;
     z-index: 1;
     box-sizing: border-box; }
-  .ie .cui__editor-wrapper.is-invalid:after, .ie .is-invalid.cui__editor-wrapper--with-icon:after {
+  .ie .cui__editor-wrapper.is-invalid:after, .ie .is-invalid.cui__editor-wrapper--with-icon:after, [data-cui-browser-ie] .cui__editor-wrapper.is-invalid:after, [data-cui-browser-ie] .is-invalid.cui__editor-wrapper--with-icon:after {
     padding-top: 7px; }
-  .ie .cui__editor-wrapper.is-placeholder-hidden:after, .ie .is-placeholder-hidden.cui__editor-wrapper--with-icon:after {
+  .ie .cui__editor-wrapper.is-placeholder-hidden:after, .ie .is-placeholder-hidden.cui__editor-wrapper--with-icon:after, [data-cui-browser-ie] .cui__editor-wrapper.is-placeholder-hidden:after, [data-cui-browser-ie] .is-placeholder-hidden.cui__editor-wrapper--with-icon:after {
     display: none; }
   .android--stock .cui__editor-wrapper:after, .android--stock .cui__editor-wrapper--with-icon:after {
     font-size: 15px;
@@ -2260,7 +2295,7 @@ html:hover [class^="ss-"] {
   [data-cui-browser-ie] .cui__editor-wrapper.is-placeholder-hidden:after, [data-cui-browser-ie] .is-placeholder-hidden.cui__editor-wrapper--with-icon:after, [data-cui-browser-android--stock] .cui__editor-wrapper.is-placeholder-hidden:after, [data-cui-browser-android--stock] .is-placeholder-hidden.cui__editor-wrapper--with-icon:after {
     display: none; }
 
-.ie .cui__editor-wrapper--with-icon:after {
+.ie .cui__editor-wrapper--with-icon:after, [data-cui-browser-ie] .cui__editor-wrapper--with-icon:after {
   padding-left: 36px; }
 .android--stock .cui__editor-wrapper--with-icon:after {
   padding-left: 36px; }
@@ -2285,7 +2320,7 @@ html:hover [class^="ss-"] {
   padding: 3px 10px 4px;
   position: absolute;
   z-index: 10; }
-  .ie8 .cui__field__error-tooltip:after {
+  .ie8 .cui__field__error-tooltip:after, [data-cui-browser-ie8] .cui__field__error-tooltip:after {
     display: none; }
   .cui__field__error-tooltip.is-visible {
     display: block; }
@@ -2367,25 +2402,25 @@ html:hover [class^="ss-"] {
     right: 34px;
     width: 1px;
     height: 100%; }
-  .ie8 .cui__select-overlay {
+  .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay {
     border: 1px solid #a6a6a6;
     height: 44px; }
-  .ie .cui__select-overlay {
+  .ie .cui__select-overlay, [data-cui-browser-ie] .cui__select-overlay {
     height: 43px; }
-  .ie8 .cui__select-overlay, .ie9 .cui__select-overlay, .ie10 .cui__select-overlay {
+  .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay, .ie9 .cui__select-overlay, [data-cui-browser-ie9] .cui__select-overlay, .ie10 .cui__select-overlay, [data-cui-browser-ie10] .cui__select-overlay {
     background-repeat: no-repeat; }
-    .ie8 .cui__select-overlay:before, .ie9 .cui__select-overlay:before, .ie10 .cui__select-overlay:before {
+    .ie8 .cui__select-overlay:before, [data-cui-browser-ie8] .cui__select-overlay:before, .ie9 .cui__select-overlay:before, [data-cui-browser-ie9] .cui__select-overlay:before, .ie10 .cui__select-overlay:before, [data-cui-browser-ie10] .cui__select-overlay:before {
       display: none; }
-  .ie8 .cui__select-overlay, .ie9 .cui__select-overlay {
+  .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay, .ie9 .cui__select-overlay, [data-cui-browser-ie9] .cui__select-overlay {
     background-image: url('img/select/select-arrow.png');
     background-position: 100% 1.2em; }
-    .ie8 .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled {
+    .ie8 .cui__select-overlay.is-disabled, [data-cui-browser-ie8] .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled, [data-cui-browser-ie9] .cui__select-overlay.is-disabled {
       background: #f6f6f6 url('img/select/select-arrow.png') 100% 1.2em no-repeat !important; }
-  .ie10 .cui__select-overlay {
+  .ie10 .cui__select-overlay, [data-cui-browser-ie10] .cui__select-overlay {
     background-image: url('img/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
     background-image: url('img/select/select-arrow.png'), linear-gradient(to   , #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
-    .ie10 .cui__select-overlay.is-disabled {
+    .ie10 .cui__select-overlay.is-disabled, [data-cui-browser-ie10] .cui__select-overlay.is-disabled {
       background-image: url('img/select/select-arrow.png');
       background-position: 100% 1.2em;
       background-color: #f6f6f6; }
@@ -2411,5 +2446,5 @@ html:hover [class^="ss-"] {
   height: 44px;
   width: 100%;
   line-height: normal; }
-  .ie .cui__select-dropdown {
+  .ie .cui__select-dropdown, [data-cui-browser-ie] .cui__select-dropdown {
     height: 43px; }
