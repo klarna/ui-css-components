@@ -1,0 +1,49 @@
+.cui__logo--visa--tiny {
+    background-image: url($ui_toolkit_path + $visa_tiny_svg);
+    width: 31px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $visa_tiny_png);
+    }
+}
+
+.cui__logo--visa-electron--tiny {
+    background-image: url($ui_toolkit_path + $visaelectron_tiny_svg);
+    width: 36px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $visaelectron_tiny_png);
+    }
+}
+
+.cui__logo--mastercard--tiny {
+    background-image: url($ui_toolkit_path + $mastercard_tiny_svg);
+    width: 30px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $mastercard_tiny_png);
+    }
+}
+
+.cui__logo--maestro--tiny {
+    background-image: url($ui_toolkit_path + $maestro_tiny_svg);
+    width: 30px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $maestro_tiny_png);
+    }
+}
+
+.cui__logo--amex--tiny {
+    background-image: url($ui_toolkit_path + $amex_tiny_svg);
+    width: 25px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $amex_tiny_png);
+    }
+}

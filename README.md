@@ -17,6 +17,18 @@ Please note that the commit-ish (everything after the `#`) should point to the v
 Usage
 -----
 
+### Seeing the showroom and developing
+
+Clone this repo and run:
+
+```sh
+nvm 0.10.31
+make install
+make dev
+```
+
+You can edit the SCSS files, the Jade file and the HTML snippets and they will be live reloaded for your convenience.
+
 ### CSS / SASS
 
 There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
@@ -77,17 +89,48 @@ The UI Toolkit provides fake placeholders for the `field` component. You have to
   UIToolkit.fakePlaceholders(editor, wrapper);
 </script>
 ```
+### SVG pipeline
 
-Development
------------
+For adding SVGs to the toolkit, the pipeline is:
 
-Clone this repo and run:
+#### 1. Get a source SVG from sketch
 
-```sh
-nvm 0.10.31
-make install
-make dev
-```
+Sketch exports high quality SVG files. For the files to be usable in
+production, they have to be optimized.
+
+Some optimizations can be done manually and they do not affect the
+quality of the image. You can strip:
+
+- The XML version declaration
+- The XML comments
+- The tags: `title`, `desc`, `defs`
+- All the `g`s that cancel each other (warning: if there is an attribute
+  named `fill-rule` make sure some wrapper `g` has it)
+- The `stroke`, `fill` and `stroke-width` attributes from the wrapper `g` tags
+- The `id` attributes of everything
+- The `sketch` namespaced attributes
+
+Add that file in the corresponding /svg folder. No convention is defined
+yet, so please ask if you have doubts.
+
+#### 2. Build a low quality, optimized version
+
+This is done manually so far. Copy paste the code of the manually
+optimized high quality SVG into this site:
+https://petercollingridge.appspot.com/svg-editor
+
+Run the optimizations and download the end result. Add the optimized
+file to the corresponding optimized folder.
+
+#### 3. Get a PNG version with the images task
+
+Gulp includes now a task for building PNG and retina PNG (2x) files from
+SVG. Images saved in the current default location (`img/logos/svg`) will
+be assumed to measure 22px in height and are going to be rasterized and
+saved into `img/logos/png/22px-height`. Run `gulp images` to get this
+images built.
+
+If your images have a different height or lie in different folders, please create new gulp tasks with the corresponding settings.
 
 Build
 -----
