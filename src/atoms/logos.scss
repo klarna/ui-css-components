@@ -47,3 +47,13 @@
         background-image: url($ui_toolkit_path + $amex_tiny_png);
     }
 }
+
+.cui__logo--discover--tiny {
+    background-image: url($ui_toolkit_path + $discover_tiny_svg);
+    width: 28px;
+    height: 22px;
+
+    @include respond-to-ie {
+        background-image: url($ui_toolkit_path + $discover_tiny_png);
+    }
+}
