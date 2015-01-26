@@ -2136,6 +2136,13 @@ html:hover [class^="ss-"] {
   .ie .cui__logo--amex--tiny, [data-cui-browser-ie] .cui__logo--amex--tiny {
     background-image: url("img/logos/png/22px-height/amex-solid.png"); }
 
+.cui__logo--discover--tiny {
+  background-image: url("img/logos/svg-tiny-optimized/discover.svg");
+  width: 28px;
+  height: 22px; }
+  .ie .cui__logo--discover--tiny, [data-cui-browser-ie] .cui__logo--discover--tiny {
+    background-image: url("img/logos/png/22px-height/discover.png"); }
+
 .cui__field, .cui__select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
