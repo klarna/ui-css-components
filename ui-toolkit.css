@@ -2235,8 +2235,8 @@ html:hover [class^="ss-"] {
       color: #545454;
       opacity: 1; }
   .cui__editor--text.is-invalid, .is-invalid.cui__editor--with-icon {
-    padding-bottom: 6px;
-    padding-top: 18px; }
+    padding-bottom: 7px;
+    padding-top: 17px; }
 
 .cui__editor--with-icon {
   padding-left: 36px; }
@@ -2366,7 +2366,8 @@ html:hover [class^="ss-"] {
      * The CSS based is kept for retina support. */ }
   .cui__select-overlay.is-placeholder {
     font-weight: normal;
-    color: #a9a9a9; }
+    color: #a9a9a9;
+    padding-top: 13px; }
   .cui__select-overlay.is-disabled {
     background: #f6f6f6;
     color: #545454;
@@ -2387,7 +2388,7 @@ html:hover [class^="ss-"] {
     border: 1px solid #0089CF;
     box-shadow: 0 0 3px 1px rgba(0, 120, 181, 0.7); }
   .cui__select-overlay.is-invalid {
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     padding-top: 18px; }
   .cui__select-overlay:before {
     height: 0;
