@@ -2235,8 +2235,8 @@ html:hover [class^="ss-"] {
       color: #545454;
       opacity: 1; }
   .cui__editor--text.is-invalid, .is-invalid.cui__editor--with-icon {
-    padding-bottom: 6.17647px;
-    padding-top: 18.52941px; }
+    padding-bottom: 6px;
+    padding-top: 18px; }
 
 .cui__editor--with-icon {
   padding-left: 36px; }
@@ -2323,7 +2323,7 @@ html:hover [class^="ss-"] {
   font-weight: bold;
   line-height: 1em;
   margin: -10px 0 0 0;
-  bottom: 27px;
+  bottom: 26px;
   padding: 3px 10px 4px;
   position: absolute;
   z-index: 10; }
@@ -2387,8 +2387,8 @@ html:hover [class^="ss-"] {
     border: 1px solid #0089CF;
     box-shadow: 0 0 3px 1px rgba(0, 120, 181, 0.7); }
   .cui__select-overlay.is-invalid {
-    padding-bottom: 6.17647px;
-    padding-top: 18.52941px; }
+    padding-bottom: 6px;
+    padding-top: 18px; }
   .cui__select-overlay:before {
     height: 0;
     width: 0;

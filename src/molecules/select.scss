@@ -58,9 +58,8 @@ $select-overlay-triangle-y-ie: 1.2em;
     }
 
     &.is-invalid {
-        $offset: $invalid-text-top-offset;
-        padding-bottom: (2-$offset)*($input-line-height / 1.7);
-        padding-top: ($offset)*($input-line-height / 1.7);
+        padding-bottom: 6px;
+        padding-top: 18px;
     }
 
     &:before {

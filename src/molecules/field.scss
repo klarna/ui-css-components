@@ -112,8 +112,8 @@
     }
 
     &.is-invalid {
-        padding-bottom: (2-$invalid-text-top-offset)*($input-line-height / 1.7);
-        padding-top: ($invalid-text-top-offset)*($input-line-height / 1.7);
+        padding-bottom: 6px;
+        padding-top: 18px;
     }
 }
 
@@ -178,7 +178,7 @@
     font-weight: bold;
     line-height: 1em;
     margin: -10px 0 0 0;
-    bottom: 27px;
+    bottom: 26px;
     padding: 3px 10px 4px;
     position: absolute;
 
