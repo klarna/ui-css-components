@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.2
+
+> bugfix/gbl-17904-state-field-misaligned-when-displaying
+
+### Fixed
+
+- An IE10 bug where the dropdown selector carets were not shown
+- An IE11 bug where the dropdown selectors were not selectable
+- Field error inconsistensies
+
+## 1.3.1
+
+> feature/gbl-17638-add-cc-discover
+
+### Added
+
+- `img/logos/svg/discover.svg`, `img/logos/svg-tiny-optimized/discover.svg`
+- `img/logos/png/22px-height/discover.png`, `img/logos/png/22px-height/discover@2x.png`
+- Card logo markup to `snippets/logos--cards.html`
+- Card logo style to `src/atoms/logos.scss`
+- Card logos path variables to `src/settings.scss`
+
 ## 1.3.0
 
 > tech/credit-card-logos

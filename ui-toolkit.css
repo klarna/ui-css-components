@@ -2235,8 +2235,8 @@ html:hover [class^="ss-"] {
       color: #545454;
       opacity: 1; }
   .cui__editor--text.is-invalid, .is-invalid.cui__editor--with-icon {
-    padding-bottom: 6.17647px;
-    padding-top: 18.52941px; }
+    padding-bottom: 7px;
+    padding-top: 17px; }
 
 .cui__editor--with-icon {
   padding-left: 36px; }
@@ -2323,7 +2323,7 @@ html:hover [class^="ss-"] {
   font-weight: bold;
   line-height: 1em;
   margin: -10px 0 0 0;
-  bottom: 27px;
+  bottom: 26px;
   padding: 3px 10px 4px;
   position: absolute;
   z-index: 10; }
@@ -2366,7 +2366,8 @@ html:hover [class^="ss-"] {
      * The CSS based is kept for retina support. */ }
   .cui__select-overlay.is-placeholder {
     font-weight: normal;
-    color: #a9a9a9; }
+    color: #a9a9a9;
+    padding-top: 13px; }
   .cui__select-overlay.is-disabled {
     background: #f6f6f6;
     color: #545454;
@@ -2387,8 +2388,8 @@ html:hover [class^="ss-"] {
     border: 1px solid #0089CF;
     box-shadow: 0 0 3px 1px rgba(0, 120, 181, 0.7); }
   .cui__select-overlay.is-invalid {
-    padding-bottom: 6.17647px;
-    padding-top: 18.52941px; }
+    padding-bottom: 8px;
+    padding-top: 18px; }
   .cui__select-overlay:before {
     height: 0;
     width: 0;
@@ -2424,8 +2425,7 @@ html:hover [class^="ss-"] {
     .ie8 .cui__select-overlay.is-disabled, [data-cui-browser-ie8] .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled, [data-cui-browser-ie9] .cui__select-overlay.is-disabled {
       background: #f6f6f6 url('img/select/select-arrow.png') 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay, [data-cui-browser-ie10] .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url('img/select/select-arrow.png'), linear-gradient(to   , #f3f3f3 100%);
+    background-image: url('img/select/select-arrow.png'), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled, [data-cui-browser-ie10] .cui__select-overlay.is-disabled {
       background-image: url('img/select/select-arrow.png');
@@ -2448,6 +2448,7 @@ html:hover [class^="ss-"] {
   outline: none;
   opacity: 0;
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 0;
   height: 44px;
