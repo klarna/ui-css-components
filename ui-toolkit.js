@@ -26,7 +26,8 @@
 
     browser: {
       isIE: function () {
-        return ua.indexOf('msie') > -1;
+        return  ua.indexOf('msie') > -1 ||
+                ua.indexOf('trident');
       },
 
       isIE8: function () {
@@ -37,7 +38,7 @@
         return  ua.indexOf('mozilla/5.0') > -1 &&
                 ua.indexOf('android') > -1 &&
                 ua.indexOf('applewebkit') > -1 &&
-                ua.indexOf('chrome') > -1;
+                ua.indexOf('chrome') === -1;
       }
     },
 
