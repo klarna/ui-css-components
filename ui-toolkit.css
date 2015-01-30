@@ -2425,8 +2425,7 @@ html:hover [class^="ss-"] {
     .ie8 .cui__select-overlay.is-disabled, [data-cui-browser-ie8] .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled, [data-cui-browser-ie9] .cui__select-overlay.is-disabled {
       background: #f6f6f6 url('img/select/select-arrow.png') 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay, [data-cui-browser-ie10] .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png'), -webkit-linear-gradient(#fff 75%, #f3f3f3 100%);
-    background-image: url('img/select/select-arrow.png'), linear-gradient(to   , #f3f3f3 100%);
+    background-image: url('img/select/select-arrow.png'), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled, [data-cui-browser-ie10] .cui__select-overlay.is-disabled {
       background-image: url('img/select/select-arrow.png');
@@ -2449,6 +2448,7 @@ html:hover [class^="ss-"] {
   outline: none;
   opacity: 0;
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 0;
   height: 44px;
