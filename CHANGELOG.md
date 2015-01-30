@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.3
+
+### Fixed
+
+- An IE11 bug where the browser detection was not working
+- An Android Stock browser bug where the browser detection was not working
+
 ## 1.3.2
 
 > bugfix/gbl-17904-state-field-misaligned-when-displaying
