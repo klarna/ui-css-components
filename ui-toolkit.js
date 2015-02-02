@@ -27,7 +27,7 @@
     browser: {
       isIE: function () {
         return  ua.indexOf('msie') > -1 ||
-                ua.indexOf('trident');
+                ua.indexOf('trident') > -1;
       },
 
       isIE8: function () {
