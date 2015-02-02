@@ -91,9 +91,15 @@
         },
 
         toggleFakePlaceholders: function (editor, wrapper) {
-            var className = wrapper.className || '';
-            var newClasses = [];
-            var classes, i, length;
+            var className, newClasses, classes, i, length;
+
+            if (editor === undefined || wrapper === undefined) {
+                throw new TypeError(
+                    'You have to pass both an editor and a wrapper element');
+            }
+
+            className = wrapper.className || '';
+            newClasses = [];
 
             if (! editor.value) {
                 classes = className.split(' ');
