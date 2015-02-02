@@ -2194,16 +2194,25 @@ html:hover [class^="ss-"] {
     border: 1px solid #a6a6a6; }
   .ie .cui__editor--text, .ie .cui__editor--with-icon, [data-cui-browser-ie] .cui__editor--text, [data-cui-browser-ie] .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('img/background/input-background-1x1.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
     z-index: 2; }
+    .ie .cui__editor--text[disabled], .ie [disabled].cui__editor--with-icon, [data-cui-browser-ie] .cui__editor--text[disabled], [data-cui-browser-ie] [disabled].cui__editor--with-icon {
+      background-color: transparent;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII='); }
   .android--stock .cui__editor--text, .android--stock .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('img/background/input-background-1x1.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
     z-index: 2; }
+    .android--stock .cui__editor--text[disabled], .android--stock [disabled].cui__editor--with-icon {
+      background-color: transparent;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII='); }
   [data-cui-browser-ie] .cui__editor--text, [data-cui-browser-ie] .cui__editor--with-icon, [data-cui-browser-android--stock] .cui__editor--text, [data-cui-browser-android--stock] .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('img/background/input-background-1x1.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
     z-index: 2; }
+    [data-cui-browser-ie] .cui__editor--text[disabled], [data-cui-browser-ie] [disabled].cui__editor--with-icon, [data-cui-browser-android--stock] .cui__editor--text[disabled], [data-cui-browser-android--stock] [disabled].cui__editor--with-icon {
+      background-color: transparent;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII='); }
   .cui__editor--text:focus, .cui__editor--with-icon:focus, .cui__editor--text:hover, .cui__editor--with-icon:hover {
     outline: none; }
   .cui__editor--text:focus, .cui__editor--with-icon:focus {
