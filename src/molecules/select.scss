@@ -101,23 +101,23 @@ $select-overlay-triangle-y-ie: 1.2em;
         &:before {
             display: none;
         }
-   }
+    }
 
     @include respond-to-ie((8, 9)) {
-        background-image: url($select-overlay-triangle-image);
+        background-image: url($ui-toolkit-base + 'img/molecules/select/select.arrow.png');
         background-position: 100% $select-overlay-triangle-y-ie;
 
         &.is-disabled {
-            background: $input-disabled-background-color url($select-overlay-triangle-image) 100% $select-overlay-triangle-y-ie no-repeat !important;
+            background: $input-disabled-background-color url($ui-toolkit-base + 'img/molecules/select/select.arrow.png') 100% $select-overlay-triangle-y-ie no-repeat !important;
         }
     }
 
     @include respond-to-ie(10) {
-        background-image: url($select-overlay-triangle-image), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
+        background-image: url($ui-toolkit-base + 'img/molecules/select/select.arrow.png'), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
         background-position: 100% $select-overlay-triangle-y-ie, 0 0;
 
         &.is-disabled {
-            background-image: url($select-overlay-triangle-image);
+            background-image: url($ui-toolkit-base + 'img/molecules/select/select.arrow.png');
             background-position: 100% $select-overlay-triangle-y-ie;
             background-color: $input-disabled-background-color;
         }

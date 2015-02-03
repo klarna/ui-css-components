@@ -45,8 +45,12 @@
 
     @include respond-to-ie-and-stock {
         background-color: transparent;
+<<<<<<< HEAD
         // base64 encoded version of `img/background/input-background-1x1.png`
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+=======
+        background-image: url($ui-toolkit-base + 'img/molecules/field/field.background.png');
+>>>>>>> Update SCSSs to use new convention for img paths
         z-index: 2;
 
         &[disabled] {

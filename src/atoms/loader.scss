@@ -1,0 +1,3 @@
+.cui__loader {
+    @include retina-image-compat($ui-toolkit-path + "img/");
+}
