@@ -8,7 +8,7 @@
     font-weight: bold;
     vertical-align: top;
 
-    box-shadow: $flat-button-bevel;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
     background: $custom-color-button-background;
     color: $custom-color-button-color;
     line-height: 1;
