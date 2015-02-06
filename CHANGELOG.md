@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.4
+
+### Added
+
+- `img/background/input-disabled-background-1x1.png`
+- Disabled snippet for input fields
+- Disabled field styles
+
+### Changed
+
+- Inlined 1x1 pngs as base64 encoded `data:` URIs in the styles
+- Indent convention in JavaScript (4 spaces now)
+
+### Fixed
+
+- Trident browser check bug
+
 ## 1.3.3
 
 ### Fixed

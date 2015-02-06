@@ -19,7 +19,6 @@
     color: $editor-placeholder-color;
 }
 
-
 .cui__editor--text {
     @include box-sizing(border-box);
     @include appearance(none);
@@ -46,8 +45,15 @@
 
     @include respond-to-ie-and-stock {
         background-color: transparent;
-        background-image: url($input-transparent-background-image);
+        // base64 encoded version of `img/background/input-background-1x1.png`
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         z-index: 2;
+
+        &[disabled] {
+            background-color: transparent;
+            // base64 encoded version of `img/background/input-disabled-background-1x1.png`
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII=');
+        }
     }
 
     &:focus, &:hover {
@@ -87,7 +93,7 @@
         opacity: 1;
     }
 
-    &[disabled]{
+    &[disabled] {
         background: $input-disabled-background-color;
         color: $input-disabled-color;
         -webkit-text-fill-color: $input-disabled-color;
@@ -108,7 +114,6 @@
             color: $input-disabled-color;
             opacity: 1;
         }
-
     }
 
     &.is-invalid {
