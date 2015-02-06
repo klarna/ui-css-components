@@ -45,11 +45,13 @@
 
     @include respond-to-ie-and-stock {
         background-color: transparent;
+        // base64 encoded version of `img/background/input-background-1x1.png`
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         z-index: 2;
 
         &[disabled] {
             background-color: transparent;
+            // base64 encoded version of `img/background/input-disabled-background-1x1.png`
             background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII=');
         }
     }
@@ -91,7 +93,7 @@
         opacity: 1;
     }
 
-    &[disabled]{
+    &[disabled] {
         background: $input-disabled-background-color;
         color: $input-disabled-color;
         -webkit-text-fill-color: $input-disabled-color;
@@ -111,7 +113,7 @@
         &::-moz-placeholder {
             color: $input-disabled-color;
             opacity: 1;
-    }
+        }
     }
 
     &.is-invalid {
