@@ -169,14 +169,14 @@
     }
 }
 
-.cui__field__error-tooltip {
+@mixin field_tooltip($background-color) {
     @extend %show-tooltip;
     @include font-size(11px);
     @include box-sizing(border-box);
 
     width: 100%;
 
-    background: $input-tooltip-background-color;
+    background: $background-color;
     border-radius: 3px 3px 0 0;
     color: #FFF;
     display: none;
@@ -198,4 +198,12 @@
     &.is-visible {
         display: block;
     }
+}
+
+.cui__field__error-tooltip {
+    @include field_tooltip($input-tooltip-background-color);
+}
+
+.cui__field__warning-tooltip {
+    @include field_tooltip($input-tooltip-background-color--warning);
 }
