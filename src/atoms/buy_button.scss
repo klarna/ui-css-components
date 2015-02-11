@@ -45,7 +45,7 @@
 }
 
 .cui__buy-button__loader {
-    @include retina-image-compat($ui-toolkit-base + 'img/atoms/buy_button/buy_button.loader', 22px 22px);
+    @include retina-image-compat($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader', 22px 22px);
     @include animation(spin 0.8s linear infinite);
 
     margin: 0 auto;
@@ -55,13 +55,13 @@
 
     // Preload the image
     &:before {
-        content: url($ui-toolkit-base + 'img/atoms/buy_button/buy_button.loader.png');
+        content: url($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader.png');
         width: 0;
         height: 0;
         display: none;
 
         @include hidpi {
-            content: url($ui-toolkit-base + 'img/atoms/buy_button/buy_button.loader@2x.png');
+            content: url($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader@2x.png');
         }
     }
 

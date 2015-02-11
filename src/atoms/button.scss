@@ -33,7 +33,7 @@
 }
 
 .cui__highlighted-button__loader {
-    @include retina-image-compat($ui-toolkit-base + 'img/atoms/button/button.loader', 14px 14px);
+    @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/button.loader', 14px 14px);
     @include animation(spin 0.8s linear infinite);
 
     display: inline-block;

@@ -196,7 +196,7 @@
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
 
 .cui__highlighted-button__loader {
-  background-image: url("img/loaders/button.loader.png");
+  background-image: url("img/atoms/button/button.loader.png");
   -webkit-animation: spin 0.8s linear infinite;
   -moz-animation: spin 0.8s linear infinite;
   animation: spin 0.8s linear infinite;
@@ -208,7 +208,7 @@
   font-size: 0; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__highlighted-button__loader {
-      background-image: url("img/loaders/button.loader@2x.png");
+      background-image: url("img/atoms/button/button.loader@2x.png");
       background-size: 14px 14px; } }
   .ie8 .cui__highlighted-button__loader, [data-cui-browser-ie8] .cui__highlighted-button__loader, .ie9 .cui__highlighted-button__loader, [data-cui-browser-ie9] .cui__highlighted-button__loader {
     font-size: 15px;
@@ -283,7 +283,7 @@
     height: 56px; }
 
 .cui__buy-button__loader {
-  background-image: url("img/loaders/buy-button-loader.png");
+  background-image: url("img/atoms/buy_button/buy_button.loader.png");
   -webkit-animation: spin 0.8s linear infinite;
   -moz-animation: spin 0.8s linear infinite;
   animation: spin 0.8s linear infinite;
@@ -293,16 +293,16 @@
   font-size: 0; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__buy-button__loader {
-      background-image: url("img/loaders/buy-button-loader@2x.png");
+      background-image: url("img/atoms/buy_button/buy_button.loader@2x.png");
       background-size: 22px 22px; } }
   .cui__buy-button__loader:before {
-    content: url('img/loaders/buy-button-loader.png');
+    content: url("img/atoms/buy_button/buy_button.loader.png");
     width: 0;
     height: 0;
     display: none; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__buy-button__loader:before {
-        content: url('img/loaders/buy-button-loader@2x.png'); } }
+        content: url("img/atoms/buy_button/buy_button.loader@2x.png"); } }
   .ie8 .cui__buy-button__loader, .ie9 .cui__buy-button__loader {
     font-size: 20px;
     font-size: 1.25rem;
@@ -2102,46 +2102,46 @@ html:hover [class^="ss-"] {
       top: -16px; }
 
 .cui__logo--visa--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/visa.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/visa.svg");
   width: 31px;
   height: 22px; }
   .ie .cui__logo--visa--tiny, [data-cui-browser-ie] .cui__logo--visa--tiny {
-    background-image: url("img/logos/png/22px-height/visa.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/visa.png"); }
 
 .cui__logo--visa-electron--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/visa-electron.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/visa-electron.svg");
   width: 36px;
   height: 22px; }
   .ie .cui__logo--visa-electron--tiny, [data-cui-browser-ie] .cui__logo--visa-electron--tiny {
-    background-image: url("img/logos/png/22px-height/visa-electron.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/visa-electron.png"); }
 
 .cui__logo--mastercard--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/mastercard.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/mastercard.svg");
   width: 30px;
   height: 22px; }
   .ie .cui__logo--mastercard--tiny, [data-cui-browser-ie] .cui__logo--mastercard--tiny {
-    background-image: url("img/logos/png/22px-height/mastercard.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/mastercard.png"); }
 
 .cui__logo--maestro--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/maestro.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/maestro.svg");
   width: 30px;
   height: 22px; }
   .ie .cui__logo--maestro--tiny, [data-cui-browser-ie] .cui__logo--maestro--tiny {
-    background-image: url("img/logos/png/22px-height/maestro.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/maestro.png"); }
 
 .cui__logo--amex--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/amex-solid.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/amex-solid.svg");
   width: 25px;
   height: 22px; }
   .ie .cui__logo--amex--tiny, [data-cui-browser-ie] .cui__logo--amex--tiny {
-    background-image: url("img/logos/png/22px-height/amex-solid.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/amex-solid.png"); }
 
 .cui__logo--discover--tiny {
-  background-image: url("img/logos/svg-tiny-optimized/discover.svg");
+  background-image: url("img/atoms/logos/svg-tiny-optimized/discover.svg");
   width: 28px;
   height: 22px; }
   .ie .cui__logo--discover--tiny, [data-cui-browser-ie] .cui__logo--discover--tiny {
-    background-image: url("img/logos/png/22px-height/discover.png"); }
+    background-image: url("img/atoms/logos/png/22px-height/discover.png"); }
 
 .cui__field, .cui__select {
   -webkit-box-sizing: border-box;
@@ -2194,21 +2194,21 @@ html:hover [class^="ss-"] {
     border: 1px solid #a6a6a6; }
   .ie .cui__editor--text, .ie .cui__editor--with-icon, [data-cui-browser-ie] .cui__editor--text, [data-cui-browser-ie] .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+    background-image: url("img/molecules/field/field.background.png");
     z-index: 2; }
     .ie .cui__editor--text[disabled], .ie [disabled].cui__editor--with-icon, [data-cui-browser-ie] .cui__editor--text[disabled], [data-cui-browser-ie] [disabled].cui__editor--with-icon {
       background-color: transparent;
       background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII='); }
   .android--stock .cui__editor--text, .android--stock .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+    background-image: url("img/molecules/field/field.background.png");
     z-index: 2; }
     .android--stock .cui__editor--text[disabled], .android--stock [disabled].cui__editor--with-icon {
       background-color: transparent;
       background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII='); }
   [data-cui-browser-ie] .cui__editor--text, [data-cui-browser-ie] .cui__editor--with-icon, [data-cui-browser-android--stock] .cui__editor--text, [data-cui-browser-android--stock] .cui__editor--with-icon {
     background-color: transparent;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+    background-image: url("img/molecules/field/field.background.png");
     z-index: 2; }
     [data-cui-browser-ie] .cui__editor--text[disabled], [data-cui-browser-ie] [disabled].cui__editor--with-icon, [data-cui-browser-android--stock] .cui__editor--text[disabled], [data-cui-browser-android--stock] [disabled].cui__editor--with-icon {
       background-color: transparent;
@@ -2452,15 +2452,15 @@ html:hover [class^="ss-"] {
     .ie8 .cui__select-overlay:before, [data-cui-browser-ie8] .cui__select-overlay:before, .ie9 .cui__select-overlay:before, [data-cui-browser-ie9] .cui__select-overlay:before, .ie10 .cui__select-overlay:before, [data-cui-browser-ie10] .cui__select-overlay:before {
       display: none; }
   .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay, .ie9 .cui__select-overlay, [data-cui-browser-ie9] .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png');
+    background-image: url("img/molecules/select/select.arrow.png");
     background-position: 100% 1.2em; }
     .ie8 .cui__select-overlay.is-disabled, [data-cui-browser-ie8] .cui__select-overlay.is-disabled, .ie9 .cui__select-overlay.is-disabled, [data-cui-browser-ie9] .cui__select-overlay.is-disabled {
-      background: #f6f6f6 url('img/select/select-arrow.png') 100% 1.2em no-repeat !important; }
+      background: #f6f6f6 url("img/molecules/select/select.arrow.png") 100% 1.2em no-repeat !important; }
   .ie10 .cui__select-overlay, [data-cui-browser-ie10] .cui__select-overlay {
-    background-image: url('img/select/select-arrow.png'), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
+    background-image: url("img/molecules/select/select.arrow.png"), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
     background-position: 100% 1.2em, 0 0; }
     .ie10 .cui__select-overlay.is-disabled, [data-cui-browser-ie10] .cui__select-overlay.is-disabled {
-      background-image: url('img/select/select-arrow.png');
+      background-image: url("img/molecules/select/select.arrow.png");
       background-position: 100% 1.2em;
       background-color: #f6f6f6; }
 
