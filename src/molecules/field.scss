@@ -45,7 +45,8 @@
 
     @include respond-to-ie-and-stock {
         background-color: transparent;
-        background-image: url($ui-toolkit-path + 'img/molecules/field/field.background.png');
+        // base64 encoded version of `img/background/input-background-1x1.png`
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         z-index: 2;
 
         &[disabled] {
