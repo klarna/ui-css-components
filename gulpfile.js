@@ -44,41 +44,19 @@ gulp.task('reload:js', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('images:logos:1x', function () {
+gulp.task('images:logos', function () {
     gulp.src('img/atoms/logos/svg/**/*.svg')
         .pipe(svg2png())
         .pipe(gulp.dest('img/atoms/logos/png/22px-height'));
 });
 
-gulp.task('images:logos:2x', function () {
-    gulp.src('img/atoms/logos/svg/**/*.svg')
-        .pipe(svg2png(2.0))
-        .pipe(rename({
-            suffix: '@2x'
-        }))
-        .pipe(gulp.dest('img/atoms/logos/png/22px-height'))
-});
-
-gulp.task('images:select:1x', function () {
-    gulp.src('img/molecules/select/svg/**/*.svg')
+gulp.task('images:molecules', function () {
+    gulp.src('img/molecules/**/*.svg')
         .pipe(svg2png())
-        .pipe(gulp.dest('img/molecules/select/png'));
+        .pipe(gulp.dest('img/molecules'));
 });
 
-gulp.task('images:select:2x', function () {
-    gulp.src('img/molecules/select/svg/**/*.svg')
-        .pipe(svg2png(2.0))
-        .pipe(rename({
-            suffix: '@2x'
-        }))
-        .pipe(gulp.dest('img/molecules/select/png'));
-});
-
-gulp.task('images:logos', ['images:logos:1x', 'images:logos:2x']);
-
-gulp.task('images:select', ['images:select:1x', 'images:select:2x']);
-
-gulp.task('images', ['images:logos', 'images:select']);
+gulp.task('images', ['images:logos', 'images:molecules']);
 
 // Default task to be run with `gulp`
 gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {
