@@ -38,6 +38,7 @@
     color: $input-editor-color;
     padding: 12px;
     position: relative;
+    margin: 0;
 
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
@@ -206,4 +207,61 @@
 
 .cui__field__warning-tooltip {
     @include field_tooltip($input-tooltip-background-color--warning);
+}
+
+.cui__field-tooltip {
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    z-index: 2;
+
+    &__button {
+        background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
+        width: 15px;
+        height: 15px;
+        float: right;
+        clear: both;
+        margin: 0 14px 0 0;
+
+        @include respond-to-ie {
+            background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.png");
+        }
+    }
+
+    &__content {
+        display: none;
+        background: #FFF;
+        border-radius: 4px;
+        box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
+        border: 1px solid #CCC;
+        padding: 15px;
+        float: right;
+        clear: both;
+        margin-bottom: 22px;
+        line-height: 1.5em;
+        position: relative;
+        float: right;
+
+        @include respond-to-wide {
+            float: none;
+        }
+
+        &:after {
+            height: 0;
+            width: 0;
+            content: "";
+            position: absolute;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #ededed;
+            bottom: -9px;
+            right: 13px;
+        }
+    }
+
+    &:hover, &.hover {
+        .cui__field-tooltip__content {
+            display: block;
+        }
+    }
 }

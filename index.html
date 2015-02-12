@@ -132,7 +132,48 @@
             class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
+</pre><p>With tooltip</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text"
+            placeholder="Please write your email address"
+            value="" />
+        <div class="cui__field-tooltip">
+            <div class="cui__field-tooltip__content">
+                Your email address is like your identity card in the internet.
+            </div>
+            <div class="cui__field-tooltip__button"></div>
+        </div>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;&quot; /&gt;
+        &lt;div class=&quot;cui__field-tooltip&quot;&gt;
+            &lt;div class=&quot;cui__field-tooltip__content&quot;&gt;
+                Your email address is like your identity card in the internet.
+            &lt;/div&gt;
+            &lt;div class=&quot;cui__field-tooltip__button&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><script>UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
+</script><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
     <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
     </span>
@@ -195,8 +236,9 @@ var cuiEditors = document
   .querySelectorAll(
     '.cui__editor--text, .cui__editor--with-icon');
 
-for (var i = 0; i < cuiEditorWrappers.length; i ++) 
+for (var i = 0; i < cuiEditorWrappers.length; i ++) {
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+}  
   
 </script><h3>Select</h3><div class="presentation-example"><div class="cui__select">
     <span class="cui__select-overlay" data-cid="overlay.selector">
