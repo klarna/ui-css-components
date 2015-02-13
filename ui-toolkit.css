@@ -41,7 +41,7 @@
     -o-transform: scale(1);
     transform: scale(1); } }
 
-.cui__field__error-tooltip {
+.cui__field__error-tooltip, .cui__field__warning-tooltip {
   -webkit-animation-name: show-tooltip;
   -moz-animation-name: show-tooltip;
   animation-name: show-tooltip;
@@ -2339,6 +2339,29 @@ html:hover [class^="ss-"] {
   .ie8 .cui__field__error-tooltip:after, [data-cui-browser-ie8] .cui__field__error-tooltip:after {
     display: none; }
   .cui__field__error-tooltip.is-visible {
+    display: block; }
+
+.cui__field__warning-tooltip {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: #FFAF00;
+  border-radius: 3px 3px 0 0;
+  color: #FFF;
+  display: none;
+  font-weight: bold;
+  line-height: 1em;
+  margin: -10px 0 0 0;
+  bottom: 26px;
+  padding: 3px 10px 4px;
+  position: absolute;
+  z-index: 10; }
+  .ie8 .cui__field__warning-tooltip:after, [data-cui-browser-ie8] .cui__field__warning-tooltip:after {
+    display: none; }
+  .cui__field__warning-tooltip.is-visible {
     display: block; }
 
 .cui__select {
