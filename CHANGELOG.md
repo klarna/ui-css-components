@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.5
+
+### Added
+
+- Field warning tooltips. Works exactly as error tooltips.
+
 ## 1.3.4
 
 ### Added
