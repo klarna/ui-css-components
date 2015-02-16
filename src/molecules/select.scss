@@ -1,41 +1,40 @@
-$select-overlay-triangle-y: 1.35em;
-$select-overlay-triangle-y-ie: 1.2em;
+$select-overlay-triangle-y: 20px;
+$select-overlay-triangle-y-ie: 18px;
 
 .cui__select {
     @extend .cui__field;
-
     height: 44px;
 }
 
 .cui__select-overlay {
-    @include appearance(none);
-    @include background-image(linear-gradient(#fff 90%, #f3f3f3 100%));
     @include box-sizing(border-box);
+    @include appearance(none);
     @include font-size(15px);
 
+    width: 100%;
     border: 1px solid $input-box-shadow-color;
     border-radius: $input-border-radius;
-    color: #595959;
     display: inline-block;
     font-weight: bold;
     line-height: normal;
     margin-bottom: $input-line-height / 2;
-    padding: 13px;
-    padding-right: 43px;
+    width: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
+    padding: 13px;
+    padding-right: 43px;
+    color: #595959;
 
     &.is-placeholder {
-        color: $editor-placeholder-color;
         font-weight: normal;
+        color: $editor-placeholder-color;
         padding-top: 13px;
     }
 
     &.is-disabled {
-        -webkit-text-fill-color: $input-disabled-color;
-        color: $input-disabled-color;
         background: $input-disabled-background-color;
+        color: $input-disabled-color;
+        -webkit-text-fill-color: $input-disabled-color;
         font-weight: bold;
 
         &:before {
@@ -48,13 +47,14 @@ $select-overlay-triangle-y-ie: 1.2em;
     }
 
     &.is-placeholder.is-disabled {
-        color: $input-disabled-color;
         font-weight: normal;
+        color: $input-disabled-color;
     }
 
     &.has-focus {
         border: 1px solid $input-border-color-focus;
-        box-shadow: 0 0 3px 1px rgba(darken($input-border-color-focus, 5), 0.7);
+        box-shadow:
+        0 0 3px 1px rgba(darken($input-border-color-focus, 5), 0.7);
     }
 
     &.is-invalid {
@@ -63,24 +63,17 @@ $select-overlay-triangle-y-ie: 1.2em;
     }
 
     &:before {
-        @include triangle(12px, #555, down);
-
+        @include triangle(12px, #CCC, down);
         content: "";
-        pointer-events: none;
         position: absolute;
-        right: 0.75em;
+        right: 13px;
         top: $select-overlay-triangle-y;
         z-index: 1;
-    }
+        pointer-events: none;
 
-    &:after {
-        background-color: $input-box-shadow-color;
-        content: "";
-        height: 100%;
-        position: absolute;
-        right: 34px;
-        top: 0;
-        width: 1px;
+        @include respond-to-ie {
+            top: $select-overlay-triangle-y-ie;
+        }
     }
 
     @include respond-to-ie(8) {
@@ -91,55 +84,24 @@ $select-overlay-triangle-y-ie: 1.2em;
     @include respond-to-ie {
         height: 43px;
     }
-
-    /* Since IE10- doesn't support pointer-events, the CSS based triangled
-     * must be replace with a background image.
-     * The CSS based is kept for retina support. */
-     @include respond-to-ie((8, 9, 10)) {
-        background-repeat: no-repeat;
-
-        &:before {
-            display: none;
-        }
-    }
-
-    @include respond-to-ie((8, 9)) {
-        background-image: url($ui-toolkit-path + 'img/molecules/select/select.arrow.png');
-        background-position: 100% $select-overlay-triangle-y-ie;
-
-        &.is-disabled {
-            background: $input-disabled-background-color url($ui-toolkit-path + 'img/molecules/select/select.arrow.png') 100% $select-overlay-triangle-y-ie no-repeat !important;
-        }
-    }
-
-    @include respond-to-ie(10) {
-        background-image: url($ui-toolkit-path + 'img/molecules/select/select.arrow.png'), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
-        background-position: 100% $select-overlay-triangle-y-ie, 0 0;
-
-        &.is-disabled {
-            background-color: $input-disabled-background-color;
-            background-image: url($ui-toolkit-path + 'img/molecules/select/select.arrow.png');
-            background-position: 100% $select-overlay-triangle-y-ie;
-        }
-    }
 }
 
 .cui__select-dropdown {
     @include appearance(none);
-    @include box-sizing(content-box);
     @include font-size(16px);
+    @include box-sizing(content-box);
 
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     border: none;
     outline: none;
     opacity: 0;
-    height: 44px;
-    left: 0;
-    line-height: normal;
     position: absolute;
-    top: 0;
-    width: 100%;
     z-index: 2;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    line-height: normal;
 
     @include respond-to-ie {
         height: 43px;
