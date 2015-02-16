@@ -2425,6 +2425,58 @@ html:hover [class^="ss-"] {
     height: 0;
     width: 0; }
 
+.cui__field--is-left {
+  float: left; }
+
+.cui__editor--is-left {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.cui__field--is-middle {
+  float: left;
+  position: relative; }
+  .cui__field--is-middle:before {
+    content: " ";
+    border-left: 1px solid #ddd;
+    height: 23px;
+    position: absolute;
+    width: 0;
+    left: -1px;
+    bottom: 10px;
+    display: block; }
+  .ie .cui__field--is-middle:before, [data-cui-browser-ie] .cui__field--is-middle:before {
+    height: 25px; }
+
+.cui__editor--is-middle {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0; }
+  .cui__editor--is-middle:focus {
+    margin-left: -1px; }
+
+.cui__field--is-right {
+  float: left;
+  position: relative; }
+  .cui__field--is-right:before {
+    content: " ";
+    border-left: 1px solid #ddd;
+    height: 23px;
+    position: absolute;
+    width: 0;
+    left: -1px;
+    bottom: 10px;
+    display: block; }
+  .ie .cui__field--is-right:before, [data-cui-browser-ie] .cui__field--is-right:before {
+    height: 25px; }
+
+.cui__editor--is-right {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+  .cui__editor--is-right:focus {
+    margin-left: -1px; }
+
 .cui__select {
   height: 44px; }
 

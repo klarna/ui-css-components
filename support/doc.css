@@ -77,6 +77,7 @@ nav a:hover, nav a:focus {
   border-bottom-right-radius: 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
+  overflow: hidden;
   border-bottom: 0; }
 
 .presentation-example:hover {

@@ -265,3 +265,71 @@
         width: 0;
     }
 }
+
+// ================================================================
+//  GROUP FIELDS
+// ================================================================
+@mixin field-separator {
+    position: relative;
+
+    &:before {
+        content: " ";
+        border-left: 1px solid #ddd;
+        height: 23px;
+        position: absolute;
+        width: 0;
+        left: -1px;
+        bottom: 10px;
+        display: block;
+    }
+
+    @include respond-to-ie {
+        &:before {
+            height: 25px;
+        }
+    }
+}
+
+@mixin editor-separator {
+    &:focus {
+        margin-left: -1px;
+    }
+}
+
+.cui__field--is-left {
+    float: left;
+}
+
+.cui__editor--is-left {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.cui__field--is-middle {
+    float: left;
+
+    @include field-separator;
+}
+
+.cui__editor--is-middle {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+
+    @include editor-separator;
+}
+
+.cui__field--is-right {
+    float: left;
+
+    @include field-separator;
+}
+
+.cui__editor--is-right {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    @include editor-separator;
+}
