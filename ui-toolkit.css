@@ -2380,43 +2380,45 @@ html:hover [class^="ss-"] {
   bottom: 14px;
   right: 0;
   z-index: 2; }
-  .cui__field-tooltip__button {
-    background-image: url("img/molecules/field/field.tooltip.svg");
-    width: 15px;
-    height: 15px;
-    float: right;
-    clear: both;
-    margin: 0 14px 0 0; }
-    .ie .cui__field-tooltip__button, [data-cui-browser-ie] .cui__field-tooltip__button {
-      background-image: url("img/molecules/field/field.tooltip.png"); }
-  .cui__field-tooltip__content {
-    display: none;
-    background: #FFF;
-    border-radius: 4px;
-    box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-    border: 1px solid #CCC;
-    padding: 15px;
-    float: right;
-    clear: both;
-    margin-bottom: 22px;
-    line-height: 1.5em;
-    position: relative;
-    float: right; }
-    @media screen and (min-width: 569px) {
-      .cui__field-tooltip__content {
-        float: none; } }
-    .cui__field-tooltip__content:after {
-      height: 0;
-      width: 0;
-      content: "";
-      position: absolute;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid #ededed;
-      bottom: -9px;
-      right: 13px; }
   .cui__field-tooltip:hover .cui__field-tooltip__content, .cui__field-tooltip.hover .cui__field-tooltip__content {
     display: block; }
+
+.cui__field-tooltip__button {
+  background-image: url("img/molecules/field/field.tooltip.svg");
+  width: 15px;
+  height: 15px;
+  float: right;
+  clear: both;
+  margin: 0 14px 0 0; }
+  .ie .cui__field-tooltip__button, [data-cui-browser-ie] .cui__field-tooltip__button {
+    background-image: url("img/molecules/field/field.tooltip.png"); }
+
+.cui__field-tooltip__content {
+  display: none;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
+  border: 1px solid #CCC;
+  padding: 15px;
+  float: right;
+  clear: both;
+  margin-bottom: 22px;
+  line-height: 1.5em;
+  position: relative;
+  float: right; }
+  @media screen and (min-width: 569px) {
+    .cui__field-tooltip__content {
+      float: none; } }
+  .cui__field-tooltip__content:after {
+    height: 0;
+    width: 0;
+    content: "";
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ededed;
+    bottom: -9px;
+    right: 13px; }
 
 .cui__select {
   height: 44px; }
