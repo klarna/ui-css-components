@@ -8,25 +8,35 @@ $select-overlay-triangle-y-ie: 18px;
 
 .cui__select-overlay {
     @include box-sizing(border-box);
-    @include appearance(none);
     @include font-size(15px);
 
-    width: 100%;
     border: 1px solid $input-box-shadow-color;
     border-radius: $input-border-radius;
     display: inline-block;
     font-weight: bold;
     line-height: normal;
     margin-bottom: $input-line-height / 2;
-    width: 100%;
-    position: absolute;
-    top: 0;
     padding: 13px;
     padding-right: 43px;
     color: #595959;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    width: 100%;
+
+    @include respond-to-ie(8) {
+        border: 1px solid $input-box-shadow-color;
+        height: 44px;
+    }
+
+    @include respond-to-ie {
+        height: 43px;
+    }
+
+    .cui__select-dropdown:hover + &:before,
+    .cui__select-dropdown:focus + &:before {
+        @include triangle(12px, #AAA, down);
+    }
 
     &.is-placeholder {
         font-weight: normal;
@@ -77,15 +87,6 @@ $select-overlay-triangle-y-ie: 18px;
         @include respond-to-ie {
             top: $select-overlay-triangle-y-ie;
         }
-    }
-
-    @include respond-to-ie(8) {
-        border: 1px solid $input-box-shadow-color;
-        height: 44px;
-    }
-
-    @include respond-to-ie {
-        height: 43px;
     }
 }
 

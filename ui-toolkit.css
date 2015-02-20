@@ -2160,29 +2160,32 @@ html:hover [class^="ss-"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
   font-size: 15px;
   font-size: 0.9375rem;
-  width: 100%;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
   display: inline-block;
   font-weight: bold;
   line-height: normal;
   margin-bottom: 10.5px;
-  width: 100%;
-  position: absolute;
-  top: 0;
   padding: 13px;
   padding-right: 43px;
   color: #595959;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap; }
+  white-space: nowrap;
+  width: 100%; }
+  .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay {
+    border: 1px solid #a6a6a6;
+    height: 44px; }
+  .ie .cui__select-overlay, [data-cui-browser-ie] .cui__select-overlay {
+    height: 43px; }
+  .cui__select-dropdown:hover + .cui__select-overlay:before, .cui__select-dropdown:focus + .cui__select-overlay:before {
+    height: 0;
+    width: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #AAA; }
   .cui__select-overlay.is-placeholder {
     font-weight: normal;
     color: #a9a9a9;
@@ -2223,11 +2226,6 @@ html:hover [class^="ss-"] {
     pointer-events: none; }
     .ie .cui__select-overlay:before, [data-cui-browser-ie] .cui__select-overlay:before {
       top: 18px; }
-  .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay {
-    border: 1px solid #a6a6a6;
-    height: 44px; }
-  .ie .cui__select-overlay, [data-cui-browser-ie] .cui__select-overlay {
-    height: 43px; }
 
 .cui__select-dropdown {
   -webkit-appearance: none;
