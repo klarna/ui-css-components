@@ -201,24 +201,34 @@
 //  TOOLTIP
 // ================================================================
 .cui__field-tooltip {
-    position: absolute;
-    bottom: 14px;
-    right: 0;
-    z-index: 2;
-
     &:hover, &.hover {
         .cui__field-tooltip__content {
-            display: block;
+            @include transform(translateY(0));
+
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 0;
+
+            @include respond-to-ie(8) {
+                display: block;
+            }
         }
     }
 }
 
+.cui__field-tooltip__button-wrapper {
+    @include position(absolute, null 0 0 null);
+
+    display: block;
+    padding: 14px;
+    z-index: 2;
+}
+
 .cui__field-tooltip__button {
     background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
-    clear: both;
-    float: right;
     height: 15px;
-    margin: 0 14px 0 0;
     width: 15px;
 
     @include respond-to-ie {
@@ -227,31 +237,31 @@
 }
 
 .cui__field-tooltip__content {
+    @include position(absolute, null 0 52px null);
+
     background: #FFF;
     border: 1px solid #CCC;
     border-radius: 4px;
     box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-    clear: both;
-    display: none;
-    float: right;
     line-height: 1.5em;
-    margin-bottom: 22px;
+    opacity: 0;
     padding: 15px;
-    position: relative;
+    transform: translateY(10px);
+    width: 100%;
+    z-index: -1;
 
-    @include respond-to-wide {
-        float: none;
+    @include respond-to-ie(8) {
+        display: none;
     }
 
     &:after {
+        @include position(absolute, null 13px -9px null);
+
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid #ededed;
-        bottom: -9px;
         content: "";
         height: 0;
-        position: absolute;
-        right: 13px;
         width: 0;
     }
 }

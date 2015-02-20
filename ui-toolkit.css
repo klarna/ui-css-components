@@ -2369,48 +2369,60 @@ html:hover [class^="ss-"] {
   .cui__field__warning-tooltip.is-visible {
     display: block; }
 
-.cui__field-tooltip {
-  position: absolute;
-  bottom: 14px;
-  right: 0;
-  z-index: 2; }
-  .cui__field-tooltip:hover .cui__field-tooltip__content, .cui__field-tooltip.hover .cui__field-tooltip__content {
+.cui__field-tooltip:hover .cui__field-tooltip__content, .cui__field-tooltip.hover .cui__field-tooltip__content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.3s linear, transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, -moz-transform 0.3s ease-out;
+  z-index: 0; }
+  .ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, [data-cui-browser-ie8] .cui__field-tooltip:hover .cui__field-tooltip__content, .ie8 .cui__field-tooltip.hover .cui__field-tooltip__content, [data-cui-browser-ie8] .cui__field-tooltip.hover .cui__field-tooltip__content {
     display: block; }
+
+.cui__field-tooltip__button-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 14px;
+  z-index: 2; }
 
 .cui__field-tooltip__button {
   background-image: url("img/molecules/field/field.tooltip.svg");
-  clear: both;
-  float: right;
   height: 15px;
-  margin: 0 14px 0 0;
   width: 15px; }
   .ie .cui__field-tooltip__button, [data-cui-browser-ie] .cui__field-tooltip__button {
     background-image: url("img/molecules/field/field.tooltip.png"); }
 
 .cui__field-tooltip__content {
+  position: absolute;
+  right: 0;
+  bottom: 52px;
   background: #FFF;
   border: 1px solid #CCC;
   border-radius: 4px;
   box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-  clear: both;
-  display: none;
-  float: right;
   line-height: 1.5em;
-  margin-bottom: 22px;
+  opacity: 0;
   padding: 15px;
-  position: relative; }
-  @media screen and (min-width: 569px) {
-    .cui__field-tooltip__content {
-      float: none; } }
+  transform: translateY(10px);
+  width: 100%;
+  z-index: -1; }
+  .ie8 .cui__field-tooltip__content, [data-cui-browser-ie8] .cui__field-tooltip__content {
+    display: none; }
   .cui__field-tooltip__content:after {
+    position: absolute;
+    right: 13px;
+    bottom: -9px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #ededed;
-    bottom: -9px;
     content: "";
     height: 0;
-    position: absolute;
-    right: 13px;
     width: 0; }
 
 .cui__select {
