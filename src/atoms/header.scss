@@ -3,6 +3,7 @@
 
     h1 {
         @include font-size(15px);
+
         background: #fff;
         color: #434343;
         display: inline-block;
@@ -16,11 +17,12 @@
 .cui__subtle-header {
     h3 {
         @include font-size(10px);
+
+        -webkit-font-smoothing: antialiased;
         color: #a6a6a6;
-        margin: 0;
-        text-transform: uppercase;
         font-weight: bold;
         line-height: 11px;
-        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        text-transform: uppercase;
     }
 }

@@ -1,8 +1,8 @@
 .cui__field {
     @include box-sizing(border-box);
-    position: relative;
-    margin-bottom: $input-line-height / 2;
 
+    margin-bottom: $input-line-height / 2;
+    position: relative;
 
     &.is-hidden {
         display: none;
@@ -15,30 +15,30 @@
 
 
 .cui__placeholder {
-    font-weight: normal;
     color: $editor-placeholder-color;
+    font-weight: normal;
 }
 
 .cui__editor--text {
-    @include box-sizing(border-box);
     @include appearance(none);
+    @include box-sizing(border-box);
     @include font-size(15px);
 
     @include placeholder {
-        font-weight: normal;
         color: $editor-placeholder-color;
+        font-weight: normal;
     }
 
-    width: 100%;
     background-color: white;
-    border-radius: $input-border-radius;
     border: 1px solid $input-box-shadow-color;
-    line-height: 19px;
-    font-weight: 600;
+    border-radius: $input-border-radius;
     color: $input-editor-color;
+    font-weight: 600;
+    line-height: 19px;
+    margin: 0;
     padding: 12px;
     position: relative;
-    margin: 0;
+    width: 100%;
 
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
@@ -58,11 +58,10 @@
     }
 
     &:focus, &:hover {
-      outline: none;
+        outline: none;
     }
 
     &:focus {
-
         border: 1px solid $input-border-color-focus;
         border-radius: 2px;
 
@@ -74,7 +73,7 @@
         z-index: 1;
 
         @include respond-to-ie(8) {
-          border: 1px solid $input-border-color-focus;
+            border: 1px solid $input-border-color-focus;
         }
     }
 
@@ -118,24 +117,25 @@
 }
 
 .cui__editor-wrapper {
-    position: relative;
     height: 44px;
+    position: relative;
 
     @include respond-to-ie-and-stock {
         &:after {
             @include font-size(15px);
-            width: 100%;
-            height: 45px;
-            line-height: 45px;
-            padding: 0 13px;
+
+            box-sizing: border-box;
             color: $editor-placeholder-color;
             content: attr(data-placeholder);
+            display: block;
+            height: 45px;
+            left: 0;
+            line-height: 45px;
+            padding: 0 13px;
             position: absolute;
             top: 0;
-            left: 0;
-            display: block;
+            width: 100%;
             z-index: 1;
-            box-sizing: border-box;
         }
 
         &.is-invalid:after {
@@ -163,19 +163,18 @@
     @include font-size(11px);
     @include box-sizing(border-box);
 
-    width: 100%;
 
     background: $background-color;
     border-radius: 3px 3px 0 0;
+    bottom: 26px;
     color: #FFF;
     display: none;
     font-weight: bold;
     line-height: 1em;
     margin: -10px 0 0 0;
-    bottom: 26px;
     padding: 3px 10px 4px;
     position: absolute;
-
+    width: 100%;
     z-index: 10;
 
     &:after {
@@ -216,11 +215,11 @@
 
 .cui__field-tooltip__button {
     background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
-    width: 15px;
-    height: 15px;
-    float: right;
     clear: both;
+    float: right;
+    height: 15px;
     margin: 0 14px 0 0;
+    width: 15px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.png");
@@ -228,32 +227,31 @@
 }
 
 .cui__field-tooltip__content {
-    display: none;
     background: #FFF;
+    border: 1px solid #CCC;
     border-radius: 4px;
     box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-    border: 1px solid #CCC;
-    padding: 15px;
-    float: right;
     clear: both;
-    margin-bottom: 22px;
-    line-height: 1.5em;
-    position: relative;
+    display: none;
     float: right;
+    line-height: 1.5em;
+    margin-bottom: 22px;
+    padding: 15px;
+    position: relative;
 
     @include respond-to-wide {
         float: none;
     }
 
     &:after {
-        height: 0;
-        width: 0;
-        content: "";
-        position: absolute;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid #ededed;
         bottom: -9px;
+        content: "";
+        height: 0;
+        position: absolute;
         right: 13px;
+        width: 0;
     }
 }

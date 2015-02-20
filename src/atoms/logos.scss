@@ -1,7 +1,7 @@
 .cui__logo--visa--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/visa.svg');
-    width: 31px;
     height: 22px;
+    width: 31px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/visa.png');
@@ -10,8 +10,8 @@
 
 .cui__logo--visa-electron--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/visa-electron.svg');
-    width: 36px;
     height: 22px;
+    width: 36px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/visa-electron.png');
@@ -20,8 +20,8 @@
 
 .cui__logo--mastercard--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/mastercard.svg');
-    width: 30px;
     height: 22px;
+    width: 30px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/mastercard.png');
@@ -30,8 +30,8 @@
 
 .cui__logo--maestro--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/maestro.svg');
-    width: 30px;
     height: 22px;
+    width: 30px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/maestro.png');
@@ -40,8 +40,8 @@
 
 .cui__logo--amex--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/amex-solid.svg');
-    width: 25px;
     height: 22px;
+    width: 25px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/amex-solid.png');
@@ -50,8 +50,8 @@
 
 .cui__logo--discover--tiny {
     background-image: url($ui-toolkit-path + 'img/atoms/logos/svg-tiny-optimized/discover.svg');
-    width: 28px;
     height: 22px;
+    width: 28px;
 
     @include respond-to-ie {
         background-image: url($ui-toolkit-path + 'img/atoms/logos/png/22px-height/discover.png');

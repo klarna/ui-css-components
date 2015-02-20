@@ -2,18 +2,17 @@
     @include appearance(none);
     @include font-size($buy-button-font-size);
 
+    background: $custom-color-button-background;
     border: none;
-    outline: none;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: $custom-color-button-color;
     cursor: pointer;
     font-weight: bold;
-    vertical-align: top;
-
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
-    background: $custom-color-button-background;
-    color: $custom-color-button-color;
     line-height: 1;
+    outline: none;
     padding: 18px;
-    border-radius: 5px;
+    vertical-align: top;
 
     &:hover {
         background: darken($custom-color-button-background, 2%);
@@ -25,8 +24,8 @@
     }
 
     &.is-disabled {
-        box-shadow: none;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        box-shadow: none;
         opacity: 0.4;
 
         &:hover {
@@ -45,20 +44,20 @@
 }
 
 .cui__buy-button__loader {
-    @include retina-image-compat($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader', 22px 22px);
     @include animation(spin 0.8s linear infinite);
+    @include retina-image-compat($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader', 22px 22px);
 
+    font-size: 0;
+    height: 22px;
     margin: 0 auto;
     width: 22px;
-    height: 22px;
-    font-size: 0;
 
     // Preload the image
     &:before {
         content: url($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader.png');
-        width: 0;
-        height: 0;
         display: none;
+        height: 0;
+        width: 0;
 
         @include hidpi {
             content: url($ui-toolkit-path + 'img/atoms/buy_button/buy_button.loader@2x.png');
@@ -69,7 +68,8 @@
     .ie8 &,
     .ie9 & {
         @include font-size($buy-button-font-size);
-        width: 100%;
+
         background-image: none;
+        width: 100%;
     }
 }
