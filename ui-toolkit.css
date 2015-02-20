@@ -2235,9 +2235,6 @@ html:hover [class^="ss-"] {
       border: 1px solid #0089CF; }
   .cui__editor--text::-webkit-input-placeholder, .cui__editor--with-icon::-webkit-input-placeholder {
     color: #a9a9a9; }
-  .cui__editor--text:-moz-placeholder, .cui__editor--with-icon:-moz-placeholder {
-    color: #a9a9a9;
-    opacity: 1; }
   .cui__editor--text::-moz-placeholder, .cui__editor--with-icon::-moz-placeholder {
     color: #a9a9a9;
     opacity: 1; }
@@ -2248,9 +2245,6 @@ html:hover [class^="ss-"] {
     opacity: 1; }
     .cui__editor--text[disabled]::-webkit-input-placeholder, [disabled].cui__editor--with-icon::-webkit-input-placeholder {
       color: #a9a9a9; }
-    .cui__editor--text[disabled]:-moz-placeholder, [disabled].cui__editor--with-icon:-moz-placeholder {
-      color: #545454;
-      opacity: 1; }
     .cui__editor--text[disabled]::-moz-placeholder, [disabled].cui__editor--with-icon::-moz-placeholder {
       color: #545454;
       opacity: 1; }

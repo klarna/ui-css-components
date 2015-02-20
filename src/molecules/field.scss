@@ -82,12 +82,6 @@
         color: $editor-placeholder-color;
     }
 
-    // Firefox 4-18
-    &:-moz-placeholder {
-        color: $editor-placeholder-color;
-        opacity: 1;
-    }
-
     //  Firefox 19+
     &::-moz-placeholder {
         color: $editor-placeholder-color;
@@ -102,12 +96,6 @@
 
         &::-webkit-input-placeholder {
             color: $editor-placeholder-color;
-        }
-
-        // Firefox 4-18
-        &:-moz-placeholder {
-            color: $input-disabled-color;
-            opacity: 1;
         }
 
         //  Firefox 19+
