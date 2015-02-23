@@ -2175,11 +2175,11 @@ html:hover [class^="ss-"] {
   overflow: hidden;
   white-space: nowrap;
   width: 100%; }
+  .ie .cui__select-overlay, [data-cui-browser-ie] .cui__select-overlay {
+    height: 43px; }
   .ie8 .cui__select-overlay, [data-cui-browser-ie8] .cui__select-overlay {
     border: 1px solid #a6a6a6;
     height: 44px; }
-  .ie .cui__select-overlay, [data-cui-browser-ie] .cui__select-overlay {
-    height: 43px; }
   .cui__select-dropdown:hover + .cui__select-overlay:before, .cui__select-dropdown:focus + .cui__select-overlay:before {
     height: 0;
     width: 0;
@@ -2531,6 +2531,8 @@ html:hover [class^="ss-"] {
   border-right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
+  .ie .cui__editor--is-left, [data-cui-browser-ie] .cui__editor--is-left {
+    border-right: 0; }
 
 .cui__field--is-middle {
   float: left;
@@ -2553,6 +2555,9 @@ html:hover [class^="ss-"] {
   border-radius: 0; }
   .cui__editor--is-middle:focus {
     margin-left: -1px; }
+  .ie .cui__editor--is-middle, [data-cui-browser-ie] .cui__editor--is-middle {
+    border-left: 0;
+    border-right: 0; }
 
 .cui__field--is-right {
   float: left;
@@ -2575,3 +2580,5 @@ html:hover [class^="ss-"] {
   border-bottom-left-radius: 0; }
   .cui__editor--is-right:focus {
     margin-left: -1px; }
+  .ie .cui__editor--is-right, [data-cui-browser-ie] .cui__editor--is-right {
+    border-left: 0; }

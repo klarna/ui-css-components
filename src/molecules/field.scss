@@ -304,6 +304,10 @@
     border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include respond-to-ie {
+        border-right: 0;
+    }
 }
 
 .cui__field--is-middle {
@@ -318,6 +322,11 @@
     border-radius: 0;
 
     @include editor-separator;
+
+    @include respond-to-ie {
+        border-left: 0;
+        border-right: 0;
+    }
 }
 
 .cui__field--is-right {
@@ -332,4 +341,8 @@
     border-bottom-left-radius: 0;
 
     @include editor-separator;
+
+    @include respond-to-ie {
+        border-left: 0;
+    }
 }
