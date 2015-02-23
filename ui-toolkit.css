@@ -2478,7 +2478,7 @@ html:hover [class^="ss-"] {
   transition: opacity 0.3s linear, transform 0.3s ease-out;
   -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, -moz-transform 0.3s ease-out;
-  z-index: 0; }
+  z-index: 10; }
   .ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, [data-cui-browser-ie8] .cui__field-tooltip:hover .cui__field-tooltip__content, .ie8 .cui__field-tooltip.hover .cui__field-tooltip__content, [data-cui-browser-ie8] .cui__field-tooltip.hover .cui__field-tooltip__content {
     display: block; }
 
@@ -2489,6 +2489,8 @@ html:hover [class^="ss-"] {
   display: block;
   padding: 14px;
   z-index: 2; }
+  .is-invalid .cui__field-tooltip__button-wrapper {
+    padding: 19px 14px 9px 14px; }
 
 .cui__field-tooltip__button {
   background-image: url("img/molecules/field/field.tooltip.svg");
