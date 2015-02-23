@@ -24,13 +24,13 @@ $select-overlay-triangle-y-ie: 18px;
     white-space: nowrap;
     width: 100%;
 
+    @include respond-to-ie {
+        height: 43px;
+    }
+
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
         height: 44px;
-    }
-
-    @include respond-to-ie {
-        height: 43px;
     }
 
     .cui__select-dropdown:hover + &:before,
