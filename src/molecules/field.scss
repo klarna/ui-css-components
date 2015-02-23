@@ -298,6 +298,14 @@
     &:focus {
         margin-left: -1px;
     }
+
+    *:focus + & {
+        margin-left: -1px;
+
+        @include respond-to-ie {
+            margin-left: 0;
+        }
+    }
 }
 
 .cui__field--is-left {

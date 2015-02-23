@@ -88,6 +88,22 @@ $select-overlay-triangle-y-ie: 18px;
             top: $select-overlay-triangle-y-ie;
         }
     }
+
+    *:focus + & {
+        border: 1px solid $input-border-color-focus;
+        border-radius: 2px;
+
+        box-shadow:
+            inset 0 1px 1px 0 $input-box-shadow-color-inset,
+            inset 0 1px 3px hsla(0, 0%, 0%, 0.06),
+            0 0 3px 1px $input-border-color-focus;
+
+        z-index: 1;
+
+        @include respond-to-ie(8) {
+            border: 1px solid $input-border-color-focus;
+        }
+    }
 }
 
 .cui__select-dropdown {
