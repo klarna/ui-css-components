@@ -1,14 +1,7 @@
 // ================================================================
 //  General
 // ================================================================
-$ui_toolkit-path: "";
-
-// ================================================================
-//  Images
-// ================================================================
-$button-loader-image-url: 'img/loaders/button.loader';
-$buy-button-loader-image-url: 'img/loaders/buy-button-loader';
-$select-overlay-triangle-image: 'img/select/select-arrow.png';
+$ui-toolkit-path: "";
 
 // ================================================================
 //  Typography
@@ -85,37 +78,9 @@ $header-margin: 16px;
 
 
 // ================================================================
-//  Buttons
-// ================================================================
-$flat-button-bevel: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
-
-
-// ================================================================
 //  Tooltip
 // ================================================================
 $tooltip-content-width: 190px;
 $tooltip-arrow-size: 16px;
 $tooltip-icon-size-small: 14px;
 $tooltip-icon-size-large: 17px;
-
-
-// ================================================================
-//  Logos
-// ================================================================
-$visa_tiny_svg: 'img/logos/svg-tiny-optimized/visa.svg';
-$visa_tiny_png: 'img/logos/png/22px-height/visa.png';
-
-$visaelectron_tiny_svg: 'img/logos/svg-tiny-optimized/visa-electron.svg';
-$visaelectron_tiny_png: 'img/logos/png/22px-height/visa-electron.png';
-
-$mastercard_tiny_svg: 'img/logos/svg-tiny-optimized/mastercard.svg';
-$mastercard_tiny_png: 'img/logos/png/22px-height/mastercard.png';
-
-$maestro_tiny_svg: 'img/logos/svg-tiny-optimized/maestro.svg';
-$maestro_tiny_png: 'img/logos/png/22px-height/maestro.png';
-
-$amex_tiny_svg: 'img/logos/svg-tiny-optimized/amex-solid.svg';
-$amex_tiny_png: 'img/logos/png/22px-height/amex-solid.png';
-
-$discover_tiny_svg: 'img/logos/svg-tiny-optimized/discover.svg';
-$discover_tiny_png: 'img/logos/png/22px-height/discover.png';

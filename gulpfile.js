@@ -44,22 +44,19 @@ gulp.task('reload:js', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('images:1x', function () {
-    gulp.src('img/logos/svg/**/*.svg')
+gulp.task('images:logos', function () {
+    gulp.src('img/atoms/logos/svg/**/*.svg')
         .pipe(svg2png())
-        .pipe(gulp.dest('img/logos/png/22px-height'));
+        .pipe(gulp.dest('img/atoms/logos/png/22px-height'));
 });
 
-gulp.task('images:2x', function () {
-    gulp.src('img/logos/svg/**/*.svg')
-        .pipe(svg2png(2.0))
-        .pipe(rename({
-            suffix: '@2x'
-        }))
-        .pipe(gulp.dest('img/logos/png/22px-height'))
+gulp.task('images:molecules', function () {
+    gulp.src('img/molecules/**/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('img/molecules'));
 });
 
-gulp.task('images', ['images:1x', 'images:2x']);
+gulp.task('images', ['images:logos', 'images:molecules']);
 
 // Default task to be run with `gulp`
 gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {

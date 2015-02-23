@@ -1,11 +1,11 @@
 .cui__icon {
+    bottom: -3px; // Must be set to prevent IE8 from crashing.
     color: #aaa;
     font-size: 15px;
+    left: 10px;
     line-height: normal;
     padding: 12px 0;
     position: absolute;
-    left: 10px;
-    bottom: -3px; // Must be set to prevent IE8 from crashing.
     width: 20px;
     z-index: 10;
 

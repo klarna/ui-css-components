@@ -1,8 +1,8 @@
 .cui__field {
     @include box-sizing(border-box);
-    position: relative;
-    margin-bottom: $input-line-height / 2;
 
+    margin-bottom: $input-line-height / 2;
+    position: relative;
 
     &.is-hidden {
         display: none;
@@ -15,29 +15,30 @@
 
 
 .cui__placeholder {
-    font-weight: normal;
     color: $editor-placeholder-color;
+    font-weight: normal;
 }
 
 .cui__editor--text {
-    @include box-sizing(border-box);
     @include appearance(none);
+    @include box-sizing(border-box);
     @include font-size(15px);
 
     @include placeholder {
-        font-weight: normal;
         color: $editor-placeholder-color;
+        font-weight: normal;
     }
 
-    width: 100%;
     background-color: white;
-    border-radius: $input-border-radius;
     border: 1px solid $input-box-shadow-color;
-    line-height: 19px;
-    font-weight: 600;
+    border-radius: $input-border-radius;
     color: $input-editor-color;
+    font-weight: 600;
+    line-height: 19px;
+    margin: 0;
     padding: 12px;
     position: relative;
+    width: 100%;
 
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
@@ -45,23 +46,22 @@
 
     @include respond-to-ie-and-stock {
         background-color: transparent;
-        // base64 encoded version of `img/background/input-background-1x1.png`
+        // base64 encoded version of `img/molecules/field/field.background.png`
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         z-index: 2;
 
         &[disabled] {
             background-color: transparent;
-            // base64 encoded version of `img/background/input-disabled-background-1x1.png`
+            // base64 encoded version of `img/molecules/field/field.background.disabled.png`
             background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII=');
         }
     }
 
     &:focus, &:hover {
-      outline: none;
+        outline: none;
     }
 
     &:focus {
-
         border: 1px solid $input-border-color-focus;
         border-radius: 2px;
 
@@ -73,18 +73,12 @@
         z-index: 1;
 
         @include respond-to-ie(8) {
-          border: 1px solid $input-border-color-focus;
+            border: 1px solid $input-border-color-focus;
         }
     }
 
     &::-webkit-input-placeholder {
         color: $editor-placeholder-color;
-    }
-
-    // Firefox 4-18
-    &:-moz-placeholder {
-        color: $editor-placeholder-color;
-        opacity: 1;
     }
 
     //  Firefox 19+
@@ -101,12 +95,6 @@
 
         &::-webkit-input-placeholder {
             color: $editor-placeholder-color;
-        }
-
-        // Firefox 4-18
-        &:-moz-placeholder {
-            color: $input-disabled-color;
-            opacity: 1;
         }
 
         //  Firefox 19+
@@ -129,24 +117,25 @@
 }
 
 .cui__editor-wrapper {
-    position: relative;
     height: 44px;
+    position: relative;
 
     @include respond-to-ie-and-stock {
         &:after {
             @include font-size(15px);
-            width: 100%;
-            height: 45px;
-            line-height: 45px;
-            padding: 0 13px;
+
+            box-sizing: border-box;
             color: $editor-placeholder-color;
             content: attr(data-placeholder);
+            display: block;
+            height: 45px;
+            left: 0;
+            line-height: 45px;
+            padding: 0 13px;
             position: absolute;
             top: 0;
-            left: 0;
-            display: block;
+            width: 100%;
             z-index: 1;
-            box-sizing: border-box;
         }
 
         &.is-invalid:after {
@@ -174,19 +163,18 @@
     @include font-size(11px);
     @include box-sizing(border-box);
 
-    width: 100%;
 
     background: $background-color;
     border-radius: 3px 3px 0 0;
+    bottom: 26px;
     color: #FFF;
     display: none;
     font-weight: bold;
     line-height: 1em;
     margin: -10px 0 0 0;
-    bottom: 26px;
     padding: 3px 10px 4px;
     position: absolute;
-
+    width: 100%;
     z-index: 10;
 
     &:after {
@@ -206,4 +194,74 @@
 
 .cui__field__warning-tooltip {
     @include field_tooltip($input-tooltip-background-color--warning);
+}
+
+
+// ================================================================
+//  TOOLTIP
+// ================================================================
+.cui__field-tooltip {
+    &:hover, &.hover {
+        .cui__field-tooltip__content {
+            @include transform(translateY(0));
+
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 0;
+
+            @include respond-to-ie(8) {
+                display: block;
+            }
+        }
+    }
+}
+
+.cui__field-tooltip__button-wrapper {
+    @include position(absolute, null 0 0 null);
+
+    display: block;
+    padding: 14px;
+    z-index: 2;
+}
+
+.cui__field-tooltip__button {
+    background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
+    height: 15px;
+    width: 15px;
+
+    @include respond-to-ie {
+        background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.png");
+    }
+}
+
+.cui__field-tooltip__content {
+    @include position(absolute, null 0 52px null);
+
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
+    line-height: 1.5em;
+    opacity: 0;
+    padding: 15px;
+    transform: translateY(10px);
+    width: 100%;
+    z-index: -1;
+
+    @include respond-to-ie(8) {
+        display: none;
+    }
+
+    &:after {
+        @include position(absolute, null 13px -9px null);
+
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #ededed;
+        content: "";
+        height: 0;
+        width: 0;
+    }
 }

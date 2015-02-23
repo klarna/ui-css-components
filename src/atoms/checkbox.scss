@@ -1,5 +1,6 @@
 .cui__checkbox {
     @include appearance(none);
+
     background: #fff;
     border: 1px solid darken($checkbox-border, 10%);
     border-radius: 2px;

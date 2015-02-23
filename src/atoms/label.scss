@@ -1,5 +1,6 @@
 .cui__label {
     @include font-size(13px);
-    font-weight: bold;
+    
     display: inline-block;
+    font-weight: bold;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"> <span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"> <button class="cui__highlighted-button">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"> <span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"> <button class="cui__highlighted-button">
     Highlighted button
 </button>
 </div><pre> &lt;button class=&quot;cui__highlighted-button&quot;&gt;
@@ -132,7 +132,54 @@
             class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
+</pre><p>With tooltip</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text"
+            placeholder="Please write your email address"
+            value="" />
+        <div class="cui__field-tooltip">
+            <div class="cui__field-tooltip__content">
+                Your email address is like your identity card in the internet.
+            </div>
+
+            <div class="cui__field-tooltip__button-wrapper">
+                <div class="cui__field-tooltip__button"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;&quot; /&gt;
+        &lt;div class=&quot;cui__field-tooltip&quot;&gt;
+            &lt;div class=&quot;cui__field-tooltip__content&quot;&gt;
+                Your email address is like your identity card in the internet.
+            &lt;/div&gt;
+
+            &lt;div class=&quot;cui__field-tooltip__button-wrapper&quot;&gt;
+                &lt;div class=&quot;cui__field-tooltip__button&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><script>UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
+</script><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
     <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
     </span>
@@ -195,8 +242,9 @@ var cuiEditors = document
   .querySelectorAll(
     '.cui__editor--text, .cui__editor--with-icon');
 
-for (var i = 0; i < cuiEditorWrappers.length; i ++) 
+for (var i = 0; i < cuiEditorWrappers.length; i ++) {
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+}  
   
 </script><h3>Select</h3><div class="presentation-example"><div class="cui__select">
     <span class="cui__select-overlay" data-cid="overlay.selector">
@@ -276,4 +324,6 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++)
 &lt;div class=&quot;cui__logo--maestro--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--mastercard--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--amex--tiny&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre></div></body></html>
+&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre><h2 id="misc" class="presentation">Misc</h2><h3>Loader</h3><div class="presentation-example"><div class="cui__loader"></div>
+</div><pre>&lt;div class=&quot;cui__loader&quot;&gt;&lt;/div&gt;
+</pre></div></body></html>
