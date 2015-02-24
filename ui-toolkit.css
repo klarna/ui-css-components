@@ -2221,7 +2221,7 @@ html:hover [class^="ss-"] {
     content: "";
     position: absolute;
     right: 13px;
-    top: 20px;
+    top: 21px;
     z-index: 1;
     pointer-events: none; }
     .ie .cui__select-overlay:before, .cui__browser--ie .cui__select-overlay:before {
