@@ -209,7 +209,7 @@
             transition: opacity .3s linear, transform .3s ease-out;
             -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
             -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
-            z-index: 0;
+            z-index: 10;
 
             @include respond-to-ie(8) {
                 display: block;
@@ -224,6 +224,10 @@
     display: block;
     padding: 14px;
     z-index: 2;
+
+    .is-invalid & {
+        padding: 19px 14px 9px 14px;
+    }
 }
 
 .cui__field-tooltip__button {
@@ -263,5 +267,94 @@
         content: "";
         height: 0;
         width: 0;
+    }
+}
+
+// ================================================================
+//  GROUP FIELDS
+// ================================================================
+@mixin field-separator {
+    position: relative;
+
+    &:before {
+        content: " ";
+        border-left: 1px solid #ddd;
+        height: 23px;
+        position: absolute;
+        width: 0;
+        left: -1px;
+        bottom: 10px;
+        display: block;
+    }
+
+    @include respond-to-ie {
+        &:before {
+            height: 25px;
+        }
+    }
+}
+
+@mixin editor-separator {
+    &:focus {
+        margin-left: -1px;
+    }
+
+    *:focus + & {
+        margin-left: -1px;
+
+        @include respond-to-ie {
+            margin-left: 0;
+        }
+    }
+}
+
+.cui__field--is-left {
+    float: left;
+}
+
+.cui__editor--is-left {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @include respond-to-ie {
+        border-right: 0;
+    }
+}
+
+.cui__field--is-middle {
+    float: left;
+
+    @include field-separator;
+}
+
+.cui__editor--is-middle {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+
+    @include editor-separator;
+
+    @include respond-to-ie {
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+.cui__field--is-right {
+    float: left;
+
+    @include field-separator;
+}
+
+.cui__editor--is-right {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    @include editor-separator;
+
+    @include respond-to-ie {
+        border-left: 0;
     }
 }

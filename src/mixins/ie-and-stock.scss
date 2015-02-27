@@ -6,8 +6,8 @@
         @content;
     }
 
-    [data-cui-browser-ie] &,
-    [data-cui-browser-android--stock] & {
+    .cui__browser--ie &,
+    .cui__browser--android--stock & {
         @content;
     }
 }
