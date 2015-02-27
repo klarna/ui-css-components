@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"> <span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"> <button class="cui__highlighted-button">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"> <span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"> <button class="cui__highlighted-button">
     Highlighted button
 </button>
 </div><pre> &lt;button class=&quot;cui__highlighted-button&quot;&gt;
@@ -132,7 +132,142 @@
             class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
+</pre><p>With separators</p><div class="presentation-example"><div class="cui__field cui__field--is-left" style="width: 33%">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text cui__editor--is-left"
+            placeholder="Day (DD)"
+            value="" />
+    </div>
+</div>
+
+<div class="cui__field cui__field--is-middle" style="width: 33%">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text cui__editor--is-middle"
+            placeholder="Month (MM)"
+            value="" />
+    </div>
+</div>
+
+<div class="cui__field cui__field--is-right" style="width: 33%">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text cui__editor--is-right"
+            placeholder="Year (YYYY)"
+            value="" />
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text cui__editor--is-left&quot;
+            placeholder=&quot;Day (DD)&quot;
+            value=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text cui__editor--is-middle&quot;
+            placeholder=&quot;Month (MM)&quot;
+            value=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field cui__field--is-right&quot; style=&quot;width: 33%&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text cui__editor--is-right&quot;
+            placeholder=&quot;Year (YYYY)&quot;
+            value=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><p>With tooltip</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text"
+            placeholder="Please write your email address"
+            value="" />
+        <div class="cui__field-tooltip">
+            <div class="cui__field-tooltip__content">
+                Your email address is like your identity card in the internet.
+            </div>
+
+            <div class="cui__field-tooltip__button-wrapper">
+                <div class="cui__field-tooltip__button"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;&quot; /&gt;
+        &lt;div class=&quot;cui__field-tooltip&quot;&gt;
+            &lt;div class=&quot;cui__field-tooltip__content&quot;&gt;
+                Your email address is like your identity card in the internet.
+            &lt;/div&gt;
+
+            &lt;div class=&quot;cui__field-tooltip__button-wrapper&quot;&gt;
+                &lt;div class=&quot;cui__field-tooltip__button&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><script>UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
+</script><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
     <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
     </span>
@@ -195,30 +330,107 @@ var cuiEditors = document
   .querySelectorAll(
     '.cui__editor--text, .cui__editor--with-icon');
 
-for (var i = 0; i < cuiEditorWrappers.length; i ++) 
+for (var i = 0; i < cuiEditorWrappers.length; i ++) {
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+}  
   
 </script><h3>Select</h3><div class="presentation-example"><div class="cui__select">
-    <span class="cui__select-overlay" data-cid="overlay.selector">
-        Name
-    </span>
-
     <select class="cui__select-dropdown" data-cid="select.selector">
         <option value="" data-placeholder="Placeholder"></option>
         <option>Alice</option>
         <option>Bob</option>
     </select>
+
+    <span class="cui__select-overlay" data-cid="overlay.selector">
+        Name
+    </span>
 </div>
 </div><pre>&lt;div class=&quot;cui__select&quot;&gt;
-    &lt;span class=&quot;cui__select-overlay&quot; data-cid=&quot;overlay.selector&quot;&gt;
-        Name
-    &lt;/span&gt;
-
     &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
         &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
         &lt;option&gt;Alice&lt;/option&gt;
         &lt;option&gt;Bob&lt;/option&gt;
     &lt;/select&gt;
+
+    &lt;span class=&quot;cui__select-overlay&quot; data-cid=&quot;overlay.selector&quot;&gt;
+        Name
+    &lt;/span&gt;
+&lt;/div&gt;
+</pre><p>With separators</p><div class="presentation-example"><div class="cui__select cui__field--is-left" style="width: 33%">
+    <select class="cui__select-dropdown" data-cid="select.selector">
+        <option value="" data-placeholder="Placeholder"></option>
+        <option>Alice</option>
+        <option>Bob</option>
+    </select>
+
+    <span class="cui__select-overlay cui__editor--is-left"
+        data-cid="overlay.selector">
+        Name
+    </span>
+</div>
+
+<div class="cui__select cui__field--is-middle" style="width: 33%">
+    <select class="cui__select-dropdown" data-cid="select.selector">
+        <option value="" data-placeholder="Placeholder"></option>
+        <option>Alice</option>
+        <option>Bob</option>
+    </select>
+
+    <span class="cui__select-overlay cui__editor--is-middle"
+        data-cid="overlay.selector">
+        Middle Name
+    </span>
+</div>
+
+<div class="cui__select cui__field--is-right" style="width: 32%">
+    <select class="cui__select-dropdown" data-cid="select.selector">
+        <option value="" data-placeholder="Placeholder"></option>
+        <option>Alice</option>
+        <option>Bob</option>
+    </select>
+
+    <span class="cui__select-overlay cui__editor--is-right"
+        data-cid="overlay.selector">
+        Last Name
+    </span>
+</div>
+</div><pre>&lt;div class=&quot;cui__select cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
+    &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
+        &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+        &lt;option&gt;Alice&lt;/option&gt;
+        &lt;option&gt;Bob&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;span class=&quot;cui__select-overlay cui__editor--is-left&quot;
+        data-cid=&quot;overlay.selector&quot;&gt;
+        Name
+    &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__select cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
+    &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
+        &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+        &lt;option&gt;Alice&lt;/option&gt;
+        &lt;option&gt;Bob&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;span class=&quot;cui__select-overlay cui__editor--is-middle&quot;
+        data-cid=&quot;overlay.selector&quot;&gt;
+        Middle Name
+    &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__select cui__field--is-right&quot; style=&quot;width: 32%&quot;&gt;
+    &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
+        &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+        &lt;option&gt;Alice&lt;/option&gt;
+        &lt;option&gt;Bob&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;span class=&quot;cui__select-overlay cui__editor--is-right&quot;
+        data-cid=&quot;overlay.selector&quot;&gt;
+        Last Name
+    &lt;/span&gt;
 &lt;/div&gt;
 </pre><h3>Label</h3><div class="presentation-example"><label class="cui__label">
     Email address
@@ -276,4 +488,6 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++)
 &lt;div class=&quot;cui__logo--maestro--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--mastercard--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--amex--tiny&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre></div></body></html>
+&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre><h2 id="misc" class="presentation">Misc</h2><h3>Loader</h3><div class="presentation-example"><div class="cui__loader"></div>
+</div><pre>&lt;div class=&quot;cui__loader&quot;&gt;&lt;/div&gt;
+</pre></div></body></html>

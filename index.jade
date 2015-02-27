@@ -30,6 +30,7 @@ html(lang="en")
         a(href='#links') Links
         a(href='#icons') Icons
         a(href='#logos') Logos
+        a(href='#misc') Misc
     
     #home.main
       h2#buttons.presentation Buttons
@@ -94,7 +95,17 @@ html(lang="en")
       p With icon
       +code()
         include snippets/field--with-icon.html
+
+      p With separators
+      +code()
+        include snippets/field--with-separators.html
+
+      p With tooltip
+      +code()
+        include snippets/field--with-tooltip.html
       
+      script.
+        UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
       
       p Error in the data
       +code()
@@ -108,13 +119,18 @@ html(lang="en")
           .querySelectorAll(
             '.cui__editor--text, .cui__editor--with-icon');
         
-        for (var i = 0; i < cuiEditorWrappers.length; i ++) 
+        for (var i = 0; i < cuiEditorWrappers.length; i ++) {
           UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+        }  
           
       
       h3 Select
       +code()
         include snippets/select.html
+      
+      p With separators
+      +code()
+        include snippets/select--with-separators.html
       
       
       h3 Label
@@ -154,3 +170,11 @@ html(lang="en")
       h3 Card logos
       +code()
         include snippets/logos--cards.html
+        
+        
+        
+      h2#misc.presentation Misc
+      
+      h3 Loader
+      +code()
+        include snippets/loader.html

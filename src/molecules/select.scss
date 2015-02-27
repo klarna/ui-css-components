@@ -1,5 +1,5 @@
-$select-overlay-triangle-y: 1.35em;
-$select-overlay-triangle-y-ie: 1.2em;
+$select-overlay-triangle-y: 21px;
+$select-overlay-triangle-y-ie: 18px;
 
 .cui__select {
     @extend .cui__field;
@@ -8,23 +8,35 @@ $select-overlay-triangle-y-ie: 1.2em;
 
 .cui__select-overlay {
     @include box-sizing(border-box);
-    @include appearance(none);
-    @include background-image(linear-gradient(#fff 90%, #f3f3f3 100%));
     @include font-size(15px);
 
-    width: 100%;
     border: 1px solid $input-box-shadow-color;
     border-radius: $input-border-radius;
     display: inline-block;
     font-weight: bold;
     line-height: normal;
     margin-bottom: $input-line-height / 2;
-    width: 100%;
-    position: absolute;
-    top: 0;
     padding: 13px;
     padding-right: 43px;
     color: #595959;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+
+    @include respond-to-ie {
+        height: 43px;
+    }
+
+    @include respond-to-ie(8) {
+        border: 1px solid $input-box-shadow-color;
+        height: 44px;
+    }
+
+    .cui__select-dropdown:hover + &:before,
+    .cui__select-dropdown:focus + &:before {
+        @include triangle(12px, #AAA, down);
+    }
 
     &.is-placeholder {
         font-weight: normal;
@@ -64,62 +76,32 @@ $select-overlay-triangle-y-ie: 1.2em;
     }
 
     &:before {
-        @include triangle(12px, #555, down);
+        @include triangle(12px, #CCC, down);
         content: "";
         position: absolute;
-        right: 0.75em;
+        right: 13px;
         top: $select-overlay-triangle-y;
         z-index: 1;
         pointer-events: none;
-    }
 
-    &:after {
-        content: "";
-        background-color: $input-box-shadow-color;
-        position: absolute;
-        top: 0;
-        right: 34px;
-        width: 1px;
-        height: 100%;
-    }
-
-    @include respond-to-ie(8) {
-        border: 1px solid $input-box-shadow-color;
-        height: 44px;
-    }
-
-    @include respond-to-ie {
-        height: 43px;
-    }
-
-    /* Since IE10- doesn't support pointer-events, the CSS based triangled
-     * must be replace with a background image.
-     * The CSS based is kept for retina support. */
-     @include respond-to-ie((8, 9, 10)) {
-        background-repeat: no-repeat;
-
-        &:before {
-            display: none;
-        }
-   }
-
-    @include respond-to-ie((8, 9)) {
-        background-image: url($select-overlay-triangle-image);
-        background-position: 100% $select-overlay-triangle-y-ie;
-
-        &.is-disabled {
-            background: $input-disabled-background-color url($select-overlay-triangle-image) 100% $select-overlay-triangle-y-ie no-repeat !important;
+        @include respond-to-ie {
+            top: $select-overlay-triangle-y-ie;
         }
     }
 
-    @include respond-to-ie(10) {
-        background-image: url($select-overlay-triangle-image), -ms-linear-gradient(#fff 75%, #f3f3f3 100%);
-        background-position: 100% $select-overlay-triangle-y-ie, 0 0;
+    *:focus + & {
+        border: 1px solid $input-border-color-focus;
+        border-radius: 2px;
 
-        &.is-disabled {
-            background-image: url($select-overlay-triangle-image);
-            background-position: 100% $select-overlay-triangle-y-ie;
-            background-color: $input-disabled-background-color;
+        box-shadow:
+            inset 0 1px 1px 0 $input-box-shadow-color-inset,
+            inset 0 1px 3px hsla(0, 0%, 0%, 0.06),
+            0 0 3px 1px $input-border-color-focus;
+
+        z-index: 1;
+
+        @include respond-to-ie(8) {
+            border: 1px solid $input-border-color-focus;
         }
     }
 }

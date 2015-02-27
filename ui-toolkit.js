@@ -43,17 +43,21 @@
         },
 
         scopeBrowser: function () {
+            var classes = [];
+
             if (UIToolkit.browser.isAndroidStock()) {
-                rootEl.setAttribute('data-cui-browser-android--stock', 'true');
+                classes.push("cui__browser--android--stock");
             }
 
             if (UIToolkit.browser.isIE()) {
-                rootEl.setAttribute('data-cui-browser-ie', 'true');
+                classes.push("cui__browser--ie");
             }
 
             if (UIToolkit.browser.isIE8()) {
-                rootEl.setAttribute('data-cui-browser-ie8', 'true');
+                classes.push("cui__browser--ie8");
             }
+
+            rootEl.className += " " + classes.join(" ");
         },
 
         fakePlaceholders: function (editor, wrapper) {
@@ -125,6 +129,14 @@
                 wrapper.setAttribute(
                     'data-placeholder',
                     wrapper.getAttribute('data-placeholder') );
+            }
+        },
+
+        tooltip: function (tooltipButton) {
+            var callback = function (e) { e.preventDefault(); }
+
+            if (tooltipButton.addEventListener) {
+                tooltipButton.addEventListener('click', callback, false);
             }
         }
     };

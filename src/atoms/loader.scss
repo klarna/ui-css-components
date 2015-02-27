@@ -1,0 +1,7 @@
+.cui__loader {
+    @include retina-image-compat($ui-toolkit-path + "img/atoms/loader/loader.loader", 32px 32px, "gif");
+    
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}

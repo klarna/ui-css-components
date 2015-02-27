@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.0
+
+### Added
+
+- Focus state on select boxes now supported
+- Inlined tooltip for fields
+- Grouped fields with line separators so that related fields can be presented conjoined with each other
+- Snippets to showcase the inline tooltip and grouped fields
+- Disabled fields background image (inlined in the CSS as `data:` URI)
+- Snippet to showcase already supported `.cui__loader` atom
+- `img/molecules/field/field.tooltip.svg` and `img/molecules/field/field.tooltip.png`
+
+### Changed
+
+- Make select box carets lighter and darken on hover/focus
+- Reorganized file structure in the `img` folder to more closely map the `src` folder structure
+- SCSS properties inside selectors should now follow alphabetic order
+- 1x1 transparent and semitransparent background PNGs are now inlined as `data:` URIs
+- Order of `select` and `field` imports in the `build/ui-toolkit.scss` and `build/ui-toolkit-no-settings.scss` files to allow field styles to override select styles
+
+### Fixed
+
+- Better alignment for select boxes caret
+- IE 8 select styles
+- Presentation container tolerates floated elements
+
+### Removed
+
+- Unused `img/molecules/select` images
+- Select boxes:
+  - Removed gradient background
+  - Removed separation line between text and caret
+- Special placeholder styles for an obsolete version of Mozilla Firefox
+- Unnecessary `@2x` PNGs for images that already have an SVG version to be used in HDPI devices
+
 ## 1.3.5
 
 ### Added
