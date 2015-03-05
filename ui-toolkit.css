@@ -2444,6 +2444,7 @@ html:hover [class^="ss-"] {
   line-height: 1em;
   margin: -10px 0 0 0;
   padding: 3px 10px 4px;
+  pointer-events: none;
   position: absolute;
   width: 100%;
   z-index: 10; }
@@ -2467,6 +2468,7 @@ html:hover [class^="ss-"] {
   line-height: 1em;
   margin: -10px 0 0 0;
   padding: 3px 10px 4px;
+  pointer-events: none;
   position: absolute;
   width: 100%;
   z-index: 10; }
