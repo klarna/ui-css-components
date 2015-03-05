@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.2
+
+### Changed
+
+- Fake placeholders are only enabled for IEs now. Android Stock support has been removed due to faulty behavior.
+
+### Added
+
+- `UIToolkit.setupFakePlaceholders` which allows consumers to setup the fake placeholders manually without browser version checks.
+
 ## 1.4.1
 
 ### Changed

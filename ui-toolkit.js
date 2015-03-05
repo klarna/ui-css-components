@@ -61,36 +61,42 @@
         },
 
         fakePlaceholders: function (editor, wrapper) {
-            var callback;
 
             // Only for IE and Android Stock, that behave differently from others
-            if (UIToolkit.browser.isIE() || UIToolkit.browser.isAndroidStock()) {
+            // FIXME: Android Stock support removed until we manage to fix the
+            // bug affecting non-checkout consumers
+            if (UIToolkit.browser.isIE()) {
+                UIToolkit.setupFakePlaceholders(editor, wrapper);
+            }
+        },
 
-                UIToolkit.toggleFakePlaceholders(editor, wrapper);
+        setupFakePlaceholders: function (editor, wrapper) {
+            var callback;
 
-                callback = function () {
-                    setTimeout(function () {
-                        UIToolkit.toggleFakePlaceholders(editor, wrapper);
-                    }, 0);
-                };
+            UIToolkit.toggleFakePlaceholders(editor, wrapper);
 
-                if (editor.getAttribute('placeholder')) {
-                    wrapper.setAttribute(
-                        'data-placeholder',
-                        editor.getAttribute('placeholder'));
+            callback = function () {
+                setTimeout(function () {
+                    UIToolkit.toggleFakePlaceholders(editor, wrapper);
+                }, 0);
+            };
 
-                    editor.removeAttribute('placeholder');
-                }
+            if (editor.getAttribute('placeholder')) {
+                wrapper.setAttribute(
+                    'data-placeholder',
+                    editor.getAttribute('placeholder'));
 
-                if (editor.addEventListener) {
-                    editor.addEventListener('keydown', callback, false);
-                    editor.addEventListener('change', callback, false);
-                    editor.addEventListener('mouseup', callback, false);
-                } else {
-                    editor.attachEvent('onkeydown', callback);
-                    editor.attachEvent('onchange', callback);
-                    editor.attachEvent('onmouseup', callback);
-                }
+                editor.removeAttribute('placeholder');
+            }
+
+            if (editor.addEventListener) {
+                editor.addEventListener('keydown', callback, false);
+                editor.addEventListener('change', callback, false);
+                editor.addEventListener('mouseup', callback, false);
+            } else {
+                editor.attachEvent('onkeydown', callback);
+                editor.attachEvent('onchange', callback);
+                editor.attachEvent('onmouseup', callback);
             }
         },
 
