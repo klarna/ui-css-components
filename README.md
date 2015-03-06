@@ -28,6 +28,8 @@ make dev
 
 You can edit the SCSS files, the Jade file and the HTML snippets and they will be live reloaded for your convenience.
 
+> Note: The `make install` task will remove and reinstall `node_modules` each time since some dependencies have to be rebuilt for each different version of Node.js. This means that if you switch from, let's say, `node-0.10.31` to `node-0.11.26` you should run `make install` again.
+
 ### CSS / SASS
 
 There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:

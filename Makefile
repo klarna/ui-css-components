@@ -1,6 +1,7 @@
 install:
 	bundle install
 	bundle exec bourbon install --path=vendor
+	rm -rf node_modules
 	npm install -f
 
 build:
