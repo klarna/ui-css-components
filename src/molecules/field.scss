@@ -219,7 +219,7 @@
     }
 }
 
-.cui__field-tooltip__button-wrapper {
+.cui__field-tooltip__icon-wrapper {
     @include position(absolute, null 0 0 null);
 
     display: block;
@@ -231,7 +231,7 @@
     }
 }
 
-.cui__field-tooltip__button {
+.cui__field-tooltip__icon {
     background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
     height: 15px;
     width: 15px;

@@ -2519,21 +2519,21 @@ html:hover [class^="ss-"] {
   .ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, .cui__browser--ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, .ie8 .cui__field-tooltip.hover .cui__field-tooltip__content, .cui__browser--ie8 .cui__field-tooltip.hover .cui__field-tooltip__content {
     display: block; }
 
-.cui__field-tooltip__button-wrapper {
+.cui__field-tooltip__icon-wrapper {
   position: absolute;
   right: 0;
   bottom: 0;
   display: block;
   padding: 14px;
   z-index: 2; }
-  .is-invalid .cui__field-tooltip__button-wrapper {
+  .is-invalid .cui__field-tooltip__icon-wrapper {
     padding: 19px 14px 9px 14px; }
 
-.cui__field-tooltip__button {
+.cui__field-tooltip__icon {
   background-image: url("img/molecules/field/field.tooltip.svg");
   height: 15px;
   width: 15px; }
-  .ie .cui__field-tooltip__button, .cui__browser--ie .cui__field-tooltip__button {
+  .ie .cui__field-tooltip__icon, .cui__browser--ie .cui__field-tooltip__icon {
     background-image: url("img/molecules/field/field.tooltip.png"); }
 
 .cui__field-tooltip__content {
