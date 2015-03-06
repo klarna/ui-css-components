@@ -22,7 +22,6 @@ Usage
 Clone this repo and run:
 
 ```sh
-nvm 0.10.31
 make install
 make dev
 ```
@@ -115,8 +114,9 @@ yet, so please ask if you have doubts.
 
 #### 2. Build a low quality, optimized version
 
-This is done manually so far. Copy paste the code of the manually
-optimized high quality SVG into this site:
+If your SVG is smaller than 10 KB you can probably ignore this.
+
+Copy paste the code of the manually optimized high quality SVG into this site:
 https://petercollingridge.appspot.com/svg-editor
 
 Run the optimizations and download the end result. Add the optimized
@@ -124,19 +124,14 @@ file to the corresponding optimized folder.
 
 #### 3. Get a PNG version with the images task
 
-Gulp includes now a task for building PNG and retina PNG (2x) files from
-SVG. Images saved in the current default location (`img/logos/svg`) will
-be assumed to measure 22px in height and are going to be rasterized and
-saved into `img/logos/png/22px-height`. Run `gulp images` to get this
-images built.
+Gulp includes now a task for building PNG files from SVG. Go to the `gulpfile.js` and make sure your images are in one of the directories to be built: or add your own gulp task for building PNG images in the directories you are using.
 
-If your images have a different height or lie in different folders, please create new gulp tasks with the corresponding settings.
+Build the PNGs and commit them alongside the SVGs.
 
 Build
 -----
 
 ```sh
-nvm 0.10.31
 make install
 make build
 ```
