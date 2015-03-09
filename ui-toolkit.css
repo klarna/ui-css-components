@@ -1,17 +1,3 @@
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  -webkit-animation-name: animate-modal-in;
-  -moz-animation-name: animate-modal-in;
-  animation-name: animate-modal-in;
-  -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
 @-webkit-keyframes animate-modal-in {
   from {
     -webkit-transform: scale(0); }
@@ -422,7 +408,7 @@
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
 
-.ss-icon, .cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"], .ss-icon.ss-pika, .cui__tooltip--small--up .ss-pika[class$="__button"], .cui__tooltip--small--down .ss-pika[class$="__button"], .cui__tooltip--large--up .ss-pika[class$="__button"], .cui__tooltip--large--down .ss-pika[class$="__button"], [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
+.ss-icon, .ss-icon.ss-pika, [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"].ss-pika:before, [class*=" ss-"].ss-pika:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"].ss-pika.right:after, [class*=" ss-"].ss-pika.right:after {
   font-family: "SSPika";
   font-style: normal;
   font-weight: normal;
@@ -1356,7 +1342,7 @@ html:hover [class^="ss-"] {
 .ss-help:before, .ss-help.right:after {
   content: '❓'; }
 
-.ss-info:before, .cui__tooltip--small--up [class$="__button"]:before, .cui__tooltip--small--down [class$="__button"]:before, .cui__tooltip--large--up [class$="__button"]:before, .cui__tooltip--large--down [class$="__button"]:before, .ss-info.right:after, .cui__tooltip--small--up .right[class$="__button"]:after, .cui__tooltip--small--down .right[class$="__button"]:after, .cui__tooltip--large--up .right[class$="__button"]:after, .cui__tooltip--large--down .right[class$="__button"]:after {
+.ss-info:before, .ss-info.right:after {
   content: 'ℹ'; }
 
 .ss-alert:before, .ss-alert.right:after {
@@ -2027,159 +2013,6 @@ html:hover [class^="ss-"] {
   width: 28px; }
   .ie .cui__logo--discover--tiny, .cui__browser--ie .cui__logo--discover--tiny {
     background-image: url("img/atoms/logos/png/22px-height/discover.png"); }
-
-/**
- * Adds an arrow
- */
-/**
- * Tooltip wrapper
- * Contains button and content
- */
-.cui__tooltip--small--up, .cui__tooltip--small--down, .cui__tooltip--large--up, .cui__tooltip--large--down {
-  display: inline-block;
-  position: relative;
-  line-height: 1em;
-  z-index: 20; }
-
-/**
- * Tooltip button
- */
-.cui__tooltip--small--up [class$="__button"], .cui__tooltip--small--down [class$="__button"], .cui__tooltip--large--up [class$="__button"], .cui__tooltip--large--down [class$="__button"] {
-  cursor: pointer;
-  margin-left: 4px;
-  position: relative;
-  top: 3px;
-  display: inline-block; }
-  .cui__tooltip--small--up [class$="__button"]:before, .cui__tooltip--small--down [class$="__button"]:before, .cui__tooltip--large--up [class$="__button"]:before, .cui__tooltip--large--down [class$="__button"]:before {
-    color: #c9c9c9; }
-  .cui__tooltip--small--up [class$="__button"]:hover + [class$="__content"], .cui__tooltip--small--down [class$="__button"]:hover + [class$="__content"], .cui__tooltip--large--up [class$="__button"]:hover + [class$="__content"], .cui__tooltip--large--down [class$="__button"]:hover + [class$="__content"] {
-    display: block; }
-  .cui__tooltip--small--up [class$="__button"] p, .cui__tooltip--small--down [class$="__button"] p, .cui__tooltip--large--up [class$="__button"] p, .cui__tooltip--large--down [class$="__button"] p {
-    margin: 0; }
-
-/**
- * Tooltip content
- */
-.cui__tooltip--small--up [class$="__content"], .cui__tooltip--small--down [class$="__content"], .cui__tooltip--large--up [class$="__content"], .cui__tooltip--large--down [class$="__content"] {
-  background: #FFF;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-  display: none;
-  left: -95px;
-  line-height: 21px;
-  padding: 12px 16px;
-  position: absolute;
-  width: 190px;
-  z-index: 1; }
-  .cui__tooltip--small--up [class$="__content"]:after, .cui__tooltip--small--down [class$="__content"]:after, .cui__tooltip--large--up [class$="__content"]:after, .cui__tooltip--large--down [class$="__content"]:after {
-    left: 91px;
-    content: "";
-    position: absolute; }
-
-/**
- * Small tooltip, above the tooltip icon
- */
-.cui__tooltip--small--up [class$="__button"] {
-  font-size: 14px;
-  font-size: 0.875rem; }
-.cui__tooltip--small--up [class$="__content"] {
-  -webkit-transform-origin: bottom center;
-  -moz-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  -o-transform-origin: bottom center;
-  transform-origin: bottom center;
-  bottom: 22px;
-  margin-left: 6px;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .cui__tooltip--small--up [class$="__content"]:after {
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #ededed;
-    bottom: -17px; }
-    .ie8 .cui__tooltip--small--up [class$="__content"]:after, .cui__browser--ie8 .cui__tooltip--small--up [class$="__content"]:after {
-      bottom: -16px; }
-
-/**
- * Small tooltip, below the tooltip icon
- */
-.cui__tooltip--small--down [class$="__button"] {
-  font-size: 14px;
-  font-size: 0.875rem; }
-.cui__tooltip--small--down [class$="__content"] {
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center;
-  top: 22px;
-  margin-left: 6px;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .cui__tooltip--small--down [class$="__content"]:after {
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #ededed;
-    top: -17px; }
-    .ie8 .cui__tooltip--small--down [class$="__content"]:after, .cui__browser--ie8 .cui__tooltip--small--down [class$="__content"]:after {
-      top: -16px; }
-
-/**
- * Large tooltip, above the tooltip icon
- */
-.cui__tooltip--large--up [class$="__button"] {
-  font-size: 17px;
-  font-size: 1.0625rem; }
-.cui__tooltip--large--up [class$="__content"] {
-  -webkit-transform-origin: bottom center;
-  -moz-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
-  -o-transform-origin: bottom center;
-  transform-origin: bottom center;
-  bottom: 25px;
-  margin-left: 7.5px;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .cui__tooltip--large--up [class$="__content"]:after {
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #ededed;
-    bottom: -17px; }
-    .ie8 .cui__tooltip--large--up [class$="__content"]:after, .cui__browser--ie8 .cui__tooltip--large--up [class$="__content"]:after {
-      bottom: -16px; }
-
-/**
- * Large tooltip, below the tooltip icon
- */
-.cui__tooltip--large--down [class$="__button"] {
-  font-size: 17px;
-  font-size: 1.0625rem; }
-.cui__tooltip--large--down [class$="__content"] {
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center;
-  top: 25px;
-  margin-left: 7.5px;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .cui__tooltip--large--down [class$="__content"]:after {
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #ededed;
-    top: -17px; }
-    .ie8 .cui__tooltip--large--down [class$="__content"]:after, .cui__browser--ie8 .cui__tooltip--large--down [class$="__content"]:after {
-      top: -16px; }
 
 .cui__select {
   height: 44px; }
