@@ -2397,64 +2397,6 @@ html:hover [class^="ss-"] {
   .cui__field__warning-tooltip.is-visible {
     display: block; }
 
-.cui__field-tooltip:hover .cui__field-tooltip__content, .cui__field-tooltip.hover .cui__field-tooltip__content {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-  transition: opacity 0.3s linear, transform 0.3s ease-out;
-  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, -moz-transform 0.3s ease-out;
-  z-index: 10; }
-  .ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, .cui__browser--ie8 .cui__field-tooltip:hover .cui__field-tooltip__content, .ie8 .cui__field-tooltip.hover .cui__field-tooltip__content, .cui__browser--ie8 .cui__field-tooltip.hover .cui__field-tooltip__content {
-    display: block; }
-
-.cui__field-tooltip__icon-wrapper {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: block;
-  padding: 14px;
-  z-index: 2; }
-  .is-invalid .cui__field-tooltip__icon-wrapper {
-    padding: 19px 14px 9px 14px; }
-
-.cui__field-tooltip__icon {
-  background-image: url("img/molecules/field/field.tooltip.svg");
-  height: 15px;
-  width: 15px; }
-  .ie .cui__field-tooltip__icon, .cui__browser--ie .cui__field-tooltip__icon {
-    background-image: url("img/molecules/field/field.tooltip.png"); }
-
-.cui__field-tooltip__content {
-  position: absolute;
-  right: 0;
-  bottom: 52px;
-  background: #FFF;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-  line-height: 1.5em;
-  opacity: 0;
-  padding: 15px;
-  transform: translateY(10px);
-  width: 100%;
-  z-index: -1; }
-  .ie8 .cui__field-tooltip__content, .cui__browser--ie8 .cui__field-tooltip__content {
-    display: none; }
-  .cui__field-tooltip__content:after {
-    position: absolute;
-    right: 13px;
-    bottom: -9px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #ededed;
-    content: "";
-    height: 0;
-    width: 0; }
-
 .cui__field--is-left {
   float: left; }
 
