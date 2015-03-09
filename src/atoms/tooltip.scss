@@ -1,0 +1,79 @@
+// ================================================================
+//  SETTINGS
+// ================================================================
+
+// ================================================================
+//  BLOCKS
+// ================================================================
+.cui__tooltip {
+    &:hover, &.hover {
+        .cui__tooltip__content {
+            @include transform(translateY(0));
+
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 10;
+
+            @include respond-to-ie(8) {
+                display: block;
+            }
+        }
+    }
+}
+
+// ================================================================
+//  ELEMENTS
+// ================================================================
+.cui__tooltip__icon-wrapper {
+    @include position(absolute, null 0 0 null);
+
+    display: block;
+    padding: 14px;
+    z-index: 2;
+
+    .is-invalid & {
+        padding: 19px 14px 9px 14px;
+    }
+}
+
+.cui__tooltip__icon {
+    background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
+    height: 15px;
+    width: 15px;
+
+    @include respond-to-ie {
+        background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.png");
+    }
+}
+
+.cui__tooltip__content {
+    @include position(absolute, null 0 52px null);
+
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
+    line-height: 1.5em;
+    opacity: 0;
+    padding: 15px;
+    transform: translateY(10px);
+    width: 100%;
+    z-index: -1;
+
+    @include respond-to-ie(8) {
+        display: none;
+    }
+
+    &:after {
+        @include position(absolute, null 13px -9px null);
+
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #ededed;
+        content: "";
+        height: 0;
+        width: 0;
+    }
+}
