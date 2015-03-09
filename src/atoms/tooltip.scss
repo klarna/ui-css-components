@@ -56,7 +56,7 @@
     border-radius: 4px;
     box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
     line-height: 1.5em;
-    min-width: 200px;
+    min-width: 250px;
     opacity: 0;
     padding: 15px;
     transform: translateY(10px);
@@ -77,4 +77,49 @@
         height: 0;
         width: 0;
     }
+}
+
+
+// ================================================================
+//  MODIFIERS
+// ================================================================
+.cui__tooltip--inline {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    line-height: 15px;
+
+    &:hover, &.hover {
+        .cui__tooltip--inline__content {
+            @include transform(translateY(0));
+
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 10;
+
+            @include respond-to-ie(8) {
+                display: block;
+            }
+        }
+    }
+}
+
+.cui__tooltip--inline__icon-wrapper {
+    @extend .cui__tooltip__icon-wrapper;
+
+    padding: 0;
+    bottom: -3px;
+}
+
+.cui__tooltip--inline__icon {
+    @extend .cui__tooltip__icon;
+}
+
+.cui__tooltip--inline__content {
+    @extend .cui__tooltip__content;
+
+    bottom: 21px;
+    right: -14px;
 }
