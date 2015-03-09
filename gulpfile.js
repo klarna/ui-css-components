@@ -7,6 +7,10 @@ var jshint = require('gulp-jshint');
 var svg2png = require('gulp-svg2png');
 var rename = require('gulp-rename');
 
+// ====================================================================
+// DEVELOPMENT
+// ====================================================================
+
 // browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
     browserSync({
@@ -44,6 +48,39 @@ gulp.task('reload:js', function() {
         .pipe(reload({stream: true}));
 });
 
+// Default task to be run with `gulp`
+gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {
+    gulp.watch('src/**/*.scss', ['reload:sass']);
+    gulp.watch('builds/**/*.scss', ['reload:sass']);
+    gulp.watch('*.jade', ['reload:jade']);
+    gulp.watch('snippets/*.html', ['reload:jade']);
+    gulp.watch('ui-toolkit.js', ['reload:js']);
+    gulp.watch('index.html', ['reload:html']);
+});
+
+
+// ====================================================================
+// BUILD
+// ====================================================================
+gulp.task('build:sass', function() {
+    gulp.src('builds/ui-toolkit.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('build:jade', function() {
+    gulp.src('*.jade')
+        .pipe(jade())
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('build:js', function() {
+    gulp.src('ui-toolkit.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('fail'));
+});
+
 gulp.task('images:logos', function () {
     gulp.src('img/atoms/logos/svg/**/*.svg')
         .pipe(svg2png())
@@ -56,14 +93,12 @@ gulp.task('images:molecules', function () {
         .pipe(gulp.dest('img/molecules'));
 });
 
-gulp.task('images', ['images:logos', 'images:molecules']);
-
-// Default task to be run with `gulp`
-gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {
-    gulp.watch('src/**/*.scss', ['reload:sass']);
-    gulp.watch('builds/**/*.scss', ['reload:sass']);
-    gulp.watch('*.jade', ['reload:jade']);
-    gulp.watch('snippets/*.html', ['reload:jade']);
-    gulp.watch('ui-toolkit.js', ['reload:js']);
-    gulp.watch('index.html', ['reload:html']);
+gulp.task('images:tooltip', function () {
+    gulp.src('img/atoms/tooltip/**/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('img/atoms/tooltip'));
 });
+
+gulp.task('build', ['build:sass', 'build:jade', 'build:js']);
+
+gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip']);

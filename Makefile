@@ -5,7 +5,8 @@ install:
 	npm install -f
 
 build:
-	bundle exec sass builds/ui-toolkit.scss > ui-toolkit.css
+	npm run images
+	npm run build
 
 dev:
 	npm start
