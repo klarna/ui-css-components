@@ -39,12 +39,12 @@
 }
 
 .cui__tooltip__icon {
-    background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.svg");
+    background-image: url($ui-toolkit-path + "img/atoms/tooltip/tooltip.icon.svg");
     height: 15px;
     width: 15px;
 
     @include respond-to-ie {
-        background-image: url($ui-toolkit-path + "img/molecules/field/field.tooltip.png");
+        background-image: url($ui-toolkit-path + "img/atoms/tooltip/tooltip.icon.png");
     }
 }
 

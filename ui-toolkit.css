@@ -2039,11 +2039,11 @@ html:hover [class^="ss-"] {
     padding: 19px 14px 9px 14px; }
 
 .cui__tooltip__icon {
-  background-image: url("img/molecules/field/field.tooltip.svg");
+  background-image: url("img/atoms/tooltip/tooltip.icon.svg");
   height: 15px;
   width: 15px; }
   .ie .cui__tooltip__icon, .cui__browser--ie .cui__tooltip__icon {
-    background-image: url("img/molecules/field/field.tooltip.png"); }
+    background-image: url("img/atoms/tooltip/tooltip.icon.png"); }
 
 .cui__tooltip__content {
   position: absolute;
