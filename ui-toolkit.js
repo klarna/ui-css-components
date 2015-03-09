@@ -139,7 +139,7 @@
         },
 
         tooltip: function (tooltipButton) {
-            var callback = function (e) { e.preventDefault(); }
+            var callback = function (e) { e.preventDefault(); };
 
             if (tooltipButton.addEventListener) {
                 tooltipButton.addEventListener('click', callback, false);
