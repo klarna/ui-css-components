@@ -2076,9 +2076,9 @@ html:hover [class^="ss-"] {
 
 .cui__tooltip--inline {
   display: inline-block;
+  line-height: 15px;
   position: relative;
-  width: 15px;
-  line-height: 15px; }
+  width: 15px; }
   .cui__tooltip--inline:hover .cui__tooltip--inline__content, .cui__tooltip--inline.hover .cui__tooltip--inline__content {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2094,8 +2094,8 @@ html:hover [class^="ss-"] {
       display: block; }
 
 .cui__tooltip--inline__icon-wrapper {
-  padding: 0;
-  bottom: -3px; }
+  bottom: -3px;
+  padding: 0; }
 
 .cui__tooltip--inline__content {
   bottom: 21px;

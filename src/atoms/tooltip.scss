@@ -86,9 +86,9 @@
 // ================================================================
 .cui__tooltip--inline {
     display: inline-block;
+    line-height: 15px;
     position: relative;
     width: 15px;
-    line-height: 15px;
 
     &:hover, &.hover {
         .cui__tooltip--inline__content {
@@ -110,8 +110,8 @@
 .cui__tooltip--inline__icon-wrapper {
     @extend .cui__tooltip__icon-wrapper;
 
-    padding: 0;
     bottom: -3px;
+    padding: 0;
 }
 
 .cui__tooltip--inline__icon {
