@@ -1,6 +1,6 @@
 {
   "name": "ui-toolkit",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "KCO UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",
@@ -8,7 +8,9 @@
     "gulp-sass": "1.2.4"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "images": "gulp images",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

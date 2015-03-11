@@ -9,7 +9,7 @@ Installation
 You can install the KCO UI Toolkit via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.4.2
+bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.5.0
 ```
 
 Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
@@ -22,12 +22,13 @@ Usage
 Clone this repo and run:
 
 ```sh
-nvm 0.10.31
 make install
 make dev
 ```
 
 You can edit the SCSS files, the Jade file and the HTML snippets and they will be live reloaded for your convenience.
+
+> Note: The `make install` task will remove and reinstall `node_modules` each time since some dependencies have to be rebuilt for each different version of Node.js. This means that if you switch from, let's say, `node-0.10.31` to `node-0.11.26` you should run `make install` again.
 
 ### CSS / SASS
 
@@ -115,8 +116,9 @@ yet, so please ask if you have doubts.
 
 #### 2. Build a low quality, optimized version
 
-This is done manually so far. Copy paste the code of the manually
-optimized high quality SVG into this site:
+If your SVG is smaller than 10 KB you can probably ignore this.
+
+Copy paste the code of the manually optimized high quality SVG into this site:
 https://petercollingridge.appspot.com/svg-editor
 
 Run the optimizations and download the end result. Add the optimized
@@ -124,19 +126,14 @@ file to the corresponding optimized folder.
 
 #### 3. Get a PNG version with the images task
 
-Gulp includes now a task for building PNG and retina PNG (2x) files from
-SVG. Images saved in the current default location (`img/logos/svg`) will
-be assumed to measure 22px in height and are going to be rasterized and
-saved into `img/logos/png/22px-height`. Run `gulp images` to get this
-images built.
+Gulp includes now a task for building PNG files from SVG. Go to the `gulpfile.js` and make sure your images are in one of the directories to be built: or add your own gulp task for building PNG images in the directories you are using.
 
-If your images have a different height or lie in different folders, please create new gulp tasks with the corresponding settings.
+Build the PNGs and commit them alongside the SVGs.
 
 Build
 -----
 
 ```sh
-nvm 0.10.31
 make install
 make build
 ```

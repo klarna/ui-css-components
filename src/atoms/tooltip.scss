@@ -1,194 +1,126 @@
 // ================================================================
-//  MIXINS
+//  SETTINGS
 // ================================================================
-@mixin tooltip-button($size) {
-    @extend %tooltip__button;
-    @include font-size($size);
-}
 
-@mixin tooltip-content($size, $direction) {
-    $position-property: null;
+// ================================================================
+//  BLOCKS
+// ================================================================
+.cui__tooltip {
+    &:hover, &.hover {
+        .cui__tooltip__content {
+            @include transform(translateY(0));
 
-    @if $direction == up {
-        $position-property: bottom;
-    } @else {
-        $position-property: top;
-    }
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 10;
 
-    @extend %tooltip__content;
-    @include transform-origin($position-property center);
-    @include tooltip-arrow($size, $direction);
-
-    margin-left: $size/2 - 1px;
-}
-
-/**
- * Adds an arrow
- */
-@mixin tooltip-arrow($size, $direction) {
-    $triangle-position: null;
-    $position-property: null;
-
-    @if $direction == up {
-        $triangle-position: down;
-        $position-property: bottom;
-    } @else {
-        $triangle-position: up;
-        $position-property: top;
-    }
-
-    #{$position-property}: $size + 8px;
-
-    &:after {
-        @include triangle($tooltip-arrow-size, $tooltip-arrow-color, $triangle-position);
-
-        #{$position-property}: -1px - $tooltip-arrow-size;
-
-        // IE8 doesn't support shadows
-        @include respond-to-ie(8) {
-            #{$position-property}: -$tooltip-arrow-size;
+            @include respond-to-ie(8) {
+                display: block;
+            }
         }
     }
 }
 
-
-
 // ================================================================
-//  PLACEHOLDERS
+//  ELEMENTS
 // ================================================================
+.cui__tooltip__icon-wrapper {
+    @include position(absolute, null 0 0 null);
 
-/**
- * Tooltip wrapper
- * Contains button and content
- */
-%tooltip {
-    display: inline-block;
-    position: relative;
+    display: block;
+    padding: 14px;
+    z-index: 2;
 
-    // Set a line height to avoid unexpected margins
-    line-height: 1em;
-
-    z-index: 20;
-}
-
-
-/**
- * Tooltip button
- */
-%tooltip__button {
-    @extend .ss-icon;
-    @extend .ss-info;
-
-    cursor: pointer;
-    margin-left: 4px;
-    position: relative;
-    top: 3px;
-    display: inline-block;
-
-    &:before {
-        color: #c9c9c9;
-    }
-
-    &:hover + [class$="__content"] {
-        display: block;
-    }
-
-    p {
-        margin: 0;
+    .is-invalid & {
+        padding: 19px 14px 9px 14px;
     }
 }
 
+.cui__tooltip__icon {
+    background-image: url($ui-toolkit-path + "img/atoms/tooltip/tooltip.icon.svg");
+    height: 15px;
+    width: 15px;
 
-/**
- * Tooltip content
- */
-%tooltip__content {
-    @extend %animate-modal-in;
+    @include respond-to-ie {
+        background-image: url($ui-toolkit-path + "img/atoms/tooltip/tooltip.icon.png");
+    }
+}
+
+.cui__tooltip__content {
+    @include position(absolute, null 0 52px null);
+
     background: #FFF;
     border: 1px solid #CCC;
     border-radius: 4px;
     box-shadow: 0 0px 0 2px rgba(0, 0, 0, 0.07);
-    display: none;
-    left: -$tooltip-content-width/2;
-    line-height: $base-line-height;
-    padding: 12px 16px;
-    position: absolute;
-    width: $tooltip-content-width;
-    z-index: 1;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    min-width: 250px;
+    opacity: 0;
+    padding: 15px;
+    transform: translateY(10px);
+    width: 100%;
+    z-index: -1;
+
+    @include respond-to-ie(8) {
+        display: none;
+    }
 
     &:after {
-        // adding an additional division by 2 is a bit odd, but this works
-        left: $tooltip-content-width/2 - ($tooltip-arrow-size/2)/2;
+        @include position(absolute, null 13px -9px null);
+
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #ededed;
         content: "";
-        position: absolute;
+        height: 0;
+        width: 0;
     }
 }
 
 
 // ================================================================
-//  ATOMS
+//  MODIFIERS
 // ================================================================
+.cui__tooltip--inline {
+    display: inline-block;
+    line-height: 15px;
+    position: relative;
+    width: 15px;
 
-/**
- * Small tooltip, above the tooltip icon
- */
-.cui__tooltip--small--up {
-    @extend %tooltip;
+    &:hover, &.hover {
+        .cui__tooltip--inline__content {
+            @include transform(translateY(0));
 
-    [class$="__button"] {
-        @include tooltip-button($tooltip-icon-size-small);
-    }
+            opacity: 1;
+            transition: opacity .3s linear, transform .3s ease-out;
+            -webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out;
+            -moz-transition: opacity .3s linear, -moz-transform .3s ease-out;
+            z-index: 10;
 
-    [class$="__content"] {
-        @include tooltip-content($tooltip-icon-size-small, up);
-        @include font-size(12px);
-    }
-}
-
-/**
- * Small tooltip, below the tooltip icon
- */
-.cui__tooltip--small--down {
-    @extend %tooltip;
-
-    [class$="__button"] {
-        @include tooltip-button($tooltip-icon-size-small);
-    }
-
-    [class$="__content"] {
-        @include tooltip-content($tooltip-icon-size-small, down);
-        @include font-size(12px);
+            @include respond-to-ie(8) {
+                display: block;
+            }
+        }
     }
 }
 
-/**
- * Large tooltip, above the tooltip icon
- */
-.cui__tooltip--large--up {
-     @extend %tooltip;
+.cui__tooltip--inline__icon-wrapper {
+    @extend .cui__tooltip__icon-wrapper;
 
-    [class$="__button"] {
-        @include tooltip-button($tooltip-icon-size-large);
-    }
-
-    [class$="__content"] {
-        @include tooltip-content($tooltip-icon-size-large, up);
-        @include font-size(12px);
-    }
+    bottom: -3px;
+    padding: 0;
 }
 
-/**
- * Large tooltip, below the tooltip icon
- */
-.cui__tooltip--large--down{
-     @extend %tooltip;
+.cui__tooltip--inline__icon {
+    @extend .cui__tooltip__icon;
+}
 
-    [class$="__button"] {
-        @include tooltip-button($tooltip-icon-size-large);
-    }
+.cui__tooltip--inline__content {
+    @extend .cui__tooltip__content;
 
-    [class$="__content"] {
-        @include tooltip-content($tooltip-icon-size-large, down);
-        @include font-size(12px);
-    }
+    bottom: 21px;
+    right: -14px;
 }
