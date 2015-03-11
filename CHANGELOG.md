@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.5.0
+
+### Added
+
+- Support for `:focus` on the checkbox.
+- Inline block tooltip modifier for adding tooltip next to text.
+- Snippets for the new tooltip atom.
+
+### Changed
+
+- The checkbox is now a configurable mixin as well as a class.
+- The `make install` now refreshes the whole `node_modules` folder. This is to ensure that the built version of `libsass` is compatible with your current version of Node.
+- Consequently, there is no need to use only the `0.10.35` version of Node.js
+- The tooltip inside the field is now a regular `cui__tooltip` atom.
+
+### Fixed
+
+- Visualization of checkbox which was getting border-box
+
+### Removed
+
+- Old tooltip atom
+- `img/molecules/field/field.tooltip.svg`
+- `img/molecules/field/field.tooltip.png`
+
 ## 1.4.2
 
 ### Changed
