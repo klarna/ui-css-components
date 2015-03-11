@@ -1,10 +1,12 @@
 install:
 	bundle install
 	bundle exec bourbon install --path=vendor
-	npm install
+	rm -rf node_modules
+	npm install -f
 
 build:
-	bundle exec sass builds/ui-toolkit.scss > ui-toolkit.css
+	npm run images
+	npm run build
 
 dev:
 	npm start

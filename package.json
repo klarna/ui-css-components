@@ -8,7 +8,9 @@
     "gulp-sass": "1.2.4"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "images": "gulp images",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
