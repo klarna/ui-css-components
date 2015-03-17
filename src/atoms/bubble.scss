@@ -13,7 +13,7 @@ $bubble-border-radius: 3px;
 // MIXINS
 // ================================================================
 @mixin cui__bubble(
-    $bottom: true,
+    $top: true,
     $border-color: $bubble-border-color,
     $chevron-width-front: $bubble-chevron-width-front,
     $chevron-width-back: $bubble-chevron-width-back,
@@ -36,7 +36,7 @@ $bubble-border-radius: 3px;
   }
 
   &:before {
-    @if $bottom == true {
+    @if $top == true {
         @include triangle($chevron-width-back, $border-color, down);
 
         bottom: -($chevron-width-back / 2);
@@ -51,7 +51,7 @@ $bubble-border-radius: 3px;
   }
 
   &:after {
-    @if $bottom == true {
+    @if $top == true {
         @include triangle($chevron-width-front, $background, down);
 
         bottom: -($chevron-width-front / 2);
@@ -79,6 +79,6 @@ $bubble-border-radius: 3px;
 // ================================================================
 // MODIFIERS
 // ================================================================
-.cui__bubble--top {
+.cui__bubble--bottom {
     @include cui__bubble(false);
 }

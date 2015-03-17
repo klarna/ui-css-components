@@ -183,19 +183,19 @@
     margin-left: -12px;
     z-index: 2; }
 
-.cui__bubble--top {
+.cui__bubble--bottom {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
   box-sizing: border-box;
   padding: 15px 20px;
   position: relative; }
-  .cui__bubble--top:before, .cui__bubble--top:after {
+  .cui__bubble--bottom:before, .cui__bubble--bottom:after {
     content: '';
     display: block;
     left: 50%;
     position: absolute; }
-  .cui__bubble--top:before {
+  .cui__bubble--bottom:before {
     height: 0;
     width: 0;
     border-left: 13px solid transparent;
@@ -204,7 +204,7 @@
     top: -13px;
     margin-left: -13px;
     z-index: 1; }
-  .cui__bubble--top:after {
+  .cui__bubble--bottom:after {
     height: 0;
     width: 0;
     border-left: 12px solid transparent;
