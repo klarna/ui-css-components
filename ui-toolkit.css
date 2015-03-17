@@ -152,6 +152,37 @@
  * Apply a border and whitespace to any side without destroying the vertical rhythm. The whitespace must be greater than the width of the border.
  * http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-apply-side-rhythm-border
  */
+.cui__bubble {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  position: relative; }
+  .cui__bubble:before, .cui__bubble:after {
+    content: '';
+    display: block;
+    left: 50%;
+    position: absolute; }
+  .cui__bubble:before {
+    height: 0;
+    width: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #ddd;
+    bottom: -14px;
+    margin-left: -14px;
+    z-index: 1; }
+  .cui__bubble:after {
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    bottom: -12px;
+    margin-left: -12px;
+    z-index: 2; }
+
 .cui__highlighted-button {
   -webkit-appearance: none;
   -moz-appearance: none;

@@ -1,0 +1,60 @@
+// ================================================================
+// SETTINGS
+// ================================================================
+$bubble-chevron-width-back:  28px;
+$bubble-chevron-width-front: 24px;
+$bubble-border-color: #ddd;
+$bubble-background: #fff;
+$bubble-border-radius: 3px;
+
+
+
+// ================================================================
+// MIXINS
+// ================================================================
+@mixin cui__bubble(
+    $border-color: $bubble-border-color,
+    $chevron-width-front: $bubble-chevron-width-front,
+    $chevron-width-back: $bubble-chevron-width-back,
+    $background: $bubble-background,
+    $border-radius: $bubble-border-radius
+) {
+  background: $background;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    left: 50%;
+    position: absolute;
+  }
+
+  &:before {
+    @include triangle($chevron-width-back, $border-color, down);
+
+    bottom: -($chevron-width-back / 2);
+    margin-left: -($chevron-width-back / 2);
+    z-index: 1;
+  }
+
+  &:after {
+    @include triangle($chevron-width-front, $background, down);
+
+    bottom: -($chevron-width-front / 2);
+    margin-left: -($chevron-width-front / 2);
+    z-index: 2;
+  }
+}
+
+
+// ================================================================
+// BLOCKS
+// ================================================================
+.cui__bubble {
+  @include cui__bubble;
+}
