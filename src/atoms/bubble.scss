@@ -37,11 +37,11 @@ $bubble-border-radius: 3px;
 
   &:before {
     @if $top == true {
-        @include triangle($chevron-width-back, $border-color, down);
+        @include triangle($chevron-width-back, darken($border-color, 7%), down);
 
         bottom: -($chevron-width-back / 2);
     } @else {
-        @include triangle($chevron-width-back, $border-color, up);
+        @include triangle($chevron-width-back, darken($border-color, 7%), up);
 
         top: -($chevron-width-back / 2);
     }

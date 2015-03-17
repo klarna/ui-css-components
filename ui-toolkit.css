@@ -169,7 +169,7 @@
     width: 0;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
-    border-top: 13px solid #ddd;
+    border-top: 13px solid #cbcbcb;
     bottom: -13px;
     margin-left: -13px;
     z-index: 1; }
@@ -200,7 +200,7 @@
     width: 0;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
-    border-bottom: 13px solid #ddd;
+    border-bottom: 13px solid #cbcbcb;
     top: -13px;
     margin-left: -13px;
     z-index: 1; }
