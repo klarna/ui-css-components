@@ -79,6 +79,6 @@ $bubble-border-radius: 3px;
 // ================================================================
 // MODIFIERS
 // ================================================================
-.cui__bubble--bottom {
+.cui__bubble--below {
     @include cui__bubble(false);
 }
