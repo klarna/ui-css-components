@@ -158,6 +158,14 @@
     }
 }
 
+.cui__editor-wrapper__loader {
+    @extend .cui__loader--small;
+
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
 @mixin field_tooltip($background-color) {
     @extend %show-tooltip;
     @include font-size(11px);

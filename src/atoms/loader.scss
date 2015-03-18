@@ -5,3 +5,15 @@
     height: 32px;
     width: 32px;
 }
+
+.cui__loader--small {
+    @include hidpi() {
+        background-image: url($ui-toolkit-path + "img/atoms/loader/loader.loader.gif");
+        background-size: 16px;
+    }
+
+    background-image: url($ui-toolkit-path + "img/atoms/loader/loader.loader.16x16.gif");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}

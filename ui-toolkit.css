@@ -2009,6 +2009,16 @@ html:hover [class^="ss-"] {
       background-image: url("img/atoms/loader/loader.loader@2x.gif");
       background-size: 32px 32px; } }
 
+.cui__loader--small, .cui__editor-wrapper__loader {
+  background-image: url("img/atoms/loader/loader.loader.16x16.gif");
+  display: inline-block;
+  height: 16px;
+  width: 16px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .cui__loader--small, .cui__editor-wrapper__loader {
+      background-image: url("img/atoms/loader/loader.loader.gif");
+      background-size: 16px; } }
+
 .cui__logo--visa--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa.svg");
   height: 22px;
@@ -2413,6 +2423,11 @@ html:hover [class^="ss-"] {
   padding-left: 36px; }
 .cui__browser--ie .cui__editor-wrapper--with-icon:after, .cui__browser--android--stock .cui__editor-wrapper--with-icon:after {
   padding-left: 36px; }
+
+.cui__editor-wrapper__loader {
+  position: absolute;
+  right: 14px;
+  top: 14px; }
 
 .cui__field__error-tooltip {
   font-size: 11px;
