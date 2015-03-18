@@ -164,6 +164,7 @@
     position: absolute;
     right: 14px;
     top: 14px;
+    z-index: 1;
 }
 
 @mixin field_tooltip($background-color) {

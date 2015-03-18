@@ -2427,7 +2427,8 @@ html:hover [class^="ss-"] {
 .cui__editor-wrapper__loader {
   position: absolute;
   right: 14px;
-  top: 14px; }
+  top: 14px;
+  z-index: 1; }
 
 .cui__field__error-tooltip {
   font-size: 11px;
