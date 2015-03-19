@@ -9,7 +9,7 @@ Installation
 You can install the KCO UI Toolkit via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.5.0
+bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.6.0
 ```
 
 Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
@@ -137,3 +137,28 @@ Build
 make install
 make build
 ```
+
+How to bump the version of the UI toolkit
+-----------------------------------------
+
+1. Checkout the `develop` branch.
+2. Come up with a version number. If you added or removed a feature, bump the MINOR version (MAJOR.MINOR.PATCH). If you did a small change, bump the PATCH version. Only bump the MAJOR version if you are really sure of what you are doing.
+3. Update the version number in:
+  - The `README.md` file
+  - The `package.json` file
+4. Add an entry to the `CHANGELOG.md` with the changes that you are introducing. Use http://keepachangelog.com/ as a reference of what to write.
+5. Commit the changes. The commit message should be just the version number. Push to the remote origin.
+6. Checkout the `master` branch. Merge the head of develop into master without fast forward:
+  ```
+  git checkout master
+  git merge develop --no-ff
+  ```
+7. Tag the merge commit in master with the version number **prefixed with a `v`**:
+  ```
+  git tag v<VERSION_NUMBER>
+  ```
+8. Push `master` and the tag to the remote origin:
+  ```
+  git push origin master
+  git push origin v<VERSION_NUMBER>
+  ```
