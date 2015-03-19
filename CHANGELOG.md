@@ -1,6 +1,15 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. http://keepachangelog.com/
+
+## 1.6.0
+
+### Added
+
+- Bubble atom (+ snippet): `cui__bubble`
+- Bubble atom pointing upwards: `cui__bubble--below`
+- Small loader: `cui__loader--small`
+- Small loader inside the field: `cui__editor-wrapper__loader`
 
 ## 1.5.0
 
