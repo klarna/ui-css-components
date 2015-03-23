@@ -9,7 +9,7 @@ Installation
 You can install the KCO UI Toolkit via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.6.0
+bower install git+ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git#v1.6.1
 ```
 
 Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
@@ -151,6 +151,7 @@ How to bump the version of the UI toolkit
 6. Checkout the `master` branch. Merge the head of develop into master without fast forward:
   ```
   git checkout master
+  git pull
   git merge develop --no-ff
   ```
 7. Tag the merge commit in master with the version number **prefixed with a `v`**:

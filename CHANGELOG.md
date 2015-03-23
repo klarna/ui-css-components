@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.6.1
+
+### Removed
+
+- Removes white background of `cui__main-header`
+
+
 ## 1.6.0
 
 ### Added
