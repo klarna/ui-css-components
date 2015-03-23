@@ -151,6 +151,7 @@ How to bump the version of the UI toolkit
 6. Checkout the `master` branch. Merge the head of develop into master without fast forward:
   ```
   git checkout master
+  git pull
   git merge develop --no-ff
   ```
 7. Tag the merge commit in master with the version number **prefixed with a `v`**:
