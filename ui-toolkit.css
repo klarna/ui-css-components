@@ -320,13 +320,13 @@
   .cui__buy-button:active {
     background: #007bbb;
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
-  .cui__buy-button.is-disabled {
+  .cui__buy-button.is-disabled, .cui__highlighted-button.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     box-shadow: none;
     opacity: 0.4; }
-    .cui__buy-button.is-disabled:hover {
+    .cui__buy-button.is-disabled:hover, .cui__highlighted-button.is-disabled:hover {
       background: #0089cf; }
-    .cui__buy-button.is-disabled:active {
+    .cui__buy-button.is-disabled:active, .cui__highlighted-button.is-disabled:active {
       background: #0089cf;
       box-shadow: none; }
   .cui__buy-button.is-loading {
