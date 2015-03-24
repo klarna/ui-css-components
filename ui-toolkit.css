@@ -233,12 +233,10 @@
   font-weight: bold;
   outline: none;
   padding: 13px;
+  line-height: 19px;
   vertical-align: top; }
   .ie .cui__highlighted-button, .cui__browser--ie .cui__highlighted-button {
-    padding: 12px 14px 11px; }
-  @media screen and (min-width: 569px) {
-    .cui__highlighted-button {
-      padding: 14px; } }
+    padding: 12px 13px 11px; }
   .cui__highlighted-button:hover {
     background: #0082c5; }
   .cui__highlighted-button:active {
