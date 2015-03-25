@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.6.2
+
+### Updated
+
+- `cui__icon`s now have `pointer-events: none` so that taps and clicks will pass through them.
+
 ## 1.6.1
 
 ### Removed
