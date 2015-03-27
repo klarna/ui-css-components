@@ -23,6 +23,7 @@ $bubble-border-radius: 3px;
   background: $background;
   border: 1px solid $border-color;
   border-radius: $border-radius;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   box-sizing: border-box;
   padding: 15px 20px;
   position: relative;
@@ -37,7 +38,7 @@ $bubble-border-radius: 3px;
 
   &:before {
     @if $above == true {
-        @include triangle($chevron-width-back, darken($border-color, 7%), down);
+        @include triangle($chevron-width-back, $border-color, down);
 
         bottom: -($chevron-width-back / 2);
     } @else {
@@ -54,7 +55,7 @@ $bubble-border-radius: 3px;
     @if $above == true {
         @include triangle($chevron-width-front, $background, down);
 
-        bottom: -($chevron-width-front / 2);
+        bottom: -($chevron-width-front / 2 - 1);
     } @else {
         @include triangle($chevron-width-front, $background, up);
 
