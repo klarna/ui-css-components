@@ -1,6 +1,6 @@
 {
   "name": "ui-toolkit",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "KCO UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",
