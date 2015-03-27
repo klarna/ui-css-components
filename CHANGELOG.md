@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.6.3
+
+### Updated
+
+- `cui__bubble`s now have `box-shadow: 0 1px 1px rgba(0,0,0,0.1)` (if it's the `$above: true` version).
+
 ## 1.6.2
 
 ### Updated
