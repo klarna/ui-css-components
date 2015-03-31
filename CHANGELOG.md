@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.6.4
+
+### Fixed
+
+- Package does not contain non-dev requirements. It makes using the project with NPM faster.
+
 ## 1.6.3
 
 ### Updated
