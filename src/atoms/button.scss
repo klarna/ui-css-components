@@ -32,7 +32,18 @@
     }
 
     &.is-disabled {
-        @extend .cui__buy-button.is-disabled;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        box-shadow: none;
+        opacity: 0.4;
+
+        &:hover {
+            background: $custom-color-button-background;
+        }
+
+        &:active {
+            background: $custom-color-button-background;
+            box-shadow: none;
+        }
     }
 }
 
