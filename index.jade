@@ -84,6 +84,14 @@ html(lang="en")
         include snippets/checkbox--checked.html
       
       
+      h3 Switch
+      +code()
+        include snippets/switch.html
+
+      +code()
+        include snippets/switch--checked.html
+      
+      
       h3 Input
       +code()
         include snippets/field.html
@@ -109,7 +117,7 @@ html(lang="en")
         include snippets/field--with-tooltip.html
       
       script.
-        UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
+        UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
       
       p Error in the data
       +code()
