@@ -2094,6 +2094,52 @@ html:hover [class^="ss-"] {
   .ie .cui__logo--discover--tiny, .cui__browser--ie .cui__logo--discover--tiny {
     background-image: url("img/atoms/logos/png/22px-height/discover.png"); }
 
+.cui__switch {
+  background-color: #dddddd;
+  border-radius: 48px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 48px; }
+  .cui__switch:before {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    transition-property: background;
+    background-color: #f1f1f1;
+    border-radius: 24px;
+    content: "";
+    display: block;
+    height: 22px;
+    margin-left: 1px;
+    margin-top: 1px;
+    position: absolute;
+    width: 46px; }
+  .cui__switch:after {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: margin;
+    -moz-transition-property: margin;
+    transition-property: margin;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    content: "";
+    display: block;
+    height: 22px;
+    margin-top: 1px;
+    position: absolute;
+    width: 22px; }
+  .cui__switch.is-checked:before {
+    background-color: #0089cf;
+    border: none; }
+  .cui__switch.is-checked:after {
+    margin-left: 25px; }
+
 .cui__tooltip:hover .cui__tooltip__content, .cui__tooltip:hover .cui__tooltip--inline__content, .cui__tooltip.hover .cui__tooltip__content, .cui__tooltip.hover .cui__tooltip--inline__content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
