@@ -2135,6 +2135,7 @@ html:hover [class^="ss-"] {
     display: block;
     height: 22px;
     margin-top: 1px;
+    margin-left: 1px;
     position: absolute;
     width: 22px; }
   .cui__switch.is-checked:before {
