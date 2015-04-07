@@ -2101,7 +2101,10 @@ html:hover [class^="ss-"] {
   display: inline-block;
   height: 24px;
   position: relative;
-  width: 48px; }
+  width: 48px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */ }
   .cui__switch:before {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
@@ -2122,11 +2125,11 @@ html:hover [class^="ss-"] {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-property: margin;
-    -moz-transition-property: margin;
-    transition-property: margin;
+    -webkit-transition-property: margin, padding;
+    -moz-transition-property: margin, padding;
+    transition-property: margin, padding;
     background-color: #fff;
-    border-radius: 100%;
+    border-radius: 22px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     content: "";
     display: block;
@@ -2139,6 +2142,16 @@ html:hover [class^="ss-"] {
     border: none; }
   .cui__switch.is-checked:after {
     margin-left: 25px; }
+  .cui__switch.is-pressed:before {
+    background-color: #e6e6e6; }
+  .cui__switch.is-pressed:after {
+    padding-left: 10px; }
+  .cui__switch.is-pressed.is-checked:before {
+    background-color: #0089cf; }
+  .cui__switch.is-pressed.is-checked:after {
+    padding-left: 0;
+    padding-right: 10px;
+    margin-left: 15px; }
 
 .cui__tooltip:hover .cui__tooltip__content, .cui__tooltip:hover .cui__tooltip--inline__content, .cui__tooltip.hover .cui__tooltip__content, .cui__tooltip.hover .cui__tooltip--inline__content {
   -webkit-transform: translateY(0);

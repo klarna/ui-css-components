@@ -7,6 +7,7 @@
     $inner-margin: 1px;
     $inner-height: $height - (2 * $inner-margin);
     $inner-width: $width - (2 * $inner-margin);
+    $pressed-padding: 10px;
 
     background-color: #dddddd;
     border-radius: $width;
@@ -15,6 +16,9 @@
     height: $height;
     position:relative;
     width: $width;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
 
     // :before - the background element behind the circle
     &:before {
@@ -35,10 +39,10 @@
     // :after - the circle element
     &:after {
         @include transition-duration($animation-duration);
-        @include transition-property(margin);
+        @include transition-property(margin, padding);
 
         background-color: #fff;
-        border-radius: 100%;
+        border-radius: $inner-height;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         content: "";
         display: block;
@@ -56,6 +60,28 @@
 
         &:after {
             margin-left: $width - $height + $inner-margin;
+        }
+    }
+
+    &.is-pressed {
+        &:before {
+            background-color: #e6e6e6;
+        }
+
+        &:after {
+            padding-left: $pressed-padding;
+        }
+    }
+
+    &.is-pressed.is-checked {
+        &:before {
+            background-color: $background;
+        }
+
+        &:after {
+            padding-left: 0;
+            padding-right: $pressed-padding;
+            margin-left: $width - $height + $inner-margin - $pressed-padding;
         }
     }
 }
