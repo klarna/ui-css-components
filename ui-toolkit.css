@@ -2108,7 +2108,8 @@ html:hover [class^="ss-"] {
   width: 48px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  /* For some Androids */ }
+  /* For some Androids */
+  -webkit-touch-callout: none; }
   .cui__switch:before {
     -webkit-transition-duration: 0.15s;
     -moz-transition-duration: 0.15s;
