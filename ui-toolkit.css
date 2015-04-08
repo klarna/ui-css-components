@@ -2095,6 +2095,10 @@ html:hover [class^="ss-"] {
     background-image: url("img/atoms/logos/png/22px-height/discover.png"); }
 
 .cui__switch {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #dddddd;
   border-radius: 48px;
   cursor: pointer;
@@ -2104,13 +2108,7 @@ html:hover [class^="ss-"] {
   width: 48px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  /* For some Androids */
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  /* For some Androids */ }
   .cui__switch:before {
     -webkit-transition-duration: 0.15s;
     -moz-transition-duration: 0.15s;

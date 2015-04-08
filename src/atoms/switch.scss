@@ -7,7 +7,9 @@
     $inner-margin: 1px;
     $inner-height: $height - (2 * $inner-margin);
     $inner-width: $width - (2 * $inner-margin);
-    $pressed-padding: 10px;
+    $pressed-padding: min(10px, ($inner-width - $inner-height) / 2);
+
+    @include user-select(none);
 
     background-color: #dddddd;
     border-radius: $width;
@@ -19,13 +21,6 @@
 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
-    
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
 
     // :before - the background element behind the circle
     &:before {
