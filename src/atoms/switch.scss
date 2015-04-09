@@ -63,7 +63,7 @@
         }
 
         &:after {
-            @include transform(translateX($width - $height + $inner-margin));
+            @include transform(translateX($width - $height));
         }
     }
 
@@ -85,7 +85,7 @@
         &:after {
             padding-left: 0;
             padding-right: $pressed-padding;
-            @include transform(translateX($width - $height + $inner-margin - $pressed-padding));
+            @include transform(translateX($width - $height - $pressed-padding));
         }
     }
 }
