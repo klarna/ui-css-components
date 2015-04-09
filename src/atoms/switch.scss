@@ -42,7 +42,7 @@
     // :after - the circle element
     &:after {
         @include transition-duration($animation-duration);
-        @include transition-property(margin, padding);
+        @include transition-property(transform, padding);
 
         background-color: #fff;
         border-radius: $inner-height;
@@ -63,7 +63,7 @@
         }
 
         &:after {
-            margin-left: $width - $height + $inner-margin;
+            @include transform(translateX($width - $height + $inner-margin));
         }
     }
 
@@ -85,7 +85,7 @@
         &:after {
             padding-left: 0;
             padding-right: $pressed-padding;
-            margin-left: $width - $height + $inner-margin - $pressed-padding;
+            @include transform(translateX($width - $height + $inner-margin - $pressed-padding));
         }
     }
 }
