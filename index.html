@@ -1,10 +1,10 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"> <span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"> <button class="cui__highlighted-button">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"><button class="cui__highlighted-button">
     Highlighted button
 </button>
-</div><pre> &lt;button class=&quot;cui__highlighted-button&quot;&gt;
+</div><pre>&lt;button class=&quot;cui__highlighted-button&quot;&gt;
     Highlighted button
 &lt;/button&gt;
-</pre><h3>Non highlighted button        </h3><div class="presentation-example"><button class="cui__non-highlighted-button">
+</pre><h3>Non highlighted button</h3><div class="presentation-example"><button class="cui__non-highlighted-button">
     Non highlighted button
 </button>
 </div><pre>&lt;button class=&quot;cui__non-highlighted-button&quot;&gt;
@@ -44,7 +44,7 @@
 </div><pre>&lt;span class=&quot;cui__checkbox&quot;&gt;&lt;/span&gt;
 </pre><div class="presentation-example"><span class="cui__checkbox is-checked"></span>
 </div><pre>&lt;span class=&quot;cui__checkbox is-checked&quot;&gt;&lt;/span&gt;
-</pre><h3>Input</h3><div class="presentation-example"><div class="cui__field">
+</pre><h3>Switch</h3><div class="presentation-example"><span class="cui__switch"></span></div><pre>&lt;span class=&quot;cui__switch&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-pressed"></span></div><pre>&lt;span class=&quot;cui__switch is-pressed&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-checked"></span></div><pre>&lt;span class=&quot;cui__switch is-checked&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-checked is-pressed"></span></div><pre>&lt;span class=&quot;cui__switch is-checked is-pressed&quot;&gt;&lt;/span&gt;</pre><h3>Input</h3><div class="presentation-example"><div class="cui__field">
     <span class="cui__field__error-tooltip">
         Error
     </span>
@@ -298,7 +298,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre><script>UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
+</pre><script>UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
 </script><p>Error in the data</p><div class="presentation-example"><div class="cui__field is-invalid">
     <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
@@ -364,8 +364,8 @@ var cuiEditors = document
 
 for (var i = 0; i < cuiEditorWrappers.length; i ++) {
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
-}  
-  
+}
+
 </script><h3>Select</h3><div class="presentation-example"><div class="cui__select">
     <select class="cui__select-dropdown" data-cid="select.selector">
         <option value="" data-placeholder="Placeholder"></option>
@@ -520,7 +520,7 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++) {
 &lt;div class=&quot;cui__logo--maestro--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--mastercard--tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__logo--amex--tiny&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre><h2 id="misc" class="presentation">Misc</h2><h3>Tooltip icon      </h3><div class="presentation-example"><div style="position: relative; height: 46px; border: 1px solid #CCC">
+&lt;div class=&quot;cui__logo--discover--tiny&quot;&gt;&lt;/div&gt;</pre><h2 id="misc" class="presentation">Misc</h2><h3>Tooltip icon</h3><div class="presentation-example"><div style="position: relative; height: 46px; border: 1px solid #CCC">
     <div class="cui__tooltip">
         <div class="cui__tooltip__icon-wrapper">
             <div class="cui__tooltip__icon"></div>

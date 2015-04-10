@@ -2094,6 +2094,79 @@ html:hover [class^="ss-"] {
   .ie .cui__logo--discover--tiny, .cui__browser--ie .cui__logo--discover--tiny {
     background-image: url("img/atoms/logos/png/22px-height/discover.png"); }
 
+.cui__switch {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #dddddd;
+  border-radius: 48px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 48px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  -webkit-touch-callout: none; }
+  .cui__switch:before {
+    -webkit-transition-duration: 0.15s;
+    -moz-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    transition-property: background;
+    background-color: #f1f1f1;
+    border-radius: 24px;
+    content: "";
+    display: block;
+    height: 22px;
+    margin-left: 1px;
+    margin-top: 1px;
+    position: absolute;
+    width: 46px; }
+  .cui__switch:after {
+    -webkit-transition-duration: 0.15s;
+    -moz-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-property: -webkit-transform, padding;
+    -moz-transition-property: -moz-transform, padding;
+    transition-property: transform, padding;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    content: "";
+    display: block;
+    height: 22px;
+    margin-top: 1px;
+    margin-left: 1px;
+    position: absolute;
+    width: 22px; }
+  .cui__switch.is-checked:before {
+    background-color: #0089cf;
+    border: none; }
+  .cui__switch.is-checked:after {
+    -webkit-transform: translateX(25px);
+    -moz-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -o-transform: translateX(25px);
+    transform: translateX(25px); }
+  .cui__switch.is-pressed:before {
+    background-color: #e6e6e6; }
+  .cui__switch.is-pressed:after {
+    padding-left: 10px; }
+  .cui__switch.is-pressed.is-checked:before {
+    background-color: #0089cf; }
+  .cui__switch.is-pressed.is-checked:after {
+    padding-left: 0;
+    padding-right: 10px;
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    transform: translateX(15px); }
+
 .cui__tooltip:hover .cui__tooltip__content, .cui__tooltip:hover .cui__tooltip--inline__content, .cui__tooltip.hover .cui__tooltip__content, .cui__tooltip.hover .cui__tooltip--inline__content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
