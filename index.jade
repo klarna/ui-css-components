@@ -12,17 +12,17 @@ html(lang="en")
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
     title KCO UI Toolkit
-    
+
     link(rel='stylesheet' href='ui-toolkit.css')
     link(rel='stylesheet' href='support/doc.css')
-      
+
     script(type='text/javascript' src='ui-toolkit.js')
 
   body
-    
+
     nav
       .inner
-        a(href='#home') 
+        a(href='#home')
           span.ss-pika.ss-home
         a(href='#buttons') Buttons
         a(href='#headers') Headers
@@ -31,20 +31,20 @@ html(lang="en")
         a(href='#icons') Icons
         a(href='#logos') Logos
         a(href='#misc') Misc
-    
+
     #home.main
       h2#buttons.presentation Buttons
-      
+
       h3 Highlighted button
-      +code() 
+      +code()
         include snippets/button--highlighted.html
-      
-      
-      h3 Non highlighted button        
+
+
+      h3 Non highlighted button
       +code()
         include snippets/button--non-highlighted.html
-      
-      
+
+
       h3 Buy button
       +code()
         include snippets/buy-button.html
@@ -53,7 +53,7 @@ html(lang="en")
       p Loading
       +code()
         include snippets/buy-button--loading.html
-        
+
 
       p Disabled
       +code()
@@ -62,28 +62,38 @@ html(lang="en")
 
 
       h2#headers.presentation Headers
-      
+
       h3 Main Header
       +code()
         include snippets/main-header.html
-          
-      
+
+
       h3 Subtle Header
       +code()
         include snippets/subtle-header.html
 
-      
-      
+
+
       h2#form.presentation Form elements
-      
+
       h3 Checkbox
       +code()
         include snippets/checkbox.html
 
       +code()
         include snippets/checkbox--checked.html
-      
-      
+
+
+      h3 Switch
+      +code()
+        include snippets/switch.html
+      +code()
+        include snippets/switch--pressed.html
+      +code()
+        include snippets/switch--checked.html
+      +code()
+        include snippets/switch--checked-pressed.html
+
       h3 Input
       +code()
         include snippets/field.html
@@ -107,14 +117,14 @@ html(lang="en")
       p With tooltip
       +code()
         include snippets/field--with-tooltip.html
-      
+
       script.
-        UIToolkit.tooltip(document.querySelector('.cui__field-tooltip__button'));
-      
+        UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
+
       p Error in the data
       +code()
         include snippets/field--invalid.html
-      
+
       script.
         var cuiEditorWrappers = document
           .querySelectorAll(
@@ -122,29 +132,29 @@ html(lang="en")
         var cuiEditors = document
           .querySelectorAll(
             '.cui__editor--text, .cui__editor--with-icon');
-        
+
         for (var i = 0; i < cuiEditorWrappers.length; i ++) {
           UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
-        }  
-          
-      
+        }
+
+
       h3 Select
       +code()
         include snippets/select.html
-      
+
       p With separators
       +code()
         include snippets/select--with-separators.html
-      
-      
+
+
       h3 Label
       +code()
         include snippets/label.html
-      
-      
-      
+
+
+
       h2#links.presentation Links
-      
+
       p Highlighted
       +code()
         include snippets/link--highlighted.html
@@ -158,35 +168,35 @@ html(lang="en")
       p Non highlighted, standalone
       +code()
         include snippets/link--non-highlighted--standalone.html
-      
-      
-      
+
+
+
       h2#icons.presentation Icons
-      
+
       h3 SS Pika Icon
       +code()
         include snippets/icon--ss-pika.html
-        
-        
-        
+
+
+
       h2#logos.presentation Logos
-      
+
       h3 Card logos
       +code()
         include snippets/logos--cards.html
-        
-        
-        
+
+
+
       h2#misc.presentation Misc
-      
-      h3 Tooltip icon      
+
+      h3 Tooltip icon
       +code()
         include snippets/tooltip.html
-      
+
       p Inline
       +code()
         include snippets/tooltip--inline.html
-      
+
       h3 Loader
       +code()
         include snippets/loader.html
@@ -194,7 +204,7 @@ html(lang="en")
       h3 Bubble
       +code()
         include snippets/bubble.html
-      
+
       p Below some other container
       +code()
         include snippets/bubble--below.html

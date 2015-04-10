@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.7.0
+
+### Added
+
+- Toggle Switch (+ snippet): `cui__switch`
+
 ## 1.6.4
 
 ### Fixed
