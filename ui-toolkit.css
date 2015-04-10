@@ -2147,11 +2147,11 @@ html:hover [class^="ss-"] {
     background-color: #0089cf;
     border: none; }
   .cui__switch.is-checked:after {
-    -webkit-transform: translateX(25px);
-    -moz-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    -o-transform: translateX(25px);
-    transform: translateX(25px); }
+    -webkit-transform: translateX(24px);
+    -moz-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    -o-transform: translateX(24px);
+    transform: translateX(24px); }
   .cui__switch.is-pressed:before {
     background-color: #e6e6e6; }
   .cui__switch.is-pressed:after {
@@ -2161,11 +2161,11 @@ html:hover [class^="ss-"] {
   .cui__switch.is-pressed.is-checked:after {
     padding-left: 0;
     padding-right: 10px;
-    -webkit-transform: translateX(15px);
-    -moz-transform: translateX(15px);
-    -ms-transform: translateX(15px);
-    -o-transform: translateX(15px);
-    transform: translateX(15px); }
+    -webkit-transform: translateX(14px);
+    -moz-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    -o-transform: translateX(14px);
+    transform: translateX(14px); }
 
 .cui__tooltip:hover .cui__tooltip__content, .cui__tooltip:hover .cui__tooltip--inline__content, .cui__tooltip.hover .cui__tooltip__content, .cui__tooltip.hover .cui__tooltip--inline__content {
   -webkit-transform: translateY(0);
