@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.7.1
+
+### Added
+
+- `is-disabled` state on the `cui__highlighted-button`
+
 ## 1.7.0
 
 ### Added
