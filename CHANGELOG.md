@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.7.2
+
+### Added
+
+- Preview snippet for input side by side with button
+
+## Fixed
+
+- Normalize height of input and button
+
 ## 1.7.1
 
 ### Added
