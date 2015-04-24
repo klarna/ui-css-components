@@ -5,7 +5,21 @@
     @include appearance(none);
     @include user-select(none);
 
-    $font-size: 11px;
+    //
+    // The ratios were calculated based on a checkbox size (18px),
+    // font size (11px) and line height (21px) that looked proportional. 
+    // 
+    // So, the first value (0.611111111) is the ratio of that
+    // font size to that checkbox size.
+    // 
+    // The second value (1.909090909) is the ratio of that 
+    // line height to that font size.
+    // 
+    $ratio-checkbox-size-font-size: 0.611111111;    // 11px/18px
+    $ratio-line-height-font-size: 1.909090909;      // 21px/11px
+
+    $font-size: $size * $ratio-checkbox-size-font-size;
+    $line-height: $font-size * $ratio-line-height-font-size;
 
     background-color: #eee;
     border-radius: 2px;
@@ -39,7 +53,7 @@
         font-family: "SSPika";
         font-weight: normal;
         height: $size;
-        line-height: $size + ceil(($size - $font-size) / 4) + 1px;
+        line-height: $line-height;//$size + ceil(($size - $font-size) / 4) + 1px;
         position: absolute;
         text-align: center;
         top: 0;
