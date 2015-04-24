@@ -12,14 +12,11 @@
     font-weight: bold;
     outline: none;
     padding: 13px;
+    line-height: 19px;
     vertical-align: top;
 
     @include respond-to-ie {
-        padding: 12px 14px 11px;
-    }
-
-    @include respond-to-wide {
-        padding: 14px;
+        padding: 12px 13px 11px;
     }
 
     &:hover {
