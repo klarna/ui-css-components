@@ -244,6 +244,15 @@
   .cui__highlighted-button:active {
     background: #007bbb;
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1); }
+  .cui__highlighted-button.is-disabled {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    box-shadow: none;
+    opacity: 0.4; }
+    .cui__highlighted-button.is-disabled:hover {
+      background: #0089cf; }
+    .cui__highlighted-button.is-disabled:active {
+      background: #0089cf;
+      box-shadow: none; }
 
 .cui__highlighted-button__loader {
   background-image: url("img/atoms/button/button.loader.png");
