@@ -53,7 +53,7 @@
         font-family: "SSPika";
         font-weight: normal;
         height: $size;
-        line-height: $line-height;//$size + ceil(($size - $font-size) / 4) + 1px;
+        line-height: $line-height;
         position: absolute;
         text-align: center;
         top: 0;
