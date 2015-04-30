@@ -19,7 +19,11 @@ Usage
 
 ### Seeing the showroom and developing
 
-Clone this repo and run:
+[View the showroom for the master branch](https://nexus.internal.machines/content/sites/infra/ui-toolkit/master/)
+
+A copy of the showroom is generated for every pushed commit, so if all you want to do is see or share the showroom for your branch, check out https://nexus.int.klarna.net/content/sites/infra/ui-toolkit/&lt;branch&gt;/ .
+
+If you want to generate the showroom for yourself, clone this repo and run:
 
 ```sh
 make install
