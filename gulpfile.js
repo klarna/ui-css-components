@@ -99,6 +99,12 @@ gulp.task('images:tooltip', function () {
         .pipe(gulp.dest('img/atoms/tooltip'));
 });
 
+gulp.task('images:tagline', function () {
+    gulp.src('img/atoms/tagline/**/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('img/atoms/tagline'));
+});
+
 gulp.task('build', ['build:sass', 'build:jade', 'build:js']);
 
-gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip']);
+gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip', 'images:tagline']);
