@@ -1,0 +1,9 @@
+.cui__tagline {
+  background-image: url($ui-toolkit-path + 'img/atoms/tagline/powered-by-klarna.svg');
+  height: 15px;
+  width: 120px;
+
+  @include respond-to-ie {
+    background-image: url($ui-toolkit-path + 'img/atoms/tagline/powered-by-klarna.png');
+  }
+}
