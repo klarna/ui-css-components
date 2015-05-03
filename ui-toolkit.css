@@ -2186,8 +2186,8 @@ html:hover [class^="ss-"] {
 
 .cui__tagline {
   background-image: url("img/atoms/tagline/powered-by-klarna.svg");
-  height: 15px;
-  width: 120px; }
+  height: 16px;
+  width: 124px; }
   .ie .cui__tagline, .cui__browser--ie .cui__tagline {
     background-image: url("img/atoms/tagline/powered-by-klarna.png"); }
 
