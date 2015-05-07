@@ -90,6 +90,7 @@
             opacity: 1;
 
             @include respond-to-ie(8) {
+                content: "\2713 ";
                 display: block;
             }
         }

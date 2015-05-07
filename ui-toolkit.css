@@ -442,6 +442,7 @@
       transform: translateY(0);
       opacity: 1; }
       .ie8 .cui__checkbox.is-checked:after, .cui__browser--ie8 .cui__checkbox.is-checked:after {
+        content: "\2713 ";
         display: block; }
 
 .cui__main-header {
