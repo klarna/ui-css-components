@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.7.3
+
+### Updated
+
+- Revamped style of the `cui_checkbox`
+
 ## 1.7.2
 
 ### Added
