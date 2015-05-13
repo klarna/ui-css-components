@@ -2184,6 +2184,13 @@ html:hover [class^="ss-"] {
     -o-transform: translateX(14px);
     transform: translateX(14px); }
 
+.cui__tagline {
+  background-image: url("img/atoms/tagline/powered-by-klarna.svg");
+  height: 16px;
+  width: 124px; }
+  .ie .cui__tagline, .cui__browser--ie .cui__tagline {
+    background-image: url("img/atoms/tagline/powered-by-klarna.png"); }
+
 .cui__tooltip:hover .cui__tooltip__content, .cui__tooltip:hover .cui__tooltip--inline__content, .cui__tooltip.hover .cui__tooltip__content, .cui__tooltip.hover .cui__tooltip--inline__content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

@@ -9,7 +9,7 @@ Installation
 You can install the KCO UI Toolkit via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git#v1.7.3
+bower install git+ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git#v1.8.0
 ```
 
 Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
