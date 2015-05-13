@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.8.0
+
+### Added
+
+- Added a tagline component (a.k.a powered by Klarna image).
+
 ## 1.7.3
 
 ### Updated
@@ -14,7 +20,7 @@ All notable changes to this project will be documented in this file. http://keep
 
 - Preview snippet for input side by side with button
 
-## Fixed
+### Fixed
 
 - Normalize height of input and button
 
