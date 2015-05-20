@@ -11,7 +11,7 @@ $select-overlay-triangle-y-ie: 18px;
     @include font-size(15px);
 
     border: 1px solid $input-box-shadow-color;
-    border-radius: $input-border-radius;
+    border-radius: 0;
     display: inline-block;
     font-weight: bold;
     line-height: normal;
