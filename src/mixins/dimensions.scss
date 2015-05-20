@@ -8,29 +8,17 @@
     $width,
     $desktop-width: $width,
     $desktop-has-element-right: false,
-    $desktop-has-element-left: false
+    $desktop-has-element-left: false,
+    $margin: 0
 ) {
     width: $width;
+    margin: $margin;
 
     @include respond-to-wide {
-        $new-width: $desktop-width;
-        $margin: $field-horizontal-margin / 2;
+        width: $desktop-width;
 
-        @if $desktop-has-element-right {
-            $new-width: $new-width - $margin;
-            margin-right: $margin;
-        } @else {
-            margin-right: 0;
-        }
-
-        @if $desktop-has-element-left {
-            $new-width: $new-width - $margin;
-            margin-left: $margin;
-        } @else {
-            margin-left: 0;
+        @if not($desktop-has-element-left) {
             clear: left;
         }
-
-        width: $new-width;
     }
 }

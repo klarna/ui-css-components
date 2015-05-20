@@ -1,7 +1,6 @@
 .cui__field {
     @include box-sizing(border-box);
 
-    margin-bottom: $input-line-height / 2;
     position: relative;
 
     &.is-hidden {
@@ -31,7 +30,7 @@
 
     background-color: white;
     border: 1px solid $input-box-shadow-color;
-    border-radius: $input-border-radius;
+    border-radius: 0;
     color: $input-editor-color;
     font-weight: 600;
     line-height: 19px;
@@ -39,6 +38,7 @@
     padding: 12px;
     position: relative;
     width: 100%;
+    height: 45px;
 
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;

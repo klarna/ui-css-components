@@ -1,0 +1,39 @@
+/*
+* Mixins for borders for editor elements
+*/
+
+
+// Set dimensions of a field
+@mixin field-editor-border(
+    $has-element-above: true,
+    $has-element-below: true,
+    $desktop-has-element-right: false,
+    $desktop-has-element-left: false
+) {
+
+    @if not($has-element-above) {
+        border-radius: $input-border-radius $input-border-radius 0 0;
+    }
+
+    @if not($has-element-below) {
+        border-radius: 0 0 $input-border-radius $input-border-radius;
+    }
+
+    @include respond-to-wide {
+
+        @if $desktop-has-element-right {
+              border-right: none;
+
+              @if not($has-element-below) {
+                  border-radius: 0 0 0 $input-border-radius;
+              }
+        }
+
+        @if $desktop-has-element-left {
+
+              @if not($has-element-below) {
+                  border-radius: 0 0 $input-border-radius 0;
+              }
+        }
+    }
+}
