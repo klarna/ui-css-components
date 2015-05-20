@@ -8,24 +8,28 @@
     $has-element-above: true,
     $has-element-below: true,
     $has-element-right: false,
+    $has-element-left: false,
     $desktop-has-element-above: $has-element-above,
     $desktop-has-element-below: $has-element-below,
-    $desktop-has-element-right: $has-element-right
+    $desktop-has-element-right: $has-element-right,
+    $desktop-has-element-left: $has-element-left
 ) {
 
     @include border-styles(
         $has-above: $has-element-above,
         $has-below: $has-element-below,
-        $has-right: $has-element-right
-    )
+        $has-right: $has-element-right,
+        $has-left: $has-element-left
+    );
 
     @include respond-to-wide {
 
         @include border-styles(
             $has-above: $desktop-has-element-above,
             $has-below: $desktop-has-element-below,
-            $has-right: $desktop-has-element-right
-        )
+            $has-right: $desktop-has-element-right,
+            $has-left: $desktop-has-element-left
+        );
     }
 }
 
@@ -33,20 +37,33 @@
 @mixin border-styles (
     $has-above: true,
     $has-below: true,
-    $has-right: false
+    $has-right: false,
+    $has-left: false
 ) {
 
     @if not($has-above) {
-        border-top-left-radius: $input-border-radius;
-        border-top-right-radius: $input-border-radius;
+
+        @if not($has-left) {
+            border-top-left-radius: $input-border-radius;
+        }
+
+        @if not($has-right) {
+            border-top-right-radius: $input-border-radius;
+        }
     }
 
     @if not($has-below) {
-        border-bottom-left-radius: $input-border-radius;
-        border-bottom-right-radius: $input-border-radius;
+
+        @if not($has-left) {
+            border-bottom-left-radius: $input-border-radius;
+        }
+
+        @if not($has-right) {
+            border-bottom-right-radius: $input-border-radius;
+        }
     }
 
     @if $has-right {
-        border-right: 0
+        border-right: 0;
     }
 }
