@@ -3,37 +3,50 @@
 */
 
 
-// Set dimensions of a field
-@mixin field-editor-border(
+// Set border radii of a field editor
+@mixin field-editor-border (
     $has-element-above: true,
     $has-element-below: true,
-    $desktop-has-element-right: false,
-    $desktop-has-element-left: false
+    $has-element-right: false,
+    $desktop-has-element-above: $has-element-above,
+    $desktop-has-element-below: $has-element-below,
+    $desktop-has-element-right: $has-element-right
 ) {
 
-    @if not($has-element-above) {
-        border-radius: $input-border-radius $input-border-radius 0 0;
-    }
-
-    @if not($has-element-below) {
-        border-radius: 0 0 $input-border-radius $input-border-radius;
-    }
+    @include border-styles(
+        $has-above: $has-element-above,
+        $has-below: $has-element-below,
+        $has-right: $has-element-right
+    )
 
     @include respond-to-wide {
 
-        @if $desktop-has-element-right {
-              border-right: none;
+        @include border-styles(
+            $has-above: $desktop-has-element-above,
+            $has-below: $desktop-has-element-below,
+            $has-right: $desktop-has-element-right
+        )
+    }
+}
 
-              @if not($has-element-below) {
-                  border-radius: 0 0 0 $input-border-radius;
-              }
-        }
+//internal mixin used by field-editor-border mixin
+@mixin border-styles (
+    $has-above: true,
+    $has-below: true,
+    $has-right: false
+) {
 
-        @if $desktop-has-element-left {
+    @if not($has-above) {
+        border-top-left-radius: $input-border-radius;
+        border-top-right-radius: $input-border-radius;
+    }
 
-              @if not($has-element-below) {
-                  border-radius: 0 0 $input-border-radius 0;
-              }
-        }
+    @if not($has-below) {
+        border-bottom-left-radius: $input-border-radius;
+        border-bottom-right-radius: $input-border-radius;
+    }
+
+    @if $has-right {
+        border-right: 0
     }
 }
