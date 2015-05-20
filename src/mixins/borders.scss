@@ -23,6 +23,7 @@
     );
 
     @include respond-to-wide {
+        border-radius: 0;
 
         @include border-styles(
             $has-above: $desktop-has-element-above,
