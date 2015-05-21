@@ -23,6 +23,7 @@ $select-overlay-triangle-y-ie: 18px;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
+    height: 45px;
 
     @include respond-to-ie {
         height: 43px;
