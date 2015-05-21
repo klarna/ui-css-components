@@ -9,14 +9,16 @@
     $desktop-width: $width,
     $desktop-has-element-right: false,
     $desktop-has-element-left: false,
-    $margin: 0
+    $margin: 0,
+    $desktop-margin: $margin
 ) {
     width: $width;
     margin: $margin;
 
     @include respond-to-wide {
         width: $desktop-width;
-
+        margin: $desktop-margin;
+        
         @if not($desktop-has-element-left) {
             clear: left;
         }
