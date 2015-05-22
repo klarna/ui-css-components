@@ -65,6 +65,8 @@
     }
 
     @if $has-right {
-        border-right: 0;
+        border-right-width: 0;
+    } @else {
+        border-right-width: 1px;
     }
 }
