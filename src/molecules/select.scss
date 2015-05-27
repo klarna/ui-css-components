@@ -11,7 +11,7 @@ $select-overlay-triangle-y-ie: 18px;
     @include font-size(15px);
 
     border: 1px solid $input-box-shadow-color;
-    border-radius: $input-border-radius;
+    border-radius: 0;
     display: inline-block;
     font-weight: bold;
     line-height: normal;
@@ -23,6 +23,7 @@ $select-overlay-triangle-y-ie: 18px;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
+    height: 45px;
 
     @include respond-to-ie {
         height: 43px;
@@ -71,9 +72,16 @@ $select-overlay-triangle-y-ie: 18px;
     }
 
     &.is-invalid {
-        background-color: #FCF2F3;
-        padding-bottom: 8px;
-        padding-top: 18px;
+        padding-bottom: 2px;
+        padding-top: 16px;
+    }
+
+    &.is-error {
+        background-color: $input-error-background-color;
+    }
+
+    &.is-warning {
+        background-color: $input-warning-background-color;
     }
 
     &:before {

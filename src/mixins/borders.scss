@@ -1,0 +1,89 @@
+/*
+* Mixins for borders for editor elements
+*/
+
+
+// Set border radii of a field editor
+@mixin field-editor-border (
+    $has-element-above: true,
+    $has-element-below: true,
+    $has-element-right: false,
+    $has-element-left: false,
+    $desktop-has-element-above: $has-element-above,
+    $desktop-has-element-below: $has-element-below,
+    $desktop-has-element-right: $has-element-right,
+    $desktop-has-element-left: $has-element-left
+) {
+
+    @include border-styles(
+        $has-above: $has-element-above,
+        $has-below: $has-element-below,
+        $has-right: $has-element-right,
+        $has-left: $has-element-left
+    );
+
+    @include respond-to-wide {
+        border-radius: 0;
+
+        @include border-styles(
+            $has-above: $desktop-has-element-above,
+            $has-below: $desktop-has-element-below,
+            $has-right: $desktop-has-element-right,
+            $has-left: $desktop-has-element-left
+        );
+    }
+}
+
+//internal mixin used by field-editor-border mixin
+@mixin border-styles (
+    $has-above: true,
+    $has-below: true,
+    $has-right: false,
+    $has-left: false
+) {
+
+    @if not($has-above) {
+
+        @if not($has-left) {
+            border-top-left-radius: $input-border-radius;
+
+            &:focus {
+                border-top-left-radius: $input-border-radius;
+            }
+        }
+
+        @if not($has-right) {
+            border-top-right-radius: $input-border-radius;
+
+            &:focus {
+                border-top-right-radius: $input-border-radius;
+            }
+        }
+    }
+
+    @if not($has-below) {
+
+        @if not($has-left) {
+            border-bottom-left-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-left-radius: $input-border-radius;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        @if not($has-right) {
+            border-bottom-right-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-right-radius: $input-border-radius;
+            }
+        }
+    }
+
+    @if $has-right {
+        border-right-width: 0;
+    } @else {
+        border-right-width: 1px;
+    }
+}

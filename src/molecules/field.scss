@@ -1,7 +1,6 @@
 .cui__field {
     @include box-sizing(border-box);
 
-    margin-bottom: $input-line-height / 2;
     position: relative;
 
     &.is-hidden {
@@ -23,6 +22,7 @@
     @include appearance(none);
     @include box-sizing(border-box);
     @include font-size(15px);
+    @include transition(padding 0.1s ease-in);
 
     @include placeholder {
         color: $editor-placeholder-color;
@@ -31,7 +31,7 @@
 
     background-color: white;
     border: 1px solid $input-box-shadow-color;
-    border-radius: $input-border-radius;
+    border-radius: 0;
     color: $input-editor-color;
     font-weight: 600;
     line-height: 19px;
@@ -39,6 +39,7 @@
     padding: 12px;
     position: relative;
     width: 100%;
+    height: 45px;
 
     @include respond-to-ie(8) {
         border: 1px solid $input-box-shadow-color;
@@ -104,10 +105,18 @@
         }
     }
 
-    &.is-invalid {
-        background-color: #FCF2F3;
-        padding-bottom: 7px;
-        padding-top: 17px;
+    &.is-invalid,
+    .show-label & {
+        padding-bottom: 2px;
+        padding-top: 16px;
+    }
+
+    &.is-error {
+        background-color: $input-error-background-color;
+    }
+
+    &.is-warning {
+        background-color: $input-warning-background-color;
     }
 }
 
@@ -175,11 +184,11 @@
 
 
     border-radius: 0;
-    top: 8px;
+    top: 9px;
     left: 13px;
     color: $text-color;
     display: none;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1em;
     pointer-events: none;
     position: absolute;
@@ -205,6 +214,10 @@
     @include field_tooltip($input-tooltip-text-color--warning);
 }
 
+.cui__label {
+    @include field_tooltip($editor-placeholder-color);
+}
+
 
 // ================================================================
 //  GROUP FIELDS
@@ -215,11 +228,11 @@
     &:before {
         content: " ";
         border-left: 1px solid #ddd;
-        height: 23px;
+        height: 43px;
         position: absolute;
         width: 0;
         left: -1px;
-        bottom: 10px;
+        bottom: 0;
         display: block;
     }
 

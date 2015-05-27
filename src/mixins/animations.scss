@@ -15,7 +15,7 @@
 
 %show-tooltip {
   @include animation-name(show-tooltip);
-  @include animation-duration(0.7s);
+  @include animation-duration(0.3s);
   @include animation-timing-function($ease-out-quint);
   @include transform(translateZ(0));
   @include animation-fill-mode(both);
