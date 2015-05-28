@@ -344,63 +344,97 @@
     style=&quot;width:30%; display: inline-block;&quot;&gt;
     Button
 &lt;/button&gt;
-</pre><p>Error in the data</p><p>Notes:<ul><li>is-invalid must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em></li><li>the error/warning messages <em>must</em> be short enough to fit on a single line</li></ul></p><div class="presentation-example"><div class="cui__field is-invalid">
-    <span class="cui__field__error-tooltip is-visible">
-        The email address is invalid
-    </span>
-
-    <div
-        class="cui__editor-wrapper is-invalid">
-        <input
-            type="text"
-            class="cui__editor--text is-invalid"
-            placeholder="Please write your email address"
-            value="engineering@+klarna.com" />
-    </div>
-</div>
-
-<div class="cui__field is-invalid">
+</pre><p>Error in the data</p><p>Notes:<ul><li>is-invalid, and is-error/is-warning, must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em></li><li>the error/warning messages <em>must</em> be short enough to fit on a single line</li></ul></p><div class="presentation-example"><div class="cui__field is-invalid is-warning">
     <span class="cui__field__warning-tooltip is-visible">
         The email address is invalid
     </span>
 
     <div
-        class="cui__editor-wrapper is-invalid">
+        class="cui__editor-wrapper is-invalid is-warning">
         <input
             type="text"
-            class="cui__editor--text is-invalid"
+            class="cui__editor--text is-invalid is-warning"
             placeholder="Please write your email address"
             value="engineering@+klarna.com" />
     </div>
-</div></div><pre>&lt;div class=&quot;cui__field is-invalid&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip is-visible&quot;&gt;
+</div>
+<div class="cui__field is-invalid is-error">
+    <span class="cui__field__error-tooltip is-visible">
         The email address is invalid
-    &lt;/span&gt;
+    </span>
 
-    &lt;div
-        class=&quot;cui__editor-wrapper is-invalid&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-invalid&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;engineering@+klarna.com&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+    <div
+        class="cui__editor-wrapper is-invalid is-error">
+        <input
+            type="text"
+            class="cui__editor--text is-invalid is-error"
+            placeholder="Please write your email address"
+            value="engineering@+klarna.com" />
+    </div>
+</div>
 
-&lt;div class=&quot;cui__field is-invalid&quot;&gt;
+<div class="cui__field is-invalid is-error">
+    <span class="cui__field__error-tooltip--with-icon is-visible">
+        The email address is invalid
+    </span>
+
+    <div
+        class="cui__editor-wrapper--with-icon is-invalid is-error">
+        <input
+            type="text"
+            class="cui__editor--with-icon is-invalid is-error"
+            placeholder="Please write your email address"
+            value="engineering@+klarna.com" />
+        <span
+            class="cui__icon ss-pika ss-mail"></span>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field is-invalid is-warning&quot;&gt;
     &lt;span class=&quot;cui__field__warning-tooltip is-visible&quot;&gt;
         The email address is invalid
     &lt;/span&gt;
 
     &lt;div
-        class=&quot;cui__editor-wrapper is-invalid&quot;&gt;
+        class=&quot;cui__editor-wrapper is-invalid is-warning&quot;&gt;
         &lt;input
             type=&quot;text&quot;
-            class=&quot;cui__editor--text is-invalid&quot;
+            class=&quot;cui__editor--text is-invalid is-warning&quot;
             placeholder=&quot;Please write your email address&quot;
             value=&quot;engineering@+klarna.com&quot; /&gt;
     &lt;/div&gt;
-&lt;/div&gt;</pre><script>var cuiEditorWrappers = document
+&lt;/div&gt;
+&lt;div class=&quot;cui__field is-invalid is-error&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip is-visible&quot;&gt;
+        The email address is invalid
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper is-invalid is-error&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text is-invalid is-error&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;engineering@+klarna.com&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field is-invalid is-error&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip--with-icon is-visible&quot;&gt;
+        The email address is invalid
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper--with-icon is-invalid is-error&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--with-icon is-invalid is-error&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;engineering@+klarna.com&quot; /&gt;
+        &lt;span
+            class=&quot;cui__icon ss-pika ss-mail&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><script>var cuiEditorWrappers = document
   .querySelectorAll(
     '.cui__editor-wrapper, .cui__editor-wrapper--with-icon');
 var cuiEditors = document
