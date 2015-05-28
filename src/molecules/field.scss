@@ -218,6 +218,16 @@ $editor-with-icon-padding-left: 41px;
     @include field_tooltip($input-tooltip-text-color--warning);
 }
 
+.cui__field__error-tooltip--with-icon {
+    @include field_tooltip($input-tooltip-text-color);
+    left: $editor-with-icon-padding-left;
+}
+
+.cui__field__warning-tooltip--with-icon {
+    @include field_tooltip($input-tooltip-text-color--warning);
+    left: $editor-with-icon-padding-left;
+}
+
 .cui__label {
     @include field_tooltip($editor-placeholder-color);
 }
