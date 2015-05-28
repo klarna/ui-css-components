@@ -72,8 +72,16 @@ $select-overlay-triangle-y-ie: 18px;
     }
 
     &.is-invalid {
-        padding-bottom: 8px;
-        padding-top: 18px;
+        padding-bottom: 2px;
+        padding-top: 16px;
+    }
+
+    &.is-error {
+        background-color: $input-error-background-color;
+    }
+
+    &.is-warning {
+        background-color: $input-warning-background-color;
     }
 
     &:before {

@@ -46,10 +46,18 @@
 
         @if not($has-left) {
             border-top-left-radius: $input-border-radius;
+
+            &:focus {
+                border-top-left-radius: $input-border-radius;
+            }
         }
 
         @if not($has-right) {
             border-top-right-radius: $input-border-radius;
+
+            &:focus {
+                border-top-right-radius: $input-border-radius;
+            }
         }
     }
 
@@ -57,10 +65,19 @@
 
         @if not($has-left) {
             border-bottom-left-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-left-radius: $input-border-radius;
+                border-bottom-right-radius: 0;
+            }
         }
 
         @if not($has-right) {
             border-bottom-right-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-right-radius: $input-border-radius;
+            }
         }
     }
 

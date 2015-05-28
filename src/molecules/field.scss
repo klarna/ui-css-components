@@ -24,6 +24,7 @@ $editor-with-icon-padding-left: 41px;
     @include appearance(none);
     @include box-sizing(border-box);
     @include font-size(15px);
+    @include transition(padding 0.1s ease-in);
 
     @include placeholder {
         color: $editor-placeholder-color;
@@ -106,9 +107,18 @@ $editor-with-icon-padding-left: 41px;
         }
     }
 
-    &.is-invalid {
-        padding-bottom: 7px;
-        padding-top: 17px;
+    &.is-invalid,
+    .show-label & {
+        padding-bottom: 2px;
+        padding-top: 16px;
+    }
+
+    &.is-error {
+        background-color: $input-error-background-color;
+    }
+
+    &.is-warning {
+        background-color: $input-warning-background-color;
     }
 }
 
@@ -169,21 +179,19 @@ $editor-with-icon-padding-left: 41px;
     z-index: 1;
 }
 
-@mixin field_tooltip($background-color) {
+@mixin field_tooltip($text-color) {
     @extend %show-tooltip;
     @include font-size(11px);
     @include box-sizing(border-box);
 
 
-    background: $background-color;
-    border-radius: 3px 3px 0 0;
-    bottom: 26px;
-    color: #FFF;
+    border-radius: 0;
+    top: 9px;
+    left: 13px;
+    color: $text-color;
     display: none;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1em;
-    margin: -10px 0 0 0;
-    padding: 3px 10px 4px;
     pointer-events: none;
     position: absolute;
     width: 100%;
@@ -201,11 +209,15 @@ $editor-with-icon-padding-left: 41px;
 }
 
 .cui__field__error-tooltip {
-    @include field_tooltip($input-tooltip-background-color);
+    @include field_tooltip($input-tooltip-text-color);
 }
 
 .cui__field__warning-tooltip {
-    @include field_tooltip($input-tooltip-background-color--warning);
+    @include field_tooltip($input-tooltip-text-color--warning);
+}
+
+.cui__label {
+    @include field_tooltip($editor-placeholder-color);
 }
 
 

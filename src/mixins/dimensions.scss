@@ -18,9 +18,11 @@
     @include respond-to-wide {
         width: $desktop-width;
         margin: $desktop-margin;
-        
+
         @if not($desktop-has-element-left) {
             clear: left;
+        } @else {
+            clear: none;
         }
     }
 }

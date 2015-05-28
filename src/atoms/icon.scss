@@ -9,10 +9,6 @@
     position: absolute;
     width: 20px;
     z-index: 10;
-
-    &.is-invalid {
-        bottom: -9px;
-    }
 }
 
 .cui__editor--text:focus + .cui__icon {
