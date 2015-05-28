@@ -10,7 +10,7 @@ $select-overlay-triangle-y-ie: 18px;
     @include box-sizing(border-box);
     @include font-size(15px);
 
-    border: 1px solid $input-box-shadow-color;
+    border: 1px solid $input-border-inner-color;
     border-radius: 0;
     display: inline-block;
     font-weight: bold;
@@ -30,7 +30,7 @@ $select-overlay-triangle-y-ie: 18px;
     }
 
     @include respond-to-ie(8) {
-        border: 1px solid $input-box-shadow-color;
+        border: 1px solid $input-border-inner-color;
         height: 44px;
     }
 
