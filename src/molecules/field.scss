@@ -1,3 +1,5 @@
+$editor-with-icon-padding-left: 41px;
+
 .cui__field {
     @include box-sizing(border-box);
 
@@ -113,7 +115,7 @@
 .cui__editor--with-icon {
     @extend .cui__editor--text;
 
-    padding-left: 36px;
+    padding-left: $editor-with-icon-padding-left;
 }
 
 .cui__editor-wrapper {
@@ -153,7 +155,7 @@
 
     @include respond-to-ie-and-stock {
         &:after {
-            padding-left: 36px;
+            padding-left: $editor-with-icon-padding-left;
         }
     }
 }
