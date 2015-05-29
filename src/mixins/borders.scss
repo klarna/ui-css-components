@@ -84,18 +84,18 @@
                 border-bottom-right-radius: $input-border-radius;
             }
         }
+    } @else {
+        border-bottom-color: transparent;
     }
 
     @if $has-right {
-        border-right-width: 0;
         border-right-color: $input-border-inner-color;
     } @else {
-        border-right-width: 1px;
         border-right-color: $input-border-outer-color;
     }
 
     @if $has-left {
-      border-left-color: $input-border-inner-color;
+      border-left-color: transparent;
     } @else {
       border-left-color: $input-border-outer-color;
     }
