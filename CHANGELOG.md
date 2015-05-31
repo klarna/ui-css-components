@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.8.1
+
+### Updated
+
+- Update the card logos of MasterCard, Maestro and Visa to be with border
+
 ## 1.8.0
 
 ### Added
