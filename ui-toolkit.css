@@ -2072,28 +2072,28 @@ html:hover [class^="ss-"] {
 .cui__logo--visa--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa.svg");
   height: 22px;
-  width: 31px; }
+  width: 32px; }
   .ie .cui__logo--visa--tiny, .cui__browser--ie .cui__logo--visa--tiny {
     background-image: url("img/atoms/logos/png/22px-height/visa.png"); }
 
 .cui__logo--visa-electron--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa-electron.svg");
   height: 22px;
-  width: 36px; }
+  width: 32px; }
   .ie .cui__logo--visa-electron--tiny, .cui__browser--ie .cui__logo--visa-electron--tiny {
     background-image: url("img/atoms/logos/png/22px-height/visa-electron.png"); }
 
 .cui__logo--mastercard--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/mastercard.svg");
   height: 22px;
-  width: 30px; }
+  width: 35px; }
   .ie .cui__logo--mastercard--tiny, .cui__browser--ie .cui__logo--mastercard--tiny {
     background-image: url("img/atoms/logos/png/22px-height/mastercard.png"); }
 
 .cui__logo--maestro--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/maestro.svg");
   height: 22px;
-  width: 30px; }
+  width: 35px; }
   .ie .cui__logo--maestro--tiny, .cui__browser--ie .cui__logo--maestro--tiny {
     background-image: url("img/atoms/logos/png/22px-height/maestro.png"); }
 
