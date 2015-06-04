@@ -483,6 +483,28 @@
 .cui__editor--text:focus + .cui__icon, .cui__editor--with-icon:focus + .cui__icon {
   color: #0072CC; }
 
+.cui__icon--close {
+  background-image: url("img/atoms/icon/icon.close.svg");
+  width: 15px;
+  height: 15px;
+  display: block;
+  opacity: 0.7; }
+  .ie8 .cui__icon--close, .cui__browser--ie8 .cui__icon--close, .ie9 .cui__icon--close, .cui__browser--ie9 .cui__icon--close {
+    background-image: url("img/atoms/icon/icon.close.png"); }
+  .cui__icon--close:hover {
+    opacity: 1; }
+
+.cui__icon--question-mark {
+  background-image: url("img/atoms/icon/icon.question-mark.svg");
+  width: 18px;
+  height: 19px;
+  display: block;
+  opacity: 0.7; }
+  .ie .cui__icon--question-mark, .cui__browser--ie .cui__icon--question-mark {
+    background-image: url("img/atoms/icon/icon.question-mark.png"); }
+  .cui__icon--question-mark:hover {
+    opacity: 1; }
+
 @font-face {
   font-family: SSPika;
   font-weight: normal;
@@ -2071,28 +2093,28 @@ html:hover [class^="ss-"] {
 .cui__logo--visa--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa.svg");
   height: 22px;
-  width: 31px; }
+  width: 32px; }
   .ie .cui__logo--visa--tiny, .cui__browser--ie .cui__logo--visa--tiny {
     background-image: url("img/atoms/logos/png/22px-height/visa.png"); }
 
 .cui__logo--visa-electron--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa-electron.svg");
   height: 22px;
-  width: 36px; }
+  width: 32px; }
   .ie .cui__logo--visa-electron--tiny, .cui__browser--ie .cui__logo--visa-electron--tiny {
     background-image: url("img/atoms/logos/png/22px-height/visa-electron.png"); }
 
 .cui__logo--mastercard--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/mastercard.svg");
   height: 22px;
-  width: 30px; }
+  width: 35px; }
   .ie .cui__logo--mastercard--tiny, .cui__browser--ie .cui__logo--mastercard--tiny {
     background-image: url("img/atoms/logos/png/22px-height/mastercard.png"); }
 
 .cui__logo--maestro--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/maestro.svg");
   height: 22px;
-  width: 30px; }
+  width: 35px; }
   .ie .cui__logo--maestro--tiny, .cui__browser--ie .cui__logo--maestro--tiny {
     background-image: url("img/atoms/logos/png/22px-height/maestro.png"); }
 
