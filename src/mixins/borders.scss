@@ -39,7 +39,7 @@
     $has-left: false
 ) {
     border-radius: 0;
-    
+
     @if not($has-above) {
         border-top-color: $form-border-color;
 

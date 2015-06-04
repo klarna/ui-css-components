@@ -287,4 +287,95 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 
 .cui__field--is-right {
     float: left;
+
 }
+
+// generate classes that can be used if you can't/won't use the SASS mixin:
+//
+// SINGLE INPUT:
+//
+//    solo
+//
+// SINGLE ROW:
+//
+//    row-left   row-center   row-right
+//
+// SINGLE COLUMN:
+//
+//    col-top
+//
+//    col-mid
+//
+//    col-bot
+//
+// GRID:
+//
+//    top-left   top-center   top-right
+//
+//    mid-left   mid-center   mid-right
+//
+//    bot-left   bot-center   bot-right
+//
+
+.cui__editor--is-top-left {
+    @include field-editor-border(
+        $has-element-above: false,
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-top-center {
+    @include field-editor-border(
+        $has-element-above: false,
+        $has-element-left: true,
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-top-right {
+    @include field-editor-border(
+        $has-element-above: false,
+        $has-element-left: true
+    );
+};
+
+.cui__editor--is-mid-left {
+    @include field-editor-border(
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-mid-center {
+    @include field-editor-border(
+        $has-element-left: true,
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-mid-right {
+    @include field-editor-border(
+        $has-element-left: true
+    );
+};
+
+.cui__editor--is-bot-left {
+    @include field-editor-border(
+        $has-element-below: false,
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-bot-center {
+    @include field-editor-border(
+        $has-element-below: false,
+        $has-element-left: true,
+        $has-element-right: true
+    );
+};
+
+.cui__editor--is-bot-right {
+    @include field-editor-border(
+        $has-element-below: false,
+        $has-element-left: true
+    );
+};
