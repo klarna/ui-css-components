@@ -13,7 +13,6 @@
     $desktop-has-element-right: $has-element-right,
     $desktop-has-element-left: $has-element-left
 ) {
-
     @include border-styles(
         $has-above: $has-element-above,
         $has-below: $has-element-below,
@@ -22,7 +21,6 @@
     );
 
     @include respond-to-wide {
-        border-radius: 0;
 
         @include border-styles(
             $has-above: $desktop-has-element-above,
@@ -40,9 +38,10 @@
     $has-right: false,
     $has-left: false
 ) {
-
+    border-radius: 0;
+    
     @if not($has-above) {
-        border-top-color: $input-border-outer-color;
+        border-top-color: $form-border-color;
 
         @if not($has-left) {
             border-top-left-radius: $input-border-radius;
@@ -62,7 +61,7 @@
     }
 
     @if not($has-below) {
-        border-bottom-color: $input-border-outer-color;
+        border-bottom-color: $form-border-color;
 
         @if not($has-left) {
             border-bottom-left-radius: $input-border-radius;
@@ -84,23 +83,26 @@
                 border-bottom-right-radius: $input-border-radius;
             }
         }
-    } @else {
-        border-bottom-color: transparent;
     }
 
     @if $has-right {
-        border-right-color: $input-border-inner-color;
+        border-right-width: 0;
+        border-right-color: $input-border-color;
     } @else {
-        border-right-color: $input-border-outer-color;
+        border-right-width: 1px;
+        border-right-color: $form-border-color;
     }
 
     @if $has-left {
-      border-left-color: transparent;
+      border-left-color: $input-border-color;
     } @else {
-      border-left-color: $input-border-outer-color;
+      border-left-color: $form-border-color;
     }
 
     &:focus {
+        border-right-width: 1px;
+        z-index: 3;
+
         border-left-color: $input-border-color-focus;
         border-right-color: $input-border-color-focus;
         border-bottom-color: $input-border-color-focus;
