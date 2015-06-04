@@ -3612,6 +3612,7 @@ html:hover [class^="ss-"] {
   padding-left: 41px; }
 
 .cui__editor-wrapper__loader {
+  pointer-events: none;
   position: absolute;
   right: 14px;
   top: 14px;

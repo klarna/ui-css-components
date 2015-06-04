@@ -177,6 +177,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 .cui__editor-wrapper__loader {
     @extend .cui__loader--small;
 
+    pointer-events: none;
     position: absolute;
     right: 14px;
     top: 14px;
