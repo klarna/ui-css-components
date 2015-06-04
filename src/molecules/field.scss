@@ -1,4 +1,5 @@
 $editor-with-icon-padding-left: 41px;
+$ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 
 .cui__field {
     @include box-sizing(border-box);
@@ -24,7 +25,7 @@ $editor-with-icon-padding-left: 41px;
     @include appearance(none);
     @include box-sizing(border-box);
     @include font-size(15px);
-    @include transition(padding 0.1s ease-in);
+    @include transition(padding 0.1s $ease-out);
 
     @include placeholder {
         color: $editor-placeholder-color;
@@ -32,7 +33,7 @@ $editor-with-icon-padding-left: 41px;
     }
 
     background-color: white;
-    border: 1px solid $input-border-inner-color;
+    border: 1px solid $input-border-color;
     border-radius: 0;
     color: $input-editor-color;
     font-weight: 600;
@@ -43,8 +44,13 @@ $editor-with-icon-padding-left: 41px;
     width: 100%;
     height: 45px;
 
+    .safari &,
+    .ios & {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
     @include respond-to-ie(8) {
-        border: 1px solid $input-border-inner-color;
+        border: 1px solid $input-border-color;
     }
 
     @include respond-to-ie-and-stock {
@@ -177,22 +183,24 @@ $editor-with-icon-padding-left: 41px;
 }
 
 @mixin field_tooltip($text-color) {
-    @extend %show-tooltip;
     @include font-size(11px);
     @include box-sizing(border-box);
-
+    @include transform(translateY(5px));
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function($ease-out);
 
     border-radius: 0;
     top: 9px;
     left: 13px;
     color: $text-color;
-    display: none;
     font-weight: normal;
     line-height: 1em;
     pointer-events: none;
     position: absolute;
-    width: 100%;
     z-index: 10;
+    opacity: 0;
+    display: block;
 
     &:after {
         @include respond-to-ie(8) {
@@ -201,118 +209,82 @@ $editor-with-icon-padding-left: 41px;
     }
 
     &.is-visible {
-        display: block;
+        opacity: 1;
+        @include transform(translateY(0px));
+        @include transition-duration(0.3s);
+    }
+
+}
+
+@mixin error-tooltip($text-color) {
+    @include field_tooltip($text-color);
+
+    .is-error & {
+        opacity: 1;
+        @include transform(translateY(0px));
+        @include transition-duration(0.3s);
+    }
+}
+
+@mixin warning-tooltip($text-color) {
+    @include field_tooltip($text-color);
+
+    .is-warning & {
+        opacity: 1;
+        @include transform(translateY(0px));
+        @include transition-duration(0.3s);
+    }
+}
+
+@mixin label-tooltip($text-color) {
+    @include field_tooltip($text-color);
+
+    .show-label & {
+        opacity: 1;
+        @include transform(translateY(0px));
+        @include transition-duration(0.3s);
     }
 }
 
 .cui__field__error-tooltip {
-    @include field_tooltip($input-tooltip-text-color);
+    @include error-tooltip($input-tooltip-text-color);
 }
 
 .cui__field__warning-tooltip {
-    @include field_tooltip($input-tooltip-text-color--warning);
+    @include warning-tooltip($input-tooltip-text-color--warning);
 }
 
 .cui__field__error-tooltip--with-icon {
-    @include field_tooltip($input-tooltip-text-color);
+    @include error-tooltip($input-tooltip-text-color);
     left: $editor-with-icon-padding-left;
 }
 
 .cui__field__warning-tooltip--with-icon {
-    @include field_tooltip($input-tooltip-text-color--warning);
+    @include warning-tooltip($input-tooltip-text-color--warning);
     left: $editor-with-icon-padding-left;
 }
 
 .cui__label {
-    @include field_tooltip($editor-placeholder-color);
+    @include label-tooltip($editor-placeholder-color);
+}
+
+.cui__label--with-icon {
+    @include label-tooltip($editor-placeholder-color);
+    left: $editor-with-icon-padding-left;
 }
 
 
 // ================================================================
 //  GROUP FIELDS
 // ================================================================
-@mixin field-separator {
-    position: relative;
-
-    &:before {
-        content: " ";
-        border-left: 1px solid #ddd;
-        height: 43px;
-        position: absolute;
-        width: 0;
-        left: -1px;
-        bottom: 0;
-        display: block;
-    }
-
-    @include respond-to-ie {
-        &:before {
-            height: 25px;
-        }
-    }
-}
-
-@mixin editor-separator {
-    &:focus {
-        margin-left: -1px;
-    }
-
-    *:focus + & {
-        margin-left: -1px;
-
-        @include respond-to-ie {
-            margin-left: 0;
-        }
-    }
-}
-
 .cui__field--is-left {
     float: left;
 }
 
-.cui__editor--is-left {
-    border-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-
-    @include respond-to-ie {
-        border-right: 0;
-    }
-}
-
 .cui__field--is-middle {
     float: left;
-
-    @include field-separator;
-}
-
-.cui__editor--is-middle {
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
-
-    @include editor-separator;
-
-    @include respond-to-ie {
-        border-left: 0;
-        border-right: 0;
-    }
 }
 
 .cui__field--is-right {
     float: left;
-
-    @include field-separator;
-}
-
-.cui__editor--is-right {
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-
-    @include editor-separator;
-
-    @include respond-to-ie {
-        border-left: 0;
-    }
 }
