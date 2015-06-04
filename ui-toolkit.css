@@ -484,6 +484,28 @@
 .cui__editor--text:focus + .cui__icon, .cui__editor--with-icon:focus + .cui__icon {
   color: #0089cf; }
 
+.cui__icon--close {
+  background-image: url("img/atoms/icon/icon.close.svg");
+  width: 15px;
+  height: 15px;
+  display: block;
+  opacity: 0.7; }
+  .ie8 .cui__icon--close, .cui__browser--ie8 .cui__icon--close, .ie9 .cui__icon--close, .cui__browser--ie9 .cui__icon--close {
+    background-image: url("img/atoms/icon/icon.close.png"); }
+  .cui__icon--close:hover {
+    opacity: 1; }
+
+.cui__icon--question-mark {
+  background-image: url("img/atoms/icon/icon.question-mark.svg");
+  width: 18px;
+  height: 19px;
+  display: block;
+  opacity: 0.7; }
+  .ie .cui__icon--question-mark, .cui__browser--ie .cui__icon--question-mark {
+    background-image: url("img/atoms/icon/icon.question-mark.png"); }
+  .cui__icon--question-mark:hover {
+    opacity: 1; }
+
 @font-face {
   font-family: SSPika;
   font-weight: normal;
