@@ -180,7 +180,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     position: absolute;
     right: 14px;
     top: 14px;
-    z-index: 1;
+    z-index: 3;
 }
 
 @mixin field_tooltip($text-color) {
