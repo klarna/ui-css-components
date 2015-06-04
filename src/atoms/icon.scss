@@ -19,6 +19,40 @@
     color: $klarna-blue;
 }
 
+.cui__icon--close {
+    background-image: url($ui-toolkit-path + "img/atoms/icon/icon.close.svg");
+    width: 15px;
+    height: 15px;
+    display: block;
+    opacity: .7;
+
+    @include respond-to-ie((8, 9)) {
+        background-image: url($ui-toolkit-path + "img/atoms/icon/icon.close.png");
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.cui__icon--question-mark {
+    background-image: url($ui-toolkit-path + "img/atoms/icon/icon.question-mark.svg");
+    width: 18px;
+    height: 19px;
+    display: block;
+    opacity: .7;
+
+    // OK, for some arcane reason, this particular SVG does
+    // not work in IE11. Falling back to png, need to release this.
+    @include respond-to-ie {
+        background-image: url($ui-toolkit-path + "img/atoms/icon/icon.question-mark.png");
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 // ==================================================================
 // ICONIC FONT
 // ==================================================================

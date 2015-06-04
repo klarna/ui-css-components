@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.9.1
+
+### Added
+
+- Add custom icon images, CSS and snippet
+
 ## 1.9.0
 
 ### Updated
