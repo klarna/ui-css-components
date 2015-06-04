@@ -10,7 +10,7 @@ $select-overlay-triangle-y-ie: 17px;
     @include font-size(15px);
 
     border-radius: 0;
-    border: 1px solid $input-border-inner-color;
+    border: 1px solid $input-border-color;
     color: #595959;
     display: inline-block;
     font-weight: bold;
@@ -24,14 +24,6 @@ $select-overlay-triangle-y-ie: 17px;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
-
-    @include respond-to-ie {
-        height: 43px;
-    }
-
-    @include respond-to-ie(8) {
-        height: 44px;
-    }
 
     .cui__select-dropdown:hover + &:before,
     .cui__select-dropdown:focus + &:before {
@@ -55,7 +47,7 @@ $select-overlay-triangle-y-ie: 17px;
         }
 
         &:after {
-            background-color: $input-disabled-border-color;
+            background-color: $input-border-color-disabled;
         }
     }
 
@@ -72,7 +64,7 @@ $select-overlay-triangle-y-ie: 17px;
             inset 0 1px 3px hsla(0, 0%, 0%, 0.06),
             0 0 3px 1px $input-border-color-focus;
 
-        z-index: 1;
+        z-index: 3;
     }
 
     &.is-invalid {
@@ -119,8 +111,4 @@ $select-overlay-triangle-y-ie: 17px;
     height: 44px;
     width: 100%;
     line-height: normal;
-
-    @include respond-to-ie {
-        height: 43px;
-    }
 }
