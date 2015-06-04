@@ -109,3 +109,143 @@
         border-top-color: $input-border-color-focus;
     }
 }
+
+@mixin generated-border-classes {
+    // Classes that can be used if you can't/won't use the SASS mixin:
+    //
+    // SINGLE EDITOR:
+    //
+    //    solo
+    //
+    // SINGLE ROW:
+    //
+    //    row-left   row-center   row-right
+    //
+    // SINGLE COLUMN:
+    //
+    //    col-top
+    //
+    //    col-mid
+    //
+    //    col-bot
+    //
+    // GRID:
+    //
+    //    top-left   top-center   top-right
+    //
+    //    mid-left   mid-center   mid-right
+    //
+    //    bot-left   bot-center   bot-right
+    //
+
+    &.is-solo {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false
+        );
+    };
+
+    &.is-top-left {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-row-left {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-row-center {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-right: true,
+            $has-element-left: true
+        );
+    };
+
+    &.is-row-right {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-left: true
+        );
+    };
+
+    &.is-col-top {
+        @include field-editor-border(
+            $has-element-above: false
+        );
+    };
+
+    &.is-col-mid {
+        @include field-editor-border();
+    };
+
+    &.is-col-bot {
+        @include field-editor-border(
+            $has-element-below: false
+        );
+    };
+
+    &.is-top-center {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-top-right {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-left: true
+        );
+    };
+
+    &.is-mid-left {
+        @include field-editor-border(
+            $has-element-right: true
+        );
+    };
+
+    &.is-mid-center {
+        @include field-editor-border(
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-mid-right {
+        @include field-editor-border(
+            $has-element-left: true
+        );
+    };
+
+    &.is-bot-left {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-bot-center {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-bot-right {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-left: true
+        );
+    };
+}

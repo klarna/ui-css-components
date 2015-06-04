@@ -8,6 +8,7 @@ $select-overlay-triangle-y-ie: 17px;
 .cui__select-overlay {
     @include box-sizing(border-box);
     @include font-size(15px);
+    @include generated-border-classes();
 
     border-radius: 0;
     border: 1px solid $input-border-color;
