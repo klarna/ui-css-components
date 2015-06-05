@@ -112,7 +112,7 @@
     </span>
 
     <div
-        class="cui__editor-wrapper--text">
+        class="cui__editor-wrapper">
         <input
             type="text"
             class="cui__editor--text is-solo"
@@ -127,7 +127,7 @@
     &lt;/span&gt;
 
     &lt;div
-        class=&quot;cui__editor-wrapper--text&quot;&gt;
+        class=&quot;cui__editor-wrapper&quot;&gt;
         &lt;input
             type=&quot;text&quot;
             class=&quot;cui__editor--text is-solo&quot;
@@ -725,24 +725,28 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++) {
   UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
 }
 
-</script><h3>Select</h3><div class="presentation-example"><div class="cui__select">
-    <div class="cui__editor-wrapper">
-        <span class="cui__select-overlay is-solo">Name</span>
-        <select class="cui__select-dropdown" data-cid="select.selector">
-            <option value="" data-placeholder="Placeholder"></option>
-            <option>Alice</option>
-            <option>Bob</option>
-        </select>
+</script><h3>Select</h3><div class="presentation-example"><div class="cui__field">
+    <div class="cui__select">
+        <div class="cui__editor-wrapper">
+            <select class="cui__select-dropdown" data-cid="select.selector">
+                <option value="" data-placeholder="Placeholder"></option>
+                <option>Alice</option>
+                <option>Bob</option>
+            </select>
+            <span class="cui__select-overlay is-solo">Name</span>
+        </div>
     </div>
 </div>
-</div><pre>&lt;div class=&quot;cui__select&quot;&gt;
-    &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;span class=&quot;cui__select-overlay is-solo&quot;&gt;Name&lt;/span&gt;
-        &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
-            &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-            &lt;option&gt;Alice&lt;/option&gt;
-            &lt;option&gt;Bob&lt;/option&gt;
-        &lt;/select&gt;
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;div class=&quot;cui__select&quot;&gt;
+        &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
+            &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
+                &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+                &lt;option&gt;Alice&lt;/option&gt;
+                &lt;option&gt;Bob&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;span class=&quot;cui__select-overlay is-solo&quot;&gt;Name&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </pre><p>Joined fieldset</p><div class="presentation-example"><div class="cui__select cui__field--is-left" style="width: 33%">
