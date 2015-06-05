@@ -20,14 +20,18 @@
         $has-left: $has-element-left
     );
 
-    @include respond-to-wide {
-
-        @include border-styles(
-            $has-above: $desktop-has-element-above,
-            $has-below: $desktop-has-element-below,
-            $has-right: $desktop-has-element-right,
-            $has-left: $desktop-has-element-left
-        );
+    @if ($desktop-has-element-above != $has-element-above or
+         $desktop-has-element-below != $has-element-below or
+         $desktop-has-element-right != $has-element-right or
+         $desktop-has-element-left  != $has-element-left) {
+        @include respond-to-wide {
+            @include border-styles(
+                $has-above: $desktop-has-element-above,
+                $has-below: $desktop-has-element-below,
+                $has-right: $desktop-has-element-right,
+                $has-left:  $desktop-has-element-left
+            );
+        }
     }
 }
 
