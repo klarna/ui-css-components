@@ -2311,39 +2311,6 @@ html:hover [class^="ss-"] {
           border-right-color: #0072CC;
           border-bottom-color: #0072CC;
           border-top-color: #0072CC; } }
-  .cui__select-overlay.is-top-left {
-    border-radius: 0;
-    border-top-color: #9a9a9a;
-    border-top-left-radius: 5px;
-    border-right-width: 0;
-    border-right-color: #CBCBCB;
-    border-left-color: #9a9a9a; }
-    .cui__select-overlay.is-top-left:focus {
-      border-top-left-radius: 5px; }
-    .cui__select-overlay.is-top-left:focus {
-      border-right-width: 1px;
-      z-index: 3;
-      border-left-color: #0072CC;
-      border-right-color: #0072CC;
-      border-bottom-color: #0072CC;
-      border-top-color: #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-top-left {
-        border-radius: 0;
-        border-top-color: #9a9a9a;
-        border-top-left-radius: 5px;
-        border-right-width: 0;
-        border-right-color: #CBCBCB;
-        border-left-color: #9a9a9a; }
-        .cui__select-overlay.is-top-left:focus {
-          border-top-left-radius: 5px; }
-        .cui__select-overlay.is-top-left:focus {
-          border-right-width: 1px;
-          z-index: 3;
-          border-left-color: #0072CC;
-          border-right-color: #0072CC;
-          border-bottom-color: #0072CC;
-          border-top-color: #0072CC; } }
   .cui__select-overlay.is-row-left {
     border-radius: 0;
     border-top-color: #9a9a9a;
@@ -2564,6 +2531,39 @@ html:hover [class^="ss-"] {
         .cui__select-overlay.is-col-bot:focus {
           border-bottom-right-radius: 5px; }
         .cui__select-overlay.is-col-bot:focus {
+          border-right-width: 1px;
+          z-index: 3;
+          border-left-color: #0072CC;
+          border-right-color: #0072CC;
+          border-bottom-color: #0072CC;
+          border-top-color: #0072CC; } }
+  .cui__select-overlay.is-top-left {
+    border-radius: 0;
+    border-top-color: #9a9a9a;
+    border-top-left-radius: 5px;
+    border-right-width: 0;
+    border-right-color: #CBCBCB;
+    border-left-color: #9a9a9a; }
+    .cui__select-overlay.is-top-left:focus {
+      border-top-left-radius: 5px; }
+    .cui__select-overlay.is-top-left:focus {
+      border-right-width: 1px;
+      z-index: 3;
+      border-left-color: #0072CC;
+      border-right-color: #0072CC;
+      border-bottom-color: #0072CC;
+      border-top-color: #0072CC; }
+    @media screen and (min-width: 569px) {
+      .cui__select-overlay.is-top-left {
+        border-radius: 0;
+        border-top-color: #9a9a9a;
+        border-top-left-radius: 5px;
+        border-right-width: 0;
+        border-right-color: #CBCBCB;
+        border-left-color: #9a9a9a; }
+        .cui__select-overlay.is-top-left:focus {
+          border-top-left-radius: 5px; }
+        .cui__select-overlay.is-top-left:focus {
           border-right-width: 1px;
           z-index: 3;
           border-left-color: #0072CC;
@@ -2977,39 +2977,6 @@ html:hover [class^="ss-"] {
           border-right-color: #0072CC;
           border-bottom-color: #0072CC;
           border-top-color: #0072CC; } }
-  .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
-    border-radius: 0;
-    border-top-color: #9a9a9a;
-    border-top-left-radius: 5px;
-    border-right-width: 0;
-    border-right-color: #CBCBCB;
-    border-left-color: #9a9a9a; }
-    .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-      border-top-left-radius: 5px; }
-    .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-      border-right-width: 1px;
-      z-index: 3;
-      border-left-color: #0072CC;
-      border-right-color: #0072CC;
-      border-bottom-color: #0072CC;
-      border-top-color: #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
-        border-radius: 0;
-        border-top-color: #9a9a9a;
-        border-top-left-radius: 5px;
-        border-right-width: 0;
-        border-right-color: #CBCBCB;
-        border-left-color: #9a9a9a; }
-        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-          border-top-left-radius: 5px; }
-        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-          border-right-width: 1px;
-          z-index: 3;
-          border-left-color: #0072CC;
-          border-right-color: #0072CC;
-          border-bottom-color: #0072CC;
-          border-top-color: #0072CC; } }
   .cui__editor--text.is-row-left, .is-row-left.cui__editor--with-icon {
     border-radius: 0;
     border-top-color: #9a9a9a;
@@ -3230,6 +3197,39 @@ html:hover [class^="ss-"] {
         .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
           border-bottom-right-radius: 5px; }
         .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
+          border-right-width: 1px;
+          z-index: 3;
+          border-left-color: #0072CC;
+          border-right-color: #0072CC;
+          border-bottom-color: #0072CC;
+          border-top-color: #0072CC; } }
+  .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
+    border-radius: 0;
+    border-top-color: #9a9a9a;
+    border-top-left-radius: 5px;
+    border-right-width: 0;
+    border-right-color: #CBCBCB;
+    border-left-color: #9a9a9a; }
+    .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
+      border-top-left-radius: 5px; }
+    .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
+      border-right-width: 1px;
+      z-index: 3;
+      border-left-color: #0072CC;
+      border-right-color: #0072CC;
+      border-bottom-color: #0072CC;
+      border-top-color: #0072CC; }
+    @media screen and (min-width: 569px) {
+      .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
+        border-radius: 0;
+        border-top-color: #9a9a9a;
+        border-top-left-radius: 5px;
+        border-right-width: 0;
+        border-right-color: #CBCBCB;
+        border-left-color: #9a9a9a; }
+        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
+          border-top-left-radius: 5px; }
+        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
           border-right-width: 1px;
           z-index: 3;
           border-left-color: #0072CC;

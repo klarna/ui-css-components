@@ -111,33 +111,11 @@
 }
 
 @mixin generated-border-classes {
-    // Classes that can be used if you can't/won't use the SASS mixin:
-    //
-    // SINGLE EDITOR:
-    //
-    //    solo
-    //
-    // SINGLE ROW:
-    //
-    //    row-left   row-center   row-right
-    //
-    // SINGLE COLUMN:
-    //
-    //    col-top
-    //
-    //    col-mid
-    //
-    //    col-bot
-    //
-    // GRID:
-    //
-    //    top-left   top-center   top-right
-    //
-    //    mid-left   mid-center   mid-right
-    //
-    //    bot-left   bot-center   bot-right
-    //
+    // Classes that can be used if you can't/won't use the SASS mixin
 
+    // ============================================================
+    //  SINGLE EDITOR:  solo
+    // ============================================================
     &.is-solo {
         @include field-editor-border(
             $has-element-above: false,
@@ -145,13 +123,9 @@
         );
     };
 
-    &.is-top-left {
-        @include field-editor-border(
-            $has-element-above: false,
-            $has-element-right: true
-        );
-    };
-
+    // ============================================================
+    // SINGLE ROW:      row-left   row-center   row-right
+    // ============================================================
     &.is-row-left {
         @include field-editor-border(
             $has-element-above: false,
@@ -177,6 +151,13 @@
         );
     };
 
+    // ============================================================
+    //  SINGLE COLUMN:  col-top
+    //
+    //                  col-mid
+    //
+    //                  col-bot
+    // ============================================================
     &.is-col-top {
         @include field-editor-border(
             $has-element-above: false
@@ -190,6 +171,21 @@
     &.is-col-bot {
         @include field-editor-border(
             $has-element-below: false
+        );
+    };
+
+
+    // ============================================================
+    //  GRID:           top-left   top-center   top-right
+    //
+    //                  mid-left   mid-center   mid-right
+    //
+    //                  bot-left   bot-center   bot-right
+    // ============================================================
+    &.is-top-left {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-right: true
         );
     };
 
