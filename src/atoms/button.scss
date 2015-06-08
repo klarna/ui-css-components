@@ -1,29 +1,32 @@
-// Regular blue button
-.cui__highlighted-button {
+@mixin cui__button($background, $border-color, $text-color) {
     @include appearance(none);
     @include font-size($flat-button-font-size);
 
-    background: $custom-color-button-background;
-    border: none;
+    background: $background;
+    border: 1px solid $border-color;
     border-radius: $button-border-radius;
-    color: $custom-color-button-color;
+    color: $text-color;
     cursor: pointer;
     font-weight: bold;
-    outline: none;
-    padding: 13px;
     line-height: 19px;
+    outline: none;
+    padding: 12px 13px;
     vertical-align: top;
+    text-align: center;
+    text-decoration: none;
 
-    @include respond-to-ie {
-        padding: 12px 13px 11px;
+
+    @include respond-to-ie(8) {
+        border: 1px solid #d8d8d8;
     }
 
     &:hover {
-        background: darken($custom-color-button-background, 2%);
+        background: darken($background, 2%);
     }
 
     &:active {
-        background: darken($custom-color-button-background, 4%);
+        background: darken($background, 2%);
+        border: 1px solid rgba(0, 0, 0, 0.15);
     }
 
     &.is-disabled {
@@ -31,14 +34,25 @@
         opacity: 0.4;
 
         &:hover {
-            background: $custom-color-button-background;
+            background: $background;
         }
 
         &:active {
-            background: $custom-color-button-background;
+            background: $background;
         }
     }
 }
+
+// Regular blue button
+.cui__highlighted-button {
+    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color);
+}
+
+// Regular grey button
+.cui__non-highlighted-button {
+    @include cui__button($bright-button-background, $secondary-button-border-color, $bright-button-color);
+}
+
 
 .cui__highlighted-button__loader {
     @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/button.loader', 14px 14px);
@@ -58,39 +72,5 @@
         background-image: none;
         height: 19px;
         width: 100%;
-    }
-}
-
-
-// Regular grey button
-.cui__non-highlighted-button {
-    @include appearance(none);
-    @include font-size($flat-button-font-size);
-
-    background: $bright-button-background;
-    border: 1px solid $secondary-button-border-color;
-    border-radius: $button-border-radius;
-    color: $bright-button-color;
-    cursor: pointer;
-    font-weight: bold;
-    outline: none;
-    padding: 12px 13px 13px;
-    vertical-align: top;
-
-    @include respond-to-ie {
-        padding: 11px 13px 10px;
-    }
-
-    @include respond-to-ie(8) {
-        border: 1px solid #d8d8d8;
-    }
-
-    &:hover {
-        background: darken($bright-button-background, 2%);
-    }
-
-    &:active {
-        background: darken($bright-button-background, 2%);
-        border: 1px solid rgba(0, 0, 0, 0.15);
     }
 }
