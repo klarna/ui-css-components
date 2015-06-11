@@ -56,7 +56,7 @@
 // ==================================================================
 // ICONIC FONT
 // ==================================================================
-@include font-face(SSPika, $ss-pika-path);
+@include font-face(SSPika, $ui-toolkit-path + 'fonts/ss-pika/ss-pika');
 
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"]{-ms-zoom: 1;}
