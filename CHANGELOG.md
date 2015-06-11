@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 1.9.2
+
+### Updated
+
+- Update SSPika font base path to use $ui-toolkit-path
+
 ## 1.9.1
 
 ### Added
