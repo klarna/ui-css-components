@@ -1,4 +1,4 @@
-@mixin cui__button($background, $border-color, $text-color) {
+@mixin cui__button($background, $border-color, $text-color, $border-color-hover) {
     @include appearance(none);
     @include font-size($flat-button-font-size);
 
@@ -17,12 +17,12 @@
 
     &:hover {
         background: darken($background, 2%);
-        border-color: darken($background, 2%);
+        border-color: $border-color-hover;
     }
 
     &:active {
         background: darken($background, 2%);
-        border-color: darken($background, 2%);
+        border-color: $border-color-hover;
     }
 
     &.is-disabled {
@@ -41,12 +41,12 @@
 
 // Regular blue button
 .cui__highlighted-button {
-    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color);
+    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color, darken($custom-color-button-background, 2%));
 }
 
 // Regular grey button
 .cui__non-highlighted-button {
-    @include cui__button($bright-button-background, $secondary-button-border-color, $bright-button-color);
+    @include cui__button($bright-button-background, $secondary-button-border-color, $bright-button-color, $secondary-button-border-color);
 }
 
 
