@@ -66,6 +66,10 @@ $select-overlay-triangle-y-ie: 17px;
             0 0 3px 1px $input-border-color-focus;
 
         z-index: 3;
+
+        &:before {
+            right: 12px;
+        }
     }
 
     &.is-invalid {
