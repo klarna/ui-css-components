@@ -1,0 +1,235 @@
+/*
+* Mixins for borders for editor elements
+*/
+
+// Set border radii of a field editor
+@mixin field-editor-border (
+    $has-element-above: true,
+    $has-element-below: true,
+    $has-element-right: false,
+    $has-element-left: false,
+    $desktop-has-element-above: $has-element-above,
+    $desktop-has-element-below: $has-element-below,
+    $desktop-has-element-right: $has-element-right,
+    $desktop-has-element-left: $has-element-left
+) {
+    @include border-styles(
+        $has-above: $has-element-above,
+        $has-below: $has-element-below,
+        $has-right: $has-element-right,
+        $has-left: $has-element-left
+    );
+
+    @if ($desktop-has-element-above != $has-element-above or
+         $desktop-has-element-below != $has-element-below or
+         $desktop-has-element-right != $has-element-right or
+         $desktop-has-element-left  != $has-element-left) {
+        @include respond-to-wide {
+            @include border-styles(
+                $has-above: $desktop-has-element-above,
+                $has-below: $desktop-has-element-below,
+                $has-right: $desktop-has-element-right,
+                $has-left:  $desktop-has-element-left
+            );
+        }
+    }
+}
+
+//internal mixin used by field-editor-border mixin
+@mixin border-styles (
+    $has-above: true,
+    $has-below: true,
+    $has-right: false,
+    $has-left: false
+) {
+    border-radius: 0;
+    border: 1px solid $input-border-color;
+
+    @if not($has-above) {
+        @if not($has-left) {
+            border-top-left-radius: $input-border-radius;
+
+            &:focus {
+                border-top-left-radius: $input-border-radius;
+            }
+        }
+
+        @if not($has-right) {
+            border-top-right-radius: $input-border-radius;
+
+            &:focus {
+                border-top-right-radius: $input-border-radius;
+            }
+        }
+    }
+
+    @if not($has-below) {
+        @if not($has-left) {
+            border-bottom-left-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-left-radius: $input-border-radius;
+                border-bottom-right-radius: 0;
+            }
+        } @else {
+            &:focus {
+                border-bottom-left-radius: 0;
+            }
+        }
+
+        @if not($has-right) {
+            border-bottom-right-radius: $input-border-radius;
+
+            &:focus {
+                border-bottom-right-radius: $input-border-radius;
+            }
+        }
+    }
+
+    @if $has-right {
+        border-right-width: 0;
+    } @else {
+        border-right-width: 1px;
+    }
+
+    &:focus {
+        z-index: 3;
+        border: 1px solid $input-border-color-focus;
+    }
+}
+
+@mixin generated-border-classes {
+    // Classes that can be used if you can't/won't use the SASS mixin
+
+    // ============================================================
+    //  SINGLE EDITOR:  solo
+    // ============================================================
+    &.is-solo {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false
+        );
+    };
+
+    // ============================================================
+    // SINGLE ROW:      row-left   row-center   row-right
+    // ============================================================
+    &.is-row-left {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-row-center {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-right: true,
+            $has-element-left: true
+        );
+    };
+
+    &.is-row-right {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-below: false,
+            $has-element-left: true
+        );
+    };
+
+    // ============================================================
+    //  SINGLE COLUMN:  col-top
+    //
+    //                  col-mid
+    //
+    //                  col-bot
+    // ============================================================
+    &.is-col-top {
+        @include field-editor-border(
+            $has-element-above: false
+        );
+    };
+
+    &.is-col-mid {
+        @include field-editor-border();
+    };
+
+    &.is-col-bot {
+        @include field-editor-border(
+            $has-element-below: false
+        );
+    };
+
+
+    // ============================================================
+    //  GRID:           top-left   top-center   top-right
+    //
+    //                  mid-left   mid-center   mid-right
+    //
+    //                  bot-left   bot-center   bot-right
+    // ============================================================
+    &.is-top-left {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-top-center {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-top-right {
+        @include field-editor-border(
+            $has-element-above: false,
+            $has-element-left: true
+        );
+    };
+
+    &.is-mid-left {
+        @include field-editor-border(
+            $has-element-right: true
+        );
+    };
+
+    &.is-mid-center {
+        @include field-editor-border(
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-mid-right {
+        @include field-editor-border(
+            $has-element-left: true
+        );
+    };
+
+    &.is-bot-left {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-right: true
+        );
+    };
+
+    &.is-bot-center {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-left: true,
+            $has-element-right: true
+        );
+    };
+
+    &.is-bot-right {
+        @include field-editor-border(
+            $has-element-below: false,
+            $has-element-left: true
+        );
+    };
+}

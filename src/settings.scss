@@ -28,10 +28,10 @@ $field-horizontal-margin: 2%;
 // ================================================================
 //  Colors
 // ================================================================
-$klarna-blue: #0089cf;
+$klarna-blue: #0072CC;
 
 // This properties can be overriden by the merchant styling
-$custom-color-button-background: #0089cf;
+$custom-color-button-background: #0072CC;
 $custom-color-button-color: #fff;
 
 // This properties are *not* merchant overridable
@@ -40,23 +40,33 @@ $bright-button-color: #555;
 
 $tooltip-arrow-color: #ededed;
 
-$input-box-shadow-color: #a6a6a6;
+$input-box-shadow-color: #9a9a9a;
 $input-box-shadow-color-inset: #d3d3d3;
 $input-disabled-color: rgb(84, 84, 84);
-$input-disabled-border-color: #a6a6a6;
 $input-disabled-background-color: #f6f6f6;
-$input-border-color-focus: #0089CF;
-$input-tooltip-background-color: #FD7070;
-$input-tooltip-background-color--warning: #FFAF00;
+$input-error-background-color: #FCF2F3;
+$input-warning-background-color: #FEFCE8;
+$input-tooltip-text-color: #D0021B;
+$input-tooltip-text-color--warning: #ECB801;
 $input-editor-color: #595959;
 $editor-placeholder-color: #a9a9a9;
+
+$divider-border-color: #F2F0F0;
+$form-border-color: #CBCBCB;
+$input-border-color: #CBCBCB;
+$input-border-color-focus: #0072CC;
+$input-border-color-disabled: #a6a6a6;
+$preview-border-color: #CBCBCB;
+$secondary-button-border-color: #CBCBCB;
+$selector-border-color: #CBCBCB;
+
 
 
 // ================================================================
 //  Checkbox
 // ================================================================
 $checkbox-size: 24px;
-$checkbox-background: #0089cf;
+$checkbox-background: #0072CC;
 $checkbox-border: #ddd;
 $checkbox-font-size: 13px;
 
@@ -65,7 +75,7 @@ $checkbox-font-size: 13px;
 //  Input
 // ================================================================
 $input-line-height: 14px * 1.5;
-$input-border-radius: 3px;
+$input-border-radius: 5px;
 $invalid-text-top-offset: 1.5;
 
 
@@ -73,6 +83,12 @@ $invalid-text-top-offset: 1.5;
 //  Header
 // ================================================================
 $header-margin: 16px;
+
+
+// ================================================================
+//  Buttons
+// ================================================================
+$button-border-radius: 5px;
 
 
 // ================================================================
@@ -89,4 +105,4 @@ $tooltip-icon-size-large: 17px;
 // ================================================================
 $switch-width: 48px;
 $switch-height: 24px;
-$switch-background: #0089cf;
+$switch-background: #0072CC;
