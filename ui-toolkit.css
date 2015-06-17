@@ -174,21 +174,23 @@
   font-size: 15px;
   font-size: 0.9375rem;
   background: #0072CC;
-  border: none;
+  border: 1px solid #0072CC;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  outline: none;
-  padding: 13px;
   line-height: 19px;
-  vertical-align: top; }
-  .ie .cui__highlighted-button, .cui__browser--ie .cui__highlighted-button {
-    padding: 12px 13px 11px; }
+  outline: none;
+  padding: 12px 13px;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none; }
   .cui__highlighted-button:hover {
-    background: #006cc2; }
+    background: #006cc2;
+    border-color: #006cc2; }
   .cui__highlighted-button:active {
-    background: #0067b8; }
+    background: #006cc2;
+    border-color: #006cc2; }
   .cui__highlighted-button.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     opacity: 0.4; }
@@ -196,6 +198,40 @@
       background: #0072CC; }
     .cui__highlighted-button.is-disabled:active {
       background: #0072CC; }
+
+.cui__non-highlighted-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  background: #fff;
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  color: #555;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 19px;
+  outline: none;
+  padding: 12px 13px;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none; }
+  .cui__non-highlighted-button:hover {
+    background: #fafafa;
+    border-color: #CBCBCB; }
+  .cui__non-highlighted-button:active {
+    background: #fafafa;
+    border-color: #CBCBCB; }
+  .cui__non-highlighted-button.is-disabled {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4; }
+    .cui__non-highlighted-button.is-disabled:hover {
+      background: #fff; }
+    .cui__non-highlighted-button.is-disabled:active {
+      background: #fff; }
 
 .cui__highlighted-button__loader {
   background-image: url("img/atoms/button/button.loader.png");
@@ -218,33 +254,6 @@
     background-image: none;
     height: 19px;
     width: 100%; }
-
-.cui__non-highlighted-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  background: #fff;
-  border: 1px solid #CBCBCB;
-  border-radius: 5px;
-  color: #555;
-  cursor: pointer;
-  font-weight: bold;
-  outline: none;
-  padding: 12px 13px 13px;
-  vertical-align: top; }
-  .ie .cui__non-highlighted-button, .cui__browser--ie .cui__non-highlighted-button {
-    padding: 11px 13px 10px; }
-  .ie8 .cui__non-highlighted-button, .cui__browser--ie8 .cui__non-highlighted-button {
-    border: 1px solid #d8d8d8; }
-  .cui__non-highlighted-button:hover {
-    background: #fafafa; }
-  .cui__non-highlighted-button:active {
-    background: #fafafa;
-    border: 1px solid rgba(0, 0, 0, 0.15); }
 
 .cui__buy-button {
   -webkit-appearance: none;
@@ -2276,27 +2285,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-solo:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-solo {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-solo:focus {
-          border-top-left-radius: 5px; }
-        .cui__select-overlay.is-solo:focus {
-          border-top-right-radius: 5px; }
-        .cui__select-overlay.is-solo:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__select-overlay.is-solo:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__select-overlay.is-solo:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-row-left {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2311,21 +2299,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-row-left:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-row-left {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__select-overlay.is-row-left:focus {
-          border-top-left-radius: 5px; }
-        .cui__select-overlay.is-row-left:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__select-overlay.is-row-left:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-row-center {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2335,16 +2308,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-row-center:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-row-center {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__select-overlay.is-row-center:focus {
-          border-bottom-left-radius: 0; }
-        .cui__select-overlay.is-row-center:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-row-right {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2360,22 +2323,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-row-right:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-row-right {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-row-right:focus {
-          border-top-right-radius: 5px; }
-        .cui__select-overlay.is-row-right:focus {
-          border-bottom-left-radius: 0; }
-        .cui__select-overlay.is-row-right:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__select-overlay.is-row-right:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-col-top {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2389,20 +2336,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-col-top:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-col-top {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-col-top:focus {
-          border-top-left-radius: 5px; }
-        .cui__select-overlay.is-col-top:focus {
-          border-top-right-radius: 5px; }
-        .cui__select-overlay.is-col-top:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-col-mid {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2410,14 +2343,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-col-mid:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-col-mid {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-col-mid:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-col-bot {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2432,21 +2357,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-col-bot:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-col-bot {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-col-bot:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__select-overlay.is-col-bot:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__select-overlay.is-col-bot:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-top-left {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2457,17 +2367,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-top-left:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-top-left {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__select-overlay.is-top-left:focus {
-          border-top-left-radius: 5px; }
-        .cui__select-overlay.is-top-left:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-top-center {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2475,14 +2374,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-top-center:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-top-center {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__select-overlay.is-top-center:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-top-right {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2493,17 +2384,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-top-right:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-top-right {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-top-right:focus {
-          border-top-right-radius: 5px; }
-        .cui__select-overlay.is-top-right:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-mid-left {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2511,14 +2391,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-mid-left:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-mid-left {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__select-overlay.is-mid-left:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-mid-center {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2526,14 +2398,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-mid-center:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-mid-center {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__select-overlay.is-mid-center:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-mid-right {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2541,14 +2405,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-mid-right:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-mid-right {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-mid-right:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-bot-left {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2560,18 +2416,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-bot-left:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-bot-left {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__select-overlay.is-bot-left:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__select-overlay.is-bot-left:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-bot-center {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2581,16 +2425,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-bot-center:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-bot-center {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__select-overlay.is-bot-center:focus {
-          border-bottom-left-radius: 0; }
-        .cui__select-overlay.is-bot-center:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-overlay.is-bot-right {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2603,19 +2437,6 @@ html:hover [class^="ss-"] {
     .cui__select-overlay.is-bot-right:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__select-overlay.is-bot-right {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__select-overlay.is-bot-right:focus {
-          border-bottom-left-radius: 0; }
-        .cui__select-overlay.is-bot-right:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__select-overlay.is-bot-right:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__select-dropdown:hover + .cui__select-overlay:before, .cui__select-dropdown:focus + .cui__select-overlay:before {
     height: 0;
     width: 0;
@@ -2646,6 +2467,8 @@ html:hover [class^="ss-"] {
     border: 1px solid #0072CC;
     box-shadow: inset 0 1px 1px 0 #d3d3d3, inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 3px 1px #0072CC;
     z-index: 3; }
+    .cui__select-overlay.has-focus:before {
+      right: 12px; }
   .cui__select-overlay.is-invalid {
     padding-bottom: 2px;
     padding-top: 16px; }
@@ -2750,27 +2573,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-solo, .is-solo.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
-          border-top-left-radius: 5px; }
-        .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
-          border-top-right-radius: 5px; }
-        .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__editor--text.is-solo:focus, .is-solo.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-row-left, .is-row-left.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2785,21 +2587,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-row-left:focus, .is-row-left.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-row-left, .is-row-left.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__editor--text.is-row-left:focus, .is-row-left.cui__editor--with-icon:focus {
-          border-top-left-radius: 5px; }
-        .cui__editor--text.is-row-left:focus, .is-row-left.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__editor--text.is-row-left:focus, .is-row-left.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-row-center, .is-row-center.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2809,16 +2596,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-row-center:focus, .is-row-center.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-row-center, .is-row-center.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__editor--text.is-row-center:focus, .is-row-center.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 0; }
-        .cui__editor--text.is-row-center:focus, .is-row-center.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-row-right, .is-row-right.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2834,22 +2611,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-row-right:focus, .is-row-right.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-row-right, .is-row-right.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-row-right:focus, .is-row-right.cui__editor--with-icon:focus {
-          border-top-right-radius: 5px; }
-        .cui__editor--text.is-row-right:focus, .is-row-right.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 0; }
-        .cui__editor--text.is-row-right:focus, .is-row-right.cui__editor--with-icon:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__editor--text.is-row-right:focus, .is-row-right.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-col-top, .is-col-top.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2863,20 +2624,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-col-top:focus, .is-col-top.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-col-top, .is-col-top.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-col-top:focus, .is-col-top.cui__editor--with-icon:focus {
-          border-top-left-radius: 5px; }
-        .cui__editor--text.is-col-top:focus, .is-col-top.cui__editor--with-icon:focus {
-          border-top-right-radius: 5px; }
-        .cui__editor--text.is-col-top:focus, .is-col-top.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-col-mid, .is-col-mid.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2884,14 +2631,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-col-mid:focus, .is-col-mid.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-col-mid, .is-col-mid.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 1px; }
-        .cui__editor--text.is-col-mid:focus, .is-col-mid.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-col-bot, .is-col-bot.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2906,21 +2645,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-col-bot, .is-col-bot.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__editor--text.is-col-bot:focus, .is-col-bot.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2931,17 +2655,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-top-left, .is-top-left.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-          border-top-left-radius: 5px; }
-        .cui__editor--text.is-top-left:focus, .is-top-left.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-top-center, .is-top-center.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2949,14 +2662,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-top-center:focus, .is-top-center.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-top-center, .is-top-center.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__editor--text.is-top-center:focus, .is-top-center.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-top-right, .is-top-right.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2967,17 +2672,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-top-right:focus, .is-top-right.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-top-right, .is-top-right.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-top-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-top-right:focus, .is-top-right.cui__editor--with-icon:focus {
-          border-top-right-radius: 5px; }
-        .cui__editor--text.is-top-right:focus, .is-top-right.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-mid-left, .is-mid-left.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -2985,14 +2679,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-mid-left:focus, .is-mid-left.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-mid-left, .is-mid-left.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__editor--text.is-mid-left:focus, .is-mid-left.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-mid-center, .is-mid-center.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -3000,14 +2686,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-mid-center:focus, .is-mid-center.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-mid-center, .is-mid-center.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__editor--text.is-mid-center:focus, .is-mid-center.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-mid-right, .is-mid-right.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -3015,14 +2693,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-mid-right:focus, .is-mid-right.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-mid-right, .is-mid-right.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 1px; }
-        .cui__editor--text.is-mid-right:focus, .is-mid-right.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-bot-left, .is-bot-left.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -3034,18 +2704,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-bot-left:focus, .is-bot-left.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-bot-left, .is-bot-left.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-left-radius: 5px;
-        border-right-width: 0; }
-        .cui__editor--text.is-bot-left:focus, .is-bot-left.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 0; }
-        .cui__editor--text.is-bot-left:focus, .is-bot-left.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-bot-center, .is-bot-center.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -3055,16 +2713,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-bot-center:focus, .is-bot-center.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-bot-center, .is-bot-center.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-right-width: 0; }
-        .cui__editor--text.is-bot-center:focus, .is-bot-center.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 0; }
-        .cui__editor--text.is-bot-center:focus, .is-bot-center.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text.is-bot-right, .is-bot-right.cui__editor--with-icon {
     border-radius: 0;
     border: 1px solid #CBCBCB;
@@ -3077,19 +2725,6 @@ html:hover [class^="ss-"] {
     .cui__editor--text.is-bot-right:focus, .is-bot-right.cui__editor--with-icon:focus {
       z-index: 3;
       border: 1px solid #0072CC; }
-    @media screen and (min-width: 569px) {
-      .cui__editor--text.is-bot-right, .is-bot-right.cui__editor--with-icon {
-        border-radius: 0;
-        border: 1px solid #CBCBCB;
-        border-bottom-right-radius: 5px;
-        border-right-width: 1px; }
-        .cui__editor--text.is-bot-right:focus, .is-bot-right.cui__editor--with-icon:focus {
-          border-bottom-left-radius: 0; }
-        .cui__editor--text.is-bot-right:focus, .is-bot-right.cui__editor--with-icon:focus {
-          border-bottom-right-radius: 5px; }
-        .cui__editor--text.is-bot-right:focus, .is-bot-right.cui__editor--with-icon:focus {
-          z-index: 3;
-          border: 1px solid #0072CC; } }
   .cui__editor--text::-webkit-input-placeholder, .cui__editor--with-icon::-webkit-input-placeholder {
     color: #a9a9a9;
     font-weight: normal; }
@@ -3131,7 +2766,7 @@ html:hover [class^="ss-"] {
     outline: none; }
   .cui__editor--text:focus, .cui__editor--with-icon:focus {
     border: 1px solid #0072CC;
-    box-shadow: inset 0 1px 1px 0 #d3d3d3, inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 3px 1px #0072CC;
+    box-shadow: 0 0 3px 1px #0072CC;
     z-index: 1; }
   .cui__editor--text::-webkit-input-placeholder, .cui__editor--with-icon::-webkit-input-placeholder {
     color: #a9a9a9; }
