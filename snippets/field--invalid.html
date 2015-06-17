@@ -1,29 +1,45 @@
-<div class="cui__field is-invalid">
-    <span class="cui__field__error-tooltip is-visible">
-        The email address is invalid
-    </span>
-
-    <div
-        class="cui__editor-wrapper is-invalid">
-        <input
-            type="text"
-            class="cui__editor--text is-invalid"
-            placeholder="Please write your email address"
-            value="engineering@+klarna.com" />
-    </div>
-</div>
-
-<div class="cui__field is-invalid">
+<div class="cui__field is-invalid is-warning">
     <span class="cui__field__warning-tooltip is-visible">
         The email address is invalid
     </span>
 
     <div
-        class="cui__editor-wrapper is-invalid">
+        class="cui__editor-wrapper is-invalid is-warning">
         <input
             type="text"
-            class="cui__editor--text is-invalid"
+            class="cui__editor--text is-col-top is-invalid is-warning"
             placeholder="Please write your email address"
             value="engineering@+klarna.com" />
+    </div>
+</div>
+<div class="cui__field is-invalid is-error">
+    <span class="cui__field__error-tooltip is-visible">
+        The email address is invalid
+    </span>
+
+    <div
+        class="cui__editor-wrapper is-invalid is-error">
+        <input
+            type="text"
+            class="cui__editor--text is-col-mid is-invalid is-error"
+            placeholder="Please write your email address"
+            value="engineering@+klarna.com" />
+    </div>
+</div>
+
+<div class="cui__field is-invalid is-error">
+    <span class="cui__field__error-tooltip--with-icon is-visible">
+        The email address is invalid
+    </span>
+
+    <div
+        class="cui__editor-wrapper--with-icon is-invalid is-error">
+        <input
+            type="text"
+            class="cui__editor--with-icon is-col-bot is-invalid is-error"
+            placeholder="Please write your email address"
+            value="engineering@+klarna.com" />
+        <span
+            class="cui__icon ss-pika ss-mail"></span>
     </div>
 </div>

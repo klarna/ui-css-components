@@ -112,13 +112,21 @@ html(lang="en")
       +code()
         include snippets/field--loading.html
 
+      p With label (toggled by .show-label on field)
+      +code()
+        include snippets/field--with-label.html
+
       p With icon
       +code()
         include snippets/field--with-icon.html
 
-      p With separators
+      p Joined fieldset
       +code()
-        include snippets/field--with-separators.html
+        include snippets/field--joined-fieldset-grid.html
+      +code()
+        include snippets/field--joined-fieldset-row.html
+      +code()
+        include snippets/field--joined-fieldset-col.html
 
       p With tooltip
       +code()
@@ -136,7 +144,7 @@ html(lang="en")
       p Error in the data
       p Notes:
         ul
-          li is-invalid must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em>
+          li is-invalid, and is-error/is-warning, must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em>
           li the error/warning messages <em>must</em> be short enough to fit on a single line
       +code()
         include snippets/field--invalid.html
@@ -158,14 +166,9 @@ html(lang="en")
       +code()
         include snippets/select.html
 
-      p With separators
+      p Joined fieldset
       +code()
-        include snippets/select--with-separators.html
-
-
-      h3 Label
-      +code()
-        include snippets/label.html
+        include snippets/select--joined-fieldset.html
 
 
 
@@ -192,7 +195,7 @@ html(lang="en")
       h3 SS Pika Icon
       +code()
         include snippets/icon--ss-pika.html
-        
+
       h3 Custom Icons
       +code()
         include snippets/icon--custom.html

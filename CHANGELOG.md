@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 2.0.0
+
+### Added
+
+- Styles for joined fieldsets
+- Styles for floating labels
+- `borders` mixin for the rounded corners
+
+### Updated
+
+- Dimensions mixin (there are no margins between fields anymore)
+- Styles for several atoms to match the new design
+- Styles for Field and Select molecules to match the new design
+- Styles for error/warning messages
+- Colors for the new design (Klarna blue, input borders, etc.)
+
+### Removed
+
+- Removed the `show-tooltip` mixin (animations are done with `transition` instead)
+
 ## 1.9.2
 
 ### Updated

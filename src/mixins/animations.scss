@@ -13,25 +13,6 @@
   }
 }
 
-%show-tooltip {
-  @include animation-name(show-tooltip);
-  @include animation-duration(0.7s);
-  @include animation-timing-function($ease-out-quint);
-  @include transform(translateZ(0));
-  @include animation-fill-mode(both);
-}
-
-@include keyframes(show-tooltip) {
-  0% {
-    opacity: 0;
-    @include transform(translateY(10px));
-  }
-  100% {
-    @include transform(translateY(0px));
-    opacity: 1;
-  }
-}
-
 @include keyframes(spin) {
     to {
         @include transform(rotate(1turn))

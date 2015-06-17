@@ -5,7 +5,6 @@
     background: $custom-color-button-background;
     border: none;
     border-radius: 5px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 -3px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
     color: $custom-color-button-color;
     cursor: pointer;
     font-weight: bold;
@@ -20,12 +19,10 @@
 
     &:active {
         background: darken($custom-color-button-background, 4%);
-        box-shadow: inset 0 3px 0 rgba(#000, .1);
     }
 
     &.is-disabled {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        box-shadow: none;
         opacity: 0.4;
 
         &:hover {
@@ -34,7 +31,6 @@
 
         &:active {
             background: $custom-color-button-background;
-            box-shadow: none;
         }
     }
 
