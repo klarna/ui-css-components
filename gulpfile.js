@@ -6,6 +6,10 @@ var jade = require('gulp-jade');
 var jshint = require('gulp-jshint');
 var svg2png = require('gulp-svg2png');
 var rename = require('gulp-rename');
+var RevAll = require('gulp-rev-all');
+var path = require('path');
+var AWS = require('gulp-awspublish');
+var rename = require('gulp-rename');
 
 // ====================================================================
 // DEVELOPMENT
@@ -103,6 +107,28 @@ gulp.task('images:tagline', function () {
     gulp.src('img/atoms/tagline/**/*.svg')
         .pipe(svg2png())
         .pipe(gulp.dest('img/atoms/tagline'));
+});
+
+gulp.task('publish', function () {
+    var revAll = new RevAll();
+    var awsConfig = {
+        accessKeyId: process.env.AWS_ACCESS_KEY,
+        secretAccessKey: process.env.AWS_SECRET_KEY,
+        region: "eu-west-1",
+        params: {
+          Bucket: "klarna-static-assets"
+        }
+    };
+    var publisher = AWS.create(awsConfig);
+    var headers = {'Cache-Control': 'max-age=315360000, no-transform, public'};
+
+    gulp.src(['img/**/*', 'ui-toolkit.css'])
+        .pipe(revAll.revision())
+        .pipe(rename(function (path) { path.dirname = 'ui-toolkit/' + path.dirname; }))
+        .pipe(AWS.gzip())
+        .pipe(publisher.publish(headers))
+        .pipe(publisher.cache())
+        .pipe(AWS.reporter());
 });
 
 gulp.task('build', ['build:sass', 'build:jade', 'build:js']);
