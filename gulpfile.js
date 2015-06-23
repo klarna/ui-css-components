@@ -10,6 +10,8 @@ var RevAll = require('gulp-rev-all');
 var path = require('path');
 var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
+var minifyCss = require('gulp-minify-css');
+var addsrc = require('gulp-add-src');
 
 // ====================================================================
 // DEVELOPMENT
@@ -122,7 +124,9 @@ gulp.task('publish', function () {
     var publisher = AWS.create(awsConfig);
     var headers = {'Cache-Control': 'max-age=315360000, no-transform, public'};
 
-    gulp.src(['img/**/*', 'ui-toolkit.css'])
+    gulp.src(['ui-toolkit.css'])
+        .pipe(minifyCss())
+        .pipe(addsrc('img/**/*'))
         .pipe(revAll.revision())
         .pipe(rename(function (path) { path.dirname = 'ui-toolkit/' + path.dirname; }))
         .pipe(AWS.gzip())
