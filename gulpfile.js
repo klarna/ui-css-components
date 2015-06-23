@@ -130,7 +130,7 @@ gulp.task('publish', function () {
         .pipe(revAll.revision())
         .pipe(rename(function (path) { path.dirname = 'ui-toolkit/' + path.dirname; }))
         .pipe(AWS.gzip())
-        .pipe(publisher.publish(headers))
+        .pipe(publisher.publish(headers, {createOnly: true}))
         .pipe(publisher.cache())
         .pipe(AWS.reporter());
 });
