@@ -1,6 +1,6 @@
 {
   "name": "ui-toolkit",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Klarna UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",

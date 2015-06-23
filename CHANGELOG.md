@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 2.0.1
+
+### Updated
+- Disabled style for atoms (buttons) `cursor` is now set to `default`.
+
 ## 2.0.0
 
 ### Added
