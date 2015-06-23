@@ -193,6 +193,7 @@
     border-color: #006cc2; }
   .cui__highlighted-button.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    cursor: default;
     opacity: 0.4; }
     .cui__highlighted-button.is-disabled:hover {
       background: #0072CC; }
@@ -227,6 +228,7 @@
     border-color: #CBCBCB; }
   .cui__non-highlighted-button.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    cursor: default;
     opacity: 0.4; }
     .cui__non-highlighted-button.is-disabled:hover {
       background: #fff; }
@@ -279,6 +281,7 @@
     background: #0067b8; }
   .cui__buy-button.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    cursor: default;
     opacity: 0.4; }
     .cui__buy-button.is-disabled:hover {
       background: #0072CC; }
