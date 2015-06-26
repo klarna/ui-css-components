@@ -51,7 +51,6 @@
 
             &:focus {
                 border-top-left-radius: $input-border-radius;
-                border-top-right-radius: 0;
             }
         }
 
@@ -60,6 +59,12 @@
 
             &:focus {
                 border-top-right-radius: $input-border-radius;
+            }
+        } @else {
+            border-top-right-radius: 0;
+
+            &:focus {
+                border-top-right-radius: 0;
             }
         }
     }
