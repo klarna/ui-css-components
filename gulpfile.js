@@ -7,7 +7,6 @@ var jshint = require('gulp-jshint');
 var svg2png = require('gulp-svg2png');
 var rename = require('gulp-rename');
 var RevAll = require('gulp-rev-all');
-var path = require('path');
 var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
