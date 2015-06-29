@@ -74,15 +74,25 @@ $select-overlay-triangle-y-ie: 17px;
 
     &.is-invalid {
         padding-bottom: 2px;
-        padding-top: 16px;
+        padding-top: 20px;
     }
 
     &.is-error {
-        background-color: $input-error-background-color;
+        background-color: $input-error-background-color-rgba;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str($input-error-background-color-rgba);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
     }
 
     &.is-warning {
-        background-color: $input-warning-background-color;
+        background-color: $input-warning-background-color-rgba;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str($input-warning-background-color-rgba);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
     }
 
     &:before {
