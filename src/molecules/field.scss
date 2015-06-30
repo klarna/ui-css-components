@@ -113,11 +113,22 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     }
 
     &.is-error {
-        background-color: $input-error-background-color;
+        background-color: $input-error-background-color-rgba;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str($input-error-background-color-rgba);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+
     }
 
     &.is-warning {
-        background-color: $input-warning-background-color;
+        background-color: $input-warning-background-color-rgba;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str($input-warning-background-color-rgba);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
     }
 }
 
@@ -199,24 +210,23 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     opacity: 0;
     display: block;
 
-    &:after {
-        @include respond-to-ie(8) {
-            display: none;
-        }
+    @include respond-to-ie((8,9)) {
+        display: none;
     }
 
     &.is-visible {
+        display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
         @include transition-duration(0.3s);
     }
-
 }
 
 @mixin error-tooltip($text-color) {
     @include field_tooltip($text-color);
 
     .is-error & {
+        display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
         @include transition-duration(0.3s);
@@ -227,6 +237,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     @include field_tooltip($text-color);
 
     .is-warning & {
+        display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
         @include transition-duration(0.3s);
@@ -237,6 +248,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     @include field_tooltip($text-color);
 
     .show-label & {
+        display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
         @include transition-duration(0.3s);
