@@ -4,8 +4,12 @@ All notable changes to this project will be documented in this file. http://keep
 
 ## 2.1.0
 
+# Added
+- Variable `$input-error-background-color-rgba` with value `rgba(255, 0, 0, 0.05)` to settings
+- Variable `$input-warning-background-color-rgba` with value `rgba(255, 255, 0, 0.05)` to settings
+
 ### Updated
-- Use RGBA background values for field/select classes `.is-error` and `.is-warning`, with filter fallbacks for IE8.
+- Use RGBA background values for field/select classes `is-error` and `is-warning`, with filter fallbacks for IE8
 
 ## 2.0.1
 
