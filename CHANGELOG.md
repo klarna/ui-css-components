@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. http://keep
 
 ## 2.1.0
 
-# Added
+### Added
 - Variable `$input-error-background-color-rgba` with value `rgba(255, 0, 0, 0.05)` to settings
 - Variable `$input-warning-background-color-rgba` with value `rgba(255, 255, 0, 0.05)` to settings
 
