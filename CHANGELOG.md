@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 2.1.0
+
+### Updated
+- Use RGBA background values for field/select classes `.is-error` and `.is-warning`, with filter fallbacks for IE8.
+
 ## 2.0.1
 
 ### Updated
