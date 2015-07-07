@@ -30,5 +30,8 @@
     "Makefile",
     "README.md",
     "CHANGELOG.md"
-  ]
+  ],
+  "dependencies": {
+    "ss-pika": "git+ssh://git@stash.int.klarna.net:7999/bow/ss-pika.git#1.0.2"
+  }
 }
