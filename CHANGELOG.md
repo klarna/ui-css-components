@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 2.1.1
+
+### Fixed
+
+- Input top right radius on focus
+
 ## 2.1.0
 
 ### Added
