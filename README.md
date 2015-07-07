@@ -142,28 +142,22 @@ make install
 make build
 ```
 
-How to bump the version of the UI toolkit
------------------------------------------
-
-1. Checkout the `develop` branch.
-2. Come up with a version number. If you added or removed a feature, bump the MINOR version (MAJOR.MINOR.PATCH). If you did a small change, bump the PATCH version. Only bump the MAJOR version if you are really sure of what you are doing.
-3. Update the version number in:
-  - The `README.md` file
-  - The `package.json` file
-4. Add an entry to the `CHANGELOG.md` with the changes that you are introducing. Use http://keepachangelog.com/ as a reference of what to write.
-5. Commit the changes. The commit message should be just the version number. Push to the remote origin.
-6. Checkout the `master` branch. Merge the head of develop into master without fast forward:
-  ```
-  git checkout master
-  git pull
-  git merge develop --no-ff
-  ```
-7. Tag the merge commit in master with the version number **prefixed with a `v`**:
+Branching model
+------------------
+1. Create a descriptively named branch off of `master`.
+2. Send a pull-request, and wait for approvals.
+3. Bump the version number with the following guidelines in mind:  
+  Versioning is done manually, as the last step before merging, therefore versions numbers should be determined as late as possible.  
+  Follow these steps after your pull request is approved:
+    * Come up with a version number. If you added or removed a feature, bump the MINOR version (MAJOR.MINOR.PATCH). If you did a small change, bump the PATCH version. Only bump the MAJOR version if you are really sure of what you are doing.
+    * Add an entry to the `CHANGELOG.md`, describing the changes that you are introducing. Use [keepachangelog.com](http://keepachangelog.com/) as a reference of what to write.
+    * Update the version number in the following files:
+      - `README.md`
+      - `package.json`
+5. Commit the version-bump with the version number as the commit message.
+6. Merge your pull-request using Stash.
+7. Create a tag pointing to the _master branch merge commit_, with the version number **prefixed with a `v`**:
   ```
   git tag v<VERSION_NUMBER>
-  ```
-8. Push `master` and the tag to the remote origin:
-  ```
-  git push origin master
   git push origin v<VERSION_NUMBER>
   ```
