@@ -156,8 +156,5 @@ Branching model
       - `package.json`
 5. Commit the version-bump with the version number as the commit message.
 6. Merge your pull-request using Stash.
-7. Create a tag pointing to the _master branch merge commit_, with the version number **prefixed with a `v`**:
-  ```
-  git tag v<VERSION_NUMBER>
-  git push origin v<VERSION_NUMBER>
+7. In your development machine, checkout the `master` branch, `pull` the latest changes and run the `make tag` task. It will create the git tag with the version extracted from the `package.json` and then push the new tag to the repository. Finally, it will automatically inform the #front_end channel about the new version, with a link to the CHANGELOG diff.
   ```
