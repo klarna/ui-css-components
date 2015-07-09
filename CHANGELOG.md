@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.0.0
+
+### Added
+
+- SS Pika as a Bower dependency
+- The reference to the separate SS Pika CSS file in the `index.html`
+
+## Updated
+
+- The explanation of how to contribute to the UI Toolkit, now that we are not using Git Flow anymore
+
+## Removed
+
+- The SS Pika font files
+- The SS Pika selectors in the `icon` atom
+- The SS Pika snippet from the snippets folder
+- The SS Pika snippet from the showroom
+
+## 2.1.1
+
+### Fixed
+
+- Input top right radius on focus
+
 ## 2.1.0
 
 ### Added

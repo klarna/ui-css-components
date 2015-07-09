@@ -60,6 +60,12 @@
             &:focus {
                 border-top-right-radius: $input-border-radius;
             }
+        } @else {
+            border-top-right-radius: 0;
+
+            &:focus {
+                border-top-right-radius: 0;
+            }
         }
     }
 
