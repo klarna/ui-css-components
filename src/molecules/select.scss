@@ -65,10 +65,14 @@ $select-overlay-triangle-y-ie: 17px;
             inset 0 1px 3px hsla(0, 0%, 0%, 0.06),
             0 0 3px 1px $input-border-color-focus;
 
-        z-index: 3;
+        z-index: 1;
 
         &:before {
             right: 12px;
+        }
+
+        @include respond-to-ie-and-stock {
+            z-index: 3;
         }
     }
 
