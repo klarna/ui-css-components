@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.0.1
+
+### Fixed
+
+- Increase z-index of select overlays (when focused) only in IE and Android Stock.
+
 ## 3.0.0
 
 ### Added
