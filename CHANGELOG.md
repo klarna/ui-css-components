@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. http://keep
 
 ### Fixed
 
-- Increase z-index of select overlays (when focused) only in IE and Android Stock.
+- Increase z-index of select dropdown and focused select overlay, however keep select dropdown above select overlay.
 
 ## 3.0.0
 
