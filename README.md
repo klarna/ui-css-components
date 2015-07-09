@@ -153,11 +153,11 @@ Branching model
   Versioning is done manually, as the last step before merging, therefore versions numbers should be determined as late as possible.  
   Follow these steps after your pull request is approved:
     * Come up with a version number. If you added or removed a feature, bump the MINOR version (MAJOR.MINOR.PATCH). If you did a small change, bump the PATCH version. Only bump the MAJOR version if you are really sure of what you are doing.
-    * Add an entry to the `CHANGELOG.md`, describing the changes that you are introducing. Use [keepachangelog.com](http://keepachangelog.com/) as a reference of what to write.
+    * Add an entry to the `CHANGELOG.md` describing the changes that you are introducing. Use [keepachangelog.com](http://keepachangelog.com/) as a reference of what to write.
     * Update the version number in the following files:
       - `README.md`
       - `package.json`
 5. Commit the version-bump with the version number as the commit message.
-6. Merge your pull-request using Stash.
+6. Merge your pull-request using Stash, making sure that "Delete branch" is checked.
 7. In your development machine, checkout the `master` branch, `pull` the latest changes and run the `make tag` task. It will create the git tag with the version extracted from the `package.json` and then push the new tag to the repository. Finally, it will automatically inform the #front_end channel about the new version, with a link to the CHANGELOG diff.
   ```
