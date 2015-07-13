@@ -57,7 +57,8 @@ $select-overlay-triangle-y-ie: 17px;
         color: $input-disabled-color;
     }
 
-    &.has-focus {
+    &.has-focus,
+    &.has-fake-focus {
         border: 1px solid $input-border-color-focus;
 
         box-shadow:

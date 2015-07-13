@@ -11,7 +11,8 @@
     z-index: 10;
 }
 
-.cui__editor--text:focus + .cui__icon {
+.cui__editor--text:focus + .cui__icon,
+.cui__editor--text.has-fake-focus + .cui__icon {
     color: $klarna-blue;
 }
 

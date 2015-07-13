@@ -585,8 +585,69 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </pre><script>UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
+</script><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
 
-</script><p>Field and button</p><div class="presentation-example"><div class="cui__field" style="width:69%; display: inline-block;">
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text is-solo has-fake-focus"
+            placeholder="Please write your email address"
+            value="" />
+    </div>
+</div>
+
+<div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper--with-icon">
+        <input
+            type="text"
+            class="cui__editor--with-icon is-solo has-fake-focus"
+            placeholder="Write your query and find out"
+            value="" />
+        <span
+            class="cui__icon ss-pika ss-search"></span>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text is-solo has-fake-focus&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper--with-icon&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--with-icon is-solo has-fake-focus&quot;
+            placeholder=&quot;Write your query and find out&quot;
+            value=&quot;&quot; /&gt;
+        &lt;span
+            class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><p>Field and button</p><div class="presentation-example"><div class="cui__field" style="width:69%; display: inline-block;">
     <span class="cui__field__error-tooltip">
         Error
     </span>
@@ -746,6 +807,30 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++) {
                 &lt;option&gt;Bob&lt;/option&gt;
             &lt;/select&gt;
             &lt;span class=&quot;cui__select-overlay is-solo&quot;&gt;Name&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
+    <div class="cui__select">
+        <div class="cui__editor-wrapper">
+            <select class="cui__select-dropdown has-fake-focus" data-cid="select.selector">
+                <option value="" data-placeholder="Placeholder"></option>
+                <option>Alice</option>
+                <option>Bob</option>
+            </select>
+            <span class="cui__select-overlay is-solo has-fake-focus">Name</span>
+        </div>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;div class=&quot;cui__select&quot;&gt;
+        &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
+            &lt;select class=&quot;cui__select-dropdown has-fake-focus&quot; data-cid=&quot;select.selector&quot;&gt;
+                &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+                &lt;option&gt;Alice&lt;/option&gt;
+                &lt;option&gt;Bob&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;span class=&quot;cui__select-overlay is-solo has-fake-focus&quot;&gt;Name&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

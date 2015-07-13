@@ -71,7 +71,8 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         outline: none;
     }
 
-    &:focus {
+    &:focus,
+    &.has-fake-focus {
         border: 1px solid $input-border-color-focus;
         box-shadow: 0 0 3px 1px $input-border-color-focus;
         z-index: 1;
