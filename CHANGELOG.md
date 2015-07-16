@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.0.3
+
+### Added
+
+- The `publish` task, that fingerprints, gzips and publishes the assets to a common CDN.
+
 ## 3.0.2
 
 ### Added
