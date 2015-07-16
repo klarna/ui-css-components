@@ -60,6 +60,12 @@
             &:focus {
                 border-top-right-radius: $input-border-radius;
             }
+        } @else {
+            border-top-right-radius: 0;
+
+            &:focus {
+                border-top-right-radius: 0;
+            }
         }
     }
 
@@ -92,7 +98,8 @@
         border-right-width: 1px;
     }
 
-    &:focus {
+    &:focus,
+    &.has-fake-focus {
         z-index: 3;
         border: 1px solid $input-border-color-focus;
     }

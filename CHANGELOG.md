@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.0.2
+
+### Added
+
+- Fake focus for selectbox and input field
+
+## 3.0.1
+
+### Fixed
+
+- Increase z-index of select dropdown and focused select overlay, however keep select dropdown above select overlay.
+
+## 3.0.0
+
+### Added
+
+- SS Pika as a Bower dependency
+- The reference to the separate SS Pika CSS file in the `index.html`
+
+## Updated
+
+- The explanation of how to contribute to the UI Toolkit, now that we are not using Git Flow anymore
+
+## Removed
+
+- The SS Pika font files
+- The SS Pika selectors in the `icon` atom
+- The SS Pika snippet from the snippets folder
+- The SS Pika snippet from the showroom
+
+## 2.1.1
+
+### Fixed
+
+- Input top right radius on focus
+
+## 2.1.0
+
+### Added
+- Variable `$input-error-background-color-rgba` with value `rgba(255, 0, 0, 0.05)` to settings
+- Variable `$input-warning-background-color-rgba` with value `rgba(255, 255, 0, 0.05)` to settings
+
+### Updated
+- Use RGBA background values for field/select classes `is-error` and `is-warning`, with filter fallbacks for IE8
+
+## 2.0.1
+
+### Updated
+- Disabled style for atoms (buttons) `cursor` is now set to `default`.
+
 ## 2.0.0
 
 ### Added

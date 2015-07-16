@@ -15,6 +15,7 @@ html(lang="en")
 
     link(rel='stylesheet' href='ui-toolkit.css')
     link(rel='stylesheet' href='support/doc.css')
+    link(rel='stylesheet' href='bower_components/ss-pika/webfonts/ss-pika.css')
 
     script(type='text/javascript' src='ui-toolkit.js')
 
@@ -135,6 +136,10 @@ html(lang="en")
       script.
         UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
 
+      p With fake focus
+      +code()
+        include snippets/field--with-fake-focus.html
+
 
       p Field and button
       +code()
@@ -166,6 +171,10 @@ html(lang="en")
       +code()
         include snippets/select.html
 
+      p With fake focus
+      +code()
+        include snippets/select--with-fake-focus.html
+
       p Joined fieldset
       +code()
         include snippets/select--joined-fieldset.html
@@ -191,10 +200,6 @@ html(lang="en")
 
 
       h2#icons.presentation Icons
-
-      h3 SS Pika Icon
-      +code()
-        include snippets/icon--ss-pika.html
 
       h3 Custom Icons
       +code()

@@ -27,6 +27,7 @@
 
     &.is-disabled {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        cursor: default;
         opacity: 0.4;
 
         &:hover {

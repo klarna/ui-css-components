@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"><button class="cui__highlighted-button">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><link rel="stylesheet" href="bower_components/ss-pika/webfonts/ss-pika.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"><button class="cui__highlighted-button">
     Highlighted button
 </button>
 </div><pre>&lt;button class=&quot;cui__highlighted-button&quot;&gt;
@@ -585,8 +585,69 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </pre><script>UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
+</script><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
 
-</script><p>Field and button</p><div class="presentation-example"><div class="cui__field" style="width:69%; display: inline-block;">
+    <div
+        class="cui__editor-wrapper">
+        <input
+            type="text"
+            class="cui__editor--text is-solo has-fake-focus"
+            placeholder="Please write your email address"
+            value="" />
+    </div>
+</div>
+
+<div class="cui__field">
+    <span class="cui__field__error-tooltip">
+        Error
+    </span>
+
+    <div
+        class="cui__editor-wrapper--with-icon">
+        <input
+            type="text"
+            class="cui__editor--with-icon is-solo has-fake-focus"
+            placeholder="Write your query and find out"
+            value="" />
+        <span
+            class="cui__icon ss-pika ss-search"></span>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--text is-solo has-fake-focus&quot;
+            placeholder=&quot;Please write your email address&quot;
+            value=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
+        Error
+    &lt;/span&gt;
+
+    &lt;div
+        class=&quot;cui__editor-wrapper--with-icon&quot;&gt;
+        &lt;input
+            type=&quot;text&quot;
+            class=&quot;cui__editor--with-icon is-solo has-fake-focus&quot;
+            placeholder=&quot;Write your query and find out&quot;
+            value=&quot;&quot; /&gt;
+        &lt;span
+            class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre><p>Field and button</p><div class="presentation-example"><div class="cui__field" style="width:69%; display: inline-block;">
     <span class="cui__field__error-tooltip">
         Error
     </span>
@@ -749,6 +810,30 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++) {
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+</pre><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
+    <div class="cui__select">
+        <div class="cui__editor-wrapper">
+            <select class="cui__select-dropdown has-fake-focus" data-cid="select.selector">
+                <option value="" data-placeholder="Placeholder"></option>
+                <option>Alice</option>
+                <option>Bob</option>
+            </select>
+            <span class="cui__select-overlay is-solo has-fake-focus">Name</span>
+        </div>
+    </div>
+</div>
+</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;div class=&quot;cui__select&quot;&gt;
+        &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
+            &lt;select class=&quot;cui__select-dropdown has-fake-focus&quot; data-cid=&quot;select.selector&quot;&gt;
+                &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
+                &lt;option&gt;Alice&lt;/option&gt;
+                &lt;option&gt;Bob&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;span class=&quot;cui__select-overlay is-solo has-fake-focus&quot;&gt;Name&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </pre><p>Joined fieldset</p><div class="presentation-example"><div class="cui__select cui__field--is-left" style="width: 33%">
     <div class="cui__editor-wrapper">
         <select class="cui__select-dropdown" data-cid="select.selector">
@@ -855,29 +940,7 @@ for (var i = 0; i < cuiEditorWrappers.length; i ++) {
 </div><pre>&lt;a href=&quot;#&quot; class=&quot;cui__non-highlighted-link--standalone&quot;&gt;
     Non highlighted, standalone
 &lt;/a&gt;
-</pre><h2 id="icons" class="presentation">Icons</h2><h3>SS Pika Icon</h3><div class="presentation-example"><div class="icon-container">
-    <span class="cui__icon ss-pika ss-cursor"></span>
-</div>
-
-<div class="icon-container">
-    <span class="cui__icon ss-pika ss-lock"></span>
-</div>
-
-<div class="icon-container">
-    <span class="cui__icon ss-pika ss-user"></span>
-</div>
-</div><pre>&lt;div class=&quot;icon-container&quot;&gt;
-    &lt;span class=&quot;cui__icon ss-pika ss-cursor&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;icon-container&quot;&gt;
-    &lt;span class=&quot;cui__icon ss-pika ss-lock&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;icon-container&quot;&gt;
-    &lt;span class=&quot;cui__icon ss-pika ss-user&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-</pre><h3>Custom Icons</h3><div class="presentation-example"><span class="cui__icon--close"></span>
+</pre><h2 id="icons" class="presentation">Icons</h2><h3>Custom Icons</h3><div class="presentation-example"><span class="cui__icon--close"></span>
 
 <span class="cui__icon--question-mark"></span>
 </div><pre>&lt;span class=&quot;cui__icon--close&quot;&gt;&lt;/span&gt;

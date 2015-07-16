@@ -6,10 +6,13 @@ UI Toolkit for the Klarna Checkout.
 Installation
 ------------
 
+> Note: Since version 3.0.0, SS Pika is no longer part of the UI Toolkit bundle, but it is still a dependency for the toolkit. Installing via bower will install SS Pika side by side with the toolkit: to use the font, remember to also add `bower_components/ss-pika/webfonts/ss-pika.css` in your HTML.
+> Also, if you are consuming the toolkit via NPM, the dependency won't be there: in that case, the recommendation is to load the SS Pika CSS from some CDN.
+
 You can install the KCO UI Toolkit via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git#v2.0.0
+bower install git+ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git#v3.0.2
 ```
 
 Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
