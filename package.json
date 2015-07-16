@@ -1,14 +1,18 @@
 {
   "name": "ui-toolkit",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Klarna UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",
     "gulp": "3.8.10",
-    "gulp-sass": "1.2.4",
+    "gulp-add-src": "^0.2.0",
+    "gulp-awspublish": "^2.0.2",
     "gulp-jade": "0.10.0",
     "gulp-jshint": "1.9.0",
+    "gulp-minify-css": "^1.1.6",
     "gulp-rename": "^1.2.0",
+    "gulp-rev-all": "^0.8.21",
+    "gulp-sass": "1.2.4",
     "gulp-svg2png": "^0.3.0"
   },
   "scripts": {
