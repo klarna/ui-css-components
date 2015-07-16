@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
-## 3.0.4
+## 3.1.0
 
 ### Removed
 
