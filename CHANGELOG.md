@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.1.0
+
+### Removed
+
+- Removes relative position style from main header
+
 ## 3.0.3
 
 ### Added

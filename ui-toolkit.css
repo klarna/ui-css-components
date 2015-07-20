@@ -396,17 +396,14 @@
         content: "\2713 ";
         display: block; }
 
-.cui__main-header {
-  position: relative; }
-  .cui__main-header h1 {
-    font-size: 15px;
-    font-size: 0.9375rem;
-    color: #434343;
-    display: inline-block;
-    margin: 0 0 0 2px;
-    padding-right: 16px;
-    position: relative;
-    z-index: 1; }
+.cui__main-header h1 {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #434343;
+  display: inline-block;
+  margin: 0 0 0 2px;
+  padding-right: 16px;
+  z-index: 1; }
 
 .cui__subtle-header h3 {
   font-size: 10px;

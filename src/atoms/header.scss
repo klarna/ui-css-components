@@ -1,6 +1,4 @@
 .cui__main-header {
-    position: relative;
-
     h1 {
         @include font-size(15px);
 
@@ -8,7 +6,6 @@
         display: inline-block;
         margin: 0 0 0 2px;
         padding-right: $header-margin;
-        position: relative;
         z-index: 1;
     }
 }
