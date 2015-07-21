@@ -152,7 +152,13 @@ Branching model
 3. Bump the version number with the following guidelines in mind:  
   Versioning is done manually, as the last step before merging, therefore versions numbers should be determined as late as possible.  
   Follow these steps after your pull request is approved:
-    * Come up with a version number. If you added or removed a feature, bump the MINOR version (MAJOR.MINOR.PATCH). If you did a small change, bump the PATCH version. Only bump the MAJOR version if you are really sure of what you are doing.
+    * Come up with a version number. From [semver.org](http://semver.org/):
+      > MAJOR version when you make incompatible API changes,
+      >
+      > MINOR version when you add functionality in a backwards-compatible manner, and
+      >
+      > PATCH version when you make backwards-compatible bug fixes
+
     * Add an entry to the `CHANGELOG.md` describing the changes that you are introducing. Use [keepachangelog.com](http://keepachangelog.com/) as a reference of what to write.
     * Update the version number in the following files:
       - `README.md`
