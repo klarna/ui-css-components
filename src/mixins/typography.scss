@@ -42,9 +42,7 @@ $base-line-height: 21px;
     $font-size: $base-font-size,
     $border-style: solid
 ) {
-  border-#{$side}: {
-    style: $border-style;
-    width: $width / $font-size;
-  };
+  border-#{$side}-style: $border-style;
+  border-#{$side}-width: $width / $font-size;
   padding-#{$side}: rhythm($lines, $font-size, $offset: $width);
 }
