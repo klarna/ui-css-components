@@ -30,8 +30,8 @@
 @mixin respond-to-ie($versions: ('')) {
     $selectors: ();
     @each $version in $versions {
-        $selectors: $selectors, unquote('.ie#{$version} &');
-        $selectors: $selectors, unquote('.cui__browser--ie#{$version} &');
+        $selectors: append($selectors, unquote('.ie#{$version} &'), comma);
+        $selectors: append($selectors, unquote('.cui__browser--ie#{$version} &'), comma);
     }
     #{$selectors} {
         @content;
