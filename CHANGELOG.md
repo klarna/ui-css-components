@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.1.1
+
+### Updated
+
+- Bump version of `gulp-sass` to `2.0.4`
+
+### Fixed
+
+- Update IE detection mixin to be compatible with new versions of SASS
+
 ## 3.1.0
 
 ### Removed
