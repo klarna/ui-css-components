@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.1.2
+
+### Fixed
+
+- Fix incompatible SASS syntax issue on typography mixin
+
 ## 3.1.1
 
 ### Updated
