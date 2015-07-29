@@ -1,38 +1,54 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><link rel="stylesheet" href="bower_components/ss-pika/webfonts/ss-pika.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Highlighted button</h3><div class="presentation-example"><button class="cui__highlighted-button">
-    Highlighted button
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>KCO UI Toolkit</title><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><link rel="stylesheet" href="bower_components/ss-pika/webfonts/ss-pika.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Primary button</h3><div class="presentation-example"><button class="cui__button--primary">
+    Primary button
 </button>
-</div><pre>&lt;button class=&quot;cui__highlighted-button&quot;&gt;
-    Highlighted button
+</div><pre>&lt;button class=&quot;cui__button--primary&quot;&gt;
+    Primary button
 &lt;/button&gt;
-</pre><p>Disabled</p><div class="presentation-example"><button class="cui__highlighted-button is-disabled">
-    Disabled highlighted button
+</pre><p>Disabled</p><div class="presentation-example"><button class="cui__button--primary is-disabled">
+    Disabled primary button
 </button>
-</div><pre>&lt;button class=&quot;cui__highlighted-button is-disabled&quot;&gt;
-    Disabled highlighted button
+</div><pre>&lt;button class=&quot;cui__button--primary is-disabled&quot;&gt;
+    Disabled primary button
 &lt;/button&gt;
-</pre><h3>Non highlighted button</h3><div class="presentation-example"><button class="cui__non-highlighted-button">
-    Non highlighted button
+</pre><p>Loading</p><div class="presentation-example"><button class="cui__button--primary">
+    <div class="cui__button--primary__loader" />
 </button>
-</div><pre>&lt;button class=&quot;cui__non-highlighted-button&quot;&gt;
-    Non highlighted button
+</div><pre>&lt;button class=&quot;cui__button--primary&quot;&gt;
+    &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
 &lt;/button&gt;
-</pre><h3>Buy button</h3><div class="presentation-example"><button class="cui__buy-button">
-    Buy Button
+</pre><h3>Secondary button</h3><div class="presentation-example"><button class="cui__button--secondary">
+    Secondary button
 </button>
-</div><pre>&lt;button class=&quot;cui__buy-button&quot;&gt;
-    Buy Button
+</div><pre>&lt;button class=&quot;cui__button--secondary&quot;&gt;
+    Secondary button
 &lt;/button&gt;
-</pre><p>Loading</p><div class="presentation-example"><button class="cui__buy-button is-loading">
-    <div class="cui__buy-button__loader"></div>
+</pre><h3>CTA button</h3><div class="presentation-example"><button class="cui__button--cta">
+    Call to action
 </button>
-</div><pre>&lt;button class=&quot;cui__buy-button is-loading&quot;&gt;
-    &lt;div class=&quot;cui__buy-button__loader&quot;&gt;&lt;/div&gt;
+</div><pre>&lt;button class=&quot;cui__button--cta&quot;&gt;
+    Call to action
 &lt;/button&gt;
-</pre><p>Disabled</p><div class="presentation-example"><button class="cui__buy-button is-disabled">
-    Buy button disabled
+</pre><h3>CTA button loading</h3><div class="presentation-example"><button class="cui__button--cta">
+    <div class="cui__button--cta__loader"></div>
 </button>
-</div><pre>&lt;button class=&quot;cui__buy-button is-disabled&quot;&gt;
-    Buy button disabled
+
+</div><pre>&lt;button class=&quot;cui__button--cta&quot;&gt;
+    &lt;div class=&quot;cui__button--cta__loader&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
+
+</pre><p>Loading</p><div class="presentation-example"><button class="cui__button--cta">
+    <div class="cui__button--cta__loader"></div>
+</button>
+
+</div><pre>&lt;button class=&quot;cui__button--cta&quot;&gt;
+    &lt;div class=&quot;cui__button--cta__loader&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
+
+</pre><p>Disabled</p><div class="presentation-example"><button class="cui__button--cta is-disabled">
+    Disabled CTA
+</button>
+</div><pre>&lt;button class=&quot;cui__button--cta is-disabled&quot;&gt;
+    Disabled CTA
 &lt;/button&gt;
 </pre><h2 id="headers" class="presentation">Headers</h2><h3>Main Header</h3><div class="presentation-example"><div class="cui__main-header">
     <h1>Billing Address</h1>

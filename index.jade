@@ -36,34 +36,44 @@ html(lang="en")
     #home.main
       h2#buttons.presentation Buttons
 
-      h3 Highlighted button
+      h3 Primary button
       +code()
-        include snippets/button--highlighted.html
+        include snippets/button--primary.html
 
 
       p Disabled
       +code()
-        include snippets/button--highlighted--disabled.html
-
-
-      h3 Non highlighted button
-      +code()
-        include snippets/button--non-highlighted.html
-
-
-      h3 Buy button
-      +code()
-        include snippets/buy-button.html
+        include snippets/button--primary--disabled.html
 
 
       p Loading
       +code()
-        include snippets/buy-button--loading.html
+        include snippets/button--primary--loading.html
+
+
+      h3 Secondary button
+      +code()
+        include snippets/button--secondary.html
+
+
+      h3 CTA button
+      +code()
+        include snippets/button--cta.html
+
+
+      h3 CTA button loading
+      +code()
+        include snippets/button--cta--loading.html
+
+
+      p Loading
+      +code()
+        include snippets/button--cta--loading.html
 
 
       p Disabled
       +code()
-        include snippets/buy-button--disabled.html
+        include snippets/button--cta--disabled.html
 
 
 
