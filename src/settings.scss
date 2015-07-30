@@ -10,7 +10,7 @@ $base-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 21px;
 
-$buy-button-font-size: 20px;
+$cta-button-font-size: 20px;
 $flat-button-font-size: 15px;
 
 // ================================================================
@@ -31,12 +31,12 @@ $field-horizontal-margin: 2%;
 $klarna-blue: #0072CC;
 
 // This properties can be overriden by the merchant styling
-$custom-color-button-background: #0072CC;
-$custom-color-button-color: #fff;
+$primary-color-button-background: $klarna-blue;
+$primary-color-button-color: #fff;
 
 // This properties are *not* merchant overridable
-$bright-button-background: #fff;
-$bright-button-color: #555;
+$secondary-button-background: #fff;
+$secondary-button-color: #555;
 
 $tooltip-arrow-color: #ededed;
 
