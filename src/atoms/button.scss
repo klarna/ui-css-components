@@ -71,8 +71,8 @@
     display: inline-block;
     font-size: 0;
     height: $image-size;
-    width: $image-size;
     vertical-align: text-bottom;
+    width: $image-size;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8,9)) {
