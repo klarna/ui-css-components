@@ -58,6 +58,7 @@
     border: none;
     line-height: 1;
     padding: 18px;
+    height: 56px;
 
     &:active {
         background: darken($primary-color-button-background, 4%);

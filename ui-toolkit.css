@@ -259,7 +259,8 @@
   font-size: 1.25rem;
   border: none;
   line-height: 1;
-  padding: 18px; }
+  padding: 18px;
+  height: 56px; }
   .cui__button--cta:hover {
     background: #006cc2;
     border-color: #006cc2; }
