@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.1.3
+
+### Fixed
+
+- Remove clear field icon in IE10+
+
 ## 3.1.2
 
 ### Fixed
