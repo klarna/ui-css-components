@@ -1320,6 +1320,9 @@
   .cui__editor--text::-moz-placeholder, .cui__editor--with-icon::-moz-placeholder {
     color: #a9a9a9;
     opacity: 1; }
+  .cui__editor--text::-ms-clear, .cui__editor--with-icon::-ms-clear {
+    width: 0;
+    height: 0; }
   .cui__editor--text[disabled], [disabled].cui__editor--with-icon {
     background: #f6f6f6;
     color: #545454;
@@ -1782,7 +1785,3 @@
 
 .cui__field--is-right {
   float: left; }
-
-::-ms-clear {
-  width: 0;
-  height: 0; }

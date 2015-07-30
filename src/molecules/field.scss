@@ -88,6 +88,12 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         opacity: 1;
     }
 
+    // Disable clear field icon for IE10+
+    &::-ms-clear {
+        width : 0;
+        height: 0;
+    }
+
     &[disabled] {
         background: $input-disabled-background-color;
         color: $input-disabled-color;
@@ -300,13 +306,4 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 
 }
 .cui__editor--text {
-}
-
-
-// ================================================================
-//  VENDOR OVERRIDES
-// ================================================================
-::-ms-clear {
-    width : 0;
-    height: 0;
 }
