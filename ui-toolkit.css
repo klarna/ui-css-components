@@ -1782,3 +1782,7 @@
 
 .cui__field--is-right {
   float: left; }
+
+::-ms-clear {
+  width: 0;
+  height: 0; }
