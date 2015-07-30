@@ -81,19 +81,19 @@
 
     // Preload the image
     &:before {
-        content: url($ui-toolkit-path + 'img/atoms/buy_button/' + $image-name + '.png');
+        content: url($ui-toolkit-path + 'img/atoms/button/' + $image-name + '.png');
         display: none;
         height: 0;
         width: 0;
 
         @include hidpi {
-            content: url($ui-toolkit-path + 'img/atoms/buy_button/' + $image-name + '@2x.png');
+            content: url($ui-toolkit-path + 'img/atoms/button/' + $image-name + '@2x.png');
         }
     }
 }
 
 .cui__button--cta__loader {
-    @include cui__button__loader('button--cta__loader', 22px, $buy-button-font-size);
+    @include cui__button__loader('button--cta__loader', 22px, $cta-button-font-size);
 }
 
 
