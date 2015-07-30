@@ -42,25 +42,25 @@
 
 // Regular blue button
 .cui__button--primary {
-    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color, darken($custom-color-button-background, 2%));
+    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
 }
 
 // Regular grey button
 .cui__button--secondary {
-    @include cui__button($bright-button-background, $secondary-button-border-color, $bright-button-color, $secondary-button-border-color);
+    @include cui__button($secondary-button-background, $secondary-button-border-color, $secondary-button-color, $secondary-button-border-color);
 }
 
 // CTA button
 .cui__button--cta {
-    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color, darken($custom-color-button-background, 2%));
-    @include font-size($buy-button-font-size);
+    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
+    @include font-size($cta-button-font-size);
 
     border: none;
     line-height: 1;
     padding: 18px;
 
     &:active {
-        background: darken($custom-color-button-background, 4%);
+        background: darken($primary-color-button-background, 4%);
     }
 }
 
