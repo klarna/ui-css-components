@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 4.0.0
+
+### Removed
+- Remove `cui__buy-button`
+- Remove `is-loading`, adding the loader inside the button is enough
+
+### Updated
+- Renames "buy" to "cta", "highlighted" to "primary" and "non-highlighted" to "secondary"
+- Normalize all button variations as a BEM modifier: `cui__button--primary`, `cui__button--secondary` and `cui__button--cta`
+- Renames loader images to match selectors
+
+### Added
+- Adds preloading for primary button loader
+
+
 ## 3.1.3
 
 ### Fixed
@@ -55,11 +70,11 @@ All notable changes to this project will be documented in this file. http://keep
 - SS Pika as a Bower dependency
 - The reference to the separate SS Pika CSS file in the `index.html`
 
-## Updated
+### Updated
 
 - The explanation of how to contribute to the UI Toolkit, now that we are not using Git Flow anymore
 
-## Removed
+### Removed
 
 - The SS Pika font files
 - The SS Pika selectors in the `icon` atom
