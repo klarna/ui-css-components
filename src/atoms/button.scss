@@ -3,17 +3,17 @@
     @include font-size($flat-button-font-size);
 
     background: $background;
-    border: 1px solid $border-color;
     border-radius: $button-border-radius;
+    border: 1px solid $border-color;
     color: $text-color;
     cursor: pointer;
     font-weight: bold;
     line-height: 19px;
     outline: none;
     padding: 12px 13px;
-    vertical-align: top;
     text-align: center;
     text-decoration: none;
+    vertical-align: top;
 
     &:hover {
         background: darken($background, 2%);
@@ -41,33 +41,68 @@
 }
 
 // Regular blue button
-.cui__highlighted-button {
-    @include cui__button($custom-color-button-background, $custom-color-button-background, $custom-color-button-color, darken($custom-color-button-background, 2%));
+.cui__button--primary {
+    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
 }
 
 // Regular grey button
-.cui__non-highlighted-button {
-    @include cui__button($bright-button-background, $secondary-button-border-color, $bright-button-color, $secondary-button-border-color);
+.cui__button--secondary {
+    @include cui__button($secondary-button-background, $secondary-button-border-color, $secondary-button-color, $secondary-button-border-color);
 }
 
+// CTA button
+.cui__button--cta {
+    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
+    @include font-size($cta-button-font-size);
 
-.cui__highlighted-button__loader {
-    @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/button.loader', 14px 14px);
+    border: none;
+    line-height: 1;
+    padding: 18px;
+    height: 56px;
+
+    &:active {
+        background: darken($primary-color-button-background, 4%);
+    }
+}
+
+@mixin cui__button__loader($image-name, $image-size, $font-size) {
+    @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/' + $image-name, $image-size $image-size);
     @include animation(spin 0.8s linear infinite);
 
     display: inline-block;
     font-size: 0;
-    height: 14px;
-    overflow: hidden;
+    height: $image-size;
     vertical-align: text-bottom;
-    width: 14px;
+    width: $image-size;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8,9)) {
-        @include font-size($flat-button-font-size);
+        @include font-size($font-size);
+    }
 
-        background-image: none;
+    // Preload the image
+    &:before {
+        content: url($ui-toolkit-path + 'img/atoms/button/' + $image-name + '.png');
+        display: none;
+        height: 0;
+        width: 0;
+
+        @include hidpi {
+            content: url($ui-toolkit-path + 'img/atoms/button/' + $image-name + '@2x.png');
+        }
+    }
+}
+
+.cui__button--cta__loader {
+    @include cui__button__loader('button--cta__loader', 22px, $cta-button-font-size);
+}
+
+
+.cui__button--primary__loader {
+    @include cui__button__loader('button--primary__loader', 14px, $flat-button-font-size);
+
+    // IE8 and 9 don't support CSS animations, show the loader text instead.
+    @include respond-to-ie((8,9)) {
         height: 19px;
-        width: 100%;
     }
 }
