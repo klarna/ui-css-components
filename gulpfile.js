@@ -11,6 +11,8 @@ var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var addsrc = require('gulp-add-src');
+var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
 
 // ====================================================================
 // DEVELOPMENT
@@ -29,6 +31,7 @@ gulp.task('browser-sync', function() {
 // will auto-update browsers
 gulp.task('reload:sass', function() {
     gulp.src('builds/ui-toolkit.scss')
+        .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(sass())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
@@ -36,6 +39,7 @@ gulp.task('reload:sass', function() {
 
 gulp.task('reload:jade', function() {
     gulp.src('*.jade')
+        .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(jade())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
