@@ -28,15 +28,16 @@ $field-horizontal-margin: 2%;
 // ================================================================
 //  Colors
 // ================================================================
-$klarna-blue: #0072CC;
-
-// This properties can be overriden by the merchant styling
-$primary-color-button-background: $klarna-blue;
-$primary-color-button-color: #fff;
-
-// This properties are *not* merchant overridable
-$secondary-button-background: #fff;
-$secondary-button-color: #555;
+$colors: (
+  klarna-blue: #0074c8,
+  morning-blue: #1a8cdc,
+  black: #3c3c3e,
+  grey-text: #9e9ea0,
+  grey-lines: #cbcbcd,
+  light-grey: #f5f5f7,
+  modal: #46505a,
+  white: #fff
+);
 
 $tooltip-arrow-color: #ededed;
 
