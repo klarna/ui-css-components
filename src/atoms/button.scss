@@ -16,6 +16,18 @@
     text-decoration: none;
     vertical-align: top;
 
+    &.-small {
+      font-size: 14px;
+      line-height: 38px; //plus borders, 40px
+      padding: 0 35px;
+    }
+
+    &.-big {
+      line-height: 58px; //plus borders, 60px
+      padding: 0 68px;
+      text-transform: uppercase;
+    }
+
     &:hover {
         background: darken($background, 2%);
         border-color: $border-color-hover;
