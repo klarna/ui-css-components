@@ -49,20 +49,6 @@
     @include cui__button($secondary-button-background, $secondary-button-border-color, $secondary-button-color, $secondary-button-border-color);
 }
 
-// CTA button
-.cui__button--cta {
-    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
-    @include font-size($cta-button-font-size);
-
-    border: none;
-    line-height: 1;
-    padding: 18px;
-    height: 56px;
-
-    &:active {
-        background: darken($primary-color-button-background, 4%);
-    }
-}
 
 @mixin cui__button__loader($image-name, $image-size, $font-size) {
     @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/' + $image-name, $image-size $image-size);
