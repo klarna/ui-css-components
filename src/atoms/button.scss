@@ -11,18 +11,20 @@
     font-weight: map-get($font-weights, semi-bold);
     line-height: 48px; // plus borders, 50px
     outline: none;
-    padding: 0 46px;
+    padding: 0 48px;
     text-align: center;
     text-decoration: none;
+    text-rendering: geometricPrecision;
     vertical-align: top;
 
     &.-small {
       font-size: 14px;
       line-height: 38px; //plus borders, 40px
-      padding: 0 35px;
+      padding: 0 28px;
     }
 
     &.-big {
+      letter-spacing: 0.4px;
       line-height: 58px; //plus borders, 60px
       padding: 0 68px;
       text-transform: uppercase;

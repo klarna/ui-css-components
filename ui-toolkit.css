@@ -182,15 +182,17 @@
   font-weight: 600;
   line-height: 48px;
   outline: none;
-  padding: 0 46px;
+  padding: 0 48px;
   text-align: center;
   text-decoration: none;
+  text-rendering: geometricPrecision;
   vertical-align: top; }
   .cui__button--primary.-small {
     font-size: 14px;
     line-height: 38px;
-    padding: 0 35px; }
+    padding: 0 28px; }
   .cui__button--primary.-big {
+    letter-spacing: 0.4px;
     line-height: 58px;
     padding: 0 68px;
     text-transform: uppercase; }
@@ -251,15 +253,17 @@
   font-weight: 600;
   line-height: 48px;
   outline: none;
-  padding: 0 46px;
+  padding: 0 48px;
   text-align: center;
   text-decoration: none;
+  text-rendering: geometricPrecision;
   vertical-align: top; }
   .cui__button--secondary.-small {
     font-size: 14px;
     line-height: 38px;
-    padding: 0 35px; }
+    padding: 0 28px; }
   .cui__button--secondary.-big {
+    letter-spacing: 0.4px;
     line-height: 58px;
     padding: 0 68px;
     text-transform: uppercase; }
