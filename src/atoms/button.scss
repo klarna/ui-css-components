@@ -1,4 +1,4 @@
-@mixin cui__button($background, $border-color, $text-color, $border-color-hover) {
+@mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
     @include appearance(none);
     @include font-size($flat-button-font-size);
 
@@ -29,13 +29,15 @@
     }
 
     &:hover {
-        background: darken($background, 2%);
-        border-color: $border-color-hover;
+        @each $attribute in $darken-attributes {
+          #{$attribute}: darken($darken-color, 5.2);
+        }
     }
 
     &:active {
-        background: darken($background, 2%);
-        border-color: $border-color-hover;
+        @each $attribute in $darken-attributes {
+          #{$attribute}: darken($darken-color, 10.1);
+        }
     }
 
     &.is-disabled {
@@ -52,30 +54,19 @@
     }
 }
 
-// Regular blue button
-.cui__button--primary {
-    @include cui__button($primary-color-button-background, $primary-color-button-background, $primary-color-button-color, darken($primary-color-button-background, 2%));
-}
-
-// Regular grey button
-.cui__button--secondary {
-    @include cui__button($secondary-button-background, $secondary-button-border-color, $secondary-button-color, $secondary-button-border-color);
-}
-
-
-@mixin cui__button__loader($image-name, $image-size, $font-size) {
-    @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/' + $image-name, $image-size $image-size);
+@mixin cui__button__loader($image-name) {
+    @include retina-image-compat($ui-toolkit-path + 'img/atoms/button/' + $image-name, 20px 20px);
     @include animation(spin 0.8s linear infinite);
 
     display: inline-block;
     font-size: 0;
-    height: $image-size;
+    height: 20px;
     vertical-align: text-bottom;
-    width: $image-size;
+    width: 20px;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8,9)) {
-        @include font-size($font-size);
+        @include font-size($flat-button-font-size);
     }
 
     // Preload the image
@@ -91,16 +82,29 @@
     }
 }
 
-.cui__button--cta__loader {
-    @include cui__button__loader('button--cta__loader', 22px, $cta-button-font-size);
-}
+.cui__button--primary {
+    @include cui__button(
+        $background: map-get($colors, klarna-blue),
+        $text-color: white,
+        $darken-color: map-get($colors, klarna-blue),
+        $darken-attributes: (background-color, border-color)
+    );
 
-
-.cui__button--primary__loader {
-    @include cui__button__loader('button--primary__loader', 14px, $flat-button-font-size);
-
-    // IE8 and 9 don't support CSS animations, show the loader text instead.
-    @include respond-to-ie((8,9)) {
-        height: 19px;
+    &__loader {
+        @include cui__button__loader('button--primary__loader');
     }
 }
+
+.cui__button--secondary {
+    @include cui__button(
+        $background: white,
+        $text-color: map-get($colors, klarna-blue),
+        $darken-color: map-get($colors, klarna-blue),
+        $darken-attributes: (color, border-color)
+    );
+
+    &__loader {
+        @include cui__button__loader('button--secondary__loader');
+    }
+}
+
