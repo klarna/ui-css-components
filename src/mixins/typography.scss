@@ -1,5 +1,14 @@
-$base-font-size: 16px;
-$base-line-height: 21px;
+/**
+ * Adds all atributes to define the best typography as possible
+ */
+@mixin typography($size, $weight) {
+    @include font-size($size);
+
+    font-family: $base-font-family;
+    font-weight: map-get($font-weights, $weight);
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
 
 /**
  * Convert px to rem

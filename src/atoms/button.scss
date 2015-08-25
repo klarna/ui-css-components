@@ -1,20 +1,20 @@
 @mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
     @include appearance(none);
-    @include font-size($flat-button-font-size);
+    @include typography(
+      $size: $flat-button-font-size,
+      $weight: semi-bold
+    );
 
     background: $background;
     border-radius: $button-border-radius;
     border: 1px solid map-get($colors, klarna-blue);
     color: $text-color;
     cursor: pointer;
-    font-family: $base-font-family;
-    font-weight: map-get($font-weights, semi-bold);
     line-height: 48px; // plus borders, 50px
     outline: none;
     padding: 0 48px;
     text-align: center;
     text-decoration: none;
-    text-rendering: geometricPrecision;
     vertical-align: top;
 
     &.-small {

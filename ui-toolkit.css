@@ -88,6 +88,9 @@
  * Provide $fallback for not supportin browsers (IE8)
  */
 /**
+ * Adds all atributes to define the best typography as possible
+ */
+/**
  * Convert px to rem
  */
 /**
@@ -173,19 +176,20 @@
   appearance: none;
   font-size: 15px;
   font-size: 0.9375rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   background: #0074c8;
   border-radius: 5px;
   border: 1px solid #0074c8;
   color: white;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   line-height: 48px;
   outline: none;
   padding: 0 48px;
   text-align: center;
   text-decoration: none;
-  text-rendering: geometricPrecision;
   vertical-align: top; }
   .cui__button--primary.-small {
     font-size: 14px;
@@ -244,19 +248,20 @@
   appearance: none;
   font-size: 15px;
   font-size: 0.9375rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   background: white;
   border-radius: 5px;
   border: 1px solid #0074c8;
   color: #0074c8;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   line-height: 48px;
   outline: none;
   padding: 0 48px;
   text-align: center;
   text-decoration: none;
-  text-rendering: geometricPrecision;
   vertical-align: top; }
   .cui__button--secondary.-small {
     font-size: 14px;
