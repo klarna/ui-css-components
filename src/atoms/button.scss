@@ -7,7 +7,8 @@
     border: 1px solid $border-color;
     color: $text-color;
     cursor: pointer;
-    font-weight: bold;
+    font-family: $base-font-family;
+    font-weight: map-get($font-weights, semi-bold);
     line-height: 48px; // plus borders, 50px
     outline: none;
     padding: 0 46px;
