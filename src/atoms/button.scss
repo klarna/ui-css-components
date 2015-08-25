@@ -26,7 +26,7 @@
     }
 
     &.is-disabled {
-        @include opacity(0.4);
+        @include opacity(0.2);
         cursor: default;
 
         &:hover {
