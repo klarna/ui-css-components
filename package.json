@@ -4,6 +4,7 @@
   "description": "Klarna UI Toolkit",
   "devDependencies": {
     "browser-sync": "1.8.1",
+    "glob": "^5.0.14",
     "gulp": "3.8.10",
     "gulp-add-src": "^0.2.0",
     "gulp-awspublish": "^2.0.2",
