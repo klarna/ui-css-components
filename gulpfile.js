@@ -50,6 +50,11 @@ gulp.task('reload:html', function() {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('reload:docs:styles', function() {
+    gulp.src('support/*.css')
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('reload:js', function() {
     gulp.src('ui-toolkit.js')
         .pipe(jshint())
