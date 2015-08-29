@@ -13,6 +13,8 @@ var minifyCss = require('gulp-minify-css');
 var addsrc = require('gulp-add-src');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
+var data = require('gulp-data');
+var fetchDocs = require('./support/fetchDocs');
 
 // ====================================================================
 // DEVELOPMENT
@@ -40,6 +42,7 @@ gulp.task('reload:sass', function() {
 gulp.task('reload:docs', function() {
     gulp.src('*.jade')
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
+        .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
