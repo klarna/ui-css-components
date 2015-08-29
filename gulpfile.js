@@ -37,7 +37,7 @@ gulp.task('reload:sass', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:jade', function() {
+gulp.task('reload:docs', function() {
     gulp.src('*.jade')
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(jade())
@@ -63,11 +63,11 @@ gulp.task('reload:js', function() {
 });
 
 // Default task to be run with `gulp`
-gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {
+gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync'], function() {
     gulp.watch('src/**/*.scss', ['reload:sass']);
     gulp.watch('builds/**/*.scss', ['reload:sass']);
-    gulp.watch('*.jade', ['reload:jade']);
-    gulp.watch('snippets/*.html', ['reload:jade']);
+    gulp.watch(['*.jade', 'docs/**/*'], ['reload:docs']);
+    gulp.watch(['support/*.css'], ['reload:docs:styles']);
     gulp.watch('ui-toolkit.js', ['reload:js']);
     gulp.watch('index.html', ['reload:html']);
 });
