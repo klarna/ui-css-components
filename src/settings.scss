@@ -59,17 +59,13 @@ $input-warning-background-color-rgba: rgba(255, 255, 0, 0.05);
 $input-tooltip-text-color: #D0021B;
 $input-tooltip-text-color--warning: #ECB801;
 $input-editor-color: #595959;
-$editor-placeholder-color: #a9a9a9;
+$editor-placeholder-color: #9e9ea0;
 
 $divider-border-color: #F2F0F0;
-$form-border-color: #CBCBCB;
-$input-border-color: #CBCBCB;
+$form-border-color: map-get($colors, grey-lines);
+$input-border-color: map-get($colors, grey-lines);
 $input-border-color-focus: #0072CC;
 $input-border-color-disabled: #a6a6a6;
-$preview-border-color: #CBCBCB;
-$secondary-button-border-color: #CBCBCB;
-$selector-border-color: #CBCBCB;
-
 
 
 // ================================================================
