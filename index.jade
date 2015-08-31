@@ -32,6 +32,14 @@ html(lang="en")
 
         // helpers for documentation
 
+        $('input.cui__field__input').focus(function(){
+          $(this).parent().addClass('is-focused');
+        })
+
+        $('input.cui__field__input').blur(function(){
+          $(this).parent().removeClass('is-focused');
+        })
+
         function floatingLabel(input) {
           if(input.value){
             $(input).parent().addClass("is-filled");

@@ -1,1059 +1,576 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><link rel="stylesheet" href="bower_components/ss-pika/webfonts/ss-pika.css"><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><div class="inner"><a href="#home"><span class="ss-pika ss-home"></span></a><a href="#buttons">Buttons</a><a href="#headers">Headers</a><a href="#form">Form</a><a href="#links">Links</a><a href="#icons">Icons</a><a href="#logos">Logos</a><a href="#misc">Misc</a></div></nav><div id="home" class="main"><h2 id="buttons" class="presentation">Buttons</h2><h3>Primary button</h3><div class="presentation-example"><button class="cui__button--primary">
-    Primary button
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary&quot;&gt;
-    Primary button
-&lt;/button&gt;
-</pre><p>Small</p><div class="presentation-example"><button class="cui__button--primary -small">
-    Primary small
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary -small&quot;&gt;
-    Primary small
-&lt;/button&gt;
-</pre><p>Big</p><div class="presentation-example"><button class="cui__button--primary -big">
-    Primary big
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary -big&quot;&gt;
-    Primary big
-&lt;/button&gt;
-</pre><p>Loading</p><div class="presentation-example"><button class="cui__button--primary">
-    <div class="cui__button--primary__loader" />
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary&quot;&gt;
-    &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
-&lt;/button&gt;
-</pre><p>Big loading</p><div class="presentation-example"><button class="cui__button--primary -big">
-    <div class="cui__button--primary__loader" />
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary -big&quot;&gt;
-    &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
-&lt;/button&gt;
-</pre><p>Disabled</p><div class="presentation-example"><button class="cui__button--primary is-disabled">
-    Disabled
-</button>
-</div><pre>&lt;button class=&quot;cui__button--primary is-disabled&quot;&gt;
-    Disabled
-&lt;/button&gt;
-</pre><h3>Secondary button</h3><div class="presentation-example"><button class="cui__button--secondary">
-    Secondary button
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary&quot;&gt;
-    Secondary button
-&lt;/button&gt;
-</pre><p>Small</p><div class="presentation-example"><button class="cui__button--secondary -small">
-    Secondary small
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary -small&quot;&gt;
-    Secondary small
-&lt;/button&gt;
-</pre><p>Big</p><div class="presentation-example"><button class="cui__button--secondary -big">
-    Secondary big
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary -big&quot;&gt;
-    Secondary big
-&lt;/button&gt;
-</pre><p>Loading</p><div class="presentation-example"><button class="cui__button--secondary">
-    <div class="cui__button--secondary__loader" />
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary&quot;&gt;
-    &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
-&lt;/button&gt;
-</pre><p>Big loading</p><div class="presentation-example"><button class="cui__button--secondary -big">
-    <div class="cui__button--secondary__loader" />
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary -big&quot;&gt;
-    &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
-&lt;/button&gt;
-</pre><p>Disabled</p><div class="presentation-example"><button class="cui__button--secondary is-disabled">
-    Disabled
-</button>
-</div><pre>&lt;button class=&quot;cui__button--secondary is-disabled&quot;&gt;
-    Disabled
-&lt;/button&gt;
-</pre><h2 id="headers" class="presentation">Headers</h2><h3>Main Header</h3><div class="presentation-example"><div class="cui__main-header">
-    <h1>Billing Address</h1>
-</div>
-</div><pre>&lt;div class=&quot;cui__main-header&quot;&gt;
-    &lt;h1&gt;Billing Address&lt;/h1&gt;
-&lt;/div&gt;
-</pre><h3>Subtle Header</h3><div class="presentation-example"><div class="cui__subtle-header">
-    <h3>Subtle Header</h3>
-</div>
-</div><pre>&lt;div class=&quot;cui__subtle-header&quot;&gt;
-    &lt;h3&gt;Subtle Header&lt;/h3&gt;
-&lt;/div&gt;
-</pre><h2 id="form" class="presentation">Form elements</h2><h3>Checkbox</h3><div class="presentation-example"><span class="cui__checkbox"></span>
-</div><pre>&lt;span class=&quot;cui__checkbox&quot;&gt;&lt;/span&gt;
-</pre><div class="presentation-example"><span class="cui__checkbox is-checked"></span>
-</div><pre>&lt;span class=&quot;cui__checkbox is-checked&quot;&gt;&lt;/span&gt;
-</pre><h3>Switch</h3><div class="presentation-example"><span class="cui__switch"></span></div><pre>&lt;span class=&quot;cui__switch&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-pressed"></span></div><pre>&lt;span class=&quot;cui__switch is-pressed&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-checked"></span></div><pre>&lt;span class=&quot;cui__switch is-checked&quot;&gt;&lt;/span&gt;</pre><div class="presentation-example"><span class="cui__switch is-checked is-pressed"></span></div><pre>&lt;span class=&quot;cui__switch is-checked is-pressed&quot;&gt;&lt;/span&gt;</pre><h3>Input</h3><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="ui-toolkit.css"><link rel="stylesheet" href="support/doc.css"><link rel="stylesheet" href="support/hljs.css"><link rel="stylesheet" href="bower_components/ss-pika/webfonts/ss-pika.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><script type="text/javascript" src="ui-toolkit.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li></ul></nav><main><section id="Getting started"><h1 id="getting-started">Getting started</h1>
+<p>Welcome to the ui-toolkit guide. The goals of this document are:</p>
+<ul class="summary">
+<li>To explain the usage of all components;</li>
+<li>To clarify the reasoning behind their implementation;</li>
+<li>To give you a clearer understanding of use cases for each component, so we achieve a better user experience;</li>
+</ul>
+<hr>
+<p>Enjoy!</p>
+</section><section id="Button"><h1 id="button">Button</h1>
+<p>Buttons use the <span class="code">cui__button</span> block, and only <span class="code">button</span> tags should be used.</p>
+<ul class="summary">
+<li><a href="#Button/overview">Overview</a></li>
+<li><a href="#Button/usage">Usage</a><ul class="summary">
+<li><a href="#Button/usage/importance">Importance</a></li>
+<li><a href="#Button/usage/size">Size</a></li>
+</ul>
+</li>
+<li><a href="#Button/primary">Primary</a><ul class="summary">
+<li><a href="#Button/primary/loading">loading</a></li>
+<li><a href="#Button/primary/disabled">disabled</a></li>
+<li><a href="#Button/primary/small">small</a></li>
+<li><a href="#Button/primary/small/disabled">small &amp; disabled</a></li>
+<li><a href="#Button/primary/big">big</a></li>
+<li><a href="#Button/primary/big/loading">big &amp; loading</a></li>
+<li><a href="#Button/primary/big/disabled">big &amp; disabled</a></li>
+</ul>
+</li>
+<li><a href="#Button/secondary">Secondary</a><ul class="summary">
+<li><a href="#Button/secondary/loading">loading</a></li>
+<li><a href="#Button/secondary/disabled">disabled</a></li>
+<li><a href="#Button/secondary/small">small</a></li>
+<li><a href="#Button/secondary/small/disabled">small &amp; disabled</a></li>
+<li><a href="#Button/secondary/big">big</a></li>
+<li><a href="#Button/secondary/big/loading">big &amp; loading</a></li>
+<li><a href="#Button/secondary/big/disabled">big &amp; disabled</a></li>
+</ul>
+</li>
+</ul>
+<p><a name="Button/overview"></a></p>
+<h2 id="overview">Overview</h2>
+<p>Here&#39;s a showcase of all buttons. Pass your mouse over and click the elements to see the hover and active states.</p>
+<table>
+    <tr>
+        <td>
+            <button class="cui__button--primary -small">
+                Small
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary -small">
+                Small
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary -small is-disabled">
+                Small
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary -small is-disabled">
+                Small
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary is-disabled">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary is-disabled">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary">
+                <div class="cui__button--primary__loader" />
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary">
+                <div class="cui__button--secondary__loader" />
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary -big">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary -big">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary -big is-disabled">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary -big is-disabled">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary -big">
+                <div class="cui__button--primary__loader" />
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary -big">
+                <div class="cui__button--secondary__loader" />
+            </button>
+        </td>
+    </tr>
+</table>
 
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo"
-            placeholder="Please write your email address"
-            value="" />
+<p><a name="Button/usage/importance"></a></p>
+<h2 id="importance">Importance</h2>
+<p>Buttons are divided by importance, therefore we have primary and secondary buttons.</p>
+<p>You should always use the primary button for your main actions, actions that will make the user move forward in your flow, like &quot;buy&quot;, &quot;save&quot;, &quot;continue&quot; or &quot;confirm&quot;.</p>
+<p>Secondary buttons should be used for auxiliary or negative actions, like &quot;cancel&quot; or &quot;skip&quot;.</p>
+<p>When you have both actions, the secondary button should be on the left of the primary button.</p>
+<div class="example-block" style="text-align: center;">
+    <div class="example">
+        <button class="cui__button--secondary">
+            Cancel
+        </button>
+        <button class="cui__button--primary">
+            Save
+        </button>
     </div>
 </div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
 
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>Disabled</p><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo"
-            placeholder="This field is disabled. You cannot write anything."
-            value="" disabled/>
+<p><a name="Button/usage/size"></a></p>
+<h2 id="size">Size</h2>
+<p>Buttons have 3 different sizes. Big buttons should be used for calls to action, specially when they are the main action on a page. Small buttons are more appropriate for non-final actions, when you have many steps, or when you need more page space.</p>
+<div class="example-block" style="text-align: center;">
+    <div class="example">
+        <button class="cui__button--primary -big">
+            Buy now!
+        </button>
+        <button class="cui__button--primary">
+            Finish
+        </button>
+        <button class="cui__button--primary -small">
+            Continue
+        </button>
     </div>
 </div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
 
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo&quot;
-            placeholder=&quot;This field is disabled. You cannot write anything.&quot;
-            value=&quot;&quot; disabled/&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>Loading</p><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo"
-            placeholder="This field is processing something" />
-        <div
-            class="cui__editor-wrapper__loader"></div>
+<p><a name="Button/primary"></a></p>
+<h2 id="primary">Primary</h2>
+<p>This should be used for your main actions.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary">
+  Primary
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary&quot;&gt;
+  Primary
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/loading"></a></p>
+<h3 id="loading">Loading</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary">
+  <div class="cui__button--primary__loader" />
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary&quot;&gt;
+  &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/disabled"></a></p>
+<h3 id="disabled">Disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary is-disabled">
+  Primary disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary is-disabled&quot;&gt;
+  Primary disabled
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/small"></a></p>
+<h3 id="small">Small</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary -small">
+  Primary small
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary -small&quot;&gt;
+  Primary small
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/small/disabled"></a></p>
+<h3 id="small-disabled">Small &amp; disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary -small is-disabled">
+  Primary small disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary -small is-disabled&quot;&gt;
+  Primary small disabled
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/big"></a></p>
+<h3 id="big">Big</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary -big">
+  Primary big
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary -big&quot;&gt;
+  Primary big
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/big/loading"></a></p>
+<h3 id="big-loading">Big &amp; loading</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary -big">
+  <div class="cui__button--primary__loader" />
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary -big&quot;&gt;
+  &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/primary/big/disabled"></a></p>
+<h3 id="big-disabled">Big &amp; disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--primary -big is-disabled">
+  Primary big disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--primary -big is-disabled&quot;&gt;
+  Primary big disabled
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary"></a></p>
+<h2 id="secondary">Secondary</h2>
+<p>This should be used for your secondary actions.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary">
+  Secondary
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary&quot;&gt;
+  Secondary
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/loading"></a></p>
+<h3 id="loading">Loading</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary">
+  <div class="cui__button--secondary__loader" />
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary&quot;&gt;
+  &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/disabled"></a></p>
+<h3 id="disabled">Disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary is-disabled">
+  Secondary disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary is-disabled&quot;&gt;
+  Secondary disabled
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/small"></a></p>
+<h3 id="small">Small</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary -small">
+  Secondary small
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary -small&quot;&gt;
+  Secondary small
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/small/disabled"></a></p>
+<h3 id="small-disabled">Small &amp; disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary -small is-disabled">
+  Secondary small disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary -small is-disabled&quot;&gt;
+  Secondary small disabled
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/big"></a></p>
+<h3 id="big">Big</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary -big">
+  Secondary big
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary -big&quot;&gt;
+  Secondary big
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/big/loading"></a></p>
+<h3 id="big-loading">Big &amp; loading</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary -big">
+  <div class="cui__button--secondary__loader" />
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary -big&quot;&gt;
+  &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
+&lt;/button&gt;
+</code></pre></div>
+<p><a name="Button/secondary/big/disabled"></a></p>
+<h3 id="big-disabled">Big &amp; disabled</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div class="example-block"><div class="example"><button class="cui__button--secondary -big is-disabled">
+  Secondary big disabled
+</button></div><pre><code class="lang-html">&lt;button class=&quot;cui__button--secondary -big is-disabled&quot;&gt;
+  Secondary big disabled
+&lt;/button&gt;
+</code></pre></div>
+</section><section id="Field"><h1 id="field">Field</h1>
+<p>The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
+<p>The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
+<p>The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
+<hr>
+<ul class="summary">
+<li><a href="#Field/overview">Overview</a></li>
+<li><a href="#Field/floating label">Floating label</a></li>
+<li><a href="#Field/regular">Regular</a><ul class="summary">
+<li><a href="#Field/regular/focused">focused</a></li>
+<li><a href="#Field/regular/filled">filled</a></li>
+<li><a href="#Field/regular/error">error</a></li>
+<li><a href="#Field/regular/warning">warning</a></li>
+</ul>
+</li>
+</ul>
+<p><a name="Field/overview"></a></p>
+<h2 id="overview">Overview</h2>
+<p>Here&#39;s a showcase of all fields. Pass your mouse over the elements to see the hover state.</p>
+<ul class="overview" style="width: 45%; float: left;">
+  <li>
+    <div class="cui__field">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" />
     </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
+  </li>
+  <li>
+    <div class="cui__field is-focused">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-focused is-filled">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@example.com" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-filled">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@example.com" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-error">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-warning">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@" />
+    </div>
+  </li>
+</ul>
 
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo&quot;
-            placeholder=&quot;This field is processing something&quot; /&gt;
-        &lt;div
-            class=&quot;cui__editor-wrapper__loader&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>With label (toggled by .show-label on field)</p><div class="presentation-example"><div class="cui__field cui__field--is-left" style="width: 50%">
-    <label
-        class="cui__label">
-        Hello field labels
+<ul class="overview" style="width: 45%; display: inline-block;">
+  <li>
+    <div class="cui__field -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-focused -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-focused is-filled -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@example.com" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-filled -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@example.com" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-error -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@" />
+    </div>
+  </li>
+  <li>
+    <div class="cui__field is-warning -big">
+      <label class="cui__field__label">
+        Please write your email address
+      </label>
+      <input class="cui__field__input" value="email@" />
+    </div>
+  </li>
+</ul>
+
+<p><a name="Field/floating label"></a></p>
+<h2 id="floating-label">Floating label</h2>
+<p>When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:</p>
+<div class="example">
+  <div class="cui__field" style="width: 45%; display: inline-block;">
+    <label class="cui__field__label">
+      Please write your email address
     </label>
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-row-left"
-            placeholder="No label when empty" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-right show-label" style="width: 50%">
-    <label
-        class="cui__label">
-        Hello field labels
+    <input class="cui__field__input" oninput="floatingLabel(this)" />
+  </div>
+  <div class="cui__field -big" style="width: 45%; display: inline-block;">
+    <label class="cui__field__label">
+      Please write your email address
     </label>
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-row-right"
-            placeholder="No label when empty"
-            value="Label is now visible" />
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 50%&quot;&gt;
-    &lt;label
-        class=&quot;cui__label&quot;&gt;
-        Hello field labels
+    <input class="cui__field__input" oninput="floatingLabel(this)" />
+  </div>
+
+<p></div></p>
+<p><a name="Field/regular"></a></p>
+<h2 id="regular">Regular</h2>
+<div class="example-block"><div class="example"><div class="cui__field">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
     &lt;/label&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-row-left&quot;
-            placeholder=&quot;No label when empty&quot; /&gt;
-    &lt;/div&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
 &lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-right show-label&quot; style=&quot;width: 50%&quot;&gt;
-    &lt;label
-        class=&quot;cui__label&quot;&gt;
-        Hello field labels
+</code></pre></div>
+<p><a name="Field/regular/focused"></a></p>
+<h3 id="focused">Focused</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-focused">
+    <label class="cui__field__label is-focused">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label is-focused&quot;&gt;
+        Please write your email address
     &lt;/label&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-row-right&quot;
-            placeholder=&quot;No label when empty&quot;
-            value=&quot;Label is now visible&quot; /&gt;
-    &lt;/div&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
 &lt;/div&gt;
-</pre><p>With icon</p><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper--with-icon">
-        <input
-            type="text"
-            class="cui__editor--with-icon is-solo"
-            placeholder="Write your query and find out"
-            value="" />
-        <span
-            class="cui__icon ss-pika ss-search"></span>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper--with-icon&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--with-icon is-solo&quot;
-            placeholder=&quot;Write your query and find out&quot;
-            value=&quot;&quot; /&gt;
-        &lt;span
-            class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
+</code></pre></div>
+<p><a name="Field/regular/filling"></a></p>
+<h3 id="filling">Filling</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-filled is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
 &lt;/div&gt;
-</pre><p>Joined fieldset</p><div class="presentation-example"><div class="cui__field cui__field--is-left" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-top-left"
-            placeholder="Top, left"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-middle" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-top-center"
-            placeholder="Top, center"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-right" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-top-right"
-            placeholder="Top, right"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-left" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-mid-left"
-            placeholder="Middle, left"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-middle" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-mid-center"
-            placeholder="Middle, center"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-right" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-mid-right"
-            placeholder="Middle, right"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-left" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-bot-left"
-            placeholder="Bottom, left"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-middle" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-bot-center"
-            placeholder="Bottom, center"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-right" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-bot-right"
-            placeholder="Bottom, right"
-            value="" />
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-top-left&quot;
-            placeholder=&quot;Top, left&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
+</code></pre></div>
+<p><a name="Field/regular/filled"></a></p>
+<h3 id="filled">Filled</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-filled">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field is-filled&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
 &lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-top-center&quot;
-            placeholder=&quot;Top, center&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
+</code></pre></div>
+<p><a name="Field/regular/error"></a></p>
+<h3 id="error">Error</h3>
+<p>Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
+<div class="example-block"><div class="example"><div class="cui__field is-error">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field is-error&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;invalid@&quot; /&gt;
 &lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-right&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-top-right&quot;
-            placeholder=&quot;Top, right&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
+</code></pre></div>
+<p><a name="Field/regular/warning"></a></p>
+<h3 id="warning">Warning</h3>
+<p>Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
+<div class="example-block"><div class="example"><div class="cui__field is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div><pre><code class="lang-html">&lt;div class=&quot;cui__field is-warning&quot;&gt;
+    &lt;label class=&quot;cui__field__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@exanple.com&quot; /&gt;
 &lt;/div&gt;
+</code></pre></div>
+</section></main><script>// helpers for documentation
 
-&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-mid-left&quot;
-            placeholder=&quot;Middle, left&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+$('input.cui__field__input').focus(function(){
+  $(this).parent().addClass('is-focused');
+})
 
-&lt;div class=&quot;cui__field cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-mid-center&quot;
-            placeholder=&quot;Middle, center&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+$('input.cui__field__input').blur(function(){
+  $(this).parent().removeClass('is-focused');
+})
 
-&lt;div class=&quot;cui__field cui__field--is-right&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-mid-right&quot;
-            placeholder=&quot;Middle, right&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-bot-left&quot;
-            placeholder=&quot;Bottom, left&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-bot-center&quot;
-            placeholder=&quot;Bottom, center&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-right&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-bot-right&quot;
-            placeholder=&quot;Bottom, right&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><div class="presentation-example"><div class="cui__field cui__field--is-left" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-row-left"
-            placeholder="Left" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-middle" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-row-center"
-            placeholder="Center" />
-    </div>
-</div>
-
-<div class="cui__field cui__field--is-right" style="width: 33%">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-row-right"
-            placeholder="Right" />
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-row-left&quot;
-            placeholder=&quot;Left&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-row-center&quot;
-            placeholder=&quot;Center&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field cui__field--is-right&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-row-right&quot;
-            placeholder=&quot;Right&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><div class="presentation-example"><div class="cui__field">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-col-top"
-            placeholder="Top" />
-    </div>
-</div>
-
-<div class="cui__field">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-col-mid"
-            placeholder="Middle" />
-    </div>
-</div>
-
-<div class="cui__field">
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-col-bot"
-            placeholder="Bottom" />
-    </div>
-</div>
-
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-col-top&quot;
-            placeholder=&quot;Top&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-col-mid&quot;
-            placeholder=&quot;Middle&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-col-bot&quot;
-            placeholder=&quot;Bottom&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-</pre><p>With tooltip</p><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo"
-            placeholder="Please write your email address"
-            value="" />
-        <div class="cui__tooltip">
-            <div class="cui__tooltip__content">
-                Your email address is like your identity card in the internet.
-            </div>
-
-            <div class="cui__tooltip__icon-wrapper">
-                <div class="cui__tooltip__icon"></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;&quot; /&gt;
-        &lt;div class=&quot;cui__tooltip&quot;&gt;
-            &lt;div class=&quot;cui__tooltip__content&quot;&gt;
-                Your email address is like your identity card in the internet.
-            &lt;/div&gt;
-
-            &lt;div class=&quot;cui__tooltip__icon-wrapper&quot;&gt;
-                &lt;div class=&quot;cui__tooltip__icon&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><script>UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
-</script><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo has-fake-focus"
-            placeholder="Please write your email address"
-            value="" />
-    </div>
-</div>
-
-<div class="cui__field">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper--with-icon">
-        <input
-            type="text"
-            class="cui__editor--with-icon is-solo has-fake-focus"
-            placeholder="Write your query and find out"
-            value="" />
-        <span
-            class="cui__icon ss-pika ss-search"></span>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo has-fake-focus&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper--with-icon&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--with-icon is-solo has-fake-focus&quot;
-            placeholder=&quot;Write your query and find out&quot;
-            value=&quot;&quot; /&gt;
-        &lt;span
-            class=&quot;cui__icon ss-pika ss-search&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>Field and button</p><div class="presentation-example"><div class="cui__field" style="width: 294px; display: inline-block;">
-    <span class="cui__field__error-tooltip">
-        Error
-    </span>
-
-    <div
-        class="cui__editor-wrapper">
-        <input
-            type="text"
-            class="cui__editor--text is-solo"
-            placeholder="Please write your email address"
-            value="" />
-    </div>
-</div>
-<button
-    class="cui__button--primary"
-    style="display: inline-block;">
-    Button
-</button>
-</div><pre>&lt;div class=&quot;cui__field&quot; style=&quot;width: 294px; display: inline-block;&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip&quot;&gt;
-        Error
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-solo&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;button
-    class=&quot;cui__button--primary&quot;
-    style=&quot;display: inline-block;&quot;&gt;
-    Button
-&lt;/button&gt;
-</pre><p>Error in the data</p><p>Notes:<ul><li>is-invalid, and is-error/is-warning, must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em></li><li>the error/warning messages <em>must</em> be short enough to fit on a single line</li></ul></p><div class="presentation-example"><div class="cui__field is-invalid is-warning">
-    <span class="cui__field__warning-tooltip is-visible">
-        The email address is invalid
-    </span>
-
-    <div
-        class="cui__editor-wrapper is-invalid is-warning">
-        <input
-            type="text"
-            class="cui__editor--text is-col-top is-invalid is-warning"
-            placeholder="Please write your email address"
-            value="engineering@+klarna.com" />
-    </div>
-</div>
-<div class="cui__field is-invalid is-error">
-    <span class="cui__field__error-tooltip is-visible">
-        The email address is invalid
-    </span>
-
-    <div
-        class="cui__editor-wrapper is-invalid is-error">
-        <input
-            type="text"
-            class="cui__editor--text is-col-mid is-invalid is-error"
-            placeholder="Please write your email address"
-            value="engineering@+klarna.com" />
-    </div>
-</div>
-
-<div class="cui__field is-invalid is-error">
-    <span class="cui__field__error-tooltip--with-icon is-visible">
-        The email address is invalid
-    </span>
-
-    <div
-        class="cui__editor-wrapper--with-icon is-invalid is-error">
-        <input
-            type="text"
-            class="cui__editor--with-icon is-col-bot is-invalid is-error"
-            placeholder="Please write your email address"
-            value="engineering@+klarna.com" />
-        <span
-            class="cui__icon ss-pika ss-mail"></span>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field is-invalid is-warning&quot;&gt;
-    &lt;span class=&quot;cui__field__warning-tooltip is-visible&quot;&gt;
-        The email address is invalid
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper is-invalid is-warning&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-col-top is-invalid is-warning&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;engineering@+klarna.com&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field is-invalid is-error&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip is-visible&quot;&gt;
-        The email address is invalid
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper is-invalid is-error&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--text is-col-mid is-invalid is-error&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;engineering@+klarna.com&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__field is-invalid is-error&quot;&gt;
-    &lt;span class=&quot;cui__field__error-tooltip--with-icon is-visible&quot;&gt;
-        The email address is invalid
-    &lt;/span&gt;
-
-    &lt;div
-        class=&quot;cui__editor-wrapper--with-icon is-invalid is-error&quot;&gt;
-        &lt;input
-            type=&quot;text&quot;
-            class=&quot;cui__editor--with-icon is-col-bot is-invalid is-error&quot;
-            placeholder=&quot;Please write your email address&quot;
-            value=&quot;engineering@+klarna.com&quot; /&gt;
-        &lt;span
-            class=&quot;cui__icon ss-pika ss-mail&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><script>var cuiEditorWrappers = document
-  .querySelectorAll(
-    '.cui__editor-wrapper, .cui__editor-wrapper--with-icon');
-var cuiEditors = document
-  .querySelectorAll(
-    '.cui__editor--text, .cui__editor--with-icon');
-
-for (var i = 0; i < cuiEditorWrappers.length; i ++) {
-  UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+function floatingLabel(input) {
+  if(input.value){
+    $(input).parent().addClass("is-filled");
+  } else {
+    $(input).parent().removeClass("is-filled");
+  }
 }
 
-</script><h3>Select</h3><div class="presentation-example"><div class="cui__field">
-    <div class="cui__select">
-        <div class="cui__editor-wrapper">
-            <select class="cui__select-dropdown" data-cid="select.selector">
-                <option value="" data-placeholder="Placeholder"></option>
-                <option>Alice</option>
-                <option>Bob</option>
-            </select>
-            <span class="cui__select-overlay is-solo">Name</span>
-        </div>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;div class=&quot;cui__select&quot;&gt;
-        &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-            &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
-                &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-                &lt;option&gt;Alice&lt;/option&gt;
-                &lt;option&gt;Bob&lt;/option&gt;
-            &lt;/select&gt;
-            &lt;span class=&quot;cui__select-overlay is-solo&quot;&gt;Name&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>With fake focus</p><div class="presentation-example"><div class="cui__field">
-    <div class="cui__select">
-        <div class="cui__editor-wrapper">
-            <select class="cui__select-dropdown has-fake-focus" data-cid="select.selector">
-                <option value="" data-placeholder="Placeholder"></option>
-                <option>Alice</option>
-                <option>Bob</option>
-            </select>
-            <span class="cui__select-overlay is-solo has-fake-focus">Name</span>
-        </div>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__field&quot;&gt;
-    &lt;div class=&quot;cui__select&quot;&gt;
-        &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-            &lt;select class=&quot;cui__select-dropdown has-fake-focus&quot; data-cid=&quot;select.selector&quot;&gt;
-                &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-                &lt;option&gt;Alice&lt;/option&gt;
-                &lt;option&gt;Bob&lt;/option&gt;
-            &lt;/select&gt;
-            &lt;span class=&quot;cui__select-overlay is-solo has-fake-focus&quot;&gt;Name&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>Joined fieldset</p><div class="presentation-example"><div class="cui__select cui__field--is-left" style="width: 33%">
-    <div class="cui__editor-wrapper">
-        <select class="cui__select-dropdown" data-cid="select.selector">
-            <option value="" data-placeholder="Placeholder"></option>
-            <option>Alice</option>
-            <option>Bob</option>
-        </select>
+function anchor(url) {
+  var matches = url.match(/#(.+)/);
+  if(! matches)
+    return "Getting started";
+  return matches[1].split("/")[0];
+}
+$('[id="' + anchor(location.href) + '"]').show();
 
-        <span class="cui__select-overlay is-row-left"
-            data-cid="overlay.selector">
-            Name
-        </span>
-    </div>
-</div>
+$('#menu a').click(function(){
+  $('section').hide();
+  $('[id="' + anchor(this.href) + '"]').show();
+})
 
-<div class="cui__select cui__field--is-middle" style="width: 33%">
-    <div class="cui__editor-wrapper">
-        <select class="cui__select-dropdown" data-cid="select.selector">
-            <option value="" data-placeholder="Placeholder"></option>
-            <option>Alice</option>
-            <option>Bob</option>
-        </select>
-
-        <span class="cui__select-overlay is-row-center"
-            data-cid="overlay.selector">
-            Middle Name
-        </span>
-    </div>
-</div>
-
-<div class="cui__select cui__field--is-right" style="width: 32%">
-    <div class="cui__editor-wrapper">
-        <select class="cui__select-dropdown" data-cid="select.selector">
-            <option value="" data-placeholder="Placeholder"></option>
-            <option>Alice</option>
-            <option>Bob</option>
-        </select>
-
-        <span class="cui__select-overlay is-row-right"
-            data-cid="overlay.selector">
-            Last Name
-        </span>
-    </div>
-</div>
-</div><pre>&lt;div class=&quot;cui__select cui__field--is-left&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
-            &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-            &lt;option&gt;Alice&lt;/option&gt;
-            &lt;option&gt;Bob&lt;/option&gt;
-        &lt;/select&gt;
-
-        &lt;span class=&quot;cui__select-overlay is-row-left&quot;
-            data-cid=&quot;overlay.selector&quot;&gt;
-            Name
-        &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__select cui__field--is-middle&quot; style=&quot;width: 33%&quot;&gt;
-    &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
-            &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-            &lt;option&gt;Alice&lt;/option&gt;
-            &lt;option&gt;Bob&lt;/option&gt;
-        &lt;/select&gt;
-
-        &lt;span class=&quot;cui__select-overlay is-row-center&quot;
-            data-cid=&quot;overlay.selector&quot;&gt;
-            Middle Name
-        &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;cui__select cui__field--is-right&quot; style=&quot;width: 32%&quot;&gt;
-    &lt;div class=&quot;cui__editor-wrapper&quot;&gt;
-        &lt;select class=&quot;cui__select-dropdown&quot; data-cid=&quot;select.selector&quot;&gt;
-            &lt;option value=&quot;&quot; data-placeholder=&quot;Placeholder&quot;&gt;&lt;/option&gt;
-            &lt;option&gt;Alice&lt;/option&gt;
-            &lt;option&gt;Bob&lt;/option&gt;
-        &lt;/select&gt;
-
-        &lt;span class=&quot;cui__select-overlay is-row-right&quot;
-            data-cid=&quot;overlay.selector&quot;&gt;
-            Last Name
-        &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><h2 id="links" class="presentation">Links</h2><p>Highlighted</p><div class="presentation-example"><a href="#" class="cui__highlighted-link">
-    Other page
-</a>
-</div><pre>&lt;a href=&quot;#&quot; class=&quot;cui__highlighted-link&quot;&gt;
-    Other page
-&lt;/a&gt;
-</pre><p>Non highlighted</p><div class="presentation-example"><a href="#" class="cui__non-highlighted-link">
-    Regular link
-</a>
-</div><pre>&lt;a href=&quot;#&quot; class=&quot;cui__non-highlighted-link&quot;&gt;
-    Regular link
-&lt;/a&gt;
-</pre><p>Non highlighted, standalone</p><div class="presentation-example"><a href="#" class="cui__non-highlighted-link--standalone">
-    Non highlighted, standalone
-</a>
-</div><pre>&lt;a href=&quot;#&quot; class=&quot;cui__non-highlighted-link--standalone&quot;&gt;
-    Non highlighted, standalone
-&lt;/a&gt;
-</pre><h2 id="icons" class="presentation">Icons</h2><h3>Custom Icons</h3><div class="presentation-example"><span class="cui__icon--close"></span>
-
-<span class="cui__icon--question-mark"></span>
-</div><pre>&lt;span class=&quot;cui__icon--close&quot;&gt;&lt;/span&gt;
-
-&lt;span class=&quot;cui__icon--question-mark&quot;&gt;&lt;/span&gt;
-</pre><h2 id="logos" class="presentation">Logos</h2><h3>Card logos</h3><div class="presentation-example"><div class="cui__logo--visa--tiny"          style="float: left;"></div>
-<div class="cui__logo--visa-electron--tiny" style="float: left; margin-left: 10px;"></div>
-<div class="cui__logo--maestro--tiny"       style="float: left; margin-left: 10px;"></div>
-<div class="cui__logo--mastercard--tiny"    style="float: left; margin-left: 10px;"></div>
-<div class="cui__logo--amex--tiny"          style="float: left; margin-left: 10px;"></div>
-<div class="cui__logo--discover--tiny"      style="float: left; margin-left: 10px;"></div>
-</div><pre>&lt;div class=&quot;cui__logo--visa--tiny&quot;          style=&quot;float: left;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--visa-electron--tiny&quot; style=&quot;float: left; margin-left: 10px;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--maestro--tiny&quot;       style=&quot;float: left; margin-left: 10px;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--mastercard--tiny&quot;    style=&quot;float: left; margin-left: 10px;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--amex--tiny&quot;          style=&quot;float: left; margin-left: 10px;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__logo--discover--tiny&quot;      style=&quot;float: left; margin-left: 10px;&quot;&gt;&lt;/div&gt;
-</pre><h2 id="misc" class="presentation">Misc</h2><h3>Tooltip icon</h3><div class="presentation-example"><div style="position: relative; height: 46px; border: 1px solid #CCC">
-    <div class="cui__tooltip">
-        <div class="cui__tooltip__icon-wrapper">
-            <div class="cui__tooltip__icon"></div>
-        </div>
-
-        <div class="cui__tooltip__content">
-            The content that is to be shown when the tooltip is hovered/touched
-        </div>
-    </div>
-</div>
-</div><pre>&lt;div style=&quot;position: relative; height: 46px; border: 1px solid #CCC&quot;&gt;
-    &lt;div class=&quot;cui__tooltip&quot;&gt;
-        &lt;div class=&quot;cui__tooltip__icon-wrapper&quot;&gt;
-            &lt;div class=&quot;cui__tooltip__icon&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;cui__tooltip__content&quot;&gt;
-            The content that is to be shown when the tooltip is hovered/touched
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><p>Inline</p><div class="presentation-example"><div>
-    Some text that requires some sort of clarification &nbsp;
-    <div class="cui__tooltip--inline">
-        <div class="cui__tooltip--inline__icon-wrapper">
-            <div class="cui__tooltip--inline__icon"></div>
-        </div>
-
-        <div class="cui__tooltip--inline__content">
-            The content that is to be shown when the tooltip is hovered<wbr>/touched
-        </div>
-    </div>
-</div>
-</div><pre>&lt;div&gt;
-    Some text that requires some sort of clarification &amp;nbsp;
-    &lt;div class=&quot;cui__tooltip--inline&quot;&gt;
-        &lt;div class=&quot;cui__tooltip--inline__icon-wrapper&quot;&gt;
-            &lt;div class=&quot;cui__tooltip--inline__icon&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;cui__tooltip--inline__content&quot;&gt;
-            The content that is to be shown when the tooltip is hovered&lt;wbr&gt;/touched
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre><h3>Loader</h3><div class="presentation-example"><div class="cui__loader"></div>
-<div class="cui__loader--small"></div></div><pre>&lt;div class=&quot;cui__loader&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cui__loader--small&quot;&gt;&lt;/div&gt;</pre><h3>Bubble</h3><div class="presentation-example"><div class="cui__bubble">
-    Hello beautiful! Hope you are well!
-</div>
-</div><pre>&lt;div class=&quot;cui__bubble&quot;&gt;
-    Hello beautiful! Hope you are well!
-&lt;/div&gt;
-</pre><p>Below some other container</p><div class="presentation-example"><div class="cui__bubble--below">
-    Look at me, all pointing to the top and stuff!
-</div>
-</div><pre>&lt;div class=&quot;cui__bubble--below&quot;&gt;
-    Look at me, all pointing to the top and stuff!
-&lt;/div&gt;
-</pre><h3>Tagline</h3><div class="presentation-example"><div class="cui__tagline"></div>
-</div><pre>&lt;div class=&quot;cui__tagline&quot;&gt;&lt;/div&gt;
-</pre></div></body></html>
+hljs.initHighlightingOnLoad();</script></body></html>
