@@ -182,7 +182,7 @@ This should be used for your main actions.
 <a name="Button/primary/loading"></a>
 ### Loading
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+Every time a user submits a form, you should change the current submit button to be loading.
 
 ```html
 <button class="cui__button--primary">
@@ -193,8 +193,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/primary/disabled"></a>
 ### Disabled
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--primary is-disabled">
   Primary disabled
@@ -203,8 +201,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <a name="Button/primary/small"></a>
 ### Small
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 ```html
 <button class="cui__button--primary -small">
@@ -215,8 +211,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/primary/small/disabled"></a>
 ### Small & disabled
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--primary -small is-disabled">
   Primary small disabled
@@ -225,8 +219,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <a name="Button/primary/big"></a>
 ### Big
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 ```html
 <button class="cui__button--primary -big">
@@ -237,8 +229,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/primary/big/loading"></a>
 ### Big & loading
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--primary -big">
   <div class="cui__button--primary__loader" />
@@ -248,14 +238,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/primary/big/disabled"></a>
 ### Big & disabled
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--primary -big is-disabled">
   Primary big disabled
 </button>
 ```
-
 
 <a name="Button/secondary"></a>
 ## Secondary
@@ -271,8 +258,6 @@ This should be used for your secondary actions.
 <a name="Button/secondary/loading"></a>
 ### Loading
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--secondary">
   <div class="cui__button--secondary__loader" />
@@ -281,8 +266,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <a name="Button/secondary/disabled"></a>
 ### Disabled
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 ```html
 <button class="cui__button--secondary is-disabled">
@@ -293,8 +276,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/secondary/small"></a>
 ### Small
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--secondary -small">
   Secondary small
@@ -303,8 +284,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <a name="Button/secondary/small/disabled"></a>
 ### Small & disabled
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 ```html
 <button class="cui__button--secondary -small is-disabled">
@@ -315,8 +294,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/secondary/big"></a>
 ### Big
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--secondary -big">
   Secondary big
@@ -326,8 +303,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <a name="Button/secondary/big/loading"></a>
 ### Big & loading
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
 ```html
 <button class="cui__button--secondary -big">
   <div class="cui__button--secondary__loader" />
@@ -336,8 +311,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <a name="Button/secondary/big/disabled"></a>
 ### Big & disabled
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 ```html
 <button class="cui__button--secondary -big is-disabled">
