@@ -67,10 +67,20 @@ h2 ~ p, h3 ~ p {
 }
 
 .code {
+  font-family: "Hack", monospace;
+  font-size: 0.9em;
   background: #f8f8fa;
   border: 1px solid #e5e5e7;
   padding: 1px 4px;
   border-radius: 5px;
+}
+
+.code.class {
+  color: #E63200;
+}
+
+.code.tag {
+  color: #0072CC;
 }
 
 td {

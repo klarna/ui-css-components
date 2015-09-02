@@ -2,7 +2,7 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #333;
+  color: ##3C3C3E;
   background: #F5F5F7;
   -webkit-text-size-adjust: none; }
 
@@ -18,7 +18,8 @@
   color: #008080; }
 
 .hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .hljs-dartdoc, .tex .hljs-formula {
-  color: #d14; }
+  color: #E63200; }
+
 
 .hljs-title, .hljs-id, .scss .hljs-preprocessor {
   color: #900;
@@ -32,11 +33,11 @@
   font-weight: bold; }
 
 .hljs-tag, .hljs-tag .hljs-title, .hljs-rules .hljs-property, .django .hljs-tag .hljs-keyword {
-  color: #000080;
+  color: #3C3C3E;
   font-weight: normal; }
 
 .hljs-attribute, .hljs-variable, .lisp .hljs-body {
-  color: #008080; }
+  color: #109060; }
 
 .hljs-regexp {
   color: #009926; }
@@ -65,13 +66,14 @@
 
 pre {
   border-top: 1px solid #e5e5e8;
-  font-family: monospace, "Menlo";
+  font-family: "Hack", monospace;
   line-height: 1.5em;
   font-size: 14px;
   font-weight: 100; }
   pre code.hljs {
+    font-family: "Hack", monospace;
     padding: 30px; }
     pre code.hljs .hljs-title {
-      color: #68c; }
+      color: #0072CC; }
     pre code.hljs .hljs-comment {
       color: #abc; }
