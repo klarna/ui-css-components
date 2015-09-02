@@ -4,10 +4,10 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 .cui__field {
     @include box-sizing(border-box);
 
-    border: 1px solid $input-border-color;
+    border: 1px solid map-get($colors, grey-lines);
     position: relative;
     height: 50px;
-    border-radius: $input-border-radius;
+    border-radius: $border-radius;
 
     &.-big {
       height: 60px;
@@ -22,56 +22,36 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     }
 
     &:hover {
-      border: 1px solid rgba(26, 140, 220, 0.8);
+        border: 1px solid rgba(26, 140, 220, 0.8);
     }
 
     &.is-focused {
-      border: 1px solid rgba(26, 140, 220, 0.8);
-      box-shadow: 0 0 4px rgba(26, 140, 220, 0.6);
+        border: 1px solid rgba(26, 140, 220, 0.8);
+        box-shadow: 0 0 4px rgba(26, 140, 220, 0.6);
     }
 
     &.is-error {
-        background-color: #FFF8F7;
-        border-color: #E6BEBE;
-
-        //@include respond-to-ie(8) {
-        //    $ie-hex: ie-hex-str($input-error-background-color-rgba);
-        //    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        //}
-
+        background-color: #fff8f7;
+        border-color: #e6bebe;
     }
 
     &.is-warning {
-        background-color: #FFFAF0;
-        border-color: #E6C88C;
+        background-color: #fffaf0;
+        border-color: #e6c88c;
 
         @include respond-to-ie(8) {
             $ie-hex: ie-hex-str($input-warning-background-color-rgba);
             -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
         }
     }
-
 }
-
-
-@mixin label-tooltip($text-color) {
-    @include field_tooltip($text-color);
-
-    .show-label & {
-        display: block; // For IE8-9
-        opacity: 1;
-        @include transform(translate(15px 5px));
-        @include transition-duration(0.3s);
-    }
-}
-
 
 .cui__field__label {
     @include transform(translate(12px, 12px));
     @include typography(15px, regular);
     @include transition(all .16s cubic-bezier(0,.98,.39,1));
 
-    color: #9E9EA0;
+    color: map-get($colors, 'grey-text');
     position: absolute;
 
     .-big & {
@@ -88,38 +68,25 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     }
 
     .is-filled & {
-        color: #9E9EA0;
+        color: map-get($colors, 'grey-text');
     }
 
     .is-error & {
-        color: #E63200;
+        color: #e63200;
     }
 
     .is-warning & {
-        color: #ECB800;
+        color: #ecb800;
     }
-
-
 }
 
-
 .cui__field__input {
-  /*@include transition(all .07s linear);*/
-
     @include appearance(none);
     @include box-sizing(border-box);
     @include typography(15px, semi-bold);
-    /*@include generated-border-classes();*/
-    /*@include transition(padding 0.1s $ease-out);*/
-
-    /*@include placeholder {*/
-        /*color: $editor-placeholder-color;*/
-        /*font-weight: normal;*/
-    /*}*/
 
     border: 0;
     background-color: transparent;
-    border-radius: 0;
     color: $input-editor-color;
     position: absolute;
     width: 100%;
@@ -150,60 +117,13 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         border: 1px solid $input-border-color;
     }
 
-    @include respond-to-ie-and-stock {
-        background-color: transparent;
-        // base64 encoded version of `img/molecules/field/field.background.png`
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
-        z-index: 2;
-
-        &[disabled] {
-            background-color: transparent;
-            // base64 encoded version of `img/molecules/field/field.background.disabled.png`
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII=');
-        }
-    }
-
     &:focus, &:hover {
         outline: none;
-    }
-
-    /*&:focus,*/
-    /*&.has-fake-focus {*/
-        /*border: 1px solid $input-border-color-focus;*/
-        /*box-shadow: 0 0 3px 1px $input-border-color-focus;*/
-        /*z-index: 1;*/
-    /*}*/
-
-    &::-webkit-input-placeholder {
-        color: $editor-placeholder-color;
-    }
-
-    //  Firefox 19+
-    &::-moz-placeholder {
-        color: $editor-placeholder-color;
-        opacity: 1;
     }
 
     // Disable clear field icon for IE10+
     &::-ms-clear {
         width : 0;
         height: 0;
-    }
-
-    &[disabled] {
-        background: $input-disabled-background-color;
-        color: $input-disabled-color;
-        -webkit-text-fill-color: $input-disabled-color;
-        opacity: 1;
-
-        &::-webkit-input-placeholder {
-            color: $editor-placeholder-color;
-        }
-
-        //  Firefox 19+
-        &::-moz-placeholder {
-            color: $input-disabled-color;
-            opacity: 1;
-        }
     }
 }
