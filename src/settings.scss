@@ -40,6 +40,11 @@ $font-weights: (
   bold: 700
 );
 
+$border-color: map-get($colors, grey-lines);
+$border-color-focus: rgba(26, 140, 220, 0.8);
+$box-shadow-focus: rgba(26, 140, 220, 0.6);
+
+
 $tooltip-arrow-color: #ededed;
 
 $input-box-shadow-color: #9a9a9a;
@@ -57,8 +62,6 @@ $editor-placeholder-color: #9e9ea0;
 
 $divider-border-color: #F2F0F0;
 $form-border-color: map-get($colors, grey-lines);
-$input-border-color-focus: #0072CC;
-$input-border-color-disabled: #a6a6a6;
 
 
 // ================================================================
