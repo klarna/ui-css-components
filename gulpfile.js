@@ -87,6 +87,7 @@ gulp.task('build:sass', function() {
 
 gulp.task('build:jade', function() {
     gulp.src('*.jade')
+        .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
 });
