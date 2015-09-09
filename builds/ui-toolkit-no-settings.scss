@@ -1,10 +1,10 @@
 @import "../vendor/bourbon/bourbon";
 
 @import "../src/mixins/animations";
-@import "../src/mixins/borders";
 @import "../src/mixins/dimensions";
 @import "../src/mixins/ie-and-stock";
 @import "../src/mixins/ie";
+@import "../src/mixins/opacity";
 @import "../src/mixins/responsive";
 @import "../src/mixins/retina-image-compat";
 @import "../src/mixins/tools";
@@ -23,5 +23,4 @@
 @import "../src/atoms/tagline";
 @import "../src/atoms/tooltip";
 
-@import "../src/molecules/select";
 @import "../src/molecules/field";

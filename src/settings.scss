@@ -2,15 +2,15 @@
 //  General
 // ================================================================
 $ui-toolkit-path: "";
+$border-radius: 5px;
 
 // ================================================================
 //  Typography
 // ================================================================
-$base-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$base-font-family: "Open Sans", sans-serif;
 $base-font-size: 16px;
 $base-line-height: 21px;
 
-$cta-button-font-size: 20px;
 $flat-button-font-size: 15px;
 
 // ================================================================
@@ -20,23 +20,30 @@ $max-width: 640px;
 $mobile-max-width: 569px;
 
 // ================================================================
-//  Fields
-// ================================================================
-$field-horizontal-margin: 2%;
-
-
-// ================================================================
 //  Colors
 // ================================================================
-$klarna-blue: #0072CC;
+$colors: (
+  klarna-blue: #0074c8,
+  morning-blue: #1a8cdc,
+  black: #3c3c3e,
+  grey-text: #9e9ea0,
+  grey-lines: #cbcbcd,
+  light-grey: #f5f5f7,
+  modal: #46505a,
+  white: #fff
+);
 
-// This properties can be overriden by the merchant styling
-$primary-color-button-background: $klarna-blue;
-$primary-color-button-color: #fff;
+$font-weights: (
+  light: 300,
+  regular: 400,
+  semi-bold: 600,
+  bold: 700
+);
 
-// This properties are *not* merchant overridable
-$secondary-button-background: #fff;
-$secondary-button-color: #555;
+$border-color: map-get($colors, grey-lines);
+$border-color-focus: rgba(26, 140, 220, 0.8);
+$box-shadow-focus: rgba(26, 140, 220, 0.6);
+
 
 $tooltip-arrow-color: #ededed;
 
@@ -51,17 +58,10 @@ $input-warning-background-color-rgba: rgba(255, 255, 0, 0.05);
 $input-tooltip-text-color: #D0021B;
 $input-tooltip-text-color--warning: #ECB801;
 $input-editor-color: #595959;
-$editor-placeholder-color: #a9a9a9;
+$editor-placeholder-color: #9e9ea0;
 
 $divider-border-color: #F2F0F0;
-$form-border-color: #CBCBCB;
-$input-border-color: #CBCBCB;
-$input-border-color-focus: #0072CC;
-$input-border-color-disabled: #a6a6a6;
-$preview-border-color: #CBCBCB;
-$secondary-button-border-color: #CBCBCB;
-$selector-border-color: #CBCBCB;
-
+$form-border-color: map-get($colors, grey-lines);
 
 
 // ================================================================
@@ -77,7 +77,6 @@ $checkbox-font-size: 13px;
 //  Input
 // ================================================================
 $input-line-height: 14px * 1.5;
-$input-border-radius: 5px;
 $invalid-text-top-offset: 1.5;
 
 
@@ -85,13 +84,6 @@ $invalid-text-top-offset: 1.5;
 //  Header
 // ================================================================
 $header-margin: 16px;
-
-
-// ================================================================
-//  Buttons
-// ================================================================
-$button-border-radius: 5px;
-
 
 // ================================================================
 //  Tooltip

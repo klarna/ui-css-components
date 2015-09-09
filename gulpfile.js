@@ -11,6 +11,10 @@ var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var addsrc = require('gulp-add-src');
+var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
+var data = require('gulp-data');
+var fetchDocs = require('./support/fetchDocs');
 
 // ====================================================================
 // DEVELOPMENT
@@ -29,13 +33,16 @@ gulp.task('browser-sync', function() {
 // will auto-update browsers
 gulp.task('reload:sass', function() {
     gulp.src('builds/ui-toolkit.scss')
+        .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(sass())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:jade', function() {
+gulp.task('reload:docs', function() {
     gulp.src('*.jade')
+        .pipe(plumber(notify.onError("Error: <%= error.message %>")))
+        .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
@@ -43,6 +50,11 @@ gulp.task('reload:jade', function() {
 
 gulp.task('reload:html', function() {
     gulp.src('index.html')
+        .pipe(reload({stream: true}));
+});
+
+gulp.task('reload:docs:styles', function() {
+    gulp.src('support/*.css')
         .pipe(reload({stream: true}));
 });
 
@@ -54,11 +66,11 @@ gulp.task('reload:js', function() {
 });
 
 // Default task to be run with `gulp`
-gulp.task('default', ['reload:sass', 'reload:jade', 'browser-sync'], function() {
+gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync'], function() {
     gulp.watch('src/**/*.scss', ['reload:sass']);
     gulp.watch('builds/**/*.scss', ['reload:sass']);
-    gulp.watch('*.jade', ['reload:jade']);
-    gulp.watch('snippets/*.html', ['reload:jade']);
+    gulp.watch(['*.jade', 'docs/**/*'], ['reload:docs']);
+    gulp.watch(['support/*.css'], ['reload:docs:styles']);
     gulp.watch('ui-toolkit.js', ['reload:js']);
     gulp.watch('index.html', ['reload:html']);
 });
@@ -75,6 +87,7 @@ gulp.task('build:sass', function() {
 
 gulp.task('build:jade', function() {
     gulp.src('*.jade')
+        .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
 });
