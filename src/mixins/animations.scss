@@ -1,6 +1,5 @@
-#FIXME please gimme a hand here Matthias
-@include keyframes(spin) {
+keyframes(spin) {
     to {
-        @include transform(rotate(1turn))
+        transform: rotate(1turn)
     }
 }
