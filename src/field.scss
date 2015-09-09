@@ -2,15 +2,15 @@ $editor-with-icon-padding-left: 41px;
 $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 
 .cui__field {
-    @include box-sizing(border-box);
 
     border: 1px solid $border-color;
+    box-sizing: border-box;
     position: relative;
     height: 50px;
     border-radius: $border-radius;
 
     &.-big {
-      height: 60px;
+        height: 60px;
     }
 
     &.is-hidden {
@@ -40,31 +40,32 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         border-color: #e6c88c;
 
         @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str($input-warning-background-color-rgba);
+            $ie-hex: ie-hex-str(#fffaf0);
             -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
         }
     }
 }
 
 .cui__field__label {
-    @include transform(translate(12px, 12px));
     @include typography(15px, regular);
-    @include transition(all .16s cubic-bezier(0,.98,.39,1));
 
     color: map-get($colors, 'grey-text');
     position: absolute;
+    transform: translate(12px, 12px);
+    transition: all .16s cubic-bezier(0,.98,.39,1);
 
     .-big & {
-      @include transform(translate(12px, 17px));
+        transform: translate(12px, 17px);
     }
 
     .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
-      @include transform(translate(12px, 6px));
+        transform: translate(12px, 6px);
     }
 
     .is-filled &, .is-error &, .is-warning & {
         @include typography(11px, regular);
-        @include transform(translate(13px, 3px));
+
+        transform: translate(13px, 3px);
     }
 
     .is-filled & {
@@ -81,13 +82,13 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 }
 
 .cui__field__input {
-    @include appearance(none);
-    @include box-sizing(border-box);
     @include typography(15px, semi-bold);
 
-    border: 0;
+    appearance: none;
     background-color: transparent;
-    color: $input-editor-color;
+    border: 0;
+    box-sizing: border-box;
+    color: #3C3C3E;
     position: absolute;
     width: 100%;
     padding: 0 12px;
