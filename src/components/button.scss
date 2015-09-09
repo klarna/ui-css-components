@@ -57,7 +57,7 @@
 }
 
 @mixin cui__button__loader($image-name) {
-    @include retina-image-compat($ui-toolkit-path + 'img/loader/' + $image-name, 20px 20px);
+    @include retina-image-compat($ui-toolkit-path + 'img/button/' + $image-name, 20px 20px);
 
     animation: spin 0.8s linear infinite;
     -webkit-animation: spin 0.8s linear infinite;
@@ -74,13 +74,13 @@
 
     // Preload the image
     &:before {
-        content: url($ui-toolkit-path + 'img/loader/' + $image-name + '.png');
+        content: url($ui-toolkit-path + 'img/button/' + $image-name + '.png');
         display: none;
         height: 0;
         width: 0;
 
         @include hidpi {
-            content: url($ui-toolkit-path + 'img/loader/' + $image-name + '@2x.png');
+            content: url($ui-toolkit-path + 'img/button/' + $image-name + '@2x.png');
         }
     }
 }
