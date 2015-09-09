@@ -5,9 +5,6 @@ $bubble-chevron-width-back:  26px;
 $bubble-chevron-width-front: 24px;
 $bubble-border-color: #ddd;
 $bubble-background: #fff;
-$bubble-border-radius: 5px;
-
-
 
 // ================================================================
 // MIXINS
@@ -17,8 +14,7 @@ $bubble-border-radius: 5px;
     $border-color: $bubble-border-color,
     $chevron-width-front: $bubble-chevron-width-front,
     $chevron-width-back: $bubble-chevron-width-back,
-    $background: $bubble-background,
-    $border-radius: $bubble-border-radius
+    $background: $bubble-background
 ) {
   background: $background;
   border: 1px solid $border-color;

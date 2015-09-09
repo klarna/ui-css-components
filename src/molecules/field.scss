@@ -4,7 +4,14 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 .cui__field {
     @include box-sizing(border-box);
 
+    border: 1px solid $border-color;
     position: relative;
+    height: 50px;
+    border-radius: $border-radius;
+
+    &.-big {
+      height: 60px;
+    }
 
     &.is-hidden {
         display: none;
@@ -13,124 +20,24 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     &:focus {
         outline: none;
     }
-}
 
-
-.cui__placeholder {
-    color: $editor-placeholder-color;
-    font-weight: normal;
-}
-
-.cui__editor--text {
-    @include appearance(none);
-    @include box-sizing(border-box);
-    @include font-size(15px);
-    @include generated-border-classes();
-    @include transition(padding 0.1s $ease-out);
-
-    @include placeholder {
-        color: $editor-placeholder-color;
-        font-weight: normal;
+    &:hover {
+        border: 1px solid $border-color-focus;
     }
 
-    background-color: white;
-    border: 1px solid $input-border-color;
-    border-radius: 0;
-    color: $input-editor-color;
-    font-weight: 600;
-    line-height: 19px;
-    margin: 0;
-    padding: 12px;
-    position: relative;
-    width: 100%;
-    height: 45px;
-
-    .safari &,
-    .ios & {
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-
-    @include respond-to-ie(8) {
-        border: 1px solid $input-border-color;
-    }
-
-    @include respond-to-ie-and-stock {
-        background-color: transparent;
-        // base64 encoded version of `img/molecules/field/field.background.png`
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
-        z-index: 2;
-
-        &[disabled] {
-            background-color: transparent;
-            // base64 encoded version of `img/molecules/field/field.background.disabled.png`
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNi4AIAABMADSrGmbwAAAAASUVORK5CYII=');
-        }
-    }
-
-    &:focus, &:hover {
-        outline: none;
-    }
-
-    &:focus,
-    &.has-fake-focus {
-        border: 1px solid $input-border-color-focus;
-        box-shadow: 0 0 3px 1px $input-border-color-focus;
-        z-index: 1;
-    }
-
-    &::-webkit-input-placeholder {
-        color: $editor-placeholder-color;
-    }
-
-    //  Firefox 19+
-    &::-moz-placeholder {
-        color: $editor-placeholder-color;
-        opacity: 1;
-    }
-
-    // Disable clear field icon for IE10+
-    &::-ms-clear {
-        width : 0;
-        height: 0;
-    }
-
-    &[disabled] {
-        background: $input-disabled-background-color;
-        color: $input-disabled-color;
-        -webkit-text-fill-color: $input-disabled-color;
-        opacity: 1;
-
-        &::-webkit-input-placeholder {
-            color: $editor-placeholder-color;
-        }
-
-        //  Firefox 19+
-        &::-moz-placeholder {
-            color: $input-disabled-color;
-            opacity: 1;
-        }
-    }
-
-    &.is-invalid,
-    &.is-error,
-    &.is-warning,
-    .show-label & {
-        padding-bottom: 2px;
-        padding-top: 16px;
+    &.is-focused {
+        border: 1px solid $border-color-focus;
+        box-shadow: 0 0 4px $box-shadow-focus;
     }
 
     &.is-error {
-        background-color: $input-error-background-color-rgba;
-
-        @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str($input-error-background-color-rgba);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        }
-
+        background-color: #fff8f7;
+        border-color: #e6bebe;
     }
 
     &.is-warning {
-        background-color: $input-warning-background-color-rgba;
+        background-color: #fffaf0;
+        border-color: #e6c88c;
 
         @include respond-to-ie(8) {
             $ie-hex: ie-hex-str($input-warning-background-color-rgba);
@@ -139,171 +46,84 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     }
 }
 
-.cui__editor--with-icon {
-    @extend .cui__editor--text;
+.cui__field__label {
+    @include transform(translate(12px, 12px));
+    @include typography(15px, regular);
+    @include transition(all .16s cubic-bezier(0,.98,.39,1));
 
-    padding-left: $editor-with-icon-padding-left;
-}
-
-.cui__editor-wrapper {
-    height: 44px;
-    position: relative;
-
-    @include respond-to-ie-and-stock {
-        &:after {
-            @include font-size(15px);
-
-            box-sizing: border-box;
-            color: $editor-placeholder-color;
-            content: attr(data-placeholder);
-            display: block;
-            height: 45px;
-            left: 0;
-            line-height: 45px;
-            padding: 0 13px;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 1;
-        }
-
-        &.is-invalid:after {
-            padding-top: 7px;
-        }
-
-        &.is-placeholder-hidden:after {
-            display: none;
-        }
-    }
-}
-
-.cui__editor-wrapper--with-icon {
-    @extend .cui__editor-wrapper;
-
-    @include respond-to-ie-and-stock {
-        &:after {
-            padding-left: $editor-with-icon-padding-left;
-        }
-    }
-}
-
-.cui__editor-wrapper__loader {
-    @extend .cui__loader--small;
-
-    pointer-events: none;
+    color: map-get($colors, 'grey-text');
     position: absolute;
-    right: 14px;
-    top: 14px;
-    z-index: 3;
-}
 
-@mixin field_tooltip($text-color) {
-    @include font-size(11px);
-    @include box-sizing(border-box);
-    @include transform(translateY(5px));
-    @include transition-property(all);
-    @include transition-duration(0.2s);
-    @include transition-timing-function($ease-out);
-
-    border-radius: 0;
-    top: 9px;
-    left: 13px;
-    color: $text-color;
-    font-weight: normal;
-    line-height: 1em;
-    pointer-events: none;
-    position: absolute;
-    z-index: 10;
-    opacity: 0;
-    display: block;
-
-    @include respond-to-ie((8,9)) {
-        display: none;
+    .-big & {
+      @include transform(translate(12px, 17px));
     }
 
-    &.is-visible {
-        display: block; // For IE8-9
-        opacity: 1;
-        @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+      @include transform(translate(12px, 6px));
     }
-}
 
-@mixin error-tooltip($text-color) {
-    @include field_tooltip($text-color);
+    .is-filled &, .is-error &, .is-warning & {
+        @include typography(11px, regular);
+        @include transform(translate(13px, 3px));
+    }
+
+    .is-filled & {
+        color: map-get($colors, 'grey-text');
+    }
 
     .is-error & {
-        display: block; // For IE8-9
-        opacity: 1;
-        @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        color: #e63200;
     }
-}
-
-@mixin warning-tooltip($text-color) {
-    @include field_tooltip($text-color);
 
     .is-warning & {
-        display: block; // For IE8-9
-        opacity: 1;
-        @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        color: #ecb800;
     }
 }
 
-@mixin label-tooltip($text-color) {
-    @include field_tooltip($text-color);
+.cui__field__input {
+    @include appearance(none);
+    @include box-sizing(border-box);
+    @include typography(15px, semi-bold);
 
-    .show-label & {
-        display: block; // For IE8-9
-        opacity: 1;
-        @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+    border: 0;
+    background-color: transparent;
+    color: $input-editor-color;
+    position: absolute;
+    width: 100%;
+    padding: 0 12px;
+
+    height: 48px;
+
+    .-big & {
+      height: 58px;
     }
-}
 
-.cui__field__error-tooltip {
-    @include error-tooltip($input-tooltip-text-color);
-}
+    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+      height: 38px;
+      top: 18px;
+    }
 
-.cui__field__warning-tooltip {
-    @include warning-tooltip($input-tooltip-text-color--warning);
-}
+    .is-filled &, .is-error &, .is-warning & {
+        height: 38px;
+        top: 10px;
+    }
 
-.cui__field__error-tooltip--with-icon {
-    @include error-tooltip($input-tooltip-text-color);
-    left: $editor-with-icon-padding-left;
-}
+    .safari &,
+    .ios & {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
 
-.cui__field__warning-tooltip--with-icon {
-    @include warning-tooltip($input-tooltip-text-color--warning);
-    left: $editor-with-icon-padding-left;
-}
+    @include respond-to-ie(8) {
+        border: 1px solid $border-color;
+    }
 
-.cui__label {
-    @include label-tooltip($editor-placeholder-color);
-}
+    &:focus, &:hover {
+        outline: none;
+    }
 
-.cui__label--with-icon {
-    @include label-tooltip($editor-placeholder-color);
-    left: $editor-with-icon-padding-left;
-}
-
-
-// ================================================================
-//  GROUP FIELDS
-// ================================================================
-.cui__field--is-left {
-    float: left;
-}
-
-.cui__field--is-middle {
-    float: left;
-}
-
-.cui__field--is-right {
-    float: left;
-
-}
-.cui__editor--text {
+    // Disable clear field icon for IE10+
+    &::-ms-clear {
+        width : 0;
+        height: 0;
+    }
 }

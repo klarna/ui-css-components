@@ -6,7 +6,7 @@
     );
 
     background: $background;
-    border-radius: $button-border-radius;
+    border-radius: $border-radius;
     border: 1px solid map-get($colors, klarna-blue);
     color: $text-color;
     cursor: pointer;

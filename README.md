@@ -70,33 +70,6 @@ The UI Toolkit includes a JS library. Include that with:
 
 Documentation for the JS library is patchy.
 
-#### Fake placeholders for IE and Android
-
-The UI Toolkit provides fake placeholders for the `field` component. You have to initialize them after rendering. For example:
-
-```html
-<div class="cui__field">
-  <span class="cui__field__error-tooltip">
-    Error
-  </span>
-
-  <div
-    class="cui__editor-wrapper">
-    <input
-      type="text"
-      class="cui__editor--text"
-      placeholder="Please write your email address"
-      value="" />
-  </div>
-</div>
-
-<script type="text/javascript">
-  var editor  = document.querySelector('.cui__editor--text');
-  var wrapper = document.querySelector('.cui__editor-wrapper');
-
-  UIToolkit.fakePlaceholders(editor, wrapper);
-</script>
-```
 ### SVG pipeline
 
 For adding SVGs to the toolkit, the pipeline is:
