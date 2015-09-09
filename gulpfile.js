@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var sass = require('gulp-sass');
@@ -21,7 +23,7 @@ var fetchDocs = require('./docs/support/fetchDocs');
 // ====================================================================
 
 // browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
     browserSync({
         server: {
             baseDir: './'
@@ -31,15 +33,16 @@ gulp.task('browser-sync', function() {
 
 // Sass task, will run when any SCSS files change & BrowserSync
 // will auto-update browsers
-gulp.task('reload:sass', function() {
+gulp.task('reload:sass', function () {
     gulp.src('src/builds/ui-toolkit.scss')
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(sass())
+        .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('./dist/'))
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:docs', function() {
+gulp.task('reload:docs', function () {
     gulp.src('*.jade')
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(data(fetchDocs))
@@ -48,44 +51,50 @@ gulp.task('reload:docs', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:docs:styles', function() {
+gulp.task('reload:docs:styles', function () {
     gulp.src('docs/support/*.css')
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:js', function() {
+gulp.task('reload:js', function () {
     gulp.src('dist/ui-toolkit.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(reload({stream: true}));
 });
 
+gulp.task('images', function () {
+    gulp.src('src/img/**/*')
+        .pipe(gulp.dest('dist/img/'));
+});
+
 // Default task to be run with `gulp`
-gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync'], function() {
+gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync', 'images'], function () {
     gulp.watch('src/**/*.scss', ['reload:sass']);
     gulp.watch(['*.jade', 'docs/**/*'], ['reload:docs']);
     gulp.watch(['support/*.css'], ['reload:docs:styles']);
     gulp.watch('ui-toolkit.js', ['reload:js']);
+    gulp.watch('src/img/**/*', ['images']);
 });
 
 
 // ====================================================================
 // BUILD
 // ====================================================================
-gulp.task('build:sass', function() {
+gulp.task('build:sass', function () {
     gulp.src('src/builds/ui-toolkit.scss')
         .pipe(sass())
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('build:jade', function() {
+gulp.task('build:jade', function () {
     gulp.src('*.jade')
         .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('build:js', function() {
+gulp.task('build:js', function () {
     gulp.src('dist/ui-toolkit.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
@@ -99,7 +108,7 @@ gulp.task('publish', function () {
         secretAccessKey: process.env.AWS_SECRET_KEY,
         region: "eu-west-1",
         params: {
-          Bucket: "klarna-static-assets"
+            Bucket: "klarna-static-assets"
         }
     };
     var publisher = AWS.create(awsConfig);
@@ -109,13 +118,15 @@ gulp.task('publish', function () {
         .pipe(minifyCss())
         .pipe(addsrc('img/**/*'))
         .pipe(revAll.revision())
-        .pipe(rename(function (path) { path.dirname = 'ui-toolkit/' + path.dirname; }))
+        .pipe(rename(function (path) {
+            path.dirname = 'ui-toolkit/' + path.dirname;
+        }))
         .pipe(AWS.gzip())
         .pipe(publisher.publish(headers, {createOnly: true}))
         .pipe(publisher.cache())
         .pipe(AWS.reporter());
 });
 
-gulp.task('build', ['build:sass', 'build:jade', 'build:js']);
+gulp.task('build', ['build:sass', 'build:jade', 'build:js', 'images']);
 
-gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip', 'images:tagline']);
+//gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip', 'images:tagline']);
