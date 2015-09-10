@@ -22,7 +22,6 @@
   },
   "scripts": {
     "start": "gulp",
-    "images": "gulp images",
     "build": "gulp build"
   },
   "repository": {
