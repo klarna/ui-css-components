@@ -7,7 +7,6 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var jshint = require('gulp-jshint');
 var svg2png = require('gulp-svg2png');
-var rename = require('gulp-rename');
 var RevAll = require('gulp-rev-all');
 var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
@@ -74,7 +73,7 @@ gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync', 'images'], f
     gulp.watch(['*.jade', 'docs/**/*'], ['reload:docs']);
     gulp.watch(['support/*.css'], ['reload:docs:styles']);
     gulp.watch('ui-toolkit.js', ['reload:js']);
-    gulp.watch('src/img/**/*', ['images']);
+    gulp.watch('src/img/*', ['images']);
 });
 
 
@@ -128,5 +127,3 @@ gulp.task('publish', function () {
 });
 
 gulp.task('build', ['build:sass', 'build:jade', 'build:js', 'images']);
-
-//gulp.task('images', ['images:logos', 'images:molecules', 'images:tooltip', 'images:tagline']);
