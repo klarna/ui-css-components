@@ -64,8 +64,8 @@ gulp.task('reload:js', function () {
 });
 
 gulp.task('images', function () {
-    gulp.src('src/img/**/*')
-        .pipe(gulp.dest('dist/img/'));
+    gulp.src('src/img/*')
+        .pipe(gulp.dest('dist/img'));
 });
 
 // Default task to be run with `gulp`

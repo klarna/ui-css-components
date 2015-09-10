@@ -102,7 +102,7 @@
     .cui__button--primary.is-disabled:active {
       background: #0074c8; }
   .cui__button--primary__loader {
-    background-image: url("img/button/button--primary__loader.png");
+    background-image: url("img/button--primary__loader.png");
     animation: spin 0.8s linear infinite;
     -webkit-animation: spin 0.8s linear infinite;
     display: inline-block;
@@ -112,19 +112,19 @@
     width: 20px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--primary__loader {
-        background-image: url("img/button/button--primary__loader@2x.png");
+        background-image: url("img/button--primary__loader@2x.png");
         background-size: 20px 20px; } }
     .ie8 .cui__button--primary__loader, .cui__browser--ie8 .cui__button--primary__loader, .ie9 .cui__button--primary__loader, .cui__browser--ie9 .cui__button--primary__loader {
       font-size: 15px;
       font-size: 0.9375rem; }
     .cui__button--primary__loader:before {
-      content: url("img/button/button--primary__loader.png");
+      content: url("img/button--primary__loader.png");
       display: none;
       height: 0;
       width: 0; }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__button--primary__loader:before {
-          content: url("img/button/button--primary__loader@2x.png"); } }
+          content: url("img/button--primary__loader@2x.png"); } }
 
 .cui__button--secondary {
   font-size: 15px;
@@ -171,7 +171,7 @@
     .cui__button--secondary.is-disabled:active {
       background: white; }
   .cui__button--secondary__loader {
-    background-image: url("img/button/button--secondary__loader.png");
+    background-image: url("img/button--secondary__loader.png");
     animation: spin 0.8s linear infinite;
     -webkit-animation: spin 0.8s linear infinite;
     display: inline-block;
@@ -181,19 +181,19 @@
     width: 20px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--secondary__loader {
-        background-image: url("img/button/button--secondary__loader@2x.png");
+        background-image: url("img/button--secondary__loader@2x.png");
         background-size: 20px 20px; } }
     .ie8 .cui__button--secondary__loader, .cui__browser--ie8 .cui__button--secondary__loader, .ie9 .cui__button--secondary__loader, .cui__browser--ie9 .cui__button--secondary__loader {
       font-size: 15px;
       font-size: 0.9375rem; }
     .cui__button--secondary__loader:before {
-      content: url("img/button/button--secondary__loader.png");
+      content: url("img/button--secondary__loader.png");
       display: none;
       height: 0;
       width: 0; }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__button--secondary__loader:before {
-          content: url("img/button/button--secondary__loader@2x.png"); } }
+          content: url("img/button--secondary__loader@2x.png"); } }
 
 .cui__field {
   border: 1px solid #cbcbcd;
