@@ -47,6 +47,12 @@ There are two main strategies for integrating the UI Toolkit into your project. 
 
 If you do this, however, you are going to miss on all the SASS mixins and variables that the toolkit bundles.
 
+You'll also need Open Sans font. To use it from Google Fonts, include this to your HTML:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+```
+
 Alternatively, you can integrate directly the SASS files. To do that, you can either import `src/builds/ui-toolkit.scss` into your SASS or import only the mixins and components that you are interested in. If you select manually a subset of components, please bear in mind that you might need to provide defaults for some variables and you might also need to include mixins for the components to build properly.
 
 #### Easiest way with SASS
