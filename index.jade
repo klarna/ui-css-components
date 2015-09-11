@@ -12,11 +12,8 @@ html(lang="en")
     link(rel='stylesheet' href='docs/support/doc.css')
     link(rel='stylesheet' href='docs/support/hljs.css')
 
-    link(rel='stylesheet' href='bower_components/ss-pika/webfonts/ss-pika.css')
     script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
     script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
-
-    script(type='text/javascript' src='dist/ui-toolkit.js')
 
   body
     nav
@@ -61,6 +58,27 @@ html(lang="en")
         $('#menu a').click(function(){
           $('section').hide();
           $('[id="' + anchor(this.href) + '"]').show();
+        })
+
+        $('.toggle-grid').click(function(){
+          console.log(this.grid, '<<<');
+          if(this.grid == 'on') {
+            this.grid = 'off'
+            $(this).text('Grid off');
+            $(this).parent().find('.grid').remove();
+          } else {
+            this.grid = 'on'
+            var grid = $(this).data('grid');
+            var bg = 'url(http://basehold.it/image.php?height=' + grid + '&r=199&g=213&b=229&a=1);';
+            var after = $('<div class="grid" />')
+              .css({
+                backgroundImage: bg,
+                top: 30 - grid + 0.5,
+                bottom: 29.5
+              });
+            $(this).parent().append(after);
+            $(this).text('Grid on');
+          }
         })
 
         hljs.initHighlightingOnLoad();
