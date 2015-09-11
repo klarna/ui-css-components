@@ -1,3 +1,6 @@
+html {
+  font-size: 10px; }
+
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
@@ -39,27 +42,8 @@
 /**
  * Adds all atributes to define the best typography as possible
  */
-/**
- * Convert px to rem
- */
-/**
- * Render font size in rem, with fallback to px
- */
-/**
- * Calculate rhythm units
- * http://compass-style.org/reference/compass/typography/vertical_rhythm/#function-rhythm
- */
-/**
- * Apply a border and whitespace to any side without destroying the vertical rhythm. The whitespace must be greater than the width of the border.
- * http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-apply-side-rhythm-border
- */
-/**
- * Render calc() with vendor prefixes
- * Provide $fallback for not supportin browsers (IE8)
- */
 .cui__button--primary {
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -115,8 +99,7 @@
         background-image: url("img/button--primary__loader@2x.png");
         background-size: 20px 20px; } }
     .ie8 .cui__button--primary__loader, .cui__browser--ie8 .cui__button--primary__loader, .ie9 .cui__button--primary__loader, .cui__browser--ie9 .cui__button--primary__loader {
-      font-size: 15px;
-      font-size: 0.9375rem; }
+      font-size: rem2px(1.5rem); }
     .cui__button--primary__loader:before {
       content: url("img/button--primary__loader.png");
       display: none;
@@ -127,8 +110,7 @@
           content: url("img/button--primary__loader@2x.png"); } }
 
 .cui__button--secondary {
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -184,8 +166,7 @@
         background-image: url("img/button--secondary__loader@2x.png");
         background-size: 20px 20px; } }
     .ie8 .cui__button--secondary__loader, .cui__browser--ie8 .cui__button--secondary__loader, .ie9 .cui__button--secondary__loader, .cui__browser--ie9 .cui__button--secondary__loader {
-      font-size: 15px;
-      font-size: 0.9375rem; }
+      font-size: rem2px(1.5rem); }
     .cui__button--secondary__loader:before {
       content: url("img/button--secondary__loader.png");
       display: none;
@@ -196,13 +177,14 @@
           content: url("img/button--secondary__loader@2x.png"); } }
 
 .cui__field {
+  background: #fff;
   border: 1px solid #cbcbcd;
+  border-radius: 5px;
   box-sizing: border-box;
   position: relative;
-  height: 50px;
-  border-radius: 5px; }
+  height: 5rem; }
   .cui__field.-big {
-    height: 60px; }
+    height: 6rem; }
   .cui__field.is-hidden {
     display: none; }
   .cui__field:focus {
@@ -222,8 +204,7 @@
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
 
 .cui__field__label {
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
@@ -244,8 +225,7 @@
         -ms-transform: translate(12px, 6px);
             transform: translate(12px, 6px); }
   .is-filled .cui__field__label, .is-error .cui__field__label, .is-warning .cui__field__label {
-    font-size: 11px;
-    font-size: 0.6875rem;
+    font-size: 1.1rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: geometricPrecision;
@@ -261,8 +241,7 @@
     color: #ecb800; }
 
 .cui__field__input {
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -296,3 +275,54 @@
   .cui__field__input::-ms-clear {
     width: 0;
     height: 0; }
+
+.cui__title--primary {
+  color: #0072CC;
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-bottom: 1rem; }
+
+.cui__title--secondary {
+  color: #3C3C3E;
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-bottom: 1rem; }
+
+.cui__subtitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #3C3C3E; }
+
+.cui__paragraph--primary {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #3C3C3E;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.cui__paragraph--secondary {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #9E9EA0;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.cui__paragraph--legal {
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #9E9EA0;
+  line-height: 2rem;
+  margin-bottom: 2rem; }
