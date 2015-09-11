@@ -4,13 +4,15 @@
 $ui-toolkit-path: "";
 
 // ================================================================
-//  Typography
+//  Typography and baseline
 // ================================================================
 $base-font-family: "Open Sans", sans-serif;
-$base-font-size: 16px;
-$base-line-height: 21px;
+$base-font-size: 10px;
+$base-line-height: 15px;
 
-$flat-button-font-size: 15px;
+html {
+    font-size: $base-font-size;
+}
 
 // ================================================================
 //  Page widths
