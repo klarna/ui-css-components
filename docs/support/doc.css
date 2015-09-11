@@ -1,14 +1,19 @@
 * {
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #3C3C3E;
-  line-height: 24px;
+  line-height: 2.5rem;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
@@ -19,60 +24,37 @@ nav {
   left: 80px;
 }
 
+#menu li {
+  box-sizing: border-box;
+  line-height: 30px;
+}
+
 main {
   width: 680px;
   margin: 0 auto 200px auto;
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 26px;
-  color: #0072CC;
-  margin-bottom: 1em;
-  padding-top: 200px;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 26px;
-  color: #3C3C3E;
-  padding: 2em 0 1em 0;
-}
-
-
-h3 {
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #3C3C3E;
-  padding: 3em 0 1em 0;
-}
-
-h2 ~ p, h3 ~ p {
-  color: #9E9EA0;
-}
-
 .example-block {
-  border: 1px solid #CBCBCD;
   border-radius: 5px;
+  box-sizing: border-box;
   overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .example{
-  padding: 30px;
+  padding: 3rem;
+  position: relative;
 }
 
 .code {
-  font-family: "Hack", monospace;
-  font-size: 0.9em;
   background: #f8f8fa;
-  border: 1px solid #e5e5e7;
-  padding: 1px 4px;
   border-radius: 5px;
+  border: 1px solid #e5e5e7;
+  display: inline-block;
+  font-family: Hack, monospace;
+  font-size: inherit;
+  line-height: 2rem;
+  padding: 1px 4px;
 }
 
 .code.class {
@@ -85,7 +67,7 @@ h2 ~ p, h3 ~ p {
 
 td {
   vertical-align: top;
-  padding: 0 1em 1em 0;
+  padding: 0 1rem 1rem 0;
 }
 
 a{
@@ -103,23 +85,23 @@ hr {
 }
 
 .summary li {
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
 .summary li:before {
   content: "•";
-  margin-right: .8em;
+  margin-right: 0.8rem;
   color: #3C3C3E;
 }
 
 .summary li li {
-  margin-left: 30px;
-  font-size: 13px;
+  margin-left: 3rem;
+  font-size: 1.3rem;
 }
 
 .summary li li:before {
   content: "•";
-  margin-right: .8em;
+  margin-right: 1rem;
   color: #9E9EA0;
 }
 
