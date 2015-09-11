@@ -1,16 +1,13 @@
-$editor-with-icon-padding-left: 41px;
-$ease-out: cubic-bezier(0, 0, 0.01, 0.99);
-
 .cui__field {
-
+    background: #fff;
     border: 1px solid $border-color;
+    border-radius: $border-radius;
     box-sizing: border-box;
     position: relative;
-    height: 50px;
-    border-radius: $border-radius;
+    height: 5rem;
 
     &.-big {
-        height: 60px;
+        height: 6rem;
     }
 
     &.is-hidden {
@@ -47,7 +44,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 }
 
 .cui__field__label {
-    @include typography(15px, regular);
+    @include typography(1.5rem, regular);
 
     color: map-get($colors, 'grey-text');
     position: absolute;
@@ -63,7 +60,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
     }
 
     .is-filled &, .is-error &, .is-warning & {
-        @include typography(11px, regular);
+        @include typography(1.1rem, regular);
 
         transform: translate(13px, 3px);
     }
@@ -82,7 +79,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
 }
 
 .cui__field__input {
-    @include typography(15px, semi-bold);
+    @include typography(1.5rem, semi-bold);
 
     appearance: none;
     background-color: transparent;
