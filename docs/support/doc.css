@@ -134,3 +134,28 @@ section {
 .overview li {
   padding: 10px;
 }
+
+.toggle-grid {
+  background: white;
+  border: none;
+  color: #0074C8;
+  outline: none;
+  float: right;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.grid {
+  content: '';
+  display: block;
+  height: auto;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: -1;
+  z-index: 9999;
+}
+
