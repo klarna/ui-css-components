@@ -57,7 +57,6 @@
     @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, 20px 20px);
 
     animation: spin 0.8s linear infinite;
-    -webkit-animation: spin 0.8s linear infinite;
     display: inline-block;
     font-size: 0;
     height: 20px;
