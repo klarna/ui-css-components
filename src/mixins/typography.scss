@@ -17,7 +17,6 @@
     @return $value/$base * 1rem;
 }
 
-
 /**
  * Render font size in rem, with fallback to px
  */
@@ -25,7 +24,6 @@
     font-size: $size-in-px;
     font-size: rem($size-in-px);
 }
-
 
 /**
  * Calculate rhythm units
@@ -54,4 +52,18 @@
   border-#{$side}-style: $border-style;
   border-#{$side}-width: $width / $font-size;
   padding-#{$side}: rhythm($lines, $font-size, $offset: $width);
+}
+
+/**
+ * Render calc() with vendor prefixes
+ * Provide $fallback for not supportin browsers (IE8)
+ */
+@mixin calc($property, $value, $fallback: null) {
+    @if $fallback {
+        #{$property}: $fallback;
+    }
+
+    #{$property}: -webkit-calc(#{$value});
+    #{$property}: -moz-calc(#{$value});
+    #{$property}: calc(#{$value});
 }

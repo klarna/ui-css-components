@@ -1,20 +1,5 @@
-%animate-modal-in {
-  @include animation-name(animate-modal-in);
-  @include animation-duration(0.45s);
-  @include animation-timing-function($ease-out-back);
-  @include animation-fill-mode(both);
-}
-@include keyframes(animate-modal-in) {
-  from {
-    @include transform(scale(0));
-  }
-  to {
-    @include transform(scale(1));
-  }
-}
-
-@include keyframes(spin) {
-    to {
-        @include transform(rotate(1turn))
-    }
+@keyframes spin {
+   to {
+       transform: rotate(1turn)
+   }
 }

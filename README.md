@@ -1,7 +1,7 @@
-KCO UI Toolkit
+UI Toolkit
 ==============
 
-UI Toolkit for the Klarna Checkout.
+UI Toolkit for Klarna.
 
 Installation
 ------------
@@ -42,12 +42,18 @@ You can edit the SCSS files, the Jade file and the HTML snippets and they will b
 There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
 
 ```html
-<link rel="stylesheet" href="bower_components/ui-toolkit/ui-toolkit.css" />
+<link rel="stylesheet" href="bower_components/ui-toolkit/dist/ui-toolkit.css" />
 ```
 
-If you do this, however, you are going to miss on all the SASS mixins and variables that the toolkit bundles, which includes the complete [Bourbon](http://bourbon.io/) 4.0.2 mixin library.
+If you do this, however, you are going to miss on all the SASS mixins and variables that the toolkit bundles.
 
-Alternatively, you can integrate directly the SASS files. To do that, you can either import `builds/ui-toolkit.scss` into your SASS or import only the mixins, atoms and molecules that you are interested in. If you select manually a subset of atoms and molecules, please bear in mind that you might need to provide defaults for some variables and you might also need to include mixins and Bourbon for the components to build properly.
+You'll also need Open Sans font. To use it from Google Fonts, include this to your HTML:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+```
+
+Alternatively, you can integrate directly the SASS files. To do that, you can either import `src/builds/ui-toolkit.scss` into your SASS or import only the mixins and components that you are interested in. If you select manually a subset of components, please bear in mind that you might need to provide defaults for some variables and you might also need to include mixins for the components to build properly.
 
 #### Easiest way with SASS
 
@@ -55,60 +61,8 @@ The easiest way of getting started with the UI Toolkit on SASS is to copy the co
 
 ```scss
 @import 'your-own-settings-file';
-@import 'path/to/toolkit/builds/ui-toolkit-no-settings';
+@import 'path/to/toolkit/src/builds/ui-toolkit-no-settings';
 ```
-
-### JS
-
-The UI Toolkit includes a JS library. Include that with:
-
-```html
-<script
-  type="text/javascript"
-  src="bower_components/ui-toolkit/ui-toolkit.js"></script>
-```
-
-Documentation for the JS library is patchy.
-
-### SVG pipeline
-
-For adding SVGs to the toolkit, the pipeline is:
-
-#### 1. Get a source SVG from sketch
-
-Sketch exports high quality SVG files. For the files to be usable in
-production, they have to be optimized.
-
-Some optimizations can be done manually and they do not affect the
-quality of the image. You can strip:
-
-- The XML version declaration
-- The XML comments
-- The tags: `title`, `desc`, `defs`
-- All the `g`s that cancel each other (warning: if there is an attribute
-  named `fill-rule` make sure some wrapper `g` has it)
-- The `stroke`, `fill` and `stroke-width` attributes from the wrapper `g` tags
-- The `id` attributes of everything
-- The `sketch` namespaced attributes
-
-Add that file in the corresponding /svg folder. No convention is defined
-yet, so please ask if you have doubts.
-
-#### 2. Build a low quality, optimized version
-
-If your SVG is smaller than 10 KB you can probably ignore this.
-
-Copy paste the code of the manually optimized high quality SVG into this site:
-https://petercollingridge.appspot.com/svg-editor
-
-Run the optimizations and download the end result. Add the optimized
-file to the corresponding optimized folder.
-
-#### 3. Get a PNG version with the images task
-
-Gulp includes now a task for building PNG files from SVG. Go to the `gulpfile.js` and make sure your images are in one of the directories to be built: or add your own gulp task for building PNG images in the directories you are using.
-
-Build the PNGs and commit them alongside the SVGs.
 
 Build
 -----

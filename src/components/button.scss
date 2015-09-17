@@ -1,0 +1,113 @@
+@mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
+    @include typography(
+      $size: $flat-button-font-size,
+      $weight: semi-bold
+    );
+
+    appearance: none;
+    background: $background;
+    border-radius: $border-radius;
+    border: 1px solid map-get($colors, klarna-blue);
+    color: $text-color;
+    cursor: pointer;
+    line-height: 48px; // plus borders, 50px
+    outline: none;
+    padding: 0 48px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+
+    &.-small {
+      font-size: 14px;
+      line-height: 38px; //plus borders, 40px
+      padding: 0 28px;
+    }
+
+    &.-big {
+      letter-spacing: 0.4px;
+      line-height: 58px; //plus borders, 60px
+      padding: 0 68px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+        @each $attribute in $darken-attributes {
+          #{$attribute}: darken($darken-color, 5.2);
+        }
+    }
+
+    &:active {
+        @each $attribute in $darken-attributes {
+          #{$attribute}: darken($darken-color, 10.1);
+        }
+    }
+
+    &.is-disabled {
+        @include opacity(0.2);
+        cursor: default;
+
+        &:hover {
+            background: $background;
+        }
+
+        &:active {
+            background: $background;
+        }
+    }
+}
+
+@mixin cui__button__loader($image-name) {
+    @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, 20px 20px);
+
+    animation: spin 0.8s linear infinite;
+    -webkit-animation: spin 0.8s linear infinite;
+    display: inline-block;
+    font-size: 0;
+    height: 20px;
+    vertical-align: text-bottom;
+    width: 20px;
+
+    // IE8 and 9 don't support CSS animations, show the loader text instead.
+    @include respond-to-ie((8,9)) {
+        @include font-size($flat-button-font-size);
+    }
+
+    // Preload the image
+    &:before {
+        content: url($ui-toolkit-path + 'img/' + $image-name + '.png');
+        display: none;
+        height: 0;
+        width: 0;
+
+        @include hidpi {
+            content: url($ui-toolkit-path + 'img/' + $image-name + '@2x.png');
+        }
+    }
+}
+
+.cui__button--primary {
+    @include cui__button(
+        $background: map-get($colors, klarna-blue),
+        $text-color: white,
+        $darken-color: map-get($colors, klarna-blue),
+        $darken-attributes: (background-color, border-color)
+    );
+
+    &__loader {
+        @include cui__button__loader('button--primary__loader');
+    }
+}
+
+.cui__button--secondary {
+    @include cui__button(
+        $background: white,
+        $text-color: map-get($colors, klarna-blue),
+        $darken-color: map-get($colors, klarna-blue),
+        $darken-attributes: (color, border-color)
+    );
+
+    &__loader {
+        @include cui__button__loader('button--secondary__loader');
+    }
+}
+

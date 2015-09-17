@@ -2,7 +2,6 @@
 //  General
 // ================================================================
 $ui-toolkit-path: "";
-$border-radius: 5px;
 
 // ================================================================
 //  Typography
@@ -20,7 +19,7 @@ $max-width: 640px;
 $mobile-max-width: 569px;
 
 // ================================================================
-//  Colors
+//  General colors
 // ================================================================
 $colors: (
   klarna-blue: #0074c8,
@@ -33,6 +32,9 @@ $colors: (
   white: #fff
 );
 
+// ================================================================
+//  Open Sans' weights
+// ================================================================
 $font-weights: (
   light: 300,
   regular: 400,
@@ -40,63 +42,10 @@ $font-weights: (
   bold: 700
 );
 
+// ================================================================
+//  Borders
+// ================================================================
+$border-radius: 5px;
 $border-color: map-get($colors, grey-lines);
 $border-color-focus: rgba(26, 140, 220, 0.8);
 $box-shadow-focus: rgba(26, 140, 220, 0.6);
-
-
-$tooltip-arrow-color: #ededed;
-
-$input-box-shadow-color: #9a9a9a;
-$input-box-shadow-color-inset: #d3d3d3;
-$input-disabled-color: rgb(84, 84, 84);
-$input-disabled-background-color: #f6f6f6;
-$input-error-background-color: #FCF2F3;
-$input-error-background-color-rgba: rgba(255, 0, 0, 0.05);
-$input-warning-background-color: #FEFCE8;
-$input-warning-background-color-rgba: rgba(255, 255, 0, 0.05);
-$input-tooltip-text-color: #D0021B;
-$input-tooltip-text-color--warning: #ECB801;
-$input-editor-color: #595959;
-$editor-placeholder-color: #9e9ea0;
-
-$divider-border-color: #F2F0F0;
-$form-border-color: map-get($colors, grey-lines);
-
-
-// ================================================================
-//  Checkbox
-// ================================================================
-$checkbox-size: 24px;
-$checkbox-background: #0072CC;
-$checkbox-border: #ddd;
-$checkbox-font-size: 13px;
-
-
-// ================================================================
-//  Input
-// ================================================================
-$input-line-height: 14px * 1.5;
-$invalid-text-top-offset: 1.5;
-
-
-// ================================================================
-//  Header
-// ================================================================
-$header-margin: 16px;
-
-// ================================================================
-//  Tooltip
-// ================================================================
-$tooltip-content-width: 190px;
-$tooltip-arrow-size: 16px;
-$tooltip-icon-size-small: 14px;
-$tooltip-icon-size-large: 17px;
-
-
-// ================================================================
-//  Switch
-// ================================================================
-$switch-width: 48px;
-$switch-height: 24px;
-$switch-background: #0072CC;

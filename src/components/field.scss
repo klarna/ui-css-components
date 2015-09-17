@@ -1,0 +1,130 @@
+$editor-with-icon-padding-left: 41px;
+$ease-out: cubic-bezier(0, 0, 0.01, 0.99);
+
+.cui__field {
+
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+    position: relative;
+    height: 50px;
+    border-radius: $border-radius;
+
+    &.-big {
+        height: 60px;
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        border: 1px solid $border-color-focus;
+    }
+
+    &.is-focused {
+        border: 1px solid $border-color-focus;
+        box-shadow: 0 0 4px $box-shadow-focus;
+    }
+
+    &.is-error {
+        background-color: #fff8f7;
+        border-color: #e6bebe;
+    }
+
+    &.is-warning {
+        background-color: #fffaf0;
+        border-color: #e6c88c;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str(#fffaf0);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+    }
+}
+
+.cui__field__label {
+    @include typography(15px, regular);
+
+    color: map-get($colors, 'grey-text');
+    position: absolute;
+    transform: translate(12px, 12px);
+    transition: all .16s cubic-bezier(0,.98,.39,1);
+
+    .-big & {
+        transform: translate(12px, 17px);
+    }
+
+    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+        transform: translate(12px, 6px);
+    }
+
+    .is-filled &, .is-error &, .is-warning & {
+        @include typography(11px, regular);
+
+        transform: translate(13px, 3px);
+    }
+
+    .is-filled & {
+        color: map-get($colors, 'grey-text');
+    }
+
+    .is-error & {
+        color: #e63200;
+    }
+
+    .is-warning & {
+        color: #ecb800;
+    }
+}
+
+.cui__field__input {
+    @include typography(15px, semi-bold);
+
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: #3C3C3E;
+    position: absolute;
+    width: 100%;
+    padding: 0 12px;
+
+    height: 48px;
+
+    .-big & {
+      height: 58px;
+    }
+
+    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+      height: 38px;
+      top: 18px;
+    }
+
+    .is-filled &, .is-error &, .is-warning & {
+        height: 38px;
+        top: 10px;
+    }
+
+    .safari &,
+    .ios & {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    @include respond-to-ie(8) {
+        border: 1px solid $border-color;
+    }
+
+    &:focus, &:hover {
+        outline: none;
+    }
+
+    // Disable clear field icon for IE10+
+    &::-ms-clear {
+        width : 0;
+        height: 0;
+    }
+}

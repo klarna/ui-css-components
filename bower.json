@@ -1,15 +1,14 @@
 {
   "name": "ui-toolkit",
   "authors": [
-    "Team Douglas <team.douglas@klarna.com>"
+    "Klarna"
   ],
-  "description": "KCO UI Toolkit",
-  "main": "toolkit.css",
+  "description": "Klarna UI Toolkit",
+  "main": "dist/toolkit.css",
   "keywords": [
     "klarna",
     "ui",
-    "toolkit",
-    "kco"
+    "toolkit"
   ],
   "private": true,
   "ignore": [
