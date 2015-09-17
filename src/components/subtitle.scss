@@ -3,6 +3,6 @@
   font-size: 1.2rem;
   line-height: 2rem;
   text-transform: uppercase;
-  color: #3C3C3E;
+  color: map-get($colors, black);
 }
 
