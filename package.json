@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.internal.machines:7999/kcoc/ui-toolkit.git"
+    "url": "ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git"
   },
   "keywords": [
     "ui",
