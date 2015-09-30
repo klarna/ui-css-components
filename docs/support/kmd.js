@@ -44,13 +44,9 @@
         return '<' + type + ' class="summary">\n' + body + '</' + type + '>\n';
     };
 
-    renderer.code = function (code, langWithGrid, e) {
-        var lang = langWithGrid.split('.')[0];
-        var grid = langWithGrid.split('.')[1];
-        if(! grid) grid = 10;
-
+    renderer.code = function (code, lang, e) {
         return '<div class="example-block"><div class="example">'
-            + '<button class="toggle-grid" data-grid="' + grid + '")">Grid off</button>'
+            + '<button class="toggle-grid">Grid off</button>'
             + code
             + '</div><pre><code class="'
             + this.options.langPrefix
