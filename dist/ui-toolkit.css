@@ -1,6 +1,3 @@
-html {
-  font-size: 10px; }
-
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
@@ -42,8 +39,14 @@ html {
 /**
  * Adds all atributes to define the best typography as possible
  */
+.cui__baseline {
+  font-size: 5px; }
+
+.cui__baseline__grid {
+  background: url('data:image/svg+xml,\a <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" version="1.1">\a   <rect style="fill:#0033ff;fill-opacity:.6;" width="10" height="0.5" x="0" y="9.5" />\a   <rect style="fill:#0033ff;fill-opacity:.6;" width="10" height="0.5" x="0" y="0" />\a \a   <rect style="fill:#0033ff;fill-opacity:.1;" width="10" height="1" x="0" y="4.5" />\a </svg>'); }
+
 .cui__button--primary {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -54,22 +57,23 @@ html {
   background: #0074c8;
   border-radius: 5px;
   border: 1px solid #0074c8;
+  box-sizing: border-box;
   color: white;
   cursor: pointer;
-  line-height: 48px;
+  line-height: 10rem;
   outline: none;
-  padding: 0 48px;
+  padding: 0 10rem;
   text-align: center;
   text-decoration: none;
   vertical-align: top; }
   .cui__button--primary.-small {
-    font-size: 14px;
-    line-height: 38px;
-    padding: 0 28px; }
+    font-size: 2.8rem;
+    line-height: 7rem;
+    padding: 0 5.6rem; }
   .cui__button--primary.-big {
     letter-spacing: 0.4px;
-    line-height: 58px;
-    padding: 0 68px;
+    line-height: 12rem;
+    padding: 0 14rem;
     text-transform: uppercase; }
   .cui__button--primary:hover {
     background-color: #0065ad;
@@ -87,19 +91,19 @@ html {
       background: #0074c8; }
   .cui__button--primary__loader {
     background-image: url("img/button--primary__loader.png");
-    animation: spin 0.8s linear infinite;
     -webkit-animation: spin 0.8s linear infinite;
+            animation: spin 0.8s linear infinite;
     display: inline-block;
     font-size: 0;
-    height: 20px;
+    height: 4rem;
     vertical-align: text-bottom;
-    width: 20px; }
+    width: 4rem; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--primary__loader {
         background-image: url("img/button--primary__loader@2x.png");
-        background-size: 20px 20px; } }
+        background-size: 4rem 4rem; } }
     .ie8 .cui__button--primary__loader, .cui__browser--ie8 .cui__button--primary__loader, .ie9 .cui__button--primary__loader, .cui__browser--ie9 .cui__button--primary__loader {
-      font-size: rem2px(1.5rem); }
+      font-size: rem2px(3rem); }
     .cui__button--primary__loader:before {
       content: url("img/button--primary__loader.png");
       display: none;
@@ -110,7 +114,7 @@ html {
           content: url("img/button--primary__loader@2x.png"); } }
 
 .cui__button--secondary {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -121,22 +125,23 @@ html {
   background: white;
   border-radius: 5px;
   border: 1px solid #0074c8;
+  box-sizing: border-box;
   color: #0074c8;
   cursor: pointer;
-  line-height: 48px;
+  line-height: 10rem;
   outline: none;
-  padding: 0 48px;
+  padding: 0 10rem;
   text-align: center;
   text-decoration: none;
   vertical-align: top; }
   .cui__button--secondary.-small {
-    font-size: 14px;
-    line-height: 38px;
-    padding: 0 28px; }
+    font-size: 2.8rem;
+    line-height: 7rem;
+    padding: 0 5.6rem; }
   .cui__button--secondary.-big {
     letter-spacing: 0.4px;
-    line-height: 58px;
-    padding: 0 68px;
+    line-height: 12rem;
+    padding: 0 14rem;
     text-transform: uppercase; }
   .cui__button--secondary:hover {
     color: #0065ad;
@@ -154,19 +159,19 @@ html {
       background: white; }
   .cui__button--secondary__loader {
     background-image: url("img/button--secondary__loader.png");
-    animation: spin 0.8s linear infinite;
     -webkit-animation: spin 0.8s linear infinite;
+            animation: spin 0.8s linear infinite;
     display: inline-block;
     font-size: 0;
-    height: 20px;
+    height: 4rem;
     vertical-align: text-bottom;
-    width: 20px; }
+    width: 4rem; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--secondary__loader {
         background-image: url("img/button--secondary__loader@2x.png");
-        background-size: 20px 20px; } }
+        background-size: 4rem 4rem; } }
     .ie8 .cui__button--secondary__loader, .cui__browser--ie8 .cui__button--secondary__loader, .ie9 .cui__button--secondary__loader, .cui__browser--ie9 .cui__button--secondary__loader {
-      font-size: rem2px(1.5rem); }
+      font-size: rem2px(3rem); }
     .cui__button--secondary__loader:before {
       content: url("img/button--secondary__loader.png");
       display: none;
@@ -182,9 +187,9 @@ html {
   border-radius: 5px;
   box-sizing: border-box;
   position: relative;
-  height: 5rem; }
+  height: 10rem; }
   .cui__field.-big {
-    height: 6rem; }
+    height: 12rem; }
   .cui__field.is-hidden {
     display: none; }
   .cui__field:focus {
@@ -203,36 +208,35 @@ html {
     .ie8 .cui__field.is-warning, .cui__browser--ie8 .cui__field.is-warning {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
 
-.cui__field__label {
-  font-size: 1.5rem;
+.cui__field__label, .cui__field__input {
+  font-size: 3rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  line-height: 10rem;
+  padding: 0 2.4rem;
+  position: absolute; }
+
+.cui__field__label {
   color: #9e9ea0;
-  position: absolute;
-  -webkit-transform: translate(12px, 12px);
-      -ms-transform: translate(12px, 12px);
-          transform: translate(12px, 12px);
   -webkit-transition: all 0.16s cubic-bezier(0, 0.98, 0.39, 1);
           transition: all 0.16s cubic-bezier(0, 0.98, 0.39, 1); }
   .-big .cui__field__label {
-    -webkit-transform: translate(12px, 17px);
-        -ms-transform: translate(12px, 17px);
-            transform: translate(12px, 17px); }
+    line-height: 12rem; }
   .-big.is-filled .cui__field__label, .-big.is-error .cui__field__label, .-big.is-warning .cui__field__label {
-    -webkit-transform: translate(12px, 6px);
-        -ms-transform: translate(12px, 6px);
-            transform: translate(12px, 6px); }
+    -webkit-transform: translate(0, -2.2rem);
+        -ms-transform: translate(0, -2.2rem);
+            transform: translate(0, -2.2rem); }
   .is-filled .cui__field__label, .is-error .cui__field__label, .is-warning .cui__field__label {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    -webkit-transform: translate(13px, 3px);
-        -ms-transform: translate(13px, 3px);
-            transform: translate(13px, 3px); }
+    -webkit-transform: translate(0, -2rem);
+        -ms-transform: translate(0, -2rem);
+            transform: translate(0, -2rem); }
   .is-filled .cui__field__label {
     color: #9e9ea0; }
   .is-error .cui__field__label {
@@ -241,11 +245,6 @@ html {
     color: #ecb800; }
 
 .cui__field__input {
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -253,76 +252,73 @@ html {
   border: 0;
   box-sizing: border-box;
   color: #3C3C3E;
-  position: absolute;
-  width: 100%;
-  padding: 0 12px;
-  height: 48px; }
+  outline: none;
+  width: 100%; }
   .-big .cui__field__input {
-    height: 58px; }
+    height: 12rem; }
   .-big.is-filled .cui__field__input, .-big.is-error .cui__field__input, .-big.is-warning .cui__field__input {
-    height: 38px;
-    top: 18px; }
+    height: 9.8rem;
+    top: 2.2rem; }
   .is-filled .cui__field__input, .is-error .cui__field__input, .is-warning .cui__field__input {
-    height: 38px;
-    top: 10px; }
+    height: 9rem;
+    top: 1rem; }
   .safari .cui__field__input,
   .ios .cui__field__input {
     -webkit-transform: translate3d(0, 0, 0); }
   .ie8 .cui__field__input, .cui__browser--ie8 .cui__field__input {
     border: 1px solid #cbcbcd; }
-  .cui__field__input:focus, .cui__field__input:hover {
-    outline: none; }
-  .cui__field__input::-ms-clear {
-    width: 0;
-    height: 0; }
+
+.cui__title--primary, .cui__title--secondary {
+  font-size: 5.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  line-height: 7rem;
+  margin-bottom: 2rem; }
 
 .cui__title--primary {
-  color: #0072CC;
-  font-size: 2.6rem;
-  font-weight: 300;
-  line-height: 3.5rem;
-  margin-bottom: 1rem; }
+  color: #0072CC; }
 
 .cui__title--secondary {
-  color: #3C3C3E;
-  font-size: 2.6rem;
-  font-weight: 300;
-  line-height: 3.5rem;
-  margin-bottom: 1rem; }
+  color: #3c3c3e; }
 
 .cui__subtitle {
+  font-size: 2.4rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  color: #3C3C3E; }
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #3c3c3e;
+  line-height: 4rem;
+  text-transform: uppercase; }
 
 .cui__paragraph--primary {
-  font-size: 1.4rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  color: #3C3C3E;
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem; }
+  color: #3c3c3e;
+  line-height: 5rem;
+  margin-bottom: 5rem; }
 
 .cui__paragraph--secondary {
-  font-size: 1.4rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  color: #9E9EA0;
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem; }
+  color: #9e9ea0;
+  line-height: 5rem;
+  margin-bottom: 5rem; }
 
 .cui__paragraph--legal {
-  font-size: 1.1rem;
+  font-size: 2.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  color: #9E9EA0;
-  line-height: 2rem;
-  margin-bottom: 2rem; }
+  color: #9e9ea0;
+  line-height: 4rem;
+  margin-bottom: 4rem; }
