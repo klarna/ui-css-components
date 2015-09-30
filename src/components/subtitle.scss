@@ -1,7 +1,7 @@
 .cui__subtitle {
   @include typography(2.4rem, semi-bold);
+  @include vertical-grid(4rem, 1px);
 
   color: map-get($colors, black);
-  line-height: 4rem;
   text-transform: uppercase;
 }
