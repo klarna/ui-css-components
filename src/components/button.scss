@@ -8,7 +8,7 @@
     box-sizing: border-box;
     color: $text-color;
     cursor: pointer;
-    line-height: 10rem;
+    line-height: 10rem - 0.4rem;
     outline: none;
     padding: 0 10rem;
     text-align: center;
@@ -17,13 +17,13 @@
 
     &.-small {
       font-size: 2.8rem;
-      line-height: 7rem;
+      line-height: 7rem - 0.4rem;
       padding: 0 5.6rem;
     }
 
     &.-big {
       letter-spacing: 0.4px;
-      line-height: 12rem;
+      line-height: 12rem - 0.4rem;
       padding: 0 14rem;
       text-transform: uppercase;
     }
@@ -107,4 +107,3 @@
         @include cui__button__loader('button--secondary__loader');
     }
 }
-
