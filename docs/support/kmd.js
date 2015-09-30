@@ -35,6 +35,7 @@
     };
 
     renderer.paragraph = function(text) {
+      if(text.match(/<a name/)) return text
       return '<p class="cui__paragraph--primary">' + text + '</p>\n';
     };
 
