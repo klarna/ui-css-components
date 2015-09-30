@@ -1,29 +1,30 @@
 @mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
-    @include typography(1.5rem, semi-bold);
+    @include typography(3rem, semi-bold);
 
     appearance: none;
     background: $background;
     border-radius: $border-radius;
     border: 1px solid map-get($colors, klarna-blue);
+    box-sizing: border-box;
     color: $text-color;
     cursor: pointer;
-    line-height: 48px; // plus borders, 50px
+    line-height: 10rem;
     outline: none;
-    padding: 0 48px;
+    padding: 0 10rem;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
 
     &.-small {
-      font-size: 14px;
-      line-height: 38px; //plus borders, 40px
-      padding: 0 28px;
+      font-size: 2.8rem;
+      line-height: 7rem;
+      padding: 0 5.6rem;
     }
 
     &.-big {
       letter-spacing: 0.4px;
-      line-height: 58px; //plus borders, 60px
-      padding: 0 68px;
+      line-height: 12rem;
+      padding: 0 14rem;
       text-transform: uppercase;
     }
 
@@ -54,18 +55,18 @@
 }
 
 @mixin cui__button__loader($image-name) {
-    @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, 20px 20px);
+    @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, 4rem 4rem);
 
     animation: spin 0.8s linear infinite;
     display: inline-block;
     font-size: 0;
-    height: 20px;
+    height: 4rem;
     vertical-align: text-bottom;
-    width: 20px;
+    width: 4rem;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8,9)) {
-        @include font-size(1.5rem);
+        @include font-size(3rem);
     }
 
     // Preload the image
