@@ -37,8 +37,8 @@
 </p>
 ```
 
-<a name="Paragraph/subparagraph"></a>
-## Subparagraph
+<a name="Paragraph/legal"></a>
+### Legal
 
 ```html.20
 <p class="cui__paragraph--legal">
