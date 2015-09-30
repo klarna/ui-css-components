@@ -1,23 +1,23 @@
 .cui__paragraph--primary {
-  @include typography(1.4rem, regular);
+  @include typography(2.8rem, regular);
 
   color: map-get($colors, black);
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem;
+  line-height: 5rem;
+  margin-bottom: 5rem;
 }
 
 .cui__paragraph--secondary {
-  @include typography(1.4rem, regular);
+  @include typography(2.8rem, regular);
 
   color: map-get($colors, grey-text);
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem;
+  line-height: 5rem;
+  margin-bottom: 5rem;
 }
 
 .cui__paragraph--legal {
-  @include typography(1.1rem, regular);
+  @include typography(2.2rem, regular);
 
   color: map-get($colors, grey-text);
-  line-height: 2rem;
-  margin-bottom: 2rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
 }
