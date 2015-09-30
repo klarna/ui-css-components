@@ -82,6 +82,7 @@ hr {
 
 .summary li {
   margin-left: 1rem;
+  line-height: 4rem;
 }
 
 .summary li:before {
@@ -138,12 +139,12 @@ section {
 
 /* Toolkit overides */
 
-section > h1:first-of-type {
+main > section {
   padding-top: 20rem;
 }
 
-section > h2, section > h3 {
-  padding: 2rem 0 1rem 0;
+h2, h3 {
+  margin-top: 4rem;
 }
 
 h2 ~ p, h3 ~ p {
