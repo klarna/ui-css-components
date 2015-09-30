@@ -7,49 +7,49 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
   color: #3C3C3E;
-  line-height: 2.5rem;
+  line-height: 5rem;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
 
 nav {
   position: fixed;
-  top: 80px;
-  left: 80px;
+  top: 16rem;
+  left: 16rem;
 }
 
 #menu li {
   box-sizing: border-box;
-  line-height: 30px;
+  line-height: 6rem;
 }
 
 main {
-  width: 680px;
-  margin: 0 auto 200px auto;
+  width: 136rem;
+  margin: 0 auto 40rem auto;
 }
 
 .example-block {
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .example{
-  padding: 3rem;
+  padding: 6rem;
   position: relative;
 }
 
 .code {
   background: #f8f8fa;
-  border-radius: 5px;
+  border-radius: 1rem;
   border: 1px solid #e5e5e7;
   display: inline-block;
   font-family: Hack, monospace;
   font-size: inherit;
-  line-height: 2rem;
+  line-height: 4rem;
   padding: 1px 4px;
 }
 
@@ -77,22 +77,22 @@ ul {
 
 hr {
   border: 0;
-  margin: 4em 0;
+  margin: 4rem 0;
 }
 
 .summary li {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .summary li:before {
   content: "•";
-  margin-right: 0.8rem;
+  margin-right: 1.6rem;
   color: #3C3C3E;
 }
 
 .summary li li {
   margin-left: 3rem;
-  font-size: 1.3rem;
+  font-size: 2.6rem;
 }
 
 .summary li li:before {
@@ -134,7 +134,6 @@ section {
   right: 0;
   width: auto;
   z-index: -1;
-  z-index: 9999;
 }
 
 /* Toolkit overides */
