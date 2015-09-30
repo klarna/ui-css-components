@@ -64,18 +64,10 @@ html.cui__baseline(lang="en")
           if(this.grid == 'on') {
             this.grid = 'off'
             $(this).text('Grid off');
-            $(this).parent().find('.grid').remove();
+            $(this).parent().removeClass('cui__baseline__grid');
           } else {
             this.grid = 'on'
-            var grid = $(this).data('grid');
-            var bg = 'url(http://basehold.it/image.php?height=' + grid + '&r=199&g=213&b=229&a=1);';
-            var after = $('<div class="grid" />')
-              .css({
-                backgroundImage: bg,
-                top: 30 - grid + 0.5,
-                bottom: 29.5
-              });
-            $(this).parent().append(after);
+            $(this).parent().addClass('cui__baseline__grid');
             $(this).text('Grid on');
           }
         })
