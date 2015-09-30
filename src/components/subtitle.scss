@@ -1,8 +1,7 @@
 .cui__subtitle {
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  color: map-get($colors, black);
-}
+  @include typography(2.4rem, semi-bold);
 
+  color: map-get($colors, black);
+  line-height: 4rem;
+  text-transform: uppercase;
+}
