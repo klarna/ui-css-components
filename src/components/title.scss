@@ -1,5 +1,5 @@
 .cui__title--primary, .cui__title--secondary {
-  @include vertical-grid(7rem, 3px);
+  @include vertical-grid(7rem, .6rem);
   @include typography(5.2rem, regular);
 
   margin-bottom: 2rem;

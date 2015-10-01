@@ -1,6 +1,6 @@
 .cui__subtitle {
   @include typography(2.4rem, semi-bold);
-  @include vertical-grid(4rem, 1px);
+  @include vertical-grid(4rem, .2rem);
 
   color: map-get($colors, black);
   text-transform: uppercase;

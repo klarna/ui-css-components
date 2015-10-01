@@ -1,6 +1,6 @@
 .cui__paragraph--primary {
   @include typography(2.8rem, regular);
-  @include vertical-grid(5rem, 2px);
+  @include vertical-grid(5rem, .4rem);
 
   color: map-get($colors, black);
   margin-bottom: 5rem;
@@ -8,7 +8,7 @@
 
 .cui__paragraph--secondary {
   @include typography(2.8rem, regular);
-  @include vertical-grid(5rem, 2px);
+  @include vertical-grid(5rem, .4rem);
 
   color: map-get($colors, grey-text);
   margin-bottom: 5rem;
@@ -16,7 +16,7 @@
 
 .cui__paragraph--legal {
   @include typography(2.2rem, regular);
-  @include vertical-grid(4rem, 1px);
+  @include vertical-grid(4rem, .2rem);
 
   color: map-get($colors, grey-text);
 }

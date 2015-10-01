@@ -1,5 +1,5 @@
 @mixin vertical-grid ($line-height, $padding-top) {
   line-height: $line-height;
   padding-top: $padding-top;
-  padding-bottom: 5 - $padding-top;
+  padding-bottom: 1 - $padding-top;
 }
