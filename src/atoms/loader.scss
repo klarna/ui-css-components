@@ -1,19 +1,19 @@
 .cui__loader {
-    @include retina-image-compat($ui-toolkit-path + "img/atoms/loader/loader.loader", 32px 32px, "gif");
+    @include retina-image-compat($ui-toolkit-path + "img/atoms/loader/loader.loader", 30px 30px, "gif");
     
     display: inline-block;
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 30px;
 }
 
 .cui__loader--small {
     @include hidpi() {
         background-image: url($ui-toolkit-path + "img/atoms/loader/loader.loader.gif");
-        background-size: 16px;
+        background-size: 15px;
     }
 
-    background-image: url($ui-toolkit-path + "img/atoms/loader/loader.loader.16x16.gif");
+    background-image: url($ui-toolkit-path + "img/atoms/loader/loader.loader.15x15.gif");
     display: inline-block;
-    height: 16px;
-    width: 16px;
+    height: 15px;
+    width: 15px;
 }
