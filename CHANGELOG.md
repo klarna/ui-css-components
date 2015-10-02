@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. http://keepachangelog.com/
 
+## 3.2.0
+
+### Updated
+
+- Replace the blue loader with grey loader
+
 ## 3.1.3
 
 ### Fixed
