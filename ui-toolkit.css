@@ -480,22 +480,22 @@
 .cui__loader {
   background-image: url("img/atoms/loader/loader.loader.gif");
   display: inline-block;
-  height: 32px;
-  width: 32px; }
+  height: 30px;
+  width: 30px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__loader {
       background-image: url("img/atoms/loader/loader.loader@2x.gif");
-      background-size: 32px 32px; } }
+      background-size: 30px 30px; } }
 
 .cui__loader--small, .cui__editor-wrapper__loader {
-  background-image: url("img/atoms/loader/loader.loader.16x16.gif");
+  background-image: url("img/atoms/loader/loader.loader.15x15.gif");
   display: inline-block;
-  height: 16px;
-  width: 16px; }
+  height: 15px;
+  width: 15px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3/1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .cui__loader--small, .cui__editor-wrapper__loader {
       background-image: url("img/atoms/loader/loader.loader.gif");
-      background-size: 16px; } }
+      background-size: 15px; } }
 
 .cui__logo--visa--tiny {
   background-image: url("img/atoms/logos/svg-tiny-optimized/visa.svg");
