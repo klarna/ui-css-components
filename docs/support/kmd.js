@@ -20,6 +20,25 @@
             .replace(/'/g, '&#39;');
     }
 
+    headingLevelClass = function(level) {
+      switch(level) {
+        case 1: return 'cui__title--primary';
+        case 2: return 'cui__title--secondary';
+        case 3: return 'cui__subtitle';
+      }
+    }
+
+    renderer.heading = function(text, level) {
+      return '<h' + level + ' class="' + headingLevelClass(level) + '">'
+        + text
+        + '</h' + level+ '>\n';
+    };
+
+    renderer.paragraph = function(text) {
+      if(text.match(/<a name/)) return text
+      return '<p class="cui__paragraph--primary">' + text + '</p>\n';
+    };
+
     renderer.list = function(body, ordered) {
         var type = ordered ? 'ol' : 'ul';
         return '<' + type + ' class="summary">\n' + body + '</' + type + '>\n';
@@ -27,13 +46,14 @@
 
     renderer.code = function (code, lang, e) {
         return '<div class="example-block"><div class="example">'
+            + '<button class="toggle-grid">Grid off</button>'
             + code
             + '</div><pre><code class="'
             + this.options.langPrefix
             + escape(lang, true)
-            + '">'
+            + '"><div>'
             + escape(code)
-            + '\n</code></pre></div>\n';
+            + '\n</div></code></pre></div>\n';
     }
 
     renderer.codespan = function (text, lang, escaped) {

@@ -28,7 +28,7 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 
 Here's a showcase of all buttons. Pass your mouse over and click the elements to see the hover and active states.
 
-<table>
+<table cellspacing="0" cellpadding="0">
 	<tr>
 		<td>
 			<button class="cui__button--primary -small">

@@ -1,7 +1,7 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 1rem;
   color: ##3C3C3E;
   background: #F5F5F7;
   -webkit-text-size-adjust: none; }
@@ -65,14 +65,17 @@
   color: #aaa; }
 
 pre {
-  border-top: 1px solid #e5e5e8;
   font-family: "Hack", monospace;
-  line-height: 1.5em;
-  font-size: 14px;
   font-weight: 100; }
   pre code.hljs {
     font-family: "Hack", monospace;
-    padding: 30px; }
+    padding: 6rem; }
+    pre code.hljs div {
+      line-height: 4rem;
+    }
+    pre code.hljs div span {
+      line-height: 0rem;
+    }
     pre code.hljs .hljs-title {
       color: #0072CC; }
     pre code.hljs .hljs-comment {

@@ -12,25 +12,16 @@
   ],
   "private": true,
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests",
-    "support",
+    "docs",
     "package.json",
-    "dev.css",
     "gulpfile.js",
-    "Gemfile*",
-    "gulpfile.coffee",
     "index.html",
     "index.jade",
-    "snippets",
+    "src",
     "Makefile",
     "README.md",
     "CHANGELOG.md"
-  ],
-  "dependencies": {
-    "ss-pika": "git+ssh://git@stash.int.klarna.net:7999/bow/ss-pika.git#1.0.2"
-  }
+  ]
 }

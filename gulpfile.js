@@ -5,7 +5,6 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
-var jshint = require('gulp-jshint');
 var svg2png = require('gulp-svg2png');
 var RevAll = require('gulp-rev-all');
 var AWS = require('gulp-awspublish');
@@ -55,13 +54,6 @@ gulp.task('reload:docs:styles', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('reload:js', function () {
-    gulp.src('dist/ui-toolkit.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-        .pipe(reload({stream: true}));
-});
-
 gulp.task('images', function () {
     gulp.src('src/img/*')
         .pipe(gulp.dest('dist/img'));
@@ -72,7 +64,6 @@ gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync', 'images'], f
     gulp.watch('src/**/*.scss', ['reload:sass']);
     gulp.watch(['*.jade', 'docs/**/*'], ['reload:docs']);
     gulp.watch(['support/*.css'], ['reload:docs:styles']);
-    gulp.watch('ui-toolkit.js', ['reload:js']);
     gulp.watch('src/img/*', ['images']);
 });
 
@@ -91,13 +82,6 @@ gulp.task('build:jade', function () {
         .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
-});
-
-gulp.task('build:js', function () {
-    gulp.src('dist/ui-toolkit.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-        .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('publish', function () {
@@ -126,4 +110,4 @@ gulp.task('publish', function () {
         .pipe(AWS.reporter());
 });
 
-gulp.task('build', ['build:sass', 'build:jade', 'build:js', 'images']);
+gulp.task('build', ['build:sass', 'build:jade', 'images']);

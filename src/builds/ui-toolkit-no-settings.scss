@@ -2,9 +2,13 @@
 @import "../mixins/ie-and-stock";
 @import "../mixins/ie";
 @import "../mixins/opacity";
-@import "../mixins/responsive";
 @import "../mixins/retina-image-compat";
 @import "../mixins/typography";
+@import "../mixins/vertical-grid";
 
+@import "../components/baseline";
 @import "../components/button";
 @import "../components/field";
+@import "../components/title";
+@import "../components/subtitle";
+@import "../components/paragraph";

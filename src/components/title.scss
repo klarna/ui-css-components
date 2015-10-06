@@ -1,0 +1,14 @@
+.cui__title--primary, .cui__title--secondary {
+  @include vertical-grid(7rem, .6rem);
+  @include typography(5.2rem, regular);
+
+  margin-bottom: 2rem;
+}
+
+.cui__title--primary {
+  color: #0072CC;
+}
+
+.cui__title--secondary {
+  color: map-get($colors, black);
+}

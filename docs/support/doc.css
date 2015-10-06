@@ -1,78 +1,56 @@
 * {
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 2.8rem;
   color: #3C3C3E;
-  line-height: 24px;
+  line-height: 5rem;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
 
 nav {
   position: fixed;
-  top: 80px;
-  left: 80px;
+  top: 16rem;
+  left: 16rem;
+}
+
+#menu li {
+  box-sizing: border-box;
+  line-height: 6rem;
 }
 
 main {
-  width: 680px;
-  margin: 0 auto 200px auto;
-}
-
-h1 {
-  font-weight: 300;
-  font-size: 26px;
-  color: #0072CC;
-  margin-bottom: 1em;
-  padding-top: 200px;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 26px;
-  color: #3C3C3E;
-  padding: 2em 0 1em 0;
-}
-
-
-h3 {
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #3C3C3E;
-  padding: 3em 0 1em 0;
-}
-
-h2 ~ p, h3 ~ p {
-  color: #9E9EA0;
+  width: 136rem;
+  margin: 0 auto 40rem auto;
 }
 
 .example-block {
-  border: 1px solid #CBCBCD;
-  border-radius: 5px;
+  border-radius: 1rem;
+  box-sizing: border-box;
   overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .example{
-  padding: 30px;
+  padding: 6rem;
+  position: relative;
 }
 
 .code {
-  font-family: "Hack", monospace;
-  font-size: 0.9em;
   background: #f8f8fa;
+  border-radius: 1rem;
   border: 1px solid #e5e5e7;
+  display: inline-block;
+  font-family: Hack, monospace;
+  font-size: inherit;
+  line-height: 4rem;
   padding: 1px 4px;
-  border-radius: 5px;
 }
 
 .code.class {
@@ -85,7 +63,7 @@ h2 ~ p, h3 ~ p {
 
 td {
   vertical-align: top;
-  padding: 0 1em 1em 0;
+  padding: 0 1rem 1rem 0;
 }
 
 a{
@@ -99,27 +77,28 @@ ul {
 
 hr {
   border: 0;
-  margin: 4em 0;
+  margin: 4rem 0;
 }
 
 .summary li {
-  margin-left: 5px;
+  margin-left: 1rem;
+  line-height: 4rem;
 }
 
 .summary li:before {
   content: "•";
-  margin-right: .8em;
+  margin-right: 1.6rem;
   color: #3C3C3E;
 }
 
 .summary li li {
-  margin-left: 30px;
-  font-size: 13px;
+  margin-left: 3rem;
+  font-size: 2.6rem;
 }
 
 .summary li li:before {
   content: "•";
-  margin-right: .8em;
+  margin-right: 1rem;
   color: #9E9EA0;
 }
 
@@ -133,4 +112,41 @@ section {
 
 .overview li {
   padding: 10px;
+}
+
+.toggle-grid {
+  background: white;
+  border: none;
+  color: #0074C8;
+  outline: none;
+  float: right;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.grid {
+  content: '';
+  display: block;
+  height: auto;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: -1;
+}
+
+/* Toolkit overides */
+
+main > section {
+  padding-top: 16rem;
+}
+
+h2, h3 {
+  margin-top: 4rem;
+}
+
+h2 ~ p, h3 ~ p {
+  color: #9E9EA0;
 }
