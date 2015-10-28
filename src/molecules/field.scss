@@ -1,5 +1,5 @@
 $editor-with-icon-padding-left: 41px;
-$ease-out: cubic-bezier(0, 0, 0.01, 0.99);
+$ease-out: ease-out;
 
 .cui__field {
     @include box-sizing(border-box);
@@ -225,7 +225,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        @include transition-duration(0.2s);
     }
 }
 
@@ -236,7 +236,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        @include transition-duration(0.2s);
     }
 }
 
@@ -247,7 +247,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        @include transition-duration(0.2s);
     }
 }
 
@@ -258,7 +258,7 @@ $ease-out: cubic-bezier(0, 0, 0.01, 0.99);
         display: block; // For IE8-9
         opacity: 1;
         @include transform(translateY(0px));
-        @include transition-duration(0.3s);
+        @include transition-duration(0.2s);
     }
 }
 
