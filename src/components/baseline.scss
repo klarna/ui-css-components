@@ -12,3 +12,12 @@
   <rect style="fill:#0033ff;fill-opacity:.08;" width="10" height="1" x="0" y="4.5" />
 </svg>');
 }
+
+.cui__baseline__content--main {
+    margin: 0 4rem;
+
+    @include respond-to-wide {
+        width: 102rem;
+        margin: 0 auto;
+    }
+}
