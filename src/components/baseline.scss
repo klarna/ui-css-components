@@ -1,5 +1,7 @@
 .cui__baseline {
     font-size: 5px;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 .cui__baseline__grid {
