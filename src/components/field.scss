@@ -28,6 +28,32 @@
         right: .2rem;
     }
 
+    &.-top-left {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &.-top-right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        right: .2rem;
+    }
+
+    &.-bottom-left {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &.-bottom-right {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        right: .2rem;
+    }
+
     &.is-hidden {
         display: none;
     }

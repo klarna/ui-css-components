@@ -18,6 +18,8 @@ ___
 	- [warning](#Field/regular/warning)
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
+	- [top part](#Field/stacked/top part)
+	- [bottom part](#Field/stacked/bottom part)
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
@@ -281,6 +283,42 @@ Fields can be stacked together to form a single organic visual component.
 <div class="cui__field -right -half">
 	<label class="cui__field__label">
 		Lastname
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/top part"></a>
+### Top part
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -half">
+	<label class="cui__field__label">
+		Lastname
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/bottom part"></a>
+### Bottom part
+
+```html
+<div class="cui__field -bottom-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -bottom-right -half">
+	<label class="cui__field__label">
+		Country
 	</label>
 	<input class="cui__field__input" />
 </div>
