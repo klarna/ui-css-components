@@ -44,7 +44,7 @@
 }
 
 .cui__field__label, .cui__field__input {
-    @include typography(3rem, semi-bold);
+    @include typography(3rem, regular);
 
     line-height: 10rem;
     padding: 0 2.4rem;
