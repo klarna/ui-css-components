@@ -16,6 +16,14 @@ ___
 	- [filled](#Field/regular/filled)
 	- [error](#Field/regular/error)
 	- [warning](#Field/regular/warning)
+- [Stacked](#Field/stacked)
+	- [side by side](#Field/stacked/side by side)
+- [Icon](#Field/icon)
+	- [focused](#Field/icon/focused)
+	- [filled](#Field/icon/filled)
+	- [error](#Field/icon/error)
+	- [warning](#Field/icon/warning)
+
 <a name="Field/overview"></a>
 ## Overview
 
@@ -139,7 +147,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
 
 When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:
 
-<div style="overflow: hidden">
+<div>
   <div class="cui__field" style="width: 45%; float: left;">
     <label class="cui__field__label">
       Please write your email address
@@ -152,6 +160,7 @@ When fields are blank, their labels will behave as placeholders. When the field 
     </label>
     <input class="cui__field__input" oninput="floatingLabel(this)" />
   </div>
+	<div style="clear: both"></div>
 </div>
 
 <a name="Field/examples"></a>
@@ -232,6 +241,48 @@ Should be used when there's something that requires user's attention to the fill
         Are you sure the domain is exanple?
     </label>
     <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/stacked"></a>
+## Stacked fields
+
+Fields can be stacked together to form a single organic visual component.
+<div style="overflow: hidden">
+  <ul class="overview">
+    <li>
+      <div class="cui__field -left -half">
+        <label class="cui__field__label">
+          Name
+        </label>
+        <input class="cui__field__input" />
+      </div>
+      <div class="cui__field -right -half">
+        <label class="cui__field__label">
+          Lastname
+        </label>
+        <input class="cui__field__input" />
+      </div>
+			<div style="clear: both"></div>
+    </li>
+	</ul>
+</div>
+
+<a name="Field/stacked/side by side"></a>
+### Side by side
+
+```html
+<div class="cui__field -left -half">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -right -half">
+	<label class="cui__field__label">
+		Lastname
+	</label>
+	<input class="cui__field__input" />
 </div>
 ```
 

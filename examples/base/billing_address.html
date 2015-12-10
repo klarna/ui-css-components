@@ -18,9 +18,22 @@
           Subtitle
         </h3>
 
-        <div class="cui__field">
+        <div class="cui__field -left -half">
         	<label class="cui__field__label">
-        		Please write your email address
+        		Name
+        	</label>
+        	<input
+                class="cui__field__input"
+                oninput="floatingLabel(this)"
+                onfocus="dofocus(this)"
+                onblur="doblur(this)"
+                value="John"
+            />
+        </div>
+
+        <div class="cui__field -right -half">
+        	<label class="cui__field__label">
+        		Lastname
         	</label>
         	<input
                 class="cui__field__input"
@@ -47,6 +60,10 @@
             function doblur(input) {
                 $(input).parent().removeClass('is-focused');
             }
+
+            $('input').each(function (index, input) {
+                floatingLabel(input)
+            })
         </script>
     </body>
 </html>

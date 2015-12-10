@@ -42,6 +42,12 @@ main {
   position: relative;
 }
 
+.example::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .code {
   background: #f8f8fa;
   border-radius: 1rem;

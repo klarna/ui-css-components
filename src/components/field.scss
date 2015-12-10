@@ -1,7 +1,8 @@
 .cui__field {
     border: .2rem solid $border-color;
     border-radius: $border-radius;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    margin-top: -.2rem;
     height: 9.8rem;
     position: relative;
     -webkit-transition: all .2s ease;
@@ -9,6 +10,22 @@
 
     &.-big {
         height: 12rem;
+    }
+
+    &.-half {
+        width: 50%;
+        float: left;
+    }
+
+    &.-left {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &.-right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        right: .2rem;
     }
 
     &.is-hidden {
@@ -20,22 +37,26 @@
     }
 
     &:hover {
-        border: 1px solid $border-color-hover;
+        border-color: $border-color-hover;
+        z-index: 10;
     }
 
     &.is-focused {
-        border: 1px solid $border-color-focus;
+        border-color: $border-color-focus;
         box-shadow: 0 0 4px $box-shadow-focus;
+        z-index: 20;
     }
 
     &.is-error {
         background-color: #fff8f7;
         border-color: #e6bebe;
+        box-shadow: none;
     }
 
     &.is-warning {
         background-color: #fffaf0;
         border-color: #e6c88c;
+        box-shadow: none;
 
         @include respond-to-ie(8) {
             $ie-hex: ie-hex-str(#fffaf0);
