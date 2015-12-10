@@ -47,6 +47,14 @@
 .cui__baseline__grid {
   background: url('data:image/svg+xml,\a <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" version="1.1">\a   <rect style="fill:#0033ff;fill-opacity:.15;" width="10" height="0.5" x="0" y="9.5" />\a   <rect style="fill:#0033ff;fill-opacity:.15;" width="10" height="0.5" x="0" y="0" />\a   <rect style="fill:#0033ff;fill-opacity:.08;" width="10" height="1" x="0" y="4.5" />\a </svg>'); }
 
+.cui__baseline__content--main {
+  margin: 0 4rem;
+  padding: .2rem 0 0 0; }
+  @media screen and (min-width: 569px) {
+    .cui__baseline__content--main {
+      width: 102rem;
+      margin: 0 auto; } }
+
 .cui__button--primary {
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
@@ -67,6 +75,8 @@
   padding: 0 10rem;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   vertical-align: top; }
   .cui__button--primary.-small {
     font-size: 2.8rem;
@@ -77,6 +87,15 @@
     line-height: 11.6rem;
     padding: 0 14rem;
     text-transform: uppercase; }
+  .cui__button--primary.-right {
+    width: 100%; }
+    @media screen and (min-width: 569px) {
+      .cui__button--primary.-right {
+        float: right;
+        margin-left: 4rem;
+        width: auto; } }
+  .cui__button--primary.-left {
+    float: left; }
   .cui__button--primary:hover {
     background-color: #0065ad;
     border-color: #0065ad; }
@@ -135,6 +154,8 @@
   padding: 0 10rem;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   vertical-align: top; }
   .cui__button--secondary.-small {
     font-size: 2.8rem;
@@ -145,11 +166,20 @@
     line-height: 11.6rem;
     padding: 0 14rem;
     text-transform: uppercase; }
+  .cui__button--secondary.-right {
+    width: 100%; }
+    @media screen and (min-width: 569px) {
+      .cui__button--secondary.-right {
+        float: right;
+        margin-left: 4rem;
+        width: auto; } }
+  .cui__button--secondary.-left {
+    float: left; }
   .cui__button--secondary:hover {
-    color: #0065ad;
+    background-color: #0065ad;
     border-color: #0065ad; }
   .cui__button--secondary:active {
-    color: #005694;
+    background-color: #005694;
     border-color: #005694; }
   .cui__button--secondary.is-disabled {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
@@ -182,42 +212,126 @@
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__button--secondary__loader:before {
           content: url("img/button--secondary__loader@2x.png"); } }
+  .cui__button--secondary:hover {
+    background: #0074c8;
+    color: #fff; }
+  .cui__button--secondary:active {
+    background: #005694;
+    color: #fff; }
+  .cui__button--primary.-right + .cui__button--secondary.-right {
+    margin-top: 4rem; }
+    @media screen and (min-width: 569px) {
+      .cui__button--primary.-right + .cui__button--secondary.-right {
+        margin-top: 0; } }
+
+.cui__button__menu {
+  margin-top: 4rem; }
 
 .cui__field, .cui__field--icon {
-  background-color: #fff;
-  border: 1px solid #cbcbcd;
+  border: 0.2rem solid #cbcbcd;
   border-radius: 5px;
   box-sizing: border-box;
+  clear: both;
+  display: block;
+  height: 10.2rem;
+  margin-bottom: -.2rem;
   position: relative;
-  height: 10rem; }
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
   .cui__field.-big, .-big.cui__field--icon {
     height: 12rem; }
+  .cui__field.-square, .-square.cui__field--icon {
+    border-radius: 0; }
+  .cui__field.-half, .-half.cui__field--icon {
+    width: 50%;
+    clear: none;
+    float: left; }
+  .cui__field.-quarter, .-quarter.cui__field--icon {
+    width: 25%;
+    clear: none;
+    float: left; }
+  .cui__field.-left, .-left.cui__field--icon {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .cui__field.-center, .-center.cui__field--icon {
+    border-radius: 0;
+    margin-left: -.2rem; }
+    .cui__field.-center.-half, .-center.-half.cui__field--icon {
+      width: calc(50% + 0.2rem); }
+    .cui__field.-center.-quarter, .-center.-quarter.cui__field--icon {
+      width: calc(25% + 0.2rem); }
+    .cui__field.-center::after, .-center.cui__field--icon::after {
+      content: "";
+      clear: both;
+      display: block; }
+  .cui__field.-right, .-right.cui__field--icon {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -.2rem; }
+    .cui__field.-right.-half, .-right.-half.cui__field--icon {
+      width: calc(50% + 0.2rem); }
+    .cui__field.-right.-quarter, .-right.-quarter.cui__field--icon {
+      width: calc(25% + 0.2rem); }
+    .cui__field.-right::after, .-right.cui__field--icon::after {
+      content: "";
+      clear: both;
+      display: block; }
+  .cui__field.-top, .-top.cui__field--icon {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .cui__field.-top-left, .-top-left.cui__field--icon {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .cui__field.-top-right, .-top-right.cui__field--icon {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    clear: right;
+    margin-left: -.2rem; }
+    .cui__field.-top-right.-half, .-top-right.-half.cui__field--icon {
+      width: calc(50% + 0.2rem); }
+  .cui__field.-bottom-left, .-bottom-left.cui__field--icon {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .cui__field.-bottom-right, .-bottom-right.cui__field--icon {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: -.2rem; }
+    .cui__field.-bottom-right.-half, .-bottom-right.-half.cui__field--icon {
+      width: calc(50% + 0.2rem); }
   .cui__field.is-hidden, .is-hidden.cui__field--icon {
     display: none; }
   .cui__field:focus, .cui__field--icon:focus {
     outline: none; }
   .cui__field:hover, .cui__field--icon:hover {
-    border: 1px solid rgba(26, 140, 220, 0.8); }
+    border-color: #66aae0;
+    z-index: 10; }
   .cui__field.is-focused, .is-focused.cui__field--icon {
-    border: 1px solid rgba(26, 140, 220, 0.8);
-    box-shadow: 0 0 4px rgba(26, 140, 220, 0.6); }
+    border-color: rgba(26, 140, 220, 0.8);
+    box-shadow: 0 0 4px rgba(26, 140, 220, 0.6);
+    z-index: 20; }
   .cui__field.is-error, .is-error.cui__field--icon {
     background-color: #fff8f7;
-    border-color: #e6bebe; }
+    border-color: #e6bebe;
+    box-shadow: none; }
   .cui__field.is-warning, .is-warning.cui__field--icon {
     background-color: #fffaf0;
-    border-color: #e6c88c; }
+    border-color: #e6c88c;
+    box-shadow: none; }
     .ie8 .cui__field.is-warning, .ie8 .is-warning.cui__field--icon, .cui__browser--ie8 .cui__field.is-warning, .cui__browser--ie8 .is-warning.cui__field--icon {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
 
 .cui__field__label, .cui__field--icon__label, .cui__field__input, .cui__field--icon__input {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   line-height: 10rem;
-  padding: 0 2.4rem;
+  padding: 0 4rem;
   position: absolute; }
 
 .cui__field__label, .cui__field--icon__label {
@@ -245,6 +359,11 @@
     color: #ecb800; }
 
 .cui__field__input, .cui__field--icon__input {
+  font-size: 2.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -280,6 +399,13 @@
   position: absolute;
   width: 4rem; }
 
+.cui__field__wrapper {
+  position: relative; }
+  .cui__field__wrapper::after {
+    content: "";
+    clear: both;
+    display: block; }
+
 .cui__icon {
   display: block;
   height: 20px;
@@ -302,6 +428,15 @@
     background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e0a644" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e0a644" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e0a644" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
   .cui__icon--lock.is-error {
     background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e63200" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e63200" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e63200" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
+
+.cui__link {
+  color: #0074C8;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  text-decoration: none;
+  transition: all .2s ease; }
+  .cui__link:hover {
+    color: #005694; }
 
 .cui__paragraph--primary {
   font-size: 2.8rem;
@@ -361,8 +496,9 @@
   font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  line-height: 4rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.8rem;
   color: #3c3c3e;
+  height: 4rem;
+  line-height: 4rem;
+  margin: 0;
+  padding: .2rem 0 .8rem 0;
   text-transform: uppercase; }
