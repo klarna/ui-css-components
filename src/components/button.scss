@@ -13,6 +13,8 @@
     padding: 0 10rem;
     text-align: center;
     text-decoration: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
     vertical-align: top;
 
     &.-small {
@@ -26,6 +28,20 @@
       line-height: 12rem - 0.4rem;
       padding: 0 14rem;
       text-transform: uppercase;
+    }
+
+    &.-right {
+        width: 100%;
+
+        @include respond-to-wide {
+            float: right;
+            margin-left: 4rem;
+            width: auto;
+        }
+    }
+
+    &.-left {
+        float: left;
     }
 
     &:hover {
@@ -100,10 +116,32 @@
         $background: white,
         $text-color: map-get($colors, klarna-blue),
         $darken-color: map-get($colors, klarna-blue),
-        $darken-attributes: (color, border-color)
+        $darken-attributes: (background-color, border-color)
     );
 
     &__loader {
         @include cui__button__loader('button--secondary__loader');
     }
+
+    &:hover {
+        background: map-get($colors, klarna-blue);
+        color: #fff;
+    }
+
+    &:active {
+        background: darken(map-get($colors, klarna-blue), 10.1);
+        color: #fff;
+    }
+
+    .cui__button--primary.-right + &.-right {
+        margin-top: 4rem;
+
+        @include respond-to-wide {
+            margin-top: 0;
+        }
+    }
+}
+
+.cui__button__menu {
+    margin-top: 4rem;
 }
