@@ -40,7 +40,9 @@
  * Adds all atributes to define the best typography as possible
  */
 .cui__baseline {
-  font-size: 5px; }
+  font-size: 5px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .cui__baseline__grid {
   background: url('data:image/svg+xml,\a <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" version="1.1">\a   <rect style="fill:#0033ff;fill-opacity:.15;" width="10" height="0.5" x="0" y="9.5" />\a   <rect style="fill:#0033ff;fill-opacity:.15;" width="10" height="0.5" x="0" y="0" />\a   <rect style="fill:#0033ff;fill-opacity:.08;" width="10" height="1" x="0" y="4.5" />\a </svg>'); }
@@ -181,70 +183,68 @@
         .cui__button--secondary__loader:before {
           content: url("img/button--secondary__loader@2x.png"); } }
 
-.cui__field {
-  background: #fff;
+.cui__field, .cui__field--icon {
+  background-color: #fff;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
   box-sizing: border-box;
   position: relative;
   height: 10rem; }
-  .cui__field.-big {
+  .cui__field.-big, .-big.cui__field--icon {
     height: 12rem; }
-  .cui__field.is-hidden {
+  .cui__field.is-hidden, .is-hidden.cui__field--icon {
     display: none; }
-  .cui__field:focus {
+  .cui__field:focus, .cui__field--icon:focus {
     outline: none; }
-  .cui__field:hover {
+  .cui__field:hover, .cui__field--icon:hover {
     border: 1px solid rgba(26, 140, 220, 0.8); }
-  .cui__field.is-focused {
+  .cui__field.is-focused, .is-focused.cui__field--icon {
     border: 1px solid rgba(26, 140, 220, 0.8);
     box-shadow: 0 0 4px rgba(26, 140, 220, 0.6); }
-  .cui__field.is-error {
+  .cui__field.is-error, .is-error.cui__field--icon {
     background-color: #fff8f7;
     border-color: #e6bebe; }
-  .cui__field.is-warning {
+  .cui__field.is-warning, .is-warning.cui__field--icon {
     background-color: #fffaf0;
     border-color: #e6c88c; }
-    .ie8 .cui__field.is-warning, .cui__browser--ie8 .cui__field.is-warning {
+    .ie8 .cui__field.is-warning, .ie8 .is-warning.cui__field--icon, .cui__browser--ie8 .cui__field.is-warning, .cui__browser--ie8 .is-warning.cui__field--icon {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
 
-.cui__field__label, .cui__field__input {
+.cui__field__label, .cui__field--icon__label, .cui__field__input, .cui__field--icon__input {
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   line-height: 10rem;
   padding: 0 2.4rem;
   position: absolute; }
 
-.cui__field__label {
+.cui__field__label, .cui__field--icon__label {
   color: #9e9ea0;
-  -webkit-transition: all 0.16s cubic-bezier(0, 0.98, 0.39, 1);
-          transition: all 0.16s cubic-bezier(0, 0.98, 0.39, 1); }
-  .-big .cui__field__label {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+  .-big .cui__field__label, .-big .cui__field--icon__label {
     line-height: 12rem; }
-  .-big.is-filled .cui__field__label, .-big.is-error .cui__field__label, .-big.is-warning .cui__field__label {
+  .-big.is-filled .cui__field__label, .-big.is-filled .cui__field--icon__label, .-big.is-error .cui__field__label, .-big.is-error .cui__field--icon__label, .-big.is-warning .cui__field__label, .-big.is-warning .cui__field--icon__label {
     -webkit-transform: translate(0, -2.2rem);
-        -ms-transform: translate(0, -2.2rem);
             transform: translate(0, -2.2rem); }
-  .is-filled .cui__field__label, .is-error .cui__field__label, .is-warning .cui__field__label {
+  .is-filled .cui__field__label, .is-filled .cui__field--icon__label, .is-error .cui__field__label, .is-error .cui__field--icon__label, .is-warning .cui__field__label, .is-warning .cui__field--icon__label {
     font-size: 2.2rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -webkit-transform: translate(0, -2rem);
-        -ms-transform: translate(0, -2rem);
             transform: translate(0, -2rem); }
-  .is-filled .cui__field__label {
+  .is-filled .cui__field__label, .is-filled .cui__field--icon__label {
     color: #9e9ea0; }
-  .is-error .cui__field__label {
+  .is-error .cui__field__label, .is-error .cui__field--icon__label {
     color: #e63200; }
-  .is-warning .cui__field__label {
+  .is-warning .cui__field__label, .is-warning .cui__field--icon__label {
     color: #ecb800; }
 
-.cui__field__input {
+.cui__field__input, .cui__field--icon__input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -254,48 +254,54 @@
   color: #3C3C3E;
   outline: none;
   width: 100%; }
-  .-big .cui__field__input {
+  .-big .cui__field__input, .-big .cui__field--icon__input {
     height: 12rem; }
-  .-big.is-filled .cui__field__input, .-big.is-error .cui__field__input, .-big.is-warning .cui__field__input {
+  .-big.is-filled .cui__field__input, .-big.is-filled .cui__field--icon__input, .-big.is-error .cui__field__input, .-big.is-error .cui__field--icon__input, .-big.is-warning .cui__field__input, .-big.is-warning .cui__field--icon__input {
     height: 9.8rem;
     top: 2.2rem; }
-  .is-filled .cui__field__input, .is-error .cui__field__input, .is-warning .cui__field__input {
+  .is-filled .cui__field__input, .is-filled .cui__field--icon__input, .is-error .cui__field__input, .is-error .cui__field--icon__input, .is-warning .cui__field__input, .is-warning .cui__field--icon__input {
     height: 9rem;
     top: 1rem; }
-  .safari .cui__field__input,
-  .ios .cui__field__input {
+  .safari .cui__field__input, .safari .cui__field--icon__input,
+  .ios .cui__field__input,
+  .ios .cui__field--icon__input {
     -webkit-transform: translate3d(0, 0, 0); }
-  .ie8 .cui__field__input, .cui__browser--ie8 .cui__field__input {
+  .ie8 .cui__field__input, .ie8 .cui__field--icon__input, .cui__browser--ie8 .cui__field__input, .cui__browser--ie8 .cui__field--icon__input {
     border: 1px solid #cbcbcd; }
 
-.cui__title--primary, .cui__title--secondary {
-  line-height: 7rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-size: 5.2rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: 2rem; }
+.cui__field--icon__label, .cui__field--icon__input {
+  padding-left: 8.4rem; }
 
-.cui__title--primary {
-  color: #0072CC; }
+.cui__field--icon__icon {
+  background: #A8A8A8;
+  display: block;
+  height: 4rem;
+  margin: 3rem 0 0 2.4rem;
+  position: absolute;
+  width: 4rem; }
 
-.cui__title--secondary {
-  color: #3c3c3e; }
+.cui__icon {
+  display: block;
+  height: 20px;
+  width: 20px; }
 
-.cui__subtitle {
-  font-size: 2.4rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  line-height: 4rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.8rem;
-  color: #3c3c3e;
-  text-transform: uppercase; }
+.cui__icon--mail {
+  background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#A9A9A9"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
+  .cui__icon--mail.is-focused {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#0074c8"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
+  .cui__icon--mail.is-warning {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#e0a644"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
+  .cui__icon--mail.is-error {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#e63200"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
+
+.cui__icon--lock {
+  background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#A9A9A9" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#A9A9A9" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
+  .cui__icon--lock.is-focused {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#0074c8" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#0074c8" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#0074c8" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
+  .cui__icon--lock.is-warning {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e0a644" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e0a644" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e0a644" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
+  .cui__icon--lock.is-error {
+    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e63200" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e63200" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e63200" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
 
 .cui__paragraph--primary {
   font-size: 2.8rem;
@@ -331,3 +337,32 @@
   padding-top: 0.2rem;
   padding-bottom: 0.8rem;
   color: #9e9ea0; }
+
+.cui__title--primary, .cui__title--secondary {
+  line-height: 7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-size: 5.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 2rem; }
+
+.cui__title--primary {
+  color: #0072CC; }
+
+.cui__title--secondary {
+  color: #3c3c3e; }
+
+.cui__subtitle {
+  font-size: 2.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  line-height: 4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.8rem;
+  color: #3c3c3e;
+  text-transform: uppercase; }
