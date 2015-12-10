@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="cui__baseline">
+    <head>
+        <title>Billing Address fieldset</title>
+        <link rel="stylesheet" href="/dist/ui-toolkit.css" />
+    </head>
+
+    <body>
+        <nav>
+            <p class="cui__paragraph--primary">
+                <a class="cui__link" href="/">Back to the Showroom</a>
+            </p>
+        </nav>
+
+        <h3 class="cui__subtitle">
+          Subtitle
+        </h3>
+
+        <div class="cui__field">
+        	<label class="cui__field__label">
+        		Please write your email address
+        	</label>
+        	<input
+                class="cui__field__input"
+                oninput="floatingLabel(this)"
+                onfocus="dofocus(this)"
+                onblur="doblur(this)"
+            />
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script>
+            function floatingLabel(input) {
+              if(input.value){
+                $(input).parent().addClass("is-filled");
+              } else {
+                $(input).parent().removeClass("is-filled");
+              }
+            }
+
+            function dofocus(input) {
+                $(input).parent().addClass('is-focused');
+            }
+
+            function doblur(input) {
+                $(input).parent().removeClass('is-focused');
+            }
+        </script>
+    </body>
+</html>
