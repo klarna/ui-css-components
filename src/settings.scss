@@ -37,5 +37,6 @@ $font-weights: (
 // ================================================================
 $border-radius: 5px;
 $border-color: map-get($colors, grey-lines);
+$border-color-hover: #66aae0;
 $border-color-focus: rgba(26, 140, 220, 0.8);
 $box-shadow-focus: rgba(26, 140, 220, 0.6);
