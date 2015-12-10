@@ -19,7 +19,11 @@ ___
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
 	- [top part](#Field/stacked/top part)
+	- [top part](#Field/stacked/top only)
 	- [bottom part](#Field/stacked/bottom part)
+	- [bottom part](#Field/stacked/bottom only)
+	- [center](#Field/stacked/center)
+	- [half and quarter sizes](#Field/stacked/half and quarter sizes)
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
@@ -306,6 +310,18 @@ Fields can be stacked together to form a single organic visual component.
 </div>
 ```
 
+<a name="Field/stacked/top only"></a>
+### Top only
+
+```html
+<div class="cui__field -top">
+	<label class="cui__field__label">
+		Email address
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
 <a name="Field/stacked/bottom part"></a>
 ### Bottom part
 
@@ -317,6 +333,66 @@ Fields can be stacked together to form a single organic visual component.
 	<input class="cui__field__input" />
 </div>
 <div class="cui__field -bottom-right -half">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/bottom only"></a>
+### Bottom only
+
+```html
+<div class="cui__field -bottom">
+	<label class="cui__field__label">
+		Password
+	</label>
+	<input type="password" class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/square"></a>
+### Square
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -half">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -square">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/half and quarter sizes"></a>
+### Half and Quarter sizes
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -center -quarter">
+	<label class="cui__field__label">
+		Zip
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -quarter">
 	<label class="cui__field__label">
 		Country
 	</label>

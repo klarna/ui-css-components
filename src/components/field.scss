@@ -2,8 +2,10 @@
     border: .2rem solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
-    margin-top: -.2rem;
-    height: 9.8rem;
+    clear: both;
+    display: block;
+    height: 10.2rem;
+    margin-bottom: -.2rem;
     position: relative;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
@@ -12,8 +14,19 @@
         height: 12rem;
     }
 
+    &.-square {
+        border-radius: 0;
+    }
+
     &.-half {
         width: 50%;
+        clear: none;
+        float: left;
+    }
+
+    &.-quarter {
+        width: 25%;
+        clear: none;
         float: left;
     }
 
@@ -22,10 +35,48 @@
         border-bottom-right-radius: 0;
     }
 
+    &.-center {
+        border-radius: 0;
+        margin-left: -.2rem;
+
+        &.-half {
+            width: calc(50% + 0.2rem);
+        }
+
+        &.-quarter {
+            width: calc(25% + 0.2rem);
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    }
+
     &.-right {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        right: .2rem;
+        margin-left: -.2rem;
+
+        &.-half {
+            width: calc(50% + 0.2rem);
+        }
+
+        &.-quarter {
+            width: calc(25% + 0.2rem);
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    }
+
+    &.-top {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     &.-top-left {
@@ -38,7 +89,12 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        right: .2rem;
+        clear: right;
+        margin-left: -.2rem;
+
+        &.-half {
+            width: calc(50% + 0.2rem);
+        }
     }
 
     &.-bottom-left {
@@ -51,7 +107,11 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        right: .2rem;
+        margin-left: -.2rem;
+
+        &.-half {
+            width: calc(50% + 0.2rem);
+        }
     }
 
     &.is-hidden {
@@ -132,6 +192,8 @@
 }
 
 .cui__field__input {
+    @include typography(2.8rem, semi-bold);
+
     appearance: none;
     background-color: transparent;
     border: 0;
@@ -187,4 +249,14 @@
     margin: 3rem 0 0 2.4rem;
     position: absolute;
     width: 4rem;
+}
+
+.cui__field__wrapper {
+    position: relative;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
