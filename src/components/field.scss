@@ -1,5 +1,5 @@
 .cui__field {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
@@ -113,4 +113,29 @@
     @include respond-to-ie(8) {
         border: 1px solid $border-color;
     }
+}
+
+.cui__field--icon {
+    @extend .cui__field;
+}
+
+.cui__field--icon__label {
+    @extend .cui__field__label;
+}
+
+.cui__field--icon__input {
+    @extend .cui__field__input;
+}
+
+.cui__field--icon__label, .cui__field--icon__input {
+    padding-left: 8.4rem;
+}
+
+.cui__field--icon__icon {
+    background: #A8A8A8;
+    display: block;
+    height: 4rem;
+    margin: 3rem 0 0 2.4rem;
+    position: absolute;
+    width: 4rem;
 }

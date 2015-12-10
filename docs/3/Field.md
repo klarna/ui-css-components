@@ -71,6 +71,15 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
         <input class="cui__field__input" value="email@exanple.com" />
       </div>
     </li>
+		<li>
+      <div class="cui__field--icon is-focused is-filled">
+				<span class="cui__field--icon__icon cui__icon--mail"></span>
+        <label class="cui__field--icon__label">
+          Please write your email address
+        </label>
+        <input class="cui__field--icon__input" value="email@example.com" />
+      </div>
+    </li>
   </ul>
 
   <ul class="overview" style="width: 45%; float: left;">
@@ -218,5 +227,70 @@ Should be used when there's something that requires user's attention to the fill
         Are you sure the domain is exanple?
     </label>
     <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/icon"></a>
+## With Icon
+
+```html
+<div class="cui__field--icon">
+	<span class="cui__field--icon__icon cui__icon--mail"></span>
+	<label class="cui__field--icon__label">
+		Enter your postal code
+	</label>
+	<input class="cui__field--icon__input" />
+</div>
+```
+
+<a name="Field/icon/focused"></a>
+### Focused
+
+```html
+<div class="cui__field--icon is-focused">
+	<span class="cui__field--icon__icon cui__icon--lock is-focused"></span>
+	<label class="cui__field--icon__label is-focused">
+		Enter your password
+	</label>
+	<input class="cui__field--icon__input" />
+</div>
+```
+
+<a name="Field/icon/filling"></a>
+### Filling
+
+```html
+<div class="cui__field--icon is-filled is-focused">
+	<span class="cui__field--icon__icon cui__icon--lock is-focused"></span>
+	<label class="cui__field--icon__label">
+		Please write your email address
+	</label>
+	<input class="cui__field--icon__input" value="email@example.com" />
+</div>
+```
+
+<a name="Field/icon/error"></a>
+### Error
+
+```html
+<div class="cui__field--icon is-error">
+	<span class="cui__field--icon__icon cui__icon--lock is-error"></span>
+	<label class="cui__field--icon__label is-focused">
+		Are you sure the domain is example?
+	</label>
+	<input type="password" class="cui__field--icon__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/icon/warning"></a>
+### Warning
+
+```html
+<div class="cui__field--icon is-warning">
+	<span class="cui__field--icon__icon cui__icon--lock is-warning"></span>
+	<label class="cui__field--icon__label is-focused">
+		Are you sure the domain is example?
+	</label>
+	<input class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
