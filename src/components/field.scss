@@ -1,3 +1,39 @@
+@mixin partial-width ($width) {
+    width: $width;
+    clear: none;
+    float: left;
+}
+
+@mixin stacked-responsiveness () {
+    @include respond-to-wide {
+        margin-left: -.2rem;
+    }
+
+    &.-non-responsive {
+        margin-left: -.2rem;
+    }
+
+    &.-half {
+        @include respond-to-wide {
+            width: calc(50% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(50% + 0.2rem);
+        }
+    }
+
+    &.-quarter {
+        @include respond-to-wide {
+            width: calc(25% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(25% + 0.2rem);
+        }
+    }
+}
+
 .cui__field {
     border: .2rem solid $border-color;
     border-radius: $border-radius;
@@ -19,15 +55,23 @@
     }
 
     &.-half {
-        width: 50%;
-        clear: none;
-        float: left;
+        @include respond-to-wide {
+            @include partial-width(50%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(50%);
+        }
     }
 
     &.-quarter {
-        width: 25%;
-        clear: none;
-        float: left;
+        @include respond-to-wide {
+            @include partial-width(25%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(25%);
+        }
     }
 
     &.-left {
@@ -37,15 +81,7 @@
 
     &.-center {
         border-radius: 0;
-        margin-left: -.2rem;
-
-        &.-half {
-            width: calc(50% + 0.2rem);
-        }
-
-        &.-quarter {
-            width: calc(25% + 0.2rem);
-        }
+        @include stacked-responsiveness();
 
         &::after {
             content: "";
@@ -57,15 +93,7 @@
     &.-right {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        margin-left: -.2rem;
-
-        &.-half {
-            width: calc(50% + 0.2rem);
-        }
-
-        &.-quarter {
-            width: calc(25% + 0.2rem);
-        }
+        @include stacked-responsiveness();
 
         &::after {
             content: "";
@@ -80,38 +108,57 @@
     }
 
     &.-top-left {
-        border-top-right-radius: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
+        @include respond-to-wide {
+            border-top-right-radius: 0;
+        }
+
+        &.-non-responsive {
+            border-top-right-radius: 0;
+        }
     }
 
     &.-top-right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 0;
         clear: right;
-        margin-left: -.2rem;
 
-        &.-half {
-            width: calc(50% + 0.2rem);
+        @include respond-to-wide {
+            border-top-right-radius: $border-radius;
         }
+
+        &.-non-responsive {
+            border-top-right-radius: $border-radius;
+        }
+
+        @include stacked-responsiveness();
     }
 
     &.-bottom-left {
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0;
+
+        @include respond-to-wide {
+            border-bottom-left-radius: $border-radius;
+        }
+
+        &.-non-responsive {
+            border-bottom-left-radius: $border-radius;
+        }
     }
 
     &.-bottom-right {
-        border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        margin-left: -.2rem;
 
-        &.-half {
-            width: calc(50% + 0.2rem);
+        @include respond-to-wide {
+            border-bottom-left-radius: 0;
         }
+
+        &.-non-responsive {
+            border-bottom-left-radius: 0;
+        }
+        @include stacked-responsiveness();
     }
 
     &.is-hidden {
