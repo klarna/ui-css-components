@@ -7,4 +7,8 @@
   margin: 4rem 0 2rem 0;
   padding: .2rem 0 .8rem 0;
   text-transform: uppercase;
+
+  &.-blue {
+    color: map-get($colors, klarna-blue);
+  }
 }
