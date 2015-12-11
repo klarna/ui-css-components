@@ -563,13 +563,40 @@
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #3c3c3e; }
+  .cui__title--primary.-blue, .cui__title--secondary.-blue {
+    color: #0074c8; }
 
 .cui__title--primary {
-  color: #0072CC; }
+  font-size: 5.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased; }
+  .cui__title--primary.-small {
+    font-size: 4.4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    margin-top: .2rem; }
+    .cui__title--primary.-small.-strong {
+      font-size: 4.4rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased; }
 
 .cui__title--secondary {
-  color: #3c3c3e; }
+  line-height: 3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased; }
 
 .cui__subtitle {
   font-size: 2.4rem;
@@ -583,3 +610,5 @@
   margin: 4rem 0 2rem 0;
   padding: .2rem 0 .8rem 0;
   text-transform: uppercase; }
+  .cui__subtitle.-blue {
+    color: #0074c8; }

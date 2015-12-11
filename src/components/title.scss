@@ -1,14 +1,32 @@
 .cui__title--primary, .cui__title--secondary {
-  @include vertical-grid(7rem, .6rem);
-  @include typography(5.2rem, regular);
+    @include vertical-grid(7rem, .6rem);
+    @include typography(5.2rem, regular);
 
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    color: map-get($colors, black);
+
+    &.-blue {
+      color: map-get($colors, klarna-blue);
+    }
 }
 
 .cui__title--primary {
-  color: #0072CC;
+    @include typography(5.2rem, light);
+
+    &.-small {
+        @include typography(4.4rem, light);
+
+        margin-top: .2rem;
+
+        &.-strong {
+            @include typography(4.4rem, regular);
+        }
+    }
 }
 
 .cui__title--secondary {
-  color: map-get($colors, black);
+    @include vertical-grid(3rem, .6rem);
+
+    @include typography(3rem, semi-bold);
 }
