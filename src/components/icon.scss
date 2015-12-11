@@ -20,7 +20,7 @@
     </g>
 </svg>');
 
-    &.is-focused {
+    .is-focused & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -37,7 +37,7 @@
 </svg>');
     }
 
-    &.is-warning {
+    .is-warning & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -54,7 +54,7 @@
 </svg>');
     }
 
-    &.is-error {
+    .is-error & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -63,6 +63,23 @@
                 <g transform="translate(0, 33)">
                     <g transform="translate(18, 15)">
                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#e63200"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>');
+    }
+
+    .is-disabled & {
+        background: url('data:image/svg+xml,
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-118, -215)">
+            <g transform="translate(100, 167)">
+                <g transform="translate(0, 33)">
+                    <g transform="translate(18, 15)">
+                      <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#CBCBCD"></path>
                     </g>
                 </g>
             </g>
@@ -90,7 +107,7 @@
   </g>
 </svg>');
 
-    &.is-focused {
+    .is-focused & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -109,7 +126,7 @@
 </svg>');
     }
 
-    &.is-warning {
+    .is-warning & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -128,7 +145,7 @@
 </svg>');
     }
 
-    &.is-error {
+    .is-error & {
         background: url('data:image/svg+xml,
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -139,6 +156,25 @@
             <rect stroke="#e63200" x="4" y="7" width="12" height="9" rx="2"></rect>
             <rect fill="#e63200" x="9.5" y="10" width="1" height="3" rx="1"></rect>
             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e63200" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>');
+    }
+
+    .is-disabled & {
+        background: url('data:image/svg+xml,
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-118, -265)">
+      <g transform="translate(100, 167)">
+        <g transform="translate(0, 33)">
+          <g transform="translate(18, 65)">
+            <rect stroke="#CBCBCD" x="4" y="7" width="12" height="9" rx="2"></rect>
+            <rect fill="#CBCBCD" x="9.5" y="10" width="1" height="3" rx="1"></rect>
+            <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#CBCBCD" stroke-linecap="round" stroke-linejoin="round"></path>
           </g>
         </g>
       </g>

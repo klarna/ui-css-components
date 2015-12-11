@@ -196,6 +196,15 @@
             -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
         }
     }
+
+    &.is-disabled {
+        background-color: #FAFAFA;
+        border-color: #CBCBCD;
+
+        &:hover {
+            border-color: #CBCBCD;
+        }
+    }
 }
 
 .cui__field__label, .cui__field__input {
@@ -236,6 +245,10 @@
     .is-warning & {
         color: #ecb800;
     }
+
+    .is-disabled & {
+        color: #CBCBCD;
+    }
 }
 
 .cui__field__input {
@@ -261,6 +274,10 @@
     .is-filled &, .is-error &, .is-warning & {
         height: 9rem;
         top: 1rem;
+    }
+
+    .is-disabled & {
+        color: #CBCBCD;
     }
 
     .safari &,
