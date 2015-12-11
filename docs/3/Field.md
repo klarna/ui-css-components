@@ -10,11 +10,25 @@ ___
 
 - [Overview](#Field/overview)
 - [Floating label](#Field/floating label)
+- [Examples](#Field/examples)
 - [Regular](#Field/regular)
 	- [focused](#Field/regular/focused)
 	- [filled](#Field/regular/filled)
 	- [error](#Field/regular/error)
 	- [warning](#Field/regular/warning)
+- [Stacked](#Field/stacked)
+	- [side by side](#Field/stacked/side by side)
+	- [top part](#Field/stacked/top part)
+	- [top part](#Field/stacked/top only)
+	- [bottom part](#Field/stacked/bottom part)
+	- [bottom part](#Field/stacked/bottom only)
+	- [center](#Field/stacked/center)
+	- [half and quarter sizes](#Field/stacked/half and quarter sizes)
+- [Icon](#Field/icon)
+	- [focused](#Field/icon/focused)
+	- [filled](#Field/icon/filled)
+	- [error](#Field/icon/error)
+	- [warning](#Field/icon/warning)
 
 <a name="Field/overview"></a>
 ## Overview
@@ -139,7 +153,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
 
 When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:
 
-<div style="overflow: hidden">
+<div>
   <div class="cui__field" style="width: 45%; float: left;">
     <label class="cui__field__label">
       Please write your email address
@@ -152,7 +166,13 @@ When fields are blank, their labels will behave as placeholders. When the field 
     </label>
     <input class="cui__field__input" oninput="floatingLabel(this)" />
   </div>
+	<div style="clear: both"></div>
 </div>
+
+<a name="Field/examples"></a>
+## Examples
+
+- [Billing Address form](examples/base/billing_address.html)
 
 <a name="Field/regular"></a>
 ## Regular
@@ -230,6 +250,252 @@ Should be used when there's something that requires user's attention to the fill
 </div>
 ```
 
+<a name="Field/stacked"></a>
+## Stacked fields
+
+Fields can be stacked together to form a single organic visual component.
+
+By default, side by side fields will be responsive, meaning that they will
+turn full width on thin screens. If you want fields to keep appearing side
+by side on thin viewports, add the `-non-responsive` class to the field. You
+can see an example of this in the [Billing Address](examples/base/billing_address.html)
+demo.
+
+
+<div style="overflow: hidden">
+  <ul class="overview">
+    <li>
+				<div class="cui__field__wrapper">
+						<div class="cui__field -top-left -half -non-responsive">
+							<label class="cui__field__label">
+								Name
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -top-right -half -non-responsive">
+							<label class="cui__field__label">
+								Lastname
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square">
+							<label class="cui__field__label">
+								Address line 1
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square">
+							<label class="cui__field__label">
+								Address line 2
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square -half">
+							<label class="cui__field__label">
+								City
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -center -quarter">
+							<label class="cui__field__label">
+								State
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -center -quarter">
+							<label class="cui__field__label">
+								Zip
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -bottom-left -half">
+							<label class="cui__field__label">
+								Phone number
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -bottom-right -half">
+							<label class="cui__field__label">
+								Email
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+				</div>
+    </li>
+	</ul>
+</div>
+
+<a name="Field/stacked/side by side"></a>
+### Side by side
+
+```html
+<div class="cui__field -left -half">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -right -half">
+	<label class="cui__field__label">
+		Lastname
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/top part"></a>
+### Top part
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -half">
+	<label class="cui__field__label">
+		Lastname
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/top only"></a>
+### Top only
+
+```html
+<div class="cui__field -top">
+	<label class="cui__field__label">
+		Email address
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/bottom part"></a>
+### Bottom part
+
+```html
+<div class="cui__field -bottom-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -bottom-right -half">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/bottom only"></a>
+### Bottom only
+
+```html
+<div class="cui__field -bottom">
+	<label class="cui__field__label">
+		Password
+	</label>
+	<input type="password" class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/square"></a>
+### Square
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -half">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -square">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/half and quarter sizes"></a>
+### Half and Quarter sizes
+
+```html
+<div class="cui__field -top-left -half">
+	<label class="cui__field__label">
+		City
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -center -quarter">
+	<label class="cui__field__label">
+		Zip
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -quarter">
+	<label class="cui__field__label">
+		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
 <a name="Field/icon"></a>
 ## With Icon
 
@@ -294,3 +560,25 @@ Should be used when there's something that requires user's attention to the fill
 	<input class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
+
+<script>
+		function floatingLabel(input) {
+			if(input.value){
+				$(input).parent().addClass("is-filled");
+			} else {
+				$(input).parent().removeClass("is-filled");
+			}
+		}
+
+		function dofocus(input) {
+				$(input).parent().addClass('is-focused');
+		}
+
+		function doblur(input) {
+				$(input).parent().removeClass('is-focused');
+		}
+
+		$('input').each(function (index, input) {
+				floatingLabel(input)
+		})
+</script>

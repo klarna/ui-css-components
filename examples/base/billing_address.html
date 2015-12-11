@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="cui__baseline">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Billing Address fieldset</title>
+        <link rel="stylesheet" href="/dist/ui-toolkit.css" />
+    </head>
+
+    <body class="cui__baseline__content--main">
+        <nav>
+            <p class="cui__paragraph--primary">
+                <a class="cui__link" href="/">Back to the Showroom</a>
+            </p>
+        </nav>
+
+        <h3 class="cui__subtitle">
+          Subtitle
+        </h3>
+
+        <div class="cui__field__wrapper">
+            <div class="cui__field -top-left -half -non-responsive">
+            	<label class="cui__field__label">
+            		Name
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                    value="John"
+                />
+            </div>
+
+            <div class="cui__field -top-right -half -non-responsive">
+            	<label class="cui__field__label">
+            		Lastname
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -square">
+            	<label class="cui__field__label">
+            		Address line 1
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -square">
+            	<label class="cui__field__label">
+            		Address line 2
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -square -half">
+            	<label class="cui__field__label">
+            		City
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -center -quarter">
+            	<label class="cui__field__label">
+            		State
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -center -quarter">
+            	<label class="cui__field__label">
+            		Zip
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -bottom-left -half">
+            	<label class="cui__field__label">
+            		Phone number
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+
+            <div class="cui__field -bottom-right -half">
+            	<label class="cui__field__label">
+            		Email
+            	</label>
+            	<input
+                    class="cui__field__input"
+                    oninput="floatingLabel(this)"
+                    onfocus="dofocus(this)"
+                    onblur="doblur(this)"
+                />
+            </div>
+        </div>
+
+        <div class="cui__button__menu">
+            <button class="cui__button--primary -right">
+              Continue
+            </button>
+
+            <button class="cui__button--secondary -right">
+              Cancel
+            </button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script>
+            function floatingLabel(input) {
+              if(input.value){
+                $(input).parent().addClass("is-filled");
+              } else {
+                $(input).parent().removeClass("is-filled");
+              }
+            }
+
+            function dofocus(input) {
+                $(input).parent().addClass('is-focused');
+            }
+
+            function doblur(input) {
+                $(input).parent().removeClass('is-focused');
+            }
+
+            $('input').each(function (index, input) {
+                floatingLabel(input)
+            })
+        </script>
+    </body>
+</html>

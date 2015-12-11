@@ -1,13 +1,164 @@
+@mixin partial-width ($width) {
+    width: $width;
+    clear: none;
+    float: left;
+}
+
+@mixin stacked-responsiveness () {
+    @include respond-to-wide {
+        margin-left: -.2rem;
+    }
+
+    &.-non-responsive {
+        margin-left: -.2rem;
+    }
+
+    &.-half {
+        @include respond-to-wide {
+            width: calc(50% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(50% + 0.2rem);
+        }
+    }
+
+    &.-quarter {
+        @include respond-to-wide {
+            width: calc(25% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(25% + 0.2rem);
+        }
+    }
+}
+
 .cui__field {
-    background-color: #fff;
-    border: 1px solid $border-color;
+    border: .2rem solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
+    clear: both;
+    display: block;
+    height: 10.2rem;
+    margin-bottom: -.2rem;
     position: relative;
-    height: 10rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
 
     &.-big {
         height: 12rem;
+    }
+
+    &.-square {
+        border-radius: 0;
+    }
+
+    &.-half {
+        @include respond-to-wide {
+            @include partial-width(50%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(50%);
+        }
+    }
+
+    &.-quarter {
+        @include respond-to-wide {
+            @include partial-width(25%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(25%);
+        }
+    }
+
+    &.-left {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &.-center {
+        border-radius: 0;
+        @include stacked-responsiveness();
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    }
+
+    &.-right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        @include stacked-responsiveness();
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    }
+
+    &.-top {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &.-top-left {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        @include respond-to-wide {
+            border-top-right-radius: 0;
+        }
+
+        &.-non-responsive {
+            border-top-right-radius: 0;
+        }
+    }
+
+    &.-top-right {
+        border-radius: 0;
+        clear: right;
+
+        @include respond-to-wide {
+            border-top-right-radius: $border-radius;
+        }
+
+        &.-non-responsive {
+            border-top-right-radius: $border-radius;
+        }
+
+        @include stacked-responsiveness();
+    }
+
+    &.-bottom-left {
+        border-radius: 0;
+
+        @include respond-to-wide {
+            border-bottom-left-radius: $border-radius;
+        }
+
+        &.-non-responsive {
+            border-bottom-left-radius: $border-radius;
+        }
+    }
+
+    &.-bottom-right {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        @include respond-to-wide {
+            border-bottom-left-radius: 0;
+        }
+
+        &.-non-responsive {
+            border-bottom-left-radius: 0;
+        }
+        @include stacked-responsiveness();
     }
 
     &.is-hidden {
@@ -19,22 +170,26 @@
     }
 
     &:hover {
-        border: 1px solid $border-color-focus;
+        border-color: $border-color-hover;
+        z-index: 10;
     }
 
     &.is-focused {
-        border: 1px solid $border-color-focus;
+        border-color: $border-color-focus;
         box-shadow: 0 0 4px $box-shadow-focus;
+        z-index: 20;
     }
 
     &.is-error {
         background-color: #fff8f7;
         border-color: #e6bebe;
+        box-shadow: none;
     }
 
     &.is-warning {
         background-color: #fffaf0;
         border-color: #e6c88c;
+        box-shadow: none;
 
         @include respond-to-ie(8) {
             $ie-hex: ie-hex-str(#fffaf0);
@@ -44,15 +199,16 @@
 }
 
 .cui__field__label, .cui__field__input {
-    @include typography(3rem, regular);
+    @include typography(2.8rem, regular);
 
     line-height: 10rem;
-    padding: 0 2.4rem;
+    padding: 0 4rem;
     position: absolute;
 }
 
 .cui__field__label {
     color: map-get($colors, 'grey-text');
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
     .-big & {
@@ -83,6 +239,8 @@
 }
 
 .cui__field__input {
+    @include typography(2.8rem, semi-bold);
+
     appearance: none;
     background-color: transparent;
     border: 0;
@@ -138,4 +296,14 @@
     margin: 3rem 0 0 2.4rem;
     position: absolute;
     width: 4rem;
+}
+
+.cui__field__wrapper {
+    position: relative;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }

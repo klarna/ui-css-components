@@ -2,6 +2,7 @@
 @import "../mixins/ie-and-stock";
 @import "../mixins/ie";
 @import "../mixins/opacity";
+@import "../mixins/responsive";
 @import "../mixins/retina-image-compat";
 @import "../mixins/typography";
 @import "../mixins/vertical-grid";
@@ -10,6 +11,7 @@
 @import "../components/button";
 @import "../components/field";
 @import "../components/icon";
+@import "../components/link";
 @import "../components/paragraph";
 @import "../components/title";
 @import "../components/subtitle";

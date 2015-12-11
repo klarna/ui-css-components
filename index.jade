@@ -31,11 +31,11 @@ html.cui__baseline(lang="en")
 
         // helpers for documentation
 
-        $('input.cui__field__input').focus(function(){
+        $('input').focus(function(){
           $(this).parent().addClass('is-focused');
         })
 
-        $('input.cui__field__input').blur(function(){
+        $('input').blur(function(){
           $(this).parent().removeClass('is-focused');
         })
 
@@ -73,4 +73,3 @@ html.cui__baseline(lang="en")
         })
 
         hljs.initHighlightingOnLoad();
-
