@@ -16,6 +16,7 @@ ___
 	- [filled](#Field/regular/filled)
 	- [error](#Field/regular/error)
 	- [warning](#Field/regular/warning)
+	- [disabled](#Field/regular/disabled)
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
 	- [top part](#Field/stacked/top part)
@@ -247,6 +248,27 @@ Should be used when there's something that requires user's attention to the fill
         Are you sure the domain is exanple?
     </label>
     <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/regular/disabled"></a>
+### Disabled
+
+Should be used when it's important to show the field to the user but she should not be able to edit it.
+
+```html
+<div class="cui__field is-disabled -left -half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__field is-disabled -right -half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" />
 </div>
 ```
 
@@ -527,7 +549,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-filled is-focused">
-	<span class="cui__field--icon__icon cui__icon--lock is-focused"></span>
+	<span class="cui__field--icon__icon cui__icon--lock"></span>
 	<label class="cui__field--icon__label">
 		Please write your email address
 	</label>
@@ -540,7 +562,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-error">
-	<span class="cui__field--icon__icon cui__icon--lock is-error"></span>
+	<span class="cui__field--icon__icon cui__icon--lock"></span>
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
@@ -553,11 +575,23 @@ demo.
 
 ```html
 <div class="cui__field--icon is-warning">
-	<span class="cui__field--icon__icon cui__icon--lock is-warning"></span>
+	<span class="cui__field--icon__icon cui__icon--lock"></span>
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
 	<input class="cui__field--icon__input" value="email@exanple.com" />
+</div>
+```
+<a name="Field/icon/disabled"></a>
+### Disabled
+
+```html
+<div class="cui__field--icon is-disabled">
+	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<label class="cui__field--icon__label">
+		Are you sure the domain is example?
+	</label>
+	<input disabled class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
 
