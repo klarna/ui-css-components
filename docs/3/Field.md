@@ -254,22 +254,118 @@ Should be used when there's something that requires user's attention to the fill
 ## Stacked fields
 
 Fields can be stacked together to form a single organic visual component.
+
+By default, side by side fields will be responsive, meaning that they will
+turn full width on thin screens. If you want fields to keep appearing side
+by side on thin viewports, add the `-non-responsive` class to the field. You
+can see an example of this in the [Billing Address](examples/base/billing_address.html)
+demo.
+
+
 <div style="overflow: hidden">
   <ul class="overview">
     <li>
-      <div class="cui__field -left -half">
-        <label class="cui__field__label">
-          Name
-        </label>
-        <input class="cui__field__input" />
-      </div>
-      <div class="cui__field -right -half">
-        <label class="cui__field__label">
-          Lastname
-        </label>
-        <input class="cui__field__input" />
-      </div>
-			<div style="clear: both"></div>
+				<div class="cui__field__wrapper">
+						<div class="cui__field -top-left -half -non-responsive">
+							<label class="cui__field__label">
+								Name
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -top-right -half -non-responsive">
+							<label class="cui__field__label">
+								Lastname
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square">
+							<label class="cui__field__label">
+								Address line 1
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square">
+							<label class="cui__field__label">
+								Address line 2
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -square -half">
+							<label class="cui__field__label">
+								City
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -center -quarter">
+							<label class="cui__field__label">
+								State
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -center -quarter">
+							<label class="cui__field__label">
+								Zip
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -bottom-left -half">
+							<label class="cui__field__label">
+								Phone number
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+						<div class="cui__field -bottom-right -half">
+							<label class="cui__field__label">
+								Email
+							</label>
+							<input
+										class="cui__field__input"
+										oninput="floatingLabel(this)"
+										onfocus="dofocus(this)"
+										onblur="doblur(this)"
+								/>
+						</div>
+				</div>
     </li>
 	</ul>
 </div>
@@ -464,3 +560,25 @@ Fields can be stacked together to form a single organic visual component.
 	<input class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
+
+<script>
+		function floatingLabel(input) {
+			if(input.value){
+				$(input).parent().addClass("is-filled");
+			} else {
+				$(input).parent().removeClass("is-filled");
+			}
+		}
+
+		function dofocus(input) {
+				$(input).parent().addClass('is-focused');
+		}
+
+		function doblur(input) {
+				$(input).parent().removeClass('is-focused');
+		}
+
+		$('input').each(function (index, input) {
+				floatingLabel(input)
+		})
+</script>
