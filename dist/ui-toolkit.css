@@ -56,7 +56,7 @@
       margin: 0 auto; } }
 
 .cui__button--primary {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -72,7 +72,7 @@
   cursor: pointer;
   line-height: 9.6rem;
   outline: none;
-  padding: 0 10rem;
+  padding: 0 9rem;
   text-align: center;
   text-decoration: none;
   -webkit-transition: all .2s ease;
@@ -135,7 +135,7 @@
           content: url("img/button--primary__loader@2x.png"); } }
 
 .cui__button--secondary {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -151,7 +151,7 @@
   cursor: pointer;
   line-height: 9.6rem;
   outline: none;
-  padding: 0 10rem;
+  padding: 0 9rem;
   text-align: center;
   text-decoration: none;
   -webkit-transition: all .2s ease;
@@ -483,6 +483,9 @@
     clear: both;
     display: block; }
 
+.cui__subtitle + .cui__field__wrapper {
+  padding-top: 1rem; }
+
 .cui__icon {
   display: block;
   height: 20px;
@@ -553,7 +556,7 @@
   color: #9e9ea0;
   line-height: 4rem;
   margin: 0;
-  padding: 1.4rem 0 3.6rem 0; }
+  padding: 0.4rem 0 2.6rem 0; }
 
 .cui__title--primary, .cui__title--secondary {
   font-size: 5.2rem;
@@ -594,7 +597,7 @@
   font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  padding: 3.4rem 0 3.6rem 0;
+  padding: 4.4rem 0 2.6rem 0;
   line-height: 3rem; }
 
 .cui__subtitle {
@@ -607,7 +610,10 @@
   height: 4rem;
   line-height: 4rem;
   margin: 0;
-  padding: 3.2rem 0 2.8rem 0;
+  padding: 3.2rem 0 1.8rem 0;
   text-transform: uppercase; }
   .cui__subtitle.-blue {
     color: #0074c8; }
+
+.cui__title--primary + .cui__subtitle {
+  margin-top: -2rem; }
