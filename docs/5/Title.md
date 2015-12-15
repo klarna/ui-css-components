@@ -1,15 +1,17 @@
 
 # Title
 
-- [Overview](#Title/overview)
+- [Example](#Title/example)
 - [Primary](#Title/primary)
   - [small](#Title/primary/small)
   - [small and prominent](#Title/primary/small and prominent)
 - [Secondary](#Title/secondary)
 - [Subtitle](#Title/subtitle)
 
-<a name="Title/overview"></a>
-## Overview
+<a name="Title/example"></a>
+## Example
+
+- [Text example](examples/base/text.html)
 
 <a name="Title/primary"></a>
 ## Primary

@@ -1,10 +1,9 @@
 .cui__title--primary, .cui__title--secondary {
-    @include vertical-grid(7rem, .6rem);
     @include typography(5.2rem, regular);
 
-    margin-bottom: 2rem;
-
     color: map-get($colors, black);
+    line-height: 7rem;
+    margin: 0;
 
     &.-blue {
       color: map-get($colors, klarna-blue);
@@ -14,10 +13,12 @@
 .cui__title--primary {
     @include typography(5.2rem, light);
 
+    padding: 3.6rem 0 3.4rem 0;
+
     &.-small {
         @include typography(4.4rem, light);
 
-        margin-top: .2rem;
+        padding: 3.8rem 0 3.2rem 0;
 
         &.-strong {
             @include typography(4.4rem, regular);
@@ -26,7 +27,8 @@
 }
 
 .cui__title--secondary {
-    @include vertical-grid(3rem, .6rem);
-
     @include typography(3rem, semi-bold);
+
+    padding: 3.4rem 0 3.6rem 0;
+    line-height: 3rem;
 }
