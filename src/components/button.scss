@@ -1,5 +1,5 @@
 @mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
-    @include typography(3rem, semi-bold);
+    @include typography(2.8rem, semi-bold);
 
     appearance: none;
     background: $background;
@@ -10,7 +10,7 @@
     cursor: pointer;
     line-height: 10rem - 0.4rem;
     outline: none;
-    padding: 0 10rem;
+    padding: 0 9rem;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .2s ease;

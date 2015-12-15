@@ -49,14 +49,14 @@
 
 .cui__baseline__content--main {
   margin: 0 4rem;
-  padding: .2rem 0 0 0; }
+  padding: 0; }
   @media screen and (min-width: 569px) {
     .cui__baseline__content--main {
       width: 102rem;
       margin: 0 auto; } }
 
 .cui__button--primary {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -72,7 +72,7 @@
   cursor: pointer;
   line-height: 9.6rem;
   outline: none;
-  padding: 0 10rem;
+  padding: 0 9rem;
   text-align: center;
   text-decoration: none;
   -webkit-transition: all .2s ease;
@@ -135,7 +135,7 @@
           content: url("img/button--primary__loader@2x.png"); } }
 
 .cui__button--secondary {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
@@ -151,7 +151,7 @@
   cursor: pointer;
   line-height: 9.6rem;
   outline: none;
-  padding: 0 10rem;
+  padding: 0 9rem;
   text-align: center;
   text-decoration: none;
   -webkit-transition: all .2s ease;
@@ -483,6 +483,9 @@
     clear: both;
     display: block; }
 
+.cui__subtitle + .cui__field__wrapper {
+  padding-top: 1rem; }
+
 .cui__icon {
   display: block;
   height: 20px;
@@ -519,29 +522,30 @@
   .cui__link:hover {
     color: #005694; }
 
+.cui__paragraph--primary, .cui__paragraph--secondary {
+  line-height: 5rem;
+  margin: 0;
+  padding: .6rem 0 3.4rem 0; }
+  .cui__paragraph--primary.-condensed, .cui__paragraph--secondary.-condensed {
+    line-height: 4rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem; }
+
 .cui__paragraph--primary {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  line-height: 5rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.6rem;
-  color: #3c3c3e;
-  margin-bottom: 5rem; }
+  color: #3c3c3e; }
 
 .cui__paragraph--secondary {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  line-height: 5rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.6rem;
-  color: #9e9ea0;
-  margin-bottom: 5rem; }
+  color: #9e9ea0; }
 
 .cui__paragraph--legal {
   font-size: 2.2rem;
@@ -549,22 +553,20 @@
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  color: #9e9ea0;
   line-height: 4rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.8rem;
-  color: #9e9ea0; }
+  margin: 0;
+  padding: 0.4rem 0 2.6rem 0; }
 
 .cui__title--primary, .cui__title--secondary {
-  line-height: 7rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
   font-size: 5.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 2rem;
-  color: #3c3c3e; }
+  color: #3c3c3e;
+  line-height: 7rem;
+  margin: 0; }
   .cui__title--primary.-blue, .cui__title--secondary.-blue {
     color: #0074c8; }
 
@@ -573,14 +575,15 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  padding: 3.6rem 0 3.4rem 0; }
   .cui__title--primary.-small {
     font-size: 4.4rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    margin-top: .2rem; }
+    padding: 3.8rem 0 3.2rem 0; }
     .cui__title--primary.-small.-strong {
       font-size: 4.4rem;
       font-family: "Open Sans", sans-serif;
@@ -589,14 +592,13 @@
       -webkit-font-smoothing: antialiased; }
 
 .cui__title--secondary {
-  line-height: 3rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  padding: 4.4rem 0 2.6rem 0;
+  line-height: 3rem; }
 
 .cui__subtitle {
   font-size: 2.4rem;
@@ -607,8 +609,11 @@
   color: #3c3c3e;
   height: 4rem;
   line-height: 4rem;
-  margin: 4rem 0 2rem 0;
-  padding: .2rem 0 .8rem 0;
+  margin: 0;
+  padding: 3.2rem 0 1.8rem 0;
   text-transform: uppercase; }
   .cui__subtitle.-blue {
     color: #0074c8; }
+
+.cui__title--primary + .cui__subtitle {
+  margin-top: -2rem; }
