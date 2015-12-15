@@ -173,7 +173,7 @@ When fields are blank, their labels will behave as placeholders. When the field 
 <a name="Field/examples"></a>
 ## Examples
 
-- [Billing Address form](examples/base/billing_address.html)
+- [Checkout form](examples/base/checkout.html)
 
 <a name="Field/regular"></a>
 ## Regular

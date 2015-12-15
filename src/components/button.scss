@@ -143,5 +143,11 @@
 }
 
 .cui__button__menu {
-    margin-top: 4rem;
+    padding-bottom: 4rem;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }

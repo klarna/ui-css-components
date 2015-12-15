@@ -1,0 +1,134 @@
+.cui__dropdown--native {
+    @include stackable();
+
+    border: .2rem solid $border-color;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 10.2rem;
+    margin: 0 0 -.2rem 0;
+    position: relative;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    &:hover {
+        border-color: $border-color-hover;
+        z-index: 10;
+    }
+
+    &.is-error {
+        background-color: #fff8f7;
+        border-color: #e6bebe;
+        box-shadow: none;
+    }
+
+    &.is-warning {
+        background-color: #fffaf0;
+        border-color: #e6c88c;
+        box-shadow: none;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str(#fffaf0);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+    }
+
+    &.is-focused {
+        border-color: $border-color-focus;
+        box-shadow: 0 0 4px $box-shadow-focus;
+        z-index: 20;
+    }
+
+    &::after {
+        background: url('data:image/svg+xml,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-488, -428)"><g transform="translate(488, 429)"><rect x="0" y="0" width="14" height="14"></rect><path d="M11,5 L7,9 L3,5" stroke="#3C3C3E" stroke-linecap="round"></path></g></g></g></svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        position: absolute;
+        right: 3.4rem;
+        top: 3.4rem;
+        width: 2.8rem;
+    }
+}
+
+.cui__dropdown--native__label {
+    @include typography(2.8rem, regular);
+
+    line-height: 10rem;
+    padding: 0 4rem;
+    position: absolute;
+
+    .is-error &, .is-warning & {
+        height: 9rem;
+        top: 1rem;
+    }
+
+    .is-selected & {
+        @include typography(2.2rem, regular);
+
+        color: map-get($colors, 'grey-text');
+        transform: translate(0, -2rem);
+    }
+
+    .is-disabled & {
+        color: #CBCBCD;
+    }
+}
+
+.cui__dropdown--native__current-option {
+    @include typography(2.8rem, semi-bold);
+
+    line-height: 10rem;
+    padding: 0 4rem;
+    position: absolute;
+
+    .is-selected &, .is-error &, .is-warning & {
+        height: 9rem;
+        top: 1rem;
+    }
+
+    .is-disabled & {
+        color: #CBCBCD;
+    }
+}
+
+.cui__dropdown--native__floating-label {
+    @include typography(2.8rem, regular);
+
+    left: 0;
+    line-height: 10rem;
+    padding: 0 4rem;
+    position: absolute;
+    top: 0;
+
+    .is-error &, .is-warning & {
+        @include typography(2.2rem, regular);
+
+        transform: translate(0, -2rem);
+    }
+
+
+    .is-error & {
+        color: #e63200;
+    }
+
+    .is-warning & {
+        color: #ecb800;
+    }
+
+    .is-disabled & {
+        color: #CBCBCD;
+    }
+}
+
+.cui__dropdown--native__select {
+    appearance: none;
+    cursor: pointer;
+    height: 10.2rem;
+    opacity: 0;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
