@@ -633,11 +633,27 @@
   .cui__field.is-error, .is-error.cui__field--icon {
     background-color: #fff8f7;
     border-color: #e6bebe;
-    box-shadow: none; }
+    box-shadow: none;
+    z-index: 5; }
+    .cui__field.is-error:hover, .is-error.cui__field--icon:hover {
+      border-color: #EF8B6F;
+      z-index: 10; }
+    .cui__field.is-error.is-focused, .is-error.is-focused.cui__field--icon {
+      border-color: #E63200;
+      box-shadow: 0 0 4px rgba(230, 55, 6, 0.4);
+      z-index: 20; }
   .cui__field.is-warning, .is-warning.cui__field--icon {
     background-color: #fffaf0;
     border-color: #e6c88c;
-    box-shadow: none; }
+    box-shadow: none;
+    z-index: 5; }
+    .cui__field.is-warning:hover, .is-warning.cui__field--icon:hover {
+      border-color: #E2AF4A;
+      z-index: 10; }
+    .cui__field.is-warning.is-focused, .is-warning.is-focused.cui__field--icon {
+      border-color: #E2AF4A;
+      box-shadow: 0 0 4px #E6C88C;
+      z-index: 20; }
     .ie8 .cui__field.is-warning, .ie8 .is-warning.cui__field--icon, .cui__browser--ie8 .cui__field.is-warning, .cui__browser--ie8 .is-warning.cui__field--icon {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
   .cui__field.is-disabled, .is-disabled.cui__field--icon {

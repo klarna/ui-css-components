@@ -15,7 +15,9 @@ ___
 	- [focused](#Field/regular/focused)
 	- [filled](#Field/regular/filled)
 	- [error](#Field/regular/error)
+	- [error focused](#Field/regular/error focused)
 	- [warning](#Field/regular/warning)
+	- [warning focused](#Field/regular/warning focused)
 	- [disabled](#Field/regular/disabled)
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
@@ -28,6 +30,7 @@ ___
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
+	- [error](#Field/icon/error)
 	- [error](#Field/icon/error)
 	- [warning](#Field/icon/warning)
 
@@ -236,6 +239,17 @@ Should be used when there's a problem with the filled value that blocks the user
     <input class="cui__field__input" value="invalid@" />
 </div>
 ```
+<a name="Field/regular/error focused"></a>
+### Error focused
+
+```html
+<div class="cui__field is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div>
+```
 
 <a name="Field/regular/warning"></a>
 ### Warning
@@ -244,6 +258,17 @@ Should be used when there's something that requires user's attention to the fill
 
 ```html
 <div class="cui__field is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+<a name="Field/regular/warning focused"></a>
+### Warning focused
+
+```html
+<div class="cui__field is-warning is-focused">
     <label class="cui__field__label is-focused">
         Are you sure the domain is exanple?
     </label>
