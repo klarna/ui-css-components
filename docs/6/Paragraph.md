@@ -10,7 +10,7 @@
 <a name="Paragraph/example"></a>
 ## Example
 
-- [Text example](examples/base/text.html)
+- [Documentation example](examples/base/documentation.html)
 
 <a name="Paragraph/primary"></a>
 ## Primary

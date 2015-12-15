@@ -11,7 +11,7 @@
 <a name="Title/example"></a>
 ## Example
 
-- [Text example](examples/base/text.html)
+- [Documentation example](examples/base/documentation.html)
 
 <a name="Title/primary"></a>
 ## Primary
