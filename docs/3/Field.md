@@ -27,6 +27,7 @@ ___
 	- [bottom part](#Field/stacked/bottom only)
 	- [center](#Field/stacked/center)
 	- [half and quarter sizes](#Field/stacked/half and quarter sizes)
+	- [twenty - forty](#Field/stacked/twenty - forty)
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
@@ -538,6 +539,30 @@ demo.
 <div class="cui__field -top-right -quarter">
 	<label class="cui__field__label">
 		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/twenty - forty"></a>
+### Twenty - Forty
+
+```html
+<div class="cui__field -top-left -twenty">
+	<label class="cui__field__label">
+		Title
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -center -forty">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -forty">
+	<label class="cui__field__label">
+		Lastname
 	</label>
 	<input class="cui__field__input" />
 </div>

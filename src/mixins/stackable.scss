@@ -23,6 +23,16 @@
         }
     }
 
+    &.-forty {
+        @include respond-to-wide {
+            width: calc(40% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(40% + 0.2rem);
+        }
+    }
+
     &.-quarter {
         @include respond-to-wide {
             width: calc(25% + 0.2rem);
@@ -30,6 +40,16 @@
 
         &.-non-responsive {
             width: calc(25% + 0.2rem);
+        }
+    }
+
+    &.-twenty {
+        @include respond-to-wide {
+            width: calc(20% + 0.2rem);
+        }
+
+        &.-non-responsive {
+            width: calc(20% + 0.2rem);
         }
     }
 }
@@ -49,6 +69,16 @@
         }
     }
 
+    &.-forty {
+        @include respond-to-wide {
+            @include partial-width(40%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(40%);
+        }
+    }
+
     &.-quarter {
         @include respond-to-wide {
             @include partial-width(25%);
@@ -56,6 +86,16 @@
 
         &.-non-responsive {
             @include partial-width(25%);
+        }
+    }
+
+    &.-twenty {
+        @include respond-to-wide {
+            @include partial-width(20%);
+        }
+
+        &.-non-responsive {
+            @include partial-width(20%);
         }
     }
 

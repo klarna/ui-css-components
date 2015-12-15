@@ -19,14 +19,38 @@
 
     &.is-error {
         background-color: #fff8f7;
-        border-color: #e6bebe;
+        border-color: $border-color-error;
         box-shadow: none;
+        z-index: 5;
+
+        &:hover {
+            border-color: $border-color-hover-error;
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: $border-color-focus-error;
+            box-shadow: 0 0 4px $box-shadow-focus-error;
+            z-index: 20;
+        }
     }
 
     &.is-warning {
         background-color: #fffaf0;
-        border-color: #e6c88c;
+        border-color: $border-color-warning;
         box-shadow: none;
+        z-index: 5;
+
+        &:hover {
+            border-color: $border-color-hover-warning;
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: $border-color-focus-warning;
+            box-shadow: 0 0 4px $box-shadow-focus-warning;
+            z-index: 20;
+        }
 
         @include respond-to-ie(8) {
             $ie-hex: ie-hex-str(#fffaf0);
