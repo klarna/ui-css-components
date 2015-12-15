@@ -1,0 +1,46 @@
+.cui__loader {
+    @include retina-image-compat($ui-toolkit-path + 'img/loader', 4rem 4rem);
+
+    animation: spin 0.8s linear infinite;
+    display: block;
+    height: 4rem;
+    margin: 0;
+    width: 4rem;
+
+    &.-blue {
+        @include retina-image-compat($ui-toolkit-path + 'img/loader-blue', 4rem 4rem);
+    }
+
+    &.-big {
+        @include retina-image-compat($ui-toolkit-path + 'img/loader-big', 6rem 6rem);
+
+        height: 6rem;
+        width: 6rem;
+
+        &.-blue {
+            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-big', 6rem 6rem);
+        }
+    }
+
+    &.-small {
+        @include retina-image-compat($ui-toolkit-path + 'img/loader-small', 3rem 3rem);
+
+        height: 3rem;
+        width: 3rem;
+
+        &.-blue {
+            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-small', 3rem 3rem);
+        }
+    }
+
+    &.-tiny {
+        @include retina-image-compat($ui-toolkit-path + 'img/loader-tiny', 2rem 2rem);
+
+        height: 2rem;
+        width: 2rem;
+
+        &.-blue {
+            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-tiny', 2rem 2rem);            
+        }
+    }
+}
