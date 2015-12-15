@@ -44,7 +44,7 @@
         float: left;
     }
 
-    &:hover {
+    &:hover, &:focus {
         @each $attribute in $darken-attributes {
           #{$attribute}: darken($darken-color, 5.2);
         }
@@ -123,7 +123,7 @@
         @include cui__button__loader('button--secondary__loader');
     }
 
-    &:hover {
+    &:hover, &:focus {
         background: map-get($colors, klarna-blue);
         color: #fff;
     }
@@ -143,5 +143,11 @@
 }
 
 .cui__button__menu {
-    margin-top: 4rem;
+    padding-bottom: 4rem;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }

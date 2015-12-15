@@ -42,6 +42,14 @@ $font-weights: (
 // ================================================================
 $border-radius: 5px;
 $border-color: map-get($colors, grey-lines);
+$border-color-error: #e6bebe;
+$border-color-warning: #e6c88c;
 $border-color-hover: #66aae0;
+$border-color-hover-error: #EF8B6F;
+$border-color-hover-warning: #E2AF4A;
 $border-color-focus: rgba(26, 140, 220, 0.8);
+$border-color-focus-error: #E63200;
+$border-color-focus-warning: #E2AF4A;
 $box-shadow-focus: rgba(26, 140, 220, 0.6);
+$box-shadow-focus-error: rgba(230, 55, 6, 0.40);
+$box-shadow-focus-warning: #E6C88C;

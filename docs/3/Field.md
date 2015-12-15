@@ -15,7 +15,9 @@ ___
 	- [focused](#Field/regular/focused)
 	- [filled](#Field/regular/filled)
 	- [error](#Field/regular/error)
+	- [error focused](#Field/regular/error focused)
 	- [warning](#Field/regular/warning)
+	- [warning focused](#Field/regular/warning focused)
 	- [disabled](#Field/regular/disabled)
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
@@ -25,9 +27,11 @@ ___
 	- [bottom part](#Field/stacked/bottom only)
 	- [center](#Field/stacked/center)
 	- [half and quarter sizes](#Field/stacked/half and quarter sizes)
+	- [twenty - forty](#Field/stacked/twenty - forty)
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
+	- [error](#Field/icon/error)
 	- [error](#Field/icon/error)
 	- [warning](#Field/icon/warning)
 
@@ -173,7 +177,7 @@ When fields are blank, their labels will behave as placeholders. When the field 
 <a name="Field/examples"></a>
 ## Examples
 
-- [Billing Address form](examples/base/billing_address.html)
+- [Checkout form](examples/base/checkout.html)
 
 <a name="Field/regular"></a>
 ## Regular
@@ -236,6 +240,17 @@ Should be used when there's a problem with the filled value that blocks the user
     <input class="cui__field__input" value="invalid@" />
 </div>
 ```
+<a name="Field/regular/error focused"></a>
+### Error focused
+
+```html
+<div class="cui__field is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div>
+```
 
 <a name="Field/regular/warning"></a>
 ### Warning
@@ -244,6 +259,17 @@ Should be used when there's something that requires user's attention to the fill
 
 ```html
 <div class="cui__field is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+<a name="Field/regular/warning focused"></a>
+### Warning focused
+
+```html
+<div class="cui__field is-warning is-focused">
     <label class="cui__field__label is-focused">
         Are you sure the domain is exanple?
     </label>
@@ -513,6 +539,30 @@ demo.
 <div class="cui__field -top-right -quarter">
 	<label class="cui__field__label">
 		Country
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/stacked/twenty - forty"></a>
+### Twenty - Forty
+
+```html
+<div class="cui__field -top-left -twenty">
+	<label class="cui__field__label">
+		Title
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -center -forty">
+	<label class="cui__field__label">
+		Name
+	</label>
+	<input class="cui__field__input" />
+</div>
+<div class="cui__field -top-right -forty">
+	<label class="cui__field__label">
+		Lastname
 	</label>
 	<input class="cui__field__input" />
 </div>

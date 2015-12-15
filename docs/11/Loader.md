@@ -1,5 +1,11 @@
 # Loader
 
+Standalone loaders are designed to be used on overlays when the application is loading. They fit the grid in either 2, 3, 4 or 6 blocks.
+
+They are not designed to be used within other components. For a loader inside a button for example, check out the examples for Button with loader.
+
+___
+
 - [Regular](#Loader/regular)
 - [Big](#Loader/big)
 - [Small](#Loader/small)
