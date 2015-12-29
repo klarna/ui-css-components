@@ -11,6 +11,7 @@ ___
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
 - [Selector](#Dropdown/selector)
+- [Radio](#Dropdown/radio)
 
 <a name="Dropdown/examples"></a>
 ## Examples
@@ -95,7 +96,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ```
 
 <a name="Dropdown/native/focused"></a>
-## Focused
+### Focused
 
 ```html
 <div class="cui__dropdown--native is-focused">
@@ -111,7 +112,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ```
 
 <a name="Dropdown/native/selected"></a>
-## Selected
+### Selected
 
 ```html
 <div class="cui__dropdown--native is-selected">
@@ -131,7 +132,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ```
 
 <a name="Dropdown/native/error"></a>
-## Error
+### Error
 
 ```html
 <div class="cui__dropdown--native is-error -half -left">
@@ -166,7 +167,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ```
 
 <a name="Dropdown/native/warning"></a>
-## Warning
+### Warning
 
 ```html
 <div class="cui__dropdown--native is-warning -half -left">
@@ -206,15 +207,47 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ```html
 <div class="cui__dropdown--selector">
   <div class="cui__dropdown--selector__option is-selected">
-    This is a multiple choice
+    <div class="cui__dropdown--selector__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__dropdown--selector__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
   </div>
 
   <div class="cui__dropdown--selector__option">
+    <div class="cui__dropdown--selector__option__heading">
+      Second item<br />
+      With several lines
+    </div>
+
+  </div>
+
+  <div class="cui__dropdown--selector__option">
+    <div class="cui__dropdown--selector__option__heading">
+      Third item
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/radio"></a>
+## Radio
+
+```html
+<div class="cui__dropdown--radio">
+  <div class="cui__dropdown--radio__option is-selected">
+    This is a multiple choice
+  </div>
+
+  <div class="cui__dropdown--radio__option">
     Second item<br />
     With several lines
   </div>
 
-  <div class="cui__dropdown--selector__option">
+  <div class="cui__dropdown--radio__option">
     Third item
   </div>
 </div>

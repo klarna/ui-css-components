@@ -229,8 +229,6 @@
     }
 
     &.is-selected {
-        @include typography(2.8rem, semi-bold);
-
         &::before {
             background: map-get($colors, klarna-blue);
             border-color: map-get($colors, klarna-blue);
@@ -241,4 +239,8 @@
             top: 3.2rem;
         }
     }
+}
+
+.cui__dropdown--selector__option__heading {
+    @include typography(2.8rem, semi-bold);
 }
