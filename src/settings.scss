@@ -41,6 +41,7 @@ $font-weights: (
 //  Borders
 // ================================================================
 $border-radius: 5px;
+$border-radius-checkbox: 2px;
 $border-color: map-get($colors, grey-lines);
 $border-color-error: #e6bebe;
 $border-color-warning: #e6c88c;
