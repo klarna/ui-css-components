@@ -10,6 +10,7 @@ ___
   - [selected](#Dropdown/native/selected)
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
+- [Selector](#Dropdown/selector)
 
 <a name="Dropdown/examples"></a>
 ## Examples
@@ -196,5 +197,25 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <option>And this is an option</option>
     <option>A second alternative</option>
   </select>
+</div>
+```
+
+<a name="Dropdown/selector"></a>
+## Selector
+
+```html
+<div class="cui__dropdown--selector">
+  <div class="cui__dropdown--selector__option is-selected">
+    This is a multiple choice
+  </div>
+
+  <div class="cui__dropdown--selector__option">
+    Second item<br />
+    With several lines
+  </div>
+
+  <div class="cui__dropdown--selector__option">
+    Third item
+  </div>
 </div>
 ```

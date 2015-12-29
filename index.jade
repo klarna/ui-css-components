@@ -39,6 +39,10 @@ html.cui__baseline(lang="en")
           $(this).parent().removeClass('is-focused');
         })
 
+        $('.cui__dropdown--selector__option').click(function(){
+          $(this).toggleClass('is-selected');
+        })
+
         function floatingLabel(input) {
           if(input.value){
             $(input).parent().addClass("is-filled");
