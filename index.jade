@@ -43,6 +43,16 @@ html.cui__baseline(lang="en")
           $(this).toggleClass('is-selected');
         })
 
+        $('.cui__dropdown--custom__option').click(function(){
+          if ($(this).parent().hasClass('is-collapsed')) {
+            $(this).parent().removeClass('is-collapsed');
+          } else {
+            $(this).parent().children().removeClass('is-selected');
+            $(this).toggleClass('is-selected');
+            $(this).parent().addClass('is-collapsed');
+          }
+        })
+
         function floatingLabel(input) {
           if(input.value){
             $(input).parent().addClass("is-filled");

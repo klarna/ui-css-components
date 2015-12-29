@@ -10,6 +10,8 @@ ___
   - [selected](#Dropdown/native/selected)
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
+- [Custom](#Dropdown/custom)
+  - [collapsed](#Dropdown/custom/collapsed)
 - [Selector](#Dropdown/selector)
 - [Radio](#Dropdown/radio)
 
@@ -198,6 +200,69 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <option>And this is an option</option>
     <option>A second alternative</option>
   </select>
+</div>
+```
+
+<a name="Dropdown/custom"></a>
+## Custom
+
+```html
+<div class="cui__dropdown--custom">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item<br />
+      With several lines
+    </div>
+
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+  </div>
+</div>
+```
+<a name="Dropdown/custom/collapsed"></a>
+### Collapsed
+
+```html
+<div class="cui__dropdown--custom is-collapsed">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item<br />
+      With several lines
+    </div>
+
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+  </div>
 </div>
 ```
 
