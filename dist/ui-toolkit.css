@@ -559,10 +559,8 @@
 
 .cui__dropdown--selector__option {
   cursor: pointer;
-  padding: 2rem 0 1rem 10rem;
-  position: relative;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease; }
+  padding: 2.6rem 6rem 1.4rem 10rem;
+  position: relative; }
   .cui__dropdown--selector__option::before {
     border: 0.2rem solid #cbcbcd;
     border-radius: 2px;
@@ -602,7 +600,70 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  line-height: 4rem; }
+
+.cui__dropdown--selector__option__description {
+  color: #9e9ea0;
+  line-height: 4rem; }
+
+.cui__dropdown--radio {
+  border: 0.2rem solid #cbcbcd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  padding: .2rem 0 1.6rem 0; }
+
+.cui__dropdown--radio__option {
+  cursor: pointer;
+  padding: 2.6rem 6rem 1.4rem 10rem;
+  position: relative; }
+  .cui__dropdown--radio__option::before {
+    border: 0.2rem solid #cbcbcd;
+    border-radius: 2.8rem;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 2.8rem;
+    left: 4rem;
+    position: absolute;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    top: 3.2rem;
+    width: 2.8rem; }
+  .cui__dropdown--radio__option::after {
+    background: white;
+    border-radius: 1.2rem;
+    content: "";
+    display: block;
+    height: .8rem;
+    left: 5rem;
+    opacity: 0;
+    position: absolute;
+    top: 6rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: .8rem; }
+  .cui__dropdown--radio__option:hover::before {
+    border-color: #66aae0; }
+  .cui__dropdown--radio__option.is-selected::before {
+    background: #0074c8;
+    border-color: #0074c8; }
+  .cui__dropdown--radio__option.is-selected::after {
+    opacity: 1;
+    top: 4.2rem; }
+
+.cui__dropdown--radio__option__heading {
+  font-size: 2.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  line-height: 4rem; }
+
+.cui__dropdown--radio__option__description {
+  color: #9e9ea0;
+  line-height: 4rem; }
 
 .cui__field, .cui__field--icon {
   border: 0.2rem solid #cbcbcd;
