@@ -7,11 +7,13 @@ ___
 - [Examples](#Dropdown/examples)
 - [Native](#Dropdown/native)
   - [focused](#Dropdown/native/focused)
+  - [loading](#Dropdown/native/loading)
   - [selected](#Dropdown/native/selected)
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
 - [Custom](#Dropdown/custom)
   - [collapsed](#Dropdown/custom/collapsed)
+  - [loading](#Dropdown/custom/loading)
 - [Selector](#Dropdown/selector)
 - [Radio](#Dropdown/radio)
 
@@ -104,6 +106,22 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 <div class="cui__dropdown--native is-focused">
   <label class="cui__dropdown--native__label">
     This is a focused dropdown
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div>
+```
+
+<a name="Dropdown/native/loading"></a>
+### Loading
+
+```html
+<div class="cui__dropdown--native is-loading">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is loading
   </label>
 
   <select class="cui__dropdown--native__select">
@@ -234,6 +252,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
   </div>
 </div>
 ```
+
 <a name="Dropdown/custom/collapsed"></a>
 ### Collapsed
 
@@ -242,6 +261,38 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item<br />
+      With several lines
+    </div>
+
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/custom/loading"></a>
+### Loading
+
+```html
+<div class="cui__dropdown--custom is-loading">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector loading
     </div>
 
     <div class="cui__dropdown--custom__option__description">
