@@ -643,6 +643,11 @@
   line-height: 4rem; }
 
 .cui__dropdown--custom__option__description {
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   color: #9e9ea0;
   line-height: 4rem; }
 
@@ -700,6 +705,11 @@
   line-height: 4rem; }
 
 .cui__dropdown--selector__option__description {
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   color: #9e9ea0;
   line-height: 4rem; }
 
@@ -736,7 +746,9 @@
     left: 5rem;
     opacity: 0;
     position: absolute;
-    top: 6rem;
+    top: 4.2rem;
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     width: .8rem; }
@@ -747,7 +759,9 @@
     border-color: #0074c8; }
   .cui__dropdown--radio__option.is-selected::after {
     opacity: 1;
-    top: 4.2rem; }
+    top: 4.2rem;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
 
 .cui__dropdown--radio__option__heading {
   font-size: 2.8rem;
@@ -758,6 +772,11 @@
   line-height: 4rem; }
 
 .cui__dropdown--radio__option__description {
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   color: #9e9ea0;
   line-height: 4rem; }
 
