@@ -39,8 +39,18 @@ html.cui__baseline(lang="en")
           $(this).parent().removeClass('is-focused');
         })
 
-        $('.cui__dropdown--selector__option').click(function(){
+        $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
           $(this).toggleClass('is-selected');
+        })
+
+        $('.cui__dropdown--custom__option').click(function(){
+          if ($(this).parent().hasClass('is-collapsed')) {
+            $(this).parent().removeClass('is-collapsed');
+          } else {
+            $(this).parent().children().removeClass('is-selected');
+            $(this).toggleClass('is-selected');
+            $(this).parent().addClass('is-collapsed');
+          }
         })
 
         function floatingLabel(input) {
