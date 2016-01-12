@@ -101,4 +101,8 @@
     padding: 0 1rem;
     position: relative;
     text-transform: uppercase;
+
+    .is-disabled & {
+        background: map-get($colors, grey-lines);
+    }
 }

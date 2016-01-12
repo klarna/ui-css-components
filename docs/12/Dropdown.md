@@ -7,13 +7,22 @@ ___
 - [Examples](#Dropdown/examples)
 - [Native](#Dropdown/native)
   - [focused](#Dropdown/native/focused)
+  - [loading](#Dropdown/native/loading)
   - [selected](#Dropdown/native/selected)
+  - [disabled](#Dropdown/native/disabled)
+  - [disabled and selected](#Dropdown/native/disabled and selected)
+  - [disabled and loading](#Dropdown/native/disabled and loading)
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
 - [Custom](#Dropdown/custom)
   - [collapsed](#Dropdown/custom/collapsed)
+  - [loading](#Dropdown/custom/loading)
+  - [disabled](#Dropdown/custom/disabled)
+  - [disabled and collapsed](#Dropdown/custom/disabled and collapsed)
 - [Selector](#Dropdown/selector)
+  - [disabled](#Dropdown/selector/disabled)
 - [Radio](#Dropdown/radio)
+  - [disabled](#Dropdown/radio/disabled)
 
 <a name="Dropdown/examples"></a>
 ## Examples
@@ -113,6 +122,22 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 </div>
 ```
 
+<a name="Dropdown/native/loading"></a>
+### Loading
+
+```html
+<div class="cui__dropdown--native is-loading">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is loading
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div>
+```
+
 <a name="Dropdown/native/selected"></a>
 ### Selected
 
@@ -130,6 +155,43 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <option>And this is an option</option>
     <option>A second alternative</option>
   </select>
+</div>
+```
+
+<a name="Dropdown/native/disabled"></a>
+### Disabled
+
+```html
+<div class="cui__dropdown--native is-disabled">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
+</div>
+```
+
+<a name="Dropdown/native/disabled and selected"></a>
+### Disabled and selected
+
+```html
+<div class="cui__dropdown--native is-disabled is-selected">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
+
+  <div class="cui__dropdown--native__current-option">
+    And this is the selected option
+  </div>
+</div>
+```
+
+<a name="Dropdown/native/disabled and loading"></a>
+### Disabled and loading
+
+```html
+<div class="cui__dropdown--native is-disabled is-loading">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
 </div>
 ```
 
@@ -221,19 +283,26 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
   <div class="cui__dropdown--custom__option">
     <div class="cui__dropdown--custom__option__heading">
-      Second item<br />
-      With several lines
+      Second item
     </div>
 
+    <div class="cui__dropdown--custom__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>  
   </div>
 
   <div class="cui__dropdown--custom__option">
     <div class="cui__dropdown--custom__option__heading">
       Third item
     </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>  
   </div>
 </div>
 ```
+
 <a name="Dropdown/custom/collapsed"></a>
 ### Collapsed
 
@@ -252,16 +321,136 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
   <div class="cui__dropdown--custom__option">
     <div class="cui__dropdown--custom__option__heading">
-      Second item<br />
-      With several lines
+      Second item
     </div>
 
+    <div class="cui__dropdown--custom__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>  
   </div>
 
   <div class="cui__dropdown--custom__option">
     <div class="cui__dropdown--custom__option__heading">
       Third item
     </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/custom/loading"></a>
+### Loading
+
+```html
+<div class="cui__dropdown--custom is-loading">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector loading
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/custom/disabled"></a>
+### Disabled
+
+```html
+<div class="cui__dropdown--custom is-disabled">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector disabled
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/custom/disabled and collapsed"></a>
+### Disabled and collapsed
+
+```html
+<div class="cui__dropdown--custom is-disabled is-collapsed">
+  <div class="cui__dropdown--custom__option is-selected">
+    <div class="cui__dropdown--custom__option__heading">
+      This is a custom selector disabled and collapsed
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--custom__option">
+    <div class="cui__dropdown--custom__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--custom__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>    
   </div>
 </div>
 ```
@@ -284,16 +473,60 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
   <div class="cui__dropdown--selector__option">
     <div class="cui__dropdown--selector__option__heading">
-      Second item<br />
-      With several lines
+      Second item
     </div>
 
+    <div class="cui__dropdown--selector__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
   </div>
 
   <div class="cui__dropdown--selector__option">
     <div class="cui__dropdown--selector__option__heading">
       Third item
     </div>
+
+    <div class="cui__dropdown--selector__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div>
+```
+
+<a name="Dropdown/selector/disabled"></a>
+### Disabled
+
+```html
+<div class="cui__dropdown--selector is-disabled">
+  <div class="cui__dropdown--selector__option is-selected">
+    <div class="cui__dropdown--selector__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__dropdown--selector__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--selector__option">
+    <div class="cui__dropdown--selector__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--selector__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
+  <div class="cui__dropdown--selector__option">
+    <div class="cui__dropdown--selector__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--selector__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
   </div>
 </div>
 ```
@@ -316,16 +549,60 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
   <div class="cui__dropdown--radio__option">
     <div class="cui__dropdown--radio__option__heading">
-      Second item<br />
-      With several lines
+      Second item
     </div>
 
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>  
   </div>
 
   <div class="cui__dropdown--radio__option">
     <div class="cui__dropdown--radio__option__heading">
       Third item
     </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div>
+```
+
+<a name="Dropdown/radio/disabled"></a>
+### Disabled
+
+```html
+<div class="cui__dropdown--radio is-disabled">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>      
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>      
   </div>
 </div>
 ```
