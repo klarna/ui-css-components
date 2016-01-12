@@ -31,7 +31,7 @@
 
     &.is-focused {
         border-color: $border-color-focus;
-        box-shadow: 0 0 4px $box-shadow-focus;
+        box-shadow: 0 0 .8rem $box-shadow-focus;
         z-index: 20;
     }
 
@@ -48,7 +48,7 @@
 
         &.is-focused {
             border-color: $border-color-focus-error;
-            box-shadow: 0 0 4px $box-shadow-focus-error;
+            box-shadow: 0 0 .8rem $box-shadow-focus-error;
             z-index: 20;
         }
     }
@@ -66,7 +66,7 @@
 
         &.is-focused {
             border-color: $border-color-focus-warning;
-            box-shadow: 0 0 4px $box-shadow-focus-warning;
+            box-shadow: 0 0 .8rem $box-shadow-focus-warning;
             z-index: 20;
         }
 
@@ -165,7 +165,7 @@
     }
 
     @include respond-to-ie(8) {
-        border: 1px solid $border-color;
+        border: .2rem solid $border-color;
     }
 }
 

@@ -65,8 +65,8 @@
      -moz-appearance: none;
           appearance: none;
   background: #0074c8;
-  border-radius: 5px;
-  border: 1px solid #0074c8;
+  border-radius: 1rem;
+  border: 0.2rem solid #0074c8;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
@@ -83,7 +83,7 @@
     line-height: 6.6rem;
     padding: 0 5.6rem; }
   .cui__button--primary.-big {
-    letter-spacing: 0.4px;
+    letter-spacing: 0.01rem;
     line-height: 11.6rem;
     padding: 0 14rem;
     text-transform: uppercase; }
@@ -144,8 +144,8 @@
      -moz-appearance: none;
           appearance: none;
   background: white;
-  border-radius: 5px;
-  border: 1px solid #0074c8;
+  border-radius: 1rem;
+  border: 0.2rem solid #0074c8;
   box-sizing: border-box;
   color: #0074c8;
   cursor: pointer;
@@ -162,7 +162,7 @@
     line-height: 6.6rem;
     padding: 0 5.6rem; }
   .cui__button--secondary.-big {
-    letter-spacing: 0.4px;
+    letter-spacing: 0.01rem;
     line-height: 11.6rem;
     padding: 0 14rem;
     text-transform: uppercase; }
@@ -233,7 +233,7 @@
 
 .cui__dropdown--native {
   border: 0.2rem solid #cbcbcd;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
@@ -362,9 +362,9 @@
     clear: right; }
     @media screen and (min-width: 569px) {
       .cui__dropdown--native.-top-right {
-        border-top-right-radius: 5px; } }
+        border-top-right-radius: 1rem; } }
     .cui__dropdown--native.-top-right.-non-responsive {
-      border-top-right-radius: 5px; }
+      border-top-right-radius: 1rem; }
     @media screen and (min-width: 569px) {
       .cui__dropdown--native.-top-right {
         margin-left: -.2rem; } }
@@ -394,9 +394,9 @@
     border-radius: 0; }
     @media screen and (min-width: 569px) {
       .cui__dropdown--native.-bottom-left {
-        border-bottom-left-radius: 5px; } }
+        border-bottom-left-radius: 1rem; } }
     .cui__dropdown--native.-bottom-left.-non-responsive {
-      border-bottom-left-radius: 5px; }
+      border-bottom-left-radius: 1rem; }
   .cui__dropdown--native.-bottom-right {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -460,7 +460,7 @@
       z-index: 10; }
     .cui__dropdown--native.is-error.is-focused {
       border-color: #E63200;
-      box-shadow: 0 0 4px rgba(230, 55, 6, 0.4);
+      box-shadow: 0 0 0.8rem rgba(230, 55, 6, 0.4);
       z-index: 20; }
   .cui__dropdown--native.is-warning {
     background-color: #fffaf0;
@@ -472,13 +472,13 @@
       z-index: 10; }
     .cui__dropdown--native.is-warning.is-focused {
       border-color: #E2AF4A;
-      box-shadow: 0 0 4px #E6C88C;
+      box-shadow: 0 0 0.8rem #E6C88C;
       z-index: 20; }
     .ie8 .cui__dropdown--native.is-warning, .cui__browser--ie8 .cui__dropdown--native.is-warning {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
   .cui__dropdown--native.is-focused {
     border-color: rgba(26, 140, 220, 0.8);
-    box-shadow: 0 0 4px rgba(26, 140, 220, 0.6);
+    box-shadow: 0 0 0.8rem rgba(26, 140, 220, 0.6);
     z-index: 20; }
   .cui__dropdown--native.is-loading::after {
     background-image: url("img/loader-small.png");
@@ -575,7 +575,7 @@
 
 .cui__dropdown--custom {
   border: 0.2rem solid #cbcbcd;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
@@ -716,7 +716,7 @@
 
 .cui__dropdown--selector {
   border: 0.2rem solid #cbcbcd;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
@@ -740,7 +740,7 @@
   position: relative; }
   .cui__dropdown--selector__option::before {
     border: 0.2rem solid #cbcbcd;
-    border-radius: 2px;
+    border-radius: 0.4rem;
     box-sizing: border-box;
     content: "";
     display: block;
@@ -801,7 +801,7 @@
 
 .cui__dropdown--radio {
   border: 0.2rem solid #cbcbcd;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
@@ -891,7 +891,7 @@
 
 .cui__field, .cui__field--icon {
   border: 0.2rem solid #cbcbcd;
-  border-radius: 5px;
+  border-radius: 1rem;
   box-sizing: border-box;
   clear: both;
   display: block;
@@ -1020,9 +1020,9 @@
     clear: right; }
     @media screen and (min-width: 569px) {
       .cui__field.-top-right, .-top-right.cui__field--icon {
-        border-top-right-radius: 5px; } }
+        border-top-right-radius: 1rem; } }
     .cui__field.-top-right.-non-responsive, .-top-right.-non-responsive.cui__field--icon {
-      border-top-right-radius: 5px; }
+      border-top-right-radius: 1rem; }
     @media screen and (min-width: 569px) {
       .cui__field.-top-right, .-top-right.cui__field--icon {
         margin-left: -.2rem; } }
@@ -1052,9 +1052,9 @@
     border-radius: 0; }
     @media screen and (min-width: 569px) {
       .cui__field.-bottom-left, .-bottom-left.cui__field--icon {
-        border-bottom-left-radius: 5px; } }
+        border-bottom-left-radius: 1rem; } }
     .cui__field.-bottom-left.-non-responsive, .-bottom-left.-non-responsive.cui__field--icon {
-      border-bottom-left-radius: 5px; }
+      border-bottom-left-radius: 1rem; }
   .cui__field.-bottom-right, .-bottom-right.cui__field--icon {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -1099,7 +1099,7 @@
     z-index: 10; }
   .cui__field.is-focused, .is-focused.cui__field--icon {
     border-color: rgba(26, 140, 220, 0.8);
-    box-shadow: 0 0 4px rgba(26, 140, 220, 0.6);
+    box-shadow: 0 0 0.8rem rgba(26, 140, 220, 0.6);
     z-index: 20; }
   .cui__field.is-error, .is-error.cui__field--icon {
     background-color: #fff8f7;
@@ -1111,7 +1111,7 @@
       z-index: 10; }
     .cui__field.is-error.is-focused, .is-error.is-focused.cui__field--icon {
       border-color: #E63200;
-      box-shadow: 0 0 4px rgba(230, 55, 6, 0.4);
+      box-shadow: 0 0 0.8rem rgba(230, 55, 6, 0.4);
       z-index: 20; }
   .cui__field.is-warning, .is-warning.cui__field--icon {
     background-color: #fffaf0;
@@ -1123,7 +1123,7 @@
       z-index: 10; }
     .cui__field.is-warning.is-focused, .is-warning.is-focused.cui__field--icon {
       border-color: #E2AF4A;
-      box-shadow: 0 0 4px #E6C88C;
+      box-shadow: 0 0 0.8rem #E6C88C;
       z-index: 20; }
     .ie8 .cui__field.is-warning, .ie8 .is-warning.cui__field--icon, .cui__browser--ie8 .cui__field.is-warning, .cui__browser--ie8 .is-warning.cui__field--icon {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFAF0, endColorstr=#FFFFFAF0)"; }
@@ -1199,7 +1199,7 @@
   .ios .cui__field--icon__input {
     -webkit-transform: translate3d(0, 0, 0); }
   .ie8 .cui__field__input, .ie8 .cui__field--icon__input, .cui__browser--ie8 .cui__field__input, .cui__browser--ie8 .cui__field--icon__input {
-    border: 1px solid #cbcbcd; }
+    border: 0.2rem solid #cbcbcd; }
 
 .cui__field--icon__label, .cui__field--icon__input {
   padding-left: 8.4rem; }
@@ -1225,8 +1225,8 @@
 
 .cui__icon {
   display: block;
-  height: 20px;
-  width: 20px; }
+  height: 4rem;
+  width: 4rem; }
 
 .cui__icon--mail {
   background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#A9A9A9"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
@@ -1423,7 +1423,7 @@
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   background: #0074c8;
-  border-radius: 5px;
+  border-radius: 1rem;
   bottom: .2rem;
   color: white;
   display: inline-block;
