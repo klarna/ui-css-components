@@ -1,15 +1,9 @@
-// NATIVE
-.cui__dropdown--native {
-    @include stackable();
-
+@mixin dropdown() {
     border: .2rem solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 10.2rem;
-    margin: 0 0 -.2rem 0;
-    position: relative;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
@@ -17,6 +11,30 @@
         border-color: $border-color-hover;
         z-index: 10;
     }
+
+    &.is-disabled {
+        background: #FAFAFA;
+        color: map-get($colors, grey-lines);
+        cursor: default;
+
+        &:hover {
+            border-color: $border-color;
+        }
+
+        &::after {
+            opacity: .2;
+        }
+    }
+}
+
+// NATIVE
+.cui__dropdown--native {
+    @include stackable();
+    @include dropdown();
+
+    height: 10.2rem;
+    margin: 0 0 -.2rem 0;
+    position: relative;
 
     &::after {
         background: url('data:image/svg+xml,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-488, -428)"><g transform="translate(488, 429)"><rect x="0" y="0" width="14" height="14"></rect><path d="M11,5 L7,9 L3,5" stroke="#3C3C3E" stroke-linecap="round"></path></g></g></g></svg>');
@@ -112,7 +130,7 @@
     }
 
     .is-disabled & {
-        color: #CBCBCD;
+        color: map-get($colors, grey-lines);
     }
 }
 
@@ -175,25 +193,10 @@
 
 // CUSTOM
 .cui__dropdown--custom {
-    border: .2rem solid $border-color;
-    border-radius: $border-radius;
-    box-sizing: border-box;
-    display: block;
+    @include dropdown();
+
     padding: .2rem 0 1.6rem 0;
     position: relative;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-
-    &::after {
-        background: url('data:image/svg+xml,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-488, -428)"><g transform="translate(488, 429)"><rect x="0" y="0" width="14" height="14"></rect><path d="M11,9 L7,5 L3,9" stroke="#3C3C3E" stroke-linecap="round"></path></g></g></g></svg>');
-        content: "";
-        display: block;
-        height: 2.8rem;
-        position: absolute;
-        right: 3.4rem;
-        top: 3.4rem;
-        width: 2.8rem;
-    }
 
     &.is-collapsed {
         &::after {
@@ -225,7 +228,6 @@
 }
 
 .cui__dropdown--custom__option {
-    cursor: pointer;
     padding: 2.6rem 6rem 1.4rem 10rem;
     position: relative;
     overflow: hidden;
@@ -266,6 +268,12 @@
         &::before {
             border-color: $border-color-hover;
         }
+
+        .is-disabled & {
+            &::before {
+                border-color: $border-color;
+            }
+        }
     }
 
     &.is-selected {
@@ -279,7 +287,20 @@
             opacity: 1;
             top: 4.2rem;
         }
+
+        .is-disabled & {
+            &::before {
+                background: map-get($colors, grey-lines);
+                border-color: map-get($colors, grey-lines);
+            }
+
+            &::after {
+                opacity: 1;
+                top: 4.2rem;
+            }
+        }
     }
+
 
     .is-collapsed & {
         display: none;
@@ -333,20 +354,21 @@
     @include typography(2.6rem, regular);
     color: map-get($colors, grey-text);
     line-height: 4rem;
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
 }
 
 // SELECTOR
 // (multiple choice)
 .cui__dropdown--selector {
-    border: .2rem solid $border-color;
-    border-radius: $border-radius;
-    box-sizing: border-box;
-    display: block;
+    @include dropdown();
+
     padding: .2rem 0 1.6rem 0;
 }
 
 .cui__dropdown--selector__option {
-    cursor: pointer;
     padding: 2.6rem 6rem 1.4rem 10rem;
     position: relative;
 
@@ -401,6 +423,12 @@
         &::before {
             border-color: $border-color-hover;
         }
+
+        .is-disabled & {
+            &::before {
+                border-color: $border-color;
+            }
+        }
     }
 
     &.is-selected {
@@ -412,6 +440,18 @@
         &::after {
             opacity: 1;
             top: 3.2rem;
+        }
+
+        .is-disabled & {
+            &::before {
+                background: map-get($colors, grey-lines);
+                border-color: map-get($colors, grey-lines);
+            }
+
+            &::after {
+                opacity: 1;
+                top: 3.2rem;
+            }
         }
     }
 }
@@ -425,19 +465,20 @@
     @include typography(2.6rem, regular);
     color: map-get($colors, grey-text);
     line-height: 4rem;
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
 }
 
 // RADIO
 .cui__dropdown--radio {
-    border: .2rem solid $border-color;
-    border-radius: $border-radius;
-    box-sizing: border-box;
-    display: block;
+    @include dropdown();
+
     padding: .2rem 0 1.6rem 0;
 }
 
 .cui__dropdown--radio__option {
-    cursor: pointer;
     padding: 2.6rem 6rem 1.4rem 10rem;
     position: relative;
 
@@ -476,6 +517,12 @@
         &::before {
             border-color: $border-color-hover;
         }
+
+        .is-disabled & {
+            &::before {
+                border-color: $border-color;
+            }
+        }
     }
 
     &.is-selected {
@@ -489,6 +536,18 @@
             top: 4.2rem;
             transform: scale(1, 1);
         }
+
+        .is-disabled & {
+            &::before {
+                background: map-get($colors, grey-lines);
+                border-color: map-get($colors, grey-lines);
+            }
+
+            &::after {
+                opacity: 1;
+                top: 4.2rem;
+            }
+        }
     }
 }
 
@@ -501,4 +560,8 @@
     @include typography(2.6rem, regular);
     color: map-get($colors, grey-text);
     line-height: 4rem;
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
 }

@@ -78,10 +78,10 @@
 
     &.is-disabled {
         background-color: #FAFAFA;
-        border-color: #CBCBCD;
+        border-color: map-get($colors, grey-lines);
 
         &:hover {
-            border-color: #CBCBCD;
+            border-color: map-get($colors, grey-lines);
         }
     }
 }
@@ -126,7 +126,7 @@
     }
 
     .is-disabled & {
-        color: #CBCBCD;
+        color: map-get($colors, grey-lines);
     }
 }
 
@@ -156,7 +156,7 @@
     }
 
     .is-disabled & {
-        color: #CBCBCD;
+        color: map-get($colors, grey-lines);
     }
 
     .safari &,
