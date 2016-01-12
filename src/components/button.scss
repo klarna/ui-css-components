@@ -4,7 +4,7 @@
     appearance: none;
     background: $background;
     border-radius: $border-radius;
-    border: 1px solid map-get($colors, klarna-blue);
+    border: .2rem solid map-get($colors, klarna-blue);
     box-sizing: border-box;
     color: $text-color;
     cursor: pointer;
@@ -24,7 +24,7 @@
     }
 
     &.-big {
-      letter-spacing: 0.4px;
+      letter-spacing: 0.01rem;
       line-height: 12rem - 0.4rem;
       padding: 0 14rem;
       text-transform: uppercase;
