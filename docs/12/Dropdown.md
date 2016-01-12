@@ -28,6 +28,7 @@ ___
 ## Examples
 
 - [Checkout form](examples/base/checkout.html)
+- [Shipping selector](examples/base/shipping-selector.html)
 
 <a name="Dropdown/native"></a>
 ## Native

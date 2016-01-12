@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <title>Checkout fieldsets</title>
-        <link rel="stylesheet" href="/dist/ui-toolkit.css" />
+        <link rel="stylesheet" href="../../dist/ui-toolkit.css" />
     </head>
 
     <body class="cui__baseline__content--main">
@@ -19,19 +19,55 @@
         </h3>
 
         <div class="cui__field__wrapper">
-            <div class="cui__dropdown is-expanded">
-                <div class="cui__dropdown__option is-selected">
-                    This is a dropdown
+            <div class="cui__dropdown--custom">
+              <div class="cui__dropdown--custom__option is-selected">
+                <div class="cui__dropdown--custom__option__heading">
+                  Standard
                 </div>
 
-                <div class="cui__dropdown__option is-selected">
-                    Second item
+                <div class="cui__dropdown--custom__option__description">
+                  Ships within 2-4 weeks
+                  <div class="cui__label">free!</div>
+                </div>
+              </div>
+
+              <div class="cui__dropdown--custom__option">
+                <div class="cui__dropdown--custom__option__heading">
+                  Express
                 </div>
 
-                <div class="cui__dropdown__option is-selected">
-                    Third item
+                <div class="cui__dropdown--custom__option__description">
+                  Ships within 1-2 weeks
                 </div>
+              </div>
+
+              <div class="cui__dropdown--custom__option">
+                <div class="cui__dropdown--custom__option__heading">
+                  Overnight
+                </div>
+
+                <div class="cui__dropdown--custom__option__description">
+                  You get the goods on your door tomorrow
+                </div>
+              </div>
             </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script>
+            $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
+              $(this).toggleClass('is-selected');
+            })
+
+            $('.cui__dropdown--custom__option').click(function(){
+              if ($(this).parent().hasClass('is-collapsed')) {
+                $(this).parent().removeClass('is-collapsed');
+              } else {
+                $(this).parent().children().removeClass('is-selected');
+                $(this).toggleClass('is-selected');
+                $(this).parent().addClass('is-collapsed');
+              }
+            })
+        </script>
     </body>
 </html>
