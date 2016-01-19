@@ -476,6 +476,11 @@
                 opacity: 1;
                 top: 3.4rem;
             }
+
+            &:first-child::after {
+                opacity: 1;
+                top: 4.4rem;                
+            }
         }
     }
 }

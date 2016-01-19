@@ -841,6 +841,9 @@
   .is-disabled .cui__dropdown--radio__option.is-selected::after {
     opacity: 1;
     top: 3.4rem; }
+  .is-disabled .cui__dropdown--radio__option.is-selected:first-child::after {
+    opacity: 1;
+    top: 4.4rem; }
 
 .cui__dropdown--radio__option__heading {
   font-size: 2.8rem;
