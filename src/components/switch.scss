@@ -22,13 +22,21 @@
 
     padding: 0;
     margin-bottom: .6rem;
+
+    &.-borderless {
+        border: none;
+    }
 }
 
 .cui__switch--multiple__option {
     background: #ffffff;
-    padding: 2.8rem 4rem 3.2rem 4rem;
+    padding: 1.8rem 4rem 2.2rem 4rem;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     &:hover {
         background: map-get($colors, block-hover);;
@@ -38,8 +46,54 @@
 
     .-checkbox & {
         @include respond-to-wide() {
-            @include checkbox(6rem, 3.2rem);
+            @include checkbox(6rem, 2.4rem);
+        }
+    }
 
+
+    &:first-child {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        padding-top: 2.8rem;
+
+        .-checkbox & {
+            @include respond-to-wide() {
+                @include checkbox(6rem, 3.4rem);
+            }
+        }
+    }
+
+
+    &:last-child {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        padding-bottom: 3.2rem;
+
+        .-checkbox & {
+            @include respond-to-wide() {
+                @include checkbox(6rem, 2.4rem);
+            }
+        }
+    }
+
+    .-borderless & {
+        border-radius: $border-radius;
+
+        &:first-child {
+            padding-top: 1.8rem;
+        }
+
+        &:last-child {
+            padding-bottom: 2.2rem;
+        }
+
+    }
+
+    .-borderless.-checkbox & {
+        &:first-child {
+            @include respond-to-wide() {
+                @include checkbox(6rem, 2.4rem);
+            }
         }
     }
 

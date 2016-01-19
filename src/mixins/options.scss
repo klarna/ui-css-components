@@ -22,6 +22,7 @@
         background: #FAFAFA;
         color: map-get($colors, grey-lines);
         cursor: default;
+        pointer-events: none;
 
         &:hover {
             border-color: $border-color;
