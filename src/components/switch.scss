@@ -97,7 +97,7 @@
         }
     }
 
-    .is-disabled.-checkbox & {
+    .is-disabled.-checkbox &.is-checked {
         @include respond-to-wide() {
             &::before {
                 background: map-get($colors, grey-lines);
@@ -113,10 +113,33 @@
 
             &::after {
                 opacity: 1;
-                top: 3.2rem;
+                top: 2.4rem;
+            }
+
+            &:first-child {
+                &::after {
+                    top: 3.4rem;
+                }
             }
         }
     }
+
+    .is-disabled.-borderless.-checkbox & {
+        &:first-child {
+            @include respond-to-wide() {
+                &::before {
+                    background: map-get($colors, grey-lines);
+                    border-color: map-get($colors, grey-lines);
+                }
+                &:first-child {
+                    &::after {
+                        top: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .cui__switch--multiple__option__heading {

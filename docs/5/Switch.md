@@ -18,6 +18,7 @@ ___
   - [checkbox borderless](#Switch/multiple/checkbox borderless)
   - [disabled](#Switch/multiple/disabled)
   - [disabled checkbox](#Switch/multiple/disabled checkbox)
+  - [disabled borderless checkbox](#Switch/multiple/disabled borderless checkbox)
 
 <a name="Switch/examples"></a>
 ## Examples
@@ -264,7 +265,7 @@ ___
     </div>  
   </div>
 
-  <div class="cui__switch--multiple__option">
+  <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       Second item
     </div>
@@ -302,7 +303,45 @@ ___
     </div>  
   </div>
 
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
   <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div>
+```
+
+<a name="Switch/multiple/disabled borderless checkbox"></a>
+### Disabled borderless checkbox
+
+```html
+<div class="cui__switch--multiple -checkbox -borderless is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       Second item
     </div>

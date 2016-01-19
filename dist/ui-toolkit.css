@@ -1759,15 +1759,23 @@
         opacity: 1;
         top: 2.4rem; } }
   @media screen and (min-width: 569px) {
-    .is-disabled.-checkbox .cui__switch--multiple__option::before {
+    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled.-checkbox .cui__switch--multiple__option:hover::before {
+    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked:hover::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled.-checkbox .cui__switch--multiple__option::after {
+    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked::after {
       opacity: 1;
-      top: 3.2rem; } }
+      top: 2.4rem; }
+    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked:first-child::after {
+      top: 3.4rem; } }
+  @media screen and (min-width: 569px) {
+    .is-disabled.-borderless.-checkbox .cui__switch--multiple__option:first-child::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+    .is-disabled.-borderless.-checkbox .cui__switch--multiple__option:first-child:first-child::after {
+      top: 2.4rem; } }
 
 .cui__switch--multiple__option__heading {
   font-size: 2.8rem;
