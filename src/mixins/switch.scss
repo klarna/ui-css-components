@@ -1,0 +1,123 @@
+@mixin switch($padding: 4rem, $top: 0rem, $side: left) {
+    cursor: pointer;
+    position: relative;
+
+    @if $side == left {
+        padding-left: $padding + 10rem;
+    } @else {
+        padding-left: $padding;
+        padding-right: $padding + 10rem;
+    }
+
+    &::before {
+        background: map-get($colors, grey-text);
+        border: .2rem solid map-get($colors, grey-text);
+        border-radius: 4rem;
+        content: "";
+        display: block;
+        height: 4rem;
+        position: absolute;
+        top: $top;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 7rem;
+
+        @if $side == left {
+            left: 0;
+        } @else {
+            right: 4rem;
+            left: auto;
+        }
+    }
+
+    &::after {
+        background: white;
+        border-radius: 5rem;
+        content: "";
+        display: block;
+        height: 4rem;
+        opacity: 1;
+        position: absolute;
+        top: $top + .2rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 4rem;
+
+        @if $side == left {
+            left: .2rem;
+        } @else {
+            right: 7.2rem;
+            left: auto;
+        }
+    }
+
+    &:hover {
+        &::before {
+        }
+
+        .is-disabled &, &.is-disabled {
+            &::before {
+            }
+        }
+    }
+
+    &.is-pressed {
+        &::after {
+            width: 5rem;
+
+            @if $side == left {
+            } @else {
+                left: auto;
+                right: 6.2rem;
+            }
+        }
+    }
+
+    .is-disabled &, &.is-disabled {
+        color: map-get($colors, grey-lines);
+
+        &::before {
+            background: map-get($colors, grey-lines);
+            border-color: map-get($colors, grey-lines);
+        }
+    }
+
+    &.is-checked {
+        &::before {
+            background: map-get($colors, klarna-blue);
+            border-color: map-get($colors, klarna-blue);
+        }
+
+        &::after {
+            opacity: 1;
+            @if $side == left {
+                left: 3.2rem;
+            } @else {
+                left: auto;
+                right: 4.2rem;
+            }
+        }
+
+        &.is-pressed {
+            &::after {
+                @if $side == left {
+                    left: 2.2rem;
+                } @else {
+                    left: auto;
+                    right: 4.2rem;
+                }
+            }
+        }
+
+        .is-disabled &, &.is-disabled {
+            &::before {
+                background: map-get($colors, grey-lines);
+                border-color: map-get($colors, grey-lines);
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

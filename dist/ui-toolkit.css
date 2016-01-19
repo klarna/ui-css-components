@@ -237,6 +237,10 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  overflow: hidden;
+  margin-bottom: .6rem;
+  padding: 0;
+  position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   height: 10.2rem;
@@ -579,13 +583,12 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  overflow: hidden;
+  margin-bottom: .6rem;
+  padding: 0;
+  position: relative;
   -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  padding: .2rem 0 1.6rem 0;
-  position: relative; }
-  .cui__dropdown--custom:hover {
-    border-color: #66aae0;
-    z-index: 10; }
+  transition: all .2s ease; }
   .cui__dropdown--custom.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -603,15 +606,17 @@
     right: 3.4rem;
     top: 3.4rem;
     width: 2.8rem; }
-  .cui__dropdown--custom.is-collapsed::after {
-    background: url('data:image/svg+xml,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-488, -428)"><g transform="translate(488, 429)"><rect x="0" y="0" width="14" height="14"></rect><path d="M11,5 L7,9 L3,5" stroke="#3C3C3E" stroke-linecap="round"></path></g></g></g></svg>');
-    content: "";
-    display: block;
-    height: 2.8rem;
-    position: absolute;
-    right: 3.4rem;
-    top: 3.4rem;
-    width: 2.8rem; }
+  .cui__dropdown--custom.is-collapsed {
+    margin-bottom: .4rem; }
+    .cui__dropdown--custom.is-collapsed::after {
+      background: url('data:image/svg+xml,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-488, -428)"><g transform="translate(488, 429)"><rect x="0" y="0" width="14" height="14"></rect><path d="M11,5 L7,9 L3,5" stroke="#3C3C3E" stroke-linecap="round"></path></g></g></g></svg>');
+      content: "";
+      display: block;
+      height: 2.8rem;
+      position: absolute;
+      right: 3.4rem;
+      top: 3.4rem;
+      width: 2.8rem; }
   .cui__dropdown--custom.is-loading::after {
     background-image: url("img/loader-small.png");
     -webkit-animation: spin 0.8s linear infinite;
@@ -629,12 +634,14 @@
         background-size: 3rem 3rem; } }
 
 .cui__dropdown--custom__option {
-  padding: 2.6rem 6rem 1.4rem 10rem;
-  position: relative;
+  background: #ffffff;
   overflow: hidden;
+  padding: 1.8rem 4rem 2.2rem 10rem;
+  position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
   .cui__dropdown--custom__option::before {
+    background: white;
     border: 0.2rem solid #cbcbcd;
     border-radius: 2.8rem;
     box-sizing: border-box;
@@ -660,10 +667,10 @@
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     width: .8rem; }
-  .cui__dropdown--custom__option:hover::before {
-    border-color: #66aae0; }
-  .is-disabled .cui__dropdown--custom__option:hover::before {
-    border-color: #cbcbcd; }
+  .cui__dropdown--custom__option:hover {
+    background: #f9f9f9; }
+    .is-disabled .cui__dropdown--custom__option:hover::before {
+      border-color: #cbcbcd; }
   .cui__dropdown--custom__option.is-selected::before {
     background: #0074c8;
     border-color: #0074c8;
@@ -678,10 +685,11 @@
     opacity: 1;
     top: 4.2rem; }
   .is-collapsed .cui__dropdown--custom__option {
-    display: none; }
+    display: none;
+    position: static; }
     .is-collapsed .cui__dropdown--custom__option.is-selected {
       display: block;
-      padding: 2.6rem 6rem 1.4rem 4rem; }
+      padding: 1.6rem 6rem 1.6rem 4rem; }
       .is-collapsed .cui__dropdown--custom__option.is-selected::before {
         opacity: 0;
         -webkit-transition: all 0s;
@@ -723,103 +731,18 @@
   .is-disabled .cui__dropdown--custom__option__description {
     color: #cbcbcd; }
 
-.cui__dropdown--selector {
-  border: 0.2rem solid #cbcbcd;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: block;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  padding: .2rem 0 1.6rem 0; }
-  .cui__dropdown--selector:hover {
-    border-color: #66aae0;
-    z-index: 10; }
-  .cui__dropdown--selector.is-disabled {
-    background: #FAFAFA;
-    color: #cbcbcd;
-    cursor: default; }
-    .cui__dropdown--selector.is-disabled:hover {
-      border-color: #cbcbcd; }
-    .cui__dropdown--selector.is-disabled::after {
-      opacity: .2; }
-
-.cui__dropdown--selector__option {
-  padding: 2.6rem 6rem 1.4rem 10rem;
-  position: relative; }
-  .cui__dropdown--selector__option::before {
-    border: 0.2rem solid #cbcbcd;
-    border-radius: 0.4rem;
-    box-sizing: border-box;
-    content: "";
-    display: block;
-    height: 2.8rem;
-    left: 4rem;
-    position: absolute;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    top: 3.2rem;
-    width: 2.8rem; }
-  .cui__dropdown--selector__option::after {
-    background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
-    content: "";
-    display: block;
-    height: 2.8rem;
-    left: 4rem;
-    opacity: 0;
-    position: absolute;
-    top: 6rem;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    width: 2.8rem; }
-  .cui__dropdown--selector__option:hover::before {
-    border-color: #66aae0; }
-  .is-disabled .cui__dropdown--selector__option:hover::before {
-    border-color: #cbcbcd; }
-  .cui__dropdown--selector__option.is-selected::before {
-    background: #0074c8;
-    border-color: #0074c8; }
-  .cui__dropdown--selector__option.is-selected::after {
-    opacity: 1;
-    top: 3.2rem; }
-  .is-disabled .cui__dropdown--selector__option.is-selected::before {
-    background: #cbcbcd;
-    border-color: #cbcbcd; }
-  .is-disabled .cui__dropdown--selector__option.is-selected::after {
-    opacity: 1;
-    top: 3.2rem; }
-
-.cui__dropdown--selector__option__heading {
-  font-size: 2.8rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  line-height: 4rem; }
-
-.cui__dropdown--selector__option__description {
-  font-size: 2.6rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  color: #9e9ea0;
-  line-height: 4rem; }
-  .is-disabled .cui__dropdown--selector__option__description {
-    color: #cbcbcd; }
-
 .cui__dropdown--radio {
   border: 0.2rem solid #cbcbcd;
   border-radius: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  overflow: hidden;
+  margin-bottom: .6rem;
+  padding: 0;
+  position: relative;
   -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  padding: .2rem 0 1.6rem 0; }
-  .cui__dropdown--radio:hover {
-    border-color: #66aae0;
-    z-index: 10; }
+  transition: all .2s ease; }
   .cui__dropdown--radio.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -830,9 +753,14 @@
       opacity: .2; }
 
 .cui__dropdown--radio__option {
-  padding: 2.6rem 6rem 1.4rem 10rem;
-  position: relative; }
+  background: #ffffff;
+  padding: 1.8rem 4rem 2.2rem 10rem;
+  transition: all .2s ease;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
   .cui__dropdown--radio__option::before {
+    background: white;
     border: 0.2rem solid #cbcbcd;
     border-radius: 2.8rem;
     box-sizing: border-box;
@@ -860,10 +788,10 @@
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     width: .8rem; }
-  .cui__dropdown--radio__option:hover::before {
-    border-color: #66aae0; }
-  .is-disabled .cui__dropdown--radio__option:hover::before {
-    border-color: #cbcbcd; }
+  .cui__dropdown--radio__option:hover {
+    background: #f9f9f9; }
+    .is-disabled .cui__dropdown--radio__option:hover::before {
+      border-color: #cbcbcd; }
   .cui__dropdown--radio__option.is-selected::before {
     background: #0074c8;
     border-color: #0074c8; }
@@ -1328,6 +1256,332 @@
         .cui__loader.-tiny.-blue {
           background-image: url("img/loader-blue-tiny@2x.png");
           background-size: 2rem 2rem; } }
+
+.cui__switch {
+  padding-bottom: .6rem;
+  padding-top: .4rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 10rem; }
+  .cui__switch::before {
+    background: #9e9ea0;
+    border: 0.2rem solid #9e9ea0;
+    border-radius: 4rem;
+    content: "";
+    display: block;
+    height: 4rem;
+    position: absolute;
+    top: 0.6rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 7rem;
+    left: 0; }
+  .cui__switch::after {
+    background: white;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: 4rem;
+    opacity: 1;
+    position: absolute;
+    top: 0.8rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 4rem;
+    left: .2rem; }
+  .cui__switch.is-pressed::after {
+    width: 5rem; }
+  .is-disabled .cui__switch, .cui__switch.is-disabled {
+    color: #cbcbcd; }
+    .is-disabled .cui__switch::before, .cui__switch.is-disabled::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+  .cui__switch.is-checked::before {
+    background: #0074c8;
+    border-color: #0074c8; }
+  .cui__switch.is-checked::after {
+    opacity: 1;
+    left: 3.2rem; }
+  .cui__switch.is-checked.is-pressed::after {
+    left: 2.2rem; }
+  .is-disabled .cui__switch.is-checked::before, .cui__switch.is-checked.is-disabled::before {
+    background: #cbcbcd;
+    border-color: #cbcbcd; }
+  .is-disabled .cui__switch.is-checked::after, .cui__switch.is-checked.is-disabled::after {
+    opacity: 1; }
+  .cui__switch.-right {
+    cursor: pointer;
+    position: relative;
+    padding-left: 0;
+    padding-right: 10rem; }
+    .cui__switch.-right::before {
+      background: #9e9ea0;
+      border: 0.2rem solid #9e9ea0;
+      border-radius: 4rem;
+      content: "";
+      display: block;
+      height: 4rem;
+      position: absolute;
+      top: 0.6rem;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      width: 7rem;
+      right: 4rem;
+      left: auto; }
+    .cui__switch.-right::after {
+      background: white;
+      border-radius: 5rem;
+      content: "";
+      display: block;
+      height: 4rem;
+      opacity: 1;
+      position: absolute;
+      top: 0.8rem;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      width: 4rem;
+      right: 7.2rem;
+      left: auto; }
+    .cui__switch.-right.is-pressed::after {
+      width: 5rem;
+      left: auto;
+      right: 6.2rem; }
+    .is-disabled .cui__switch.-right, .cui__switch.-right.is-disabled {
+      color: #cbcbcd; }
+      .is-disabled .cui__switch.-right::before, .cui__switch.-right.is-disabled::before {
+        background: #cbcbcd;
+        border-color: #cbcbcd; }
+    .cui__switch.-right.is-checked::before {
+      background: #0074c8;
+      border-color: #0074c8; }
+    .cui__switch.-right.is-checked::after {
+      opacity: 1;
+      left: auto;
+      right: 4.2rem; }
+    .cui__switch.-right.is-checked.is-pressed::after {
+      left: auto;
+      right: 4.2rem; }
+    .is-disabled .cui__switch.-right.is-checked::before, .cui__switch.-right.is-checked.is-disabled::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+    .is-disabled .cui__switch.-right.is-checked::after, .cui__switch.-right.is-checked.is-disabled::after {
+      opacity: 1; }
+  @media screen and (min-width: 569px) {
+    .cui__switch.-checkbox {
+      padding-left: 6rem;
+      padding-right: 2rem;
+      position: relative; }
+      .cui__switch.-checkbox::before {
+        background: white;
+        border: 0.2rem solid #cbcbcd;
+        border-radius: 0.4rem;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 0rem;
+        position: absolute;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        top: 1.6rem;
+        width: 2.8rem; }
+      .cui__switch.-checkbox::after {
+        background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 0rem;
+        opacity: 0;
+        position: absolute;
+        top: 6rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 2.8rem; }
+      .cui__switch.-checkbox:hover::before {
+        border-color: #66aae0; }
+      .is-disabled .cui__switch.-checkbox:hover::before, .cui__switch.-checkbox:hover.is-disabled::before {
+        border-color: #cbcbcd; }
+      .cui__switch.-checkbox.is-pressed::after {
+        width: 2.8rem;
+        left: 0rem; }
+      .cui__switch.-checkbox.is-checked::before {
+        background: #0074c8;
+        border-color: #0074c8; }
+      .cui__switch.-checkbox.is-checked::after {
+        opacity: 1;
+        top: 1.6rem; }
+      .cui__switch.-checkbox.is-checked.is-disabled::before {
+        background: #cbcbcd;
+        border-color: #cbcbcd; }
+      .cui__switch.-checkbox.is-checked.is-disabled::after {
+        opacity: 1;
+        top: 1.6rem; } }
+
+.cui__switch--multiple {
+  border: 0.2rem solid #cbcbcd;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  margin-bottom: .6rem;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  padding: 0;
+  margin-bottom: .6rem; }
+  .cui__switch--multiple.is-disabled {
+    background: #FAFAFA;
+    color: #cbcbcd;
+    cursor: default; }
+    .cui__switch--multiple.is-disabled:hover {
+      border-color: #cbcbcd; }
+    .cui__switch--multiple.is-disabled::after {
+      opacity: .2; }
+
+.cui__switch--multiple__option {
+  background: #ffffff;
+  padding: 2.8rem 4rem 3.2rem 4rem;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+  padding-right: 14rem; }
+  .cui__switch--multiple__option:hover {
+    background: #f9f9f9; }
+  .cui__switch--multiple__option::before {
+    background: #9e9ea0;
+    border: 0.2rem solid #9e9ea0;
+    border-radius: 4rem;
+    content: "";
+    display: block;
+    height: 4rem;
+    position: absolute;
+    top: 3.2rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 7rem;
+    right: 4rem;
+    left: auto; }
+  .cui__switch--multiple__option::after {
+    background: white;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: 4rem;
+    opacity: 1;
+    position: absolute;
+    top: 3.4rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 4rem;
+    right: 7.2rem;
+    left: auto; }
+  .cui__switch--multiple__option.is-pressed::after {
+    width: 5rem;
+    left: auto;
+    right: 6.2rem; }
+  .is-disabled .cui__switch--multiple__option, .cui__switch--multiple__option.is-disabled {
+    color: #cbcbcd; }
+    .is-disabled .cui__switch--multiple__option::before, .cui__switch--multiple__option.is-disabled::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+  .cui__switch--multiple__option.is-checked::before {
+    background: #0074c8;
+    border-color: #0074c8; }
+  .cui__switch--multiple__option.is-checked::after {
+    opacity: 1;
+    left: auto;
+    right: 4.2rem; }
+  .cui__switch--multiple__option.is-checked.is-pressed::after {
+    left: auto;
+    right: 4.2rem; }
+  .is-disabled .cui__switch--multiple__option.is-checked::before, .cui__switch--multiple__option.is-checked.is-disabled::before {
+    background: #cbcbcd;
+    border-color: #cbcbcd; }
+  .is-disabled .cui__switch--multiple__option.is-checked::after, .cui__switch--multiple__option.is-checked.is-disabled::after {
+    opacity: 1; }
+  @media screen and (min-width: 569px) {
+    .-checkbox .cui__switch--multiple__option {
+      padding-left: 10rem;
+      padding-right: 6rem;
+      position: relative; }
+      .-checkbox .cui__switch--multiple__option::before {
+        background: white;
+        border: 0.2rem solid #cbcbcd;
+        border-radius: 0.4rem;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        position: absolute;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        top: 3.2rem;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option::after {
+        background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        opacity: 0;
+        position: absolute;
+        top: 6rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option:hover::before {
+        border-color: #66aae0; }
+      .is-disabled .-checkbox .cui__switch--multiple__option:hover::before, .-checkbox .cui__switch--multiple__option:hover.is-disabled::before {
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option.is-pressed::after {
+        width: 2.8rem;
+        left: 4rem; }
+      .-checkbox .cui__switch--multiple__option.is-checked::before {
+        background: #0074c8;
+        border-color: #0074c8; }
+      .-checkbox .cui__switch--multiple__option.is-checked::after {
+        opacity: 1;
+        top: 3.2rem; }
+      .-checkbox .cui__switch--multiple__option.is-checked.is-disabled::before {
+        background: #cbcbcd;
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option.is-checked.is-disabled::after {
+        opacity: 1;
+        top: 3.2rem; } }
+  @media screen and (min-width: 569px) {
+    .is-disabled.-checkbox .cui__switch--multiple__option::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+    .is-disabled.-checkbox .cui__switch--multiple__option:hover::before {
+      background: #cbcbcd;
+      border-color: #cbcbcd; }
+    .is-disabled.-checkbox .cui__switch--multiple__option::after {
+      opacity: 1;
+      top: 3.2rem; } }
+
+.cui__switch--multiple__option__heading {
+  font-size: 2.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  line-height: 4rem; }
+
+.cui__switch--multiple__option__description {
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #9e9ea0;
+  line-height: 4rem; }
+  .is-disabled .cui__switch--multiple__option__description {
+    color: #cbcbcd; }
 
 .cui__title--primary, .cui__title--secondary {
   font-size: 5.2rem;

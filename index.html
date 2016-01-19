@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Baseline">Baseline</a></li><li><a href="#Loader">Loader</a></li><li><a href="#Dropdown">Dropdown</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li><li><a href="#Text">Text</a></li><li><a href="#Icon">Icon</a></li><li><a href="#Link">Link</a></li></ul></nav><main><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
+<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Baseline">Baseline</a></li><li><a href="#Loader">Loader</a></li><li><a href="#Dropdown">Dropdown</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li><li><a href="#Switch">Switch</a></li><li><a href="#Text">Text</a></li><li><a href="#Icon">Icon</a></li><li><a href="#Link">Link</a></li></ul></nav><main><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-toolkit guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -78,10 +78,6 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <li><a href="#Dropdown/custom/disabled and collapsed">disabled and collapsed</a></li>
 </ul>
 </li>
-<li><a href="#Dropdown/selector">Selector</a><ul class="summary">
-<li><a href="#Dropdown/selector/disabled">disabled</a></li>
-</ul>
-</li>
 <li><a href="#Dropdown/radio">Radio</a><ul class="summary">
 <li><a href="#Dropdown/radio/disabled">disabled</a></li>
 </ul>
@@ -90,7 +86,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <a name="Dropdown/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
 <li><a href="examples/base/checkout.html">Checkout form</a></li>
-<li><a href="examples/base/shipping-selector.html">Shipping selector</a></li>
+<li><a href="examples/base/selectors.html">Selectors</a></li>
 </ul>
 <a name="Dropdown/native"></a><h2 class="cui__title--secondary">Native</h2>
 <div class="cui__field__wrapper">
@@ -724,136 +720,6 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
     &lt;/div&gt;    
-  &lt;/div&gt;
-&lt;/div&gt;
-</div></code></pre></div>
-<a name="Dropdown/selector"></a><h2 class="cui__title--secondary">Selector</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--selector">
-  <div class="cui__dropdown--selector__option is-selected">
-    <div class="cui__dropdown--selector__option__heading">
-      This is a multiple choice
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
-    </div>  
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Second item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Third item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
-  </div>
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__dropdown--selector&quot;&gt;
-  &lt;div class=&quot;cui__dropdown--selector__option is-selected&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      This is a multiple choice
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
-    &lt;/div&gt;  
-  &lt;/div&gt;
-
-  &lt;div class=&quot;cui__dropdown--selector__option&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      Second item
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    &lt;/div&gt;   
-  &lt;/div&gt;
-
-  &lt;div class=&quot;cui__dropdown--selector__option&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      Third item
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    &lt;/div&gt;   
-  &lt;/div&gt;
-&lt;/div&gt;
-</div></code></pre></div>
-<a name="Dropdown/selector/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--selector is-disabled">
-  <div class="cui__dropdown--selector__option is-selected">
-    <div class="cui__dropdown--selector__option__heading">
-      This is a multiple choice
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
-    </div>  
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Second item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Third item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
-  </div>
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__dropdown--selector is-disabled&quot;&gt;
-  &lt;div class=&quot;cui__dropdown--selector__option is-selected&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      This is a multiple choice
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
-    &lt;/div&gt;  
-  &lt;/div&gt;
-
-  &lt;div class=&quot;cui__dropdown--selector__option&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      Second item
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    &lt;/div&gt;   
-  &lt;/div&gt;
-
-  &lt;div class=&quot;cui__dropdown--selector__option&quot;&gt;
-    &lt;div class=&quot;cui__dropdown--selector__option__heading&quot;&gt;
-      Third item
-    &lt;/div&gt;
-
-    &lt;div class=&quot;cui__dropdown--selector__option__description&quot;&gt;
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    &lt;/div&gt;   
   &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
@@ -2013,6 +1879,347 @@ demo.</p>
                 floatingLabel(input)
         })
 </script>
+</section><section id="Switch"><h1 class="cui__title--primary">Switch</h1>
+<p class="cui__paragraph--primary">The Switch component are a set of checkbox-type components, both in list and standalone. In mobile the look and feel of the component is always the slider style switch, while in desktop there is the option of being either the same style as mobile or a more traditional checkbox mark.</p>
+<hr>
+<ul class="summary">
+<li><a href="#Switch/examples">Examples</a></li>
+<li><a href="#Switch/single">Single</a><ul class="summary">
+<li><a href="#Switch/single/right">right</a></li>
+<li><a href="#Switch/single/pressed">pressed</a></li>
+<li><a href="#Switch/single/checked">checked</a></li>
+<li><a href="#Switch/single/checked and pressed">checked and pressed</a></li>
+<li><a href="#Switch/single/checkbox">checkbox</a></li>
+<li><a href="#Switch/single/disabled">disabled</a></li>
+</ul>
+</li>
+<li><a href="#Switch/multiple">Multiple</a><ul class="summary">
+<li><a href="#Switch/multiple/checkbox">checkbox</a></li>
+<li><a href="#Switch/multiple/disabled">disabled</a></li>
+<li><a href="#Switch/multiple/disabled checkbox">disabled checkbox</a></li>
+</ul>
+</li>
+</ul>
+<a name="Switch/examples"></a><h2 class="cui__title--secondary">Examples</h2>
+<ul class="summary">
+<li><a href="examples/base/selectors.html">Selectors</a></li>
+</ul>
+<a name="Switch/single"></a><h2 class="cui__title--secondary">Single</h2>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch">
+  This is a toggle switch
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch&quot;&gt;
+  This is a toggle switch
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/right"></a><h3 class="cui__subtitle">Right</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch -right">
+  This is a toggle switch on the right side
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch -right&quot;&gt;
+  This is a toggle switch on the right side
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/checked"></a><h3 class="cui__subtitle">Checked</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-checked">
+  This is a toggle switch checked
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-checked&quot;&gt;
+  This is a toggle switch checked
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/pressed"></a><h3 class="cui__subtitle">Pressed</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-pressed">
+  This is a toggle switch checked
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-pressed&quot;&gt;
+  This is a toggle switch checked
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/checked and pressed"></a><h3 class="cui__subtitle">Checked and pressed</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-pressed is-checked">
+  This is a toggle switch checked
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-pressed is-checked&quot;&gt;
+  This is a toggle switch checked
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/checkbox"></a><h3 class="cui__subtitle">Checkbox</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch -checkbox">
+  This is a toggle switch with checkbox styles on desktop
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch -checkbox&quot;&gt;
+  This is a toggle switch with checkbox styles on desktop
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/checkbox disabled"></a><h3 class="cui__subtitle">Checkbox disabled</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch -checkbox is-disabled">
+  This is a disabled toggle switch with checkbox styles on desktop
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch -checkbox is-disabled&quot;&gt;
+  This is a disabled toggle switch with checkbox styles on desktop
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/single/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-disabled">
+  This is a toggle switch disabled
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-disabled&quot;&gt;
+  This is a toggle switch disabled
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/multiple"></a><h2 class="cui__title--secondary">Multiple</h2>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch--multiple&quot;&gt;
+  &lt;div class=&quot;cui__switch--multiple__option is-checked&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      This is a multiple choice
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Second item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Third item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/multiple/checkbox"></a><h3 class="cui__subtitle">Checkbox</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple -checkbox">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch--multiple -checkbox&quot;&gt;
+  &lt;div class=&quot;cui__switch--multiple__option is-checked&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      This is a multiple choice
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Second item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Third item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/multiple/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch--multiple is-disabled&quot;&gt;
+  &lt;div class=&quot;cui__switch--multiple__option is-checked&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      This is a multiple choice
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Second item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Third item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Switch/multiple/disabled checkbox"></a><h3 class="cui__subtitle">Disabled checkbox</h3>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple -checkbox is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>   
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch--multiple -checkbox is-disabled&quot;&gt;
+  &lt;div class=&quot;cui__switch--multiple__option is-checked&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      This is a multiple choice
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Second item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__switch--multiple__option&quot;&gt;
+    &lt;div class=&quot;cui__switch--multiple__option__heading&quot;&gt;
+      Third item
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    &lt;/div&gt;   
+  &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
 </section><section id="Text"><h1 class="cui__title--primary">Text</h1>
 <p class="cui__paragraph--primary">These are the general text styles for the toolkit.</p>
 <ul class="summary">
@@ -2238,6 +2445,18 @@ $('input').focus(function(){
 
 $('input').blur(function(){
   $(this).parent().removeClass('is-focused');
+})
+
+$('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
+  $(this).addClass('is-pressed')
+})
+
+$('.cui__switch--multiple__option, .cui__switch').mouseup(function () {
+  $(this).removeClass('is-pressed')
+})
+
+$('.cui__switch--multiple__option, .cui__switch').click(function(){
+  $(this).toggleClass('is-checked');
 })
 
 $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){

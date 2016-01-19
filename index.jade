@@ -44,6 +44,18 @@ html.cui__baseline(lang="en")
           $(this).parent().removeClass('is-focused');
         })
 
+        $('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
+          $(this).addClass('is-pressed')
+        })
+
+        $('.cui__switch--multiple__option, .cui__switch').mouseup(function () {
+          $(this).removeClass('is-pressed')
+        })
+
+        $('.cui__switch--multiple__option, .cui__switch').click(function(){
+          $(this).toggleClass('is-checked');
+        })
+
         $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
           $(this).toggleClass('is-selected');
         })

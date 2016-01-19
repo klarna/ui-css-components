@@ -19,8 +19,6 @@ ___
   - [loading](#Dropdown/custom/loading)
   - [disabled](#Dropdown/custom/disabled)
   - [disabled and collapsed](#Dropdown/custom/disabled and collapsed)
-- [Selector](#Dropdown/selector)
-  - [disabled](#Dropdown/selector/disabled)
 - [Radio](#Dropdown/radio)
   - [disabled](#Dropdown/radio/disabled)
 
@@ -28,7 +26,7 @@ ___
 ## Examples
 
 - [Checkout form](examples/base/checkout.html)
-- [Shipping selector](examples/base/shipping-selector.html)
+- [Selectors](examples/base/selectors.html)
 
 <a name="Dropdown/native"></a>
 ## Native
@@ -452,82 +450,6 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
     </div>    
-  </div>
-</div>
-```
-
-<a name="Dropdown/selector"></a>
-## Selector
-
-```html
-<div class="cui__dropdown--selector">
-  <div class="cui__dropdown--selector__option is-selected">
-    <div class="cui__dropdown--selector__option__heading">
-      This is a multiple choice
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
-    </div>  
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Second item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Third item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
-  </div>
-</div>
-```
-
-<a name="Dropdown/selector/disabled"></a>
-### Disabled
-
-```html
-<div class="cui__dropdown--selector is-disabled">
-  <div class="cui__dropdown--selector__option is-selected">
-    <div class="cui__dropdown--selector__option__heading">
-      This is a multiple choice
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
-    </div>  
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Second item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
-  </div>
-
-  <div class="cui__dropdown--selector__option">
-    <div class="cui__dropdown--selector__option__heading">
-      Third item
-    </div>
-
-    <div class="cui__dropdown--selector__option__description">
-      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
   </div>
 </div>
 ```

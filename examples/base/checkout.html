@@ -376,6 +376,12 @@
             $('input').each(function (index, input) {
                 floatingLabel(input)
             })
+
+            $(window).keypress(function(e){
+              if (e.which === 103) {
+                $('body').toggleClass('cui__baseline__grid');
+              }
+            })
         </script>
     </body>
 </html>

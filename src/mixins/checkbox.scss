@@ -1,0 +1,96 @@
+@mixin checkbox($padding: 6rem, $top: 0rem) {
+    padding-left: $padding + 4rem;
+    padding-right: $padding;
+    position: relative;
+
+    &::before {
+        background: white;
+        border: .2rem solid $border-color;
+        border-radius: $border-radius-checkbox;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: $padding - 2rem;
+        position: absolute;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        top: $top;
+        width: 2.8rem;
+    }
+
+    &::after {
+        background: url('data:image/svg+xml,
+        <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+                <g transform="translate(-720, -1508)">
+                    <g transform="translate(700, 1457)">
+                        <g transform="translate(0, 33)">
+                            <g transform="translate(20, 14)">
+                                <g transform="translate(0, 4)">
+                                    <g>
+                                        <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                                        <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: $padding - 2rem;
+        opacity: 0;
+        position: absolute;
+        top: 6rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 2.8rem;
+    }
+
+    &:hover {
+        &::before {
+            border-color: $border-color-hover;
+        }
+
+        .is-disabled &, &.is-disabled {
+            &::before {
+                border-color: $border-color;
+            }
+        }
+    }
+
+    &.is-pressed {
+        &::after {
+            width: 2.8rem;
+            left: $padding - 2rem;
+        }
+    }
+
+    &.is-checked {
+        &::before {
+            background: map-get($colors, klarna-blue);
+            border-color: map-get($colors, klarna-blue);
+        }
+
+        &::after {
+            opacity: 1;
+            top: $top;
+        }
+
+        &.is-disabled {
+            &::before {
+                background: map-get($colors, grey-lines);
+                border-color: map-get($colors, grey-lines);
+            }
+
+            &::after {
+                opacity: 1;
+                top: $top;
+            }
+        }
+    }
+}
