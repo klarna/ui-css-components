@@ -7,6 +7,9 @@
 
 // SINGLE
 .cui__switch {
+    @include typography(2.8rem, regular);
+
+    line-height: 4rem;
     padding-bottom: .6rem;
     padding-top: .4rem;
 
