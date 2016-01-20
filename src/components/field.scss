@@ -1,3 +1,9 @@
+@import "../settings";
+@import "../mixins/ie-and-stock";
+@import "../mixins/responsive";
+@import "../mixins/typography";
+@import "../mixins/stackable";
+
 .cui__field {
     @include stackable();
 

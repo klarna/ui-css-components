@@ -904,6 +904,9 @@
   .is-disabled .cui__dropdown--radio__option__description {
     color: #cbcbcd; }
 
+/**
+ * Adds all atributes to define the best typography as possible
+ */
 .cui__field, .cui__field--icon {
   border: 0.2rem solid #cbcbcd;
   border-radius: 1rem;
