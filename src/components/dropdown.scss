@@ -209,106 +209,11 @@
 }
 
 .cui__dropdown--custom__option {
-    background: #ffffff;
-    overflow: hidden;
-    padding: 1.8rem 4rem 2.2rem 10rem;
-    position: relative;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    @include option();
+    @include radio();
 
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-    &::before {
-        background: white;
-        border: .2rem solid $border-color;
-        border-radius: 2.8rem;
-        box-sizing: border-box;
-        content: "";
-        display: block;
-        height: 2.8rem;
-        left: 4rem;
-        position: absolute;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        top: 2.4rem;
-        width: 2.8rem;
-    }
-
-    &::after {
-        background: white;
-        border-radius: 1.2rem;
-        content: "";
-        display: block;
-        height: .8rem;
-        left: 5rem;
-        opacity: 0;
-        position: absolute;
-        top: 6.2rem;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        width: .8rem;
-    }
-
-    &:hover {
-        background: map-get($colors, block-hover);
-
-        .is-disabled & {
-            &::before {
-                border-color: $border-color;
-            }
-        }
-    }
-
-    &:first-child {
-        border-top-left-radius: $border-radius;
-        border-top-right-radius: $border-radius;
-        padding-top: 2.8rem;
-
-        &::before {
-            top: 3.4rem;
-        }
-    }
-
-    &:last-child {
-        border-bottom-left-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-        padding-bottom: 3.2rem;
-    }
-
-    &.is-selected {
-        &::before {
-            background: map-get($colors, klarna-blue);
-            border-color: map-get($colors, klarna-blue);
-            opacity: 1;
-        }
-
-        &::after {
-            opacity: 1;
-            top: 3.4rem;
-        }
-
-        &:first-child {
-            &::after {
-                top: 4.4rem;
-            }
-        }
-
-
-        .is-disabled & {
-            &::before {
-                background: map-get($colors, grey-lines);
-                border-color: map-get($colors, grey-lines);
-            }
-
-            &::after {
-                opacity: 1;
-                top: 4.4rem;
-            }
-        }
-    }
-
+    padding-left: 10rem;
+    padding-right: 4rem;
 
     .is-collapsed & {
         display: none;
@@ -375,114 +280,11 @@
 }
 
 .cui__dropdown--radio__option {
-    background: #ffffff;
-    padding: 1.8rem 4rem 2.2rem 10rem;
-    transition: all .2s ease;
-    position: relative;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    @include option();
+    @include radio();
 
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-    &::before {
-        background: white;
-        border: .2rem solid $border-color;
-        border-radius: 2.8rem;
-        box-sizing: border-box;
-        content: "";
-        display: block;
-        height: 2.8rem;
-        left: 4rem;
-        position: absolute;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        top: 2.4rem;
-        width: 2.8rem;
-    }
-
-    &::after {
-        background: white;
-        border-radius: 1.2rem;
-        content: "";
-        display: block;
-        height: .8rem;
-        left: 5rem;
-        opacity: 0;
-        position: absolute;
-        top: 3.4rem;
-        transform: scale(3, 3);
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        width: .8rem;
-    }
-
-    &:hover {
-        background: map-get($colors, block-hover);
-
-        .is-disabled & {
-            &::before {
-                border-color: $border-color;
-            }
-        }
-    }
-
-    &:first-child {
-        border-top-left-radius: $border-radius;
-        border-top-right-radius: $border-radius;
-        padding-top: 2.8rem;
-
-        &::before {
-            top: 3.4rem;
-        }
-
-        &::after {
-            top: 4.4rem;
-        }
-    }
-
-    &:last-child {
-        border-bottom-left-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-        padding-bottom: 3.2rem;
-    }
-
-    &.is-selected {
-        &::before {
-            background: map-get($colors, klarna-blue);
-            border-color: map-get($colors, klarna-blue);
-        }
-
-        &::after {
-            opacity: 1;
-            top: 3.4rem;
-            transform: scale(1, 1);
-        }
-
-        &:first-child {
-            &::after {
-                top: 4.4rem;
-            }
-        }
-
-        .is-disabled & {
-            &::before {
-                background: map-get($colors, grey-lines);
-                border-color: map-get($colors, grey-lines);
-            }
-
-            &::after {
-                opacity: 1;
-                top: 3.4rem;
-            }
-
-            &:first-child::after {
-                opacity: 1;
-                top: 4.4rem;                
-            }
-        }
-    }
+    padding-left: 10rem;
+    padding-right: 4rem;
 }
 
 .cui__dropdown--radio__option__heading {

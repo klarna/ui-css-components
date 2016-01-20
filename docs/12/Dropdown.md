@@ -20,7 +20,9 @@ ___
   - [disabled](#Dropdown/custom/disabled)
   - [disabled and collapsed](#Dropdown/custom/disabled and collapsed)
 - [Radio](#Dropdown/radio)
+  - [borderless](#Dropdown/radio/borderless)
   - [disabled](#Dropdown/radio/disabled)
+  - [borderless disabled](#Dropdown/radio/borderless disabled)
 
 <a name="Dropdown/examples"></a>
 ## Examples
@@ -492,8 +494,84 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 </div>
 ```
 
+<a name="Dropdown/radio/borderless"></a>
+### Borderless
+
+```html
+<div class="cui__dropdown--radio -borderless">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>   
+  </div>
+</div>
+```
+
 <a name="Dropdown/radio/disabled"></a>
 ### Disabled
+
+```html
+<div class="cui__dropdown--radio is-disabled">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__label">promo</div>
+    </div>  
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>      
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>      
+  </div>
+</div>
+```
+
+<a name="Dropdown/radio/borderless disabled"></a>
+### Borderless disabled
 
 ```html
 <div class="cui__dropdown--radio is-disabled">

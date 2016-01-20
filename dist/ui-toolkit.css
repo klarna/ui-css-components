@@ -437,6 +437,8 @@
   .cui__dropdown--native:hover {
     border-color: #66aae0;
     z-index: 10; }
+  .cui__dropdown--native.-borderless {
+    border: none; }
   .cui__dropdown--native.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -590,6 +592,8 @@
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
+  .cui__dropdown--custom.-borderless {
+    border: none; }
   .cui__dropdown--custom.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -638,13 +642,34 @@
 .cui__dropdown--custom__option {
   background: #ffffff;
   overflow: hidden;
-  padding: 1.8rem 4rem 2.2rem 10rem;
+  padding-top: 1.8rem;
+  padding-bottom: 2.2rem;
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  padding-left: 10rem;
+  padding-right: 4rem; }
+  .cui__dropdown--custom__option:hover {
+    background: #f9f9f9; }
+    .is-disabled .cui__dropdown--custom__option:hover::before {
+      border-color: #cbcbcd; }
+  .cui__dropdown--custom__option:first-child {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-top: 2.8rem; }
+  .cui__dropdown--custom__option:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 3.2rem; }
+  .-borderless .cui__dropdown--custom__option {
+    border-radius: 1rem; }
+    .-borderless .cui__dropdown--custom__option:first-child {
+      padding-top: 1.8rem; }
+    .-borderless .cui__dropdown--custom__option:last-child {
+      padding-bottom: 2.2rem; }
   .cui__dropdown--custom__option::before {
     background: white;
     border: 0.2rem solid #cbcbcd;
@@ -668,31 +693,24 @@
     left: 5rem;
     opacity: 0;
     position: absolute;
-    top: 6.2rem;
+    top: 3.4rem;
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     width: .8rem; }
-  .cui__dropdown--custom__option:hover {
-    background: #f9f9f9; }
-    .is-disabled .cui__dropdown--custom__option:hover::before {
-      border-color: #cbcbcd; }
-  .cui__dropdown--custom__option:first-child {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding-top: 2.8rem; }
-    .cui__dropdown--custom__option:first-child::before {
-      top: 3.4rem; }
-  .cui__dropdown--custom__option:last-child {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-bottom: 3.2rem; }
+  .cui__dropdown--custom__option:first-child::before {
+    top: 3.4rem; }
+  .cui__dropdown--custom__option:first-child::after {
+    top: 4.4rem; }
   .cui__dropdown--custom__option.is-selected::before {
     background: #0074c8;
-    border-color: #0074c8;
-    opacity: 1; }
+    border-color: #0074c8; }
   .cui__dropdown--custom__option.is-selected::after {
     opacity: 1;
-    top: 3.4rem; }
+    top: 3.4rem;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
   .cui__dropdown--custom__option.is-selected:first-child::after {
     top: 4.4rem; }
   .is-disabled .cui__dropdown--custom__option.is-selected::before {
@@ -700,7 +718,14 @@
     border-color: #cbcbcd; }
   .is-disabled .cui__dropdown--custom__option.is-selected::after {
     opacity: 1;
+    top: 3.4rem; }
+  .is-disabled .cui__dropdown--custom__option.is-selected:first-child::after {
+    opacity: 1;
     top: 4.4rem; }
+  .-borderless .cui__dropdown--custom__option:first-child::before {
+    top: 2.4rem; }
+  .-borderless .cui__dropdown--custom__option:first-child::after {
+    top: 3.4rem; }
   .is-collapsed .cui__dropdown--custom__option {
     display: none;
     position: static; }
@@ -760,6 +785,8 @@
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
+  .cui__dropdown--radio.-borderless {
+    border: none; }
   .cui__dropdown--radio.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -772,14 +799,35 @@
 
 .cui__dropdown--radio__option {
   background: #ffffff;
-  padding: 1.8rem 4rem 2.2rem 10rem;
-  transition: all .2s ease;
+  overflow: hidden;
+  padding-top: 1.8rem;
+  padding-bottom: 2.2rem;
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  padding-left: 10rem;
+  padding-right: 4rem; }
+  .cui__dropdown--radio__option:hover {
+    background: #f9f9f9; }
+    .is-disabled .cui__dropdown--radio__option:hover::before {
+      border-color: #cbcbcd; }
+  .cui__dropdown--radio__option:first-child {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-top: 2.8rem; }
+  .cui__dropdown--radio__option:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 3.2rem; }
+  .-borderless .cui__dropdown--radio__option {
+    border-radius: 1rem; }
+    .-borderless .cui__dropdown--radio__option:first-child {
+      padding-top: 1.8rem; }
+    .-borderless .cui__dropdown--radio__option:last-child {
+      padding-bottom: 2.2rem; }
   .cui__dropdown--radio__option::before {
     background: white;
     border: 0.2rem solid #cbcbcd;
@@ -809,22 +857,10 @@
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     width: .8rem; }
-  .cui__dropdown--radio__option:hover {
-    background: #f9f9f9; }
-    .is-disabled .cui__dropdown--radio__option:hover::before {
-      border-color: #cbcbcd; }
-  .cui__dropdown--radio__option:first-child {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding-top: 2.8rem; }
-    .cui__dropdown--radio__option:first-child::before {
-      top: 3.4rem; }
-    .cui__dropdown--radio__option:first-child::after {
-      top: 4.4rem; }
-  .cui__dropdown--radio__option:last-child {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-bottom: 3.2rem; }
+  .cui__dropdown--radio__option:first-child::before {
+    top: 3.4rem; }
+  .cui__dropdown--radio__option:first-child::after {
+    top: 4.4rem; }
   .cui__dropdown--radio__option.is-selected::before {
     background: #0074c8;
     border-color: #0074c8; }
@@ -844,6 +880,10 @@
   .is-disabled .cui__dropdown--radio__option.is-selected:first-child::after {
     opacity: 1;
     top: 4.4rem; }
+  .-borderless .cui__dropdown--radio__option:first-child::before {
+    top: 2.4rem; }
+  .-borderless .cui__dropdown--radio__option:first-child::after {
+    top: 3.4rem; }
 
 .cui__dropdown--radio__option__heading {
   font-size: 2.8rem;
@@ -1469,6 +1509,8 @@
   transition: all .2s ease;
   padding: 0;
   margin-bottom: .6rem; }
+  .cui__switch--multiple.-borderless {
+    border: none; }
   .cui__switch--multiple.is-disabled {
     background: #FAFAFA;
     color: #cbcbcd;
@@ -1478,23 +1520,42 @@
       border-color: #cbcbcd; }
     .cui__switch--multiple.is-disabled::after {
       opacity: .2; }
-  .cui__switch--multiple.-borderless {
-    border: none; }
 
 .cui__switch--multiple__option {
   background: #ffffff;
-  padding: 1.8rem 4rem 2.2rem 4rem;
+  overflow: hidden;
+  padding-top: 1.8rem;
+  padding-bottom: 2.2rem;
+  position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  padding-left: 10rem;
+  padding-right: 4rem;
   cursor: pointer;
   position: relative;
   padding-left: 4rem;
   padding-right: 14rem; }
   .cui__switch--multiple__option:hover {
     background: #f9f9f9; }
+    .is-disabled .cui__switch--multiple__option:hover::before {
+      border-color: #cbcbcd; }
+  .cui__switch--multiple__option:first-child {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-top: 2.8rem; }
+  .cui__switch--multiple__option:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 3.2rem; }
+  .-borderless .cui__switch--multiple__option {
+    border-radius: 1rem; }
+    .-borderless .cui__switch--multiple__option:first-child {
+      padding-top: 1.8rem; }
+    .-borderless .cui__switch--multiple__option:last-child {
+      padding-bottom: 2.2rem; }
   .cui__switch--multiple__option::before {
     background: #9e9ea0;
     border: 0.2rem solid #9e9ea0;
@@ -1597,120 +1658,106 @@
       .-checkbox .cui__switch--multiple__option.is-checked.is-disabled::after {
         opacity: 1;
         top: 2.4rem; } }
-  .cui__switch--multiple__option:first-child {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding-top: 2.8rem; }
-    @media screen and (min-width: 569px) {
-      .-checkbox .cui__switch--multiple__option:first-child {
-        padding-left: 10rem;
-        padding-right: 6rem;
-        position: relative; }
-        .-checkbox .cui__switch--multiple__option:first-child::before {
-          background: white;
-          border: 0.2rem solid #cbcbcd;
-          border-radius: 0.4rem;
-          box-sizing: border-box;
-          content: "";
-          display: block;
-          height: 2.8rem;
-          left: 4rem;
-          position: absolute;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
-          top: 3.4rem;
-          width: 2.8rem; }
-        .-checkbox .cui__switch--multiple__option:first-child::after {
-          background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
-          content: "";
-          display: block;
-          height: 2.8rem;
-          left: 4rem;
-          opacity: 0;
-          position: absolute;
-          top: 6rem;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
-          width: 2.8rem; }
-        .-checkbox .cui__switch--multiple__option:first-child:hover::before {
-          border-color: #66aae0; }
-        .is-disabled .-checkbox .cui__switch--multiple__option:first-child:hover::before, .-checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
-          border-color: #cbcbcd; }
-        .-checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
-          width: 2.8rem;
-          left: 4rem; }
-        .-checkbox .cui__switch--multiple__option:first-child.is-checked::before {
-          background: #0074c8;
-          border-color: #0074c8; }
-        .-checkbox .cui__switch--multiple__option:first-child.is-checked::after {
-          opacity: 1;
-          top: 3.4rem; }
-        .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
-          background: #cbcbcd;
-          border-color: #cbcbcd; }
-        .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
-          opacity: 1;
-          top: 3.4rem; } }
-  .cui__switch--multiple__option:last-child {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-bottom: 3.2rem; }
-    @media screen and (min-width: 569px) {
-      .-checkbox .cui__switch--multiple__option:last-child {
-        padding-left: 10rem;
-        padding-right: 6rem;
-        position: relative; }
-        .-checkbox .cui__switch--multiple__option:last-child::before {
-          background: white;
-          border: 0.2rem solid #cbcbcd;
-          border-radius: 0.4rem;
-          box-sizing: border-box;
-          content: "";
-          display: block;
-          height: 2.8rem;
-          left: 4rem;
-          position: absolute;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
-          top: 2.4rem;
-          width: 2.8rem; }
-        .-checkbox .cui__switch--multiple__option:last-child::after {
-          background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
-          content: "";
-          display: block;
-          height: 2.8rem;
-          left: 4rem;
-          opacity: 0;
-          position: absolute;
-          top: 6rem;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
-          width: 2.8rem; }
-        .-checkbox .cui__switch--multiple__option:last-child:hover::before {
-          border-color: #66aae0; }
-        .is-disabled .-checkbox .cui__switch--multiple__option:last-child:hover::before, .-checkbox .cui__switch--multiple__option:last-child:hover.is-disabled::before {
-          border-color: #cbcbcd; }
-        .-checkbox .cui__switch--multiple__option:last-child.is-pressed::after {
-          width: 2.8rem;
-          left: 4rem; }
-        .-checkbox .cui__switch--multiple__option:last-child.is-checked::before {
-          background: #0074c8;
-          border-color: #0074c8; }
-        .-checkbox .cui__switch--multiple__option:last-child.is-checked::after {
-          opacity: 1;
-          top: 2.4rem; }
-        .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::before {
-          background: #cbcbcd;
-          border-color: #cbcbcd; }
-        .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::after {
-          opacity: 1;
-          top: 2.4rem; } }
-  .-borderless .cui__switch--multiple__option {
-    border-radius: 1rem; }
-    .-borderless .cui__switch--multiple__option:first-child {
-      padding-top: 1.8rem; }
-    .-borderless .cui__switch--multiple__option:last-child {
-      padding-bottom: 2.2rem; }
+  @media screen and (min-width: 569px) {
+    .-checkbox .cui__switch--multiple__option:first-child {
+      padding-left: 10rem;
+      padding-right: 6rem;
+      position: relative; }
+      .-checkbox .cui__switch--multiple__option:first-child::before {
+        background: white;
+        border: 0.2rem solid #cbcbcd;
+        border-radius: 0.4rem;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        position: absolute;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        top: 3.4rem;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option:first-child::after {
+        background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        opacity: 0;
+        position: absolute;
+        top: 6rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option:first-child:hover::before {
+        border-color: #66aae0; }
+      .is-disabled .-checkbox .cui__switch--multiple__option:first-child:hover::before, .-checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
+        width: 2.8rem;
+        left: 4rem; }
+      .-checkbox .cui__switch--multiple__option:first-child.is-checked::before {
+        background: #0074c8;
+        border-color: #0074c8; }
+      .-checkbox .cui__switch--multiple__option:first-child.is-checked::after {
+        opacity: 1;
+        top: 3.4rem; }
+      .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
+        background: #cbcbcd;
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
+        opacity: 1;
+        top: 3.4rem; } }
+  @media screen and (min-width: 569px) {
+    .-checkbox .cui__switch--multiple__option:last-child {
+      padding-left: 10rem;
+      padding-right: 6rem;
+      position: relative; }
+      .-checkbox .cui__switch--multiple__option:last-child::before {
+        background: white;
+        border: 0.2rem solid #cbcbcd;
+        border-radius: 0.4rem;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        position: absolute;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        top: 2.4rem;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option:last-child::after {
+        background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
+        content: "";
+        display: block;
+        height: 2.8rem;
+        left: 4rem;
+        opacity: 0;
+        position: absolute;
+        top: 6rem;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 2.8rem; }
+      .-checkbox .cui__switch--multiple__option:last-child:hover::before {
+        border-color: #66aae0; }
+      .is-disabled .-checkbox .cui__switch--multiple__option:last-child:hover::before, .-checkbox .cui__switch--multiple__option:last-child:hover.is-disabled::before {
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option:last-child.is-pressed::after {
+        width: 2.8rem;
+        left: 4rem; }
+      .-checkbox .cui__switch--multiple__option:last-child.is-checked::before {
+        background: #0074c8;
+        border-color: #0074c8; }
+      .-checkbox .cui__switch--multiple__option:last-child.is-checked::after {
+        opacity: 1;
+        top: 2.4rem; }
+      .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::before {
+        background: #cbcbcd;
+        border-color: #cbcbcd; }
+      .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::after {
+        opacity: 1;
+        top: 2.4rem; } }
   @media screen and (min-width: 569px) {
     .-borderless.-checkbox .cui__switch--multiple__option:first-child {
       padding-left: 10rem;
