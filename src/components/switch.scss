@@ -1,6 +1,8 @@
 @import "../settings";
-@import "../mixins/switch";
+@import "../mixins/checkbox";
+@import "../mixins/options";
 @import "../mixins/responsive";
+@import "../mixins/switch";
 
 // SINGLE
 .cui__switch {
