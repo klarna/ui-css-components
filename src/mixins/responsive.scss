@@ -1,3 +1,5 @@
+$mobile-max-width: 569px !default;
+
 @mixin respond-to-wide($mobile-max-width: $mobile-max-width) {
     @media screen and (min-width: $mobile-max-width) {
         @content;
