@@ -1,105 +1,8 @@
-@mixin cui__button($background, $text-color, $darken-color, $darken-attributes) {
-    @include typography(2.8rem, semi-bold);
-
-    appearance: none;
-    background: $background;
-    border-radius: $border-radius;
-    border: .2rem solid map-get($colors, klarna-blue);
-    box-sizing: border-box;
-    color: $text-color;
-    cursor: pointer;
-    line-height: 10rem - 0.4rem;
-    outline: none;
-    padding: 0 9rem;
-    text-align: center;
-    text-decoration: none;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    vertical-align: top;
-
-    &.-small {
-      font-size: 2.8rem;
-      line-height: 7rem - 0.4rem;
-      padding: 0 5.6rem;
-    }
-
-    &.-big {
-      letter-spacing: 0.01rem;
-      line-height: 12rem - 0.4rem;
-      padding: 0 14rem;
-      text-transform: uppercase;
-    }
-
-    &.-right {
-        width: 100%;
-
-        @include respond-to-wide {
-            float: right;
-            margin-left: 4rem;
-            width: auto;
-        }
-    }
-
-    &.-left {
-        float: left;
-    }
-
-    &:hover, &:focus {
-        @each $attribute in $darken-attributes {
-          #{$attribute}: darken($darken-color, 5.2);
-        }
-    }
-
-    &:active {
-        @each $attribute in $darken-attributes {
-          #{$attribute}: darken($darken-color, 10.1);
-        }
-    }
-
-    &.is-disabled {
-        @include opacity(0.2);
-        cursor: default;
-
-        &:hover {
-            background: $background;
-        }
-
-        &:active {
-            background: $background;
-        }
-    }
-}
-
-@mixin cui__button__loader($image-name) {
-    @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, 4rem 4rem);
-
-    animation: spin 0.8s linear infinite;
-    display: inline-block;
-    font-size: 0;
-    height: 4rem;
-    vertical-align: text-bottom;
-    width: 4rem;
-
-    // IE8 and 9 don't support CSS animations, show the loader text instead.
-    @include respond-to-ie((8,9)) {
-        @include font-size(3rem);
-    }
-
-    // Preload the image
-    &:before {
-        content: url($ui-toolkit-path + 'img/' + $image-name + '.png');
-        display: none;
-        height: 0;
-        width: 0;
-
-        @include hidpi {
-            content: url($ui-toolkit-path + 'img/' + $image-name + '@2x.png');
-        }
-    }
-}
+@import "../settings";
+@import "../mixins/index";
 
 .cui__button--primary {
-    @include cui__button(
+    @include button(
         $background: map-get($colors, klarna-blue),
         $text-color: white,
         $darken-color: map-get($colors, klarna-blue),
@@ -107,12 +10,12 @@
     );
 
     &__loader {
-        @include cui__button__loader('button--primary__loader');
+        @include button__loader('button--primary__loader');
     }
 }
 
 .cui__button--secondary {
-    @include cui__button(
+    @include button(
         $background: white,
         $text-color: map-get($colors, klarna-blue),
         $darken-color: map-get($colors, klarna-blue),
@@ -120,7 +23,7 @@
     );
 
     &__loader {
-        @include cui__button__loader('button--secondary__loader');
+        @include button__loader('button--secondary__loader');
     }
 
     &:hover, &:focus {
@@ -134,7 +37,7 @@
     }
 
     .cui__button--primary.-right + &.-right {
-        margin-top: 4rem;
+        margin-top: ($grid * 4);
 
         @include respond-to-wide {
             margin-top: 0;
@@ -143,7 +46,7 @@
 }
 
 .cui__button__menu {
-    padding-bottom: 4rem;
+    padding-bottom: ($grid * 4);
 
     &::after {
         content: "";

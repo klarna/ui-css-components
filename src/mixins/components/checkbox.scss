@@ -1,22 +1,22 @@
-@mixin checkbox($padding: 6rem, $top: 0rem) {
-    padding-left: $padding + 4rem;
+@mixin checkbox($padding: $grid * 6, $top: 0) {
+    padding-left: $padding + ($grid * 4);
     padding-right: $padding;
     position: relative;
 
     &::before {
         background: white;
-        border: .2rem solid $border-color;
+        border: $grid * .2 solid $border-color;
         border-radius: $border-radius-checkbox;
         box-sizing: border-box;
         content: "";
         display: block;
-        height: 2.8rem;
-        left: $padding - 2rem;
+        height: $grid * 2.8;
+        left: $padding - ($grid * 2);
         position: absolute;
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         top: $top;
-        width: 2.8rem;
+        width: ($grid * 2.8);
     }
 
     &::after {
@@ -41,14 +41,14 @@
         </svg>');
         content: "";
         display: block;
-        height: 2.8rem;
-        left: $padding - 2rem;
+        height: ($grid * 2.8);
+        left: $padding - ($grid * 2);
         opacity: 0;
         position: absolute;
-        top: 6rem;
+        top: ($grid * 6);
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
-        width: 2.8rem;
+        width: ($grid * 2.8);
     }
 
     &:hover {
@@ -65,8 +65,8 @@
 
     &.is-pressed {
         &::after {
-            width: 2.8rem;
-            left: $padding - 2rem;
+            width: ($grid * 2.8);
+            left: $padding - ($grid * 2);
         }
     }
 

@@ -6,7 +6,8 @@ $ui-toolkit-path: "";
 // ================================================================
 //  Typography and baseline
 // ================================================================
-$base-font-family: "Open Sans", sans-serif;
+$base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$grid: 5px;
 
 // ================================================================
 //  Breakpoints
@@ -41,8 +42,8 @@ $font-weights: (
 // ================================================================
 //  Borders
 // ================================================================
-$border-radius: 1rem;
-$border-radius-checkbox: .4rem;
+$border-radius: ($grid * 1);
+$border-radius-checkbox: ($grid * .4);
 $border-color: map-get($colors, grey-lines);
 $border-color-error: #e6bebe;
 $border-color-warning: #e6c88c;

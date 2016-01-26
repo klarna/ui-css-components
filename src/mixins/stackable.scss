@@ -6,50 +6,50 @@
 
 @mixin stacked-responsiveness () {
     @include respond-to-wide {
-        margin-left: -.2rem;
+        margin-left: ($grid * -.2);
     }
 
     &.-non-responsive {
-        margin-left: -.2rem;
+        margin-left: ($grid * -.2);
     }
 
     &.-half {
         @include respond-to-wide {
-            width: calc(50% + 0.2rem);
+            width: calc(50% + ($grid * .2));
         }
 
         &.-non-responsive {
-            width: calc(50% + 0.2rem);
+            width: calc(50% + ($grid * .2));
         }
     }
 
     &.-forty {
         @include respond-to-wide {
-            width: calc(40% + 0.2rem);
+            width: calc(40% + ($grid * .2));
         }
 
         &.-non-responsive {
-            width: calc(40% + 0.2rem);
+            width: calc(40% + ($grid * .2));
         }
     }
 
     &.-quarter {
         @include respond-to-wide {
-            width: calc(25% + 0.2rem);
+            width: calc(25% + ($grid * .2));
         }
 
         &.-non-responsive {
-            width: calc(25% + 0.2rem);
+            width: calc(25% + ($grid * .2));
         }
     }
 
     &.-twenty {
         @include respond-to-wide {
-            width: calc(20% + 0.2rem);
+            width: calc(20% + ($grid * .2));
         }
 
         &.-non-responsive {
-            width: calc(20% + 0.2rem);
+            width: calc(20% + ($grid * .2));
         }
     }
 }

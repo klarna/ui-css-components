@@ -1,7 +1,8 @@
-@import "../mixins/responsive";
+@import "../settings";
+@import "../mixins/index";
 
 .cui__baseline {
-    font-size: 5px;
+    font-size: $grid;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -11,11 +12,11 @@
 }
 
 .cui__baseline__content--main {
-    margin: 0 4rem;
+    margin: 0 ($grid * 4);
     padding: 0;
 
     @include respond-to-wide {
-        width: 102rem;
+        width: ($grid * 102);
         margin: 0 auto;
     }
 }

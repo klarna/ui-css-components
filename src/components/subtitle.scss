@@ -1,11 +1,14 @@
+@import "../settings";
+@import "../mixins/index";
+
 .cui__subtitle {
-  @include typography(2.4rem, semi-bold);
+  @include typography(($grid * 2.4), semi-bold);
 
   color: map-get($colors, black);
-  height: 4rem;
-  line-height: 4rem;
+  height: ($grid * 4);
+  line-height: ($grid * 4);
   margin: 0;
-  padding: 3.2rem 0 1.8rem 0;
+  padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
   text-transform: uppercase;
 
   &.-blue {
@@ -14,5 +17,5 @@
 }
 
 .cui__title--primary + .cui__subtitle {
-    margin-top: -2rem;
+    margin-top: ($grid * -2);
 }
