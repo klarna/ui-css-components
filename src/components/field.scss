@@ -200,7 +200,8 @@
     width: 4rem;
 }
 
-.cui__field__wrapper {
+// fieldset
+.cui__fieldset {
     padding-bottom: 4rem;
     position: relative;
 
@@ -211,6 +212,6 @@
     }
 }
 
-.cui__subtitle + .cui__field__wrapper {
+.cui__subtitle + .cui__fieldset {
     padding-top: 1rem;
 }
