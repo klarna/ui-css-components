@@ -308,7 +308,7 @@ Fields can be stacked together to form a single organic visual component.
 By default, side by side fields will be responsive, meaning that they will
 turn full width on thin screens. If you want fields to keep appearing side
 by side on thin viewports, add the `-non-responsive` class to the field. You
-can see an example of this in the [Billing Address](examples/base/billing_address.html)
+can see an example of this in the [Billing Address](examples/base/checkout.html)
 demo.
 
 
