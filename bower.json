@@ -19,7 +19,6 @@
     "gulpfile.js",
     "index.html",
     "index.jade",
-    "src",
     "Makefile",
     "README.md",
     "CHANGELOG.md"
