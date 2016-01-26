@@ -7,353 +7,355 @@
         <link rel="stylesheet" href="../../dist/ui-toolkit.css" />
     </head>
 
-    <body class="cui__baseline__content--main">
-        <nav>
-            <p class="cui__paragraph--primary">
-                <a class="cui__link" href="../../">Back to the Showroom</a>
-            </p>
-        </nav>
+    <body>
+        <main class="cui__baseline__content--main">
+            <nav>
+                <p class="cui__paragraph--primary">
+                    <a class="cui__link" href="../../">Back to the Showroom</a>
+                </p>
+            </nav>
 
-        <h3 class="cui__subtitle">
-          Your details
-        </h3>
+            <h3 class="cui__subtitle">
+              Your details
+            </h3>
 
-        <div class="cui__fieldset">
-            <div class="cui__field -top">
-            	<label class="cui__field__label">
-            		Email address
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                    value="john.green@klarna.com"
-                />
-            </div>
-
-            <div class="cui__field -bottom-left -half -non-responsive is-error">
-            	<label class="cui__field__label">
-            		The zip code format is not supported
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                    value="A11AA"
-                />
-            </div>
-
-            <div class="cui__dropdown--native -bottom-right -half -non-responsive">
-              <label class="cui__dropdown--native__label">
-                Country
-              </label>
-
-              <select
-                class="cui__dropdown--native__select"
-                onfocus="dofocus(this)"
-                onblur="doblur(this)">
-                <option>Palau</option>
-                <option>Kiribati</option>
-              </select>
-            </div>
-        </div>
-
-        <h3 class="cui__subtitle">
-          Billing Address
-        </h3>
-
-        <div class="cui__fieldset">
-            <div class="cui__field -top-left -half -non-responsive">
-            	<label class="cui__field__label">
-            		Name
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                    value="John"
-                />
-            </div>
-
-            <div class="cui__field -top-right -half -non-responsive">
-            	<label class="cui__field__label">
-            		Lastname
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square">
-            	<label class="cui__field__label">
-            		Address line 1
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square">
-            	<label class="cui__field__label">
-            		Address line 2
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square -half is-warning">
-            	<label class="cui__field__label">
-            		The city you provided is not recognized
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                    value="Arkham"
-                />
-            </div>
-
-            <div class="cui__dropdown--native -center -quarter is-selected">
-                <label class="cui__dropdown--native__label">
-                    State
-                </label>
-
-                <div class="cui__dropdown--native__current-option">
-                    OH
+            <div class="cui__fieldset">
+                <div class="cui__field -top">
+                	<label class="cui__field__label">
+                		Email address
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                        value="john.green@klarna.com"
+                    />
                 </div>
 
-                <select
+                <div class="cui__field -bottom-left -half -non-responsive is-error">
+                	<label class="cui__field__label">
+                		The zip code format is not supported
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                        value="A11AA"
+                    />
+                </div>
+
+                <div class="cui__dropdown--native -bottom-right -half -non-responsive">
+                  <label class="cui__dropdown--native__label">
+                    Country
+                  </label>
+
+                  <select
                     class="cui__dropdown--native__select"
                     onfocus="dofocus(this)"
                     onblur="doblur(this)">
-                    <option>OH</option>
-                    <option>NY</option>
-                    <option>CA</option>
-                </select>
+                    <option>Palau</option>
+                    <option>Kiribati</option>
+                  </select>
+                </div>
             </div>
 
-            <div class="cui__field -center -quarter">
-            	<label class="cui__field__label">
-            		Zip
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
+            <h3 class="cui__subtitle">
+              Billing Address
+            </h3>
 
-            <div class="cui__field -bottom-left -half">
-            	<label class="cui__field__label">
-            		Phone number
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -bottom-right -half">
-            	<label class="cui__field__label">
-            		Email
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-        </div>
-
-        <div class="cui__button__menu">
-            <button class="cui__button--primary -right">
-              Continue
-            </button>
-
-            <button class="cui__button--secondary -right">
-              Cancel
-            </button>
-        </div>
-
-        <h3 class="cui__subtitle">
-          Shipping Address
-        </h3>
-
-        <div class="cui__fieldset">
-            <div class="cui__dropdown--native is-warning">
-                <div class="cui__dropdown--native__floating-label">
-                    The DHL option has extra fees attached to it
+            <div class="cui__fieldset">
+                <div class="cui__field -top-left -half -non-responsive">
+                	<label class="cui__field__label">
+                		Name
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                        value="John"
+                    />
                 </div>
 
-                <div class="cui__dropdown--native__current-option">
-                    DHL packstation delivery
+                <div class="cui__field -top-right -half -non-responsive">
+                	<label class="cui__field__label">
+                		Lastname
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
                 </div>
 
-                <select
-                    class="cui__dropdown--native__select"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)">
-                    <option>Same as billing address</option>
-                    <option>Separate shipping address</option>
-                    <option>DHL packstation delivery</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="cui__fieldset">
-            <div class="cui__dropdown--native -top-left -twenty is-error">
-                <div class="cui__dropdown--native__floating-label">
-                    Title?
+                <div class="cui__field -square">
+                	<label class="cui__field__label">
+                		Address line 1
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
                 </div>
 
-                <div class="cui__dropdown--native__current-option">
-                    Sith
+                <div class="cui__field -square">
+                	<label class="cui__field__label">
+                		Address line 2
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
                 </div>
 
-                <select
-                    class="cui__dropdown--native__select"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)">
-                    <option>Master</option>
-                    <option>Sith</option>
-                    <option>The One</option>
-                </select>
-            </div>
-
-            <div class="cui__field -center -forty">
-            	<label class="cui__field__label">
-            		Given name
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -top-right -forty">
-            	<label class="cui__field__label">
-            		Lastname
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square">
-            	<label class="cui__field__label">
-            		Address line 1
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square">
-            	<label class="cui__field__label">
-            		Address line 2
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
-            </div>
-
-            <div class="cui__field -square -half is-warning">
-            	<label class="cui__field__label">
-            		The city you provided is not recognized
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                    value="Arkham"
-                />
-            </div>
-
-            <div class="cui__dropdown--native -center -quarter is-selected">
-                <label class="cui__dropdown--native__label">
-                    State
-                </label>
-
-                <div class="cui__dropdown--native__current-option">
-                    OH
+                <div class="cui__field -square -half is-warning">
+                	<label class="cui__field__label">
+                		The city you provided is not recognized
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                        value="Arkham"
+                    />
                 </div>
 
-                <select
-                    class="cui__dropdown--native__select"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)">
-                    <option>OH</option>
-                    <option>NY</option>
-                    <option>CA</option>
-                </select>
+                <div class="cui__dropdown--native -center -quarter is-selected">
+                    <label class="cui__dropdown--native__label">
+                        State
+                    </label>
+
+                    <div class="cui__dropdown--native__current-option">
+                        OH
+                    </div>
+
+                    <select
+                        class="cui__dropdown--native__select"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)">
+                        <option>OH</option>
+                        <option>NY</option>
+                        <option>CA</option>
+                    </select>
+                </div>
+
+                <div class="cui__field -center -quarter">
+                	<label class="cui__field__label">
+                		Zip
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -bottom-left -half">
+                	<label class="cui__field__label">
+                		Phone number
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -bottom-right -half">
+                	<label class="cui__field__label">
+                		Email
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
             </div>
 
-            <div class="cui__field -center -quarter">
-            	<label class="cui__field__label">
-            		Zip
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
+            <div class="cui__button__menu">
+                <button class="cui__button--primary -right">
+                  Continue
+                </button>
+
+                <button class="cui__button--secondary -right">
+                  Cancel
+                </button>
             </div>
 
-            <div class="cui__field -bottom-left -half">
-            	<label class="cui__field__label">
-            		Phone number
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
+            <h3 class="cui__subtitle">
+              Shipping Address
+            </h3>
+
+            <div class="cui__fieldset">
+                <div class="cui__dropdown--native is-warning">
+                    <div class="cui__dropdown--native__floating-label">
+                        The DHL option has extra fees attached to it
+                    </div>
+
+                    <div class="cui__dropdown--native__current-option">
+                        DHL packstation delivery
+                    </div>
+
+                    <select
+                        class="cui__dropdown--native__select"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)">
+                        <option>Same as billing address</option>
+                        <option>Separate shipping address</option>
+                        <option>DHL packstation delivery</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="cui__field -bottom-right -half">
-            	<label class="cui__field__label">
-            		Email
-            	</label>
-            	<input
-                    class="cui__field__input"
-                    oninput="floatingLabel(this)"
-                    onfocus="dofocus(this)"
-                    onblur="doblur(this)"
-                />
+            <div class="cui__fieldset">
+                <div class="cui__dropdown--native -top-left -twenty is-error">
+                    <div class="cui__dropdown--native__floating-label">
+                        Title?
+                    </div>
+
+                    <div class="cui__dropdown--native__current-option">
+                        Sith
+                    </div>
+
+                    <select
+                        class="cui__dropdown--native__select"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)">
+                        <option>Master</option>
+                        <option>Sith</option>
+                        <option>The One</option>
+                    </select>
+                </div>
+
+                <div class="cui__field -center -forty">
+                	<label class="cui__field__label">
+                		Given name
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -top-right -forty">
+                	<label class="cui__field__label">
+                		Lastname
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -square">
+                	<label class="cui__field__label">
+                		Address line 1
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -square">
+                	<label class="cui__field__label">
+                		Address line 2
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -square -half is-warning">
+                	<label class="cui__field__label">
+                		The city you provided is not recognized
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                        value="Arkham"
+                    />
+                </div>
+
+                <div class="cui__dropdown--native -center -quarter is-selected">
+                    <label class="cui__dropdown--native__label">
+                        State
+                    </label>
+
+                    <div class="cui__dropdown--native__current-option">
+                        OH
+                    </div>
+
+                    <select
+                        class="cui__dropdown--native__select"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)">
+                        <option>OH</option>
+                        <option>NY</option>
+                        <option>CA</option>
+                    </select>
+                </div>
+
+                <div class="cui__field -center -quarter">
+                	<label class="cui__field__label">
+                		Zip
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -bottom-left -half">
+                	<label class="cui__field__label">
+                		Phone number
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
+
+                <div class="cui__field -bottom-right -half">
+                	<label class="cui__field__label">
+                		Email
+                	</label>
+                	<input
+                        class="cui__field__input"
+                        oninput="floatingLabel(this)"
+                        onfocus="dofocus(this)"
+                        onblur="doblur(this)"
+                    />
+                </div>
             </div>
-        </div>
+        </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
         <script>

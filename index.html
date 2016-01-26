@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><div class="cui__header"></div><nav><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary -condensed"><a href="#Link" class="cui__link">Link</a></li></ul></nav><main class="cui__baseline__content--main"><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
+<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></nav><main class="cui__baseline__content--main"><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-toolkit guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -2616,6 +2616,7 @@ demo.</p>
 </ul>
 </li>
 <li><a class="cui__link" href="#Text/label">Label</a></li>
+<li><a class="cui__link" href="#Text/link">Link</a></li>
 </ul>
 <a name="Text/example"></a><h2 class="cui__title--secondary">Example</h2>
 <ul class="summary">
@@ -2766,6 +2767,17 @@ demo.</p>
   &lt;span class=&quot;cui__label&quot;&gt;Promo&lt;/span&gt;
 &lt;/p&gt;
 </div></code></pre></div>
+<a name="Text/link"></a><h2 class="cui__title--secondary">Link</h2>
+<div class="example-block"><div class="example"><p class="cui__paragraph--primary -condensed">
+  <a class="cui__link">
+    Click here to go somewhere else
+  </a>
+</a></div><pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary -condensed&quot;&gt;
+  &lt;a class=&quot;cui__link&quot;&gt;
+    Click here to go somewhere else
+  &lt;/a&gt;
+&lt;/a&gt;
+</div></code></pre></div>
 </section><section id="Icon"><h1 class="cui__title--primary">Icons</h1>
 <p class="cui__paragraph--primary">A set of icons are provided as part of the toolkit. They are designed to be used in the context of Fields, and have included the styles for hover states as well as warnings and errors.</p>
 <p class="cui__paragraph--primary">They are bundled as inline SVG within the CSS.</p>
@@ -2785,19 +2797,6 @@ demo.</p>
 <div class="example-block"><div class="example"><span class="cui__icon cui__icon--mail is-focused"></span>
 <span class="cui__icon cui__icon--lock is-focused"></span></div><pre><code class="lang-html"><div>&lt;span class=&quot;cui__icon cui__icon--mail is-focused&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;cui__icon cui__icon--lock is-focused&quot;&gt;&lt;/span&gt;
-</div></code></pre></div>
-</section><section id="Link"><h1 class="cui__title--primary">Link</h1>
-<p class="cui__paragraph--primary">Link is a styling that should not</p>
-<hr>
-<ul class="summary">
-<li><a class="cui__link" href="#Link/regular">Regular</a></li>
-</ul>
-<a name="Link/regular"></a><h2 class="cui__title--secondary">Regular</h2>
-<div class="example-block"><div class="example"><a class="cui__link">
-  Click here to go somewhere else
-</a></div><pre><code class="lang-html"><div>&lt;a class=&quot;cui__link&quot;&gt;
-  Click here to go somewhere else
-&lt;/a&gt;
 </div></code></pre></div>
 </section></main><script>// helpers for documentation
 $(window).keypress(function(e){

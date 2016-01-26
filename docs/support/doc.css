@@ -9,9 +9,7 @@ ul {
 }
 
 main.cui__baseline__content--main {
-  float: left;
-  padding: 55px 0 0 80px;
-  padding-top: 55px;
+  clear: both;
 }
 
 .example-block {
@@ -65,6 +63,10 @@ hr {
   margin: 20px 0;
 }
 
+.summary {
+  padding: 0;
+}
+
 .summary li {
   margin-left: 5px;
   line-height: 20px;
@@ -87,10 +89,30 @@ hr {
   color: #9E9EA0;
 }
 
-.overview {
-  padding-right: 20px;
+ul.overview {
+  padding: 0;
+  margin: 0;
 }
 
 .overview li {
   padding: 10px;
+}
+
+section {
+  display: none;
+}
+
+@media screen and (min-width: 999px) {
+  main.cui__baseline__content--main {
+    clear: none;
+    float: left;
+    padding: 55px 0 0 80px;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  main.cui__baseline__content--main {
+    width: 700px;
+  }
 }
