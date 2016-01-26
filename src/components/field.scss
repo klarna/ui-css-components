@@ -1,25 +1,22 @@
 @import "../settings";
-@import "../mixins/ie";
-@import "../mixins/responsive";
-@import "../mixins/typography";
-@import "../mixins/stackable";
+@import "../mixins/index";
 
 .cui__field {
     @include stackable();
 
-    border: .2rem solid $border-color;
+    border: ($grid * .2) solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
     clear: both;
     display: block;
-    height: 10.2rem;
-    margin-bottom: -.2rem;
+    height: ($grid * 10.2);
+    margin-bottom: ($grid * -.2);
     position: relative;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
     &.-big {
-        height: 12rem;
+        height: ($grid * 12);
     }
 
     &.is-hidden {
@@ -37,7 +34,7 @@
 
     &.is-focused {
         border-color: $border-color-focus;
-        box-shadow: 0 0 .8rem $box-shadow-focus;
+        box-shadow: 0 0 ($grid * .8) $box-shadow-focus;
         z-index: 20;
     }
 
@@ -54,7 +51,7 @@
 
         &.is-focused {
             border-color: $border-color-focus-error;
-            box-shadow: 0 0 .8rem $box-shadow-focus-error;
+            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-error;
             z-index: 20;
         }
     }
@@ -72,7 +69,7 @@
 
         &.is-focused {
             border-color: $border-color-focus-warning;
-            box-shadow: 0 0 .8rem $box-shadow-focus-warning;
+            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-warning;
             z-index: 20;
         }
 
@@ -93,10 +90,10 @@
 }
 
 .cui__field__label, .cui__field__input {
-    @include typography(2.8rem, regular);
+    @include typography(($grid * 2.8), regular);
 
-    line-height: 10rem;
-    padding: 0 4rem;
+    line-height: ($grid * 10);
+    padding: 0 ($grid * 4);
     position: absolute;
 }
 
@@ -106,17 +103,17 @@
     transition: all .2s ease;
 
     .-big & {
-        line-height: 12rem;
+        line-height: ($grid * 12);
     }
 
     .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
-        transform: translate(0, -2.2rem);
+        transform: translate(0, ($grid * -2.2));
     }
 
     .is-filled &, .is-error &, .is-warning & {
-        @include typography(2.2rem, regular);
+        @include typography(($grid * 2.2), regular);
 
-        transform: translate(0, -2rem);
+        transform: translate(0, ($grid * -2));
     }
 
     .is-filled & {
@@ -137,7 +134,7 @@
 }
 
 .cui__field__input {
-    @include typography(2.8rem, semi-bold);
+    @include typography(($grid * 2.8), semi-bold);
 
     appearance: none;
     background-color: transparent;
@@ -148,17 +145,17 @@
     width: 100%;
 
     .-big & {
-      height: 12rem;
+      height: ($grid * 12);
     }
 
     .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
-      height: 9.8rem;
-      top: 2.2rem;
+      height: ($grid * 9.8);
+      top: ($grid * 2.2);
     }
 
     .is-filled &, .is-error &, .is-warning & {
-        height: 9rem;
-        top: 1rem;
+        height: ($grid * 9);
+        top: ($grid * 1);
     }
 
     .is-disabled & {
@@ -171,7 +168,7 @@
     }
 
     @include respond-to-ie(8) {
-        border: .2rem solid $border-color;
+        border: ($grid * .2) solid $border-color;
     }
 }
 
@@ -188,21 +185,21 @@
 }
 
 .cui__field--icon__label, .cui__field--icon__input {
-    padding-left: 8.4rem;
+    padding-left: ($grid * 8.4);
 }
 
 .cui__field--icon__icon {
     background: #A8A8A8;
     display: block;
-    height: 4rem;
-    margin: 3rem 0 0 2.4rem;
+    height: ($grid * 4);
+    margin: ($grid * 3) 0 0 ($grid * 2.4);
     position: absolute;
-    width: 4rem;
+    width: ($grid * 4);
 }
 
 // fieldset
 .cui__fieldset {
-    padding-bottom: 4rem;
+    padding-bottom: ($grid * 4);
     position: relative;
 
     &::after {
@@ -213,5 +210,5 @@
 }
 
 .cui__subtitle + .cui__fieldset {
-    padding-top: 1rem;
+    padding-top: ($grid * 1);
 }

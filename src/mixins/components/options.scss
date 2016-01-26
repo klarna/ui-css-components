@@ -1,11 +1,11 @@
 @mixin options($hover: false) {
-    border: .2rem solid $border-color;
+    border: ($grid * .2) solid $border-color;
     border-radius: $border-radius;
     box-sizing: border-box;
     cursor: pointer;
     display: block;
     overflow: hidden;
-    margin-bottom: .6rem;
+    margin-bottom: ($grid * .6);
     padding: 0;
     position: relative;
     -webkit-transition: all .2s ease;
@@ -41,8 +41,8 @@
 @mixin option() {
     background: #ffffff;
     overflow: hidden;
-    padding-top: 1.8rem;
-    padding-bottom: 2.2rem;
+    padding-top: ($grid * 1.8);
+    padding-bottom: ($grid * 2.2);
     position: relative;
 
     -webkit-transition: all .2s ease;
@@ -65,24 +65,24 @@
     &:first-child {
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
-        padding-top: 2.8rem;
+        padding-top: ($grid * 2.8);
     }
 
     &:last-child {
         border-bottom-left-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
-        padding-bottom: 3.2rem;
+        padding-bottom: ($grid * 3.2);
     }
 
     .-borderless & {
         border-radius: $border-radius;
 
         &:first-child {
-            padding-top: 1.8rem;
+            padding-top: ($grid * 1.8);
         }
 
         &:last-child {
-            padding-bottom: 2.2rem;
+            padding-bottom: ($grid * 2.2);
         }
     }
 }

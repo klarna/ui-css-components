@@ -1,9 +1,12 @@
+@import "../settings";
+@import "../mixins/index";
+
 // TITLE
 .cui__title--primary, .cui__title--secondary {
-    @include typography(5.2rem, regular);
+    @include typography(($grid * 5.2), regular);
 
     color: map-get($colors, black);
-    line-height: 7rem;
+    line-height: ($grid * 7);
     margin: 0;
 
     &.-blue {
@@ -12,37 +15,37 @@
 }
 
 .cui__title--primary {
-    @include typography(5.2rem, light);
+    @include typography(($grid * 5.2), light);
 
-    padding: 3.6rem 0 3.4rem 0;
+    padding: ($grid * 3.6) 0 ($grid * 3.4) 0;
 
     &.-small {
-        @include typography(4.4rem, light);
+        @include typography(($grid * 4.4), light);
 
-        padding: 3.8rem 0 3.2rem 0;
+        padding: ($grid * 3.8) 0 ($grid * 3.2) 0;
 
         &.-strong {
-            @include typography(4.4rem, regular);
+            @include typography(($grid * 4.4), regular);
         }
     }
 }
 
 .cui__title--secondary {
-    @include typography(3rem, semi-bold);
+    @include typography(($grid * 3), semi-bold);
 
-    padding: 4.4rem 0 2.6rem 0;
-    line-height: 3rem;
+    padding: ($grid * 4.4) 0 ($grid * 2.6) 0;
+    line-height: ($grid * 3);
 }
 
 // SUBTITLE
 .cui__subtitle {
-  @include typography(2.4rem, semi-bold);
+  @include typography(($grid * 2.4), semi-bold);
 
   color: map-get($colors, black);
-  height: 4rem;
-  line-height: 4rem;
+  height: ($grid * 4);
+  line-height: ($grid * 4);
   margin: 0;
-  padding: 3.2rem 0 1.8rem 0;
+  padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
   text-transform: uppercase;
 
   &.-blue {
@@ -51,55 +54,55 @@
 }
 
 .cui__title--primary + .cui__subtitle {
-    margin-top: -2rem;
+    margin-top: ($grid * -2);
 }
 
 // PARAGRAPH
 .cui__paragraph--primary, .cui__paragraph--secondary {
-    line-height: 5rem;
+    line-height: ($grid * 5);
     margin: 0;
-    padding: .6rem 0 3.4rem 0;
+    padding: ($grid * .6) 0 ($grid * 3.4) 0;
 
     &.-condensed {
-        line-height: 4rem;
-        padding-top: 0rem;
-        padding-bottom: 3rem;
+        line-height: ($grid * 4);
+        padding-top: 0;
+        padding-bottom: ($grid * 3);
     }
 }
 
 .cui__paragraph--primary {
-  @include typography(2.6rem, regular);
+  @include typography(($grid * 2.6), regular);
 
   color: map-get($colors, black);
 }
 
 .cui__paragraph--secondary {
-  @include typography(2.6rem, regular);
+  @include typography(($grid * 2.6), regular);
 
   color: map-get($colors, grey-text);
 }
 
 .cui__paragraph--legal {
-  @include typography(2.2rem, regular);
+  @include typography(($grid * 2.2), regular);
 
   color: map-get($colors, grey-text);
-  line-height: 4rem;
+  line-height: ($grid * 4);
   margin: 0;
-  padding: 0.4rem 0 2.6rem 0;
+  padding: ($grid * .4) 0 ($grid * 2.6) 0;
 }
 
 // LABEL
 .cui__label {
-    @include typography(2rem, semi-bold);
+    @include typography(($grid * 2), semi-bold);
 
     background: map-get($colors, klarna-blue);
     border-radius: $border-radius;
-    bottom: .2rem;
+    bottom: ($grid * .2);
     color: white;
     display: inline-block;
-    left: .8rem;
-    line-height: 3rem;
-    padding: 0 1rem;
+    left: ($grid * .8);
+    line-height: ($grid * 3);
+    padding: 0 ($grid * 1);
     position: relative;
     text-transform: uppercase;
 

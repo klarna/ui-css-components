@@ -1,7 +1,10 @@
+@import "../settings";
+@import "../mixins/index";
+
 .cui__icon {
     display: block;
-    height: 4rem;
-    width: 4rem;
+    height: ($grid * 4);
+    width: ($grid * 4);
 }
 
 .cui__icon--mail {
