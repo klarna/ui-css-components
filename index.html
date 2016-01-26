@@ -7,6 +7,10 @@
 </ul>
 <hr>
 <p class="cui__paragraph--primary">Enjoy!</p>
+<hr>
+<h2 class="cui__title--secondary">Instructions</h2>
+<p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should be aligned with the
+grid. If something is not, please report it in the #front_end channel.</p>
 </section><section id="Baseline"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
 In practical terms, it means that for using the Toolkit you need to set the class
@@ -91,7 +95,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <li><a href="examples/base/selectors.html">Selectors</a></li>
 </ul>
 <a name="Dropdown/native"></a><h2 class="cui__title--secondary">Native</h2>
-<div class="cui__field__wrapper">
+<div class="cui__fieldset">
   <div class="cui__dropdown--native -top">
     <label class="cui__dropdown--native__label">
       Name
@@ -1267,6 +1271,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <p class="cui__paragraph--primary">The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
 <p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
 <p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
+<p class="cui__paragraph--primary">When fields are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats</p>
 <hr>
 <ul class="summary">
 <li><a href="#Field/overview">Overview</a></li>
@@ -1583,7 +1588,7 @@ demo.</p>
 <div style="overflow: hidden">
   <ul class="overview">
     <li>
-                <div class="cui__field__wrapper">
+                <div class="cui__fieldset">
                         <div class="cui__field -top-left -half -non-responsive">
                             <label class="cui__field__label">
                                 Name
@@ -1689,215 +1694,247 @@ demo.</p>
 </div>
 
 <a name="Field/stacked/side by side"></a><h3 class="cui__subtitle">Side by side</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -left -half">
-    <label class="cui__field__label">
-        Name
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -right -half">
-    <label class="cui__field__label">
-        Lastname
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -left -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Name
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -right -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Lastname
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -left -half">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -right -half">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -left -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -right -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Lastname
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/top part"></a><h3 class="cui__subtitle">Top part</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -top-left -half">
-    <label class="cui__field__label">
-        Name
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -half">
-    <label class="cui__field__label">
-        Lastname
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -top-left -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Name
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -top-right -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Lastname
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -top-left -half">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -top-right -half">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -top-left -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -top-right -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Lastname
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/top only"></a><h3 class="cui__subtitle">Top only</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -top">
-    <label class="cui__field__label">
-        Email address
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -top&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Email address
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -top">
+        <label class="cui__field__label">
+            Email address
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -top&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Email address
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/bottom part"></a><h3 class="cui__subtitle">Bottom part</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -bottom-left -half">
-    <label class="cui__field__label">
-        City
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -bottom-right -half">
-    <label class="cui__field__label">
-        Country
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -bottom-left -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        City
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -bottom-right -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Country
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -bottom-left -half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -bottom-right -half">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -bottom-left -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            City
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -bottom-right -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Country
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/bottom only"></a><h3 class="cui__subtitle">Bottom only</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -bottom">
-    <label class="cui__field__label">
-        Password
-    </label>
-    <input type="password" class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -bottom&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Password
-    &lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -bottom">
+        <label class="cui__field__label">
+            Password
+        </label>
+        <input type="password" class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -bottom&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Password
+        &lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/square"></a><h3 class="cui__subtitle">Square</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -top-left -half">
-    <label class="cui__field__label">
-        City
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -half">
-    <label class="cui__field__label">
-        Country
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -square">
-    <label class="cui__field__label">
-        Country
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -top-left -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        City
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -top-right -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Country
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -square&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Country
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -top-left -half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -top-right -half">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -square">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -top-left -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            City
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -top-right -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Country
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -square&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Country
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/half and quarter sizes"></a><h3 class="cui__subtitle">Half and Quarter sizes</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -top-left -half">
-    <label class="cui__field__label">
-        City
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -center -quarter">
-    <label class="cui__field__label">
-        Zip
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -quarter">
-    <label class="cui__field__label">
-        Country
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -top-left -half&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        City
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -center -quarter&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Zip
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -top-right -quarter&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Country
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -top-left -half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -center -quarter">
+        <label class="cui__field__label">
+            Zip
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -top-right -quarter">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -top-left -half&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            City
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -center -quarter&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Zip
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -top-right -quarter&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Country
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/twenty - forty"></a><h3 class="cui__subtitle">Twenty - Forty</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field -top-left -twenty">
-    <label class="cui__field__label">
-        Title
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -center -forty">
-    <label class="cui__field__label">
-        Name
-    </label>
-    <input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -forty">
-    <label class="cui__field__label">
-        Lastname
-    </label>
-    <input class="cui__field__input" />
-</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field -top-left -twenty&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Title
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -center -forty&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Name
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;cui__field -top-right -forty&quot;&gt;
-    &lt;label class=&quot;cui__field__label&quot;&gt;
-        Lastname
-    &lt;/label&gt;
-    &lt;input class=&quot;cui__field__input&quot; /&gt;
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+    <div class="cui__field -top-left -twenty">
+        <label class="cui__field__label">
+            Title
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -center -forty">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field -top-right -forty">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+    &lt;div class=&quot;cui__field -top-left -twenty&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Title
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -center -forty&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__field -top-right -forty&quot;&gt;
+        &lt;label class=&quot;cui__field__label&quot;&gt;
+            Lastname
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__field__input&quot; /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon"></a><h2 class="cui__title--secondary">With Icon</h2>

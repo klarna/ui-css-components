@@ -1258,15 +1258,15 @@
   position: absolute;
   width: 4rem; }
 
-.cui__field__wrapper {
+.cui__fieldset {
   padding-bottom: 4rem;
   position: relative; }
-  .cui__field__wrapper::after {
+  .cui__fieldset::after {
     content: "";
     clear: both;
     display: block; }
 
-.cui__subtitle + .cui__field__wrapper {
+.cui__subtitle + .cui__fieldset {
   padding-top: 1rem; }
 
 .cui__icon {

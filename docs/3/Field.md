@@ -6,6 +6,8 @@ The reasons to use a label as a placeholder are 1) makes it easier to transition
 
 The trade-off is that we can't rely on `focus` and `active` pseudo-selectors for the input, so we need to programatically add classes to the wrapper.
 
+When fields are _stacked_ together, they should be wrapped in a `cui__fieldset` component, which provides the proper spacings before and after and solves the issues related to floats
+
 ___
 
 - [Overview](#Field/overview)
@@ -313,7 +315,7 @@ demo.
 <div style="overflow: hidden">
   <ul class="overview">
     <li>
-				<div class="cui__field__wrapper">
+				<div class="cui__fieldset">
 						<div class="cui__field -top-left -half -non-responsive">
 							<label class="cui__field__label">
 								Name
@@ -422,17 +424,19 @@ demo.
 ### Side by side
 
 ```html
-<div class="cui__field -left -half">
-	<label class="cui__field__label">
-		Name
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -right -half">
-	<label class="cui__field__label">
-		Lastname
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -left -half">
+		<label class="cui__field__label">
+			Name
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -right -half">
+		<label class="cui__field__label">
+			Lastname
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -440,17 +444,19 @@ demo.
 ### Top part
 
 ```html
-<div class="cui__field -top-left -half">
-	<label class="cui__field__label">
-		Name
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -half">
-	<label class="cui__field__label">
-		Lastname
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -top-left -half">
+		<label class="cui__field__label">
+			Name
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -top-right -half">
+		<label class="cui__field__label">
+			Lastname
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -458,11 +464,13 @@ demo.
 ### Top only
 
 ```html
-<div class="cui__field -top">
-	<label class="cui__field__label">
-		Email address
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -top">
+		<label class="cui__field__label">
+			Email address
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -470,17 +478,19 @@ demo.
 ### Bottom part
 
 ```html
-<div class="cui__field -bottom-left -half">
-	<label class="cui__field__label">
-		City
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -bottom-right -half">
-	<label class="cui__field__label">
-		Country
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -bottom-left -half">
+		<label class="cui__field__label">
+			City
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -bottom-right -half">
+		<label class="cui__field__label">
+			Country
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -488,11 +498,13 @@ demo.
 ### Bottom only
 
 ```html
-<div class="cui__field -bottom">
-	<label class="cui__field__label">
-		Password
-	</label>
-	<input type="password" class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -bottom">
+		<label class="cui__field__label">
+			Password
+		</label>
+		<input type="password" class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -500,23 +512,25 @@ demo.
 ### Square
 
 ```html
-<div class="cui__field -top-left -half">
-	<label class="cui__field__label">
-		City
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -half">
-	<label class="cui__field__label">
-		Country
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -square">
-	<label class="cui__field__label">
-		Country
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -top-left -half">
+		<label class="cui__field__label">
+			City
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -top-right -half">
+		<label class="cui__field__label">
+			Country
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -square">
+		<label class="cui__field__label">
+			Country
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -524,23 +538,25 @@ demo.
 ### Half and Quarter sizes
 
 ```html
-<div class="cui__field -top-left -half">
-	<label class="cui__field__label">
-		City
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -center -quarter">
-	<label class="cui__field__label">
-		Zip
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -quarter">
-	<label class="cui__field__label">
-		Country
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -top-left -half">
+		<label class="cui__field__label">
+			City
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -center -quarter">
+		<label class="cui__field__label">
+			Zip
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -top-right -quarter">
+		<label class="cui__field__label">
+			Country
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 
@@ -548,23 +564,25 @@ demo.
 ### Twenty - Forty
 
 ```html
-<div class="cui__field -top-left -twenty">
-	<label class="cui__field__label">
-		Title
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -center -forty">
-	<label class="cui__field__label">
-		Name
-	</label>
-	<input class="cui__field__input" />
-</div>
-<div class="cui__field -top-right -forty">
-	<label class="cui__field__label">
-		Lastname
-	</label>
-	<input class="cui__field__input" />
+<div class="cui__fielset">
+	<div class="cui__field -top-left -twenty">
+		<label class="cui__field__label">
+			Title
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -center -forty">
+		<label class="cui__field__label">
+			Name
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field -top-right -forty">
+		<label class="cui__field__label">
+			Lastname
+		</label>
+		<input class="cui__field__input" />
+	</div>
 </div>
 ```
 

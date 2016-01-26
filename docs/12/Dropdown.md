@@ -33,7 +33,7 @@ ___
 <a name="Dropdown/native"></a>
 ## Native
 
-<div class="cui__field__wrapper">
+<div class="cui__fieldset">
   <div class="cui__dropdown--native -top">
     <label class="cui__dropdown--native__label">
       Name
