@@ -1,5 +1,4 @@
 nav {
-  float: left;
   padding: 80px 0 0 80px;
 }
 
@@ -10,6 +9,7 @@ ul {
 
 main.cui__baseline__content--main {
   clear: both;
+  float: static;
 }
 
 .example-block {
@@ -103,6 +103,10 @@ section {
 }
 
 @media screen and (min-width: 999px) {
+  nav {
+    float: left;
+  }
+
   main.cui__baseline__content--main {
     clear: none;
     float: left;
