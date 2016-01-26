@@ -1,3 +1,5 @@
+$stackable-border-width: $grid * 0.2;
+
 @mixin partial-width ($width) {
     width: $width;
     clear: none;
@@ -15,41 +17,41 @@
 
     &.-half {
         @include respond-to-wide {
-            width: calc(50% + ($grid * .2));
+            width: calc(50% + #{$stackable-border-width});
         }
 
         &.-non-responsive {
-            width: calc(50% + ($grid * .2));
+            width: calc(50% + #{$stackable-border-width});
         }
     }
 
     &.-forty {
         @include respond-to-wide {
-            width: calc(40% + ($grid * .2));
+            width: calc(40% + #{$stackable-border-width});
         }
 
         &.-non-responsive {
-            width: calc(40% + ($grid * .2));
+            width: calc(40% + #{$stackable-border-width});
         }
     }
 
     &.-quarter {
         @include respond-to-wide {
-            width: calc(25% + ($grid * .2));
+            width: calc(25% + #{$stackable-border-width});
         }
 
         &.-non-responsive {
-            width: calc(25% + ($grid * .2));
+            width: calc(25% + #{$stackable-border-width});
         }
     }
 
     &.-twenty {
         @include respond-to-wide {
-            width: calc(20% + ($grid * .2));
+            width: calc(20% + #{$stackable-border-width});
         }
 
         &.-non-responsive {
-            width: calc(20% + ($grid * .2));
+            width: calc(20% + #{$stackable-border-width});
         }
     }
 }

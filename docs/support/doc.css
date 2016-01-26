@@ -10,6 +10,7 @@ ul {
 main.cui__baseline__content--main {
   clear: both;
   float: static;
+  margin-bottom: 20px;
 }
 
 .example-block {

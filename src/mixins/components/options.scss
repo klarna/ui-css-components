@@ -20,6 +20,8 @@
 
     &.-borderless {
         border: none;
+        padding-top: $grid * .2;
+        padding-bottom: $grid * .2;
     }
 
     &.is-disabled {

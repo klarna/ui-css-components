@@ -13,10 +13,10 @@
 grid. If something is not, please report it in the #front_end channel.</p>
 </section><section id="Baseline"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
-In practical terms, it means that for using the Toolkit you need to set the class
-<span class="code">cui__baseline</span> in the <span class="code">&lt;html&gt;</span> tag. It will set the proper font rendering style
-for webkit and set the grid to <span class="code">5px</span>. All the sizes in the Toolkit are written in
-<span class="code">rem</span>s assuming that <span class="code">5px</span> grid.</p>
+A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
+the <span class="code">&lt;html&gt;</span> tag. It will set the proper font rendering style for webkit and set
+the <span class="code">rem</span> grid (<span class="code">font-size</span>) to <span class="code">5px</span>. All the sizes in the Toolkit are written
+assuming that <span class="code">5px</span> grid.</p>
 <p class="cui__paragraph--primary">The grid system of the Toolkit aims at having all borders and text baselines matching
 the grid. Some exceptions are made, for example for the floating labels in the Fields,
 but these are taken as corner cases.</p>
@@ -1271,11 +1271,13 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <p class="cui__paragraph--primary">The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
 <p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a class="cui__link" href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a class="cui__link" href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
 <p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
-<p class="cui__paragraph--primary">When fields are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats</p>
+<h2 class="cui__title--secondary">Floating label</h2>
+<p class="cui__paragraph--primary">When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top.</p>
+<h2 class="cui__title--secondary">Stackable</h2>
+<p class="cui__paragraph--primary">When fields are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats.
+<span class="code">cui__field</span>s can be stacked together with <span class="code">cui__dropdown--native</span>.</p>
 <hr>
 <ul class="summary">
-<li><a class="cui__link" href="#Field/overview">Overview</a></li>
-<li><a class="cui__link" href="#Field/floating label">Floating label</a></li>
 <li><a class="cui__link" href="#Field/examples">Examples</a></li>
 <li><a class="cui__link" href="#Field/regular">Regular</a><ul class="summary">
 <li><a class="cui__link" href="#Field/regular/focused">focused</a></li>
@@ -1307,139 +1309,6 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 </ul>
 </li>
 </ul>
-<a name="Field/overview"></a><h2 class="cui__title--secondary">Overview</h2>
-<p class="cui__paragraph--primary">Here&#39;s a showcase of all fields. Pass your mouse over the elements to see the hover state.</p>
-<div style="overflow: hidden">
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error">
-        <label class="cui__field__label">
-          Invalid email
-        </label>
-        <input class="cui__field__input" value="invalid@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning">
-        <label class="cui__field__label">
-          Are you sure the domain is exanple?
-        </label>
-        <input class="cui__field__input" value="email@exanple.com" />
-      </div>
-    </li>
-        <li>
-      <div class="cui__field--icon is-focused is-filled">
-                <span class="cui__field--icon__icon cui__icon--mail"></span>
-        <label class="cui__field--icon__label">
-          Please write your email address
-        </label>
-        <input class="cui__field--icon__input" value="email@example.com" />
-      </div>
-    </li>
-  </ul>
-
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning -big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-  </ul>
-</div>
-
-<a name="Field/floating label"></a><h2 class="cui__title--secondary">Floating label</h2>
-<p class="cui__paragraph--primary">When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:</p>
-<div>
-  <div class="cui__field" style="width: 45%; float: left;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-  <div class="cui__field -big" style="width: 45%; float: left; margin-left: 10px;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-    <div style="clear: both"></div>
-</div>
-
 <a name="Field/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
 <li><a class="cui__link" href="examples/base/checkout.html">Checkout form</a></li>
