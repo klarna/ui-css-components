@@ -16,13 +16,15 @@ html.cui__baseline(lang="en")
     script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
 
   body
+    .cui__header
+    
     nav
       ul#menu
         each doc in docs
-          li
-            a(href="##{doc.name}")!= doc.name
+          li.cui__paragraph--primary.-condensed
+            a.cui__link(href="##{doc.name}")!= doc.name
 
-    main
+    main.cui__baseline__content--main
       each doc in docs
         section(id="#{doc.name}")
           != doc.parsedContent

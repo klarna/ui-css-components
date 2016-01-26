@@ -2,9 +2,18 @@
 @import "../mixins/index";
 
 .cui__baseline {
+    color: map-get($colors, black);
     font-size: $grid;
+    line-height: ($grid * 5);
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+
+    body {
+        @include typography(($grid * 2.8), regular);
+
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .cui__baseline__grid {

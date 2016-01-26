@@ -1,44 +1,32 @@
-* {
-/*  -moz-box-sizing: border-box;
-  box-sizing: border-box; */
-  padding: 0;
+nav {
+  float: left;
+  padding: 80px 0 0 80px;
+}
+
+ul {
+  list-style: none;
   margin: 0;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.8rem;
-  color: #3C3C3E;
-  line-height: 5rem;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-}
-
-nav {
-  position: fixed;
-  top: 16rem;
-  left: 16rem;
-}
-
-#menu li {
-  box-sizing: border-box;
-  line-height: 6rem;
-}
-
-main {
-  width: 136rem;
-  margin: 0 auto 40rem auto;
+main.cui__baseline__content--main {
+  float: left;
+  padding: 55px 0 0 80px;
+  padding-top: 55px;
 }
 
 .example-block {
-  border-radius: 1rem;
+  border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-.example{
-  padding: 6rem;
+.example-block pre {
+  margin: 0;
+}
+
+.example {
+  padding: 30px;
   position: relative;
 }
 
@@ -50,12 +38,12 @@ main {
 
 .code {
   background: #f8f8fa;
-  border-radius: 1rem;
+  border-radius: 5px;
   border: 1px solid #e5e5e7;
   display: inline-block;
   font-family: Hack, monospace;
   font-size: inherit;
-  line-height: 4rem;
+  line-height: 20px;
   padding: 1px 4px;
 }
 
@@ -69,47 +57,34 @@ main {
 
 td {
   vertical-align: top;
-  padding: 0 1rem 1rem 0;
-}
-
-a{
-  color: #0074C8;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+  padding: 0 5px 5px 0;
 }
 
 hr {
   border: 0;
-  margin: 4rem 0;
+  margin: 20px 0;
 }
 
 .summary li {
-  margin-left: 1rem;
-  line-height: 4rem;
+  margin-left: 5px;
+  line-height: 20px;
 }
 
 .summary li:before {
   content: "•";
-  margin-right: 1.6rem;
+  margin-right: 8px;
   color: #3C3C3E;
 }
 
 .summary li li {
-  margin-left: 3rem;
-  font-size: 2.6rem;
+  margin-left: 15px;
+  font-size: 13px;
 }
 
 .summary li li:before {
   content: "•";
-  margin-right: 1rem;
+  margin-right: 5px;
   color: #9E9EA0;
-}
-
-section {
-  display: none;
 }
 
 .overview {
@@ -118,41 +93,4 @@ section {
 
 .overview li {
   padding: 10px;
-}
-
-.toggle-grid {
-  background: white;
-  border: none;
-  color: #0074C8;
-  outline: none;
-  float: right;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.grid {
-  content: '';
-  display: block;
-  height: auto;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  width: auto;
-  z-index: -1;
-}
-
-/* Toolkit overides */
-
-main > section {
-  padding-top: 16rem;
-}
-
-h2, h3 {
-  margin-top: 4rem;
-}
-
-h2 ~ p, h3 ~ p {
-  color: #9E9EA0;
 }

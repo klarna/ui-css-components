@@ -1,0 +1,6 @@
+@import "../settings";
+@import "../mixins/index";
+
+.cui__header {
+    @include header();
+}
