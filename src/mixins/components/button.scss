@@ -17,20 +17,20 @@
     transition: all .2s ease;
     vertical-align: top;
 
-    &.-small {
+    &.small {
       font-size: ($grid * 2.8);
       line-height: ($grid * 7) - ($grid * 0.4);
       padding: 0 ($grid * 5.6);
     }
 
-    &.-big {
+    &.big {
       letter-spacing: ($grid * 0.01);
       line-height: ($grid * 12) - ($grid * 0.4);
       padding: 0 ($grid * 14);
       text-transform: uppercase;
     }
 
-    &.-right {
+    &.right {
         width: 100%;
 
         @include respond-to-wide {
@@ -40,7 +40,7 @@
         }
     }
 
-    &.-left {
+    &.left {
         float: left;
     }
 

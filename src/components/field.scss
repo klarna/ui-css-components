@@ -15,7 +15,7 @@
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
-    &.-big {
+    &.big {
         height: ($grid * 12);
     }
 
@@ -102,11 +102,11 @@
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
-    .-big & {
+    .big & {
         line-height: ($grid * 12);
     }
 
-    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+    .big.is-filled &, .big.is-error &, .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
     }
 
@@ -144,11 +144,11 @@
     outline: none;
     width: 100%;
 
-    .-big & {
+    .big & {
       height: ($grid * 12);
     }
 
-    .-big.is-filled &, .-big.is-error &, .-big.is-warning & {
+    .big.is-filled &, .big.is-error &, .big.is-warning & {
       height: ($grid * 9.8);
       top: ($grid * 2.2);
     }

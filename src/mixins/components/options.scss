@@ -18,7 +18,7 @@
         }
     }
 
-    &.-borderless {
+    &.borderless {
         border: none;
     }
 
@@ -74,7 +74,7 @@
         padding-bottom: ($grid * 3.2);
     }
 
-    .-borderless & {
+    .borderless & {
         border-radius: $border-radius;
 
         &:first-child {

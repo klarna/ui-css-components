@@ -11,11 +11,11 @@
 
     @include switch(0, ($grid * .6));
 
-    &.-right {
+    &.right {
         @include switch(0, ($grid * .6), right);
     }
 
-    &.-checkbox {
+    &.checkbox {
         @include respond-to-wide() {
             @include checkbox(($grid * 2), ($grid * 1.6));
         }
@@ -38,14 +38,14 @@
 
     @include switch(($grid * 4), ($grid * 3.2), right);
 
-    .-checkbox & {
+    .checkbox & {
         @include respond-to-wide() {
             @include checkbox(($grid * 6), ($grid * 2.4));
         }
     }
 
     &:first-child {
-        .-checkbox & {
+        .checkbox & {
             @include respond-to-wide() {
                 @include checkbox(($grid * 6), ($grid * 3.4));
             }
@@ -54,14 +54,14 @@
 
 
     &:last-child {
-        .-checkbox & {
+        .checkbox & {
             @include respond-to-wide() {
                 @include checkbox(($grid * 6), ($grid * 2.4));
             }
         }
     }
 
-    .-borderless.-checkbox & {
+    .borderless.checkbox & {
         &:first-child {
             @include respond-to-wide() {
                 @include checkbox(($grid * 6), ($grid * 2.4));
@@ -69,7 +69,7 @@
         }
     }
 
-    .is-disabled.-checkbox &.is-checked {
+    .is-disabled.checkbox &.is-checked {
         @include respond-to-wide() {
             &::before {
                 background: map-get($colors, grey-lines);
@@ -96,7 +96,7 @@
         }
     }
 
-    .is-disabled.-borderless.-checkbox & {
+    .is-disabled.borderless.checkbox & {
         &:first-child {
             @include respond-to-wide() {
                 &::before {

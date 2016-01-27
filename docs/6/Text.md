@@ -33,7 +33,7 @@ These are the general text styles for the toolkit.
   Primary title
 </h1>
 
-<h1 class="cui__title--primary -blue">
+<h1 class="cui__title--primary blue">
   Primary title in blue
 </h1>
 ```
@@ -42,11 +42,11 @@ These are the general text styles for the toolkit.
 ### Small
 
 ```html
-<h1 class="cui__title--primary -small">
+<h1 class="cui__title--primary small">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long
 </h1>
 
-<h1 class="cui__title--primary -small -blue">
+<h1 class="cui__title--primary small blue">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
 </h1>
 ```
@@ -55,11 +55,11 @@ These are the general text styles for the toolkit.
 ### Small and prominent
 
 ```html
-<h1 class="cui__title--primary -small -strong">
+<h1 class="cui__title--primary small strong">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long
 </h1>
 
-<h1 class="cui__title--primary -small -strong -blue">
+<h1 class="cui__title--primary small strong blue">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
 </h1>
 ```
@@ -72,7 +72,7 @@ These are the general text styles for the toolkit.
   Secondary title
 </h2>
 
-<h2 class="cui__title--secondary -blue">
+<h2 class="cui__title--secondary blue">
   Secondary title in blue
 </h2>
 ```
@@ -85,7 +85,7 @@ These are the general text styles for the toolkit.
   Subtitle
 </h3>
 
-<h3 class="cui__subtitle -blue">
+<h3 class="cui__subtitle blue">
   Subtitle in blue
 </h3>
 ```
@@ -109,10 +109,10 @@ These are the general text styles for the toolkit.
 ### Primary condensed
 
 ```html
-<p class="cui__paragraph--primary -condensed">
+<p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
-<p class="cui__paragraph--primary -condensed">
+<p class="cui__paragraph--primary condensed">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
 ```
@@ -133,10 +133,10 @@ These are the general text styles for the toolkit.
 ### Secondary condensed
 
 ```html
-<p class="cui__paragraph--secondary -condensed">
+<p class="cui__paragraph--secondary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
-<p class="cui__paragraph--secondary -condensed">
+<p class="cui__paragraph--secondary condensed">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
 ```
@@ -154,7 +154,7 @@ These are the general text styles for the toolkit.
 ## Label
 
 ```html
-<p class="cui__paragraph--primary -condensed">
+<p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
   <span class="cui__label">Promo</span>
 </p>

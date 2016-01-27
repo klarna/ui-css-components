@@ -114,23 +114,23 @@
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   vertical-align: top; }
-  .cui__button--primary.-small {
+  .cui__button--primary.small {
     font-size: 14px;
     line-height: 33px;
     padding: 0 28px; }
-  .cui__button--primary.-big {
+  .cui__button--primary.big {
     letter-spacing: 0.05px;
     line-height: 58px;
     padding: 0 70px;
     text-transform: uppercase; }
-  .cui__button--primary.-right {
+  .cui__button--primary.right {
     width: 100%; }
     @media screen and (min-width: 569px) {
-      .cui__button--primary.-right {
+      .cui__button--primary.right {
         float: right;
         margin-left: 20px;
         width: auto; } }
-  .cui__button--primary.-left {
+  .cui__button--primary.left {
     float: left; }
   .cui__button--primary:hover, .cui__button--primary:focus {
     background-color: #0065ad;
@@ -193,23 +193,23 @@
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   vertical-align: top; }
-  .cui__button--secondary.-small {
+  .cui__button--secondary.small {
     font-size: 14px;
     line-height: 33px;
     padding: 0 28px; }
-  .cui__button--secondary.-big {
+  .cui__button--secondary.big {
     letter-spacing: 0.05px;
     line-height: 58px;
     padding: 0 70px;
     text-transform: uppercase; }
-  .cui__button--secondary.-right {
+  .cui__button--secondary.right {
     width: 100%; }
     @media screen and (min-width: 569px) {
-      .cui__button--secondary.-right {
+      .cui__button--secondary.right {
         float: right;
         margin-left: 20px;
         width: auto; } }
-  .cui__button--secondary.-left {
+  .cui__button--secondary.left {
     float: left; }
   .cui__button--secondary:hover, .cui__button--secondary:focus {
     background-color: #0065ad;
@@ -254,10 +254,10 @@
   .cui__button--secondary:active {
     background: #005694;
     color: #fff; }
-  .cui__button--primary.-right + .cui__button--secondary.-right {
+  .cui__button--primary.right + .cui__button--secondary.right {
     margin-top: 20px; }
     @media screen and (min-width: 569px) {
-      .cui__button--primary.-right + .cui__button--secondary.-right {
+      .cui__button--primary.right + .cui__button--secondary.right {
         margin-top: 0; } }
 
 .cui__button__menu {
@@ -318,198 +318,198 @@
   height: 51px;
   margin: 0 0 -1px 0;
   position: relative; }
-  .cui__dropdown--native.-square {
+  .cui__dropdown--native.square {
     border-radius: 0; }
   @media screen and (min-width: 569px) {
-    .cui__dropdown--native.-half {
+    .cui__dropdown--native.half {
       width: 50%;
       clear: none;
       float: left; } }
-  .cui__dropdown--native.-half.-non-responsive {
+  .cui__dropdown--native.half.non-responsive {
     width: 50%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__dropdown--native.-forty {
+    .cui__dropdown--native.forty {
       width: 40%;
       clear: none;
       float: left; } }
-  .cui__dropdown--native.-forty.-non-responsive {
+  .cui__dropdown--native.forty.non-responsive {
     width: 40%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__dropdown--native.-quarter {
+    .cui__dropdown--native.quarter {
       width: 25%;
       clear: none;
       float: left; } }
-  .cui__dropdown--native.-quarter.-non-responsive {
+  .cui__dropdown--native.quarter.non-responsive {
     width: 25%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__dropdown--native.-twenty {
+    .cui__dropdown--native.twenty {
       width: 20%;
       clear: none;
       float: left; } }
-  .cui__dropdown--native.-twenty.-non-responsive {
+  .cui__dropdown--native.twenty.non-responsive {
     width: 20%;
     clear: none;
     float: left; }
-  .cui__dropdown--native.-left {
+  .cui__dropdown--native.left {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .cui__dropdown--native.-center {
+  .cui__dropdown--native.center {
     border-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-center {
+      .cui__dropdown--native.center {
         margin-left: -1px; } }
-    .cui__dropdown--native.-center.-non-responsive {
+    .cui__dropdown--native.center.non-responsive {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-center.-half {
+      .cui__dropdown--native.center.half {
         width: calc(50% + ($grid * .2)); } }
-    .cui__dropdown--native.-center.-half.-non-responsive {
+    .cui__dropdown--native.center.half.non-responsive {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-center.-forty {
+      .cui__dropdown--native.center.forty {
         width: calc(40% + ($grid * .2)); } }
-    .cui__dropdown--native.-center.-forty.-non-responsive {
+    .cui__dropdown--native.center.forty.non-responsive {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-center.-quarter {
+      .cui__dropdown--native.center.quarter {
         width: calc(25% + ($grid * .2)); } }
-    .cui__dropdown--native.-center.-quarter.-non-responsive {
+    .cui__dropdown--native.center.quarter.non-responsive {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-center.-twenty {
+      .cui__dropdown--native.center.twenty {
         width: calc(20% + ($grid * .2)); } }
-    .cui__dropdown--native.-center.-twenty.-non-responsive {
+    .cui__dropdown--native.center.twenty.non-responsive {
       width: calc(20% + ($grid * .2)); }
-    .cui__dropdown--native.-center::after {
+    .cui__dropdown--native.center::after {
       content: "";
       clear: both;
       display: block; }
-  .cui__dropdown--native.-right {
+  .cui__dropdown--native.right {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-right {
+      .cui__dropdown--native.right {
         margin-left: -1px; } }
-    .cui__dropdown--native.-right.-non-responsive {
+    .cui__dropdown--native.right.non-responsive {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-right.-half {
+      .cui__dropdown--native.right.half {
         width: calc(50% + ($grid * .2)); } }
-    .cui__dropdown--native.-right.-half.-non-responsive {
+    .cui__dropdown--native.right.half.non-responsive {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-right.-forty {
+      .cui__dropdown--native.right.forty {
         width: calc(40% + ($grid * .2)); } }
-    .cui__dropdown--native.-right.-forty.-non-responsive {
+    .cui__dropdown--native.right.forty.non-responsive {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-right.-quarter {
+      .cui__dropdown--native.right.quarter {
         width: calc(25% + ($grid * .2)); } }
-    .cui__dropdown--native.-right.-quarter.-non-responsive {
+    .cui__dropdown--native.right.quarter.non-responsive {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-right.-twenty {
+      .cui__dropdown--native.right.twenty {
         width: calc(20% + ($grid * .2)); } }
-    .cui__dropdown--native.-right.-twenty.-non-responsive {
+    .cui__dropdown--native.right.twenty.non-responsive {
       width: calc(20% + ($grid * .2)); }
-    .cui__dropdown--native.-right::after {
+    .cui__dropdown--native.right::after {
       content: "";
       clear: both;
       display: block; }
-  .cui__dropdown--native.-top {
+  .cui__dropdown--native.top {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .cui__dropdown--native.-top-left {
+  .cui__dropdown--native.top-left {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-left {
+      .cui__dropdown--native.top-left {
         border-top-right-radius: 0; } }
-    .cui__dropdown--native.-top-left.-non-responsive {
+    .cui__dropdown--native.top-left.non-responsive {
       border-top-right-radius: 0; }
-  .cui__dropdown--native.-top-right {
+  .cui__dropdown--native.top-right {
     border-radius: 0;
     clear: right; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right {
+      .cui__dropdown--native.top-right {
         border-top-right-radius: 5px; } }
-    .cui__dropdown--native.-top-right.-non-responsive {
+    .cui__dropdown--native.top-right.non-responsive {
       border-top-right-radius: 5px; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right {
+      .cui__dropdown--native.top-right {
         margin-left: -1px; } }
-    .cui__dropdown--native.-top-right.-non-responsive {
+    .cui__dropdown--native.top-right.non-responsive {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right.-half {
+      .cui__dropdown--native.top-right.half {
         width: calc(50% + ($grid * .2)); } }
-    .cui__dropdown--native.-top-right.-half.-non-responsive {
+    .cui__dropdown--native.top-right.half.non-responsive {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right.-forty {
+      .cui__dropdown--native.top-right.forty {
         width: calc(40% + ($grid * .2)); } }
-    .cui__dropdown--native.-top-right.-forty.-non-responsive {
+    .cui__dropdown--native.top-right.forty.non-responsive {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right.-quarter {
+      .cui__dropdown--native.top-right.quarter {
         width: calc(25% + ($grid * .2)); } }
-    .cui__dropdown--native.-top-right.-quarter.-non-responsive {
+    .cui__dropdown--native.top-right.quarter.non-responsive {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-top-right.-twenty {
+      .cui__dropdown--native.top-right.twenty {
         width: calc(20% + ($grid * .2)); } }
-    .cui__dropdown--native.-top-right.-twenty.-non-responsive {
+    .cui__dropdown--native.top-right.twenty.non-responsive {
       width: calc(20% + ($grid * .2)); }
-  .cui__dropdown--native.-bottom-left {
+  .cui__dropdown--native.bottom-left {
     border-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-left {
+      .cui__dropdown--native.bottom-left {
         border-bottom-left-radius: 5px; } }
-    .cui__dropdown--native.-bottom-left.-non-responsive {
+    .cui__dropdown--native.bottom-left.non-responsive {
       border-bottom-left-radius: 5px; }
-  .cui__dropdown--native.-bottom-right {
+  .cui__dropdown--native.bottom-right {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right {
+      .cui__dropdown--native.bottom-right {
         border-bottom-left-radius: 0; } }
-    .cui__dropdown--native.-bottom-right.-non-responsive {
+    .cui__dropdown--native.bottom-right.non-responsive {
       border-bottom-left-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right {
+      .cui__dropdown--native.bottom-right {
         margin-left: -1px; } }
-    .cui__dropdown--native.-bottom-right.-non-responsive {
+    .cui__dropdown--native.bottom-right.non-responsive {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right.-half {
+      .cui__dropdown--native.bottom-right.half {
         width: calc(50% + ($grid * .2)); } }
-    .cui__dropdown--native.-bottom-right.-half.-non-responsive {
+    .cui__dropdown--native.bottom-right.half.non-responsive {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right.-forty {
+      .cui__dropdown--native.bottom-right.forty {
         width: calc(40% + ($grid * .2)); } }
-    .cui__dropdown--native.-bottom-right.-forty.-non-responsive {
+    .cui__dropdown--native.bottom-right.forty.non-responsive {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right.-quarter {
+      .cui__dropdown--native.bottom-right.quarter {
         width: calc(25% + ($grid * .2)); } }
-    .cui__dropdown--native.-bottom-right.-quarter.-non-responsive {
+    .cui__dropdown--native.bottom-right.quarter.non-responsive {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__dropdown--native.-bottom-right.-twenty {
+      .cui__dropdown--native.bottom-right.twenty {
         width: calc(20% + ($grid * .2)); } }
-    .cui__dropdown--native.-bottom-right.-twenty.-non-responsive {
+    .cui__dropdown--native.bottom-right.twenty.non-responsive {
       width: calc(20% + ($grid * .2)); }
   .cui__dropdown--native:hover {
     border-color: #66aae0;
     z-index: 10; }
-  .cui__dropdown--native.-borderless {
+  .cui__dropdown--native.borderless {
     border: none; }
   .cui__dropdown--native.is-disabled {
     background: #FAFAFA;
@@ -664,7 +664,7 @@
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
-  .cui__dropdown--custom.-borderless {
+  .cui__dropdown--custom.borderless {
     border: none; }
   .cui__dropdown--custom.is-disabled {
     background: #FAFAFA;
@@ -736,11 +736,11 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 16px; }
-  .-borderless .cui__dropdown--custom__option {
+  .borderless .cui__dropdown--custom__option {
     border-radius: 5px; }
-    .-borderless .cui__dropdown--custom__option:first-child {
+    .borderless .cui__dropdown--custom__option:first-child {
       padding-top: 9px; }
-    .-borderless .cui__dropdown--custom__option:last-child {
+    .borderless .cui__dropdown--custom__option:last-child {
       padding-bottom: 11px; }
   .cui__dropdown--custom__option::before {
     background: white;
@@ -794,9 +794,9 @@
   .is-disabled .cui__dropdown--custom__option.is-selected:first-child::after {
     opacity: 1;
     top: 22px; }
-  .-borderless .cui__dropdown--custom__option:first-child::before {
+  .borderless .cui__dropdown--custom__option:first-child::before {
     top: 12px; }
-  .-borderless .cui__dropdown--custom__option:first-child::after {
+  .borderless .cui__dropdown--custom__option:first-child::after {
     top: 17px; }
   .is-collapsed .cui__dropdown--custom__option {
     display: none;
@@ -857,7 +857,7 @@
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
-  .cui__dropdown--radio.-borderless {
+  .cui__dropdown--radio.borderless {
     border: none; }
   .cui__dropdown--radio.is-disabled {
     background: #FAFAFA;
@@ -894,11 +894,11 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 16px; }
-  .-borderless .cui__dropdown--radio__option {
+  .borderless .cui__dropdown--radio__option {
     border-radius: 5px; }
-    .-borderless .cui__dropdown--radio__option:first-child {
+    .borderless .cui__dropdown--radio__option:first-child {
       padding-top: 9px; }
-    .-borderless .cui__dropdown--radio__option:last-child {
+    .borderless .cui__dropdown--radio__option:last-child {
       padding-bottom: 11px; }
   .cui__dropdown--radio__option::before {
     background: white;
@@ -952,9 +952,9 @@
   .is-disabled .cui__dropdown--radio__option.is-selected:first-child::after {
     opacity: 1;
     top: 22px; }
-  .-borderless .cui__dropdown--radio__option:first-child::before {
+  .borderless .cui__dropdown--radio__option:first-child::before {
     top: 12px; }
-  .-borderless .cui__dropdown--radio__option:first-child::after {
+  .borderless .cui__dropdown--radio__option:first-child::after {
     top: 17px; }
 
 .cui__dropdown--radio__option__heading {
@@ -1023,195 +1023,195 @@
   position: relative;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
-  .cui__field.-square, .-square.cui__field--icon {
+  .cui__field.square, .square.cui__field--icon {
     border-radius: 0; }
   @media screen and (min-width: 569px) {
-    .cui__field.-half, .-half.cui__field--icon {
+    .cui__field.half, .half.cui__field--icon {
       width: 50%;
       clear: none;
       float: left; } }
-  .cui__field.-half.-non-responsive, .-half.-non-responsive.cui__field--icon {
+  .cui__field.half.non-responsive, .half.non-responsive.cui__field--icon {
     width: 50%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__field.-forty, .-forty.cui__field--icon {
+    .cui__field.forty, .forty.cui__field--icon {
       width: 40%;
       clear: none;
       float: left; } }
-  .cui__field.-forty.-non-responsive, .-forty.-non-responsive.cui__field--icon {
+  .cui__field.forty.non-responsive, .forty.non-responsive.cui__field--icon {
     width: 40%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__field.-quarter, .-quarter.cui__field--icon {
+    .cui__field.quarter, .quarter.cui__field--icon {
       width: 25%;
       clear: none;
       float: left; } }
-  .cui__field.-quarter.-non-responsive, .-quarter.-non-responsive.cui__field--icon {
+  .cui__field.quarter.non-responsive, .quarter.non-responsive.cui__field--icon {
     width: 25%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
-    .cui__field.-twenty, .-twenty.cui__field--icon {
+    .cui__field.twenty, .twenty.cui__field--icon {
       width: 20%;
       clear: none;
       float: left; } }
-  .cui__field.-twenty.-non-responsive, .-twenty.-non-responsive.cui__field--icon {
+  .cui__field.twenty.non-responsive, .twenty.non-responsive.cui__field--icon {
     width: 20%;
     clear: none;
     float: left; }
-  .cui__field.-left, .-left.cui__field--icon {
+  .cui__field.left, .left.cui__field--icon {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .cui__field.-center, .-center.cui__field--icon {
+  .cui__field.center, .center.cui__field--icon {
     border-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-center, .-center.cui__field--icon {
+      .cui__field.center, .center.cui__field--icon {
         margin-left: -1px; } }
-    .cui__field.-center.-non-responsive, .-center.-non-responsive.cui__field--icon {
+    .cui__field.center.non-responsive, .center.non-responsive.cui__field--icon {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__field.-center.-half, .-center.-half.cui__field--icon {
+      .cui__field.center.half, .center.half.cui__field--icon {
         width: calc(50% + ($grid * .2)); } }
-    .cui__field.-center.-half.-non-responsive, .-center.-half.-non-responsive.cui__field--icon {
+    .cui__field.center.half.non-responsive, .center.half.non-responsive.cui__field--icon {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-center.-forty, .-center.-forty.cui__field--icon {
+      .cui__field.center.forty, .center.forty.cui__field--icon {
         width: calc(40% + ($grid * .2)); } }
-    .cui__field.-center.-forty.-non-responsive, .-center.-forty.-non-responsive.cui__field--icon {
+    .cui__field.center.forty.non-responsive, .center.forty.non-responsive.cui__field--icon {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-center.-quarter, .-center.-quarter.cui__field--icon {
+      .cui__field.center.quarter, .center.quarter.cui__field--icon {
         width: calc(25% + ($grid * .2)); } }
-    .cui__field.-center.-quarter.-non-responsive, .-center.-quarter.-non-responsive.cui__field--icon {
+    .cui__field.center.quarter.non-responsive, .center.quarter.non-responsive.cui__field--icon {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-center.-twenty, .-center.-twenty.cui__field--icon {
+      .cui__field.center.twenty, .center.twenty.cui__field--icon {
         width: calc(20% + ($grid * .2)); } }
-    .cui__field.-center.-twenty.-non-responsive, .-center.-twenty.-non-responsive.cui__field--icon {
+    .cui__field.center.twenty.non-responsive, .center.twenty.non-responsive.cui__field--icon {
       width: calc(20% + ($grid * .2)); }
-    .cui__field.-center::after, .-center.cui__field--icon::after {
+    .cui__field.center::after, .center.cui__field--icon::after {
       content: "";
       clear: both;
       display: block; }
-  .cui__field.-right, .-right.cui__field--icon {
+  .cui__field.right, .right.cui__field--icon {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-right, .-right.cui__field--icon {
+      .cui__field.right, .right.cui__field--icon {
         margin-left: -1px; } }
-    .cui__field.-right.-non-responsive, .-right.-non-responsive.cui__field--icon {
+    .cui__field.right.non-responsive, .right.non-responsive.cui__field--icon {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__field.-right.-half, .-right.-half.cui__field--icon {
+      .cui__field.right.half, .right.half.cui__field--icon {
         width: calc(50% + ($grid * .2)); } }
-    .cui__field.-right.-half.-non-responsive, .-right.-half.-non-responsive.cui__field--icon {
+    .cui__field.right.half.non-responsive, .right.half.non-responsive.cui__field--icon {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-right.-forty, .-right.-forty.cui__field--icon {
+      .cui__field.right.forty, .right.forty.cui__field--icon {
         width: calc(40% + ($grid * .2)); } }
-    .cui__field.-right.-forty.-non-responsive, .-right.-forty.-non-responsive.cui__field--icon {
+    .cui__field.right.forty.non-responsive, .right.forty.non-responsive.cui__field--icon {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-right.-quarter, .-right.-quarter.cui__field--icon {
+      .cui__field.right.quarter, .right.quarter.cui__field--icon {
         width: calc(25% + ($grid * .2)); } }
-    .cui__field.-right.-quarter.-non-responsive, .-right.-quarter.-non-responsive.cui__field--icon {
+    .cui__field.right.quarter.non-responsive, .right.quarter.non-responsive.cui__field--icon {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-right.-twenty, .-right.-twenty.cui__field--icon {
+      .cui__field.right.twenty, .right.twenty.cui__field--icon {
         width: calc(20% + ($grid * .2)); } }
-    .cui__field.-right.-twenty.-non-responsive, .-right.-twenty.-non-responsive.cui__field--icon {
+    .cui__field.right.twenty.non-responsive, .right.twenty.non-responsive.cui__field--icon {
       width: calc(20% + ($grid * .2)); }
-    .cui__field.-right::after, .-right.cui__field--icon::after {
+    .cui__field.right::after, .right.cui__field--icon::after {
       content: "";
       clear: both;
       display: block; }
-  .cui__field.-top, .-top.cui__field--icon {
+  .cui__field.top, .top.cui__field--icon {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .cui__field.-top-left, .-top-left.cui__field--icon {
+  .cui__field.top-left, .top-left.cui__field--icon {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-left, .-top-left.cui__field--icon {
+      .cui__field.top-left, .top-left.cui__field--icon {
         border-top-right-radius: 0; } }
-    .cui__field.-top-left.-non-responsive, .-top-left.-non-responsive.cui__field--icon {
+    .cui__field.top-left.non-responsive, .top-left.non-responsive.cui__field--icon {
       border-top-right-radius: 0; }
-  .cui__field.-top-right, .-top-right.cui__field--icon {
+  .cui__field.top-right, .top-right.cui__field--icon {
     border-radius: 0;
     clear: right; }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right, .-top-right.cui__field--icon {
+      .cui__field.top-right, .top-right.cui__field--icon {
         border-top-right-radius: 5px; } }
-    .cui__field.-top-right.-non-responsive, .-top-right.-non-responsive.cui__field--icon {
+    .cui__field.top-right.non-responsive, .top-right.non-responsive.cui__field--icon {
       border-top-right-radius: 5px; }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right, .-top-right.cui__field--icon {
+      .cui__field.top-right, .top-right.cui__field--icon {
         margin-left: -1px; } }
-    .cui__field.-top-right.-non-responsive, .-top-right.-non-responsive.cui__field--icon {
+    .cui__field.top-right.non-responsive, .top-right.non-responsive.cui__field--icon {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right.-half, .-top-right.-half.cui__field--icon {
+      .cui__field.top-right.half, .top-right.half.cui__field--icon {
         width: calc(50% + ($grid * .2)); } }
-    .cui__field.-top-right.-half.-non-responsive, .-top-right.-half.-non-responsive.cui__field--icon {
+    .cui__field.top-right.half.non-responsive, .top-right.half.non-responsive.cui__field--icon {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right.-forty, .-top-right.-forty.cui__field--icon {
+      .cui__field.top-right.forty, .top-right.forty.cui__field--icon {
         width: calc(40% + ($grid * .2)); } }
-    .cui__field.-top-right.-forty.-non-responsive, .-top-right.-forty.-non-responsive.cui__field--icon {
+    .cui__field.top-right.forty.non-responsive, .top-right.forty.non-responsive.cui__field--icon {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right.-quarter, .-top-right.-quarter.cui__field--icon {
+      .cui__field.top-right.quarter, .top-right.quarter.cui__field--icon {
         width: calc(25% + ($grid * .2)); } }
-    .cui__field.-top-right.-quarter.-non-responsive, .-top-right.-quarter.-non-responsive.cui__field--icon {
+    .cui__field.top-right.quarter.non-responsive, .top-right.quarter.non-responsive.cui__field--icon {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-top-right.-twenty, .-top-right.-twenty.cui__field--icon {
+      .cui__field.top-right.twenty, .top-right.twenty.cui__field--icon {
         width: calc(20% + ($grid * .2)); } }
-    .cui__field.-top-right.-twenty.-non-responsive, .-top-right.-twenty.-non-responsive.cui__field--icon {
+    .cui__field.top-right.twenty.non-responsive, .top-right.twenty.non-responsive.cui__field--icon {
       width: calc(20% + ($grid * .2)); }
-  .cui__field.-bottom-left, .-bottom-left.cui__field--icon {
+  .cui__field.bottom-left, .bottom-left.cui__field--icon {
     border-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-left, .-bottom-left.cui__field--icon {
+      .cui__field.bottom-left, .bottom-left.cui__field--icon {
         border-bottom-left-radius: 5px; } }
-    .cui__field.-bottom-left.-non-responsive, .-bottom-left.-non-responsive.cui__field--icon {
+    .cui__field.bottom-left.non-responsive, .bottom-left.non-responsive.cui__field--icon {
       border-bottom-left-radius: 5px; }
-  .cui__field.-bottom-right, .-bottom-right.cui__field--icon {
+  .cui__field.bottom-right, .bottom-right.cui__field--icon {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right, .-bottom-right.cui__field--icon {
+      .cui__field.bottom-right, .bottom-right.cui__field--icon {
         border-bottom-left-radius: 0; } }
-    .cui__field.-bottom-right.-non-responsive, .-bottom-right.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.non-responsive, .bottom-right.non-responsive.cui__field--icon {
       border-bottom-left-radius: 0; }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right, .-bottom-right.cui__field--icon {
+      .cui__field.bottom-right, .bottom-right.cui__field--icon {
         margin-left: -1px; } }
-    .cui__field.-bottom-right.-non-responsive, .-bottom-right.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.non-responsive, .bottom-right.non-responsive.cui__field--icon {
       margin-left: -1px; }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right.-half, .-bottom-right.-half.cui__field--icon {
+      .cui__field.bottom-right.half, .bottom-right.half.cui__field--icon {
         width: calc(50% + ($grid * .2)); } }
-    .cui__field.-bottom-right.-half.-non-responsive, .-bottom-right.-half.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.half.non-responsive, .bottom-right.half.non-responsive.cui__field--icon {
       width: calc(50% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right.-forty, .-bottom-right.-forty.cui__field--icon {
+      .cui__field.bottom-right.forty, .bottom-right.forty.cui__field--icon {
         width: calc(40% + ($grid * .2)); } }
-    .cui__field.-bottom-right.-forty.-non-responsive, .-bottom-right.-forty.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.forty.non-responsive, .bottom-right.forty.non-responsive.cui__field--icon {
       width: calc(40% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right.-quarter, .-bottom-right.-quarter.cui__field--icon {
+      .cui__field.bottom-right.quarter, .bottom-right.quarter.cui__field--icon {
         width: calc(25% + ($grid * .2)); } }
-    .cui__field.-bottom-right.-quarter.-non-responsive, .-bottom-right.-quarter.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.quarter.non-responsive, .bottom-right.quarter.non-responsive.cui__field--icon {
       width: calc(25% + ($grid * .2)); }
     @media screen and (min-width: 569px) {
-      .cui__field.-bottom-right.-twenty, .-bottom-right.-twenty.cui__field--icon {
+      .cui__field.bottom-right.twenty, .bottom-right.twenty.cui__field--icon {
         width: calc(20% + ($grid * .2)); } }
-    .cui__field.-bottom-right.-twenty.-non-responsive, .-bottom-right.-twenty.-non-responsive.cui__field--icon {
+    .cui__field.bottom-right.twenty.non-responsive, .bottom-right.twenty.non-responsive.cui__field--icon {
       width: calc(20% + ($grid * .2)); }
-  .cui__field.-big, .-big.cui__field--icon {
+  .cui__field.big, .big.cui__field--icon {
     height: 60px; }
   .cui__field.is-hidden, .is-hidden.cui__field--icon {
     display: none; }
@@ -1270,9 +1270,9 @@
   color: #9e9ea0;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
-  .-big .cui__field__label, .-big .cui__field--icon__label {
+  .big .cui__field__label, .big .cui__field--icon__label {
     line-height: 60px; }
-  .-big.is-filled .cui__field__label, .-big.is-filled .cui__field--icon__label, .-big.is-error .cui__field__label, .-big.is-error .cui__field--icon__label, .-big.is-warning .cui__field__label, .-big.is-warning .cui__field--icon__label {
+  .big.is-filled .cui__field__label, .big.is-filled .cui__field--icon__label, .big.is-error .cui__field__label, .big.is-error .cui__field--icon__label, .big.is-warning .cui__field__label, .big.is-warning .cui__field--icon__label {
     -webkit-transform: translate(0, -11px);
             transform: translate(0, -11px); }
   .is-filled .cui__field__label, .is-filled .cui__field--icon__label, .is-error .cui__field__label, .is-error .cui__field--icon__label, .is-warning .cui__field__label, .is-warning .cui__field--icon__label {
@@ -1307,9 +1307,9 @@
   color: #3C3C3E;
   outline: none;
   width: 100%; }
-  .-big .cui__field__input, .-big .cui__field--icon__input {
+  .big .cui__field__input, .big .cui__field--icon__input {
     height: 60px; }
-  .-big.is-filled .cui__field__input, .-big.is-filled .cui__field--icon__input, .-big.is-error .cui__field__input, .-big.is-error .cui__field--icon__input, .-big.is-warning .cui__field__input, .-big.is-warning .cui__field--icon__input {
+  .big.is-filled .cui__field__input, .big.is-filled .cui__field--icon__input, .big.is-error .cui__field__input, .big.is-error .cui__field--icon__input, .big.is-warning .cui__field__input, .big.is-warning .cui__field--icon__input {
     height: 49px;
     top: 11px; }
   .is-filled .cui__field__input, .is-filled .cui__field--icon__input, .is-error .cui__field__input, .is-error .cui__field--icon__input, .is-warning .cui__field__input, .is-warning .cui__field--icon__input {
@@ -1502,52 +1502,52 @@
     .cui__loader {
       background-image: url("img/loader@2x.png");
       background-size: 20px 20px; } }
-  .cui__loader.-blue {
+  .cui__loader.blue {
     background-image: url("img/loader-blue.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .cui__loader.-blue {
+      .cui__loader.blue {
         background-image: url("img/loader-blue@2x.png");
         background-size: 20px 20px; } }
-  .cui__loader.-big {
+  .cui__loader.big {
     background-image: url("img/loader-big.png");
     height: 30px;
     width: 30px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .cui__loader.-big {
+      .cui__loader.big {
         background-image: url("img/loader-big@2x.png");
         background-size: 30px 30px; } }
-    .cui__loader.-big.-blue {
+    .cui__loader.big.blue {
       background-image: url("img/loader-blue-big.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .cui__loader.-big.-blue {
+        .cui__loader.big.blue {
           background-image: url("img/loader-blue-big@2x.png");
           background-size: 30px 30px; } }
-  .cui__loader.-small {
+  .cui__loader.small {
     background-image: url("img/loader-small.png");
     height: 15px;
     width: 15px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .cui__loader.-small {
+      .cui__loader.small {
         background-image: url("img/loader-small@2x.png");
         background-size: 15px 15px; } }
-    .cui__loader.-small.-blue {
+    .cui__loader.small.blue {
       background-image: url("img/loader-blue-small.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .cui__loader.-small.-blue {
+        .cui__loader.small.blue {
           background-image: url("img/loader-blue-small@2x.png");
           background-size: 15px 15px; } }
-  .cui__loader.-tiny {
+  .cui__loader.tiny {
     background-image: url("img/loader-tiny.png");
     height: 10px;
     width: 10px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      .cui__loader.-tiny {
+      .cui__loader.tiny {
         background-image: url("img/loader-tiny@2x.png");
         background-size: 10px 10px; } }
-    .cui__loader.-tiny.-blue {
+    .cui__loader.tiny.blue {
       background-image: url("img/loader-blue-tiny.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .cui__loader.-tiny.-blue {
+        .cui__loader.tiny.blue {
           background-image: url("img/loader-blue-tiny@2x.png");
           background-size: 10px 10px; } }
 
@@ -1645,12 +1645,12 @@
     border-color: #cbcbcd; }
   .is-disabled .cui__switch.is-checked::after, .cui__switch.is-checked.is-disabled::after {
     opacity: 1; }
-  .cui__switch.-right {
+  .cui__switch.right {
     cursor: pointer;
     position: relative;
     padding-left: 0;
     padding-right: 50px; }
-    .cui__switch.-right::before {
+    .cui__switch.right::before {
       background: #9e9ea0;
       border: 1px solid #9e9ea0;
       border-radius: 20px;
@@ -1664,7 +1664,7 @@
       width: 35px;
       right: 20px;
       left: auto; }
-    .cui__switch.-right::after {
+    .cui__switch.right::after {
       background: white;
       border-radius: 25px;
       content: "";
@@ -1678,36 +1678,36 @@
       width: 20px;
       right: 36px;
       left: auto; }
-    .cui__switch.-right.is-pressed::after {
+    .cui__switch.right.is-pressed::after {
       width: 25px;
       left: auto;
       right: 31px; }
-    .is-disabled .cui__switch.-right, .cui__switch.-right.is-disabled {
+    .is-disabled .cui__switch.right, .cui__switch.right.is-disabled {
       color: #cbcbcd; }
-      .is-disabled .cui__switch.-right::before, .cui__switch.-right.is-disabled::before {
+      .is-disabled .cui__switch.right::before, .cui__switch.right.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-    .cui__switch.-right.is-checked::before {
+    .cui__switch.right.is-checked::before {
       background: #0074c8;
       border-color: #0074c8; }
-    .cui__switch.-right.is-checked::after {
+    .cui__switch.right.is-checked::after {
       opacity: 1;
       left: auto;
       right: 21px; }
-    .cui__switch.-right.is-checked.is-pressed::after {
+    .cui__switch.right.is-checked.is-pressed::after {
       left: auto;
       right: 21px; }
-    .is-disabled .cui__switch.-right.is-checked::before, .cui__switch.-right.is-checked.is-disabled::before {
+    .is-disabled .cui__switch.right.is-checked::before, .cui__switch.right.is-checked.is-disabled::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled .cui__switch.-right.is-checked::after, .cui__switch.-right.is-checked.is-disabled::after {
+    .is-disabled .cui__switch.right.is-checked::after, .cui__switch.right.is-checked.is-disabled::after {
       opacity: 1; }
   @media screen and (min-width: 569px) {
-    .cui__switch.-checkbox {
+    .cui__switch.checkbox {
       padding-left: 30px;
       padding-right: 10px;
       position: relative; }
-      .cui__switch.-checkbox::before {
+      .cui__switch.checkbox::before {
         background: white;
         border: 1px solid #cbcbcd;
         border-radius: 2px;
@@ -1721,7 +1721,7 @@
         transition: all .2s ease;
         top: 8px;
         width: 14px; }
-      .cui__switch.-checkbox::after {
+      .cui__switch.checkbox::after {
         background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
         content: "";
         display: block;
@@ -1733,23 +1733,23 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: 14px; }
-      .cui__switch.-checkbox:hover::before {
+      .cui__switch.checkbox:hover::before {
         border-color: #66aae0; }
-      .is-disabled .cui__switch.-checkbox:hover::before, .cui__switch.-checkbox:hover.is-disabled::before {
+      .is-disabled .cui__switch.checkbox:hover::before, .cui__switch.checkbox:hover.is-disabled::before {
         border-color: #cbcbcd; }
-      .cui__switch.-checkbox.is-pressed::after {
+      .cui__switch.checkbox.is-pressed::after {
         width: 14px;
         left: 0px; }
-      .cui__switch.-checkbox.is-checked::before {
+      .cui__switch.checkbox.is-checked::before {
         background: #0074c8;
         border-color: #0074c8; }
-      .cui__switch.-checkbox.is-checked::after {
+      .cui__switch.checkbox.is-checked::after {
         opacity: 1;
         top: 8px; }
-      .cui__switch.-checkbox.is-checked.is-disabled::before {
+      .cui__switch.checkbox.is-checked.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-      .cui__switch.-checkbox.is-checked.is-disabled::after {
+      .cui__switch.checkbox.is-checked.is-disabled::after {
         opacity: 1;
         top: 8px; } }
 
@@ -1767,7 +1767,7 @@
   transition: all .2s ease;
   padding: 0;
   margin-bottom: 3px; }
-  .cui__switch--multiple.-borderless {
+  .cui__switch--multiple.borderless {
     border: none; }
   .cui__switch--multiple.is-disabled {
     background: #FAFAFA;
@@ -1808,11 +1808,11 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 16px; }
-  .-borderless .cui__switch--multiple__option {
+  .borderless .cui__switch--multiple__option {
     border-radius: 5px; }
-    .-borderless .cui__switch--multiple__option:first-child {
+    .borderless .cui__switch--multiple__option:first-child {
       padding-top: 9px; }
-    .-borderless .cui__switch--multiple__option:last-child {
+    .borderless .cui__switch--multiple__option:last-child {
       padding-bottom: 11px; }
   .cui__switch--multiple__option::before {
     background: #9e9ea0;
@@ -1867,11 +1867,11 @@
   .is-disabled .cui__switch--multiple__option.is-checked::after, .cui__switch--multiple__option.is-checked.is-disabled::after {
     opacity: 1; }
   @media screen and (min-width: 569px) {
-    .-checkbox .cui__switch--multiple__option {
+    .checkbox .cui__switch--multiple__option {
       padding-left: 50px;
       padding-right: 30px;
       position: relative; }
-      .-checkbox .cui__switch--multiple__option::before {
+      .checkbox .cui__switch--multiple__option::before {
         background: white;
         border: 1px solid #cbcbcd;
         border-radius: 2px;
@@ -1885,7 +1885,7 @@
         transition: all .2s ease;
         top: 12px;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option::after {
+      .checkbox .cui__switch--multiple__option::after {
         background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
         content: "";
         display: block;
@@ -1897,31 +1897,31 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option:hover::before {
+      .checkbox .cui__switch--multiple__option:hover::before {
         border-color: #66aae0; }
-      .is-disabled .-checkbox .cui__switch--multiple__option:hover::before, .-checkbox .cui__switch--multiple__option:hover.is-disabled::before {
+      .is-disabled .checkbox .cui__switch--multiple__option:hover::before, .checkbox .cui__switch--multiple__option:hover.is-disabled::before {
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option.is-pressed::after {
+      .checkbox .cui__switch--multiple__option.is-pressed::after {
         width: 14px;
         left: 20px; }
-      .-checkbox .cui__switch--multiple__option.is-checked::before {
+      .checkbox .cui__switch--multiple__option.is-checked::before {
         background: #0074c8;
         border-color: #0074c8; }
-      .-checkbox .cui__switch--multiple__option.is-checked::after {
+      .checkbox .cui__switch--multiple__option.is-checked::after {
         opacity: 1;
         top: 12px; }
-      .-checkbox .cui__switch--multiple__option.is-checked.is-disabled::before {
+      .checkbox .cui__switch--multiple__option.is-checked.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option.is-checked.is-disabled::after {
+      .checkbox .cui__switch--multiple__option.is-checked.is-disabled::after {
         opacity: 1;
         top: 12px; } }
   @media screen and (min-width: 569px) {
-    .-checkbox .cui__switch--multiple__option:first-child {
+    .checkbox .cui__switch--multiple__option:first-child {
       padding-left: 50px;
       padding-right: 30px;
       position: relative; }
-      .-checkbox .cui__switch--multiple__option:first-child::before {
+      .checkbox .cui__switch--multiple__option:first-child::before {
         background: white;
         border: 1px solid #cbcbcd;
         border-radius: 2px;
@@ -1935,7 +1935,7 @@
         transition: all .2s ease;
         top: 17px;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option:first-child::after {
+      .checkbox .cui__switch--multiple__option:first-child::after {
         background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
         content: "";
         display: block;
@@ -1947,31 +1947,31 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option:first-child:hover::before {
+      .checkbox .cui__switch--multiple__option:first-child:hover::before {
         border-color: #66aae0; }
-      .is-disabled .-checkbox .cui__switch--multiple__option:first-child:hover::before, .-checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
+      .is-disabled .checkbox .cui__switch--multiple__option:first-child:hover::before, .checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
+      .checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
         width: 14px;
         left: 20px; }
-      .-checkbox .cui__switch--multiple__option:first-child.is-checked::before {
+      .checkbox .cui__switch--multiple__option:first-child.is-checked::before {
         background: #0074c8;
         border-color: #0074c8; }
-      .-checkbox .cui__switch--multiple__option:first-child.is-checked::after {
+      .checkbox .cui__switch--multiple__option:first-child.is-checked::after {
         opacity: 1;
         top: 17px; }
-      .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
+      .checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
+      .checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
         opacity: 1;
         top: 17px; } }
   @media screen and (min-width: 569px) {
-    .-checkbox .cui__switch--multiple__option:last-child {
+    .checkbox .cui__switch--multiple__option:last-child {
       padding-left: 50px;
       padding-right: 30px;
       position: relative; }
-      .-checkbox .cui__switch--multiple__option:last-child::before {
+      .checkbox .cui__switch--multiple__option:last-child::before {
         background: white;
         border: 1px solid #cbcbcd;
         border-radius: 2px;
@@ -1985,7 +1985,7 @@
         transition: all .2s ease;
         top: 12px;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option:last-child::after {
+      .checkbox .cui__switch--multiple__option:last-child::after {
         background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
         content: "";
         display: block;
@@ -1997,31 +1997,31 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: 14px; }
-      .-checkbox .cui__switch--multiple__option:last-child:hover::before {
+      .checkbox .cui__switch--multiple__option:last-child:hover::before {
         border-color: #66aae0; }
-      .is-disabled .-checkbox .cui__switch--multiple__option:last-child:hover::before, .-checkbox .cui__switch--multiple__option:last-child:hover.is-disabled::before {
+      .is-disabled .checkbox .cui__switch--multiple__option:last-child:hover::before, .checkbox .cui__switch--multiple__option:last-child:hover.is-disabled::before {
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option:last-child.is-pressed::after {
+      .checkbox .cui__switch--multiple__option:last-child.is-pressed::after {
         width: 14px;
         left: 20px; }
-      .-checkbox .cui__switch--multiple__option:last-child.is-checked::before {
+      .checkbox .cui__switch--multiple__option:last-child.is-checked::before {
         background: #0074c8;
         border-color: #0074c8; }
-      .-checkbox .cui__switch--multiple__option:last-child.is-checked::after {
+      .checkbox .cui__switch--multiple__option:last-child.is-checked::after {
         opacity: 1;
         top: 12px; }
-      .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::before {
+      .checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-      .-checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::after {
+      .checkbox .cui__switch--multiple__option:last-child.is-checked.is-disabled::after {
         opacity: 1;
         top: 12px; } }
   @media screen and (min-width: 569px) {
-    .-borderless.-checkbox .cui__switch--multiple__option:first-child {
+    .borderless.checkbox .cui__switch--multiple__option:first-child {
       padding-left: 50px;
       padding-right: 30px;
       position: relative; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child::before {
+      .borderless.checkbox .cui__switch--multiple__option:first-child::before {
         background: white;
         border: 1px solid #cbcbcd;
         border-radius: 2px;
@@ -2035,7 +2035,7 @@
         transition: all .2s ease;
         top: 12px;
         width: 14px; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child::after {
+      .borderless.checkbox .cui__switch--multiple__option:first-child::after {
         background: url('data:image/svg+xml,\a         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">\a             <g fill="none" fill-rule="evenodd">\a                 <g transform="translate(-720, -1508)">\a                     <g transform="translate(700, 1457)">\a                         <g transform="translate(0, 33)">\a                             <g transform="translate(20, 14)">\a                                 <g transform="translate(0, 4)">\a                                     <g>\a                                         <rect x="0" y="0" width="14" height="14" rx="2"></rect>\a                                         <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\a                                     </g>\a                                 </g>\a                             </g>\a                         </g>\a                     </g>\a                 </g>\a             </g>\a         </svg>');
         content: "";
         display: block;
@@ -2047,42 +2047,42 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: 14px; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child:hover::before {
+      .borderless.checkbox .cui__switch--multiple__option:first-child:hover::before {
         border-color: #66aae0; }
-      .is-disabled .-borderless.-checkbox .cui__switch--multiple__option:first-child:hover::before, .-borderless.-checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
+      .is-disabled .borderless.checkbox .cui__switch--multiple__option:first-child:hover::before, .borderless.checkbox .cui__switch--multiple__option:first-child:hover.is-disabled::before {
         border-color: #cbcbcd; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
+      .borderless.checkbox .cui__switch--multiple__option:first-child.is-pressed::after {
         width: 14px;
         left: 20px; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child.is-checked::before {
+      .borderless.checkbox .cui__switch--multiple__option:first-child.is-checked::before {
         background: #0074c8;
         border-color: #0074c8; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child.is-checked::after {
+      .borderless.checkbox .cui__switch--multiple__option:first-child.is-checked::after {
         opacity: 1;
         top: 12px; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
+      .borderless.checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::before {
         background: #cbcbcd;
         border-color: #cbcbcd; }
-      .-borderless.-checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
+      .borderless.checkbox .cui__switch--multiple__option:first-child.is-checked.is-disabled::after {
         opacity: 1;
         top: 12px; } }
   @media screen and (min-width: 569px) {
-    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked::before {
+    .is-disabled.checkbox .cui__switch--multiple__option.is-checked::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked:hover::before {
+    .is-disabled.checkbox .cui__switch--multiple__option.is-checked:hover::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked::after {
+    .is-disabled.checkbox .cui__switch--multiple__option.is-checked::after {
       opacity: 1;
       top: 12px; }
-    .is-disabled.-checkbox .cui__switch--multiple__option.is-checked:first-child::after {
+    .is-disabled.checkbox .cui__switch--multiple__option.is-checked:first-child::after {
       top: 17px; } }
   @media screen and (min-width: 569px) {
-    .is-disabled.-borderless.-checkbox .cui__switch--multiple__option:first-child::before {
+    .is-disabled.borderless.checkbox .cui__switch--multiple__option:first-child::before {
       background: #cbcbcd;
       border-color: #cbcbcd; }
-    .is-disabled.-borderless.-checkbox .cui__switch--multiple__option:first-child:first-child::after {
+    .is-disabled.borderless.checkbox .cui__switch--multiple__option:first-child:first-child::after {
       top: 12px; } }
 
 .cui__switch--multiple__option__heading {
@@ -2149,7 +2149,7 @@
   color: #3c3c3e;
   line-height: 35px;
   margin: 0; }
-  .cui__title--primary.-blue, .cui__title--secondary.-blue {
+  .cui__title--primary.blue, .cui__title--secondary.blue {
     color: #0074c8; }
 
 .cui__title--primary {
@@ -2159,14 +2159,14 @@
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   padding: 18px 0 17px 0; }
-  .cui__title--primary.-small {
+  .cui__title--primary.small {
     font-size: 22px;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     padding: 19px 0 16px 0; }
-    .cui__title--primary.-small.-strong {
+    .cui__title--primary.small.strong {
       font-size: 22px;
       font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       font-weight: 400;
@@ -2194,7 +2194,7 @@
   margin: 0;
   padding: 16px 0 9px 0;
   text-transform: uppercase; }
-  .cui__subtitle.-blue {
+  .cui__subtitle.blue {
     color: #0074c8; }
 
 .cui__title--primary + .cui__subtitle {
@@ -2204,7 +2204,7 @@
   line-height: 25px;
   margin: 0;
   padding: 3px 0 17px 0; }
-  .cui__paragraph--primary.-condensed, .cui__paragraph--secondary.-condensed {
+  .cui__paragraph--primary.condensed, .cui__paragraph--secondary.condensed {
     line-height: 20px;
     padding-top: 0;
     padding-bottom: 15px; }

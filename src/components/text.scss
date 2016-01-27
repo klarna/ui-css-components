@@ -9,7 +9,7 @@
     line-height: ($grid * 7);
     margin: 0;
 
-    &.-blue {
+    &.blue {
       color: map-get($colors, klarna-blue);
     }
 }
@@ -19,12 +19,12 @@
 
     padding: ($grid * 3.6) 0 ($grid * 3.4) 0;
 
-    &.-small {
+    &.small {
         @include typography(($grid * 4.4), light);
 
         padding: ($grid * 3.8) 0 ($grid * 3.2) 0;
 
-        &.-strong {
+        &.strong {
             @include typography(($grid * 4.4), regular);
         }
     }
@@ -48,7 +48,7 @@
   padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
   text-transform: uppercase;
 
-  &.-blue {
+  &.blue {
     color: map-get($colors, klarna-blue);
   }
 }
@@ -63,7 +63,7 @@
     margin: 0;
     padding: ($grid * .6) 0 ($grid * 3.4) 0;
 
-    &.-condensed {
+    &.condensed {
         line-height: ($grid * 4);
         padding-top: 0;
         padding-bottom: ($grid * 3);
