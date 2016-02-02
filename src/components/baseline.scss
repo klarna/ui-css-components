@@ -21,6 +21,8 @@
 }
 
 .cui__baseline__content--main {
+    @include typography(($grid * 2.8), regular);
+
     margin: 0 ($grid * 4);
     padding: 0;
 

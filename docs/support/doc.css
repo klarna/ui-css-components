@@ -20,6 +20,10 @@ main.cui__baseline__content--main {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
+.ie9 .example-block {
+  border: 1px solid #cbcbcd;
+}
+
 .example-block pre {
   margin: 0;
 }
