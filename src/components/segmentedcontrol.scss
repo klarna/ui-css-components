@@ -1,0 +1,39 @@
+@import "../settings";
+@import "../mixins/index";
+
+.cui__segmentedcontrol {
+    border-radius: $border-radius;
+    border: ($grid * .2) solid $border-color;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    input {
+        display: none;
+    }
+
+    label {
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+        color: map-get($colors, black);
+        border-right: ($grid * .2) solid $border-color;
+        padding: 0 ($grid * 9);
+        line-height: ($grid * 10) - ($grid * 0.4);
+        transition: all .2s ease;
+        vertical-align: top;
+    }
+
+    label:last-child {
+        border-right: 0;
+    }
+
+    label:hover {
+        color: map-get($colors, klarna-blue);
+    }
+
+    input:checked + label {
+        background: map-get($colors, klarna-blue);
+        color: map-get($colors, white);
+    }
+}
