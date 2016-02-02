@@ -31,12 +31,13 @@
     }
 
     &::after {
+        @include opacity(1);
+
         background: white;
         border-radius: ($grid * 5);
         content: "";
         display: block;
         height: ($grid * 4);
-        opacity: 1;
         position: absolute;
         top: $top + ($grid * .2);
         -webkit-transition: all .2s ease;
@@ -89,7 +90,8 @@
         }
 
         &::after {
-            opacity: 1;
+            @include opacity(1);
+
             @if $side == left {
                 left: ($grid * 3.2);
             } @else {
@@ -116,7 +118,7 @@
             }
 
             &::after {
-                opacity: 1;
+                @include opacity(1);
             }
         }
     }

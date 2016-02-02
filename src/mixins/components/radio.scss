@@ -16,13 +16,14 @@
     }
 
     &::after {
+        @include opacity(0);
+
         background: white;
         border-radius: ($grid * 1.2);
         content: "";
         display: block;
         height: ($grid * .8);
         left: ($grid * 5);
-        opacity: 0;
         position: absolute;
         top: ($grid * 3.4);
         transform: scale(3, 3);
@@ -48,7 +49,8 @@
         }
 
         &::after {
-            opacity: 1;
+            @include opacity(1);
+
             top: ($grid * 3.4);
             transform: scale(1, 1);
         }
@@ -66,12 +68,14 @@
             }
 
             &::after {
-                opacity: 1;
+                @include opacity(1);
+
                 top: ($grid * 3.4);
             }
 
             &:first-child::after {
-                opacity: 1;
+                @include opacity(1);
+
                 top: ($grid * 4.4);
             }
         }

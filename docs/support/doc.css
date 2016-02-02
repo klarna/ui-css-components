@@ -15,7 +15,7 @@ ul li {
   margin: 0;
 }
 
-.ie9 .docs__nav ul li {
+.ie9 .docs__nav ul li, .ie8 .docs__nav ul li {
   padding-bottom: 10px;
 }
 
@@ -32,7 +32,7 @@ ul li {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-.ie9 .example-block {
+.ie9 .example-block, .ie8 .example-block {
   border: 1px solid #cbcbcd;
 }
 

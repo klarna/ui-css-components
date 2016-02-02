@@ -163,10 +163,11 @@
 }
 
 .cui__dropdown--native__select {
+    @include opacity(0);
+
     appearance: none;
     cursor: pointer;
     height: ($grid * 10.2);
-    opacity: 0;
     outline: none;
     position: absolute;
     width: 100%;
@@ -235,13 +236,15 @@
             padding: ($grid * 2.8) ($grid * 6) ($grid * 2.4) ($grid * 4);
 
             &::before {
-                opacity: 0;
+                @include opacity(0);
+
                 -webkit-transition: all 0s;
                 transition: all 0s;
             }
 
             &::after {
-                opacity: 0;
+                @include opacity(0);
+
                 -webkit-transition: all 0s;
                 transition: all 0s;
             }
@@ -256,13 +259,15 @@
             padding: ($grid * 2.6) ($grid * 6) ($grid * 1.4) ($grid * 4);
 
             &::before {
-                opacity: 0;
+                @include opacity(0);
+
                 -webkit-transition: all 0s;
                 transition: all 0s;
             }
 
             &::after {
-                opacity: 0;
+                @include opacity(0);
+
                 -webkit-transition: all 0s;
                 transition: all 0s;
             }
