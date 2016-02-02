@@ -1,21 +1,21 @@
-KCO UI Toolkit
+UI CSS Components
 ==============
 
-UI Toolkit for the Klarna Checkout.
+UI CSS Components for Klarna frontends.
 
 Installation
 ------------
 
-> Note: Since version 3.0.0, SS Pika is no longer part of the UI Toolkit bundle, but it is still a dependency for the toolkit. Installing via bower will install SS Pika side by side with the toolkit: to use the font, remember to also add `bower_components/ss-pika/webfonts/ss-pika.css` in your HTML.
-> Also, if you are consuming the toolkit via NPM, the dependency won't be there: in that case, the recommendation is to load the SS Pika CSS from some CDN.
+> Note: Since version 3.0.0, SS Pika is no longer part of the UI CSS Components bundle, but it is still a dependency for the toolkit. Installing via bower will install SS Pika side by side with the CSS components: to use the font, remember to also add `bower_components/ss-pika/webfonts/ss-pika.css` in your HTML.
+> Also, if you are consuming the CSS components via NPM, the dependency won't be there: in that case, the recommendation is to load the SS Pika CSS from some CDN.
 
-You can install the KCO UI Toolkit via bower with:
+You can install the UI CSS Components via bower with:
 
 ```sh
-bower install git+ssh://git@stash.internal.machines:7999/bow/ui-toolkit.git#v4.0.0
+bower install git+ssh://git@stash.internal.machines:7999/bow/ui-css-components.git#v4.0.0
 ```
 
-Please note that the commit-ish (everything after the `#`) should point to the version of the Toolkit that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
+Please note that the commit-ish (everything after the `#`) should point to the version of the CSS Components that you want to use. The commit-ish can be a regular commit hash, the name of a branch or a tag: typically versions will be tagged, but while developing you might be interested in using branch names instead, or even commits if you want to be extra sure that the version you are requiring is the one you need.
 
 Usage
 -----
@@ -39,10 +39,10 @@ You can edit the SCSS files, the Jade file and the HTML snippets and they will b
 
 ### CSS / SASS
 
-There are two main strategies for integrating the UI Toolkit into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
+There are two main strategies for integrating the UI CSS Components into your project. The simplest one is just using the compiled `ui-toolkit.css` file that comes in the bundle. If you installed it with bower on the default bower folder you should be able to include it with:
 
 ```html
-<link rel="stylesheet" href="bower_components/ui-toolkit/ui-toolkit.css" />
+<link rel="stylesheet" href="bower_components/ui-css-components/ui-toolkit.css" />
 ```
 
 If you do this, however, you are going to miss on all the SASS mixins and variables that the toolkit bundles, which includes the complete [Bourbon](http://bourbon.io/) 4.0.2 mixin library.
@@ -65,14 +65,14 @@ The UI Toolkit includes a JS library. Include that with:
 ```html
 <script
   type="text/javascript"
-  src="bower_components/ui-toolkit/ui-toolkit.js"></script>
+  src="bower_components/ui-css-components/ui-toolkit.js"></script>
 ```
 
 Documentation for the JS library is patchy.
 
 #### Fake placeholders for IE and Android
 
-The UI Toolkit provides fake placeholders for the `field` component. You have to initialize them after rendering. For example:
+The UI CSS Components include fake placeholders for the `field` component. You have to initialize them after rendering. For example:
 
 ```html
 <div class="cui__field">
