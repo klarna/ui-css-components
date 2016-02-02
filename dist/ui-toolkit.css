@@ -330,6 +330,15 @@
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
+    .cui__dropdown--native.third {
+      width: 33.333%;
+      clear: none;
+      float: left; } }
+  .cui__dropdown--native.third.non-responsive {
+    width: 33.333%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
     .cui__dropdown--native.forty {
       width: 40%;
       clear: none;
@@ -1032,6 +1041,15 @@
       float: left; } }
   .cui__field.half.non-responsive, .half.non-responsive.cui__field--icon {
     width: 50%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
+    .cui__field.third, .third.cui__field--icon {
+      width: 33.333%;
+      clear: none;
+      float: left; } }
+  .cui__field.third.non-responsive, .third.non-responsive.cui__field--icon {
+    width: 33.333%;
     clear: none;
     float: left; }
   @media screen and (min-width: 569px) {
@@ -2254,3 +2272,261 @@
   text-transform: uppercase; }
   .is-disabled .cui__label {
     background: #cbcbcd; }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+/*******************************************************************************
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie { // Targets all IE browsers
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie(8) { // Targets only IE 8
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
+        padding-top: 22px;
+    }
+}
+*******************************************************************************/
+/**
+ * Adds all atributes to define the best typography as possible
+ */
+.cui__segmentedcontrol {
+  overflow: auto; }
+  .cui__segmentedcontrol input {
+    display: none; }
+  .cui__segmentedcontrol label {
+    border: 1px solid #cbcbcd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #3c3c3e;
+    display: inline-block;
+    line-height: 38px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    vertical-align: top; }
+    .cui__segmentedcontrol label.square {
+      border-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__segmentedcontrol label.half {
+        width: 50%;
+        clear: none;
+        float: left; } }
+    .cui__segmentedcontrol label.half.non-responsive {
+      width: 50%;
+      clear: none;
+      float: left; }
+    @media screen and (min-width: 569px) {
+      .cui__segmentedcontrol label.third {
+        width: 33.333%;
+        clear: none;
+        float: left; } }
+    .cui__segmentedcontrol label.third.non-responsive {
+      width: 33.333%;
+      clear: none;
+      float: left; }
+    @media screen and (min-width: 569px) {
+      .cui__segmentedcontrol label.forty {
+        width: 40%;
+        clear: none;
+        float: left; } }
+    .cui__segmentedcontrol label.forty.non-responsive {
+      width: 40%;
+      clear: none;
+      float: left; }
+    @media screen and (min-width: 569px) {
+      .cui__segmentedcontrol label.quarter {
+        width: 25%;
+        clear: none;
+        float: left; } }
+    .cui__segmentedcontrol label.quarter.non-responsive {
+      width: 25%;
+      clear: none;
+      float: left; }
+    @media screen and (min-width: 569px) {
+      .cui__segmentedcontrol label.twenty {
+        width: 20%;
+        clear: none;
+        float: left; } }
+    .cui__segmentedcontrol label.twenty.non-responsive {
+      width: 20%;
+      clear: none;
+      float: left; }
+    .cui__segmentedcontrol label.left {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .cui__segmentedcontrol label.center {
+      border-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.center {
+          margin-left: -1px; } }
+      .cui__segmentedcontrol label.center.non-responsive {
+        margin-left: -1px; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.center.half {
+          width: calc(50% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.center.half.non-responsive {
+        width: calc(50% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.center.forty {
+          width: calc(40% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.center.forty.non-responsive {
+        width: calc(40% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.center.quarter {
+          width: calc(25% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.center.quarter.non-responsive {
+        width: calc(25% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.center.twenty {
+          width: calc(20% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.center.twenty.non-responsive {
+        width: calc(20% + ($grid * .2)); }
+      .cui__segmentedcontrol label.center::after {
+        content: "";
+        clear: both;
+        display: block; }
+    .cui__segmentedcontrol label.right {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.right {
+          margin-left: -1px; } }
+      .cui__segmentedcontrol label.right.non-responsive {
+        margin-left: -1px; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.right.half {
+          width: calc(50% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.right.half.non-responsive {
+        width: calc(50% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.right.forty {
+          width: calc(40% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.right.forty.non-responsive {
+        width: calc(40% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.right.quarter {
+          width: calc(25% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.right.quarter.non-responsive {
+        width: calc(25% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.right.twenty {
+          width: calc(20% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.right.twenty.non-responsive {
+        width: calc(20% + ($grid * .2)); }
+      .cui__segmentedcontrol label.right::after {
+        content: "";
+        clear: both;
+        display: block; }
+    .cui__segmentedcontrol label.top {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    .cui__segmentedcontrol label.top-left {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-left {
+          border-top-right-radius: 0; } }
+      .cui__segmentedcontrol label.top-left.non-responsive {
+        border-top-right-radius: 0; }
+    .cui__segmentedcontrol label.top-right {
+      border-radius: 0;
+      clear: right; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right {
+          border-top-right-radius: 5px; } }
+      .cui__segmentedcontrol label.top-right.non-responsive {
+        border-top-right-radius: 5px; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right {
+          margin-left: -1px; } }
+      .cui__segmentedcontrol label.top-right.non-responsive {
+        margin-left: -1px; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right.half {
+          width: calc(50% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.top-right.half.non-responsive {
+        width: calc(50% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right.forty {
+          width: calc(40% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.top-right.forty.non-responsive {
+        width: calc(40% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right.quarter {
+          width: calc(25% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.top-right.quarter.non-responsive {
+        width: calc(25% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.top-right.twenty {
+          width: calc(20% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.top-right.twenty.non-responsive {
+        width: calc(20% + ($grid * .2)); }
+    .cui__segmentedcontrol label.bottom-left {
+      border-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-left {
+          border-bottom-left-radius: 5px; } }
+      .cui__segmentedcontrol label.bottom-left.non-responsive {
+        border-bottom-left-radius: 5px; }
+    .cui__segmentedcontrol label.bottom-right {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right {
+          border-bottom-left-radius: 0; } }
+      .cui__segmentedcontrol label.bottom-right.non-responsive {
+        border-bottom-left-radius: 0; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right {
+          margin-left: -1px; } }
+      .cui__segmentedcontrol label.bottom-right.non-responsive {
+        margin-left: -1px; }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right.half {
+          width: calc(50% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.bottom-right.half.non-responsive {
+        width: calc(50% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right.forty {
+          width: calc(40% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.bottom-right.forty.non-responsive {
+        width: calc(40% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right.quarter {
+          width: calc(25% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.bottom-right.quarter.non-responsive {
+        width: calc(25% + ($grid * .2)); }
+      @media screen and (min-width: 569px) {
+        .cui__segmentedcontrol label.bottom-right.twenty {
+          width: calc(20% + ($grid * .2)); } }
+      .cui__segmentedcontrol label.bottom-right.twenty.non-responsive {
+        width: calc(20% + ($grid * .2)); }
+  .cui__segmentedcontrol label:hover {
+    color: #0074c8; }
+  .cui__segmentedcontrol input:checked + label {
+    border: 1px solid #0074c8;
+    background: #0074c8;
+    color: #fff;
+    z-index: 5; }

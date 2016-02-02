@@ -2,30 +2,26 @@
 @import "../mixins/index";
 
 .cui__segmentedcontrol {
-    border-radius: $border-radius;
-    border: ($grid * .2) solid $border-color;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-
+    overflow: auto;
+    
     input {
         display: none;
     }
 
     label {
-        flex-grow: 1;
-        text-align: center;
+        @include stackable();
+
+        border: ($grid * .2) solid $border-color;
+        border-radius: $border-radius;
+        box-sizing: border-box;
         cursor: pointer;
         color: map-get($colors, black);
-        border-right: ($grid * .2) solid $border-color;
-        padding: 0 ($grid * 9);
-        line-height: ($grid * 10) - ($grid * 0.4);
+        display: inline-block;
+        line-height: ($grid * 8) - ($grid * 0.4);
+        position: relative;
+        text-align: center;
         transition: all .2s ease;
         vertical-align: top;
-    }
-
-    label:last-child {
-        border-right: 0;
     }
 
     label:hover {
@@ -33,7 +29,9 @@
     }
 
     input:checked + label {
+        border: ($grid * .2) solid map-get($colors, klarna-blue);
         background: map-get($colors, klarna-blue);
         color: map-get($colors, white);
+        z-index: 5;
     }
 }
