@@ -6,7 +6,8 @@
 <![endif]-->
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
-<!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></nav><main class="cui__baseline__content--main"><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
+<!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -19,7 +20,7 @@
 <h2 class="cui__title--secondary">Instructions</h2>
 <p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should be aligned with the
 grid. If something is not, please report it in the #front_end channel.</p>
-</section><section id="Baseline"><h1 class="cui__title--primary">Baseline</h1>
+</div><div id="Baseline" class="docs__section"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
 A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
 the <span class="code">&lt;html&gt;</span> tag. It will set the proper font rendering style for webkit and set
@@ -37,7 +38,7 @@ keep that class in the <span class="code">&lt;body&gt;</span> tag to ensure that
 <p class="cui__paragraph--primary">Horizontal grids are not covered by the Toolkit, but a convenient responsive wrapper
 <span class="code">cui__baseline__content--main</span> is provided that will add some paddings on mobile
 layouts and will stop growing and keep itself centered in resolutions above <span class="code">700px</span>.</p>
-</section><section id="Loader"><h1 class="cui__title--primary">Loader</h1>
+</div><div id="Loader" class="docs__section"><h1 class="cui__title--primary">Loader</h1>
 <p class="cui__paragraph--primary">Standalone loaders are designed to be used on overlays when the application is loading. They fit the grid in either 2, 3, 4 or 6 blocks.</p>
 <p class="cui__paragraph--primary">They are not designed to be used within other components. For a loader inside a button for example, check out the examples for Button with loader.</p>
 <hr>
@@ -67,7 +68,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <div class="cui__loader tiny blue"></div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__loader tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__loader tiny blue&quot;&gt;&lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Dropdown"><h1 class="cui__title--primary">Dropdown</h1>
+</div><div id="Dropdown" class="docs__section"><h1 class="cui__title--primary">Dropdown</h1>
 <p class="cui__paragraph--primary">Dropdowns are family of components that present the user with multiple options. The basic version is just a styling over the HTML <span class="code">&lt;select&gt;</span> element, but more advanced versions include a combination of select with radio buttons, a radio button selector and a checkbox group.</p>
 <hr>
 <ul class="summary">
@@ -997,7 +998,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
   &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Button"><h1 class="cui__title--primary">Button</h1>
+</div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>
 <p class="cui__paragraph--primary">Buttons use the <span class="code">cui__button</span> block, and only <span class="code">button</span> tags should be used.</p>
 <ul class="summary">
 <li><a class="cui__link" href="#Button/overview">Overview</a></li>
@@ -1275,7 +1276,7 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
   Secondary big disabled
 &lt;/button&gt;
 </div></code></pre></div>
-</section><section id="Field"><h1 class="cui__title--primary">Field</h1>
+</div><div id="Field" class="docs__section"><h1 class="cui__title--primary">Field</h1>
 <p class="cui__paragraph--primary">The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
 <p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a class="cui__link" href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a class="cui__link" href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
 <p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
@@ -1925,7 +1926,7 @@ demo.</p>
                 floatingLabel(input)
         })
 </script>
-</section><section id="Switch"><h1 class="cui__title--primary">Switch</h1>
+</div><div id="Switch" class="docs__section"><h1 class="cui__title--primary">Switch</h1>
 <p class="cui__paragraph--primary">The Switch component are a set of checkbox-type components, both in list and standalone. In mobile the look and feel of the component is always the slider style switch, while in desktop there is the option of being either the same style as mobile or a more traditional checkbox mark.</p>
 <hr>
 <ul class="summary">
@@ -2464,7 +2465,7 @@ demo.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Text"><h1 class="cui__title--primary">Text</h1>
+</div><div id="Text" class="docs__section"><h1 class="cui__title--primary">Text</h1>
 <p class="cui__paragraph--primary">These are the general text styles for the toolkit.</p>
 <ul class="summary">
 <li><a class="cui__link" href="#Text/example">Example</a></li>
@@ -2655,7 +2656,7 @@ demo.</p>
   &lt;/a&gt;
 &lt;/a&gt;
 </div></code></pre></div>
-</section><section id="Icon"><h1 class="cui__title--primary">Icons</h1>
+</div><div id="Icon" class="docs__section"><h1 class="cui__title--primary">Icons</h1>
 <p class="cui__paragraph--primary">A set of icons are provided as part of the toolkit. They are designed to be used in the context of Fields, and have included the styles for hover states as well as warnings and errors.</p>
 <p class="cui__paragraph--primary">They are bundled as inline SVG within the CSS.</p>
 <hr>
@@ -2675,7 +2676,7 @@ demo.</p>
 <span class="cui__icon cui__icon--lock is-focused"></span></div><pre><code class="lang-html"><div>&lt;span class=&quot;cui__icon cui__icon--mail is-focused&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;cui__icon cui__icon--lock is-focused&quot;&gt;&lt;/span&gt;
 </div></code></pre></div>
-</section></main><script>// helpers for documentation
+</div></div><script>// helpers for documentation
 $(window).keypress(function(e){
   if (e.which === 103) {
     $('body').toggleClass('cui__baseline__grid');
@@ -2733,7 +2734,7 @@ function anchor(url) {
 $('[id="' + anchor(location.href) + '"]').show();
 
 $('#menu a').click(function(){
-  $('section').hide();
+  $('.docs__section').hide();
   $('[id="' + anchor(this.href) + '"]').show();
 })
 
@@ -2749,4 +2750,6 @@ $('.toggle-grid').click(function(){
   }
 })
 
-hljs.initHighlightingOnLoad();</script></body></html>
+if (Array.prototype.forEach) {
+  hljs.initHighlightingOnLoad();
+}</script></body></html>

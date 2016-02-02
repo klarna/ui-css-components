@@ -20,19 +20,24 @@ head
   link(rel='stylesheet' href='docs/support/doc.css')
   link(rel='stylesheet' href='docs/support/hljs.css')
 
+  <!--[if IE 8]>
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
   script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
+  <!--<![endif]-->
 
 body
-  nav
+  .docs__nav
     ul#menu
       each doc in docs
         li.cui__paragraph--primary.-condensed
           a.cui__link(href="##{doc.name}")!= doc.name
 
-  main.cui__baseline__content--main
+  .docs__main.cui__baseline__content--main
     each doc in docs
-      section(id="#{doc.name}")
+      .docs__section(id="#{doc.name}")
         != doc.parsedContent
 
   script.
@@ -95,7 +100,7 @@ body
       $('[id="' + anchor(location.href) + '"]').show();
 
       $('#menu a').click(function(){
-        $('section').hide();
+        $('.docs__section').hide();
         $('[id="' + anchor(this.href) + '"]').show();
       })
 
@@ -111,5 +116,7 @@ body
         }
       })
 
-      hljs.initHighlightingOnLoad();
+      if (Array.prototype.forEach) {
+        hljs.initHighlightingOnLoad();
+      }
 </html>

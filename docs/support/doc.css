@@ -1,8 +1,8 @@
-nav {
+.docs__nav {
   padding: 80px 0 0 80px;
 }
 
-.ie9 nav {
+.ie9 .docs__nav {
   padding-top: 77px;
 }
 
@@ -15,11 +15,11 @@ ul li {
   margin: 0;
 }
 
-.ie9 nav ul li {
+.ie9 .docs__nav ul li {
   padding-bottom: 10px;
 }
 
-main.cui__baseline__content--main {
+.docs__main.cui__baseline__content--main {
   clear: both;
   float: static;
   margin-bottom: 20px;
@@ -115,16 +115,16 @@ ul.overview {
   padding: 10px;
 }
 
-section {
+.docs__section {
   display: none;
 }
 
 @media screen and (min-width: 999px) {
-  nav {
+  .docs__nav {
     float: left;
   }
 
-  main.cui__baseline__content--main {
+  .docs__main.cui__baseline__content--main {
     clear: none;
     float: left;
     padding: 55px 0 0 80px;
@@ -133,7 +133,18 @@ section {
 }
 
 @media screen and (min-width: 1099px) {
-  main.cui__baseline__content--main {
+  .docs__main.cui__baseline__content--main {
     width: 700px;
   }
+}
+
+.ie8 .docs__nav {
+  float: left;
+}
+
+.ie8 .docs__main.cui__baseline__content--main {
+  clear: none;
+  float: left;
+  padding: 55px 0 0 80px;
+  width: 700px;
 }
