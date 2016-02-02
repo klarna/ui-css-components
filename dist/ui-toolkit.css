@@ -2320,7 +2320,9 @@
     cursor: pointer;
     color: #3c3c3e;
     display: inline-block;
+    float: left;
     line-height: 38px;
+    padding: 0 45px;
     position: relative;
     text-align: center;
     -webkit-transition: all .2s ease;

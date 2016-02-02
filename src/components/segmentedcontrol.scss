@@ -17,7 +17,9 @@
         cursor: pointer;
         color: map-get($colors, black);
         display: inline-block;
+        float: left;
         line-height: ($grid * 8) - ($grid * 0.4);
+        padding: 0 ($grid * 9);
         position: relative;
         text-align: center;
         transition: all .2s ease;
@@ -33,5 +35,9 @@
         background: map-get($colors, klarna-blue);
         color: map-get($colors, white);
         z-index: 5;
+    }
+
+    &.respect-content {
+
     }
 }

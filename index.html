@@ -991,24 +991,46 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 </div></code></pre></div>
 </section><section id="Segmentedcontrol"><h1 class="cui__title--primary">Segemented Control</h1>
 <p class="cui__paragraph--primary">The segmented contol is basically just a different representation of a group of radio buttons and can be used in that way.</p>
+<h2 class="cui__title--secondary">fixed percentage</h2>
 <div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
    <input type="radio" name="test" id="test1" checked="checked" />
-   <label for="test1" class="left third">Number 1</label>
+   <label for="test1" class="left third">One</label>
 
    <input type="radio" name="test" id="test2" />
-   <label for="test2" class="center third">Number 2</label>
+   <label for="test2" class="center third">Two</label>
 
    <input type="radio" name="test" id="test3" />
-   <label for="test3" class="right third">Number 3</label>
+   <label for="test3" class="right third">Three</label>
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
    &lt;input type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test1&quot; checked=&quot;checked&quot; /&gt;
-   &lt;label for=&quot;test1&quot; class=&quot;left third&quot;&gt;Number 1&lt;/label&gt;
+   &lt;label for=&quot;test1&quot; class=&quot;left third&quot;&gt;One&lt;/label&gt;
 
    &lt;input type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test2&quot; /&gt;
-   &lt;label for=&quot;test2&quot; class=&quot;center third&quot;&gt;Number 2&lt;/label&gt;
+   &lt;label for=&quot;test2&quot; class=&quot;center third&quot;&gt;Two&lt;/label&gt;
 
    &lt;input type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test3&quot; /&gt;
-   &lt;label for=&quot;test3&quot; class=&quot;right third&quot;&gt;Number 3&lt;/label&gt;
+   &lt;label for=&quot;test3&quot; class=&quot;right third&quot;&gt;Three&lt;/label&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<h2 class="cui__title--secondary">respect content width</h2>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
+   <input type="radio" name="fluid" id="fluid1" checked="checked" />
+   <label for="fluid1" class="left">One</label>
+
+   <input type="radio" name="fluid" id="fluid2" />
+   <label for="fluid2" class="center">A very very long title</label>
+
+   <input type="radio" name="fluid" id="fluid3" />
+   <label for="fluid3" class="right">Three</label>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
+   &lt;input type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label for=&quot;fluid1&quot; class=&quot;left&quot;&gt;One&lt;/label&gt;
+
+   &lt;input type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid2&quot; /&gt;
+   &lt;label for=&quot;fluid2&quot; class=&quot;center&quot;&gt;A very very long title&lt;/label&gt;
+
+   &lt;input type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid3&quot; /&gt;
+   &lt;label for=&quot;fluid3&quot; class=&quot;right&quot;&gt;Three&lt;/label&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 </section><section id="Button"><h1 class="cui__title--primary">Button</h1>
