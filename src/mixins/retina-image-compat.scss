@@ -1,5 +1,5 @@
 @mixin retina-image-compat($filename, $background-size, $extension: png, $retina-filename: null, $retina-suffix: '@2x') {
-  background-image:       url("#{$filename}.#{$extension}");
+  background-image: url("#{$filename}.#{$extension}");
 
   @include hidpi {
     @if $retina-filename {

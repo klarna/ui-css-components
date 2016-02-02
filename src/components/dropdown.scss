@@ -70,7 +70,7 @@
 
     &.is-loading {
         &::after {
-            @include retina-image-compat($ui-toolkit-path + 'img/loader-small', ($grid * 3) ($grid * 3));
+            @include retina-image-compat($root + 'img/loader-small', ($grid * 3) ($grid * 3));
 
             animation: spin 0.8s linear infinite;
             content: "";
@@ -197,7 +197,7 @@
 
     &.is-loading {
         &::after {
-            @include retina-image-compat($ui-toolkit-path + 'img/loader-small', ($grid * 3) ($grid * 3));
+            @include retina-image-compat($root + 'img/loader-small', ($grid * 3) ($grid * 3));
 
             animation: spin 0.8s linear infinite;
             content: "";
