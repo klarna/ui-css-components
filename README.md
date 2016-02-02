@@ -1,6 +1,8 @@
 UI CSS Components
 ==============
 
+**Note: The current `master` version of the CSS Components is deprecated. You can use it if your project already is using the UI Toolkit, but if you want to adopt it in a new project please use the `spike/new-styleguide` branch instead.**
+
 UI CSS Components for Klarna frontends.
 
 Installation
