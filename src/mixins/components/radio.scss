@@ -77,7 +77,7 @@
         }
     }
 
-    .-borderless & {
+    .borderless & {
         &:first-child {
             &::before {
                 top: ($grid * 2.4);

@@ -2,7 +2,7 @@
 @import "../mixins/index";
 
 .cui__loader {
-    @include retina-image-compat($ui-toolkit-path + 'img/loader', ($grid * 4) ($grid * 4));
+    @include retina-image-compat($root + 'img/loader', ($grid * 4) ($grid * 4));
 
     animation: spin 0.8s linear infinite;
     display: block;
@@ -10,40 +10,40 @@
     margin: 0;
     width: ($grid * 4);
 
-    &.-blue {
-        @include retina-image-compat($ui-toolkit-path + 'img/loader-blue', ($grid * 4) ($grid * 4));
+    &.blue {
+        @include retina-image-compat($root + 'img/loader-blue', ($grid * 4) ($grid * 4));
     }
 
-    &.-big {
-        @include retina-image-compat($ui-toolkit-path + 'img/loader-big', ($grid * 6) ($grid * 6));
+    &.big {
+        @include retina-image-compat($root + 'img/loader-big', ($grid * 6) ($grid * 6));
 
         height: ($grid * 6);
         width: ($grid * 6);
 
-        &.-blue {
-            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-big', ($grid * 6) ($grid * 6));
+        &.blue {
+            @include retina-image-compat($root + 'img/loader-blue-big', ($grid * 6) ($grid * 6));
         }
     }
 
-    &.-small {
-        @include retina-image-compat($ui-toolkit-path + 'img/loader-small', ($grid * 3) ($grid * 3));
+    &.small {
+        @include retina-image-compat($root + 'img/loader-small', ($grid * 3) ($grid * 3));
 
         height: ($grid * 3);
         width: ($grid * 3);
 
-        &.-blue {
-            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-small', ($grid * 3) ($grid * 3));
+        &.blue {
+            @include retina-image-compat($root + 'img/loader-blue-small', ($grid * 3) ($grid * 3));
         }
     }
 
-    &.-tiny {
-        @include retina-image-compat($ui-toolkit-path + 'img/loader-tiny', ($grid * 2) ($grid * 2));
+    &.tiny {
+        @include retina-image-compat($root + 'img/loader-tiny', ($grid * 2) ($grid * 2));
 
         height: ($grid * 2);
         width: ($grid * 2);
 
-        &.-blue {
-            @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-tiny', ($grid * 2) ($grid * 2));
+        &.blue {
+            @include retina-image-compat($root + 'img/loader-blue-tiny', ($grid * 2) ($grid * 2));
         }
     }
 }

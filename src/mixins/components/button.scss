@@ -17,20 +17,20 @@
     transition: all .2s ease;
     vertical-align: top;
 
-    &.-small {
+    &.small {
       font-size: ($grid * 2.8);
       line-height: ($grid * 7) - ($grid * 0.4);
       padding: 0 ($grid * 5.6);
     }
 
-    &.-big {
+    &.big {
       letter-spacing: ($grid * 0.01);
       line-height: ($grid * 12) - ($grid * 0.4);
       padding: 0 ($grid * 14);
       text-transform: uppercase;
     }
 
-    &.-right {
+    &.right {
         width: 100%;
 
         @include respond-to-wide {
@@ -40,7 +40,7 @@
         }
     }
 
-    &.-left {
+    &.left {
         float: left;
     }
 
@@ -72,7 +72,7 @@
 
 
 @mixin button__loader($image-name) {
-    @include retina-image-compat($ui-toolkit-path + 'img/' + $image-name, ($grid * 4) ($grid * 4));
+    @include retina-image-compat($root + 'img/' + $image-name, ($grid * 4) ($grid * 4));
 
     animation: spin 0.8s linear infinite;
     display: inline-block;
@@ -88,13 +88,13 @@
 
     // Preload the image
     &:before {
-        content: url($ui-toolkit-path + 'img/' + $image-name + '.png');
+        content: url($root + 'img/' + $image-name + '.png');
         display: none;
         height: 0;
         width: 0;
 
         @include hidpi {
-            content: url($ui-toolkit-path + 'img/' + $image-name + '@2x.png');
+            content: url($root + 'img/' + $image-name + '@2x.png');
         }
     }
 }

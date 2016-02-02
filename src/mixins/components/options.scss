@@ -18,7 +18,7 @@
         }
     }
 
-    &.-borderless {
+    &.borderless {
         border: none;
         padding-top: $grid * .2;
         padding-bottom: $grid * .2;
@@ -54,9 +54,8 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 
-    .-borderless & {
+    .borderless & {
         border-radius: $border-radius;
-        background: none;
 
         &:first-child {
             padding-top: ($grid * 1.8);

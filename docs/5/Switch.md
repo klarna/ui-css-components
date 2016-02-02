@@ -38,7 +38,7 @@ ___
 ### Right
 
 ```html
-<div class="cui__switch -right">
+<div class="cui__switch right">
   This is a toggle switch on the right side
 </div>
 ```
@@ -74,7 +74,7 @@ ___
 ### Checkbox
 
 ```html
-<div class="cui__switch -checkbox">
+<div class="cui__switch checkbox">
   This is a toggle switch with checkbox styles on desktop
 </div>
 ```
@@ -83,7 +83,7 @@ ___
 ### Checkbox disabled
 
 ```html
-<div class="cui__switch -checkbox is-disabled">
+<div class="cui__switch checkbox is-disabled">
   This is a disabled toggle switch with checkbox styles on desktop
 </div>
 ```
@@ -110,7 +110,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -120,7 +120,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -130,7 +130,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -139,7 +139,7 @@ ___
 ### Checkbox
 
 ```html
-<div class="cui__switch--multiple -checkbox">
+<div class="cui__switch--multiple checkbox">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -148,7 +148,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -158,7 +158,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -168,7 +168,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -177,7 +177,7 @@ ___
 ### Borderless
 
 ```html
-<div class="cui__switch--multiple -borderless">
+<div class="cui__switch--multiple borderless">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -186,7 +186,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -196,7 +196,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -206,7 +206,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -215,7 +215,7 @@ ___
 ### Checkbox borderless
 
 ```html
-<div class="cui__switch--multiple -borderless -checkbox">
+<div class="cui__switch--multiple borderless checkbox">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -224,7 +224,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -234,7 +234,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -244,7 +244,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -262,7 +262,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option is-checked">
@@ -272,7 +272,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -282,7 +282,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -291,7 +291,7 @@ ___
 ### Disabled checkbox
 
 ```html
-<div class="cui__switch--multiple -checkbox is-disabled">
+<div class="cui__switch--multiple checkbox is-disabled">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -300,7 +300,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option is-checked">
@@ -310,7 +310,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -320,7 +320,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -329,7 +329,7 @@ ___
 ### Disabled borderless checkbox
 
 ```html
-<div class="cui__switch--multiple -checkbox -borderless is-disabled">
+<div class="cui__switch--multiple checkbox borderless is-disabled">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -338,7 +338,7 @@ ___
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option is-checked">
@@ -348,7 +348,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>   
+    </div>
   </div>
 
   <div class="cui__switch--multiple__option">
@@ -358,7 +358,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
