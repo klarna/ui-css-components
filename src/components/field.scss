@@ -114,6 +114,10 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
+
+        .ie9 & {
+            margin-top: ($grid * -2);
+        }
     }
 
     .is-filled & {
@@ -143,6 +147,10 @@
     color: #3C3C3E;
     outline: none;
     width: 100%;
+
+    .ie9 & {
+        top: ($grid * 3);
+    }
 
     .-big & {
       height: ($grid * 12);

@@ -2,9 +2,21 @@ nav {
   padding: 80px 0 0 80px;
 }
 
+.ie9 nav {
+  padding-top: 77px;
+}
+
 ul {
   list-style: none;
   margin: 0;
+}
+
+ul li {
+  margin: 0;
+}
+
+.ie9 nav ul li {
+  padding-bottom: 10px;
 }
 
 main.cui__baseline__content--main {
