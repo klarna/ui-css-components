@@ -31,24 +31,24 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 <table cellspacing="0" cellpadding="0">
 	<tr>
 		<td>
-			<button class="cui__button--primary -small">
+			<button class="cui__button--primary small">
 				Small
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary -small">
+			<button class="cui__button--secondary small">
 				Small
 			</button>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary -small is-disabled">
+			<button class="cui__button--primary small is-disabled">
 				Small
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary -small is-disabled">
+			<button class="cui__button--secondary small is-disabled">
 				Small
 			</button>
 		</td>
@@ -91,36 +91,36 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary -big">
+			<button class="cui__button--primary big">
 				Primary
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary -big">
+			<button class="cui__button--secondary big">
 				Secondary
 			</button>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary -big is-disabled">
+			<button class="cui__button--primary big is-disabled">
 				Primary
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary -big is-disabled">
+			<button class="cui__button--secondary big is-disabled">
 				Secondary
 			</button>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary -big">
+			<button class="cui__button--primary big">
 				<div class="cui__button--primary__loader" />
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary -big">
+			<button class="cui__button--secondary big">
 				<div class="cui__button--secondary__loader" />
 			</button>
 		</td>
@@ -156,13 +156,13 @@ Buttons have 3 different sizes. Big buttons should be used for calls to action, 
 
 <div class="example-block" style="text-align: center;">
 	<div class="example">
-		<button class="cui__button--primary -big">
+		<button class="cui__button--primary big">
 			Buy now!
 		</button>
 		<button class="cui__button--primary">
 			Finish
 		</button>
-		<button class="cui__button--primary -small">
+		<button class="cui__button--primary small">
 			Continue
 		</button>
 	</div>
@@ -203,7 +203,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Small
 
 ```html
-<button class="cui__button--primary -small">
+<button class="cui__button--primary small">
   Primary small
 </button>
 ```
@@ -212,7 +212,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Small & disabled
 
 ```html
-<button class="cui__button--primary -small is-disabled">
+<button class="cui__button--primary small is-disabled">
   Primary small disabled
 </button>
 ```
@@ -221,7 +221,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Big
 
 ```html
-<button class="cui__button--primary -big">
+<button class="cui__button--primary big">
   Primary big
 </button>
 ```
@@ -230,7 +230,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Big & loading
 
 ```html
-<button class="cui__button--primary -big">
+<button class="cui__button--primary big">
   <div class="cui__button--primary__loader" />
 </button>
 ```
@@ -239,7 +239,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Big & disabled
 
 ```html
-<button class="cui__button--primary -big is-disabled">
+<button class="cui__button--primary big is-disabled">
   Primary big disabled
 </button>
 ```
@@ -277,7 +277,7 @@ This should be used for your secondary actions.
 ### Small
 
 ```html
-<button class="cui__button--secondary -small">
+<button class="cui__button--secondary small">
   Secondary small
 </button>
 ```
@@ -286,7 +286,7 @@ This should be used for your secondary actions.
 ### Small & disabled
 
 ```html
-<button class="cui__button--secondary -small is-disabled">
+<button class="cui__button--secondary small is-disabled">
   Secondary small disabled
 </button>
 ```
@@ -295,7 +295,7 @@ This should be used for your secondary actions.
 ### Big
 
 ```html
-<button class="cui__button--secondary -big">
+<button class="cui__button--secondary big">
   Secondary big
 </button>
 ```
@@ -304,7 +304,7 @@ This should be used for your secondary actions.
 ### Big & loading
 
 ```html
-<button class="cui__button--secondary -big">
+<button class="cui__button--secondary big">
   <div class="cui__button--secondary__loader" />
 </button>
 ```
@@ -313,7 +313,7 @@ This should be used for your secondary actions.
 ### Big & disabled
 
 ```html
-<button class="cui__button--secondary -big is-disabled">
+<button class="cui__button--secondary big is-disabled">
   Secondary big disabled
 </button>
 ```

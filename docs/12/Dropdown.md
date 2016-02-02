@@ -34,7 +34,7 @@ ___
 ## Native
 
 <div class="cui__fieldset">
-  <div class="cui__dropdown--native -top">
+  <div class="cui__dropdown--native top">
     <label class="cui__dropdown--native__label">
       Name
     </label>
@@ -43,7 +43,7 @@ ___
       <option>Sven</option>
     </select>
   </div>
-  <div class="cui__dropdown--native -quarter -square">
+  <div class="cui__dropdown--native quarter square">
     <label class="cui__dropdown--native__label">
       Title
     </label>
@@ -52,7 +52,7 @@ ___
       <option>Eng</option>
     </select>
   </div>
-  <div class="cui__dropdown--native -half -center">
+  <div class="cui__dropdown--native half center">
     <label class="cui__dropdown--native__label">
       Title
     </label>
@@ -61,7 +61,7 @@ ___
       <option>Eng</option>
     </select>
   </div>
-  <div class="cui__dropdown--native -quarter -center">
+  <div class="cui__dropdown--native quarter center">
     <label class="cui__dropdown--native__label">
       Title
     </label>
@@ -70,7 +70,7 @@ ___
       <option>Eng</option>
     </select>
   </div>
-  <div class="cui__dropdown--native -bottom-left -half">
+  <div class="cui__dropdown--native bottom-left half">
     <label class="cui__dropdown--native__label">
       Title
     </label>
@@ -79,7 +79,7 @@ ___
       <option>Eng</option>
     </select>
   </div>
-  <div class="cui__dropdown--native -bottom-right -half">
+  <div class="cui__dropdown--native bottom-right half">
     <label class="cui__dropdown--native__label">
       Title
     </label>
@@ -200,7 +200,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ### Error
 
 ```html
-<div class="cui__dropdown--native is-error -half -left">
+<div class="cui__dropdown--native is-error half left">
   <div class="cui__dropdown--native__floating-label">
     You need to select some of the options
   </div>
@@ -215,7 +215,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
   </select>
 </div>
 
-<div class="cui__dropdown--native is-error -half -right">
+<div class="cui__dropdown--native is-error half right">
   <div class="cui__dropdown--native__floating-label">
     Sorry, the option you selected is not available
   </div>
@@ -235,7 +235,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ### Warning
 
 ```html
-<div class="cui__dropdown--native is-warning -half -left">
+<div class="cui__dropdown--native is-warning half left">
   <div class="cui__dropdown--native__floating-label">
     It is important that you select an option
   </div>
@@ -250,7 +250,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
   </select>
 </div>
 
-<div class="cui__dropdown--native is-warning -half -right">
+<div class="cui__dropdown--native is-warning half right">
   <div class="cui__dropdown--native__floating-label">
     The option you selected is not recommended
   </div>
@@ -279,7 +279,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -289,7 +289,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--custom__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -299,7 +299,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--custom__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>  
+    </div>
   </div>
 </div>
 ```
@@ -317,7 +317,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -327,7 +327,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--custom__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -355,7 +355,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -393,7 +393,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -431,7 +431,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--custom__option">
@@ -451,7 +451,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--custom__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>    
+    </div>
   </div>
 </div>
 ```
@@ -469,7 +469,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -479,7 +479,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -489,7 +489,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -498,7 +498,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 ### Borderless
 
 ```html
-<div class="cui__dropdown--radio -borderless">
+<div class="cui__dropdown--radio borderless">
   <div class="cui__dropdown--radio__option is-selected">
     <div class="cui__dropdown--radio__option__heading">
       This is a radio selector
@@ -507,7 +507,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -517,7 +517,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -527,7 +527,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>   
+    </div>
   </div>
 </div>
 ```
@@ -545,7 +545,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -555,7 +555,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>      
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -565,7 +565,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>      
+    </div>
   </div>
 </div>
 ```
@@ -583,7 +583,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
       <div class="cui__label">promo</div>
-    </div>  
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -593,7 +593,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-    </div>      
+    </div>
   </div>
 
   <div class="cui__dropdown--radio__option">
@@ -603,7 +603,7 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
 
     <div class="cui__dropdown--radio__option__description">
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
-    </div>      
+    </div>
   </div>
 </div>
 ```

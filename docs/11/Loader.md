@@ -16,29 +16,29 @@ ___
 
 ```html
 <div class="cui__loader"></div>
-<div class="cui__loader -blue"></div>
+<div class="cui__loader blue"></div>
 ```
 
 <a name="Loader/big"></a>
 ## Big
 
 ```html
-<div class="cui__loader -big"></div>
-<div class="cui__loader -big -blue"></div>
+<div class="cui__loader big"></div>
+<div class="cui__loader big blue"></div>
 ```
 
 <a name="Loader/small"></a>
 ## Small
 
 ```html
-<div class="cui__loader -small"></div>
-<div class="cui__loader -small -blue"></div>
+<div class="cui__loader small"></div>
+<div class="cui__loader small blue"></div>
 ```
 
 <a name="Loader/tiny"></a>
 ## Tiny
 
 ```html
-<div class="cui__loader -tiny"></div>
-<div class="cui__loader -tiny -blue"></div>
+<div class="cui__loader tiny"></div>
+<div class="cui__loader tiny blue"></div>
 ```

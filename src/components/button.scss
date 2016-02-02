@@ -36,7 +36,7 @@
         color: #fff;
     }
 
-    .cui__button--primary.-right + &.-right {
+    .cui__button--primary.right + &.right {
         margin-top: ($grid * 4);
 
         @include respond-to-wide {

@@ -9,102 +9,102 @@
         margin-left: ($grid * -.2);
     }
 
-    &.-non-responsive {
+    &.non-responsive {
         margin-left: ($grid * -.2);
     }
 
-    &.-half {
+    &.half {
         @include respond-to-wide {
             width: calc(50% + ($grid * .2));
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             width: calc(50% + ($grid * .2));
         }
     }
 
-    &.-forty {
+    &.forty {
         @include respond-to-wide {
             width: calc(40% + ($grid * .2));
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             width: calc(40% + ($grid * .2));
         }
     }
 
-    &.-quarter {
+    &.quarter {
         @include respond-to-wide {
             width: calc(25% + ($grid * .2));
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             width: calc(25% + ($grid * .2));
         }
     }
 
-    &.-twenty {
+    &.twenty {
         @include respond-to-wide {
             width: calc(20% + ($grid * .2));
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             width: calc(20% + ($grid * .2));
         }
     }
 }
 
 @mixin stackable () {
-    &.-square {
+    &.square {
         border-radius: 0;
     }
 
-    &.-half {
+    &.half {
         @include respond-to-wide {
             @include partial-width(50%);
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             @include partial-width(50%);
         }
     }
 
-    &.-forty {
+    &.forty {
         @include respond-to-wide {
             @include partial-width(40%);
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             @include partial-width(40%);
         }
     }
 
-    &.-quarter {
+    &.quarter {
         @include respond-to-wide {
             @include partial-width(25%);
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             @include partial-width(25%);
         }
     }
 
-    &.-twenty {
+    &.twenty {
         @include respond-to-wide {
             @include partial-width(20%);
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             @include partial-width(20%);
         }
     }
 
-    &.-left {
+    &.left {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
-    &.-center {
+    &.center {
         border-radius: 0;
         @include stacked-responsiveness();
 
@@ -115,7 +115,7 @@
         }
     }
 
-    &.-right {
+    &.right {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         @include stacked-responsiveness();
@@ -127,12 +127,12 @@
         }
     }
 
-    &.-top {
+    &.top {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
 
-    &.-top-left {
+    &.top-left {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
 
@@ -140,12 +140,12 @@
             border-top-right-radius: 0;
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             border-top-right-radius: 0;
         }
     }
 
-    &.-top-right {
+    &.top-right {
         border-radius: 0;
         clear: right;
 
@@ -153,26 +153,26 @@
             border-top-right-radius: $border-radius;
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             border-top-right-radius: $border-radius;
         }
 
         @include stacked-responsiveness();
     }
 
-    &.-bottom-left {
+    &.bottom-left {
         border-radius: 0;
 
         @include respond-to-wide {
             border-bottom-left-radius: $border-radius;
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             border-bottom-left-radius: $border-radius;
         }
     }
 
-    &.-bottom-right {
+    &.bottom-right {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 
@@ -180,7 +180,7 @@
             border-bottom-left-radius: 0;
         }
 
-        &.-non-responsive {
+        &.non-responsive {
             border-bottom-left-radius: 0;
         }
         @include stacked-responsiveness();

@@ -105,7 +105,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
 
   <ul class="overview" style="width: 45%; float: left;">
     <li>
-      <div class="cui__field -big">
+      <div class="cui__field big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -113,7 +113,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
       </div>
     </li>
     <li>
-      <div class="cui__field is-focused -big">
+      <div class="cui__field is-focused big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -121,7 +121,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
       </div>
     </li>
     <li>
-      <div class="cui__field is-focused is-filled -big">
+      <div class="cui__field is-focused is-filled big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -129,7 +129,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
       </div>
     </li>
     <li>
-      <div class="cui__field is-filled -big">
+      <div class="cui__field is-filled big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -137,7 +137,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
       </div>
     </li>
     <li>
-      <div class="cui__field is-error -big">
+      <div class="cui__field is-error big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -145,7 +145,7 @@ Here's a showcase of all fields. Pass your mouse over the elements to see the ho
       </div>
     </li>
     <li>
-      <div class="cui__field is-warning -big">
+      <div class="cui__field is-warning big">
         <label class="cui__field__label">
           Please write your email address
         </label>
@@ -167,7 +167,7 @@ When fields are blank, their labels will behave as placeholders. When the field 
     </label>
     <input class="cui__field__input" oninput="floatingLabel(this)" />
   </div>
-  <div class="cui__field -big" style="width: 45%; float: left; margin-left: 10px;">
+  <div class="cui__field big" style="width: 45%; float: left; margin-left: 10px;">
     <label class="cui__field__label">
       Please write your email address
     </label>
@@ -285,14 +285,14 @@ Should be used when there's something that requires user's attention to the fill
 Should be used when it's important to show the field to the user but she should not be able to edit it.
 
 ```html
-<div class="cui__field is-disabled -left -half">
+<div class="cui__field is-disabled left half">
     <label class="cui__field__label">
         Enter your email address
     </label>
     <input disabled class="cui__field__input" value="email@exanple.com" />
 </div>
 
-<div class="cui__field is-disabled -right -half">
+<div class="cui__field is-disabled right half">
     <label class="cui__field__label">
         Enter your email address
     </label>
@@ -316,7 +316,7 @@ demo.
   <ul class="overview">
     <li>
 				<div class="cui__fieldset">
-						<div class="cui__field -top-left -half -non-responsive">
+						<div class="cui__field top-left half non-responsive">
 							<label class="cui__field__label">
 								Name
 							</label>
@@ -327,7 +327,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -top-right -half -non-responsive">
+						<div class="cui__field top-right half non-responsive">
 							<label class="cui__field__label">
 								Lastname
 							</label>
@@ -338,7 +338,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -square">
+						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 1
 							</label>
@@ -349,7 +349,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -square">
+						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 2
 							</label>
@@ -360,7 +360,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -square -half">
+						<div class="cui__field square half">
 							<label class="cui__field__label">
 								City
 							</label>
@@ -371,7 +371,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -center -quarter">
+						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								State
 							</label>
@@ -382,7 +382,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -center -quarter">
+						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								Zip
 							</label>
@@ -393,7 +393,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -bottom-left -half">
+						<div class="cui__field bottom-left half">
 							<label class="cui__field__label">
 								Phone number
 							</label>
@@ -404,7 +404,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__field -bottom-right -half">
+						<div class="cui__field bottom-right half">
 							<label class="cui__field__label">
 								Email
 							</label>
@@ -425,13 +425,13 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -left -half">
+	<div class="cui__field left half">
 		<label class="cui__field__label">
 			Name
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -right -half">
+	<div class="cui__field right half">
 		<label class="cui__field__label">
 			Lastname
 		</label>
@@ -445,13 +445,13 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -top-left -half">
+	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			Name
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -top-right -half">
+	<div class="cui__field top-right half">
 		<label class="cui__field__label">
 			Lastname
 		</label>
@@ -465,7 +465,7 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -top">
+	<div class="cui__field top">
 		<label class="cui__field__label">
 			Email address
 		</label>
@@ -479,13 +479,13 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -bottom-left -half">
+	<div class="cui__field bottom-left half">
 		<label class="cui__field__label">
 			City
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -bottom-right -half">
+	<div class="cui__field bottom-right half">
 		<label class="cui__field__label">
 			Country
 		</label>
@@ -499,7 +499,7 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -bottom">
+	<div class="cui__field bottom">
 		<label class="cui__field__label">
 			Password
 		</label>
@@ -513,19 +513,19 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -top-left -half">
+	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			City
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -top-right -half">
+	<div class="cui__field top-right half">
 		<label class="cui__field__label">
 			Country
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -square">
+	<div class="cui__field square">
 		<label class="cui__field__label">
 			Country
 		</label>
@@ -539,19 +539,19 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -top-left -half">
+	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			City
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -center -quarter">
+	<div class="cui__field center quarter">
 		<label class="cui__field__label">
 			Zip
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -top-right -quarter">
+	<div class="cui__field top-right quarter">
 		<label class="cui__field__label">
 			Country
 		</label>
@@ -565,19 +565,19 @@ demo.
 
 ```html
 <div class="cui__fielset">
-	<div class="cui__field -top-left -twenty">
+	<div class="cui__field top-left twenty">
 		<label class="cui__field__label">
 			Title
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -center -forty">
+	<div class="cui__field center forty">
 		<label class="cui__field__label">
 			Name
 		</label>
 		<input class="cui__field__input" />
 	</div>
-	<div class="cui__field -top-right -forty">
+	<div class="cui__field top-right forty">
 		<label class="cui__field__label">
 			Lastname
 		</label>

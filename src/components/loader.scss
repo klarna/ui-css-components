@@ -10,39 +10,39 @@
     margin: 0;
     width: ($grid * 4);
 
-    &.-blue {
+    &.blue {
         @include retina-image-compat($ui-toolkit-path + 'img/loader-blue', ($grid * 4) ($grid * 4));
     }
 
-    &.-big {
+    &.big {
         @include retina-image-compat($ui-toolkit-path + 'img/loader-big', ($grid * 6) ($grid * 6));
 
         height: ($grid * 6);
         width: ($grid * 6);
 
-        &.-blue {
+        &.blue {
             @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-big', ($grid * 6) ($grid * 6));
         }
     }
 
-    &.-small {
+    &.small {
         @include retina-image-compat($ui-toolkit-path + 'img/loader-small', ($grid * 3) ($grid * 3));
 
         height: ($grid * 3);
         width: ($grid * 3);
 
-        &.-blue {
+        &.blue {
             @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-small', ($grid * 3) ($grid * 3));
         }
     }
 
-    &.-tiny {
+    &.tiny {
         @include retina-image-compat($ui-toolkit-path + 'img/loader-tiny', ($grid * 2) ($grid * 2));
 
         height: ($grid * 2);
         width: ($grid * 2);
 
-        &.-blue {
+        &.blue {
             @include retina-image-compat($ui-toolkit-path + 'img/loader-blue-tiny', ($grid * 2) ($grid * 2));
         }
     }
