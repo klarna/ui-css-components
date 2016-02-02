@@ -133,7 +133,7 @@
             </div>
         </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>
             $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
               $(this).toggleClass('is-selected');
@@ -149,7 +149,7 @@
               }
             })
 
-            $(window).keypress(function(e){
+            $(document).keypress(function(e){
               if (e.which === 103) {
                 $('body').toggleClass('cui__baseline__grid');
               }

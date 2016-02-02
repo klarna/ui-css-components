@@ -259,7 +259,7 @@
                     />
                 </div>
 
-                <div class="cui__field -top-right forty">
+                <div class="cui__field top-right forty">
                 	<label class="cui__field__label">
                 		Lastname
                 	</label>
@@ -365,7 +365,7 @@
             </div>
         </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>
             function floatingLabel(input) {
               if(input.value){
@@ -387,7 +387,7 @@
                 floatingLabel(input)
             })
 
-            $(window).keypress(function(e){
+            $(document).keypress(function(e){
               if (e.which === 103) {
                 $('body').toggleClass('cui__baseline__grid');
               }

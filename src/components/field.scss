@@ -115,7 +115,7 @@
 
         transform: translate(0, ($grid * -2));
 
-        .ie9 & {
+        .ie9 &, .ie8 & {
             margin-top: ($grid * -2);
         }
     }
@@ -148,7 +148,7 @@
     outline: none;
     width: 100%;
 
-    .ie9 & {
+    .ie9 &, .ie8 & {
         top: ($grid * 3);
     }
 
@@ -173,10 +173,6 @@
     .safari &,
     .ios & {
         -webkit-transform: translate3d(0, 0, 0);
-    }
-
-    @include respond-to-ie(8) {
-        border: ($grid * .2) solid $border-color;
     }
 }
 

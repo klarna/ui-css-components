@@ -13,6 +13,10 @@ $stackable-border-width: $grid * 0.2;
 
     &.non-responsive {
         margin-left: ($grid * -.2);
+
+        .ie8 & {
+            margin-left: 0;
+        }
     }
 
     &.half {
