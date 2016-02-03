@@ -2,12 +2,12 @@
 
 .cui__segmentedcontrol {
     overflow: auto;
-    
-    input {
+
+    .cui__segmentedcontrol__input {
         display: none;
     }
 
-    label {
+    .cui__segmentedcontrol__button {
         @include stackable();
 
         border: ($grid * .2) solid $border-color;
@@ -25,18 +25,14 @@
         vertical-align: top;
     }
 
-    label:hover {
+    .cui__segmentedcontrol__button:hover {
         color: map-get($colors, klarna-blue);
     }
 
-    input:checked + label {
+    .cui__segmentedcontrol__input:checked + .cui__segmentedcontrol__button {
         border: ($grid * .2) solid map-get($colors, klarna-blue);
         background: map-get($colors, klarna-blue);
         color: map-get($colors, white);
         z-index: 5;
-    }
-
-    &.respect-content {
-
     }
 }
