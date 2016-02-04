@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Baseline">Baseline</a></li><li><a href="#Loader">Loader</a></li><li><a href="#Dropdown">Dropdown</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li><li><a href="#Switch">Switch</a></li><li><a href="#Text">Text</a></li><li><a href="#Icon">Icon</a></li><li><a href="#Link">Link</a></li></ul></nav><main><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
+<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Baseline">Baseline</a></li><li><a href="#Loader">Loader</a></li><li><a href="#Dropdown">Dropdown</a></li><li><a href="#Segmentedcontrol">Segmentedcontrol</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li><li><a href="#Switch">Switch</a></li><li><a href="#Text">Text</a></li><li><a href="#Icon">Icon</a></li><li><a href="#Link">Link</a></li></ul></nav><main><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-toolkit guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -987,6 +987,50 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+</section><section id="Segmentedcontrol"><h1 class="cui__title--primary">Segemented Control</h1>
+<p class="cui__paragraph--primary">The segmented contol is basically just a different representation of a group of radio buttons and can be used in that way.</p>
+<h2 class="cui__title--secondary">fixed percentage</h2>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left third" for="test1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test2" />
+   <label class="cui__segmentedcontrol__button right third" for="test2">Two</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test3" />
+   <label class="cui__segmentedcontrol__button right third" for="test3">Three</label>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button left third&quot; for=&quot;test1&quot;&gt;One&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test2&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right third&quot; for=&quot;test2&quot;&gt;Two&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test3&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right third&quot; for=&quot;test3&quot;&gt;Three&lt;/label&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<h2 class="cui__title--secondary">respect content width</h2>
+<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left" for="fluid1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid2" />
+   <label class="cui__segmentedcontrol__button center" for="fluid2">A very very long title</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid3" />
+   <label class="cui__segmentedcontrol__button right" for="fluid3">Three</label>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button left&quot; for=&quot;fluid1&quot;&gt;One&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid2&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button center&quot; for=&quot;fluid2&quot;&gt;A very very long title&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid3&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right&quot; for=&quot;fluid3&quot;&gt;Three&lt;/label&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 </section><section id="Button"><h1 class="cui__title--primary">Button</h1>
