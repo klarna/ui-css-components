@@ -102,13 +102,17 @@
         color: map-get($colors, 'grey-text');
         transform: translate(0, ($grid * -2));
 
-        .ie9 & {
+        .ie9 &, .ie8 & {
             margin-top: ($grid * -2);
         }
     }
 
     .is-disabled & {
         color: map-get($colors, grey-lines);
+    }
+
+    .ie9 &, .ie8 & {
+        z-index: -1;
     }
 }
 
@@ -143,7 +147,7 @@
 
         transform: translate(0, ($grid * -2));
 
-        .ie9 & {
+        .ie9 &, .ie8 & {
             margin-top: ($grid * -2);
         }
     }

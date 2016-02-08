@@ -626,10 +626,12 @@
     color: #9e9ea0;
     -webkit-transform: translate(0, -10px);
             transform: translate(0, -10px); }
-    .ie9 .is-selected .cui__dropdown--native__label {
+    .ie9 .is-selected .cui__dropdown--native__label, .ie8 .is-selected .cui__dropdown--native__label {
       margin-top: -10px; }
   .is-disabled .cui__dropdown--native__label {
     color: #cbcbcd; }
+  .ie9 .cui__dropdown--native__label, .ie8 .cui__dropdown--native__label {
+    z-index: -1; }
 
 .cui__dropdown--native__current-option {
   font-size: 14px;
@@ -665,7 +667,7 @@
     -webkit-font-smoothing: antialiased;
     -webkit-transform: translate(0, -10px);
             transform: translate(0, -10px); }
-    .ie9 .is-error .cui__dropdown--native__floating-label, .ie9 .is-warning .cui__dropdown--native__floating-label {
+    .ie9 .is-error .cui__dropdown--native__floating-label, .ie8 .is-error .cui__dropdown--native__floating-label, .ie9 .is-warning .cui__dropdown--native__floating-label, .ie8 .is-warning .cui__dropdown--native__floating-label {
       margin-top: -10px; }
   .is-error .cui__dropdown--native__floating-label {
     color: #e63200; }
@@ -1354,6 +1356,8 @@
     color: #ecb800; }
   .is-disabled .cui__field__label, .is-disabled .cui__field--icon__label {
     color: #cbcbcd; }
+  .ie9 .cui__field__label, .ie9 .cui__field--icon__label, .ie8 .cui__field__label, .ie8 .cui__field--icon__label {
+    z-index: 1; }
 
 .cui__field__input, .cui__field--icon__input {
   font-size: 14px;
@@ -1371,7 +1375,10 @@
   outline: none;
   width: 100%; }
   .ie9 .cui__field__input, .ie9 .cui__field--icon__input, .ie8 .cui__field__input, .ie8 .cui__field--icon__input {
-    top: 15px; }
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+    position: relative;
+    top: 15px;
+    z-index: 10; }
   .big .cui__field__input, .big .cui__field--icon__input {
     height: 60px; }
   .big.is-filled .cui__field__input, .big.is-filled .cui__field--icon__input, .big.is-error .cui__field__input, .big.is-error .cui__field--icon__input, .big.is-warning .cui__field__input, .big.is-warning .cui__field--icon__input {

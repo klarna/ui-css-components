@@ -135,6 +135,10 @@
     .is-disabled & {
         color: map-get($colors, grey-lines);
     }
+
+    .ie9 &, .ie8 & {
+        z-index: 1;
+    }
 }
 
 .cui__field__input {
@@ -149,7 +153,10 @@
     width: 100%;
 
     .ie9 &, .ie8 & {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+        position: relative;
         top: ($grid * 3);
+        z-index: 10;
     }
 
     .big & {
