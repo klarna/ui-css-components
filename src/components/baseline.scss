@@ -31,4 +31,9 @@
         width: ($grid * 102);
         margin: 0 auto;
     }
+
+    .ie8 & {
+        width: ($grid * 102);
+        margin: 0 auto;        
+    }
 }

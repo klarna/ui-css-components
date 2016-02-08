@@ -70,6 +70,9 @@
     .cui__baseline__content--main {
       width: 510px;
       margin: 0 auto; } }
+  .ie8 .cui__baseline__content--main {
+    width: 510px;
+    margin: 0 auto; }
 
 @keyframes spin {
   to {
