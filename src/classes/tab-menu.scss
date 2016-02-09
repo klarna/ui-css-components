@@ -1,8 +1,8 @@
 @import "../mixins/index";
 
 .cui__tab-menu {
-    border-bottom: ($grid * .4) solid map-get($colors, grey-lines);
-    margin-bottom: ($grid * -.4);
+    border-bottom: ($grid * .2) solid map-get($colors, grey-lines);
+    margin-bottom: ($grid * -.2);
 
     &:after {
         content: "";
@@ -19,22 +19,28 @@
     @include typography(($grid * 2.8), regular);
     @include stackable();
 
-    border-bottom: ($grid * .4) solid map-get($colors, grey-lines);
-    box-sizing: border-box;
+    border-bottom: ($grid * .2) solid map-get($colors, grey-lines);
     cursor: pointer;
     color: map-get($colors, grey-text);
     display: inline-block;
     float: left;
-    line-height: ($grid * 8);
-    margin-bottom: ($grid * -.4);
-    padding: 0 ($grid * 11);
+    height: ($grid * 6);
+    line-height: ($grid * 6);
+    margin-bottom: ($grid * -.2);
+    padding: ($grid) 0 ($grid) 0;
     position: relative;
     text-align: center;
     transition: color .2s ease, border-color .4s ease;
     z-index: 10;
 
-    .compact & {
-        padding: 0 ($grid * 6);
+    .fluid & {
+        padding: ($grid * 2) 0 ($grid * 2) 0;
+        margin-left: ($grid * 4);
+        margin-right: ($grid * 4);
+
+        &:nth-child(2) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -43,6 +49,10 @@
 }
 
 .cui__tab-menu__input:checked + .cui__tab-menu__button {
+    border-bottom-width: ($grid * .4);
     border-color: map-get($colors, klarna-blue);
     color: map-get($colors, klarna-blue);
+    height: ($grid * 5.8);
+    margin-bottom: ($grid * -.4);
+    padding-bottom: ($grid * -.2);
 }

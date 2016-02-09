@@ -7,7 +7,6 @@
 - [Tab menu](#Navigation/tab menu)
   - [fixed percentage](#Navigation/tab menu/fixed percentage)
   - [respect content width](#Navigation/tab menu/respect content width)
-  - [compact](#Navigation/tab menu/compact)
 
 <a name="Navigation/examples"></a>
 ## Examples
@@ -72,7 +71,7 @@ The tab menu is a different styling of the same navigation concept as the segmen
 <a name="Navigation/tab menu/respect content width"></a>
 ### respect content width
 ```html
-<div class="cui__tab-menu">
+<div class="cui__tab-menu fluid">
    <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid1" checked="checked" />
    <label class="cui__tab-menu__button" for="tab-menu-fluid1">One</label>
 
@@ -81,20 +80,5 @@ The tab menu is a different styling of the same navigation concept as the segmen
 
    <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid3" />
    <label class="cui__tab-menu__button" for="tab-menu-fluid3">Three</label>
-</div>
-```
-
-<a name="Navigation/tab menu/compact"></a>
-### compact
-```html
-<div class="cui__tab-menu compact">
-   <input class="cui__tab-menu__input" type="radio" name="tab-menu-compact" id="tab-menu-compact1" checked="checked" />
-   <label class="cui__tab-menu__button" for="tab-menu-compact1">One</label>
-
-   <input class="cui__tab-menu__input" type="radio" name="tab-menu-compact" id="tab-menu-compact2" />
-   <label class="cui__tab-menu__button" for="tab-menu-compact2">A very very long title</label>
-
-   <input class="cui__tab-menu__input" type="radio" name="tab-menu-compact" id="tab-menu-compact3" />
-   <label class="cui__tab-menu__button" for="tab-menu-compact3">Three</label>
 </div>
 ```

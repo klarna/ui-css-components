@@ -2194,7 +2194,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
-    color: #3c3c3e;
+    color: #9e9ea0;
     display: inline-block;
     float: left;
     line-height: 38px;
@@ -2449,8 +2449,8 @@
  * Adds all atributes to define the best typography as possible
  */
 .cui__tab-menu {
-  border-bottom: 2px solid #cbcbcd;
-  margin-bottom: -2px; }
+  border-bottom: 1px solid #cbcbcd;
+  margin-bottom: -1px; }
   .cui__tab-menu:after {
     content: "";
     display: block;
@@ -2465,15 +2465,15 @@
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  border-bottom: 2px solid #cbcbcd;
-  box-sizing: border-box;
+  border-bottom: 1px solid #cbcbcd;
   cursor: pointer;
   color: #9e9ea0;
   display: inline-block;
   float: left;
-  line-height: 40px;
-  margin-bottom: -2px;
-  padding: 0 55px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: -1px;
+  padding: 5px 0 5px 0;
   position: relative;
   text-align: center;
   -webkit-transition: color .2s ease, border-color .4s ease;
@@ -2679,15 +2679,23 @@
         width: calc(20% + ($grid * .2)); } }
     .cui__tab-menu__button.bottom-right.twenty.non-responsive {
       width: calc(20% + ($grid * .2)); }
-  .compact .cui__tab-menu__button {
-    padding: 0 30px; }
+  .fluid .cui__tab-menu__button {
+    padding: 10px 0 10px 0;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .fluid .cui__tab-menu__button:nth-child(2) {
+      margin-left: 0; }
 
 .cui__tab-menu__button:hover {
   color: #0074c8; }
 
 .cui__tab-menu__input:checked + .cui__tab-menu__button {
+  border-bottom-width: 2px;
   border-color: #0074c8;
-  color: #0074c8; }
+  color: #0074c8;
+  height: 29px;
+  margin-bottom: -2px;
+  padding-bottom: -1px; }
 
 @keyframes spin {
   to {
