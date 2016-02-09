@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="cui__baseline">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Checkout fieldsets</title>
+        <link rel="stylesheet" href="../../dist/ui-toolkit.css" />
+    </head>
+
+    <body class="cui__baseline__content--main">
+        <nav>
+            <p class="cui__paragraph--primary">
+                <a class="cui__link" href="../../">Back to the Showroom</a>
+            </p>
+        </nav>
+
+        <div class="cui__tab-menu">
+           <input class="cui__tab-menu__input" type="radio" name="test" id="test1" checked="checked" />
+           <label class="cui__tab-menu__button" for="test1">One</label>
+
+           <input class="cui__tab-menu__input" type="radio" name="test" id="test2" />
+           <label class="cui__tab-menu__button" for="test2">Two</label>
+
+           <input class="cui__tab-menu__input" type="radio" name="test" id="test3" />
+           <label class="cui__tab-menu__button" for="test3">Three</label>
+        </div>
+
+        <div class="cui__baseline__spacer x4"></div>
+
+        <div class="cui__segmentedcontrol">
+           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented1" checked="checked" />
+           <label class="cui__segmentedcontrol__button left third" for="segmented1">One</label>
+
+           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented2" />
+           <label class="cui__segmentedcontrol__button center third" for="segmented2">Two</label>
+
+           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented3" />
+           <label class="cui__segmentedcontrol__button right third" for="segmented3">Three</label>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script>
+            function floatingLabel(input) {
+              if(input.value){
+                $(input).parent().addClass("is-filled");
+              } else {
+                $(input).parent().removeClass("is-filled");
+              }
+            }
+
+            function dofocus(component) {
+                $(component).parent().addClass('is-focused');
+            }
+
+            function doblur(component) {
+                $(component).parent().removeClass('is-focused');
+            }
+
+            $('input').each(function (index, input) {
+                floatingLabel(input)
+            })
+
+            $(window).keypress(function(e){
+              if (e.which === 103) {
+                $('body').toggleClass('cui__baseline__grid');
+              }
+            })
+        </script>
+    </body>
+</html>

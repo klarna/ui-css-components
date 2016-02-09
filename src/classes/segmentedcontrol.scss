@@ -8,6 +8,7 @@
     }
 
     .cui__segmentedcontrol__button {
+        @include typography(($grid * 2.8), regular);
         @include stackable();
 
         border: ($grid * .2) solid $border-color;

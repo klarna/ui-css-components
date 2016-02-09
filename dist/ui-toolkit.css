@@ -55,6 +55,22 @@
       width: 510px;
       margin: 0 auto; } }
 
+.cui__baseline__spacer {
+  clear: both;
+  display: block;
+  height: 5px;
+  width: 100%; }
+  .cui__baseline__spacer.x2 {
+    height: 10px; }
+  .cui__baseline__spacer.x3 {
+    height: 15px; }
+  .cui__baseline__spacer.x4 {
+    height: 20px; }
+  .cui__baseline__spacer.x5 {
+    height: 25px; }
+  .cui__baseline__spacer.x6 {
+    height: 30px; }
+
 @keyframes spin {
   to {
     -webkit-transform: rotate(1turn);
@@ -2169,6 +2185,11 @@
   .cui__segmentedcontrol .cui__segmentedcontrol__input {
     display: none; }
   .cui__segmentedcontrol .cui__segmentedcontrol__button {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
     border: 1px solid #cbcbcd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -2340,6 +2361,9 @@
           width: calc(20% + ($grid * .2)); } }
       .cui__segmentedcontrol .cui__segmentedcontrol__button.top-right.twenty.non-responsive {
         width: calc(20% + ($grid * .2)); }
+    .cui__segmentedcontrol .cui__segmentedcontrol__button.bottom {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0; }
     .cui__segmentedcontrol .cui__segmentedcontrol__button.bottom-left {
       border-radius: 0; }
       @media screen and (min-width: 569px) {
@@ -2387,6 +2411,283 @@
     background: #0074c8;
     color: #fff;
     z-index: 5; }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+/*******************************************************************************
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie { // Targets all IE browsers
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie(8) { // Targets only IE 8
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
+        padding-top: 22px;
+    }
+}
+*******************************************************************************/
+/**
+ * Adds all atributes to define the best typography as possible
+ */
+.cui__tab-menu {
+  border-bottom: 2px solid #cbcbcd;
+  margin-bottom: -2px; }
+  .cui__tab-menu:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.cui__tab-menu__input {
+  display: none; }
+
+.cui__tab-menu__button {
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 2px solid #cbcbcd;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #9e9ea0;
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  margin-bottom: -2px;
+  padding: 0 55px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: color .2s ease, border-color .4s ease;
+  transition: color .2s ease, border-color .4s ease;
+  z-index: 10; }
+  .cui__tab-menu__button.square {
+    border-radius: 0; }
+  @media screen and (min-width: 569px) {
+    .cui__tab-menu__button.half {
+      width: 50%;
+      clear: none;
+      float: left; } }
+  .cui__tab-menu__button.half.non-responsive {
+    width: 50%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
+    .cui__tab-menu__button.third {
+      width: 33.333%;
+      clear: none;
+      float: left; } }
+  .cui__tab-menu__button.third.non-responsive {
+    width: 33.333%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
+    .cui__tab-menu__button.forty {
+      width: 40%;
+      clear: none;
+      float: left; } }
+  .cui__tab-menu__button.forty.non-responsive {
+    width: 40%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
+    .cui__tab-menu__button.quarter {
+      width: 25%;
+      clear: none;
+      float: left; } }
+  .cui__tab-menu__button.quarter.non-responsive {
+    width: 25%;
+    clear: none;
+    float: left; }
+  @media screen and (min-width: 569px) {
+    .cui__tab-menu__button.twenty {
+      width: 20%;
+      clear: none;
+      float: left; } }
+  .cui__tab-menu__button.twenty.non-responsive {
+    width: 20%;
+    clear: none;
+    float: left; }
+  .cui__tab-menu__button.left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .cui__tab-menu__button.center {
+    border-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.center {
+        margin-left: -1px; } }
+    .cui__tab-menu__button.center.non-responsive {
+      margin-left: -1px; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.center.half {
+        width: calc(50% + ($grid * .2)); } }
+    .cui__tab-menu__button.center.half.non-responsive {
+      width: calc(50% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.center.forty {
+        width: calc(40% + ($grid * .2)); } }
+    .cui__tab-menu__button.center.forty.non-responsive {
+      width: calc(40% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.center.quarter {
+        width: calc(25% + ($grid * .2)); } }
+    .cui__tab-menu__button.center.quarter.non-responsive {
+      width: calc(25% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.center.twenty {
+        width: calc(20% + ($grid * .2)); } }
+    .cui__tab-menu__button.center.twenty.non-responsive {
+      width: calc(20% + ($grid * .2)); }
+    .cui__tab-menu__button.center::after {
+      content: "";
+      clear: both;
+      display: block; }
+  .cui__tab-menu__button.right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.right {
+        margin-left: -1px; } }
+    .cui__tab-menu__button.right.non-responsive {
+      margin-left: -1px; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.right.half {
+        width: calc(50% + ($grid * .2)); } }
+    .cui__tab-menu__button.right.half.non-responsive {
+      width: calc(50% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.right.forty {
+        width: calc(40% + ($grid * .2)); } }
+    .cui__tab-menu__button.right.forty.non-responsive {
+      width: calc(40% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.right.quarter {
+        width: calc(25% + ($grid * .2)); } }
+    .cui__tab-menu__button.right.quarter.non-responsive {
+      width: calc(25% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.right.twenty {
+        width: calc(20% + ($grid * .2)); } }
+    .cui__tab-menu__button.right.twenty.non-responsive {
+      width: calc(20% + ($grid * .2)); }
+    .cui__tab-menu__button.right::after {
+      content: "";
+      clear: both;
+      display: block; }
+  .cui__tab-menu__button.top {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .cui__tab-menu__button.top-left {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-left {
+        border-top-right-radius: 0; } }
+    .cui__tab-menu__button.top-left.non-responsive {
+      border-top-right-radius: 0; }
+  .cui__tab-menu__button.top-right {
+    border-radius: 0;
+    clear: right; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right {
+        border-top-right-radius: 5px; } }
+    .cui__tab-menu__button.top-right.non-responsive {
+      border-top-right-radius: 5px; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right {
+        margin-left: -1px; } }
+    .cui__tab-menu__button.top-right.non-responsive {
+      margin-left: -1px; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right.half {
+        width: calc(50% + ($grid * .2)); } }
+    .cui__tab-menu__button.top-right.half.non-responsive {
+      width: calc(50% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right.forty {
+        width: calc(40% + ($grid * .2)); } }
+    .cui__tab-menu__button.top-right.forty.non-responsive {
+      width: calc(40% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right.quarter {
+        width: calc(25% + ($grid * .2)); } }
+    .cui__tab-menu__button.top-right.quarter.non-responsive {
+      width: calc(25% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.top-right.twenty {
+        width: calc(20% + ($grid * .2)); } }
+    .cui__tab-menu__button.top-right.twenty.non-responsive {
+      width: calc(20% + ($grid * .2)); }
+  .cui__tab-menu__button.bottom {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .cui__tab-menu__button.bottom-left {
+    border-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-left {
+        border-bottom-left-radius: 5px; } }
+    .cui__tab-menu__button.bottom-left.non-responsive {
+      border-bottom-left-radius: 5px; }
+  .cui__tab-menu__button.bottom-right {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right {
+        border-bottom-left-radius: 0; } }
+    .cui__tab-menu__button.bottom-right.non-responsive {
+      border-bottom-left-radius: 0; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right {
+        margin-left: -1px; } }
+    .cui__tab-menu__button.bottom-right.non-responsive {
+      margin-left: -1px; }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right.half {
+        width: calc(50% + ($grid * .2)); } }
+    .cui__tab-menu__button.bottom-right.half.non-responsive {
+      width: calc(50% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right.forty {
+        width: calc(40% + ($grid * .2)); } }
+    .cui__tab-menu__button.bottom-right.forty.non-responsive {
+      width: calc(40% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right.quarter {
+        width: calc(25% + ($grid * .2)); } }
+    .cui__tab-menu__button.bottom-right.quarter.non-responsive {
+      width: calc(25% + ($grid * .2)); }
+    @media screen and (min-width: 569px) {
+      .cui__tab-menu__button.bottom-right.twenty {
+        width: calc(20% + ($grid * .2)); } }
+    .cui__tab-menu__button.bottom-right.twenty.non-responsive {
+      width: calc(20% + ($grid * .2)); }
+  .compact .cui__tab-menu__button {
+    padding: 0 30px; }
+
+.cui__tab-menu__button:hover {
+  color: #0074c8; }
+
+.cui__tab-menu__input:checked + .cui__tab-menu__button {
+  border-color: #0074c8;
+  color: #0074c8; }
 
 @keyframes spin {
   to {

@@ -1,0 +1,48 @@
+@import "../mixins/index";
+
+.cui__tab-menu {
+    border-bottom: ($grid * .4) solid map-get($colors, grey-lines);
+    margin-bottom: ($grid * -.4);
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.cui__tab-menu__input {
+    display: none;
+}
+
+.cui__tab-menu__button {
+    @include typography(($grid * 2.8), regular);
+    @include stackable();
+
+    border-bottom: ($grid * .4) solid map-get($colors, grey-lines);
+    box-sizing: border-box;
+    cursor: pointer;
+    color: map-get($colors, grey-text);
+    display: inline-block;
+    float: left;
+    line-height: ($grid * 8);
+    margin-bottom: ($grid * -.4);
+    padding: 0 ($grid * 11);
+    position: relative;
+    text-align: center;
+    transition: color .2s ease, border-color .4s ease;
+    z-index: 10;
+
+    .compact & {
+        padding: 0 ($grid * 6);
+    }
+}
+
+.cui__tab-menu__button:hover {
+    color: map-get($colors, klarna-blue);
+}
+
+.cui__tab-menu__input:checked + .cui__tab-menu__button {
+    border-color: map-get($colors, klarna-blue);
+    color: map-get($colors, klarna-blue);
+}

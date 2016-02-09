@@ -4,3 +4,4 @@ npm-debug.log
 .awspublish-klarna-static-assets
 bower_components
 .idea
+.DS_Store
