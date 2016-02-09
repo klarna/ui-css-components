@@ -1,0 +1,20 @@
+@import "../mixins/index";
+
+.cui__subtitle {
+  @include typography(($grid * 2.4), semi-bold);
+
+  color: map-get($colors, black);
+  height: ($grid * 4);
+  line-height: ($grid * 4);
+  margin: 0;
+  padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
+  text-transform: uppercase;
+
+  &.blue {
+    color: map-get($colors, klarna-blue);
+  }
+}
+
+.cui__title--primary + .cui__subtitle {
+    margin-top: ($grid * -2);
+}

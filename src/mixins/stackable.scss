@@ -75,6 +75,16 @@ $stackable-border-width: $grid * 0.2;
         }
     }
 
+    &.third {
+        @include respond-to-wide {
+            @include partial-width(33.333%);
+        }
+
+        &.non-responsive {
+            @include partial-width(33.333%);
+        }
+    }
+
     &.forty {
         @include respond-to-wide {
             @include partial-width(40%);
@@ -165,6 +175,11 @@ $stackable-border-width: $grid * 0.2;
 
         @include stacked-responsiveness();
     }
+
+	&.bottom {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
 
     &.bottom-left {
         border-radius: 0;

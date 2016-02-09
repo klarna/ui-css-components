@@ -1,0 +1,224 @@
+@import "../mixins/index";
+
+.cui__field {
+    @include stackable();
+
+    border: ($grid * .2) solid $border-color;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    clear: both;
+    display: block;
+    height: ($grid * 10.2);
+    margin-bottom: ($grid * -.2);
+    position: relative;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    &.big {
+        height: ($grid * 12);
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        border-color: $border-color-hover;
+        z-index: 10;
+    }
+
+    &.is-focused {
+        border-color: $border-color-focus;
+        box-shadow: 0 0 ($grid * .8) $box-shadow-focus;
+        z-index: 20;
+    }
+
+    &.is-error {
+        background-color: #fff8f7;
+        border-color: $border-color-error;
+        box-shadow: none;
+        z-index: 5;
+
+        &:hover {
+            border-color: $border-color-hover-error;
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: $border-color-focus-error;
+            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-error;
+            z-index: 20;
+        }
+    }
+
+    &.is-warning {
+        background-color: #fffaf0;
+        border-color: $border-color-warning;
+        box-shadow: none;
+        z-index: 5;
+
+        &:hover {
+            border-color: $border-color-hover-warning;
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: $border-color-focus-warning;
+            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-warning;
+            z-index: 20;
+        }
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str(#fffaf0);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+    }
+
+    &.is-disabled {
+        background-color: #FAFAFA;
+        border-color: map-get($colors, grey-lines);
+
+        &:hover {
+            border-color: map-get($colors, grey-lines);
+        }
+    }
+}
+
+.cui__field__label, .cui__field__input {
+    @include typography(($grid * 2.8), regular);
+
+    line-height: ($grid * 10);
+    padding: 0 ($grid * 4);
+    position: absolute;
+}
+
+.cui__field__label {
+    color: map-get($colors, 'grey-text');
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    .big & {
+        line-height: ($grid * 12);
+    }
+
+    .big.is-filled &, .big.is-error &, .big.is-warning & {
+        transform: translate(0, ($grid * -2.2));
+    }
+
+    .is-filled &, .is-error &, .is-warning & {
+        @include typography(($grid * 2.2), regular);
+
+        transform: translate(0, ($grid * -2));
+
+        .ie9 &, .ie8 & {
+            margin-top: ($grid * -2);
+        }
+    }
+
+    .is-filled & {
+        color: map-get($colors, 'grey-text');
+    }
+
+    .is-error & {
+        color: #e63200;
+    }
+
+    .is-warning & {
+        color: #ecb800;
+    }
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
+
+    .ie9 &, .ie8 & {
+        z-index: 1;
+    }
+}
+
+.cui__field__input {
+    @include typography(($grid * 2.8), semi-bold);
+
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: #3C3C3E;
+    outline: none;
+    width: 100%;
+
+    .ie9 &, .ie8 & {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+        position: relative;
+        top: ($grid * 3);
+        z-index: 10;
+    }
+
+    .big & {
+        height: ($grid * 12);
+    }
+
+    .big.is-filled &, .big.is-error &, .big.is-warning & {
+        height: ($grid * 9.8);
+        top: ($grid * 2.2);
+    }
+
+    .is-filled &, .is-error &, .is-warning & {
+        height: ($grid * 9);
+        top: ($grid * 1);
+    }
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
+
+    .safari &,
+    .ios & {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.cui__field--icon {
+    @extend .cui__field;
+}
+
+.cui__field--icon__label {
+    @extend .cui__field__label;
+}
+
+.cui__field--icon__input {
+    @extend .cui__field__input;
+}
+
+.cui__field--icon__label, .cui__field--icon__input {
+    padding-left: ($grid * 8.4);
+}
+
+.cui__field--icon__icon {
+    background: #A8A8A8;
+    display: block;
+    height: ($grid * 4);
+    margin: ($grid * 3) 0 0 ($grid * 2.4);
+    position: absolute;
+    width: ($grid * 4);
+}
+
+// fieldset
+.cui__fieldset {
+    padding-bottom: ($grid * 4);
+    position: relative;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+.cui__subtitle + .cui__fieldset {
+    padding-top: ($grid * 1);
+}

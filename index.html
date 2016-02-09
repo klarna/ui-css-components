@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Segmentedcontrol" class="cui__link">Segmentedcontrol</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -996,6 +996,50 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
       Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+</div><div id="Segmentedcontrol" class="docs__section"><h1 class="cui__title--primary">Segemented Control</h1>
+<p class="cui__paragraph--primary">The segmented contol is basically just a different representation of a group of radio buttons and can be used in that way.</p>
+<h2 class="cui__title--secondary">fixed percentage</h2>
+<div class="example-block"><div class="example"><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left third" for="test1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test2" />
+   <label class="cui__segmentedcontrol__button right third" for="test2">Two</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test3" />
+   <label class="cui__segmentedcontrol__button right third" for="test3">Three</label>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button left third&quot; for=&quot;test1&quot;&gt;One&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test2&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right third&quot; for=&quot;test2&quot;&gt;Two&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;test&quot; id=&quot;test3&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right third&quot; for=&quot;test3&quot;&gt;Three&lt;/label&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<h2 class="cui__title--secondary">respect content width</h2>
+<div class="example-block"><div class="example"><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left" for="fluid1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid2" />
+   <label class="cui__segmentedcontrol__button center" for="fluid2">A very very long title</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid3" />
+   <label class="cui__segmentedcontrol__button right" for="fluid3">Three</label>
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__segmentedcontrol&quot;&gt;
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button left&quot; for=&quot;fluid1&quot;&gt;One&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid2&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button center&quot; for=&quot;fluid2&quot;&gt;A very very long title&lt;/label&gt;
+
+   &lt;input class=&quot;cui__segmentedcontrol__input&quot; type=&quot;radio&quot; name=&quot;fluid&quot; id=&quot;fluid3&quot; /&gt;
+   &lt;label class=&quot;cui__segmentedcontrol__button right&quot; for=&quot;fluid3&quot;&gt;Three&lt;/label&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 </div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>

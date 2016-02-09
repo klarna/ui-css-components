@@ -1,6 +1,2 @@
 @import "../settings";
-@import "../mixins/index";
-
-.cui__header {
-    @include header();
-}
+@import "../classes/header";
