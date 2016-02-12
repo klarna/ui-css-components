@@ -46,7 +46,6 @@
 
     renderer.code = function (code, lang, e) {
         return '<div class="example-block"><div class="example">'
-            + '<button class="toggle-grid">Grid off</button>'
             + code
             + '</div><pre><code class="'
             + this.options.langPrefix
@@ -58,6 +57,10 @@
 
     renderer.codespan = function (text, lang, escaped) {
         return '<span class="code">' + text + '</span>';
+    }
+
+    renderer.link = function (href, title, text) {
+        return '<a class="cui__link" href="' + href + '">' + text + '</a>';
     }
 
     module.exports = function(content) {

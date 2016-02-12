@@ -1,106 +1,122 @@
 doctype html
-html.cui__baseline(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
-    title UI Toolkit
+<!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]-->
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+  title UI CSS Components
 
-    link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600")
-    link(rel='stylesheet' href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css")
+  link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600")
+  link(rel='stylesheet' href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css")
 
-    link(rel='stylesheet' href='dist/ui-toolkit.css')
-    link(rel='stylesheet' href='docs/support/doc.css')
-    link(rel='stylesheet' href='docs/support/hljs.css')
+  link(rel='stylesheet' href='dist/ui-toolkit.css')
+  link(rel='stylesheet' href='docs/support/doc.css')
+  link(rel='stylesheet' href='docs/support/hljs.css')
 
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
+  <!--[if IE 8]>
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
+  <!--<![endif]-->
 
-  body
-    nav
-      ul#menu
-        each doc in docs
-          li
-            a(href="##{doc.name}")!= doc.name
-
-    main
+body
+  .docs__nav
+    ul#menu
       each doc in docs
-        section(id="#{doc.name}")
-          != doc.parsedContent
+        li.cui__paragraph--primary.-condensed
+          a.cui__link(href="##{doc.name}")!= doc.name
 
-    script.
-      
-        // helpers for documentation
-        $(window).keypress(function(e){
-          if (e.which === 103) {
-            $('body').toggleClass('cui__baseline__grid');
-          }
-        })
+  .docs__main.cui__baseline__content--main
+    each doc in docs
+      .docs__section(id="#{doc.name}")
+        != doc.parsedContent
 
-        $('input').focus(function(){
-          $(this).parent().addClass('is-focused');
-        })
+  script.
+    
+      // helpers for documentation
+      $(document).keypress(function(e){
+        if (e.which === 103) {
+          $('body').toggleClass('cui__baseline__grid');
+        }
+      })
 
-        $('input').blur(function(){
-          $(this).parent().removeClass('is-focused');
-        })
+      $('input').focus(function(){
+        $(this).parent().addClass('is-focused');
+      })
 
-        $('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
-          $(this).addClass('is-pressed')
-        })
+      $('input').blur(function(){
+        $(this).parent().removeClass('is-focused');
+      })
 
-        $('.cui__switch--multiple__option, .cui__switch').mouseup(function () {
-          $(this).removeClass('is-pressed')
-        })
+      $('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
+        $(this).addClass('is-pressed')
+      })
 
-        $('.cui__switch--multiple__option, .cui__switch').click(function(){
-          $(this).toggleClass('is-checked');
-        })
+      $('.cui__switch--multiple__option, .cui__switch').mouseup(function () {
+        $(this).removeClass('is-pressed')
+      })
 
-        $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
+      $('.cui__switch--multiple__option, .cui__switch').click(function(){
+        $(this).toggleClass('is-checked');
+      })
+
+      $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
+        $(this).toggleClass('is-selected');
+      })
+
+      $('.cui__dropdown--custom__option').click(function(){
+        if ($(this).parent().hasClass('is-collapsed')) {
+          $(this).parent().removeClass('is-collapsed');
+        } else {
+          $(this).parent().children().removeClass('is-selected');
           $(this).toggleClass('is-selected');
-        })
-
-        $('.cui__dropdown--custom__option').click(function(){
-          if ($(this).parent().hasClass('is-collapsed')) {
-            $(this).parent().removeClass('is-collapsed');
-          } else {
-            $(this).parent().children().removeClass('is-selected');
-            $(this).toggleClass('is-selected');
-            $(this).parent().addClass('is-collapsed');
-          }
-        })
-
-        function floatingLabel(input) {
-          if(input.value){
-            $(input).parent().addClass("is-filled");
-          } else {
-            $(input).parent().removeClass("is-filled");
-          }
+          $(this).parent().addClass('is-collapsed');
         }
+      })
 
-        function anchor(url) {
-          var matches = url.match(/#(.+)/);
-          if(! matches)
-            return "Getting started";
-          return matches[1].split("/")[0];
+      function floatingLabel(input) {
+        if(input.value){
+          $(input).parent().addClass("is-filled");
+        } else {
+          $(input).parent().removeClass("is-filled");
         }
-        $('[id="' + anchor(location.href) + '"]').show();
+      }
 
-        $('#menu a').click(function(){
-          $('section').hide();
-          $('[id="' + anchor(this.href) + '"]').show();
-        })
+      function anchor(url) {
+        var matches = url.match(/#(.+)/);
+        if(! matches)
+          return "Getting started";
+        return matches[1].split("/")[0];
+      }
+      $('[id="' + anchor(location.href) + '"]').show();
 
-        $('.toggle-grid').click(function(){
-          if(this.grid == 'on') {
-            this.grid = 'off'
-            $(this).text('Grid off');
-            $(this).parent().removeClass('cui__baseline__grid');
-          } else {
-            this.grid = 'on'
-            $(this).parent().addClass('cui__baseline__grid');
-            $(this).text('Grid on');
-          }
-        })
+      $('#menu a').click(function(){
+        $('.docs__section').hide();
+        $('[id="' + anchor(this.href) + '"]').show();
+      })
 
+      $('.toggle-grid').click(function(){
+        if(this.grid == 'on') {
+          this.grid = 'off'
+          $(this).text('Grid off');
+          $(this).parent().removeClass('cui__baseline__grid');
+        } else {
+          this.grid = 'on'
+          $(this).parent().addClass('cui__baseline__grid');
+          $(this).text('Grid on');
+        }
+      })
+
+      if (Array.prototype.forEach) {
         hljs.initHighlightingOnLoad();
+      }
+</html>

@@ -1,20 +1,37 @@
 @import "../mixins/index";
 
 .cui__baseline {
+    color: map-get($colors, black);
     font-size: $grid;
+    line-height: ($grid * 5);
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+
+    body {
+        @include typography(($grid * 2.8), regular);
+
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .cui__baseline__grid {
-    background: transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmVyc2lvbj0iMS4xIj4gIDxyZWN0IHN0eWxlPSJmaWxsOiMwMDMzZmY7ZmlsbC1vcGFjaXR5Oi4xNTsiIHdpZHRoPSIxMCIgaGVpZ2h0PSIwLjUiIHg9IjAiIHk9IjkuNSIgLz4gIDxyZWN0IHN0eWxlPSJmaWxsOiMwMDMzZmY7ZmlsbC1vcGFjaXR5Oi4xNTsiIHdpZHRoPSIxMCIgaGVpZ2h0PSIwLjUiIHg9IjAiIHk9IjAiIC8+ICA8cmVjdCBzdHlsZT0iZmlsbDojMDAzM2ZmO2ZpbGwtb3BhY2l0eTouMDg7IiB3aWR0aD0iMTAiIGhlaWdodD0iMSIgeD0iMCIgeT0iNC41IiAvPjwvc3ZnPgo=") repeat scroll 0% 0%;
+    background: transparent url(img/baseline__grid.png) repeat scroll 0% 0%;
 }
 
 .cui__baseline__content--main {
+    @include typography(($grid * 2.8), regular);
+
+    display: block;
     margin: 0 ($grid * 4);
     padding: 0;
 
     @include respond-to-wide {
+        width: ($grid * 102);
+        margin: 0 auto;
+    }
+
+    .ie8 & {
         width: ($grid * 102);
         margin: 0 auto;
     }

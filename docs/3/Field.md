@@ -6,12 +6,17 @@ The reasons to use a label as a placeholder are 1) makes it easier to transition
 
 The trade-off is that we can't rely on `focus` and `active` pseudo-selectors for the input, so we need to programatically add classes to the wrapper.
 
-When fields are _stacked_ together, they should be wrapped in a `cui__fieldset` component, which provides the proper spacings before and after and solves the issues related to floats
+## Floating label
+
+When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top.
+
+## Stackable
+
+When fields are _stacked_ together, they should be wrapped in a `cui__fieldset` component, which provides the proper spacings before and after and solves the issues related to floats.
+`cui__field`s can be stacked together with `cui__dropdown--native`.
 
 ___
 
-- [Overview](#Field/overview)
-- [Floating label](#Field/floating label)
 - [Examples](#Field/examples)
 - [Regular](#Field/regular)
 	- [focused](#Field/regular/focused)
@@ -37,144 +42,6 @@ ___
 	- [error](#Field/icon/error)
 	- [warning](#Field/icon/warning)
 
-<a name="Field/overview"></a>
-## Overview
-
-Here's a showcase of all fields. Pass your mouse over the elements to see the hover state.
-
-<div style="overflow: hidden">
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error">
-        <label class="cui__field__label">
-          Invalid email
-        </label>
-        <input class="cui__field__input" value="invalid@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning">
-        <label class="cui__field__label">
-          Are you sure the domain is exanple?
-        </label>
-        <input class="cui__field__input" value="email@exanple.com" />
-      </div>
-    </li>
-		<li>
-      <div class="cui__field--icon is-focused is-filled">
-				<span class="cui__field--icon__icon cui__icon--mail"></span>
-        <label class="cui__field--icon__label">
-          Please write your email address
-        </label>
-        <input class="cui__field--icon__input" value="email@example.com" />
-      </div>
-    </li>
-  </ul>
-
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-  </ul>
-</div>
-
-<a name="Field/floating label"></a>
-## Floating label
-
-When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:
-
-<div>
-  <div class="cui__field" style="width: 45%; float: left;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-  <div class="cui__field big" style="width: 45%; float: left; margin-left: 10px;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-	<div style="clear: both"></div>
-</div>
 
 <a name="Field/examples"></a>
 ## Examples

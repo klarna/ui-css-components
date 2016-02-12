@@ -1,42 +1,47 @@
-* {
-  padding: 0;
+.docs__nav {
+  padding: 80px 0 0 80px;
+}
+
+.ie9 .docs__nav {
+  padding-top: 77px;
+}
+
+ul {
+  list-style: none;
   margin: 0;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.8rem;
-  color: #3C3C3E;
-  line-height: 5rem;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
+ul li {
+  margin: 0;
 }
 
-nav {
-  position: fixed;
-  top: 16rem;
-  left: 16rem;
+.ie9 .docs__nav ul li, .ie8 .docs__nav ul li {
+  padding-bottom: 10px;
 }
 
-#menu li {
-  box-sizing: border-box;
-  line-height: 6rem;
-}
-
-main {
-  width: 136rem;
-  margin: 0 auto 40rem auto;
+.docs__main.cui__baseline__content--main {
+  clear: both;
+  float: static;
+  margin-bottom: 20px;
 }
 
 .example-block {
-  border-radius: 1rem;
+  border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
-.example{
-  padding: 6rem;
+.ie9 .example-block, .ie8 .example-block {
+  border: 1px solid #cbcbcd;
+}
+
+.example-block pre {
+  margin: 0;
+}
+
+.example {
+  padding: 30px;
   position: relative;
 }
 
@@ -48,12 +53,12 @@ main {
 
 .code {
   background: #f8f8fa;
-  border-radius: 1rem;
+  border-radius: 5px;
   border: 1px solid #e5e5e7;
   display: inline-block;
   font-family: Hack, monospace;
   font-size: inherit;
-  line-height: 4rem;
+  line-height: 20px;
   padding: 1px 4px;
 }
 
@@ -67,90 +72,79 @@ main {
 
 td {
   vertical-align: top;
-  padding: 0 1rem 1rem 0;
-}
-
-a{
-  color: #0074C8;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+  padding: 0 5px 5px 0;
 }
 
 hr {
   border: 0;
-  margin: 4rem 0;
+  margin: 20px 0;
+}
+
+.summary {
+  padding: 0;
 }
 
 .summary li {
-  margin-left: 1rem;
-  line-height: 4rem;
+  margin-left: 5px;
+  line-height: 20px;
 }
 
 .summary li:before {
   content: "•";
-  margin-right: 1.6rem;
+  margin-right: 8px;
   color: #3C3C3E;
 }
 
 .summary li li {
-  margin-left: 3rem;
-  font-size: 2.6rem;
+  margin-left: 15px;
+  font-size: 13px;
 }
 
 .summary li li:before {
   content: "•";
-  margin-right: 1rem;
+  margin-right: 5px;
   color: #9E9EA0;
 }
 
-section {
-  display: none;
-}
-
-.overview {
-  padding-right: 20px;
+ul.overview {
+  padding: 0;
+  margin: 0;
 }
 
 .overview li {
   padding: 10px;
 }
 
-.toggle-grid {
-  background: white;
-  border: none;
-  color: #0074C8;
-  outline: none;
-  float: right;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+.docs__section {
+  display: none;
 }
 
-.grid {
-  content: '';
-  display: block;
-  height: auto;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  width: auto;
-  z-index: -1;
+@media screen and (min-width: 999px) {
+  .docs__nav {
+    float: left;
+  }
+
+  .docs__main.cui__baseline__content--main {
+    clear: none;
+    float: left;
+    padding: 55px 0 0 80px;
+    width: 600px;
+  }
 }
 
-/* Toolkit overides */
-
-main > section {
-  padding-top: 16rem;
+@media screen and (min-width: 1099px) {
+  .docs__main.cui__baseline__content--main {
+    width: 700px;
+  }
 }
 
-h2, h3 {
-  margin-top: 4rem;
+.ie8 .docs__nav {
+  float: left;
 }
 
-h2 ~ p, h3 ~ p {
-  color: #9E9EA0;
+.ie8 .docs__main.cui__baseline__content--main {
+  clear: none;
+  float: left;
+  padding: 55px 0 0 80px;
+  width: 700px;
 }
