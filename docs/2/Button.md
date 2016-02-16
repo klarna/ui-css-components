@@ -79,13 +79,11 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary">
-				<div class="cui__button--primary__loader" />
+			<button class="cui__button--primary is-loading">
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary">
-				<div class="cui__button--secondary__loader" />
+			<button class="cui__button--secondary is-loading">
 			</button>
 		</td>
 	</tr>
@@ -115,13 +113,11 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	</tr>
 	<tr>
 		<td>
-			<button class="cui__button--primary big">
-				<div class="cui__button--primary__loader" />
+			<button class="cui__button--primary big is-loading">
 			</button>
 		</td>
 		<td>
-			<button class="cui__button--secondary big">
-				<div class="cui__button--secondary__loader" />
+			<button class="cui__button--secondary big is-loading">
 			</button>
 		</td>
 	</tr>
@@ -185,8 +181,7 @@ This should be used for your main actions.
 Every time a user submits a form, you should change the current submit button to be loading.
 
 ```html
-<button class="cui__button--primary">
-  <div class="cui__button--primary__loader" />
+<button class="cui__button--primary is-loading">
 </button>
 ```
 
@@ -230,8 +225,7 @@ Every time a user submits a form, you should change the current submit button to
 ### Big & loading
 
 ```html
-<button class="cui__button--primary big">
-  <div class="cui__button--primary__loader" />
+<button class="cui__button--primary big is-loading">
 </button>
 ```
 
@@ -259,8 +253,7 @@ This should be used for your secondary actions.
 ### Loading
 
 ```html
-<button class="cui__button--secondary">
-  <div class="cui__button--secondary__loader" />
+<button class="cui__button--secondary is-loading">
 </button>
 ```
 
@@ -304,8 +297,7 @@ This should be used for your secondary actions.
 ### Big & loading
 
 ```html
-<button class="cui__button--secondary big">
-  <div class="cui__button--secondary__loader" />
+<button class="cui__button--secondary big is-loading">
 </button>
 ```
 

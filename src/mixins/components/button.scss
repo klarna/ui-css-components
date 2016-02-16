@@ -59,12 +59,33 @@
     &.is-disabled {
         @include opacity(0.2);
         cursor: default;
+        pointer-events: none;
 
         &:hover {
             background: $background;
         }
 
         &:active {
+            background: $background;
+        }
+
+        &:focus {
+            background: $background;
+        }
+    }
+
+    &.is-loading {
+        cursor: progress;
+
+        &:hover {
+            background: $background;
+        }
+
+        &:active {
+            background: $background;
+        }
+
+        &:focus {
             background: $background;
         }
     }

@@ -8,8 +8,11 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    &__loader {
-        @include button__loader('button--primary__loader');
+    &.is-loading {
+        &:after {
+            content: '';
+            @include button__loader('button--primary__loader');
+        }
     }
 }
 
@@ -21,13 +24,21 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    &__loader {
-        @include button__loader('button--secondary__loader');
+    &.is-loading {
+        &:after {
+            content: '';
+            @include button__loader('button--secondary__loader');
+        }
     }
 
     &:hover, &:focus {
         background: map-get($colors, klarna-blue);
         color: #fff;
+
+        &.is-disabled {
+            background: map-get($colors, white);
+            color: map-get($colors, klarna-blue);
+        }
     }
 
     &:active {
