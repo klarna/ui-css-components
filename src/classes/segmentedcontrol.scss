@@ -8,13 +8,14 @@
     }
 
     .cui__segmentedcontrol__button {
+        @include typography(($grid * 2.8), regular);
         @include stackable();
 
         border: ($grid * .2) solid $border-color;
         border-radius: $border-radius;
         box-sizing: border-box;
         cursor: pointer;
-        color: map-get($colors, black);
+        color: map-get($colors, grey-text);
         display: inline-block;
         float: left;
         line-height: ($grid * 8) - ($grid * 0.4);

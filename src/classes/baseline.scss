@@ -36,3 +36,16 @@
         margin: 0 auto;
     }
 }
+
+.cui__baseline__spacer {
+    clear: both;
+    display: block;
+    height: $grid;
+    width: 100%;
+
+    &.x2 { height: ($grid * 2); }
+    &.x3 { height: ($grid * 3); }
+    &.x4 { height: ($grid * 4); }
+    &.x5 { height: ($grid * 5); }
+    &.x6 { height: ($grid * 6); }
+}

@@ -22,3 +22,8 @@ keep that class in the `<body>` tag to ensure that items do not get out of the g
 Horizontal grids are not covered by the Toolkit, but a convenient responsive wrapper
 `cui__baseline__content--main` is provided that will add some paddings on mobile
 layouts and will stop growing and keep itself centered in resolutions above `700px`.
+
+## Spacer
+
+If you need to create vertical spacers following the grid, you can use the `.cui__baseline__spacer`
+and its modifiers `.x2` `.x3` `.x4` `.x5` `.x6`.
