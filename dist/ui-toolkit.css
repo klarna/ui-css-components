@@ -1430,7 +1430,7 @@
     top: 11px; }
   .is-filled .cui__field__input, .is-filled .cui__field--icon__input, .is-error .cui__field__input, .is-error .cui__field--icon__input, .is-warning .cui__field__input, .is-warning .cui__field--icon__input {
     height: 45px;
-    top: 5px; }
+    top: 7px; }
   .is-disabled .cui__field__input, .is-disabled .cui__field--icon__input {
     color: #cbcbcd; }
   .safari .cui__field__input, .safari .cui__field--icon__input,
