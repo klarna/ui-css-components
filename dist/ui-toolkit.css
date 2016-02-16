@@ -41,7 +41,6 @@
  */
 .cui__baseline {
   color: #3c3c3e;
-  font-size: 5px;
   line-height: 25px;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
@@ -2969,7 +2968,7 @@
     background: #cbcbcd; }
 
 .cui__text-label {
-  font-size: 11px;
+  font-size: 12px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;

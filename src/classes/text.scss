@@ -116,7 +116,7 @@
 
 // TEXT LABEL
 .cui__text-label {
-    @include typography(($grid * 2.2), regular);
+    @include typography(($grid * 2.4), regular);
 
     color: map-get($colors, grey-text);
     line-height: ($grid * 3);
