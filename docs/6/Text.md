@@ -8,7 +8,8 @@ These are the general text styles for the toolkit.
     - [small](#Text/title/primary/small)
     - [small and prominent](#Text/title/primary/small and prominent)
   - [Secondary](#Text/title/secondary)
-    - [Subtitle](#Text/title/subtitle)
+    - [condensed](#Text/title/secondary/condensed)
+  - [Subtitle](#Text/title/subtitle)
 - [Paragraph](#Text/paragraph)
   - [Primary](#Text/paragraph/primary)
     - [condensed](#Text/paragraph/primary/condensed)
@@ -17,11 +18,13 @@ These are the general text styles for the toolkit.
   - [Legal](#Text/paragraph/legal)
 - [Label](#Text/label)
 - [Link](#Text/link)
+- [Text label](#Text/text label)
 
 <a name="Text/example"></a>
 ## Example
 
 - [Documentation example](examples/base/documentation.html)
+- [Dashboard example](examples/base/dashboard.html)
 
 <a name="Text/title"></a>
 ## Title
@@ -76,6 +79,19 @@ These are the general text styles for the toolkit.
 <h2 class="cui__title--secondary blue">
   Secondary title in blue
 </h2>
+```
+
+<a name="Text/title/secondary/condensed"></a>
+### Condensed
+
+```html
+<h2 class="cui__title--secondary condensed">
+  The User
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
 ```
 
 <a name="Text/title/subtitle"></a>
@@ -170,4 +186,43 @@ These are the general text styles for the toolkit.
     Click here to go somewhere else
   </a>
 </a>
+```
+
+<a name="Text/text label"></a>
+## Text Label
+
+The text label is a small title to be used in combination with some other text styles, such as
+paragraphs or secondary titles.
+
+```html
+<h4 class="cui__text-label">
+  Klarna ID
+</h4>
+
+<p class="cui__paragraph--primary condensed">
+  123456-454-8953-34984-39834
+</p>
+
+<h4 class="cui__text-label">
+  Original amount
+</h4>
+
+<h2 class="cui__title--secondary">
+  1.600 kr
+</h2>
+
+<h4 class="cui__text-label">
+  Billing address
+</h4>
+
+<h2 class="cui__title--secondary condensed">
+  Jonathan Konstantin Smithsson
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  15 Northeast Longname Industrial Parkway<br />
+  San Francisco<br />
+  94100 California<br />
+  United States
+</p>
 ```

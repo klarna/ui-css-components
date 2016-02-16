@@ -5,38 +5,110 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <title>Checkout fieldsets</title>
         <link rel="stylesheet" href="../../dist/ui-toolkit.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     </head>
 
-    <body class="cui__baseline__content--main">
-        <nav>
-            <p class="cui__paragraph--primary">
-                <a class="cui__link" href="../../">Back to the Showroom</a>
-            </p>
-        </nav>
+    <body>
+        <main class="cui__baseline__content--main">
+            <nav>
+                <p class="cui__paragraph--primary">
+                    <a class="cui__link" href="../../">Back to the Showroom</a>
+                </p>
+            </nav>
 
-        <div class="cui__tab-menu">
-           <input class="cui__tab-menu__input" type="radio" name="test" id="test1" checked="checked" />
-           <label class="cui__tab-menu__button" for="test1">One</label>
+            <div class="cui__tab-menu fluid">
+               <input class="cui__tab-menu__input" type="radio" name="test" id="test1" checked="checked" />
+               <label class="cui__tab-menu__button" for="test1">One</label>
 
-           <input class="cui__tab-menu__input" type="radio" name="test" id="test2" />
-           <label class="cui__tab-menu__button" for="test2">Two</label>
+               <input class="cui__tab-menu__input" type="radio" name="test" id="test2" />
+               <label class="cui__tab-menu__button" for="test2">Two</label>
 
-           <input class="cui__tab-menu__input" type="radio" name="test" id="test3" />
-           <label class="cui__tab-menu__button" for="test3">Three</label>
-        </div>
+               <input class="cui__tab-menu__input" type="radio" name="test" id="test3" />
+               <label class="cui__tab-menu__button" for="test3">Three</label>
+            </div>
 
-        <div class="cui__baseline__spacer x4"></div>
+            <div class="cui__baseline__spacer x4"></div>
 
-        <div class="cui__segmentedcontrol">
-           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented1" checked="checked" />
-           <label class="cui__segmentedcontrol__button left third" for="segmented1">One</label>
+            <div class="cui__segmentedcontrol">
+               <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented1" checked="checked" />
+               <label class="cui__segmentedcontrol__button left third" for="segmented1">One</label>
 
-           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented2" />
-           <label class="cui__segmentedcontrol__button center third" for="segmented2">Two</label>
+               <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented2" />
+               <label class="cui__segmentedcontrol__button center third" for="segmented2">Two</label>
 
-           <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented3" />
-           <label class="cui__segmentedcontrol__button right third" for="segmented3">Three</label>
-        </div>
+               <input class="cui__segmentedcontrol__input" type="radio" name="segmented" id="segmented3" />
+               <label class="cui__segmentedcontrol__button right third" for="segmented3">Three</label>
+            </div>
+
+            <div class="cui__baseline__spacer x4"></div>
+
+            <div style="width: 50%; float: left">
+                <h4 class="cui__text-label">
+                    Klarna ID
+                </h4>
+
+                <p class="cui__paragraph--primary condensed">
+                    123456-454-8953-34984-39834
+                </p>
+
+                <h4 class="cui__text-label">
+                    Order status
+                </h4>
+
+                <p class="cui__paragraph--primary condensed">
+                    Partially captured
+                </p>
+
+                <h4 class="cui__text-label">
+                    Original amount
+                </h4>
+
+                <h2 class="cui__title--secondary">
+                    1.600 kr
+                </h2>
+
+                <h4 class="cui__text-label">
+                    Order captured
+                </h4>
+
+                <p class="cui__paragraph--primary condensed">
+                    02 October 2015
+                </p>
+            </div>
+
+            <div style="width: 50%; float: left">
+                <h4 class="cui__text-label">
+                    Billing address
+                </h4>
+
+                <h2 class="cui__title--secondary condensed">
+                    Jonathan Konstantin Smithsson
+                </h2>
+
+                <p class="cui__paragraph--primary condensed">
+                    15 Northeast Longname Industrial Parkway<br />
+                    San Francisco<br />
+                    94100 California<br />
+                    United States
+                </p>
+
+                <h4 class="cui__text-label">
+                    Tel
+                </h4>
+
+                <p class="cui__paragraph--primary condensed">
+                    +1 510-653-3394
+                </p>
+
+                <h4 class="cui__text-label">
+                    Email
+                </h4>
+
+                <p class="cui__paragraph--primary condensed">
+                    johnathan.smithsson@email.com
+                </p>
+            </div>
+        </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
         <script>

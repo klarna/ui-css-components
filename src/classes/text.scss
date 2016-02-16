@@ -34,6 +34,10 @@
 
     padding: ($grid * 4.4) 0 ($grid * 2.6) 0;
     line-height: ($grid * 3);
+
+    &.condensed {
+        padding: ($grid * 0.4) 0 ($grid * 1.6) 0;
+    }
 }
 
 // SUBTITLE
@@ -108,4 +112,18 @@
     .is-disabled & {
         background: map-get($colors, grey-lines);
     }
+}
+
+// TEXT LABEL
+.cui__text-label {
+    @include typography(($grid * 2.4), regular);
+
+    color: map-get($colors, grey-text);
+    line-height: ($grid * 3);
+    margin: 0;
+    padding: ($grid * 1.6) 0 ($grid * 0.4) 0;
+}
+
+.cui__text-label + .cui__title--secondary {
+    padding-top: ($grid * 0.4);
 }

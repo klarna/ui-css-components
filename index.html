@@ -2573,9 +2573,10 @@ demo.</p>
 </ul>
 </li>
 <li><a class="cui__link" href="#Text/title/secondary">Secondary</a><ul class="summary">
-<li><a class="cui__link" href="#Text/title/subtitle">Subtitle</a></li>
+<li><a class="cui__link" href="#Text/title/secondary/condensed">condensed</a></li>
 </ul>
 </li>
+<li><a class="cui__link" href="#Text/title/subtitle">Subtitle</a></li>
 </ul>
 </li>
 <li><a class="cui__link" href="#Text/paragraph">Paragraph</a><ul class="summary">
@@ -2592,10 +2593,12 @@ demo.</p>
 </li>
 <li><a class="cui__link" href="#Text/label">Label</a></li>
 <li><a class="cui__link" href="#Text/link">Link</a></li>
+<li><a class="cui__link" href="#Text/text label">Text label</a></li>
 </ul>
 <a name="Text/example"></a><h2 class="cui__title--secondary">Example</h2>
 <ul class="summary">
 <li><a class="cui__link" href="examples/base/documentation.html">Documentation example</a></li>
+<li><a class="cui__link" href="examples/base/dashboard.html">Dashboard example</a></li>
 </ul>
 <a name="Text/title"></a><h2 class="cui__title--secondary">Title</h2>
 <a name="Text/title/primary"></a><h3 class="cui__subtitle">Primary</h3>
@@ -2657,6 +2660,21 @@ demo.</p>
 &lt;h2 class=&quot;cui__title--secondary blue&quot;&gt;
   Secondary title in blue
 &lt;/h2&gt;
+</div></code></pre></div>
+<a name="Text/title/secondary/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
+<div class="example-block"><div class="example"><h2 class="cui__title--secondary condensed">
+  The User
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p></div><pre><code class="lang-html"><div>&lt;h2 class=&quot;cui__title--secondary condensed&quot;&gt;
+  The User
+&lt;/h2&gt;
+
+&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+&lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/title/subtitle"></a><h2 class="cui__title--secondary">Subtitle</h2>
 <div class="example-block"><div class="example"><h3 class="cui__subtitle">
@@ -2752,6 +2770,69 @@ demo.</p>
     Click here to go somewhere else
   &lt;/a&gt;
 &lt;/a&gt;
+</div></code></pre></div>
+<a name="Text/text label"></a><h2 class="cui__title--secondary">Text Label</h2>
+<p class="cui__paragraph--primary">The text label is a small title to be used in combination with some other text styles, such as
+paragraphs or secondary titles.</p>
+<div class="example-block"><div class="example"><h4 class="cui__text-label">
+  Klarna ID
+</h4>
+
+<p class="cui__paragraph--primary condensed">
+  123456-454-8953-34984-39834
+</p>
+
+<h4 class="cui__text-label">
+  Original amount
+</h4>
+
+<h2 class="cui__title--secondary">
+  1.600 kr
+</h2>
+
+<h4 class="cui__text-label">
+  Billing address
+</h4>
+
+<h2 class="cui__title--secondary condensed">
+  Jonathan Konstantin Smithsson
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  15 Northeast Longname Industrial Parkway<br />
+  San Francisco<br />
+  94100 California<br />
+  United States
+</p></div><pre><code class="lang-html"><div>&lt;h4 class=&quot;cui__text-label&quot;&gt;
+  Klarna ID
+&lt;/h4&gt;
+
+&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
+  123456-454-8953-34984-39834
+&lt;/p&gt;
+
+&lt;h4 class=&quot;cui__text-label&quot;&gt;
+  Original amount
+&lt;/h4&gt;
+
+&lt;h2 class=&quot;cui__title--secondary&quot;&gt;
+  1.600 kr
+&lt;/h2&gt;
+
+&lt;h4 class=&quot;cui__text-label&quot;&gt;
+  Billing address
+&lt;/h4&gt;
+
+&lt;h2 class=&quot;cui__title--secondary condensed&quot;&gt;
+  Jonathan Konstantin Smithsson
+&lt;/h2&gt;
+
+&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
+  15 Northeast Longname Industrial Parkway&lt;br /&gt;
+  San Francisco&lt;br /&gt;
+  94100 California&lt;br /&gt;
+  United States
+&lt;/p&gt;
 </div></code></pre></div>
 </div><div id="Icon" class="docs__section"><h1 class="cui__title--primary">Icons</h1>
 <p class="cui__paragraph--primary">A set of icons are provided as part of the toolkit. They are designed to be used in the context of Fields, and have included the styles for hover states as well as warnings and errors.</p>
