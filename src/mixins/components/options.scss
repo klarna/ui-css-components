@@ -20,6 +20,8 @@
 
     &.borderless {
         border: none;
+        padding-top: $grid * .2;
+        padding-bottom: $grid * .2;
     }
 
     &.is-disabled {
@@ -33,7 +35,7 @@
         }
 
         &::after {
-            opacity: .2;
+            @include opacity(.2);
         }
     }
 }
@@ -51,6 +53,18 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    .borderless & {
+        border-radius: $border-radius;
+
+        &:first-child {
+            padding-top: ($grid * 1.8);
+        }
+
+        &:last-child {
+            padding-bottom: ($grid * 2.2);
+        }
+    }
 
     &:hover {
         background: map-get($colors, block-hover);
@@ -72,17 +86,5 @@
         border-bottom-left-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         padding-bottom: ($grid * 3.2);
-    }
-
-    .borderless & {
-        border-radius: $border-radius;
-
-        &:first-child {
-            padding-top: ($grid * 1.8);
-        }
-
-        &:last-child {
-            padding-bottom: ($grid * 2.2);
-        }
     }
 }

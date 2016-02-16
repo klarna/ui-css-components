@@ -1,5 +1,14 @@
-<!DOCTYPE html><html lang="en" class="cui__baseline"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI Toolkit</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script></head><body><nav><ul id="menu"><li><a href="#Getting started">Getting started</a></li><li><a href="#Baseline">Baseline</a></li><li><a href="#Loader">Loader</a></li><li><a href="#Dropdown">Dropdown</a></li><li><a href="#Navigation">Navigation</a></li><li><a href="#Button">Button</a></li><li><a href="#Field">Field</a></li><li><a href="#Switch">Switch</a></li><li><a href="#Text">Text</a></li><li><a href="#Icon">Icon</a></li><li><a href="#Link">Link</a></li></ul></nav><main><section id="Getting started"><h1 class="cui__title--primary">Getting started</h1>
-<p class="cui__paragraph--primary">Welcome to the ui-toolkit guide. The goals of this document are:</p>
+<!DOCTYPE html><!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
 <li>To clarify the reasoning behind their implementation;</li>
@@ -11,12 +20,12 @@
 <h2 class="cui__title--secondary">Instructions</h2>
 <p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should be aligned with the
 grid. If something is not, please report it in the #front_end channel.</p>
-</section><section id="Baseline"><h1 class="cui__title--primary">Baseline</h1>
+</div><div id="Baseline" class="docs__section"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
-In practical terms, it means that for using the Toolkit you need to set the class
-<span class="code">cui__baseline</span> in the <span class="code">&lt;html&gt;</span> tag. It will set the proper font rendering style
-for webkit and set the grid to <span class="code">5px</span>. All the sizes in the Toolkit are written in
-<span class="code">rem</span>s assuming that <span class="code">5px</span> grid.</p>
+A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
+the <span class="code">&lt;html&gt;</span> tag. It will set the proper font rendering style for webkit and set
+the <span class="code">rem</span> grid (<span class="code">font-size</span>) to <span class="code">5px</span>. All the sizes in the Toolkit are written
+assuming that <span class="code">5px</span> grid.</p>
 <p class="cui__paragraph--primary">The grid system of the Toolkit aims at having all borders and text baselines matching
 the grid. Some exceptions are made, for example for the floating labels in the Fields,
 but these are taken as corner cases.</p>
@@ -32,70 +41,70 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <h2 class="cui__title--secondary">Spacer</h2>
 <p class="cui__paragraph--primary">If you need to create vertical spacers following the grid, you can use the <span class="code">.cui__baseline__spacer</span>
 and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <span class="code">.x4</span> <span class="code">.x5</span> <span class="code">.x6</span>.</p>
-</section><section id="Loader"><h1 class="cui__title--primary">Loader</h1>
+</div><div id="Loader" class="docs__section"><h1 class="cui__title--primary">Loader</h1>
 <p class="cui__paragraph--primary">Standalone loaders are designed to be used on overlays when the application is loading. They fit the grid in either 2, 3, 4 or 6 blocks.</p>
 <p class="cui__paragraph--primary">They are not designed to be used within other components. For a loader inside a button for example, check out the examples for Button with loader.</p>
 <hr>
 <ul class="summary">
-<li><a href="#Loader/regular">Regular</a></li>
-<li><a href="#Loader/big">Big</a></li>
-<li><a href="#Loader/small">Small</a></li>
-<li><a href="#Loader/tiny">Tiny</a></li>
+<li><a class="cui__link" href="#Loader/regular">Regular</a></li>
+<li><a class="cui__link" href="#Loader/big">Big</a></li>
+<li><a class="cui__link" href="#Loader/small">Small</a></li>
+<li><a class="cui__link" href="#Loader/tiny">Tiny</a></li>
 </ul>
 <a name="Loader/regular"></a><h2 class="cui__title--secondary">Regular</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__loader"></div>
+<div class="example-block"><div class="example"><div class="cui__loader"></div>
 <div class="cui__loader blue"></div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__loader&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__loader blue&quot;&gt;&lt;/div&gt;
 </div></code></pre></div>
 <a name="Loader/big"></a><h2 class="cui__title--secondary">Big</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__loader big"></div>
+<div class="example-block"><div class="example"><div class="cui__loader big"></div>
 <div class="cui__loader big blue"></div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__loader big&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__loader big blue&quot;&gt;&lt;/div&gt;
 </div></code></pre></div>
 <a name="Loader/small"></a><h2 class="cui__title--secondary">Small</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__loader small"></div>
+<div class="example-block"><div class="example"><div class="cui__loader small"></div>
 <div class="cui__loader small blue"></div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__loader small&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__loader small blue&quot;&gt;&lt;/div&gt;
 </div></code></pre></div>
 <a name="Loader/tiny"></a><h2 class="cui__title--secondary">Tiny</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__loader tiny"></div>
+<div class="example-block"><div class="example"><div class="cui__loader tiny"></div>
 <div class="cui__loader tiny blue"></div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__loader tiny&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cui__loader tiny blue&quot;&gt;&lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Dropdown"><h1 class="cui__title--primary">Dropdown</h1>
+</div><div id="Dropdown" class="docs__section"><h1 class="cui__title--primary">Dropdown</h1>
 <p class="cui__paragraph--primary">Dropdowns are family of components that present the user with multiple options. The basic version is just a styling over the HTML <span class="code">&lt;select&gt;</span> element, but more advanced versions include a combination of select with radio buttons, a radio button selector and a checkbox group.</p>
 <hr>
 <ul class="summary">
-<li><a href="#Dropdown/examples">Examples</a></li>
-<li><a href="#Dropdown/native">Native</a><ul class="summary">
-<li><a href="#Dropdown/native/focused">focused</a></li>
-<li><a href="#Dropdown/native/loading">loading</a></li>
-<li><a href="#Dropdown/native/selected">selected</a></li>
-<li><a href="#Dropdown/native/disabled">disabled</a></li>
-<li><a href="#Dropdown/native/disabled and selected">disabled and selected</a></li>
-<li><a href="#Dropdown/native/disabled and loading">disabled and loading</a></li>
-<li><a href="#Dropdown/native/error">error</a></li>
-<li><a href="#Dropdown/native/warning">warning</a></li>
+<li><a class="cui__link" href="#Dropdown/examples">Examples</a></li>
+<li><a class="cui__link" href="#Dropdown/native">Native</a><ul class="summary">
+<li><a class="cui__link" href="#Dropdown/native/focused">focused</a></li>
+<li><a class="cui__link" href="#Dropdown/native/loading">loading</a></li>
+<li><a class="cui__link" href="#Dropdown/native/selected">selected</a></li>
+<li><a class="cui__link" href="#Dropdown/native/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Dropdown/native/disabled and selected">disabled and selected</a></li>
+<li><a class="cui__link" href="#Dropdown/native/disabled and loading">disabled and loading</a></li>
+<li><a class="cui__link" href="#Dropdown/native/error">error</a></li>
+<li><a class="cui__link" href="#Dropdown/native/warning">warning</a></li>
 </ul>
 </li>
-<li><a href="#Dropdown/custom">Custom</a><ul class="summary">
-<li><a href="#Dropdown/custom/collapsed">collapsed</a></li>
-<li><a href="#Dropdown/custom/loading">loading</a></li>
-<li><a href="#Dropdown/custom/disabled">disabled</a></li>
-<li><a href="#Dropdown/custom/disabled and collapsed">disabled and collapsed</a></li>
+<li><a class="cui__link" href="#Dropdown/custom">Custom</a><ul class="summary">
+<li><a class="cui__link" href="#Dropdown/custom/collapsed">collapsed</a></li>
+<li><a class="cui__link" href="#Dropdown/custom/loading">loading</a></li>
+<li><a class="cui__link" href="#Dropdown/custom/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Dropdown/custom/disabled and collapsed">disabled and collapsed</a></li>
 </ul>
 </li>
-<li><a href="#Dropdown/radio">Radio</a><ul class="summary">
-<li><a href="#Dropdown/radio/borderless">borderless</a></li>
-<li><a href="#Dropdown/radio/disabled">disabled</a></li>
-<li><a href="#Dropdown/radio/borderless disabled">borderless disabled</a></li>
+<li><a class="cui__link" href="#Dropdown/radio">Radio</a><ul class="summary">
+<li><a class="cui__link" href="#Dropdown/radio/borderless">borderless</a></li>
+<li><a class="cui__link" href="#Dropdown/radio/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Dropdown/radio/borderless disabled">borderless disabled</a></li>
 </ul>
 </li>
 </ul>
 <a name="Dropdown/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
-<li><a href="examples/base/checkout.html">Checkout form</a></li>
-<li><a href="examples/base/selectors.html">Selectors</a></li>
+<li><a class="cui__link" href="examples/base/checkout.html">Checkout form</a></li>
+<li><a class="cui__link" href="examples/base/selectors.html">Selectors</a></li>
 </ul>
 <a name="Dropdown/native"></a><h2 class="cui__title--secondary">Native</h2>
 <div class="cui__fieldset">
@@ -157,7 +166,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
 <p class="cui__paragraph--primary">The native dropdown component is just a set of styles over the native HTML dropdown. It can be combined with Fields into stacked fieldsets. The actual list of options is provided by the native behavior.</p>
 <p class="cui__paragraph--primary">Stacking Dropdowns is done in the same way that Fields. Please go to the &quot;Field&quot; section for more details about stacking.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native">
   <label class="cui__dropdown--native__label">
     This is a dropdown
   </label>
@@ -178,7 +187,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/focused"></a><h3 class="cui__subtitle">Focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-focused">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-focused">
   <label class="cui__dropdown--native__label">
     This is a focused dropdown
   </label>
@@ -199,7 +208,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/loading"></a><h3 class="cui__subtitle">Loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-loading">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-loading">
   <label class="cui__dropdown--native__label">
     This is a dropdown that is loading
   </label>
@@ -220,7 +229,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/selected"></a><h3 class="cui__subtitle">Selected</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-selected">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-selected">
   <label class="cui__dropdown--native__label">
     The Dropdown
   </label>
@@ -249,7 +258,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-disabled">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-disabled">
   <label class="cui__dropdown--native__label">
     This is a dropdown that is disabled
   </label>
@@ -260,7 +269,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/disabled and selected"></a><h3 class="cui__subtitle">Disabled and selected</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-disabled is-selected">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-disabled is-selected">
   <label class="cui__dropdown--native__label">
     This is a dropdown that is disabled
   </label>
@@ -279,7 +288,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/disabled and loading"></a><h3 class="cui__subtitle">Disabled and loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-disabled is-loading">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-disabled is-loading">
   <label class="cui__dropdown--native__label">
     This is a dropdown that is disabled
   </label>
@@ -290,7 +299,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/error"></a><h3 class="cui__subtitle">Error</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-error half left">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-error half left">
   <div class="cui__dropdown--native__floating-label">
     You need to select some of the options
   </div>
@@ -349,7 +358,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/native/warning"></a><h3 class="cui__subtitle">Warning</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--native is-warning half left">
+<div class="example-block"><div class="example"><div class="cui__dropdown--native is-warning half left">
   <div class="cui__dropdown--native__floating-label">
     It is important that you select an option
   </div>
@@ -408,7 +417,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/custom"></a><h2 class="cui__title--secondary">Custom</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--custom">
+<div class="example-block"><div class="example"><div class="cui__dropdown--custom">
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector
@@ -473,7 +482,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/custom/collapsed"></a><h3 class="cui__subtitle">Collapsed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--custom is-collapsed">
+<div class="example-block"><div class="example"><div class="cui__dropdown--custom is-collapsed">
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector
@@ -538,7 +547,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/custom/loading"></a><h3 class="cui__subtitle">Loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--custom is-loading">
+<div class="example-block"><div class="example"><div class="cui__dropdown--custom is-loading">
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector loading
@@ -603,7 +612,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/custom/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--custom is-disabled">
+<div class="example-block"><div class="example"><div class="cui__dropdown--custom is-disabled">
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector disabled
@@ -668,7 +677,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/custom/disabled and collapsed"></a><h3 class="cui__subtitle">Disabled and collapsed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--custom is-disabled is-collapsed">
+<div class="example-block"><div class="example"><div class="cui__dropdown--custom is-disabled is-collapsed">
   <div class="cui__dropdown--custom__option is-selected">
     <div class="cui__dropdown--custom__option__heading">
       This is a custom selector disabled and collapsed
@@ -733,7 +742,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/radio"></a><h2 class="cui__title--secondary">Radio</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--radio">
+<div class="example-block"><div class="example"><div class="cui__dropdown--radio">
   <div class="cui__dropdown--radio__option is-selected">
     <div class="cui__dropdown--radio__option__heading">
       This is a radio selector
@@ -798,7 +807,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/radio/borderless"></a><h3 class="cui__subtitle">Borderless</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--radio borderless">
+<div class="example-block"><div class="example"><div class="cui__dropdown--radio borderless">
   <div class="cui__dropdown--radio__option is-selected">
     <div class="cui__dropdown--radio__option__heading">
       This is a radio selector
@@ -863,7 +872,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/radio/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--radio is-disabled">
+<div class="example-block"><div class="example"><div class="cui__dropdown--radio is-disabled">
   <div class="cui__dropdown--radio__option is-selected">
     <div class="cui__dropdown--radio__option__heading">
       This is a radio selector
@@ -928,7 +937,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Dropdown/radio/borderless disabled"></a><h3 class="cui__subtitle">Borderless disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__dropdown--radio is-disabled">
+<div class="example-block"><div class="example"><div class="cui__dropdown--radio is-disabled">
   <div class="cui__dropdown--radio__option is-selected">
     <div class="cui__dropdown--radio__option__heading">
       This is a radio selector
@@ -992,28 +1001,28 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
   &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Navigation"><h1 class="cui__title--primary">Navigation</h1>
+</div><div id="Navigation" class="docs__section"><h1 class="cui__title--primary">Navigation</h1>
 <ul class="summary">
-<li><a href="#Navigation/examples">Examples</a></li>
-<li><a href="#Navigation/segmentedcontrol">Segmented control</a><ul class="summary">
-<li><a href="#Navigation/segmentedcontrol/fixed percentage">fixed percentage</a></li>
-<li><a href="#Navigation/segmentedcontrol/respect content width">respect content width</a></li>
+<li><a class="cui__link" href="#Navigation/examples">Examples</a></li>
+<li><a class="cui__link" href="#Navigation/segmentedcontrol">Segmented control</a><ul class="summary">
+<li><a class="cui__link" href="#Navigation/segmentedcontrol/fixed percentage">fixed percentage</a></li>
+<li><a class="cui__link" href="#Navigation/segmentedcontrol/respect content width">respect content width</a></li>
 </ul>
 </li>
-<li><a href="#Navigation/tab menu">Tab menu</a><ul class="summary">
-<li><a href="#Navigation/tab menu/fixed percentage">fixed percentage</a></li>
-<li><a href="#Navigation/tab menu/respect content width">respect content width</a></li>
+<li><a class="cui__link" href="#Navigation/tab menu">Tab menu</a><ul class="summary">
+<li><a class="cui__link" href="#Navigation/tab menu/fixed percentage">fixed percentage</a></li>
+<li><a class="cui__link" href="#Navigation/tab menu/respect content width">respect content width</a></li>
 </ul>
 </li>
 </ul>
 <a name="Navigation/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
-<li><a href="examples/base/dashboard.html">Dashboard</a></li>
+<li><a class="cui__link" href="examples/base/dashboard.html">Dashboard</a></li>
 </ul>
 <a name="Navigation/segmentedcontrol"></a><h2 class="cui__title--secondary">Segmented control</h2>
 <p class="cui__paragraph--primary">The segmented control is basically just a different representation of a group of radio buttons and can be used in that way.</p>
 <a name="Navigation/segmentedcontrol/fixed percentage"></a><h3 class="cui__subtitle">fixed percentage</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
+<div class="example-block"><div class="example"><div class="cui__segmentedcontrol">
    <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test1" checked="checked" />
    <label class="cui__segmentedcontrol__button left third" for="test1">One</label>
 
@@ -1034,7 +1043,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Navigation/segmentedcontrol/respect content width"></a><h3 class="cui__subtitle">respect content width</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__segmentedcontrol">
+<div class="example-block"><div class="example"><div class="cui__segmentedcontrol">
    <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid1" checked="checked" />
    <label class="cui__segmentedcontrol__button left" for="fluid1">One</label>
 
@@ -1057,7 +1066,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <a name="Navigation/tab menu"></a><h2 class="cui__title--secondary">Tab menu</h2>
 <p class="cui__paragraph--primary">The tab menu is a different styling of the same navigation concept as the segmented control.</p>
 <a name="Navigation/tab menu/fixed percentage"></a><h3 class="cui__subtitle">fixed percentage</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__tab-menu">
+<div class="example-block"><div class="example"><div class="cui__tab-menu">
    <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu1" checked="checked" />
    <label class="cui__tab-menu__button third" for="tab-menu1">One</label>
 
@@ -1078,7 +1087,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Navigation/tab menu/respect content width"></a><h3 class="cui__subtitle">respect content width</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__tab-menu fluid">
+<div class="example-block"><div class="example"><div class="cui__tab-menu fluid">
    <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid1" checked="checked" />
    <label class="cui__tab-menu__button" for="tab-menu-fluid1">One</label>
 
@@ -1098,33 +1107,33 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
    &lt;label class=&quot;cui__tab-menu__button&quot; for=&quot;tab-menu-fluid3&quot;&gt;Three&lt;/label&gt;
 &lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Button"><h1 class="cui__title--primary">Button</h1>
+</div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>
 <p class="cui__paragraph--primary">Buttons use the <span class="code">cui__button</span> block, and only <span class="code">button</span> tags should be used.</p>
 <ul class="summary">
-<li><a href="#Button/overview">Overview</a></li>
-<li><a href="#Button/usage">Usage</a><ul class="summary">
-<li><a href="#Button/usage/importance">Importance</a></li>
-<li><a href="#Button/usage/size">Size</a></li>
+<li><a class="cui__link" href="#Button/overview">Overview</a></li>
+<li><a class="cui__link" href="#Button/usage">Usage</a><ul class="summary">
+<li><a class="cui__link" href="#Button/usage/importance">Importance</a></li>
+<li><a class="cui__link" href="#Button/usage/size">Size</a></li>
 </ul>
 </li>
-<li><a href="#Button/primary">Primary</a><ul class="summary">
-<li><a href="#Button/primary/loading">loading</a></li>
-<li><a href="#Button/primary/disabled">disabled</a></li>
-<li><a href="#Button/primary/small">small</a></li>
-<li><a href="#Button/primary/small/disabled">small &amp; disabled</a></li>
-<li><a href="#Button/primary/big">big</a></li>
-<li><a href="#Button/primary/big/loading">big &amp; loading</a></li>
-<li><a href="#Button/primary/big/disabled">big &amp; disabled</a></li>
+<li><a class="cui__link" href="#Button/primary">Primary</a><ul class="summary">
+<li><a class="cui__link" href="#Button/primary/loading">loading</a></li>
+<li><a class="cui__link" href="#Button/primary/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Button/primary/small">small</a></li>
+<li><a class="cui__link" href="#Button/primary/small/disabled">small &amp; disabled</a></li>
+<li><a class="cui__link" href="#Button/primary/big">big</a></li>
+<li><a class="cui__link" href="#Button/primary/big/loading">big &amp; loading</a></li>
+<li><a class="cui__link" href="#Button/primary/big/disabled">big &amp; disabled</a></li>
 </ul>
 </li>
-<li><a href="#Button/secondary">Secondary</a><ul class="summary">
-<li><a href="#Button/secondary/loading">loading</a></li>
-<li><a href="#Button/secondary/disabled">disabled</a></li>
-<li><a href="#Button/secondary/small">small</a></li>
-<li><a href="#Button/secondary/small/disabled">small &amp; disabled</a></li>
-<li><a href="#Button/secondary/big">big</a></li>
-<li><a href="#Button/secondary/big/loading">big &amp; loading</a></li>
-<li><a href="#Button/secondary/big/disabled">big &amp; disabled</a></li>
+<li><a class="cui__link" href="#Button/secondary">Secondary</a><ul class="summary">
+<li><a class="cui__link" href="#Button/secondary/loading">loading</a></li>
+<li><a class="cui__link" href="#Button/secondary/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Button/secondary/small">small</a></li>
+<li><a class="cui__link" href="#Button/secondary/small/disabled">small &amp; disabled</a></li>
+<li><a class="cui__link" href="#Button/secondary/big">big</a></li>
+<li><a class="cui__link" href="#Button/secondary/big/loading">big &amp; loading</a></li>
+<li><a class="cui__link" href="#Button/secondary/big/disabled">big &amp; disabled</a></li>
 </ul>
 </li>
 </ul>
@@ -1263,7 +1272,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
 <a name="Button/primary"></a><h2 class="cui__title--secondary">Primary</h2>
 <p class="cui__paragraph--primary">This should be used for your main actions.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary">
+<div class="example-block"><div class="example"><button class="cui__button--primary">
   Primary
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary&quot;&gt;
   Primary
@@ -1271,49 +1280,49 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </div></code></pre></div>
 <a name="Button/primary/loading"></a><h3 class="cui__subtitle">Loading</h3>
 <p class="cui__paragraph--primary">Every time a user submits a form, you should change the current submit button to be loading.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary">
+<div class="example-block"><div class="example"><button class="cui__button--primary">
   <div class="cui__button--primary__loader" />
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary&quot;&gt;
   &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--primary is-disabled">
   Primary disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary is-disabled&quot;&gt;
   Primary disabled
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/small"></a><h3 class="cui__subtitle">Small</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary small">
+<div class="example-block"><div class="example"><button class="cui__button--primary small">
   Primary small
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary small&quot;&gt;
   Primary small
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/small/disabled"></a><h3 class="cui__subtitle">Small &amp; disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary small is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--primary small is-disabled">
   Primary small disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary small is-disabled&quot;&gt;
   Primary small disabled
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/big"></a><h3 class="cui__subtitle">Big</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary big">
+<div class="example-block"><div class="example"><button class="cui__button--primary big">
   Primary big
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary big&quot;&gt;
   Primary big
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/big/loading"></a><h3 class="cui__subtitle">Big &amp; loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary big">
+<div class="example-block"><div class="example"><button class="cui__button--primary big">
   <div class="cui__button--primary__loader" />
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary big&quot;&gt;
   &lt;div class=&quot;cui__button--primary__loader&quot; /&gt;
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/primary/big/disabled"></a><h3 class="cui__subtitle">Big &amp; disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--primary big is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--primary big is-disabled">
   Primary big disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--primary big is-disabled&quot;&gt;
   Primary big disabled
@@ -1321,240 +1330,109 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </div></code></pre></div>
 <a name="Button/secondary"></a><h2 class="cui__title--secondary">Secondary</h2>
 <p class="cui__paragraph--primary">This should be used for your secondary actions.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary">
+<div class="example-block"><div class="example"><button class="cui__button--secondary">
   Secondary
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary&quot;&gt;
   Secondary
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/loading"></a><h3 class="cui__subtitle">Loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary">
+<div class="example-block"><div class="example"><button class="cui__button--secondary">
   <div class="cui__button--secondary__loader" />
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary&quot;&gt;
   &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--secondary is-disabled">
   Secondary disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary is-disabled&quot;&gt;
   Secondary disabled
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/small"></a><h3 class="cui__subtitle">Small</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary small">
+<div class="example-block"><div class="example"><button class="cui__button--secondary small">
   Secondary small
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary small&quot;&gt;
   Secondary small
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/small/disabled"></a><h3 class="cui__subtitle">Small &amp; disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary small is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--secondary small is-disabled">
   Secondary small disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary small is-disabled&quot;&gt;
   Secondary small disabled
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/big"></a><h3 class="cui__subtitle">Big</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary big">
+<div class="example-block"><div class="example"><button class="cui__button--secondary big">
   Secondary big
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary big&quot;&gt;
   Secondary big
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/big/loading"></a><h3 class="cui__subtitle">Big &amp; loading</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary big">
+<div class="example-block"><div class="example"><button class="cui__button--secondary big">
   <div class="cui__button--secondary__loader" />
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary big&quot;&gt;
   &lt;div class=&quot;cui__button--secondary__loader&quot; /&gt;
 &lt;/button&gt;
 </div></code></pre></div>
 <a name="Button/secondary/big/disabled"></a><h3 class="cui__subtitle">Big &amp; disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><button class="cui__button--secondary big is-disabled">
+<div class="example-block"><div class="example"><button class="cui__button--secondary big is-disabled">
   Secondary big disabled
 </button></div><pre><code class="lang-html"><div>&lt;button class=&quot;cui__button--secondary big is-disabled&quot;&gt;
   Secondary big disabled
 &lt;/button&gt;
 </div></code></pre></div>
-</section><section id="Field"><h1 class="cui__title--primary">Field</h1>
+</div><div id="Field" class="docs__section"><h1 class="cui__title--primary">Field</h1>
 <p class="cui__paragraph--primary">The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
-<p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
+<p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a class="cui__link" href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a class="cui__link" href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
 <p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
-<p class="cui__paragraph--primary">When fields are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats</p>
+<h2 class="cui__title--secondary">Floating label</h2>
+<p class="cui__paragraph--primary">When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top.</p>
+<h2 class="cui__title--secondary">Stackable</h2>
+<p class="cui__paragraph--primary">When fields are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats.
+<span class="code">cui__field</span>s can be stacked together with <span class="code">cui__dropdown--native</span>.</p>
 <hr>
 <ul class="summary">
-<li><a href="#Field/overview">Overview</a></li>
-<li><a href="#Field/floating label">Floating label</a></li>
-<li><a href="#Field/examples">Examples</a></li>
-<li><a href="#Field/regular">Regular</a><ul class="summary">
-<li><a href="#Field/regular/focused">focused</a></li>
-<li><a href="#Field/regular/filled">filled</a></li>
-<li><a href="#Field/regular/error">error</a></li>
-<li><a href="#Field/regular/error focused">error focused</a></li>
-<li><a href="#Field/regular/warning">warning</a></li>
-<li><a href="#Field/regular/warning focused">warning focused</a></li>
-<li><a href="#Field/regular/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Field/examples">Examples</a></li>
+<li><a class="cui__link" href="#Field/regular">Regular</a><ul class="summary">
+<li><a class="cui__link" href="#Field/regular/focused">focused</a></li>
+<li><a class="cui__link" href="#Field/regular/filled">filled</a></li>
+<li><a class="cui__link" href="#Field/regular/error">error</a></li>
+<li><a class="cui__link" href="#Field/regular/error focused">error focused</a></li>
+<li><a class="cui__link" href="#Field/regular/warning">warning</a></li>
+<li><a class="cui__link" href="#Field/regular/warning focused">warning focused</a></li>
+<li><a class="cui__link" href="#Field/regular/disabled">disabled</a></li>
 </ul>
 </li>
-<li><a href="#Field/stacked">Stacked</a><ul class="summary">
-<li><a href="#Field/stacked/side by side">side by side</a></li>
-<li><a href="#Field/stacked/top part">top part</a></li>
-<li><a href="#Field/stacked/top only">top part</a></li>
-<li><a href="#Field/stacked/bottom part">bottom part</a></li>
-<li><a href="#Field/stacked/bottom only">bottom part</a></li>
-<li><a href="#Field/stacked/center">center</a></li>
-<li><a href="#Field/stacked/half and quarter sizes">half and quarter sizes</a></li>
-<li><a href="#Field/stacked/twenty - forty">twenty - forty</a></li>
+<li><a class="cui__link" href="#Field/stacked">Stacked</a><ul class="summary">
+<li><a class="cui__link" href="#Field/stacked/side by side">side by side</a></li>
+<li><a class="cui__link" href="#Field/stacked/top part">top part</a></li>
+<li><a class="cui__link" href="#Field/stacked/top only">top part</a></li>
+<li><a class="cui__link" href="#Field/stacked/bottom part">bottom part</a></li>
+<li><a class="cui__link" href="#Field/stacked/bottom only">bottom part</a></li>
+<li><a class="cui__link" href="#Field/stacked/center">center</a></li>
+<li><a class="cui__link" href="#Field/stacked/half and quarter sizes">half and quarter sizes</a></li>
+<li><a class="cui__link" href="#Field/stacked/twenty - forty">twenty - forty</a></li>
 </ul>
 </li>
-<li><a href="#Field/icon">Icon</a><ul class="summary">
-<li><a href="#Field/icon/focused">focused</a></li>
-<li><a href="#Field/icon/filled">filled</a></li>
-<li><a href="#Field/icon/error">error</a></li>
-<li><a href="#Field/icon/error">error</a></li>
-<li><a href="#Field/icon/warning">warning</a></li>
+<li><a class="cui__link" href="#Field/icon">Icon</a><ul class="summary">
+<li><a class="cui__link" href="#Field/icon/focused">focused</a></li>
+<li><a class="cui__link" href="#Field/icon/filled">filled</a></li>
+<li><a class="cui__link" href="#Field/icon/error">error</a></li>
+<li><a class="cui__link" href="#Field/icon/error">error</a></li>
+<li><a class="cui__link" href="#Field/icon/warning">warning</a></li>
 </ul>
 </li>
 </ul>
-<a name="Field/overview"></a><h2 class="cui__title--secondary">Overview</h2>
-<p class="cui__paragraph--primary">Here&#39;s a showcase of all fields. Pass your mouse over the elements to see the hover state.</p>
-<div style="overflow: hidden">
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error">
-        <label class="cui__field__label">
-          Invalid email
-        </label>
-        <input class="cui__field__input" value="invalid@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning">
-        <label class="cui__field__label">
-          Are you sure the domain is exanple?
-        </label>
-        <input class="cui__field__input" value="email@exanple.com" />
-      </div>
-    </li>
-        <li>
-      <div class="cui__field--icon is-focused is-filled">
-                <span class="cui__field--icon__icon cui__icon--mail"></span>
-        <label class="cui__field--icon__label">
-          Please write your email address
-        </label>
-        <input class="cui__field--icon__input" value="email@example.com" />
-      </div>
-    </li>
-  </ul>
-
-  <ul class="overview" style="width: 45%; float: left;">
-    <li>
-      <div class="cui__field big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-focused is-filled big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-filled big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@example.com" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-error big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-    <li>
-      <div class="cui__field is-warning big">
-        <label class="cui__field__label">
-          Please write your email address
-        </label>
-        <input class="cui__field__input" value="email@" />
-      </div>
-    </li>
-  </ul>
-</div>
-
-<a name="Field/floating label"></a><h2 class="cui__title--secondary">Floating label</h2>
-<p class="cui__paragraph--primary">When fields are blank, their labels will behave as placeholders. When the field is being filled, the label should move to the top. You can verify this behaviour in the following example:</p>
-<div>
-  <div class="cui__field" style="width: 45%; float: left;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-  <div class="cui__field big" style="width: 45%; float: left; margin-left: 10px;">
-    <label class="cui__field__label">
-      Please write your email address
-    </label>
-    <input class="cui__field__input" oninput="floatingLabel(this)" />
-  </div>
-    <div style="clear: both"></div>
-</div>
-
 <a name="Field/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
-<li><a href="examples/base/checkout.html">Checkout form</a></li>
+<li><a class="cui__link" href="examples/base/checkout.html">Checkout form</a></li>
 </ul>
 <a name="Field/regular"></a><h2 class="cui__title--secondary">Regular</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field">
+<div class="example-block"><div class="example"><div class="cui__field">
     <label class="cui__field__label">
         Please write your email address
     </label>
@@ -1567,7 +1445,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/regular/focused"></a><h3 class="cui__subtitle">Focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-focused">
+<div class="example-block"><div class="example"><div class="cui__field is-focused">
     <label class="cui__field__label is-focused">
         Please write your email address
     </label>
@@ -1580,7 +1458,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/regular/filling"></a><h3 class="cui__subtitle">Filling</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-filled is-focused">
+<div class="example-block"><div class="example"><div class="cui__field is-filled is-focused">
     <label class="cui__field__label">
         Please write your email address
     </label>
@@ -1593,7 +1471,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/regular/filled"></a><h3 class="cui__subtitle">Filled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-filled">
+<div class="example-block"><div class="example"><div class="cui__field is-filled">
     <label class="cui__field__label">
         Please write your email address
     </label>
@@ -1607,7 +1485,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </div></code></pre></div>
 <a name="Field/regular/error"></a><h3 class="cui__subtitle">Error</h3>
 <p class="cui__paragraph--primary">Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-error">
+<div class="example-block"><div class="example"><div class="cui__field is-error">
     <label class="cui__field__label">
         Invalid email
     </label>
@@ -1620,7 +1498,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/regular/error focused"></a><h3 class="cui__subtitle">Error focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-error is-focused">
+<div class="example-block"><div class="example"><div class="cui__field is-error is-focused">
     <label class="cui__field__label">
         Invalid email
     </label>
@@ -1634,7 +1512,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </div></code></pre></div>
 <a name="Field/regular/warning"></a><h3 class="cui__subtitle">Warning</h3>
 <p class="cui__paragraph--primary">Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-warning">
+<div class="example-block"><div class="example"><div class="cui__field is-warning">
     <label class="cui__field__label is-focused">
         Are you sure the domain is exanple?
     </label>
@@ -1647,7 +1525,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/regular/warning focused"></a><h3 class="cui__subtitle">Warning focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-warning is-focused">
+<div class="example-block"><div class="example"><div class="cui__field is-warning is-focused">
     <label class="cui__field__label is-focused">
         Are you sure the domain is exanple?
     </label>
@@ -1661,7 +1539,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </div></code></pre></div>
 <a name="Field/regular/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
 <p class="cui__paragraph--primary">Should be used when it&#39;s important to show the field to the user but she should not be able to edit it.</p>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field is-disabled left half">
+<div class="example-block"><div class="example"><div class="cui__field is-disabled left half">
     <label class="cui__field__label">
         Enter your email address
     </label>
@@ -1692,7 +1570,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <p class="cui__paragraph--primary">By default, side by side fields will be responsive, meaning that they will
 turn full width on thin screens. If you want fields to keep appearing side
 by side on thin viewports, add the <span class="code">-non-responsive</span> class to the field. You
-can see an example of this in the <a href="examples/base/checkout.html">Billing Address</a>
+can see an example of this in the <a class="cui__link" href="examples/base/checkout.html">Billing Address</a>
 demo.</p>
 <div style="overflow: hidden">
   <ul class="overview">
@@ -1803,7 +1681,7 @@ demo.</p>
 </div>
 
 <a name="Field/stacked/side by side"></a><h3 class="cui__subtitle">Side by side</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field left half">
         <label class="cui__field__label">
             Name
@@ -1832,7 +1710,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/top part"></a><h3 class="cui__subtitle">Top part</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             Name
@@ -1861,7 +1739,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/top only"></a><h3 class="cui__subtitle">Top only</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field top">
         <label class="cui__field__label">
             Email address
@@ -1878,7 +1756,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/bottom part"></a><h3 class="cui__subtitle">Bottom part</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field bottom-left half">
         <label class="cui__field__label">
             City
@@ -1907,7 +1785,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/bottom only"></a><h3 class="cui__subtitle">Bottom only</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field bottom">
         <label class="cui__field__label">
             Password
@@ -1924,7 +1802,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/square"></a><h3 class="cui__subtitle">Square</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             City
@@ -1965,7 +1843,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/half and quarter sizes"></a><h3 class="cui__subtitle">Half and Quarter sizes</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             City
@@ -2006,7 +1884,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/stacked/twenty - forty"></a><h3 class="cui__subtitle">Twenty - Forty</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__fielset">
+<div class="example-block"><div class="example"><div class="cui__fielset">
     <div class="cui__field top-left twenty">
         <label class="cui__field__label">
             Title
@@ -2047,7 +1925,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon"></a><h2 class="cui__title--secondary">With Icon</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon">
+<div class="example-block"><div class="example"><div class="cui__field--icon">
     <span class="cui__field--icon__icon cui__icon--mail"></span>
     <label class="cui__field--icon__label">
         Enter your postal code
@@ -2062,7 +1940,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon/focused"></a><h3 class="cui__subtitle">Focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon is-focused">
+<div class="example-block"><div class="example"><div class="cui__field--icon is-focused">
     <span class="cui__field--icon__icon cui__icon--lock is-focused"></span>
     <label class="cui__field--icon__label is-focused">
         Enter your password
@@ -2077,7 +1955,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon/filling"></a><h3 class="cui__subtitle">Filling</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon is-filled is-focused">
+<div class="example-block"><div class="example"><div class="cui__field--icon is-filled is-focused">
     <span class="cui__field--icon__icon cui__icon--lock"></span>
     <label class="cui__field--icon__label">
         Please write your email address
@@ -2092,7 +1970,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon/error"></a><h3 class="cui__subtitle">Error</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon is-error">
+<div class="example-block"><div class="example"><div class="cui__field--icon is-error">
     <span class="cui__field--icon__icon cui__icon--lock"></span>
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
@@ -2107,7 +1985,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon/warning"></a><h3 class="cui__subtitle">Warning</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon is-warning">
+<div class="example-block"><div class="example"><div class="cui__field--icon is-warning">
     <span class="cui__field--icon__icon cui__icon--lock"></span>
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
@@ -2122,7 +2000,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Field/icon/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__field--icon is-disabled">
+<div class="example-block"><div class="example"><div class="cui__field--icon is-disabled">
     <span class="cui__field--icon__icon cui__icon--lock"></span>
     <label class="cui__field--icon__label">
         Are you sure the domain is example?
@@ -2157,92 +2035,92 @@ demo.</p>
                 floatingLabel(input)
         })
 </script>
-</section><section id="Switch"><h1 class="cui__title--primary">Switch</h1>
+</div><div id="Switch" class="docs__section"><h1 class="cui__title--primary">Switch</h1>
 <p class="cui__paragraph--primary">The Switch component are a set of checkbox-type components, both in list and standalone. In mobile the look and feel of the component is always the slider style switch, while in desktop there is the option of being either the same style as mobile or a more traditional checkbox mark.</p>
 <hr>
 <ul class="summary">
-<li><a href="#Switch/examples">Examples</a></li>
-<li><a href="#Switch/single">Single</a><ul class="summary">
-<li><a href="#Switch/single/right">right</a></li>
-<li><a href="#Switch/single/pressed">pressed</a></li>
-<li><a href="#Switch/single/checked">checked</a></li>
-<li><a href="#Switch/single/checked and pressed">checked and pressed</a></li>
-<li><a href="#Switch/single/checkbox">checkbox</a></li>
-<li><a href="#Switch/single/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Switch/examples">Examples</a></li>
+<li><a class="cui__link" href="#Switch/single">Single</a><ul class="summary">
+<li><a class="cui__link" href="#Switch/single/right">right</a></li>
+<li><a class="cui__link" href="#Switch/single/pressed">pressed</a></li>
+<li><a class="cui__link" href="#Switch/single/checked">checked</a></li>
+<li><a class="cui__link" href="#Switch/single/checked and pressed">checked and pressed</a></li>
+<li><a class="cui__link" href="#Switch/single/checkbox">checkbox</a></li>
+<li><a class="cui__link" href="#Switch/single/disabled">disabled</a></li>
 </ul>
 </li>
-<li><a href="#Switch/multiple">Multiple</a><ul class="summary">
-<li><a href="#Switch/multiple/checkbox">checkbox</a></li>
-<li><a href="#Switch/multiple/borderless">borderless</a></li>
-<li><a href="#Switch/multiple/checkbox borderless">checkbox borderless</a></li>
-<li><a href="#Switch/multiple/disabled">disabled</a></li>
-<li><a href="#Switch/multiple/disabled checkbox">disabled checkbox</a></li>
-<li><a href="#Switch/multiple/disabled borderless checkbox">disabled borderless checkbox</a></li>
+<li><a class="cui__link" href="#Switch/multiple">Multiple</a><ul class="summary">
+<li><a class="cui__link" href="#Switch/multiple/checkbox">checkbox</a></li>
+<li><a class="cui__link" href="#Switch/multiple/borderless">borderless</a></li>
+<li><a class="cui__link" href="#Switch/multiple/checkbox borderless">checkbox borderless</a></li>
+<li><a class="cui__link" href="#Switch/multiple/disabled">disabled</a></li>
+<li><a class="cui__link" href="#Switch/multiple/disabled checkbox">disabled checkbox</a></li>
+<li><a class="cui__link" href="#Switch/multiple/disabled borderless checkbox">disabled borderless checkbox</a></li>
 </ul>
 </li>
 </ul>
 <a name="Switch/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
-<li><a href="examples/base/selectors.html">Selectors</a></li>
+<li><a class="cui__link" href="examples/base/selectors.html">Selectors</a></li>
 </ul>
 <a name="Switch/single"></a><h2 class="cui__title--secondary">Single</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch">
+<div class="example-block"><div class="example"><div class="cui__switch">
   This is a toggle switch
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch&quot;&gt;
   This is a toggle switch
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/right"></a><h3 class="cui__subtitle">Right</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch right">
+<div class="example-block"><div class="example"><div class="cui__switch right">
   This is a toggle switch on the right side
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch right&quot;&gt;
   This is a toggle switch on the right side
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/checked"></a><h3 class="cui__subtitle">Checked</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-checked">
+<div class="example-block"><div class="example"><div class="cui__switch is-checked">
   This is a toggle switch checked
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-checked&quot;&gt;
   This is a toggle switch checked
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/pressed"></a><h3 class="cui__subtitle">Pressed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-pressed">
+<div class="example-block"><div class="example"><div class="cui__switch is-pressed">
   This is a toggle switch checked
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-pressed&quot;&gt;
   This is a toggle switch checked
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/checked and pressed"></a><h3 class="cui__subtitle">Checked and pressed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-pressed is-checked">
+<div class="example-block"><div class="example"><div class="cui__switch is-pressed is-checked">
   This is a toggle switch checked
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-pressed is-checked&quot;&gt;
   This is a toggle switch checked
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/checkbox"></a><h3 class="cui__subtitle">Checkbox</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch checkbox">
+<div class="example-block"><div class="example"><div class="cui__switch checkbox">
   This is a toggle switch with checkbox styles on desktop
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch checkbox&quot;&gt;
   This is a toggle switch with checkbox styles on desktop
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/checkbox disabled"></a><h3 class="cui__subtitle">Checkbox disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch checkbox is-disabled">
+<div class="example-block"><div class="example"><div class="cui__switch checkbox is-disabled">
   This is a disabled toggle switch with checkbox styles on desktop
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch checkbox is-disabled&quot;&gt;
   This is a disabled toggle switch with checkbox styles on desktop
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/single/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch is-disabled">
+<div class="example-block"><div class="example"><div class="cui__switch is-disabled">
   This is a toggle switch disabled
 </div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-disabled&quot;&gt;
   This is a toggle switch disabled
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple"></a><h2 class="cui__title--secondary">Multiple</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2307,7 +2185,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/checkbox"></a><h3 class="cui__subtitle">Checkbox</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple checkbox">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple checkbox">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2372,7 +2250,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/borderless"></a><h3 class="cui__subtitle">Borderless</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple borderless">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple borderless">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2437,7 +2315,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/checkbox borderless"></a><h3 class="cui__subtitle">Checkbox borderless</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple borderless checkbox">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple borderless checkbox">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2502,7 +2380,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple is-disabled">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple is-disabled">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2567,7 +2445,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/disabled checkbox"></a><h3 class="cui__subtitle">Disabled checkbox</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple checkbox is-disabled">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple checkbox is-disabled">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2632,7 +2510,7 @@ demo.</p>
 &lt;/div&gt;
 </div></code></pre></div>
 <a name="Switch/multiple/disabled borderless checkbox"></a><h3 class="cui__subtitle">Disabled borderless checkbox</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><div class="cui__switch--multiple checkbox borderless is-disabled">
+<div class="example-block"><div class="example"><div class="cui__switch--multiple checkbox borderless is-disabled">
   <div class="cui__switch--multiple__option is-checked">
     <div class="cui__switch--multiple__option__heading">
       This is a multiple choice
@@ -2696,43 +2574,44 @@ demo.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
-</section><section id="Text"><h1 class="cui__title--primary">Text</h1>
+</div><div id="Text" class="docs__section"><h1 class="cui__title--primary">Text</h1>
 <p class="cui__paragraph--primary">These are the general text styles for the toolkit.</p>
 <ul class="summary">
-<li><a href="#Text/example">Example</a></li>
-<li><a href="#Text/title">Title</a><ul class="summary">
-<li><a href="#Text/title/primary">Primary</a><ul class="summary">
-<li><a href="#Text/title/primary/small">small</a></li>
-<li><a href="#Text/title/primary/small and prominent">small and prominent</a></li>
+<li><a class="cui__link" href="#Text/example">Example</a></li>
+<li><a class="cui__link" href="#Text/title">Title</a><ul class="summary">
+<li><a class="cui__link" href="#Text/title/primary">Primary</a><ul class="summary">
+<li><a class="cui__link" href="#Text/title/primary/small">small</a></li>
+<li><a class="cui__link" href="#Text/title/primary/small and prominent">small and prominent</a></li>
 </ul>
 </li>
-<li><a href="#Text/title/secondary">Secondary</a><ul class="summary">
-<li><a href="#Text/title/subtitle">Subtitle</a></li>
+<li><a class="cui__link" href="#Text/title/secondary">Secondary</a><ul class="summary">
+<li><a class="cui__link" href="#Text/title/subtitle">Subtitle</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#Text/paragraph">Paragraph</a><ul class="summary">
-<li><a href="#Text/paragraph/primary">Primary</a><ul class="summary">
-<li><a href="#Text/paragraph/primary/condensed">condensed</a></li>
+<li><a class="cui__link" href="#Text/paragraph">Paragraph</a><ul class="summary">
+<li><a class="cui__link" href="#Text/paragraph/primary">Primary</a><ul class="summary">
+<li><a class="cui__link" href="#Text/paragraph/primary/condensed">condensed</a></li>
 </ul>
 </li>
-<li><a href="#Text/paragraph/secondary">Secondary</a><ul class="summary">
-<li><a href="#Text/paragraph/secondary/condensed">condensed</a></li>
+<li><a class="cui__link" href="#Text/paragraph/secondary">Secondary</a><ul class="summary">
+<li><a class="cui__link" href="#Text/paragraph/secondary/condensed">condensed</a></li>
 </ul>
 </li>
-<li><a href="#Text/paragraph/legal">Legal</a></li>
+<li><a class="cui__link" href="#Text/paragraph/legal">Legal</a></li>
 </ul>
 </li>
-<li><a href="#Text/label">Label</a></li>
+<li><a class="cui__link" href="#Text/label">Label</a></li>
+<li><a class="cui__link" href="#Text/link">Link</a></li>
 </ul>
 <a name="Text/example"></a><h2 class="cui__title--secondary">Example</h2>
 <ul class="summary">
-<li><a href="examples/base/documentation.html">Documentation example</a></li>
+<li><a class="cui__link" href="examples/base/documentation.html">Documentation example</a></li>
 </ul>
 <a name="Text/title"></a><h2 class="cui__title--secondary">Title</h2>
 <a name="Text/title/primary"></a><h3 class="cui__subtitle">Primary</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><h1 class="cui__title--primary">
+<div class="example-block"><div class="example"><h1 class="cui__title--primary">
   Primary title
 </h1>
 
@@ -2747,7 +2626,7 @@ demo.</p>
 &lt;/h1&gt;
 </div></code></pre></div>
 <a name="Text/title/primary/small"></a><h3 class="cui__subtitle">Small</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><h1 class="cui__title--primary small">
+<div class="example-block"><div class="example"><h1 class="cui__title--primary small">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long
 </h1>
 
@@ -2762,7 +2641,7 @@ demo.</p>
 &lt;/h1&gt;
 </div></code></pre></div>
 <a name="Text/title/primary/small and prominent"></a><h3 class="cui__subtitle">Small and prominent</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><h1 class="cui__title--primary small strong">
+<div class="example-block"><div class="example"><h1 class="cui__title--primary small strong">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long
 </h1>
 
@@ -2777,7 +2656,7 @@ demo.</p>
 &lt;/h1&gt;
 </div></code></pre></div>
 <a name="Text/title/secondary"></a><h2 class="cui__title--secondary">Secondary</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><h2 class="cui__title--secondary">
+<div class="example-block"><div class="example"><h2 class="cui__title--secondary">
   Secondary title
 </h2>
 
@@ -2792,7 +2671,7 @@ demo.</p>
 &lt;/h2&gt;
 </div></code></pre></div>
 <a name="Text/title/subtitle"></a><h2 class="cui__title--secondary">Subtitle</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><h3 class="cui__subtitle">
+<div class="example-block"><div class="example"><h3 class="cui__subtitle">
   Subtitle
 </h3>
 
@@ -2808,7 +2687,7 @@ demo.</p>
 </div></code></pre></div>
 <a name="Text/paragraph"></a><h2 class="cui__title--secondary">Paragraph</h2>
 <a name="Text/paragraph/primary"></a><h3 class="cui__subtitle">Primary</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--primary">
+<div class="example-block"><div class="example"><p class="cui__paragraph--primary">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
 <p class="cui__paragraph--primary">
@@ -2821,7 +2700,7 @@ demo.</p>
 &lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/paragraph/primary/condensed"></a><h3 class="cui__subtitle">Primary condensed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--primary condensed">
+<div class="example-block"><div class="example"><p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
 <p class="cui__paragraph--primary condensed">
@@ -2834,7 +2713,7 @@ demo.</p>
 &lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/paragraph/secondary"></a><h3 class="cui__subtitle">Secondary</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--secondary">
+<div class="example-block"><div class="example"><p class="cui__paragraph--secondary">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
 <p class="cui__paragraph--secondary">
@@ -2847,7 +2726,7 @@ demo.</p>
 &lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/paragraph/secondary/condensed"></a><h3 class="cui__subtitle">Secondary condensed</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--secondary condensed">
+<div class="example-block"><div class="example"><p class="cui__paragraph--secondary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
 <p class="cui__paragraph--secondary condensed">
@@ -2860,14 +2739,14 @@ demo.</p>
 &lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/paragraph/legal"></a><h3 class="cui__subtitle">Legal</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--legal">
+<div class="example-block"><div class="example"><p class="cui__paragraph--legal">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p></div><pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--legal&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 &lt;/p&gt;
 </div></code></pre></div>
 <a name="Text/label"></a><h2 class="cui__title--secondary">Label</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><p class="cui__paragraph--primary condensed">
+<div class="example-block"><div class="example"><p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
   <span class="cui__label">Promo</span>
 </p></div><pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
@@ -2875,41 +2754,39 @@ demo.</p>
   &lt;span class=&quot;cui__label&quot;&gt;Promo&lt;/span&gt;
 &lt;/p&gt;
 </div></code></pre></div>
-</section><section id="Icon"><h1 class="cui__title--primary">Icons</h1>
+<a name="Text/link"></a><h2 class="cui__title--secondary">Link</h2>
+<div class="example-block"><div class="example"><p class="cui__paragraph--primary -condensed">
+  <a class="cui__link">
+    Click here to go somewhere else
+  </a>
+</a></div><pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary -condensed&quot;&gt;
+  &lt;a class=&quot;cui__link&quot;&gt;
+    Click here to go somewhere else
+  &lt;/a&gt;
+&lt;/a&gt;
+</div></code></pre></div>
+</div><div id="Icon" class="docs__section"><h1 class="cui__title--primary">Icons</h1>
 <p class="cui__paragraph--primary">A set of icons are provided as part of the toolkit. They are designed to be used in the context of Fields, and have included the styles for hover states as well as warnings and errors.</p>
 <p class="cui__paragraph--primary">They are bundled as inline SVG within the CSS.</p>
 <hr>
 <ul class="summary">
-<li><a href="#Icon/set">Icon set</a><ul class="summary">
-<li><a href="#Icon/set/focused">focused</a></li>
+<li><a class="cui__link" href="#Icon/set">Icon set</a><ul class="summary">
+<li><a class="cui__link" href="#Icon/set/focused">focused</a></li>
 </ul>
 </li>
 </ul>
 <a name="Icon/set"></a><h2 class="cui__title--secondary">Icon set</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><span class="cui__icon cui__icon--mail"></span>
+<div class="example-block"><div class="example"><span class="cui__icon cui__icon--mail"></span>
 <span class="cui__icon cui__icon--lock"></span></div><pre><code class="lang-html"><div>&lt;span class=&quot;cui__icon cui__icon--mail&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;cui__icon cui__icon--lock&quot;&gt;&lt;/span&gt;
 </div></code></pre></div>
 <a name="Icon/set/focused"></a><h3 class="cui__subtitle">Focused</h3>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><span class="cui__icon cui__icon--mail is-focused"></span>
+<div class="example-block"><div class="example"><span class="cui__icon cui__icon--mail is-focused"></span>
 <span class="cui__icon cui__icon--lock is-focused"></span></div><pre><code class="lang-html"><div>&lt;span class=&quot;cui__icon cui__icon--mail is-focused&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;cui__icon cui__icon--lock is-focused&quot;&gt;&lt;/span&gt;
 </div></code></pre></div>
-</section><section id="Link"><h1 class="cui__title--primary">Link</h1>
-<p class="cui__paragraph--primary">Link is a styling that should not</p>
-<hr>
-<ul class="summary">
-<li><a href="#Link/regular">Regular</a></li>
-</ul>
-<a name="Link/regular"></a><h2 class="cui__title--secondary">Regular</h2>
-<div class="example-block"><div class="example"><button class="toggle-grid">Grid off</button><a class="cui__link">
-  Click here to go somewhere else
-</a></div><pre><code class="lang-html"><div>&lt;a class=&quot;cui__link&quot;&gt;
-  Click here to go somewhere else
-&lt;/a&gt;
-</div></code></pre></div>
-</section></main><script>// helpers for documentation
-$(window).keypress(function(e){
+</div></div><script>// helpers for documentation
+$(document).keypress(function(e){
   if (e.which === 103) {
     $('body').toggleClass('cui__baseline__grid');
   }
@@ -2966,7 +2843,7 @@ function anchor(url) {
 $('[id="' + anchor(location.href) + '"]').show();
 
 $('#menu a').click(function(){
-  $('section').hide();
+  $('.docs__section').hide();
   $('[id="' + anchor(this.href) + '"]').show();
 })
 
@@ -2982,4 +2859,6 @@ $('.toggle-grid').click(function(){
   }
 })
 
-hljs.initHighlightingOnLoad();</script></body></html>
+if (Array.prototype.forEach) {
+  hljs.initHighlightingOnLoad();
+}</script></body></html>

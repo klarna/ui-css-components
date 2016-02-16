@@ -83,7 +83,8 @@
             }
 
             &::after {
-                opacity: 1;
+                @include opacity(1);
+
                 top: ($grid * 2.4);
             }
 

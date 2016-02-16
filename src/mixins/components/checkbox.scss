@@ -20,30 +20,13 @@
     }
 
     &::after {
-        background: url('data:image/svg+xml,
-        <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" fill-rule="evenodd">
-                <g transform="translate(-720, -1508)">
-                    <g transform="translate(700, 1457)">
-                        <g transform="translate(0, 33)">
-                            <g transform="translate(20, 14)">
-                                <g transform="translate(0, 4)">
-                                    <g>
-                                        <rect x="0" y="0" width="14" height="14" rx="2"></rect>
-                                        <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>');
+        @include opacity(0);
+
+        background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTQgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MjAsIC0xNTA4KSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAwLCAxNDU3KSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMzMpIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgMTQpIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCA0KSI+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMiI+PC9yZWN0PjxwYXRoIGQ9Ik0zLjgsNi42NzU4MzM2MSBMNi40MDQ4NDQ4Myw5LjU5ODI4MjQgTDEwLjcyNzk1MTcsNC4yIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48L2c+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+');
         content: "";
         display: block;
         height: ($grid * 2.8);
         left: $padding - ($grid * 2);
-        opacity: 0;
         position: absolute;
         top: ($grid * 6);
         -webkit-transition: all .2s ease;
@@ -77,7 +60,8 @@
         }
 
         &::after {
-            opacity: 1;
+            @include opacity(1);
+
             top: $top;
         }
 
@@ -88,7 +72,8 @@
             }
 
             &::after {
-                opacity: 1;
+                @include opacity(1);
+
                 top: $top;
             }
         }

@@ -113,6 +113,10 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
+
+        .ie9 &, .ie8 & {
+            margin-top: ($grid * -2);
+        }
     }
 
     .is-filled & {
@@ -130,6 +134,10 @@
     .is-disabled & {
         color: map-get($colors, grey-lines);
     }
+
+    .ie9 &, .ie8 & {
+        z-index: 1;
+    }
 }
 
 .cui__field__input {
@@ -143,13 +151,20 @@
     outline: none;
     width: 100%;
 
+    .ie9 &, .ie8 & {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+        position: relative;
+        top: ($grid * 3);
+        z-index: 10;
+    }
+
     .big & {
-      height: ($grid * 12);
+        height: ($grid * 12);
     }
 
     .big.is-filled &, .big.is-error &, .big.is-warning & {
-      height: ($grid * 9.8);
-      top: ($grid * 2.2);
+        height: ($grid * 9.8);
+        top: ($grid * 2.2);
     }
 
     .is-filled &, .is-error &, .is-warning & {
@@ -164,10 +179,6 @@
     .safari &,
     .ios & {
         -webkit-transform: translate3d(0, 0, 0);
-    }
-
-    @include respond-to-ie(8) {
-        border: ($grid * .2) solid $border-color;
     }
 }
 

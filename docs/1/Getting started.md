@@ -1,6 +1,6 @@
 # Getting started
 
-Welcome to the ui-toolkit guide. The goals of this document are:
+Welcome to the ui-css-components guide. The goals of this document are:
 
 - To explain the usage of all components;
 - To clarify the reasoning behind their implementation;
