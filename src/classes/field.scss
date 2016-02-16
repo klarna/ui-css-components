@@ -88,7 +88,7 @@
     }
 }
 
-.cui__field__label, .cui__field__input {
+.cui__field__label {
     @include typography(($grid * 2.8), regular);
 
     line-height: ($grid * 10);
@@ -150,6 +150,9 @@
     color: #3C3C3E;
     outline: none;
     width: 100%;
+    height: ($grid * 10);
+    padding: 0 ($grid * 4);
+    position: absolute;
 
     .ie9 &, .ie8 & {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
