@@ -1361,7 +1361,7 @@
     .cui__field.is-disabled:hover, .is-disabled.cui__field--icon:hover {
       border-color: #cbcbcd; }
 
-.cui__field__label, .cui__field--icon__label, .cui__field__input, .cui__field--icon__input {
+.cui__field__label, .cui__field--icon__label {
   font-size: 14px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
@@ -1415,7 +1415,10 @@
   box-sizing: border-box;
   color: #3C3C3E;
   outline: none;
-  width: 100%; }
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  position: absolute; }
   .ie9 .cui__field__input, .ie9 .cui__field--icon__input, .ie8 .cui__field__input, .ie8 .cui__field--icon__input {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
     position: relative;
