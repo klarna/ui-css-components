@@ -27,12 +27,12 @@
     padding: 0;
 
     @include respond-to-wide {
-        width: ($grid * 102);
+        width: ($grid * $content-main-width);
         margin: 0 auto;
     }
 
     .ie8 & {
-        width: ($grid * 102);
+        width: ($grid * $content-main-width);
         margin: 0 auto;
     }
 }
