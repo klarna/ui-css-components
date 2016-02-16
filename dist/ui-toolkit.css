@@ -2813,8 +2813,7 @@
   border-color: #0074c8;
   color: #0074c8;
   height: 29px;
-  margin-bottom: -2px;
-  padding-bottom: -1px; }
+  margin-bottom: -2px; }
 
 @keyframes spin {
   to {
@@ -2893,6 +2892,8 @@
   -webkit-font-smoothing: antialiased;
   padding: 22px 0 13px 0;
   line-height: 15px; }
+  .cui__title--secondary.condensed {
+    padding: 2px 0 8px 0; }
 
 .cui__subtitle {
   font-size: 12px;
@@ -2966,3 +2967,17 @@
   text-transform: uppercase; }
   .is-disabled .cui__label {
     background: #cbcbcd; }
+
+.cui__text-label {
+  font-size: 11px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #9e9ea0;
+  line-height: 15px;
+  margin: 0;
+  padding: 8px 0 2px 0; }
+
+.cui__text-label + .cui__title--secondary {
+  padding-top: 2px; }
