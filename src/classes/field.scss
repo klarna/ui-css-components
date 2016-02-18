@@ -12,6 +12,7 @@
     margin-bottom: ($grid * -.2);
     position: relative;
     -webkit-transition: all .2s ease;
+    text-align: left;
     transition: all .2s ease;
 
     &.big {
@@ -202,7 +203,6 @@
 }
 
 .cui__field--icon__icon {
-    background: #A8A8A8;
     display: block;
     height: ($grid * 4);
     margin: ($grid * 3) 0 0 ($grid * 2.4);
