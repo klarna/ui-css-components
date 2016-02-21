@@ -8,8 +8,10 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    &__price {
-      border-left: 1px solid rgba(white, 0.1);
+    & .cui__button__price {
+        @include button__price(
+            $border-color: white
+        );
     }
 
     &.is-loading {
@@ -28,8 +30,10 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    &__price {
-      border-left: 1px solid rgba(map-get($colors, klarna-blue), 0.1);
+    & .cui__button__price {
+        @include button__price(
+            $border-color: map-get($colors, klarna-blue)
+        );
     }
 
     &.is-loading {

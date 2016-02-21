@@ -248,7 +248,7 @@ Every time a user submits a form, you should change the current submit button to
 ```html
 <button class="cui__button--primary has-price">
   Pay now
-  <span class="cui__button--primary__price">
+  <span class="cui__button__price">
     $1.20
   </span>
 </button>
@@ -260,7 +260,7 @@ Every time a user submits a form, you should change the current submit button to
 ```html
 <button class="cui__button--primary big has-price">
   Pay now
-  <span class="cui__button--primary__price">
+  <span class="cui__button__price">
     $1.20
   </span>
 </button>
@@ -346,7 +346,7 @@ This should be used for your secondary actions.
 ```html
 <button class="cui__button--secondary has-price">
   Pay now
-  <span class="cui__button--secondary__price">
+  <span class="cui__button__price">
     $1.20
   </span>
 </button>
@@ -358,7 +358,7 @@ This should be used for your secondary actions.
 ```html
 <button class="cui__button--secondary big has-price">
   Pay now
-  <span class="cui__button--secondary__price">
+  <span class="cui__button__price">
     $1.20
   </span>
 </button>
