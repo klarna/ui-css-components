@@ -44,6 +44,18 @@
         float: left;
     }
 
+    &.has-price {
+        padding: 0 ($grid * 4);
+        text-align: left;
+    }
+
+    &__price {
+        display: inline-block;
+        float: right;
+        margin-left: $grid * 4;
+        padding-left: $grid * 4;
+    }
+
     &:hover, &:focus {
         @each $attribute in $darken-attributes {
           #{$attribute}: darken($darken-color, 5.2);
