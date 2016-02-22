@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary -condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary -condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary -condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary -condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary -condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary -condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary -condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary -condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary -condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary -condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -1105,6 +1105,80 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
    &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-fluid&quot; id=&quot;tab-menu-fluid3&quot; /&gt;
    &lt;label class=&quot;cui__tab-menu__button&quot; for=&quot;tab-menu-fluid3&quot;&gt;Three&lt;/label&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+</div><div id="Preview" class="docs__section"><h1 class="cui__title--primary">Preview</h1>
+<p class="cui__paragraph--primary">Preview is a text component for previewing the already-filled content of a fieldset
+block.</p>
+<ul class="summary">
+<li><a class="cui__link" href="#Preview/examples">Examples</a></li>
+<li><a class="cui__link" href="#Preview/default">Default</a><ul class="summary">
+<li><a class="cui__link" href="#Preview/default/with link">with link</a></li>
+</ul>
+</li>
+</ul>
+<a name="Preview/examples"></a><h2 class="cui__title--secondary">Examples</h2>
+<ul class="summary">
+<li><a class="cui__link" href="examples/base/checkout.html">Checkout</a></li>
+</ul>
+<a name="Preview/default"></a><h2 class="cui__title--secondary">Default</h2>
+<div class="example-block"><div class="example"><h3 class="cui__subtitle condensed">
+  Billing Address
+</h3>
+
+<div class="cui__preview">
+  <h2 class="cui__preview__title">John Smith</h2>
+  <p class="cui__preview__content">
+    1425 North Avenue Street<br />
+    San Francisco<br />
+    94100 California<br />
+    United States
+  </p>
+</div></div><pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle condensed&quot;&gt;
+  Billing Address
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__preview&quot;&gt;
+  &lt;h2 class=&quot;cui__preview__title&quot;&gt;John Smith&lt;/h2&gt;
+  &lt;p class=&quot;cui__preview__content&quot;&gt;
+    1425 North Avenue Street&lt;br /&gt;
+    San Francisco&lt;br /&gt;
+    94100 California&lt;br /&gt;
+    United States
+  &lt;/p&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Preview/default/with link"></a><h3 class="cui__subtitle">with link</h3>
+<div class="example-block"><div class="example"><h3 class="cui__subtitle condensed">
+  Billing Address
+</h3>
+
+<div class="cui__preview has-link">
+  <h2 class="cui__preview__title">John Smith</h2>
+  <p class="cui__preview__content">
+    1425 North Avenue Street<br />
+    San Francisco<br />
+    94100 California<br />
+    United States
+  </p>
+  <div class="cui__preview__footer">
+    <a class="cui__preview__footer__link">Change address</a>
+  </div>
+</div></div><pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle condensed&quot;&gt;
+  Billing Address
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__preview has-link&quot;&gt;
+  &lt;h2 class=&quot;cui__preview__title&quot;&gt;John Smith&lt;/h2&gt;
+  &lt;p class=&quot;cui__preview__content&quot;&gt;
+    1425 North Avenue Street&lt;br /&gt;
+    San Francisco&lt;br /&gt;
+    94100 California&lt;br /&gt;
+    United States
+  &lt;/p&gt;
+  &lt;div class=&quot;cui__preview__footer&quot;&gt;
+    &lt;a class=&quot;cui__preview__footer__link&quot;&gt;Change address&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 </div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>
@@ -2576,7 +2650,10 @@ demo.</p>
 <li><a class="cui__link" href="#Text/title/secondary/condensed">condensed</a></li>
 </ul>
 </li>
-<li><a class="cui__link" href="#Text/title/subtitle">Subtitle</a></li>
+<li><a class="cui__link" href="#Text/title/subtitle">Subtitle</a><ul class="summary">
+<li><a class="cui__link" href="#Text/title/subtitle/condensed">condensed</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="cui__link" href="#Text/paragraph">Paragraph</a><ul class="summary">
@@ -2688,6 +2765,21 @@ demo.</p>
 &lt;/h3&gt;
 
 &lt;h3 class=&quot;cui__subtitle blue&quot;&gt;
+  Subtitle in blue
+&lt;/h3&gt;
+</div></code></pre></div>
+<a name="Text/title/subtitle/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
+<div class="example-block"><div class="example"><h3 class="cui__subtitle condensed">
+  Subtitle
+</h3>
+
+<h3 class="cui__subtitle blue condensed">
+  Subtitle in blue
+</h3></div><pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle condensed&quot;&gt;
+  Subtitle
+&lt;/h3&gt;
+
+&lt;h3 class=&quot;cui__subtitle blue condensed&quot;&gt;
   Subtitle in blue
 &lt;/h3&gt;
 </div></code></pre></div>

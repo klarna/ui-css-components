@@ -10,6 +10,7 @@ These are the general text styles for the toolkit.
   - [Secondary](#Text/title/secondary)
     - [condensed](#Text/title/secondary/condensed)
   - [Subtitle](#Text/title/subtitle)
+    - [condensed](#Text/title/subtitle/condensed)
 - [Paragraph](#Text/paragraph)
   - [Primary](#Text/paragraph/primary)
     - [condensed](#Text/paragraph/primary/condensed)
@@ -103,6 +104,19 @@ These are the general text styles for the toolkit.
 </h3>
 
 <h3 class="cui__subtitle blue">
+  Subtitle in blue
+</h3>
+```
+
+<a name="Text/title/subtitle/condensed"></a>
+### Condensed
+
+```html
+<h3 class="cui__subtitle condensed">
+  Subtitle
+</h3>
+
+<h3 class="cui__subtitle blue condensed">
   Subtitle in blue
 </h3>
 ```

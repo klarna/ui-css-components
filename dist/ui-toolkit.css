@@ -1393,12 +1393,10 @@
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  color: #9e9ea0;
   line-height: 50px;
   padding: 0 20px;
-  position: absolute; }
-
-.cui__field__label, .cui__field--icon__label {
-  color: #9e9ea0;
+  position: absolute;
   -webkit-transition: all .2s ease;
   transition: all .2s ease; }
   .big .cui__field__label, .big .cui__field--icon__label {
@@ -1457,7 +1455,7 @@
     top: 11px; }
   .is-filled .cui__field__input, .is-filled .cui__field--icon__input, .is-error .cui__field__input, .is-error .cui__field--icon__input, .is-warning .cui__field__input, .is-warning .cui__field--icon__input {
     height: 45px;
-    top: 5px; }
+    top: 7px; }
   .is-disabled .cui__field__input, .is-disabled .cui__field--icon__input {
     color: #cbcbcd; }
   .safari .cui__field__input, .safari .cui__field--icon__input,
@@ -1477,15 +1475,12 @@
   width: 20px; }
 
 .cui__fieldset {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   position: relative; }
   .cui__fieldset::after {
     content: "";
     clear: both;
     display: block; }
-
-.cui__subtitle + .cui__fieldset {
-  padding-top: 5px; }
 
 @keyframes spin {
   to {
@@ -1587,7 +1582,7 @@
  * Adds all atributes to define the best typography as possible
  */
 .cui__link {
-  color: #0074C8;
+  color: #0074c8;
   cursor: pointer;
   -webkit-transition: all .2s ease;
   text-decoration: none;
@@ -1691,6 +1686,102 @@
         .cui__loader.tiny.blue {
           background-image: url("img/loader-blue-tiny@2x.png");
           background-size: 10px 10px; } }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+/*******************************************************************************
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie { // Targets all IE browsers
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie(8) { // Targets only IE 8
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
+        padding-top: 22px;
+    }
+}
+*******************************************************************************/
+/**
+ * Adds all atributes to define the best typography as possible
+ */
+.cui__preview {
+  border: 1px solid #cbcbcd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  margin-bottom: 25px; }
+  .cui__preview.has-link {
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease; }
+    .cui__preview.has-link:hover {
+      border-color: #66aae0; }
+
+.cui__preview__title {
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  line-height: 15px;
+  margin: 0;
+  padding: 2px 0 3px 0; }
+
+.cui__preview__content {
+  line-height: 20px;
+  padding-top: 0;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #3c3c3e;
+  margin: 0;
+  padding: 0; }
+
+.cui__preview__footer {
+  display: block;
+  margin-bottom: -25px;
+  text-align: center; }
+
+.cui__preview__footer__link {
+  font-size: 13px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  color: #0074c8;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  text-decoration: none;
+  transition: all .2s ease;
+  background: white;
+  display: inline-block;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 0 5px; }
+  .cui__preview__footer__link:hover {
+    color: #005694; }
 
 @keyframes spin {
   to {
@@ -2877,24 +2968,15 @@
 /**
  * Adds all atributes to define the best typography as possible
  */
-.cui__title--primary, .cui__title--secondary {
-  font-size: 26px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  color: #3c3c3e;
-  line-height: 35px;
-  margin: 0; }
-  .cui__title--primary.blue, .cui__title--secondary.blue {
-    color: #0074c8; }
-
 .cui__title--primary {
   font-size: 26px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  color: #3c3c3e;
+  line-height: 35px;
+  margin: 0;
   padding: 18px 0 17px 0; }
   .cui__title--primary.small {
     font-size: 22px;
@@ -2909,6 +2991,8 @@
       font-weight: 400;
       text-rendering: geometricPrecision;
       -webkit-font-smoothing: antialiased; }
+  .cui__title--primary.blue {
+    color: #0074c8; }
 
 .cui__title--secondary {
   font-size: 15px;
@@ -2916,8 +3000,12 @@
   font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  padding: 22px 0 13px 0;
-  line-height: 15px; }
+  color: #3c3c3e;
+  line-height: 15px;
+  margin: 0;
+  padding: 22px 0 13px 0; }
+  .cui__title--secondary.blue {
+    color: #0074c8; }
   .cui__title--secondary.condensed {
     padding: 2px 0 8px 0; }
 
@@ -2935,34 +3023,53 @@
   text-transform: uppercase; }
   .cui__subtitle.blue {
     color: #0074c8; }
+  .cui__subtitle.condensed {
+    padding: 1px 0 9px 0; }
 
 .cui__title--primary + .cui__subtitle {
   margin-top: -10px; }
 
-.cui__paragraph--primary, .cui__paragraph--secondary {
+.cui__paragraph--primary {
   line-height: 25px;
   margin: 0;
-  padding: 3px 0 17px 0; }
-  .cui__paragraph--primary.condensed, .cui__paragraph--secondary.condensed {
-    line-height: 20px;
-    padding-top: 0;
-    padding-bottom: 15px; }
-
-.cui__paragraph--primary {
+  padding: 3px 0 17px 0;
   font-size: 13px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   color: #3c3c3e; }
+  .cui__paragraph--primary.condensed {
+    line-height: 20px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 13px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    color: #3c3c3e; }
 
 .cui__paragraph--secondary {
+  line-height: 25px;
+  margin: 0;
+  padding: 3px 0 17px 0;
   font-size: 13px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   color: #9e9ea0; }
+  .cui__paragraph--secondary.condensed {
+    line-height: 20px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 13px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    color: #9e9ea0; }
 
 .cui__paragraph--legal {
   font-size: 11px;
