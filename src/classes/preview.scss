@@ -1,0 +1,39 @@
+@import "../mixins/index";
+
+.cui__preview {
+    @include preview;
+
+    &.has-link {
+        cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+            border-color: $border-color-hover;
+        }
+    }
+}
+
+.cui__preview__title {
+    @include preview__title;
+}
+
+.cui__preview__content {
+    @include preview__content;
+}
+
+.cui__preview__footer {
+    display: block;
+    margin-bottom: ($grid * -5);
+    text-align: center;
+}
+
+.cui__preview__footer__link {
+    @include typography(($grid * 2.6), regular);
+    @include link;
+
+    background: white;
+    display: inline-block;
+    line-height: ($grid * 4);
+    margin: 0 auto;
+    padding: 0 ($grid * 1);
+}

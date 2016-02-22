@@ -1,39 +1,14 @@
 @import "../mixins/index";
 
 // TITLE
-.cui__title--primary, .cui__title--secondary {
-    @include typography(($grid * 5.2), regular);
-
-    color: map-get($colors, black);
-    line-height: ($grid * 7);
-    margin: 0;
-
-    &.blue {
-      color: map-get($colors, klarna-blue);
-    }
-}
-
 .cui__title--primary {
-    @include typography(($grid * 5.2), light);
-
-    padding: ($grid * 3.6) 0 ($grid * 3.4) 0;
-
-    &.small {
-        @include typography(($grid * 4.4), light);
-
-        padding: ($grid * 3.8) 0 ($grid * 3.2) 0;
-
-        &.strong {
-            @include typography(($grid * 4.4), regular);
-        }
-    }
+    @include title--primary;
 }
 
 .cui__title--secondary {
-    @include typography(($grid * 3), semi-bold);
+    @include title--secondary;
 
     padding: ($grid * 4.4) 0 ($grid * 2.6) 0;
-    line-height: ($grid * 3);
 
     &.condensed {
         padding: ($grid * 0.4) 0 ($grid * 1.6) 0;
@@ -42,18 +17,7 @@
 
 // SUBTITLE
 .cui__subtitle {
-  @include typography(($grid * 2.4), semi-bold);
-
-  color: map-get($colors, black);
-  height: ($grid * 4);
-  line-height: ($grid * 4);
-  margin: 0;
-  padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
-  text-transform: uppercase;
-
-  &.blue {
-    color: map-get($colors, klarna-blue);
-  }
+    @include subtitle;
 }
 
 .cui__title--primary + .cui__subtitle {
@@ -61,67 +25,34 @@
 }
 
 // PARAGRAPH
-.cui__paragraph--primary, .cui__paragraph--secondary {
-    line-height: ($grid * 5);
-    margin: 0;
-    padding: ($grid * .6) 0 ($grid * 3.4) 0;
-
-    &.condensed {
-        line-height: ($grid * 4);
-        padding-top: 0;
-        padding-bottom: ($grid * 3);
-    }
-}
-
 .cui__paragraph--primary {
-  @include typography(($grid * 2.6), regular);
+  @include paragraph--primary;
 
-  color: map-get($colors, black);
+  &.condensed {
+      @include paragraph--primary-condensed;
+  }
 }
 
 .cui__paragraph--secondary {
-  @include typography(($grid * 2.6), regular);
+  @include paragraph--secondary;
 
-  color: map-get($colors, grey-text);
+  &.condensed {
+      @include paragraph--secondary-condensed;
+  }
 }
 
 .cui__paragraph--legal {
-  @include typography(($grid * 2.2), regular);
-
-  color: map-get($colors, grey-text);
-  line-height: ($grid * 4);
-  margin: 0;
-  padding: ($grid * .4) 0 ($grid * 2.6) 0;
+  @include paragraph--legal;
 }
 
 // LABEL
 .cui__label {
-    @include typography(($grid * 2), semi-bold);
-
-    background: map-get($colors, klarna-blue);
-    border-radius: $border-radius;
-    bottom: ($grid * .2);
-    color: white;
-    display: inline-block;
-    left: ($grid * .8);
-    line-height: ($grid * 3);
-    padding: 0 ($grid * 1);
-    position: relative;
-    text-transform: uppercase;
-
-    .is-disabled & {
-        background: map-get($colors, grey-lines);
-    }
+    @include label;
 }
 
 // TEXT LABEL
 .cui__text-label {
-    @include typography(($grid * 2.4), regular);
-
-    color: map-get($colors, grey-text);
-    line-height: ($grid * 3);
-    margin: 0;
-    padding: ($grid * 1.6) 0 ($grid * 0.4) 0;
+    @include text-label;
 }
 
 .cui__text-label + .cui__title--secondary {
