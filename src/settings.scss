@@ -1,0 +1,59 @@
+// ================================================================
+//  General
+// ================================================================
+$root: "../";
+
+// ================================================================
+//  Typography and baseline
+// ================================================================
+$base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$grid: 5px;
+$content-main-width: 102; // $grid * 102
+
+// ================================================================
+//  Breakpoints
+// ================================================================
+$mobile-max-width: 569px;
+
+// ================================================================
+//  General colors
+// ================================================================
+$colors: (
+  klarna-blue: #0074c8,
+  morning-blue: #1a8cdc,
+  black: #3c3c3e,
+  block-hover: #f9f9f9,
+  grey-text: #9e9ea0,
+  grey-lines: #cbcbcd,
+  light-grey: #f5f5f7,
+  modal: #46505a,
+  white: #fff
+);
+
+// ================================================================
+//  Open Sans' weights
+// ================================================================
+$font-weights: (
+  light: 300,
+  regular: 400,
+  semi-bold: 600,
+  bold: 700
+);
+
+// ================================================================
+//  Borders
+// ================================================================
+$border-radius: ($grid * 1);
+$border-radius-checkbox: ($grid * .4);
+$border-color: map-get($colors, grey-lines);
+$border-color-error: #e6bebe;
+$border-color-warning: #e6c88c;
+$border-color-hover: #66aae0;
+$border-color-hover-error: #EF8B6F;
+$border-color-hover-warning: #E2AF4A;
+$border-color-focus: rgba(26, 140, 220, 0.8);
+$border-color-focus-error: #E63200;
+$border-color-focus-warning: #E2AF4A;
+$box-shadow-focus: rgba(26, 140, 220, 0.6);
+$box-shadow-focus-error: rgba(230, 55, 6, 0.40);
+$box-shadow-focus-warning: #E6C88C;

@@ -1,0 +1,42 @@
+{
+  "name": "@klarna/ui-css-components",
+  "version": "5.0.0",
+  "description": "Klarna CSS Components",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "autoprefixer": "^6.0.2",
+    "browser-sync": "1.8.1",
+    "glob": "^5.0.14",
+    "gulp": "3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-awspublish": "^2.0.2",
+    "gulp-data": "^1.2.0",
+    "gulp-jade": "0.10.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev-all": "^0.8.21",
+    "gulp-sass": "2.0.4",
+    "gulp-svg2png": "^0.3.0",
+    "marked": "^0.3.5"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klarna/ui-css-components"
+  },
+  "keywords": [
+    "ui",
+    "css",
+    "toolkit",
+    "components"
+  ],
+  "author": "Klarna",
+  "dependencies": {
+  }
+}

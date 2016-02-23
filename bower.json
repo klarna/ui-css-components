@@ -1,0 +1,25 @@
+{
+  "name": "ui-toolkit",
+  "authors": [
+    "Klarna"
+  ],
+  "description": "Klarna UI Toolkit",
+  "main": "dist/toolkit.css",
+  "keywords": [
+    "klarna",
+    "ui",
+    "toolkit"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "docs",
+    "package.json",
+    "gulpfile.js",
+    "index.html",
+    "index.jade",
+    "Makefile",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}

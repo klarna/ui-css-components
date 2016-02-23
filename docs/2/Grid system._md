@@ -1,0 +1,46 @@
+# Grid system
+
+We use a grid system based on 10px blocks. All component heights and widths are multiples of 10px.
+
+This is accomplished by setting the `#base-font-size` to 10px, and all sizes are defined using the `rem` unit.
+
+For instance, regular buttons and fields would have a `5rem` height:
+
+<div class="grid">
+  <div class="cui__field" style="width: 300px; float: left; margin-right: 1rem;">
+    <label class="cui__field__label">
+      Please write your email address
+    </label>
+    <input class="cui__field__input" />
+  </div>
+  <button class="cui__button--primary">
+    Button
+  </button>
+</div>
+
+Bigger elements would have a `6rem` height:
+
+<div class="grid grid10">
+  <div class="cui__field big" style="width: 300px; float: left; margin-right: 1rem;">
+    <label class="cui__field__label">
+      Please write your email address
+    </label>
+    <input class="cui__field__input" />
+  </div>
+  <button class="cui__button--primary big">
+    Button
+  </button>
+</div>
+
+
+The only exception to the main rule are paragraphs that may have multiples of 5 as their line height, maching the expected vertical rythmn on every 2 lines.
+
+<div class="grid grid5">
+  <h1 class="cui__title--primary" style="background: rgba(255, 0, 0, 0.1);">
+    Primary title
+  </h1>
+  <p style="background: rgba(0, 255, 0, 0.1);">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
+

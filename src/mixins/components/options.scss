@@ -1,0 +1,90 @@
+@mixin options($hover: false) {
+    border: ($grid * .2) solid $border-color;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    margin-bottom: ($grid * .6);
+    padding: 0;
+    position: relative;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    @if $hover == true {
+        &:hover {
+            border-color: $border-color-hover;
+            z-index: 10;
+        }
+    }
+
+    &.borderless {
+        border: none;
+        padding-top: $grid * .2;
+        padding-bottom: $grid * .2;
+    }
+
+    &.is-disabled {
+        background: #FAFAFA;
+        color: map-get($colors, grey-lines);
+        cursor: default;
+        pointer-events: none;
+
+        &:hover {
+            border-color: $border-color;
+        }
+
+        &::after {
+            @include opacity(.2);
+        }
+    }
+}
+
+@mixin option() {
+    background: #ffffff;
+    overflow: hidden;
+    padding-top: ($grid * 1.8);
+    padding-bottom: ($grid * 2.2);
+    position: relative;
+
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    .borderless & {
+        border-radius: $border-radius;
+
+        &:first-child {
+            padding-top: ($grid * 1.8);
+        }
+
+        &:last-child {
+            padding-bottom: ($grid * 2.2);
+        }
+    }
+
+    &:hover {
+        background: map-get($colors, block-hover);
+
+        .is-disabled & {
+            &::before {
+                border-color: $border-color;
+            }
+        }
+    }
+
+    &:first-child {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        padding-top: ($grid * 2.8);
+    }
+
+    &:last-child {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        padding-bottom: ($grid * 3.2);
+    }
+}

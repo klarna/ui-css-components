@@ -1,0 +1,22 @@
+@mixin preview {
+    border: ($grid * 0.2) solid map-get($colors, grey-lines);
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    padding: ($grid * 2.8) ($grid * 4);
+    margin-bottom: ($grid * 5);
+}
+
+@mixin preview__title {
+    @include typography(($grid * 2.8), semi-bold);
+
+    line-height: ($grid * 3);
+    margin: 0;
+    padding: ($grid * 0.4) 0 ($grid * 0.6) 0;
+}
+
+@mixin preview__content {
+    @include paragraph--primary-condensed;
+
+    margin: 0;
+    padding: 0;
+}
