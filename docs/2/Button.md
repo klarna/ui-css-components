@@ -14,6 +14,8 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big](#Button/primary/big)
 	- [big & loading](#Button/primary/big/loading)
 	- [big & disabled](#Button/primary/big/disabled)
+	- [with price](#Button/primary/price)
+	- [with price big](#Button/primary/price/big)
 - [Secondary](#Button/secondary)
 	- [loading](#Button/secondary/loading)
 	- [disabled](#Button/secondary/disabled)
@@ -22,6 +24,8 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big](#Button/secondary/big)
 	- [big & loading](#Button/secondary/big/loading)
 	- [big & disabled](#Button/secondary/big/disabled)
+	- [with price](#Button/secondary/price)
+	- [with price big](#Button/secondary/price/big)
 
 <a name="Button/overview"></a>
 ## Overview
@@ -238,6 +242,32 @@ Every time a user submits a form, you should change the current submit button to
 </button>
 ```
 
+<a name="Button/primary/price"></a>
+### With price
+
+```html
+<button class="cui__button--primary has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button>
+```
+
+<a name="Button/primary/price/big"></a>
+### With price big
+
+```html
+<button class="cui__button--primary big has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button>
+```
+
+
+
 <a name="Button/secondary"></a>
 ## Secondary
 
@@ -309,3 +339,28 @@ This should be used for your secondary actions.
   Secondary big disabled
 </button>
 ```
+
+<a name="Button/secondary/price"></a>
+### With price
+
+```html
+<button class="cui__button--secondary has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button>
+```
+
+<a name="Button/secondary/price/big"></a>
+### With price big
+
+```html
+<button class="cui__button--secondary big has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button>
+```
+
