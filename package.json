@@ -1,7 +1,8 @@
 {
-  "name": "ui-css-components",
+  "name": "@klarna/ui-css-components",
   "version": "5.0.0",
   "description": "Klarna CSS Components",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "autoprefixer": "^6.0.2",
     "browser-sync": "1.8.1",
@@ -27,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.int.klarna.net:7999/bow/ui-css-components.git"
+    "url": "https://github.com/klarna/ui-css-components"
   },
   "keywords": [
     "ui",
