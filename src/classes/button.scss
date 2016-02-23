@@ -8,6 +8,12 @@
         $darken-attributes: (background-color, border-color)
     );
 
+    & .cui__button__price {
+        @include button__price(
+            $border-color: white
+        );
+    }
+
     &.is-loading {
         &:after {
             content: '';
@@ -23,6 +29,12 @@
         $darken-color: map-get($colors, klarna-blue),
         $darken-attributes: (background-color, border-color)
     );
+
+    & .cui__button__price {
+        @include button__price(
+            $border-color: map-get($colors, klarna-blue)
+        );
+    }
 
     &.is-loading {
         &:after {

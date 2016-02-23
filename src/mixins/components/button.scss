@@ -44,6 +44,11 @@
         float: left;
     }
 
+    &.has-price {
+        padding: 0 ($grid * 4);
+        text-align: left;
+    }
+
     &:hover, &:focus {
         @each $attribute in $darken-attributes {
           #{$attribute}: darken($darken-color, 5.2);
@@ -89,6 +94,14 @@
             background: $background;
         }
     }
+}
+
+@mixin button__price ($border-color) {
+    display: inline-block;
+    float: right;
+    margin-left: $grid * 4;
+    padding-left: $grid * 4;
+    border-left: 1px solid rgba($border-color, 0.1);
 }
 
 
