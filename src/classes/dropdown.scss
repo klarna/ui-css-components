@@ -128,7 +128,7 @@
 
     .is-selected &, .is-error &, .is-warning & {
         height: ($grid * 9);
-        top: ($grid * 1);
+        top: ($grid * 1.2);
     }
 
     .is-disabled & {
