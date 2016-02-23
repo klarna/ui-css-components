@@ -1,0 +1,7 @@
+@mixin header() {
+    background: map-get($colors, klarna-blue);
+    color: map-get($colors, white);
+    display: block;
+    width: 100%;
+    height: ($grid * 30);
+}

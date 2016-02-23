@@ -1,36 +1,25 @@
 {
   "name": "ui-toolkit",
   "authors": [
-    "Team Douglas <team.douglas@klarna.com>"
+    "Klarna"
   ],
-  "description": "KCO UI Toolkit",
-  "main": "toolkit.css",
+  "description": "Klarna UI Toolkit",
+  "main": "dist/toolkit.css",
   "keywords": [
     "klarna",
     "ui",
-    "toolkit",
-    "kco"
+    "toolkit"
   ],
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests",
-    "support",
+    "docs",
     "package.json",
-    "dev.css",
     "gulpfile.js",
-    "Gemfile*",
-    "gulpfile.coffee",
     "index.html",
     "index.jade",
-    "snippets",
     "Makefile",
     "README.md",
     "CHANGELOG.md"
-  ],
-  "dependencies": {
-    "ss-pika": "git+ssh://git@stash.int.klarna.net:7999/bow/ss-pika.git#1.0.2"
-  }
+  ]
 }

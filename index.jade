@@ -1,252 +1,122 @@
-mixin code()
-  .presentation-example
-    block
-  pre
-    - var oldBuf = buf;
-    - buf = [];
-    block
-    - buf  = oldBuf.concat(buf.map(jade.escape));
 doctype html
-html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
-    title KCO UI Toolkit
+<!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]-->
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+  title UI CSS Components
 
-    link(rel='stylesheet' href='ui-toolkit.css')
-    link(rel='stylesheet' href='support/doc.css')
-    link(rel='stylesheet' href='bower_components/ss-pika/webfonts/ss-pika.css')
+  link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600")
+  link(rel='stylesheet' href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css")
 
-    script(type='text/javascript' src='ui-toolkit.js')
+  link(rel='stylesheet' href='dist/ui-toolkit.css')
+  link(rel='stylesheet' href='docs/support/doc.css')
+  link(rel='stylesheet' href='docs/support/hljs.css')
 
-  body
+  <!--[if IE 8]>
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
+  <!--<![endif]-->
 
-    nav
-      .inner
-        a(href='#home')
-          span.ss-pika.ss-home
-        a(href='#buttons') Buttons
-        a(href='#headers') Headers
-        a(href='#form') Form
-        a(href='#links') Links
-        a(href='#icons') Icons
-        a(href='#logos') Logos
-        a(href='#misc') Misc
+body
+  .docs__nav
+    ul#menu
+      each doc in docs
+        li.cui__paragraph--primary.condensed
+          a.cui__link(href="##{doc.name}")!= doc.name
 
-    #home.main
-      h2#buttons.presentation Buttons
+  .docs__main.cui__baseline__content--main
+    each doc in docs
+      .docs__section(id="#{doc.name}")
+        != doc.parsedContent
 
-      h3 Primary button
-      +code()
-        include snippets/button--primary.html
-
-
-      p Disabled
-      +code()
-        include snippets/button--primary--disabled.html
-
-
-      p Loading
-      +code()
-        include snippets/button--primary--loading.html
-
-
-      h3 Secondary button
-      +code()
-        include snippets/button--secondary.html
-
-
-      p Disabled
-      +code()
-        include snippets/button--secondary--disabled.html
-
-
-      h3 CTA button
-      +code()
-        include snippets/button--cta.html
-
-
-      p Loading
-      +code()
-        include snippets/button--cta--loading.html
-
-
-      p Disabled
-      +code()
-        include snippets/button--cta--disabled.html
-
-
-
-      h2#headers.presentation Headers
-
-      h3 Main Header
-      +code()
-        include snippets/main-header.html
-
-
-      h3 Subtle Header
-      +code()
-        include snippets/subtle-header.html
-
-
-
-      h2#form.presentation Form elements
-
-      h3 Checkbox
-      +code()
-        include snippets/checkbox.html
-
-      +code()
-        include snippets/checkbox--checked.html
-
-
-      h3 Switch
-      +code()
-        include snippets/switch.html
-      +code()
-        include snippets/switch--pressed.html
-      +code()
-        include snippets/switch--checked.html
-      +code()
-        include snippets/switch--checked-pressed.html
-
-
-      h3 Input
-      +code()
-        include snippets/field.html
-
-      p Disabled
-      +code()
-        include snippets/field--disabled.html
-
-      p Loading
-      +code()
-        include snippets/field--loading.html
-
-      p With label (toggled by .show-label on field)
-      +code()
-        include snippets/field--with-label.html
-
-      p With icon
-      +code()
-        include snippets/field--with-icon.html
-
-      p Joined fieldset
-      +code()
-        include snippets/field--joined-fieldset-grid.html
-      +code()
-        include snippets/field--joined-fieldset-row.html
-      +code()
-        include snippets/field--joined-fieldset-col.html
-
-      p With tooltip
-      +code()
-        include snippets/field--with-tooltip.html
-
-      script.
-        UIToolkit.tooltip(document.querySelector('.cui__tooltip__icon'));
-
-      p With fake focus
-      +code()
-        include snippets/field--with-fake-focus.html
-
-
-      p Field and button
-      +code()
-        include snippets/field-and-button.html
-
-
-      p Error in the data
-      p Notes:
-        ul
-          li is-invalid, and is-error/is-warning, must be added to multiple elements, as shown below. <em>This is required for compatibility with Android and IE.</em>
-          li the error/warning messages <em>must</em> be short enough to fit on a single line
-      +code()
-        include snippets/field--invalid.html
-
-      script.
-        var cuiEditorWrappers = document
-          .querySelectorAll(
-            '.cui__editor-wrapper, .cui__editor-wrapper--with-icon');
-        var cuiEditors = document
-          .querySelectorAll(
-            '.cui__editor--text, .cui__editor--with-icon');
-
-        for (var i = 0; i < cuiEditorWrappers.length; i ++) {
-          UIToolkit.fakePlaceholders(cuiEditors[i], cuiEditorWrappers[i]);
+  script.
+    
+      // helpers for documentation
+      $(document).keypress(function(e){
+        if (e.which === 103) {
+          $('body').toggleClass('cui__baseline__grid');
         }
+      })
 
+      $('input').focus(function(){
+        $(this).parent().addClass('is-focused');
+      })
 
-      h3 Select
-      +code()
-        include snippets/select.html
+      $('input').blur(function(){
+        $(this).parent().removeClass('is-focused');
+      })
 
-      p With fake focus
-      +code()
-        include snippets/select--with-fake-focus.html
+      $('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
+        $(this).addClass('is-pressed')
+      })
 
-      p Joined fieldset
-      +code()
-        include snippets/select--joined-fieldset.html
+      $('.cui__switch--multiple__option, .cui__switch').mouseup(function () {
+        $(this).removeClass('is-pressed')
+      })
 
+      $('.cui__switch--multiple__option, .cui__switch').click(function(){
+        $(this).toggleClass('is-checked');
+      })
 
+      $('.cui__dropdown--selector__option, .cui__dropdown--radio__option').click(function(){
+        $(this).toggleClass('is-selected');
+      })
 
-      h2#links.presentation Links
+      $('.cui__dropdown--custom__option').click(function(){
+        if ($(this).parent().hasClass('is-collapsed')) {
+          $(this).parent().removeClass('is-collapsed');
+        } else {
+          $(this).parent().children().removeClass('is-selected');
+          $(this).toggleClass('is-selected');
+          $(this).parent().addClass('is-collapsed');
+        }
+      })
 
-      p Highlighted
-      +code()
-        include snippets/link--highlighted.html
+      function floatingLabel(input) {
+        if(input.value){
+          $(input).parent().addClass("is-filled");
+        } else {
+          $(input).parent().removeClass("is-filled");
+        }
+      }
 
+      function anchor(url) {
+        var matches = url.match(/#(.+)/);
+        if(! matches)
+          return "Getting started";
+        return matches[1].split("/")[0];
+      }
+      $('[id="' + anchor(location.href) + '"]').show();
 
-      p Non highlighted
-      +code()
-        include snippets/link--non-highlighted.html
+      $('#menu a').click(function(){
+        $('.docs__section').hide();
+        $('[id="' + anchor(this.href) + '"]').show();
+      })
 
+      $('.toggle-grid').click(function(){
+        if(this.grid == 'on') {
+          this.grid = 'off'
+          $(this).text('Grid off');
+          $(this).parent().removeClass('cui__baseline__grid');
+        } else {
+          this.grid = 'on'
+          $(this).parent().addClass('cui__baseline__grid');
+          $(this).text('Grid on');
+        }
+      })
 
-      p Non highlighted, standalone
-      +code()
-        include snippets/link--non-highlighted--standalone.html
-
-
-
-      h2#icons.presentation Icons
-
-      h3 Custom Icons
-      +code()
-        include snippets/icon--custom.html
-
-
-
-      h2#logos.presentation Logos
-
-      h3 Card logos
-      +code()
-        include snippets/logos--cards.html
-
-
-
-      h2#misc.presentation Misc
-
-      h3 Tooltip icon
-      +code()
-        include snippets/tooltip.html
-
-      p Inline
-      +code()
-        include snippets/tooltip--inline.html
-
-      h3 Loader
-      +code()
-        include snippets/loader.html
-
-      h3 Bubble
-      +code()
-        include snippets/bubble.html
-
-      p Below some other container
-      +code()
-        include snippets/bubble--below.html
-
-      h3 Tagline
-      +code()
-        include snippets/tagline.html
+      if (Array.prototype.forEach) {
+        hljs.initHighlightingOnLoad();
+      }
+</html>

@@ -1,110 +1,59 @@
 // ================================================================
 //  General
 // ================================================================
-$ui-toolkit-path: "";
+$root: "../";
 
 // ================================================================
-//  Typography
+//  Typography and baseline
 // ================================================================
-$base-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$base-font-size: 16px;
-$base-line-height: 21px;
-
-$cta-button-font-size: 20px;
-$flat-button-font-size: 15px;
+$base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$grid: 5px;
+$content-main-width: 102; // $grid * 102
 
 // ================================================================
-//  Page widths
+//  Breakpoints
 // ================================================================
-$max-width: 640px;
 $mobile-max-width: 569px;
 
 // ================================================================
-//  Fields
+//  General colors
 // ================================================================
-$field-horizontal-margin: 2%;
-
-
-// ================================================================
-//  Colors
-// ================================================================
-$klarna-blue: #0072CC;
-
-// This properties can be overriden by the merchant styling
-$primary-color-button-background: $klarna-blue;
-$primary-color-button-color: #fff;
-
-// This properties are *not* merchant overridable
-$secondary-button-background: #fff;
-$secondary-button-color: #555;
-
-$tooltip-arrow-color: #ededed;
-
-$input-box-shadow-color: #9a9a9a;
-$input-box-shadow-color-inset: #d3d3d3;
-$input-disabled-color: rgb(84, 84, 84);
-$input-disabled-background-color: #f6f6f6;
-$input-error-background-color: #FCF2F3;
-$input-error-background-color-rgba: rgba(255, 0, 0, 0.05);
-$input-warning-background-color: #FEFCE8;
-$input-warning-background-color-rgba: rgba(255, 255, 0, 0.05);
-$input-tooltip-text-color: #D0021B;
-$input-tooltip-text-color--warning: #ECB801;
-$input-editor-color: #595959;
-$editor-placeholder-color: #a9a9a9;
-
-$divider-border-color: #F2F0F0;
-$form-border-color: #CBCBCB;
-$input-border-color: #CBCBCB;
-$input-border-color-focus: #0072CC;
-$input-border-color-disabled: #a6a6a6;
-$preview-border-color: #CBCBCB;
-$secondary-button-border-color: #CBCBCB;
-$selector-border-color: #CBCBCB;
-
-
+$colors: (
+  klarna-blue: #0074c8,
+  morning-blue: #1a8cdc,
+  black: #3c3c3e,
+  block-hover: #f9f9f9,
+  grey-text: #9e9ea0,
+  grey-lines: #cbcbcd,
+  light-grey: #f5f5f7,
+  modal: #46505a,
+  white: #fff
+);
 
 // ================================================================
-//  Checkbox
+//  Open Sans' weights
 // ================================================================
-$checkbox-size: 24px;
-$checkbox-background: #0072CC;
-$checkbox-border: #ddd;
-$checkbox-font-size: 13px;
-
-
-// ================================================================
-//  Input
-// ================================================================
-$input-line-height: 14px * 1.5;
-$input-border-radius: 5px;
-$invalid-text-top-offset: 1.5;
-
+$font-weights: (
+  light: 300,
+  regular: 400,
+  semi-bold: 600,
+  bold: 700
+);
 
 // ================================================================
-//  Header
+//  Borders
 // ================================================================
-$header-margin: 16px;
-
-
-// ================================================================
-//  Buttons
-// ================================================================
-$button-border-radius: 5px;
-
-
-// ================================================================
-//  Tooltip
-// ================================================================
-$tooltip-content-width: 190px;
-$tooltip-arrow-size: 16px;
-$tooltip-icon-size-small: 14px;
-$tooltip-icon-size-large: 17px;
-
-
-// ================================================================
-//  Switch
-// ================================================================
-$switch-width: 48px;
-$switch-height: 24px;
-$switch-background: #0072CC;
+$border-radius: ($grid * 1);
+$border-radius-checkbox: ($grid * .4);
+$border-color: map-get($colors, grey-lines);
+$border-color-error: #e6bebe;
+$border-color-warning: #e6c88c;
+$border-color-hover: #66aae0;
+$border-color-hover-error: #EF8B6F;
+$border-color-hover-warning: #E2AF4A;
+$border-color-focus: rgba(26, 140, 220, 0.8);
+$border-color-focus-error: #E63200;
+$border-color-focus-warning: #E2AF4A;
+$box-shadow-focus: rgba(26, 140, 220, 0.6);
+$box-shadow-focus-error: rgba(230, 55, 6, 0.40);
+$box-shadow-focus-warning: #E6C88C;

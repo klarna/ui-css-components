@@ -1,48 +1,15 @@
-$base-font-size: 16px;
-$base-line-height: 21px;
-
 /**
- * Convert px to rem
+ * Adds all atributes to define the best typography as possible
  */
-@function rem($value, $base: $base-font-size) {
-    @return $value/$base * 1rem;
+@mixin typography($size, $weight) {
+    font-size: $size;
+
+    font-family: $base-font-family;
+    font-weight: map-get($font-weights, $weight);
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
 }
 
-
-/**
- * Render font size in rem, with fallback to px
- */
-@mixin font-size($size-in-px) {
-    font-size: $size-in-px;
-    font-size: rem($size-in-px);
-}
-
-
-/**
- * Calculate rhythm units
- * http://compass-style.org/reference/compass/typography/vertical_rhythm/#function-rhythm
- */
-@function rhythm($lines: 1, $font-size: $base-font-size, $offset: 0) {
-  $rhythm: ($lines * $base-line-height - $offset) / $font-size;
-
-  // Round the pixels down to nearest integer.
-  $rhythm: floor($rhythm);
-
-  @return $rhythm;
-}
-
-/**
- * Apply a border and whitespace to any side without destroying the vertical rhythm. The whitespace must be greater than the width of the border.
- * http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-apply-side-rhythm-border
- */
-@mixin apply-side-rhythm-border(
-    $side,
-    $width: 1px,
-    $lines: 1,
-    $font-size: $base-font-size,
-    $border-style: solid
-) {
-  border-#{$side}-style: $border-style;
-  border-#{$side}-width: $width / $font-size;
-  padding-#{$side}: rhythm($lines, $font-size, $offset: $width);
+@mixin font-size($size) {
+    font-size: rem2px($size);
 }

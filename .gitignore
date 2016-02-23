@@ -3,4 +3,5 @@ node_modules
 npm-debug.log
 .awspublish-klarna-static-assets
 bower_components
-packages/
+.idea
+.DS_Store
