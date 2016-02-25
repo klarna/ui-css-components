@@ -75,7 +75,7 @@ $ease-out: ease-out;
     &.has-fake-focus {
         border: 1px solid $input-border-color-focus;
         box-shadow: 0 0 3px 1px $input-border-color-focus;
-        z-index: 1;
+        z-index: 3;
     }
 
     &::-webkit-input-placeholder {
