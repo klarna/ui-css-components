@@ -1,17 +1,21 @@
-@import "../mixins/index";
+@import '../mixins/index';
 
 // TITLE
 .cui__title--primary {
     @include title--primary;
+
+    + .cui__subtitle {
+        margin-top: ($grid * -2);
+    }
 }
 
 .cui__title--secondary {
     @include title--secondary;
 
-    padding: ($grid * 4.4) 0 ($grid * 2.6) 0;
+    padding: ($grid * 4.4) 0 ($grid * 2.6);
 
     &.condensed {
-        padding: ($grid * 0.4) 0 ($grid * 1.6) 0;
+        padding: ($grid * .4) 0 ($grid * 1.6);
     }
 }
 
@@ -20,29 +24,25 @@
     @include subtitle;
 }
 
-.cui__title--primary + .cui__subtitle {
-    margin-top: ($grid * -2);
-}
-
 // PARAGRAPH
 .cui__paragraph--primary {
-  @include paragraph--primary;
+    @include paragraph--primary;
 
-  &.condensed {
-      @include paragraph--primary-condensed;
-  }
+    &.condensed {
+        @include paragraph--primary-condensed;
+    }
 }
 
 .cui__paragraph--secondary {
-  @include paragraph--secondary;
+    @include paragraph--secondary;
 
-  &.condensed {
-      @include paragraph--secondary-condensed;
-  }
+    &.condensed {
+        @include paragraph--secondary-condensed;
+    }
 }
 
 .cui__paragraph--legal {
-  @include paragraph--legal;
+    @include paragraph--legal;
 }
 
 // LABEL
@@ -53,8 +53,7 @@
 // TEXT LABEL
 .cui__text-label {
     @include text-label;
-}
-
-.cui__text-label + .cui__title--secondary {
-    padding-top: ($grid * 0.4);
+    + .cui__title--secondary {
+        padding-top: ($grid * .4);
+    }
 }

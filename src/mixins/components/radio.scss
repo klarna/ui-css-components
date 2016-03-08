@@ -4,14 +4,14 @@
         border: ($grid * .2) solid $border-color;
         border-radius: ($grid * 2.8);
         box-sizing: border-box;
-        content: "";
+        content: '';
         display: block;
         height: ($grid * 2.8);
         left: ($grid * 4);
         position: absolute;
+        top: ($grid * 2.4);
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
-        top: ($grid * 2.4);
         width: ($grid * 2.8);
     }
 
@@ -20,7 +20,7 @@
 
         background: white;
         border-radius: ($grid * 1.2);
-        content: "";
+        content: '';
         display: block;
         height: ($grid * .8);
         left: ($grid * 5);

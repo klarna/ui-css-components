@@ -1,4 +1,4 @@
-@import "../mixins/index";
+@import '../mixins/index';
 
 .cui__field {
     @include stackable();
@@ -11,8 +11,8 @@
     height: ($grid * 10.2);
     margin-bottom: ($grid * -.2);
     position: relative;
-    -webkit-transition: all .2s ease;
     text-align: left;
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
 
     &.big {
@@ -62,6 +62,11 @@
         box-shadow: none;
         z-index: 5;
 
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str(#fffaf0);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+
         &:hover {
             border-color: $border-color-hover-warning;
             z-index: 10;
@@ -72,15 +77,10 @@
             box-shadow: 0 0 ($grid * .8) $box-shadow-focus-warning;
             z-index: 20;
         }
-
-        @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str(#fffaf0);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        }
     }
 
     &.is-disabled {
-        background-color: #FAFAFA;
+        background-color: #fafafa;
         border-color: map-get($colors, grey-lines);
 
         &:hover {
@@ -99,7 +99,8 @@
 
         }
 
-        .cui__field__input, .cui__field__label {
+        .cui__field__input,
+        .cui__field__label {
             text-align: center;
         }
     }
@@ -119,16 +120,21 @@
         line-height: ($grid * 12);
     }
 
-    .big.is-filled &, .big.is-error &, .big.is-warning & {
+    .big.is-filled &,
+    .big.is-error &,
+    .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
     }
 
-    .is-filled &, .is-error &, .is-warning & {
+    .is-filled &,
+    .is-error &,
+    .is-warning & {
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
 
-        .ie9 &, .ie8 & {
+        .ie9 &,
+        .ie8 & {
             margin-top: ($grid * -2);
         }
     }
@@ -149,7 +155,8 @@
         color: map-get($colors, grey-lines);
     }
 
-    .ie9 &, .ie8 & {
+    .ie9 &,
+    .ie8 & {
         z-index: 1;
     }
 }
@@ -161,14 +168,15 @@
     background-color: transparent;
     border: 0;
     box-sizing: border-box;
-    color: #3C3C3E;
-    outline: none;
-    width: 100%;
+    color: #3c3c3e;
     height: ($grid * 10);
+    outline: none;
     padding: 0 ($grid * 4);
     position: absolute;
+    width: 100%;
 
-    .ie9 &, .ie8 & {
+    .ie9 &,
+    .ie8 & {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         position: relative;
         top: ($grid * 3);
@@ -179,12 +187,16 @@
         height: ($grid * 12);
     }
 
-    .big.is-filled &, .big.is-error &, .big.is-warning & {
+    .big.is-filled &,
+    .big.is-error &,
+    .big.is-warning & {
         height: ($grid * 9.8);
         top: ($grid * 2.2);
     }
 
-    .is-filled &, .is-error &, .is-warning & {
+    .is-filled &,
+    .is-error &,
+    .is-warning & {
         height: ($grid * 9);
         top: ($grid * 1.6);
     }
@@ -211,7 +223,8 @@
     @extend .cui__field__input;
 }
 
-.cui__field--icon__label, .cui__field--icon__input {
+.cui__field--icon__label,
+.cui__field--icon__input {
     padding-left: ($grid * 8.4);
 }
 
@@ -229,8 +242,8 @@
     position: relative;
 
     &::after {
-        content: "";
         clear: both;
+        content: '';
         display: block;
     }
 }

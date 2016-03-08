@@ -4,12 +4,12 @@
     color: map-get($colors, black);
     line-height: ($grid * 7);
     margin: 0;
-    padding: ($grid * 3.6) 0 ($grid * 3.4) 0;
+    padding: ($grid * 3.6) 0 ($grid * 3.4);
 
     &.small {
         @include typography(($grid * 4.4), light);
 
-        padding: ($grid * 3.8) 0 ($grid * 3.2) 0;
+        padding: ($grid * 3.8) 0 ($grid * 3.2);
 
         &.strong {
             @include typography(($grid * 4.4), regular);
@@ -17,7 +17,7 @@
     }
 
     &.blue {
-      color: map-get($colors, klarna-blue);
+        color: map-get($colors, klarna-blue);
     }
 }
 
@@ -29,7 +29,7 @@
     margin: 0;
 
     &.blue {
-      color: map-get($colors, klarna-blue);
+        color: map-get($colors, klarna-blue);
     }
 }
 
@@ -40,22 +40,22 @@
     height: ($grid * 4);
     line-height: ($grid * 4);
     margin: 0;
-    padding: ($grid * 3.2) 0 ($grid * 1.8) 0;
+    padding: ($grid * 3.2) 0 ($grid * 1.8);
     text-transform: uppercase;
 
     &.blue {
-      color: map-get($colors, klarna-blue);
+        color: map-get($colors, klarna-blue);
     }
 
     &.condensed {
-        padding: ($grid * 0.2) 0 ($grid * 1.8) 0;
+        padding: ($grid * .2) 0 ($grid * 1.8);
     }
 }
 
 @mixin paragraph {
     line-height: ($grid * 5);
     margin: 0;
-    padding: ($grid * .6) 0 ($grid * 3.4) 0;
+    padding: ($grid * .6) 0 ($grid * 3.4);
 }
 
 @mixin paragraph-condensed {
@@ -98,7 +98,7 @@
     color: map-get($colors, grey-text);
     line-height: ($grid * 4);
     margin: 0;
-    padding: ($grid * .4) 0 ($grid * 2.6) 0;
+    padding: ($grid * .4) 0 ($grid * 2.6);
 }
 
 @mixin label {
@@ -126,5 +126,5 @@
     color: map-get($colors, grey-text);
     line-height: ($grid * 3);
     margin: 0;
-    padding: ($grid * 1.6) 0 ($grid * 0.4) 0;
+    padding: ($grid * 1.6) 0 ($grid * .4);
 }

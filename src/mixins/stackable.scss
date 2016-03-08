@@ -1,4 +1,4 @@
-$stackable-border-width: $grid * 0.2;
+$stackable-border-width: $grid * .2;
 
 @mixin partial-width ($width) {
     width: $width;
@@ -116,36 +116,36 @@ $stackable-border-width: $grid * 0.2;
     }
 
     &.left {
-        border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
     }
 
     &.center {
-        border-radius: 0;
         @include stacked-responsiveness();
+        border-radius: 0;
 
         &::after {
-            content: "";
             clear: both;
+            content: '';
             display: block;
         }
     }
 
     &.right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         @include stacked-responsiveness();
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
 
         &::after {
-            content: "";
             clear: both;
+            content: '';
             display: block;
         }
     }
 
     &.top {
-        border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     &.top-left {
@@ -162,6 +162,7 @@ $stackable-border-width: $grid * 0.2;
     }
 
     &.top-right {
+        @include stacked-responsiveness();
         border-radius: 0;
         clear: right;
 
@@ -173,13 +174,12 @@ $stackable-border-width: $grid * 0.2;
             border-top-right-radius: $border-radius;
         }
 
-        @include stacked-responsiveness();
     }
 
-	&.bottom {
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
-	}
+    &.bottom {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 
     &.bottom-left {
         border-radius: 0;
@@ -194,6 +194,7 @@ $stackable-border-width: $grid * 0.2;
     }
 
     &.bottom-right {
+        @include stacked-responsiveness();
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 
@@ -204,6 +205,5 @@ $stackable-border-width: $grid * 0.2;
         &.non-responsive {
             border-bottom-left-radius: 0;
         }
-        @include stacked-responsiveness();
     }
 }
