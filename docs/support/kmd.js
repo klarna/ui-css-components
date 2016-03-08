@@ -44,7 +44,13 @@
         return '<' + type + ' class="summary">\n' + body + '</' + type + '>\n';
     };
 
-    renderer.code = function (code, lang, e) {
+    renderer.code = function (code, lang, escaped) {
+        if (!lang) {
+            return '<pre><code>'
+                + (escaped ? code : escape(code, true))
+                + '\n</code></pre>';
+        }
+
         return '<div class="example-block"><div class="example">'
             + code
             + '</div><pre><code class="'
