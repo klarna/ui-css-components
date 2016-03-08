@@ -12,14 +12,36 @@
 <ul class="summary">
 <li>To explain the usage of all components;</li>
 <li>To clarify the reasoning behind their implementation;</li>
-<li>To give you a clearer understanding of use cases for each component, so we achieve a better user experience;</li>
+<li>To give you a clearer understanding of use cases for each component, so we
+achieve a better user experience;</li>
 </ul>
 <hr>
 <p class="cui__paragraph--primary">Enjoy!</p>
-<hr>
 <h2 class="cui__title--secondary">Instructions</h2>
-<p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should be aligned with the
-grid. If something is not, please report it in the #front_end channel.</p>
+<p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should
+be aligned with the grid. If something is not, please report it in the #front_end
+channel.</p>
+<h2 class="cui__title--secondary">Requirements</h2>
+<p class="cui__paragraph--primary">The ui-css-components depends on Open Sans font. You&#39;ll probably want to
+include it directly in your HTML, so you&#39;ll benefit from Google&#39;s CDN.</p>
+<pre><code>&lt;link href=&#39;https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&#39;
+      rel=&#39;stylesheet&#39;
+      type=&#39;text/css&#39;&gt;
+</code></pre><p class="cui__paragraph--primary">In the case you prefer to add it to your css, include it like this:</p>
+<pre><code>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+</code></pre><p style="background:#ffc; padding: 30px;">
+  Please note that if you&#39;re using SASS the default behaviour will be to
+  download and append the font to your package, so you will not benefit from
+  caching.
+</p>
+
+<h2 class="cui__title--secondary">Standards</h2>
+<p class="cui__paragraph--primary">The ui-css-components follow a loose version of <a class="cui__link" href="https://en.bem.info/">BEM</a>. It
+breaks it in it&#39;s usage of some modifiers (e.g. &#39;big&#39;).</p>
+<h2 class="cui__title--secondary">What is not there</h2>
+<p class="cui__paragraph--primary">The ui-css-components do not dictate how to build your layout. So things like
+widths, margins between elements (although all texts follow a grid) and
+responsiveness must be dealt in your project.</p>
 </div><div id="Baseline" class="docs__section"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
 A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
@@ -1540,8 +1562,13 @@ block.</p>
 <li><a class="cui__link" href="#Field/icon/focused">focused</a></li>
 <li><a class="cui__link" href="#Field/icon/filled">filled</a></li>
 <li><a class="cui__link" href="#Field/icon/error">error</a></li>
-<li><a class="cui__link" href="#Field/icon/error">error</a></li>
 <li><a class="cui__link" href="#Field/icon/warning">warning</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Field/centered">Centered</a><ul class="summary">
+<li><a class="cui__link" href="#Field/centered/filled">filled</a></li>
+<li><a class="cui__link" href="#Field/centered/error">error</a></li>
+<li><a class="cui__link" href="#Field/centered/icon">icon</a></li>
 </ul>
 </li>
 </ul>
@@ -2130,6 +2157,60 @@ demo.</p>
         Are you sure the domain is example?
     &lt;/label&gt;
     &lt;input disabled class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered"></a><h2 class="cui__title--secondary">Centered</h2>
+<div class="example-block"><div class="example"><div class="cui__field is-centered">
+    <label class="cui__field__label">
+        This is alligned to the center
+    </label>
+    <input class="cui__field__input" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        This is alligned to the center
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/filled"></a><h3 class="cui__subtitle">Filled</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-centered is-filled">
+    <label class="cui__field__label">
+        This centered field is filled
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered is-filled&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        This centered field is filled
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/error"></a><h3 class="cui__subtitle">Error</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-centered is-error">
+    <label class="cui__field__label">
+        Something went wrong!
+    </label>
+    <input class="cui__field__input" value="invalid input" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered is-error&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Something went wrong!
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;invalid input&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/icon"></a><h3 class="cui__subtitle">Icon</h3>
+<div class="example-block"><div class="example"><div class="cui__field--icon is-centered is-filled is-focused">
+    <span class="cui__field--icon__icon cui__icon--mail"></span>
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-centered is-filled is-focused&quot;&gt;
+    &lt;span class=&quot;cui__field--icon__icon cui__icon--mail&quot;&gt;&lt;/span&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <script>

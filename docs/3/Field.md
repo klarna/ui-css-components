@@ -39,8 +39,11 @@ ___
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
 	- [error](#Field/icon/error)
-	- [error](#Field/icon/error)
 	- [warning](#Field/icon/warning)
+- [Centered](#Field/centered)
+	- [filled](#Field/centered/filled)
+	- [error](#Field/centered/error)
+	- [icon](#Field/centered/icon)
 
 
 <a name="Field/examples"></a>
@@ -527,6 +530,55 @@ demo.
 		Are you sure the domain is example?
 	</label>
 	<input disabled class="cui__field--icon__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/centered"></a>
+## Centered
+
+```html
+<div class="cui__field is-centered">
+	<label class="cui__field__label">
+		This is alligned to the center
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/centered/filled"></a>
+### Filled
+
+```html
+<div class="cui__field is-centered is-filled">
+	<label class="cui__field__label">
+		This centered field is filled
+	</label>
+	<input class="cui__field__input" value="email@example.com" />
+</div>
+```
+
+<a name="Field/centered/error"></a>
+### Error
+
+```html
+<div class="cui__field is-centered is-error">
+    <label class="cui__field__label">
+        Something went wrong!
+    </label>
+    <input class="cui__field__input" value="invalid input" />
+</div>
+```
+
+<a name="Field/centered/icon"></a>
+### Icon
+
+```html
+<div class="cui__field--icon is-centered is-filled is-focused">
+    <span class="cui__field--icon__icon cui__icon--mail"></span>
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
 </div>
 ```
 
