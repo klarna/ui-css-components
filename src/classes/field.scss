@@ -87,6 +87,20 @@
             border-color: map-get($colors, grey-lines);
         }
     }
+
+    &.is-centered {
+        .cui__field__label {
+            width: 100%;
+            padding: 0;
+        }
+        .cui__field--icon__input {
+            padding: 0 40px 0 40px;
+
+        }
+        .cui__field__input, .cui__field__label {
+            text-align: center;
+        }
+    }
 }
 
 .cui__field__label {
