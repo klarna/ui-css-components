@@ -137,6 +137,14 @@ $ease-out: ease-out;
             -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
         }
     }
+
+    &:invalid {
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: 0 0 3px 1px $input-border-color-focus;
+        }
+    }
 }
 
 .cui__editor--with-icon {
