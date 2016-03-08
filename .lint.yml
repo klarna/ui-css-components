@@ -1,0 +1,19 @@
+linters:
+  Indentation:
+    width: 4
+  ColorKeyword:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  VendorPrefix:
+    enabled: false #TODO: Decide how to deal with vendor prefixes
+  NameFormat:
+    enabled: false
+  Comment:
+    enabled: false
+  SelectorFormat:
+    convention: hyphenated_BEM
+  NestingDepth:
+    max_depth: 5
+  PlaceholderInExtend:
+    enabled: false
