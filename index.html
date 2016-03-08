@@ -12,14 +12,36 @@
 <ul class="summary">
 <li>To explain the usage of all components;</li>
 <li>To clarify the reasoning behind their implementation;</li>
-<li>To give you a clearer understanding of use cases for each component, so we achieve a better user experience;</li>
+<li>To give you a clearer understanding of use cases for each component, so we
+achieve a better user experience;</li>
 </ul>
 <hr>
 <p class="cui__paragraph--primary">Enjoy!</p>
-<hr>
 <h2 class="cui__title--secondary">Instructions</h2>
-<p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should be aligned with the
-grid. If something is not, please report it in the #front_end channel.</p>
+<p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should
+be aligned with the grid. If something is not, please report it in the #front_end
+channel.</p>
+<h2 class="cui__title--secondary">Requirements</h2>
+<p class="cui__paragraph--primary">The ui-css-components depends on Open Sans font. You&#39;ll probably want to
+include it directly in your HTML, so you&#39;ll benefit from Google&#39;s CDN.</p>
+<pre><code>&lt;link href=&#39;https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&#39;
+      rel=&#39;stylesheet&#39;
+      type=&#39;text/css&#39;&gt;
+</code></pre><p class="cui__paragraph--primary">In the case you prefer to add it to your css, include it like this:</p>
+<pre><code>@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+</code></pre><p style="background:#ffc; padding: 30px;">
+  Please note that if you&#39;re using SASS the default behaviour will be to
+  download and append the font to your package, so you will not benefit from
+  caching.
+</p>
+
+<h2 class="cui__title--secondary">Standards</h2>
+<p class="cui__paragraph--primary">The ui-css-components follow a loose version of <a class="cui__link" href="https://en.bem.info/">BEM</a>. It
+breaks it in it&#39;s usage of some modifiers (e.g. &#39;big&#39;).</p>
+<h2 class="cui__title--secondary">What is not there</h2>
+<p class="cui__paragraph--primary">The ui-css-components do not dictate how to build your layout. So things like
+widths, margins between elements (although all texts follow a grid) and
+responsiveness must be dealt in your project.</p>
 </div><div id="Baseline" class="docs__section"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
 A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
