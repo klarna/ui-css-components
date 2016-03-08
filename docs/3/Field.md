@@ -68,7 +68,7 @@ ___
 
 ```html
 <div class="cui__field is-focused">
-    <label class="cui__field__label is-focused">
+    <label class="cui__field__label">
         Please write your email address
     </label>
     <input class="cui__field__input" />
