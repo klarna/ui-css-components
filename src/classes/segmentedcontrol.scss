@@ -1,4 +1,4 @@
-@import "../mixins/index";
+@import '../mixins/index';
 
 .cui__segmentedcontrol {
     overflow: auto;
@@ -14,11 +14,11 @@
         border: ($grid * .2) solid $border-color;
         border-radius: $border-radius;
         box-sizing: border-box;
-        cursor: pointer;
         color: map-get($colors, grey-text);
+        cursor: pointer;
         display: inline-block;
         float: left;
-        line-height: ($grid * 8) - ($grid * 0.4);
+        line-height: ($grid * 8) - ($grid * .4);
         padding: 0 ($grid * 9);
         position: relative;
         text-align: center;
@@ -31,8 +31,8 @@
     }
 
     .cui__segmentedcontrol__input:checked + .cui__segmentedcontrol__button {
-        border: ($grid * .2) solid map-get($colors, klarna-blue);
         background: map-get($colors, klarna-blue);
+        border: ($grid * .2) solid map-get($colors, klarna-blue);
         color: map-get($colors, white);
         z-index: 5;
     }

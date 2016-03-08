@@ -2,6 +2,7 @@
     @include respond-to-ie($ie-versions) {
         @content;
     }
+
     .android--stock & {
         @content;
     }

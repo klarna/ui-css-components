@@ -19,13 +19,13 @@
     }
 
     &.borderless {
-        border: none;
-        padding-top: $grid * .2;
+        border: 0;
         padding-bottom: $grid * .2;
+        padding-top: $grid * .2;
     }
 
     &.is-disabled {
-        background: #FAFAFA;
+        background: #fafafa;
         color: map-get($colors, grey-lines);
         cursor: default;
         pointer-events: none;
@@ -41,7 +41,7 @@
 }
 
 @mixin option() {
-    background: #ffffff;
+    background: white;
     overflow: hidden;
     padding-top: ($grid * 1.8);
     padding-bottom: ($grid * 2.2);

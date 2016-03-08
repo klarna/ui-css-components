@@ -1,10 +1,10 @@
-@import "../mixins/index";
+@import '../mixins/index';
 
 .cui__baseline {
     color: map-get($colors, black);
+    -webkit-font-smoothing: antialiased;
     line-height: ($grid * 5);
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility;
 
     body {
         @include typography(($grid * 2.8), regular);
@@ -15,7 +15,7 @@
 }
 
 .cui__baseline__grid {
-    background: transparent url(img/baseline__grid.png) repeat scroll 0% 0%;
+    background: transparent url('img/baseline__grid.png') repeat scroll 0% 0%;
 }
 
 .cui__baseline__content--main {
@@ -26,13 +26,13 @@
     padding: 0;
 
     @include respond-to-wide {
-        width: ($grid * $content-main-width);
         margin: 0 auto;
+        width: ($grid * $content-main-width);
     }
 
     .ie8 & {
-        width: ($grid * $content-main-width);
         margin: 0 auto;
+        width: ($grid * $content-main-width);
     }
 }
 

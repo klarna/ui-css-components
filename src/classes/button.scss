@@ -1,4 +1,4 @@
-@import "../mixins/index";
+@import '../mixins/index';
 
 .cui__button--primary {
     @include button(
@@ -8,7 +8,7 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    & .cui__button__price {
+    .cui__button__price {
         @include button__price(
             $border-color: white
         );
@@ -16,8 +16,8 @@
 
     &.is-loading {
         &:after {
-            content: '';
             @include button__loader('button--primary__loader');
+            content: '';
         }
     }
 }
@@ -30,7 +30,7 @@
         $darken-attributes: (background-color, border-color)
     );
 
-    & .cui__button__price {
+    .cui__button__price {
         @include button__price(
             $border-color: map-get($colors, klarna-blue)
         );
@@ -38,12 +38,13 @@
 
     &.is-loading {
         &:after {
-            content: '';
             @include button__loader('button--secondary__loader');
+            content: '';
         }
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background: map-get($colors, klarna-blue);
         color: #fff;
 
@@ -71,8 +72,8 @@
     padding-bottom: ($grid * 4);
 
     &::after {
-        content: "";
         clear: both;
+        content: '';
         display: block;
     }
 }

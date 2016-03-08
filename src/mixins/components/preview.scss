@@ -1,5 +1,5 @@
 @mixin preview {
-    border: ($grid * 0.2) solid map-get($colors, grey-lines);
+    border: ($grid * .2) solid map-get($colors, grey-lines);
     border-radius: $border-radius;
     box-sizing: border-box;
     padding: ($grid * 2.8) ($grid * 4);
@@ -11,7 +11,7 @@
 
     line-height: ($grid * 3);
     margin: 0;
-    padding: ($grid * 0.4) 0 ($grid * 0.6) 0;
+    padding: ($grid * .4) 0 ($grid * .6);
 }
 
 @mixin preview__content {
