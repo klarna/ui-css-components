@@ -1412,6 +1412,33 @@
   .cui__field.is-centered .cui__field__label, .is-centered.cui__field--icon .cui__field__label,
   .cui__field.is-centered .cui__field--icon__label, .is-centered.cui__field--icon .cui__field--icon__label {
     text-align: center; }
+  .cui__field.is-loading:after, .is-loading.cui__field--icon:after {
+    background-image: url("img/button--secondary__loader.png");
+    -webkit-animation: spin .8s linear infinite;
+            animation: spin .8s linear infinite;
+    display: inline-block;
+    font-size: 0;
+    height: 20px;
+    vertical-align: text-bottom;
+    width: 20px;
+    content: '';
+    position: absolute;
+    right: 0.95rem;
+    top: 0.95rem; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .cui__field.is-loading:after, .is-loading.cui__field--icon:after {
+        background-image: url("img/button--secondary__loader@2x.png");
+        background-size: 20px 20px; } }
+    .ie8 .cui__field.is-loading:after, .ie8 .is-loading.cui__field--icon:after, .cui__browser--ie8 .cui__field.is-loading:after, .cui__browser--ie8 .is-loading.cui__field--icon:after, .ie9 .cui__field.is-loading:after, .ie9 .is-loading.cui__field--icon:after, .cui__browser--ie9 .cui__field.is-loading:after, .cui__browser--ie9 .is-loading.cui__field--icon:after {
+      font-size: rem2px(15px); }
+    .cui__field.is-loading:after:before, .is-loading.cui__field--icon:after:before {
+      content: url("img/button--secondary__loader.png");
+      display: none;
+      height: 0;
+      width: 0; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .cui__field.is-loading:after:before, .is-loading.cui__field--icon:after:before {
+          content: url("img/button--secondary__loader@2x.png"); } }
 
 .cui__field__label, .cui__field--icon__label {
   font-size: 14px;

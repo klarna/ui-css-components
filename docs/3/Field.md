@@ -44,6 +44,7 @@ ___
 	- [filled](#Field/centered/filled)
 	- [error](#Field/centered/error)
 	- [icon](#Field/centered/icon)
+- [Loading](#Field/loading)
 
 
 <a name="Field/examples"></a>
@@ -579,6 +580,18 @@ demo.
         ZIP Code
     </label>
     <input class="cui__field--icon__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading"></a>
+### Loading
+
+```html
+<div class="cui__field--icon is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
 </div>
 ```
 

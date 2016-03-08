@@ -104,6 +104,16 @@
             text-align: center;
         }
     }
+
+    &.is-loading {
+        &:after {
+            @include button__loader('button--secondary__loader');
+            content: '';
+            position: absolute;
+            right: 0.95rem;
+            top: 0.95rem;
+        }
+    }
 }
 
 .cui__field__label {
