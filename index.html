@@ -1540,8 +1540,13 @@ block.</p>
 <li><a class="cui__link" href="#Field/icon/focused">focused</a></li>
 <li><a class="cui__link" href="#Field/icon/filled">filled</a></li>
 <li><a class="cui__link" href="#Field/icon/error">error</a></li>
-<li><a class="cui__link" href="#Field/icon/error">error</a></li>
 <li><a class="cui__link" href="#Field/icon/warning">warning</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Field/centered">Centered</a><ul class="summary">
+<li><a class="cui__link" href="#Field/centered/filled">filled</a></li>
+<li><a class="cui__link" href="#Field/centered/error">error</a></li>
+<li><a class="cui__link" href="#Field/centered/icon">icon</a></li>
 </ul>
 </li>
 </ul>
@@ -2130,6 +2135,60 @@ demo.</p>
         Are you sure the domain is example?
     &lt;/label&gt;
     &lt;input disabled class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered"></a><h2 class="cui__title--secondary">Centered</h2>
+<div class="example-block"><div class="example"><div class="cui__field is-centered">
+    <label class="cui__field__label">
+        This is alligned to the center
+    </label>
+    <input class="cui__field__input" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        This is alligned to the center
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/filled"></a><h3 class="cui__subtitle">Filled</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-centered is-filled">
+    <label class="cui__field__label">
+        This centered field is filled
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered is-filled&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        This centered field is filled
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/error"></a><h3 class="cui__subtitle">Error</h3>
+<div class="example-block"><div class="example"><div class="cui__field is-centered is-error">
+    <label class="cui__field__label">
+        Something went wrong!
+    </label>
+    <input class="cui__field__input" value="invalid input" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered is-error&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Something went wrong!
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;invalid input&quot; /&gt;
+&lt;/div&gt;
+</div></code></pre></div>
+<a name="Field/centered/icon"></a><h3 class="cui__subtitle">Icon</h3>
+<div class="example-block"><div class="example"><div class="cui__field--icon is-centered is-filled is-focused">
+    <span class="cui__field--icon__icon cui__icon--mail"></span>
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div></div><pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-centered is-filled is-focused&quot;&gt;
+    &lt;span class=&quot;cui__field--icon__icon cui__icon--mail&quot;&gt;&lt;/span&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;
 </div></code></pre></div>
 <script>
