@@ -1405,6 +1405,13 @@
     border-color: #cbcbcd; }
     .cui__field.is-disabled:hover, .is-disabled.cui__field--icon:hover {
       border-color: #cbcbcd; }
+  .cui__field.is-centered .cui__field__label, .is-centered.cui__field--icon .cui__field__label, .cui__field.is-centered .cui__field--icon__label, .is-centered.cui__field--icon .cui__field--icon__label {
+    width: 100%;
+    padding: 0; }
+  .cui__field.is-centered .cui__field--icon__input, .is-centered.cui__field--icon .cui__field--icon__input {
+    padding: 0 40px 0 40px; }
+  .cui__field.is-centered .cui__field__input, .is-centered.cui__field--icon .cui__field__input, .cui__field.is-centered .cui__field--icon__input, .is-centered.cui__field--icon .cui__field--icon__input, .cui__field.is-centered .cui__field__label, .is-centered.cui__field--icon .cui__field__label, .cui__field.is-centered .cui__field--icon__label, .is-centered.cui__field--icon .cui__field--icon__label {
+    text-align: center; }
 
 .cui__field__label, .cui__field--icon__label {
   font-size: 14px;
