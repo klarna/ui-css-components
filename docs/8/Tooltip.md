@@ -9,7 +9,11 @@ The implementation of tooltip's pointer relies on `transform: translate` rather 
 ___
 
 - [Tooltip](#Tooltip)
-	- [focused](#Icon/set/focused)
+	- [Simple](#Tooltip/simple)
+	- [Small](#Tooltip/small)
+	- [Arrows](#Tooltip/arrows)
+	- [Small with arrows](#Tooltip/arrows/small)
+
 
 <a name="Tooltip"></a>
 ## Tooltip
@@ -36,8 +40,8 @@ If the content is smaller than 250 the tooltip will adapt to it, no need for ext
 </div> 
 ```
 
-<a name="Tooltip/with_arroe"></a>
-### With arrow
+<a name="Tooltip/arrows"></a>
+### Arrows
 
 You can add arrows on 9 different positions.
 
@@ -95,7 +99,7 @@ You can add arrows on 9 different positions.
 
 ```
 
-<a name="Tooltip/small_with_arrow"></a>
+<a name="Tooltip/arrows/small"></a>
 ### Small with arrow
 
 All the arrows above also work with small tooltips.
