@@ -3889,7 +3889,7 @@
   text-align: center;
   line-height: 15px;
   margin: 0;
-  padding: 7.5px 20px 7.5px; }
+  padding: 7.5px 20px; }
   .cui__tooltip:after {
     content: '';
     height: 0;
