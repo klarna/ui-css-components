@@ -7,18 +7,21 @@
         @extend %top, %-left;
 
         transform: translate($grid, -$grid);
+        -ms-transform: translate($grid, -$grid);
     }
 
     &.top:after {
         @extend %top, %-center;
 
         transform: translate(-$grid, -$grid);
+        -ms-transform: translate(-$grid, -$grid);
     }
 
     &.top-right:after {
         @extend %top, %-right;
 
         transform: translate(-$grid * 3, -$grid);
+        -ms-transform: translate(-$grid * 3, -$grid);
     }
 
     &.right-top:after {
@@ -37,18 +40,21 @@
         @extend %bottom, %-left;
 
         transform: translateX($grid);
+        -ms-transform: translateX($grid);
     }
 
     &.bottom:after {
         @extend %bottom, %-center;
 
         transform: translateX(-$grid);
+        -ms-transform: translateX(-$grid);
     }
 
     &.bottom-right:after {
         @extend %bottom, %-right;
 
         transform: translateX(-$grid * 3);
+        -ms-transform: translateX(-$grid * 3);
     }
 
     &.left-top:after {
