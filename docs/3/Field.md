@@ -587,7 +587,7 @@ demo.
 ### Loading
 
 ```html
-<div class="cui__field--icon is-loading">
+<div class="cui__field is-loading">
     <label class="cui__field__label">
         ZIP Code
     </label>

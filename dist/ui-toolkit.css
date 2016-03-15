@@ -1643,6 +1643,8 @@
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__field.is-loading:after:before, .is-loading.cui__field--icon:after:before {
           content: url("img/button--secondary__loader@2x.png"); } }
+  .cui__field.is-loading.big:after, .is-loading.big.cui__field--icon:after {
+    top: 1.2rem; }
 
 .cui__field__label, .cui__field--icon__label {
   font-size: 14px;
