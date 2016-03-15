@@ -1,0 +1,76 @@
+@mixin tooltip {
+    @include typography($grid * 2.6, regular);
+
+    background: map-get($colors, cello);
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    max-width: 250px;
+    position: relative;
+    text-align: center;
+    line-height: $grid * 3;
+    margin: 0;
+    padding: ($grid * 1.5) ($grid * 4) ($grid * 1.5);
+
+    &:after {
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 0;
+    }
+}
+
+%top {
+    border-bottom: $grid solid map-get($colors, cello);
+    border-left: $grid solid transparent;
+    border-right: $grid solid transparent;
+    top: 0;
+}
+
+%bottom {
+    border-left: $grid solid transparent;
+    border-right: $grid solid transparent;
+    border-top: $grid solid map-get($colors, cello);
+    top: 100%;
+}
+
+%right {
+    border-bottom: $grid solid transparent;
+    border-left: $grid solid map-get($colors, cello);
+    border-top: $grid solid transparent;
+    right: -$grid;
+}
+
+%left {
+    border-bottom: $grid solid transparent;
+    border-right: $grid solid map-get($colors, cello);
+    border-top: $grid solid transparent;
+    left: -$grid;
+}
+
+%-left {
+    left: 0;
+}
+
+%-center {
+    left: 50%;
+}
+
+%-right {
+    left: 100%;
+}
+
+%-top {
+    top: 0%;
+    transform: translate(0, $grid);
+}
+
+%-middle {
+    top: 50%;
+    transform: translate(0, -$grid);
+}
+
+%-bottom {
+    top: 100%;
+    transform: translate(0, -$grid * 3);
+}
