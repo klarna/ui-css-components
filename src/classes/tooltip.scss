@@ -1,0 +1,65 @@
+@import '../mixins/index';
+
+.cui__tooltip {
+    @include tooltip;
+
+    &.top-left:after {
+        @extend %top, %-left;
+
+        transform: translate($grid, -$grid);
+    }
+
+    &.top:after {
+        @extend %top, %-center;
+
+        transform: translate(-$grid, -$grid);
+    }
+
+    &.top-right:after {
+        @extend %top, %-right;
+
+        transform: translate(-$grid * 3, -$grid);
+    }
+
+    &.right-top:after {
+        @extend %right, %-top;
+    }
+
+    &.right:after {
+        @extend %right, %-middle;
+    }
+
+    &.right-bottom:after {
+        @extend %right, %-bottom;
+    }
+
+    &.bottom-left:after {
+        @extend %bottom, %-left;
+
+        transform: translateX($grid);
+    }
+
+    &.bottom:after {
+        @extend %bottom, %-center;
+
+        transform: translateX(-$grid);
+    }
+
+    &.bottom-right:after {
+        @extend %bottom, %-right;
+
+        transform: translateX(-$grid * 3);
+    }
+
+    &.left-top:after {
+        @extend %left, %-top;
+    }
+
+    &.left:after {
+        @extend %left, %-middle;
+    }
+
+    &.left-bottom:after {
+        @extend %left, %-bottom;
+    }
+}
