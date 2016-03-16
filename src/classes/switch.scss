@@ -32,8 +32,8 @@
     @include option();
     @include switch(($grid * 4), ($grid * 3.2), right);
 
-    padding-left: ($grid * 10);
-    padding-right: ($grid * 4);
+    padding-left: ($grid * 4);
+    padding-right: ($grid * 14);
 
     .checkbox & {
         @include respond-to-wide() {
