@@ -2684,6 +2684,9 @@
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   padding-left: 50px;
   line-height: 20px;
   padding-bottom: 5px;
@@ -2743,6 +2746,9 @@
   .cui__switch.right {
     cursor: pointer;
     position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     padding-left: 0;
     padding-right: 50px; }
     .cui__switch.right::before {
@@ -2903,6 +2909,9 @@
   -ms-user-select: none;
   cursor: pointer;
   position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   padding-left: 20px;
   padding-right: 70px;
   padding-left: 20px;

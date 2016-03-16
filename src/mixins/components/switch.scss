@@ -1,6 +1,9 @@
 @mixin switch($padding: ($grid * 4), $side: left) {
     cursor: pointer;
     position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     @if $side == left {
         padding-left: $padding + ($grid * 10);
