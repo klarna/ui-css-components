@@ -3,6 +3,7 @@
 .cui__tooltip {
     @include tooltip;
 
+    // scss-lint:disable PropertySortOrder
     &.top-left:after {
         @extend %top, %-left;
 
@@ -10,6 +11,7 @@
         -ms-transform: translate($grid, -$grid);
     }
 
+    // scss-lint:disable PropertySortOrder
     &.top:after {
         @extend %top, %-center;
 
@@ -17,6 +19,7 @@
         -ms-transform: translate(-$grid, -$grid);
     }
 
+    // scss-lint:disable PropertySortOrder
     &.top-right:after {
         @extend %top, %-right;
 
@@ -36,6 +39,7 @@
         @extend %right, %-bottom;
     }
 
+    // scss-lint:disable PropertySortOrder
     &.bottom-left:after {
         @extend %bottom, %-left;
 
@@ -43,6 +47,7 @@
         -ms-transform: translateX($grid);
     }
 
+    // scss-lint:disable PropertySortOrder
     &.bottom:after {
         @extend %bottom, %-center;
 
@@ -50,6 +55,7 @@
         -ms-transform: translateX(-$grid);
     }
 
+    // scss-lint:disable PropertySortOrder
     &.bottom-right:after {
         @extend %bottom, %-right;
 
