@@ -11,16 +11,15 @@
 
     &::before {
         background: map-get($colors, grey-text);
-        border: ($grid * .2) solid map-get($colors, grey-text);
         border-radius: ($grid * 4);
         content: '';
         display: block;
-        height: ($grid * 4);
+        height: ($grid * 4.4);
         position: absolute;
         top: $top;
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
-        width: ($grid * 7);
+        width: ($grid * 7.4);
 
         @if $side == left {
             left: 0;
