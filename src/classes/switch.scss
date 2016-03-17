@@ -3,14 +3,14 @@
 // SINGLE
 .cui__switch {
     @include typography(($grid * 2.8), regular);
-    @include switch(0, ($grid * .6));
+    @include switch(0);
 
     line-height: ($grid * 4);
     padding-bottom: ($grid * 1);
     padding-top: ($grid * 1);
 
     &.right {
-        @include switch(0, ($grid * .6), right);
+        @include switch(0, right);
     }
 
     &.checkbox {
@@ -30,10 +30,10 @@
 
 .cui__switch--multiple__option {
     @include option();
-    @include switch(($grid * 4), ($grid * 3.2), right);
+    @include switch(($grid * 4), right);
 
-    padding-left: ($grid * 10);
-    padding-right: ($grid * 4);
+    padding-left: ($grid * 4);
+    padding-right: ($grid * 14);
 
     .checkbox & {
         @include respond-to-wide() {
