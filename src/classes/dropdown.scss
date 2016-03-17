@@ -83,7 +83,7 @@
     }
 
     .ie8 &:after {
-        background: url('img/dropdown-expand.png');
+        background: url($root + 'img/dropdown-expand.png');
     }
 }
 
