@@ -1,5 +1,6 @@
 $select-overlay-triangle-y: 20px;
 $select-overlay-triangle-y-ie: 17px;
+$select-overlay-with-icon-padding-left: 41px;
 
 .cui__select {
     @extend .cui__field;
@@ -127,4 +128,10 @@ $select-overlay-triangle-y-ie: 17px;
     height: 44px;
     width: 100%;
     line-height: normal;
+}
+
+.cui__select-overlay--with-icon {
+    @extend .cui__select-overlay;
+
+    padding-left: $select-overlay-with-icon-padding-left;
 }
