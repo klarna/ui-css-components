@@ -109,13 +109,10 @@
         &:after {
             @include button__loader('button--secondary__loader');
             content: '';
+            margin-top: -10px;
             position: absolute;
-            right: .95rem;
-            top: .95rem;
-        }
-
-        &.big:after {
-            top: 1.2rem;
+            right: 2.4%;
+            top: 50%;
         }
     }
 }
