@@ -7,6 +7,7 @@
 - [Tab menu](#Navigation/tab menu)
   - [fixed percentage](#Navigation/tab menu/fixed percentage)
   - [respect content width](#Navigation/tab menu/respect content width)
+  - [inverted](#Navigation/tab menu/inverted)
 
 <a name="Navigation/examples"></a>
 ## Examples
@@ -82,3 +83,21 @@ The tab menu is a different styling of the same navigation concept as the segmen
    <label class="cui__tab-menu__button" for="tab-menu-fluid3">Three</label>
 </div>
 ```
+
+<a name="Navigation/inverted"></a>
+### inverted
+```html
+<div style="background: #0074c8; padding: 20px;">
+    <div class="cui__tab-menu white">
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted1" checked="checked" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted1">One</label>
+
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted2" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted2">Two</label>
+
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted3" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted3">Three</label>
+    </div>
+</div>
+```
+
