@@ -6,25 +6,30 @@
  *
  */
 
-(function() {
-    var fs = require('fs');
-    var Glob = require('glob').Glob;
-    var path = require('path');
-    var kmd = require('./kmd');
+const fs = require('fs')
+const kmd = require('./kmd')
 
-    module.exports = function fetchDocs() {
+const docFiles = [
+  'Getting started',
+  'Baseline',
+  'Button',
+  'Dropdown',
+  'Field',
+  'Icon',
+  'Loader',
+  'Navigation',
+  'Preview',
+  'Switch',
+  'Text',
+  'Tooltip'
+]
 
-        var docFiles = new Glob("docs/**/*.md", {sync: true})
+module.exports = function fetchDocs () {
+  const docs = docFiles.map((name) => {
+    const parsedContent = kmd(fs.readFileSync(`docs/${name}.md`, { encoding: 'utf8' }))
 
-        var docs = docFiles.found.map(function(file){
-            var content = fs.readFileSync(file, {encoding: 'utf8'})
+    return { name, parsedContent }
+  })
 
-            return {
-              name: path.basename(file, '.md'),
-              parsedContent: kmd(content)
-            }
-        })
-
-        return {docs: docs};
-    }
-})()
+  return { docs }
+}
