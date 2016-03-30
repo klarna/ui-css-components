@@ -250,6 +250,25 @@
     width: ($grid * 4);
 }
 
+.cui__field--icon__placeholder {
+    background: map-get($colors, grey-lines);
+    display: block;
+    height: ($grid * 4);
+    width: ($grid * 4);
+
+    .is-focused & {
+        background: map-get($colors, klarna-blue);
+    }
+
+    .is-error & {
+        background: $border-color-error;
+    }
+
+    .is-warning & {
+        background: $border-color-warning;
+    }
+}
+
 // fieldset
 .cui__fieldset {
     padding-bottom: ($grid * 5);
