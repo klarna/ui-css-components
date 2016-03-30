@@ -3361,14 +3361,12 @@
     font-weight: 400;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    /*border-bottom: ($grid * .2) solid map-get($colors, grey-lines);*/
     color: #9e9ea0;
     cursor: pointer;
     display: inline-block;
     float: left;
     height: 30px;
     line-height: 30px;
-    /*margin-bottom: ($grid * -.2);*/
     padding: 5px 0;
     position: relative;
     text-align: center;
@@ -3593,30 +3591,22 @@
     .cui__tab-menu__button:hover {
       color: #0074c8; }
       .white .cui__tab-menu__button:hover {
-        color: #fff;
-        /*margin-bottom: ($grid * -.4);*/
-        /*height: ($grid * 5.8);*/
-        /*border-bottom: ($grid * .4) solid rgba(map-get($colors, white), .3);*/ }
+        color: #fff; }
 
-.cui__tab-menu__selected {
-  display: block;
-  width: 100%;
-  left: 0px;
-  height: 5px;
+.cui__tab-menu__selected, .is-selectable .cui__tab-menu__input:checked + .cui__tab-menu__button:after {
+  background: #0074c8;
   bottom: -1px;
+  display: block;
+  height: 2px;
+  left: 0;
   position: absolute;
-  background: #0074c8; }
-  .cui__tab-menu__selected.white {
-    background: #fff; }
+  width: 100%; }
+
+.cui__tab-menu__selected.white {
+  background: #fff; }
 
 .is-selectable .cui__tab-menu__input:checked + .cui__tab-menu__button:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: -1px;
-  position: absolute;
-  background: #0074c8; }
+  content: ''; }
 
 .is-selectable.white .cui__tab-menu__input:checked + .cui__tab-menu__button:after {
   background: #fff; }
