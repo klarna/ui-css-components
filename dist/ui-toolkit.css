@@ -3797,23 +3797,95 @@
   padding: 2px 0 13px; }
 
 .cui__label {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  background: #0074c8;
+  background: #f5f5f7;
   border-radius: 5px;
   bottom: 1px;
-  color: white;
+  box-sizing: border-box;
+  color: #3c3c3e;
   display: inline-block;
   left: 4px;
-  line-height: 15px;
-  padding: 0 5px;
-  position: relative;
-  text-transform: uppercase; }
-  .is-disabled .cui__label {
-    background: #cbcbcd; }
+  line-height: 20px;
+  padding: 0 8px;
+  position: relative; }
+  .cui__label.warning {
+    background: #F52727;
+    color: #fff; }
+  .cui__label.notice {
+    background: #FF8932;
+    color: #fff; }
+  .cui__label.success {
+    background: #23BA73;
+    color: #fff; }
+  .cui__label.brown {
+    background: #B3815F;
+    color: #fff; }
+  .cui__label.purple {
+    background: #AC71CA;
+    color: #fff; }
+  .cui__label.light-blue {
+    background: #61B2EB;
+    color: #fff; }
+  .cui__label.ultramarine {
+    background: #2CC4B0;
+    color: #fff; }
+  .cui__label.yellow {
+    background: #FFC000;
+    color: #fff; }
+  .cui__label.grey {
+    background: #617788;
+    color: #fff; }
+  .cui__label.black {
+    background: #3c3c3e;
+    color: #fff; }
+  .cui__label.outline {
+    background: transparent;
+    border: 1px solid #9e9ea0;
+    color: #9e9ea0; }
+    .cui__label.outline.warning {
+      background: transparent;
+      border-color: #F52727;
+      color: #F52727; }
+    .cui__label.outline.notice {
+      background: transparent;
+      border-color: #FF8932;
+      color: #FF8932; }
+    .cui__label.outline.success {
+      background: transparent;
+      border-color: #23BA73;
+      color: #23BA73; }
+    .cui__label.outline.brown {
+      background: transparent;
+      border-color: #B3815F;
+      color: #B3815F; }
+    .cui__label.outline.purple {
+      background: transparent;
+      border-color: #AC71CA;
+      color: #AC71CA; }
+    .cui__label.outline.light-blue {
+      background: transparent;
+      border-color: #61B2EB;
+      color: #61B2EB; }
+    .cui__label.outline.ultramarine {
+      background: transparent;
+      border-color: #2CC4B0;
+      color: #2CC4B0; }
+    .cui__label.outline.yellow {
+      background: transparent;
+      border-color: #FFC000;
+      color: #FFC000; }
+    .cui__label.outline.grey {
+      background: transparent;
+      border-color: #617788;
+      color: #617788; }
+    .cui__label.outline.black {
+      background: transparent;
+      border-color: #3c3c3e;
+      color: #3c3c3e; }
 
 .cui__text-label {
   font-size: 12px;
