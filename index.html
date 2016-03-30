@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -2244,6 +2244,7 @@ demo.</p>
 <li><a class="cui__link" href="#Navigation/tab menu/fixed percentage">fixed percentage</a></li>
 <li><a class="cui__link" href="#Navigation/tab menu/respect content width">respect content width</a></li>
 <li><a class="cui__link" href="#Navigation/tab menu/inverted">inverted</a></li>
+<li><a class="cui__link" href="#Navigation/tab menu/non selectable">non selectable</a></li>
 </ul>
 </li>
 </ul>
@@ -2304,7 +2305,7 @@ demo.</p>
 <a name="Navigation/tab menu/fixed percentage"></a><h3 class="cui__subtitle">fixed percentage</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tab-menu">
+      <div class="example"><div class="cui__tab-menu is-selectable">
    <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu1" checked="checked" />
    <label class="cui__tab-menu__button third" for="tab-menu1">One</label>
 
@@ -2314,7 +2315,7 @@ demo.</p>
    <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu3" />
    <label class="cui__tab-menu__button third" for="tab-menu3">Three</label>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tab-menu&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tab-menu is-selectable&quot;&gt;
    &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu&quot; id=&quot;tab-menu1&quot; checked=&quot;checked&quot; /&gt;
    &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu1&quot;&gt;One&lt;/label&gt;
 
@@ -2327,7 +2328,7 @@ demo.</p>
     </div><a name="Navigation/tab menu/respect content width"></a><h3 class="cui__subtitle">respect content width</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tab-menu fluid">
+      <div class="example"><div class="cui__tab-menu fluid is-selectable">
    <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid1" checked="checked" />
    <label class="cui__tab-menu__button" for="tab-menu-fluid1">One</label>
 
@@ -2337,7 +2338,7 @@ demo.</p>
    <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid3" />
    <label class="cui__tab-menu__button" for="tab-menu-fluid3">Three</label>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tab-menu fluid&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tab-menu fluid is-selectable&quot;&gt;
    &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-fluid&quot; id=&quot;tab-menu-fluid1&quot; checked=&quot;checked&quot; /&gt;
    &lt;label class=&quot;cui__tab-menu__button&quot; for=&quot;tab-menu-fluid1&quot;&gt;One&lt;/label&gt;
 
@@ -2351,7 +2352,7 @@ demo.</p>
 
     <div class="example-block">
       <div class="example"><div style="background: #0074c8; padding: 20px;">
-    <div class="cui__tab-menu white">
+    <div class="cui__tab-menu white is-selectable">
        <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted1" checked="checked" />
        <label class="cui__tab-menu__button third" for="tab-menu-inverted1">One</label>
 
@@ -2363,7 +2364,7 @@ demo.</p>
     </div>
 </div></div>
       <pre><code class="lang-html"><div>&lt;div style=&quot;background: #0074c8; padding: 20px;&quot;&gt;
-    &lt;div class=&quot;cui__tab-menu white&quot;&gt;
+    &lt;div class=&quot;cui__tab-menu white is-selectable&quot;&gt;
        &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-inverted&quot; id=&quot;tab-menu-inverted1&quot; checked=&quot;checked&quot; /&gt;
        &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted1&quot;&gt;One&lt;/label&gt;
 
@@ -2373,6 +2374,68 @@ demo.</p>
        &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-inverted&quot; id=&quot;tab-menu-inverted3&quot; /&gt;
        &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted3&quot;&gt;Three&lt;/label&gt;
     &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Navigation/tab menu/non selectable"></a><h3 class="cui__subtitle">non selectable</h3>
+<p class="cui__paragraph--primary">Non selectable tab menus are supposed to be used when you want to animate the
+selected bar using JS. You have to define widths and poistion of the
+<span class="code">cui__tab-menu__selected</span> yourself.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__tab-menu">
+   <div class="cui__tab-menu__selected"></div>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu1" checked="checked" />
+   <label class="cui__tab-menu__button third" for="tab-menu1">One</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu2" />
+   <label class="cui__tab-menu__button third" for="tab-menu2">Two</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu3" />
+   <label class="cui__tab-menu__button third" for="tab-menu3">Three</label>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tab-menu&quot;&gt;
+   &lt;div class=&quot;cui__tab-menu__selected&quot;&gt;&lt;/div&gt;
+
+   &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu&quot; id=&quot;tab-menu1&quot; checked=&quot;checked&quot; /&gt;
+   &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu1&quot;&gt;One&lt;/label&gt;
+
+   &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu&quot; id=&quot;tab-menu2&quot; /&gt;
+   &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu2&quot;&gt;Two&lt;/label&gt;
+
+   &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu&quot; id=&quot;tab-menu3&quot; /&gt;
+   &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu3&quot;&gt;Three&lt;/label&gt;
+&lt;/div&gt;</div></code></pre>
+    </div>
+    <div class="example-block">
+      <div class="example"><div style="background: #0074c8; padding: 20px;">
+
+  <div class="cui__tab-menu white">
+     <div class="cui__tab-menu__selected white"></div>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable1" checked="checked" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable1">One</label>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable2" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable2">Two</label>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable3" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable3">Three</label>
+  </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div style=&quot;background: #0074c8; padding: 20px;&quot;&gt;
+
+  &lt;div class=&quot;cui__tab-menu white&quot;&gt;
+     &lt;div class=&quot;cui__tab-menu__selected white&quot;&gt;&lt;/div&gt;
+
+     &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-inverted-non-selectable&quot; id=&quot;tab-menu-inverted-non-selectable1&quot; checked=&quot;checked&quot; /&gt;
+     &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable1&quot;&gt;One&lt;/label&gt;
+
+     &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-inverted-non-selectable&quot; id=&quot;tab-menu-inverted-non-selectable2&quot; /&gt;
+     &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable2&quot;&gt;Two&lt;/label&gt;
+
+     &lt;input class=&quot;cui__tab-menu__input&quot; type=&quot;radio&quot; name=&quot;tab-menu-inverted-non-selectable&quot; id=&quot;tab-menu-inverted-non-selectable3&quot; /&gt;
+     &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable3&quot;&gt;Three&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
     </div></div><div id="Preview" class="docs__section"><h1 class="cui__title--primary">Preview</h1>
 <p class="cui__paragraph--primary">Preview is a text component for previewing the already-filled content of a fieldset
@@ -3566,4 +3629,30 @@ $('.toggle-grid').click(function(){
 
 if (Array.prototype.forEach) {
   hljs.initHighlightingOnLoad();
-}</script></body></html>
+}
+
+function moveRight() {
+  $('.cui__tab-menu__selected').animate({
+    left: "66.6%"
+  }, {
+    duration: 'slow',
+    easing: 'ease-out',
+    complete: (() => setTimeout(moveLeft, 1000))
+  })
+}
+
+function moveLeft () {
+  $('.cui__tab-menu__selected').animate({
+    left: "0%"
+  }, {
+    duration: 'slow',
+    easing: 'ease-out',
+    complete: (() => setTimeout(moveRight, 1000))
+  })
+}
+
+$('.cui__tab-menu__selected').css({
+  width: "33.3%"
+})
+setTimeout(moveRight, 10)
+</script></body></html>

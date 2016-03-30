@@ -3345,13 +3345,14 @@
 
 .cui__tab-menu {
   border-bottom: 1px solid #cbcbcd;
-  margin-bottom: -1px; }
+  box-sizing: border-box;
+  position: relative; }
   .cui__tab-menu:after {
     clear: both;
     content: '';
     display: block; }
   .cui__tab-menu.white {
-    border-bottom: none; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   .cui__tab-menu__input {
     display: none; }
   .cui__tab-menu__button {
@@ -3360,14 +3361,14 @@
     font-weight: 400;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    border-bottom: 1px solid #cbcbcd;
+    /*border-bottom: ($grid * .2) solid map-get($colors, grey-lines);*/
     color: #9e9ea0;
     cursor: pointer;
     display: inline-block;
     float: left;
     height: 30px;
     line-height: 30px;
-    margin-bottom: -1px;
+    /*margin-bottom: ($grid * -.2);*/
     padding: 5px 0;
     position: relative;
     text-align: center;
@@ -3583,28 +3584,42 @@
       .cui__tab-menu__button.bottom-right.non-responsive {
         border-bottom-left-radius: 0; }
     .white .cui__tab-menu__button {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      color: #3c3c3e; }
+      color: rgba(255, 255, 255, 0.8); }
     .fluid .cui__tab-menu__button {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin: 0 20px;
       padding: 10px 0; }
       .fluid .cui__tab-menu__button:nth-child(2) {
         margin-left: 0; }
     .cui__tab-menu__button:hover {
       color: #0074c8; }
       .white .cui__tab-menu__button:hover {
-        color: #3c3c3e; }
+        color: #fff;
+        /*margin-bottom: ($grid * -.4);*/
+        /*height: ($grid * 5.8);*/
+        /*border-bottom: ($grid * .4) solid rgba(map-get($colors, white), .3);*/ }
 
-.cui__tab-menu__input:checked + .cui__tab-menu__button {
-  border-bottom-width: 2px;
-  border-color: #0074c8;
-  color: #0074c8;
-  height: 29px;
-  margin-bottom: -2px; }
-  .white .cui__tab-menu__input:checked + .cui__tab-menu__button {
-    border-color: #fff;
-    color: #fff; }
+.cui__tab-menu__selected {
+  display: block;
+  width: 100%;
+  left: 0px;
+  height: 5px;
+  bottom: -1px;
+  position: absolute;
+  background: #0074c8; }
+  .cui__tab-menu__selected.white {
+    background: #fff; }
+
+.is-selectable .cui__tab-menu__input:checked + .cui__tab-menu__button:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  position: absolute;
+  background: #0074c8; }
+
+.is-selectable.white .cui__tab-menu__input:checked + .cui__tab-menu__button:after {
+  background: #fff; }
 
 @keyframes spin {
   to {
