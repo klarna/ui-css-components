@@ -106,7 +106,7 @@ The tab menu is a different styling of the same navigation concept as the segmen
 ### non selectable
 
 Non selectable tab menus are supposed to be used when you want to animate the
-selected bar using JS. You have to define widths and poistion of the
+selected bar using JS. You have to define widths, transition and position of the
 `cui__tab-menu__selected` yourself.
 
 ```html
@@ -141,5 +141,3 @@ selected bar using JS. You have to define widths and poistion of the
   </div>
 </div>
 ```
-
-
