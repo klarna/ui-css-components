@@ -523,9 +523,15 @@ demo.
 <a name="Field/icon"></a>
 ## With Icon
 
+Note: the icon and the CSS for changing its color according to the state of the
+input (`is-focused`, …) has to be added separately. Here we demonstrate taking the
+space for the icon with a background colored placeholder.
+
+All icons are available in [ui-illustrations](https://stash.int.klarna.net/projects/BOW/repos/ui-illustrations/browse)
+
 ```html
 <div class="cui__field--icon">
-	<span class="cui__field--icon__icon cui__icon--mail"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
 	<label class="cui__field--icon__label">
 		Enter your postal code
 	</label>
@@ -538,7 +544,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-focused">
-	<span class="cui__field--icon__icon cui__icon--lock is-focused"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder is-focused"></span>
 	<label class="cui__field--icon__label is-focused">
 		Enter your password
 	</label>
@@ -551,7 +557,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-filled is-focused">
-	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
 	<label class="cui__field--icon__label">
 		Please write your email address
 	</label>
@@ -564,7 +570,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-error">
-	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
@@ -577,7 +583,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-warning">
-	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
@@ -589,7 +595,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-disabled">
-	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
 	<label class="cui__field--icon__label">
 		Are you sure the domain is example?
 	</label>
@@ -638,7 +644,7 @@ demo.
 
 ```html
 <div class="cui__field--icon is-centered is-filled is-focused">
-    <span class="cui__field--icon__icon cui__icon--mail"></span>
+    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
     <label class="cui__field--icon__label">
         ZIP Code
     </label>

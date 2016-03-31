@@ -2082,6 +2082,18 @@
   position: absolute;
   width: 20px; }
 
+.cui__field--icon__placeholder {
+  background: #cbcbcd;
+  display: block;
+  height: 20px;
+  width: 20px; }
+  .is-focused .cui__field--icon__placeholder {
+    background: #0074c8; }
+  .is-error .cui__field--icon__placeholder {
+    background: #e6bebe; }
+  .is-warning .cui__field--icon__placeholder {
+    background: #e6c88c; }
+
 .cui__fieldset {
   padding-bottom: 25px;
   position: relative; }
@@ -2089,117 +2101,6 @@
     clear: both;
     content: '';
     display: block; }
-
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn); } }
-
-/*******************************************************************************
-.some-css-selector1,
-.some-css-selector2 {
-    padding: 20px;
-
-    @include respond-to-ie { // Targets all IE browsers
-        padding-top: 22px;
-    }
-}
-
-.some-css-selector1,
-.some-css-selector2 {
-    padding: 20px;
-
-    @include respond-to-ie(8) { // Targets only IE 8
-        padding-top: 22px;
-    }
-}
-
-.some-css-selector1,
-.some-css-selector2 {
-    padding: 20px;
-
-    @include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
-        padding-top: 22px;
-    }
-}
-*******************************************************************************/
-.cui__tooltip.top-left:after, .cui__tooltip.top:after, .cui__tooltip.top-right:after {
-  border-bottom: 5px solid #364759;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  top: 0; }
-
-.cui__tooltip.bottom-left:after, .cui__tooltip.bottom:after, .cui__tooltip.bottom-right:after {
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #364759;
-  top: 100%; }
-
-.cui__tooltip.right-top:after, .cui__tooltip.right:after, .cui__tooltip.right-bottom:after {
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid #364759;
-  border-top: 5px solid transparent;
-  right: -5px; }
-
-.cui__tooltip.left-top:after, .cui__tooltip.left:after, .cui__tooltip.left-bottom:after {
-  border-bottom: 5px solid transparent;
-  border-right: 5px solid #364759;
-  border-top: 5px solid transparent;
-  left: -5px; }
-
-.cui__tooltip.top-left:after, .cui__tooltip.bottom-left:after {
-  left: 0; }
-
-.cui__tooltip.top:after, .cui__tooltip.bottom:after {
-  left: 50%; }
-
-.cui__tooltip.top-right:after, .cui__tooltip.bottom-right:after {
-  left: 100%; }
-
-.cui__tooltip.right-top:after, .cui__tooltip.left-top:after {
-  top: 0%;
-  -webkit-transform: translate(0, 5px);
-          transform: translate(0, 5px);
-  -ms-transform: translate(0, 5px); }
-
-.cui__tooltip.right:after, .cui__tooltip.left:after {
-  top: 50%;
-  -webkit-transform: translate(0, -5px);
-          transform: translate(0, -5px);
-  -ms-transform: translate(0, -5px); }
-
-.cui__tooltip.right-bottom:after, .cui__tooltip.left-bottom:after {
-  top: 100%;
-  -webkit-transform: translate(0, -15px);
-          transform: translate(0, -15px);
-  -ms-transform: translate(0, -15px); }
-
-.cui__icon {
-  display: block;
-  height: 20px;
-  width: 20px; }
-
-.cui__icon--mail {
-  background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#A9A9A9"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
-  .is-focused .cui__icon--mail {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#0074c8"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
-  .is-warning .cui__icon--mail {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#e0a644"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
-  .is-error .cui__icon--mail {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#e63200"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
-  .is-disabled .cui__icon--mail {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\a     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a         <g transform="translate(-118, -215)">\a             <g transform="translate(100, 167)">\a                 <g transform="translate(0, 33)">\a                     <g transform="translate(18, 15)">\a                       <path d="M15,4 L5,4 C3.35,4 2,5.35 2,7 L2,13 C2,14.65 3.35,16 5,16 L15,16 C16.65,16 18,14.65 18,13 L18,7 C18,5.35 16.65,4 15,4 L15,4 Z M5,5 L15,5 C16.103,5 17,5.897 17,7 L17,7.161 L10,9.961 L3,7.161 L3,7 C3,5.897 3.897,5 5,5 L5,5 Z M15,15 L5,15 C3.897,15 3,14.103 3,13 L3,8.239 L10,11.039 L17,8.239 L17,13 C17,14.103 16.103,15 15,15 L15,15 Z" fill="#CBCBCD"></path>\a                     </g>\a                 </g>\a             </g>\a         </g>\a     </g>\a </svg>'); }
-
-.cui__icon--lock {
-  background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#A9A9A9" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#A9A9A9" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
-  .is-focused .cui__icon--lock {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#0074c8" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#0074c8" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#0074c8" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
-  .is-warning .cui__icon--lock {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e0a644" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e0a644" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e0a644" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
-  .is-error .cui__icon--lock {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#e63200" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#e63200" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#e63200" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
-  .is-disabled .cui__icon--lock {
-    background: url('data:image/svg+xml,\a <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">\a   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\a     <g transform="translate(-118, -265)">\a       <g transform="translate(100, 167)">\a         <g transform="translate(0, 33)">\a           <g transform="translate(18, 65)">\a             <rect stroke="#CBCBCD" x="4" y="7" width="12" height="9" rx="2"></rect>\a             <rect fill="#CBCBCD" x="9.5" y="10" width="1" height="3" rx="1"></rect>\a             <path d="M6.5,8 L6.5,3.99791312 C6.5,2.89449617 7.38655484,2 8.50591905,2 L11.4940809,2 C12.6019194,2 13.5,2.89826062 13.5,3.99791312 L13.5,5" stroke="#CBCBCD" stroke-linecap="round" stroke-linejoin="round"></path>\a           </g>\a         </g>\a       </g>\a     </g>\a   </g>\a </svg>'); }
 
 @keyframes spin {
   to {
