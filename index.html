@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -63,7 +63,49 @@ layouts and will stop growing and keep itself centered in resolutions above <spa
 <h2 class="cui__title--secondary">Spacer</h2>
 <p class="cui__paragraph--primary">If you need to create vertical spacers following the grid, you can use the <span class="code">.cui__baseline__spacer</span>
 and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <span class="code">.x4</span> <span class="code">.x5</span> <span class="code">.x6</span>.</p>
-</div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>
+</div><div id="Block" class="docs__section"><h1 class="cui__title--primary">Block</h1>
+<p class="cui__paragraph--primary">Blocks are the layout blocks available to place content.</p>
+<h2 class="cui__title--secondary">Simple</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__block">
+  <h1 class="cui__title--primary">
+    The default block has a white background
+  </h1>
+  <p class="cui__paragraph--primary">
+    Some text inside helps to get an idea of how the block would look like.
+  </p>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__block&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary&quot;&gt;
+    The default block has a white background
+  &lt;/h1&gt;
+  &lt;p class=&quot;cui__paragraph--primary&quot;&gt;
+    Some text inside helps to get an idea of how the block would look like.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><h3 class="cui__subtitle">Blue</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    When background is dark text color needs to be inverted manually
+  </h1>
+
+  <p class="cui__paragraph--primary white">
+    And some lorem ipsum dolor sit amet et consequetur niman sulan anima lontana.
+  </p>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary white&quot;&gt;
+    When background is dark text color needs to be inverted manually
+  &lt;/h1&gt;
+
+  &lt;p class=&quot;cui__paragraph--primary white&quot;&gt;
+    And some lorem ipsum dolor sit amet et consequetur niman sulan anima lontana.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
+    </div></div><div id="Button" class="docs__section"><h1 class="cui__title--primary">Button</h1>
 <p class="cui__paragraph--primary">Buttons use the <span class="code">cui__button</span> block, and only <span class="code">button</span> tags should be used.</p>
 <ul class="summary">
 <li><a class="cui__link" href="#Button/overview">Overview</a></li>
@@ -3215,6 +3257,7 @@ block.</p>
 <li><a class="cui__link" href="#Text/label">Label</a></li>
 <li><a class="cui__link" href="#Text/link">Link</a></li>
 <li><a class="cui__link" href="#Text/text label">Text label</a></li>
+<li><a class="cui__link" href="#Text/amount text">Amount text</a></li>
 </ul>
 <a name="Text/example"></a><h2 class="cui__title--secondary">Example</h2>
 <ul class="summary">
@@ -3500,6 +3543,27 @@ paragraphs or secondary titles.</p>
   94100 California&lt;br /&gt;
   United States
 &lt;/p&gt;</div></code></pre>
+    </div><a name="Text/amount text"></a><h2 class="cui__title--secondary">Amount Text</h2>
+
+    <div class="example-block">
+      <div class="example"><p class="cui__amount-text">
+  €1500
+</p>
+
+<div class="cui__block blue">
+  <p class="cui__amount-text white">
+    $1800
+  </p>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__amount-text&quot;&gt;
+  €1500
+&lt;/p&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__amount-text white&quot;&gt;
+    $1800
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
     </div></div><div id="Tooltip" class="docs__section"><h1 class="cui__title--primary">Tooltip</h1>
 <p class="cui__paragraph--primary">The tooltip element is to be user to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
 <p class="cui__paragraph--primary">The tooltip doesn&#39;t dictate positioning, only layout, so this must be implemented on your side. For some use cases, CSS will do, but you may need to use JavaScript for that.</p>
