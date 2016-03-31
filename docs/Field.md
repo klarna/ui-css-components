@@ -34,7 +34,10 @@ ___
 	- [bottom part](#Field/stacked/bottom only)
 	- [center](#Field/stacked/center)
 	- [half and quarter sizes](#Field/stacked/half and quarter sizes)
+	- [three quarters](#Field/stacked/three quarters)
 	- [twenty - forty](#Field/stacked/twenty - forty)
+	- [twenty - eighty](#Field/stacked/twenty - eighty)
+	- [one third - two thirds](#Field/stacked/one third - two thirds)
 - [Icon](#Field/icon)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
@@ -431,6 +434,26 @@ demo.
 </div>
 ```
 
+<a name="Field/stacked/three quarters"></a>
+### Three quarters
+
+```html
+<div class="cui__fielset">
+	<div class="cui__field left quarter">
+		<label class="cui__field__label">
+			City
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field right three-quarters">
+		<label class="cui__field__label">
+			Zip
+		</label>
+		<input class="cui__field__input" />
+	</div>
+</div>
+```
+
 <a name="Field/stacked/twenty - forty"></a>
 ### Twenty - Forty
 
@@ -451,6 +474,46 @@ demo.
 	<div class="cui__field top-right forty">
 		<label class="cui__field__label">
 			Lastname
+		</label>
+		<input class="cui__field__input" />
+	</div>
+</div>
+```
+
+<a name="Field/stacked/twenty - eighty"></a>
+### Twenty - Eighty
+
+```html
+<div class="cui__fielset">
+	<div class="cui__field left twenty">
+		<label class="cui__field__label">
+			Title
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field right eighty">
+		<label class="cui__field__label">
+			Name
+		</label>
+		<input class="cui__field__input" />
+	</div>
+</div>
+```
+
+<a name="Field/stacked/one third - two thirds"></a>
+### One third - Two thirds
+
+```html
+<div class="cui__fielset">
+	<div class="cui__field left third">
+		<label class="cui__field__label">
+			Title
+		</label>
+		<input class="cui__field__input" />
+	</div>
+	<div class="cui__field right two-thirds">
+		<label class="cui__field__label">
+			Name
 		</label>
 		<input class="cui__field__input" />
 	</div>
