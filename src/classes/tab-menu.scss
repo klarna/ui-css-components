@@ -71,16 +71,22 @@
 .cui__tab-menu__selected {
     @extend %selected;
 
-    &.white {
+    .white & {
         background: map-get($colors, white);
     }
 }
 
 .cui__tab-menu__input:checked + .cui__tab-menu__button {
+    color: map-get($colors, klarna-blue);
+
     .is-selectable &:after {
         @extend %selected;
 
         content: '';
+    }
+
+    .white & {
+      color: map-get($colors, white);
     }
 
     .is-selectable.white &:after {

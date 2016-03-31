@@ -128,7 +128,7 @@ selected bar using JS. You have to define widths, transition and position of the
 <div style="background: #0074c8; padding: 20px;">
 
   <div class="cui__tab-menu white">
-     <div class="cui__tab-menu__selected white"></div>
+     <div class="cui__tab-menu__selected"></div>
 
      <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable1" checked="checked" />
      <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable1">One</label>
