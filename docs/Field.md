@@ -464,6 +464,8 @@ Note: the icon and the CSS for changing its color according to the state of the
 input (`is-focused`, …) has to be added separately. Here we demonstrate taking the
 space for the icon with a background colored placeholder.
 
+All icons are available in [ui-illustrations](https://stash.int.klarna.net/projects/BOW/repos/ui-illustrations/browse)
+
 ```html
 <div class="cui__field--icon">
 	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
