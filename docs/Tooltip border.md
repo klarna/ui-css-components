@@ -1,4 +1,4 @@
-# Tooltip
+# Tooltip-border
 
 The tooltip element is to be used to show more information to a user either without occupying space on the page or by making the text more relevant visually.
 
@@ -8,104 +8,104 @@ The implementation of tooltip's pointer relies on `transform: translate` rather 
 
 ___
 
-- [Tooltip](#Tooltip)
-	- [Simple](#Tooltip/simple)
-	- [Small](#Tooltip/small)
-	- [Arrows](#Tooltip/arrows)
-	- [Small with arrows](#Tooltip/arrows/small)
+- [Tooltip-border](#Tooltip-border)
+  - [Simple](#Tooltip-border/simple)
+  - [Small](#Tooltip-border/small)
+  - [Arrows](#Tooltip-border/arrows)
+  - [Small with arrows](#Tooltip-border/arrows/small)
 
 
-<a name="Tooltip"></a>
-## Tooltip
+<a name="Tooltip-border"></a>
+## Tooltip-border
 
-<a name="Tooltip/simple"></a>
+<a name="Tooltip-border/simple"></a>
 ### Simple
 
 Tooltip's width is limited to 250px.
 
 ```html
-<div class="cui__tooltip">
+<div class="cui__tooltip-border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div> 
 ```
 
-<a name="Tooltip/small"></a>
+<a name="Tooltip-border/small"></a>
 ### Small
 
 If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.
 
 ```html
-<div class="cui__tooltip">
+<div class="cui__tooltip-border">
   Lorem Ipsum
 </div> 
 ```
 
-<a name="Tooltip/arrows"></a>
+<a name="Tooltip-border/arrows"></a>
 ### Arrows
 
 You can add arrows on 9 different positions.
 
 ```html
-<div class="cui__tooltip top-left">
+<div class="cui__tooltip-border top-left">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip top">
+<div class="cui__tooltip-border top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div> 
 <hr />
-<div class="cui__tooltip top-right">
+<div class="cui__tooltip-border top-right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div> 
 
 <hr />
-<div class="cui__tooltip right-top">
+<div class="cui__tooltip-border right-top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip right">
+<div class="cui__tooltip-border right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />    
-<div class="cui__tooltip right-bottom">
+<div class="cui__tooltip-border right-bottom">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 
 <hr />
-<div class="cui__tooltip bottom-right">
+<div class="cui__tooltip-border bottom-right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip bottom">
+<div class="cui__tooltip-border bottom">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />    
-<div class="cui__tooltip bottom-left">
+<div class="cui__tooltip-border bottom-left">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 
 <hr />    
-<div class="cui__tooltip left-bottom">
+<div class="cui__tooltip-border left-bottom">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip left">
+<div class="cui__tooltip-border left">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />
-<div class="cui__tooltip left-top">
+<div class="cui__tooltip-border left-top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 
 ```
 
-<a name="Tooltip/arrows/small"></a>
+<a name="Tooltip-border/arrows/small"></a>
 ### Small with arrow
 
 All the arrows above also work with small tooltips.
 
 ```html
-<div class="cui__tooltip top">
+<div class="cui__tooltip-border top">
   Lorem Ipsum
 </div> 
 ```

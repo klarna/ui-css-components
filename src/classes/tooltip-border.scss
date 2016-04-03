@@ -1,0 +1,78 @@
+@import '../mixins/index';
+@import '../mixins/tooltip-border';
+
+.cui__tooltip-border {
+    @include tooltip-border;
+
+    // scss-lint:disable PropertySortOrder
+    &.top-left:after, &.top-left:before {
+        @extend %top, %-left;
+
+        transform: translate($grid, -$grid);
+        -ms-transform: translate($grid, -$grid);
+    }
+
+    // scss-lint:disable PropertySortOrder
+    &.top:after, &.top:before {
+        @extend %top, %-center;
+
+        transform: translate(-$grid, -$grid);
+        -ms-transform: translate(-$grid, -$grid);
+    }
+
+        // scss-lint:disable PropertySortOrder
+    &.top-right:after, &.top-right:before {
+        @extend %top, %-right;
+
+        transform: translate(-$grid * 3, -$grid);
+        -ms-transform: translate(-$grid * 3, -$grid);
+    }
+
+    &.right-top:after, &.right-top:before {
+        @extend %right, %-top;
+    }
+
+    &.right:after, &.right:before {
+        @extend %right, %-middle;
+    }
+
+    &.right-bottom:after, &.right-bottom:before {
+        @extend %right, %-bottom;
+    }
+
+    // scss-lint:disable PropertySortOrder
+    &.bottom-left:after, &.bottom-left:before {
+        @extend %bottom, %-left;
+
+        transform: translateX($grid);
+        -ms-transform: translateX($grid);
+    }
+
+    // scss-lint:disable PropertySortOrder
+    &.bottom:after, &.bottom:before {
+        @extend %bottom, %-center;
+
+        transform: translateX(-$grid);
+        -ms-transform: translateX(-$grid);
+    }
+
+    // scss-lint:disable PropertySortOrder
+    &.bottom-right:after, &.bottom-right:before {
+        @extend %bottom, %-right;
+
+        transform: translateX(-$grid * 3);
+        -ms-transform: translateX(-$grid * 3);
+    }
+
+    &.left-top:after, &.left-top:before {
+        @extend %left, %-top;
+    }
+
+    &.left:after, &.left:before {
+        @extend %left, %-middle;
+    }
+
+    &.left-bottom:after, &.left-bottom:before {
+        @extend %left, %-bottom;
+    }
+}
