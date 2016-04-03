@@ -1,12 +1,11 @@
 @import '../mixins/index';
-@import '../mixins/tooltip-border';
 
 .cui__tooltip-border {
     @include tooltip-border;
 
     // scss-lint:disable PropertySortOrder
     &.top-left:after, &.top-left:before {
-        @extend %top, %-left;
+        @extend %top-border, %-left-border;
 
         transform: translate($grid, -$grid);
         -ms-transform: translate($grid, -$grid);
@@ -14,7 +13,7 @@
 
     // scss-lint:disable PropertySortOrder
     &.top:after, &.top:before {
-        @extend %top, %-center;
+        @extend %top-border, %-center-border;
 
         transform: translate(-$grid, -$grid);
         -ms-transform: translate(-$grid, -$grid);
@@ -22,27 +21,27 @@
 
         // scss-lint:disable PropertySortOrder
     &.top-right:after, &.top-right:before {
-        @extend %top, %-right;
+        @extend %top-border, %-right-border;
 
         transform: translate(-$grid * 3, -$grid);
         -ms-transform: translate(-$grid * 3, -$grid);
     }
 
     &.right-top:after, &.right-top:before {
-        @extend %right, %-top;
+        @extend %right-border, %-top-border;
     }
 
     &.right:after, &.right:before {
-        @extend %right, %-middle;
+        @extend %right-border, %-middle-border;
     }
 
     &.right-bottom:after, &.right-bottom:before {
-        @extend %right, %-bottom;
+        @extend %right-border, %-bottom-border;
     }
 
     // scss-lint:disable PropertySortOrder
     &.bottom-left:after, &.bottom-left:before {
-        @extend %bottom, %-left;
+        @extend %bottom-border, %-left-border;
 
         transform: translateX($grid);
         -ms-transform: translateX($grid);
@@ -50,7 +49,7 @@
 
     // scss-lint:disable PropertySortOrder
     &.bottom:after, &.bottom:before {
-        @extend %bottom, %-center;
+        @extend %bottom-border, %-center-border;
 
         transform: translateX(-$grid);
         -ms-transform: translateX(-$grid);
@@ -58,21 +57,21 @@
 
     // scss-lint:disable PropertySortOrder
     &.bottom-right:after, &.bottom-right:before {
-        @extend %bottom, %-right;
+        @extend %bottom-border, %-right-border;
 
         transform: translateX(-$grid * 3);
         -ms-transform: translateX(-$grid * 3);
     }
 
     &.left-top:after, &.left-top:before {
-        @extend %left, %-top;
+        @extend %left-border, %-top;
     }
 
     &.left:after, &.left:before {
-        @extend %left, %-middle;
+        @extend %left-border, %-middle-border;
     }
 
     &.left-bottom:after, &.left-bottom:before {
-        @extend %left, %-bottom;
+        @extend %left-border, %-bottom-border;
     }
 }

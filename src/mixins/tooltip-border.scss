@@ -21,7 +21,7 @@
     }
 }
 
-%top {
+%top-border {
     border-bottom: $grid solid;
     border-left: $grid solid transparent;
     border-right: $grid solid transparent;
@@ -37,7 +37,7 @@
     }
 }
 
-%bottom {
+%bottom-border {
     border-left: $grid solid transparent;
     border-right: $grid solid transparent;
     border-top: $grid solid;
@@ -53,7 +53,7 @@
     }
 }
 
-%right {
+%right-border {
     border-bottom: $grid solid transparent;
     border-left: $grid solid;
     border-top: $grid solid transparent;
@@ -69,7 +69,7 @@
     }
 }
 
-%left {
+%left-border {
     border-bottom: $grid solid transparent;
     border-right: $grid solid;
     border-top: $grid solid transparent;
@@ -85,34 +85,34 @@
     }
 }
 
-%-left {
+%-left-border {
     left: 0;
 }
 
-%-center {
+%-center-border {
     left: 50%;
 }
 
-%-right {
+%-right-border {
     left: 100%;
 }
 
 // scss-lint:disable PropertySortOrder
-%-top {
+%-top-border {
     top: 0%;
     transform: translate(0, $grid);
     -ms-transform: translate(0, $grid);
 }
 
 // scss-lint:disable PropertySortOrder
-%-middle {
+%-middle-border {
     top: 50%;
     transform: translate(0, -$grid);
     -ms-transform: translate(0, -$grid);
 }
 
 // scss-lint:disable PropertySortOrder
-%-bottom {
+%-bottom-border {
     top: 100%;
     transform: translate(0, -$grid * 3);
     -ms-transform: translate(0, -$grid * 3);
