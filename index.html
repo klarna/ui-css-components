@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Progress bar" class="cui__link">Progress bar</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -2632,6 +2632,45 @@ block.</p>
   &lt;div class=&quot;cui__preview__footer&quot;&gt;
     &lt;a class=&quot;cui__preview__footer__link&quot;&gt;Change address&lt;/a&gt;
   &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div></div><div id="Progress bar" class="docs__section"><h1 class="cui__title--primary">Progress bar</h1>
+<hr>
+<ul class="summary">
+<li><a class="cui__link" href="#Progress bar">Progress bar</a></li>
+</ul>
+<p class="cui__paragraph--primary">When using the progress bar you should define bothe the width of the progress bar and the width of the blue bar, generally as a percentage of the whole progress bar.</p>
+<a name="Progress bar"></a><h2 class="cui__title--secondary">Progress bar</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__progress-bar">
+    <div class="cui__progress-bar__bar" style="width:1%"></div>
+</div> 
+
+<br />
+
+<div class="cui__progress-bar">
+    <div class="cui__progress-bar__bar" style="width:50%"></div>
+</div> 
+
+<br />
+
+<div class="cui__progress-bar">
+    <div class="cui__progress-bar__bar" style="width:99%"></div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__progress-bar&quot;&gt;
+    &lt;div class=&quot;cui__progress-bar__bar&quot; style=&quot;width:1%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;br /&gt;
+
+&lt;div class=&quot;cui__progress-bar&quot;&gt;
+    &lt;div class=&quot;cui__progress-bar__bar&quot; style=&quot;width:50%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;br /&gt;
+
+&lt;div class=&quot;cui__progress-bar&quot;&gt;
+    &lt;div class=&quot;cui__progress-bar__bar&quot; style=&quot;width:99%&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
     </div></div><div id="Switch" class="docs__section"><h1 class="cui__title--primary">Switch</h1>
 <p class="cui__paragraph--primary">The Switch component are a set of checkbox-type components, both in list and standalone. In mobile the look and feel of the component is always the slider style switch, while in desktop there is the option of being either the same style as mobile or a more traditional checkbox mark.</p>

@@ -1,0 +1,9 @@
+@import '../mixins/index';
+
+.cui__progress-bar {
+    @include progress-bar(light-grey);
+
+    &__bar {
+      @include progress-bar(klarna-blue);
+    }
+}

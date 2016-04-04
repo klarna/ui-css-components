@@ -1,0 +1,5 @@
+@mixin progress-bar($color) {
+  height: $grid;
+  background: map-get($colors, $color);
+  border-radius: 100px;
+}
