@@ -109,13 +109,10 @@
         &:after {
             @include button__loader('button--secondary__loader');
             content: '';
+            margin-top: -10px;
             position: absolute;
-            right: .95rem;
-            top: .95rem;
-        }
-
-        &.big:after {
-            top: 1.2rem;
+            right: 15px;
+            top: 50%;
         }
     }
 }
@@ -248,6 +245,25 @@
     margin: ($grid * 3) 0 0 ($grid * 2.4);
     position: absolute;
     width: ($grid * 4);
+}
+
+.cui__field--icon__placeholder {
+    background: map-get($colors, grey-lines);
+    display: block;
+    height: ($grid * 4);
+    width: ($grid * 4);
+
+    .is-focused & {
+        background: map-get($colors, klarna-blue);
+    }
+
+    .is-error & {
+        background: $border-color-error;
+    }
+
+    .is-warning & {
+        background: $border-color-warning;
+    }
 }
 
 // fieldset
