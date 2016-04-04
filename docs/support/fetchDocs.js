@@ -21,8 +21,7 @@ const docFiles = [
   'Preview',
   'Switch',
   'Text',
-  'Tooltip',
-  'Tooltip border'
+  'Tooltip'
 ]
 
 module.exports = function fetchDocs () {

@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip border" class="cui__link">Tooltip border</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Icon" class="cui__link">Icon</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -3323,7 +3323,14 @@ paragraphs or secondary titles.</p>
 <li><a class="cui__link" href="#Tooltip/simple">Simple</a></li>
 <li><a class="cui__link" href="#Tooltip/small">Small</a></li>
 <li><a class="cui__link" href="#Tooltip/arrows">Arrows</a></li>
-<li><a class="cui__link" href="#Tooltip/arrows/small">Small with arrows</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows/small">Small with arrows</a><ul class="summary">
+<li><a class="cui__link" href="#Tooltip-border">Tooltip with border</a></li>
+<li><a class="cui__link" href="#Tooltip/simple-border">Simple with border</a></li>
+<li><a class="cui__link" href="#Tooltip/small-border">Small with border</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows-border">Arrows with border</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows/small-border">Small with arrows with border</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3462,153 +3469,139 @@ paragraphs or secondary titles.</p>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top&quot;&gt;
   Lorem Ipsum
 &lt;/div&gt;</div></code></pre>
-    </div></div><div id="Tooltip border" class="docs__section"><h1 class="cui__title--primary">Tooltip-border</h1>
-<p class="cui__paragraph--primary">The tooltip element is to be used to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
-<p class="cui__paragraph--primary">The tooltip doesn&#39;t dictate positioning, only layout, so this must be implemented on your side. For some use cases, CSS will do, but you may need to use JavaScript for that.</p>
-<p class="cui__paragraph--primary">The implementation of tooltip&#39;s pointer relies on <span class="code">transform: translate</span> rather than using <span class="code">calc</span>, since calc known issues on IE9. Both are unsupported on IE8.</p>
-<hr>
-<ul class="summary">
-<li><a class="cui__link" href="#Tooltip-border">Tooltip-border</a><ul class="summary">
-<li><a class="cui__link" href="#Tooltip-border/simple">Simple</a></li>
-<li><a class="cui__link" href="#Tooltip-border/small">Small</a></li>
-<li><a class="cui__link" href="#Tooltip-border/arrows">Arrows</a></li>
-<li><a class="cui__link" href="#Tooltip-border/arrows/small">Small with arrows</a></li>
-</ul>
-</li>
-</ul>
-<a name="Tooltip-border"></a><h2 class="cui__title--secondary">Tooltip-border</h2>
-<a name="Tooltip-border/simple"></a><h3 class="cui__subtitle">Simple</h3>
+    </div><a name="Tooltip-border"></a><h2 class="cui__title--secondary">Tooltip with border</h2>
+<a name="Tooltip/simple-border"></a><h3 class="cui__subtitle">Simple</h3>
 <p class="cui__paragraph--primary">Tooltip&#39;s width is limited to 250px.</p>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tooltip-border">
+      <div class="example"><div class="cui__tooltip border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip-border&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;</div></code></pre>
-    </div><a name="Tooltip-border/small"></a><h3 class="cui__subtitle">Small</h3>
+    </div><a name="Tooltip/small-border"></a><h3 class="cui__subtitle">Small</h3>
 <p class="cui__paragraph--primary">If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.</p>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tooltip-border">
+      <div class="example"><div class="cui__tooltip border">
   Lorem Ipsum
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip-border&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip border&quot;&gt;
   Lorem Ipsum
 &lt;/div&gt;</div></code></pre>
-    </div><a name="Tooltip-border/arrows"></a><h3 class="cui__subtitle">Arrows</h3>
+    </div><a name="Tooltip/arrows-border"></a><h3 class="cui__subtitle">Arrows</h3>
 <p class="cui__paragraph--primary">You can add arrows on 9 different positions.</p>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tooltip-border top-left">
+      <div class="example"><div class="cui__tooltip top-left border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip-border top">
+<div class="cui__tooltip top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div> 
 <hr />
-<div class="cui__tooltip-border top-right">
+<div class="cui__tooltip top-right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div> 
 
 <hr />
-<div class="cui__tooltip-border right-top">
+<div class="cui__tooltip right-top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip-border right">
+<div class="cui__tooltip right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />    
-<div class="cui__tooltip-border right-bottom">
+<div class="cui__tooltip right-bottom border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 
 <hr />
-<div class="cui__tooltip-border bottom-right">
+<div class="cui__tooltip bottom-right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip-border bottom">
+<div class="cui__tooltip bottom border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />    
-<div class="cui__tooltip-border bottom-left">
+<div class="cui__tooltip bottom-left border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 
 <hr />    
-<div class="cui__tooltip-border left-bottom">
+<div class="cui__tooltip left-bottom border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>    
 <hr />
-<div class="cui__tooltip-border left">
+<div class="cui__tooltip left border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div>
 <hr />
-<div class="cui__tooltip-border left-top">
+<div class="cui__tooltip left-top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip-border top-left&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top-left border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border top&quot;&gt;
+&lt;div class=&quot;cui__tooltip top border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt; 
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border top-right&quot;&gt;
+&lt;div class=&quot;cui__tooltip top-right border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt; 
 
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border right-top&quot;&gt;
+&lt;div class=&quot;cui__tooltip right-top border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border right&quot;&gt;
+&lt;div class=&quot;cui__tooltip right border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;
 &lt;hr /&gt;    
-&lt;div class=&quot;cui__tooltip-border right-bottom&quot;&gt;
+&lt;div class=&quot;cui__tooltip right-bottom border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border bottom-right&quot;&gt;
+&lt;div class=&quot;cui__tooltip bottom-right border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border bottom&quot;&gt;
+&lt;div class=&quot;cui__tooltip bottom border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;
 &lt;hr /&gt;    
-&lt;div class=&quot;cui__tooltip-border bottom-left&quot;&gt;
+&lt;div class=&quot;cui__tooltip bottom-left border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 
 &lt;hr /&gt;    
-&lt;div class=&quot;cui__tooltip-border left-bottom&quot;&gt;
+&lt;div class=&quot;cui__tooltip left-bottom border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;    
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border left&quot;&gt;
+&lt;div class=&quot;cui__tooltip left border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;div class=&quot;cui__tooltip-border left-top&quot;&gt;
+&lt;div class=&quot;cui__tooltip left-top border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;</div></code></pre>
-    </div><a name="Tooltip-border/arrows/small"></a><h3 class="cui__subtitle">Small with arrow</h3>
+    </div><a name="Tooltip/arrows/small-border"></a><h3 class="cui__subtitle">Small with arrow</h3>
 <p class="cui__paragraph--primary">All the arrows above also work with small tooltips.</p>
 
     <div class="example-block">
-      <div class="example"><div class="cui__tooltip-border top">
+      <div class="example"><div class="cui__tooltip top border">
   Lorem Ipsum
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip-border top&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top border&quot;&gt;
   Lorem Ipsum
 &lt;/div&gt;</div></code></pre>
     </div></div></div><script>// helpers for documentation

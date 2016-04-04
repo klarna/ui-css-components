@@ -13,6 +13,11 @@ ___
 	- [Small](#Tooltip/small)
 	- [Arrows](#Tooltip/arrows)
 	- [Small with arrows](#Tooltip/arrows/small)
+  - [Tooltip with border](#Tooltip-border)
+  - [Simple with border](#Tooltip/simple-border)
+  - [Small with border](#Tooltip/small-border)
+  - [Arrows with border](#Tooltip/arrows-border)
+  - [Small with arrows with border](#Tooltip/arrows/small-border)
 
 
 <a name="Tooltip"></a>
@@ -106,6 +111,101 @@ All the arrows above also work with small tooltips.
 
 ```html
 <div class="cui__tooltip top">
+  Lorem Ipsum
+</div> 
+```
+
+<a name="Tooltip-border"></a>
+## Tooltip with border
+
+<a name="Tooltip/simple-border"></a>
+### Simple
+
+Tooltip's width is limited to 250px.
+
+```html
+<div class="cui__tooltip border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div> 
+```
+
+<a name="Tooltip/small-border"></a>
+### Small
+
+If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.
+
+```html
+<div class="cui__tooltip border">
+  Lorem Ipsum
+</div> 
+```
+
+<a name="Tooltip/arrows-border"></a>
+### Arrows
+
+You can add arrows on 9 different positions.
+
+```html
+<div class="cui__tooltip top-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div> 
+<hr />
+<div class="cui__tooltip top-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div> 
+
+<hr />
+<div class="cui__tooltip right-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip right-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />
+<div class="cui__tooltip bottom-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip bottom-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />    
+<div class="cui__tooltip left-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip left-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+```
+
+<a name="Tooltip/arrows/small-border"></a>
+### Small with arrow
+
+All the arrows above also work with small tooltips.
+
+```html
+<div class="cui__tooltip top border">
   Lorem Ipsum
 </div> 
 ```
