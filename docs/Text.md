@@ -17,7 +17,7 @@ These are the general text styles for the toolkit.
   - [Secondary](#Text/paragraph/secondary)
     - [condensed](#Text/paragraph/secondary/condensed)
   - [Legal](#Text/paragraph/legal)
-- [Label](#Text/label)
+- [Promo Label](#Text/promo label)
 - [Link](#Text/link)
 - [Text label](#Text/text label)
 
@@ -178,6 +178,16 @@ These are the general text styles for the toolkit.
 ```html
 <p class="cui__paragraph--legal">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+```
+
+<a name="Text/promo label"></a>
+## Promo Label
+
+```html
+<p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  <span class="cui__promo-label">Promo</span>
 </p>
 ```
 
