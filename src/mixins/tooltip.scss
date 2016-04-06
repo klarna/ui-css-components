@@ -51,7 +51,8 @@
         width: 0;
     }
 }
-@mixin tooltip-border{
+
+@mixin tooltip-border {
     @include typography($grid * 2.6, regular);
 
     background: map-get($colors, light-grey);

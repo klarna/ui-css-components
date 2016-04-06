@@ -9,8 +9,7 @@ $bottom-right-position: 'right', -$grid * 3, 0;
 
 @mixin tranform-translate($x, $y) {
     transform: translate($x, $y);
-    -ms-transform: translate($x, $y);
-    color: red; 
+    -ms-transform: translate($x, $y); 
 }
 
 @mixin align-transform($position) {
@@ -27,6 +26,12 @@ $bottom-right-position: 'right', -$grid * 3, 0;
 
 .cui__tooltip {
     @include tooltip;
+
+    .ie8 & {
+        &:after {
+            content: none;
+        } 
+    }
 
     // scss-lint:disable PropertySortOrder
     &.top-left:after {
@@ -91,6 +96,12 @@ $bottom-right-position: 'right', -$grid * 3, 0;
 
 .cui__tooltip.border {
     @include tooltip-border;
+
+    .ie8 & {
+        &:before {
+            content: none;
+        } 
+    }
 
     &.top-left:after, &.top-left:before,
     &.top:after, &.top:before,

@@ -123,27 +123,22 @@ body
       }
 
       function moveRight() {
-        $('.cui__tab-menu__selected').animate({
+        $('.cui__tab-menu__selected').css({
           left: "66.6%"
-        }, {
-          duration: 'slow',
-          easing: 'ease-out',
-          complete: (() => setTimeout(moveLeft, 1000))
         })
+        setTimeout(moveLeft, 2000)
       }
 
       function moveLeft () {
-        $('.cui__tab-menu__selected').animate({
-          left: "0%"
-        }, {
-          duration: 'slow',
-          easing: 'ease-out',
-          complete: (() => setTimeout(moveRight, 1000))
+        $('.cui__tab-menu__selected').css({
+           left: "0%"
         })
+        setTimeout(moveRight, 2000)
       }
 
       $('.cui__tab-menu__selected').css({
-        width: "33.3%"
+        width: "33.3%",
+        transition: "left 1s ease-out"
       })
       setTimeout(moveRight, 10)
 
