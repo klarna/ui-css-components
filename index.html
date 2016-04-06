@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -2312,7 +2312,88 @@ space for the icon with a background colored placeholder.</p>
                 floatingLabel(input)
         })
 </script>
-</div><div id="Loader" class="docs__section"><h1 class="cui__title--primary">Loader</h1>
+</div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
+
+    <div class="example-block">
+      <div class="example"><p class="cui__paragraph--primary">
+  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  <span class="cui__label">More information</span>
+</p>
+
+<p class="cui__paragraph--primary">
+  <span class="cui__label information">Information</span>
+  <span class="cui__label warning">Warning</span>
+  <span class="cui__label notice">Notice</span>
+  <span class="cui__label success">Success</span>
+  <span class="cui__label brown">Brown</span>
+  <span class="cui__label purple">Purple</span>
+  <span class="cui__label light-blue">Light Blue</span>
+  <span class="cui__label ultramarine">Ultramarine</span>
+  <span class="cui__label yellow">Yellow</span>
+  <span class="cui__label grey">Grey</span>
+  <span class="cui__label black">Black</span>
+</p>
+
+<p class="cui__paragraph--primary">
+  <span class="cui__label outline information">Information</span>
+  <span class="cui__label outline warning">Warning</span>
+  <span class="cui__label outline notice">Notice</span>
+  <span class="cui__label outline success">Success</span>
+  <span class="cui__label outline brown">Brown</span>
+  <span class="cui__label outline purple">Purple</span>
+  <span class="cui__label outline light-blue">Light Blue</span>
+  <span class="cui__label outline ultramarine">Ultramarine</span>
+  <span class="cui__label outline yellow">Yellow</span>
+  <span class="cui__label outline grey">Grey</span>
+  <span class="cui__label outline black">Black</span>
+</p>
+
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    <span class="cui__label inverted">Information</span>
+    <span class="cui__label outline inverted">Information</span>
+  </p>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary&quot;&gt;
+  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  &lt;span class=&quot;cui__label&quot;&gt;More information&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;cui__paragraph--primary&quot;&gt;
+  &lt;span class=&quot;cui__label information&quot;&gt;Information&lt;/span&gt;
+  &lt;span class=&quot;cui__label warning&quot;&gt;Warning&lt;/span&gt;
+  &lt;span class=&quot;cui__label notice&quot;&gt;Notice&lt;/span&gt;
+  &lt;span class=&quot;cui__label success&quot;&gt;Success&lt;/span&gt;
+  &lt;span class=&quot;cui__label brown&quot;&gt;Brown&lt;/span&gt;
+  &lt;span class=&quot;cui__label purple&quot;&gt;Purple&lt;/span&gt;
+  &lt;span class=&quot;cui__label light-blue&quot;&gt;Light Blue&lt;/span&gt;
+  &lt;span class=&quot;cui__label ultramarine&quot;&gt;Ultramarine&lt;/span&gt;
+  &lt;span class=&quot;cui__label yellow&quot;&gt;Yellow&lt;/span&gt;
+  &lt;span class=&quot;cui__label grey&quot;&gt;Grey&lt;/span&gt;
+  &lt;span class=&quot;cui__label black&quot;&gt;Black&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;cui__paragraph--primary&quot;&gt;
+  &lt;span class=&quot;cui__label outline information&quot;&gt;Information&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline warning&quot;&gt;Warning&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline notice&quot;&gt;Notice&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline success&quot;&gt;Success&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline brown&quot;&gt;Brown&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline purple&quot;&gt;Purple&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline light-blue&quot;&gt;Light Blue&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline ultramarine&quot;&gt;Ultramarine&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline yellow&quot;&gt;Yellow&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline grey&quot;&gt;Grey&lt;/span&gt;
+  &lt;span class=&quot;cui__label outline black&quot;&gt;Black&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__paragraph--primary white&quot;&gt;
+    &lt;span class=&quot;cui__label inverted&quot;&gt;Information&lt;/span&gt;
+    &lt;span class=&quot;cui__label outline inverted&quot;&gt;Information&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
+    </div></div><div id="Loader" class="docs__section"><h1 class="cui__title--primary">Loader</h1>
 <p class="cui__paragraph--primary">Standalone loaders are designed to be used on overlays when the application is loading. They fit the grid in either 2, 3, 4 or 6 blocks.</p>
 <p class="cui__paragraph--primary">They are not designed to be used within other components. For a loader inside a button for example, check out the examples for Button with loader.</p>
 <hr>
@@ -3234,7 +3315,7 @@ block.</p>
 <li><a class="cui__link" href="#Text/paragraph/legal">Legal</a></li>
 </ul>
 </li>
-<li><a class="cui__link" href="#Text/label">Label</a></li>
+<li><a class="cui__link" href="#Text/promo label">Promo Label</a></li>
 <li><a class="cui__link" href="#Text/link">Link</a></li>
 <li><a class="cui__link" href="#Text/text label">Text label</a></li>
 <li><a class="cui__link" href="#Text/amount text">Amount text</a></li>
@@ -3434,16 +3515,16 @@ block.</p>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--legal&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 &lt;/p&gt;</div></code></pre>
-    </div><a name="Text/label"></a><h2 class="cui__title--secondary">Label</h2>
+    </div><a name="Text/promo label"></a><h2 class="cui__title--secondary">Promo Label</h2>
 
     <div class="example-block">
       <div class="example"><p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  <span class="cui__label">Promo</span>
+  <span class="cui__promo-label">Promo</span>
 </p></div>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  &lt;span class=&quot;cui__label&quot;&gt;Promo&lt;/span&gt;
+  &lt;span class=&quot;cui__promo-label&quot;&gt;Promo&lt;/span&gt;
 &lt;/p&gt;</div></code></pre>
     </div><a name="Text/link"></a><h2 class="cui__title--secondary">Link</h2>
 

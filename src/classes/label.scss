@@ -1,0 +1,5 @@
+@import '../mixins/index';
+
+.cui__label {
+    @include label;
+}

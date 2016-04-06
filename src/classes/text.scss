@@ -45,9 +45,9 @@
     @include paragraph--legal;
 }
 
-// LABEL
-.cui__label {
-    @include label;
+// PROMO LABEL
+.cui__promo-label {
+    @include promo-label;
 }
 
 // TEXT LABEL
