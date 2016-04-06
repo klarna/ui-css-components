@@ -12,9 +12,9 @@ ___
 	- [blue](#Illustration/regular/blue)
 	- [inverse](#Illustration/regular/inverse)
 - [Button](#Illustration/button)
-  - [gray](#Illustration/regular/gray)
-  - [blue](#Illustration/regular/blue)
-  - [inverse](#Illustration/regular/inverse)
+  - [gray](#Illustration/button/gray)
+  - [blue](#Illustration/button/blue)
+  - [inverse](#Illustration/button/inverse)
 
 <a name="Illustration/regular"></a>
 ## Regular
