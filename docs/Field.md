@@ -26,6 +26,14 @@ ___
 	- [warning](#Field/regular/warning)
 	- [warning focused](#Field/regular/warning focused)
 	- [disabled](#Field/regular/disabled)
+- [Big](#Field/big)
+	- [focused](#Field/big/focused)
+	- [filled](#Field/big/filled)
+	- [error](#Field/big/error)
+	- [error focused](#Field/big/error focused)
+	- [warning](#Field/big/warning)
+	- [warning focused](#Field/big/warning focused)
+	- [disabled](#Field/big/disabled)
 - [Stacked](#Field/stacked)
 	- [side by side](#Field/stacked/side by side)
 	- [top part](#Field/stacked/top part)
@@ -39,6 +47,7 @@ ___
 	- [twenty - eighty](#Field/stacked/twenty - eighty)
 	- [one third - two thirds](#Field/stacked/one third - two thirds)
 - [Icon](#Field/icon)
+	- [big](#Field/icon/big)
 	- [focused](#Field/icon/focused)
 	- [filled](#Field/icon/filled)
 	- [error](#Field/icon/error)
@@ -47,7 +56,11 @@ ___
 	- [filled](#Field/centered/filled)
 	- [error](#Field/centered/error)
 	- [icon](#Field/centered/icon)
+	- [big](#Field/centered/big)
+	- [loading](#Field/centered/loading)
 - [Loading](#Field/loading)
+	- [big](#Field/loading/big)
+	- [big centered](#Field/loading/big centered)
 
 
 <a name="Field/examples"></a>
@@ -167,6 +180,125 @@ Should be used when it's important to show the field to the user but she should 
 </div>
 
 <div class="cui__field is-disabled right half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" />
+</div>
+```
+
+<a name="Field/big"></a>
+## Big
+
+```html
+<div class="cui__field big">
+	<label class="cui__field__label">
+		Please write your email address
+	</label>
+	<input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/big/focused"></a>
+### Focused
+
+```html
+<div class="cui__field big is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div>
+```
+
+<a name="Field/big/filling"></a>
+### Filling
+
+```html
+<div class="cui__field big is-filled is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div>
+```
+
+<a name="Field/big/filled"></a>
+### Filled
+
+```html
+<div class="cui__field big is-filled">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div>
+```
+
+<a name="Field/big/error"></a>
+### Error
+
+Should be used when there's a problem with the filled value that blocks the user to continue.
+
+```html
+<div class="cui__field big is-error">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div>
+```
+<a name="Field/big/error focused"></a>
+### Error focused
+
+```html
+<div class="cui__field big is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div>
+```
+
+<a name="Field/big/warning"></a>
+### Warning
+
+Should be used when there's something that requires user's attention to the filled value, but doesn't block her to continue.
+
+```html
+<div class="cui__field big is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+<a name="Field/big/warning focused"></a>
+### Warning focused
+
+```html
+<div class="cui__field big is-warning is-focused">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Field/big/disabled"></a>
+### Disabled
+
+Should be used when it's important to show the field to the user but she should not be able to edit it.
+
+```html
+<div class="cui__field big is-disabled left half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__field big is-disabled right half">
     <label class="cui__field__label">
         Enter your email address
     </label>
@@ -539,6 +671,19 @@ All icons are available in [ui-illustrations](https://stash.int.klarna.net/proje
 </div>
 ```
 
+<a name="Field/icon/big"></a>
+### Big
+
+```html
+<div class="cui__field--icon big">
+	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<label class="cui__field--icon__label">
+		Enter your password
+	</label>
+	<input class="cui__field--icon__input" />
+</div>
+```
+
 <a name="Field/icon/focused"></a>
 ### Focused
 
@@ -652,11 +797,59 @@ All icons are available in [ui-illustrations](https://stash.int.klarna.net/proje
 </div>
 ```
 
-<a name="Field/loading"></a>
+<a name="Field/centered/big"></a>
+### Big
+
+```html
+<div class="cui__field big is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div>
+```
+
+<a name="Field/centered/loading"></a>
 ### Loading
 
 ```html
+<div class="cui__field is-loading is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading"></a>
+## Loading
+
+```html
 <div class="cui__field is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading/big"></a>
+### Big
+
+```html
+<div class="cui__field big is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading/big centered"></a>
+### Big centered
+
+```html
+<div class="cui__field big is-centered is-loading">
     <label class="cui__field__label">
         ZIP Code
     </label>

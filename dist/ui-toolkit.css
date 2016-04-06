@@ -2080,6 +2080,8 @@
   margin: 15px 0 0 12px;
   position: absolute;
   width: 20px; }
+  .big .cui__field--icon__icon {
+    margin-top: 20px; }
 
 .cui__field--icon__placeholder {
   background: #cbcbcd;
