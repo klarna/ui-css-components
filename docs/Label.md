@@ -33,4 +33,11 @@
   <span class="cui__label outline grey">Grey</span>
   <span class="cui__label outline black">Black</span>
 </p>
+
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    <span class="cui__label inverted">Information</span>
+    <span class="cui__label outline inverted">Information</span>
+  </p>
+</div>
 ```

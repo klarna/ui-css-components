@@ -72,6 +72,12 @@
         color: map-get($colors, white);
     }
 
+    &.inverted {
+        background: map-get($colors, white);
+        border-color: map-get($colors, white);
+        color: map-get($colors, klarna-blue);
+    }
+
     &.outline {
         background: transparent;
         border-color: map-get($colors, grey-text);
@@ -135,6 +141,12 @@
             background: transparent;
             border-color: map-get($colors, black);
             color:  map-get($colors, black);
+        }
+
+        &.inverted {
+            background: transparent;
+            border-color: map-get($colors, white);
+            color: map-get($colors, white);
         }
     }
 }

@@ -2241,6 +2241,10 @@
     background: #3c3c3e;
     border-color: #3c3c3e;
     color: #fff; }
+  .cui__label.inverted {
+    background: #fff;
+    border-color: #fff;
+    color: #0074c8; }
   .cui__label.outline {
     background: transparent;
     border-color: #9e9ea0;
@@ -2285,6 +2289,10 @@
       background: transparent;
       border-color: #3c3c3e;
       color: #3c3c3e; }
+    .cui__label.outline.inverted {
+      background: transparent;
+      border-color: #fff;
+      color: #fff; }
 
 @keyframes spin {
   to {
