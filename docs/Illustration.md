@@ -7,8 +7,8 @@ ___
 - [Regular](#Illustration/regular)
 	- [black](#Illustration/regular/black)
 	- [gray](#Illustration/regular/gray)
-	- [red](#Illustration/regular/red)
-	- [yellow](#Illustration/regular/yellow)
+	- [error](#Illustration/regular/error)
+	- [warning](#Illustration/regular/warning)
 	- [blue](#Illustration/regular/blue)
 	- [inverse](#Illustration/regular/inverse)
 - [Button](#Illustration/button)
@@ -57,12 +57,12 @@ ___
 </svg>
 ```
 
-<a name="Illustration/regular/red"></a>
-### Red
+<a name="Illustration/regular/error"></a>
+### Error
 
 ```html
 <svg
-  class="cui__illustration red"
+  class="cui__illustration error"
   width="100px"
   height="100px"
   viewBox="0 0 100 100"
@@ -76,12 +76,12 @@ ___
 </svg>
 ```
 
-<a name="Illustration/regular/yellow"></a>
-### Yellow
+<a name="Illustration/regular/warning"></a>
+### Warning
 
 ```html
 <svg
-  class="cui__illustration yellow"
+  class="cui__illustration warning"
   width="100px"
   height="100px"
   viewBox="0 0 100 100"
@@ -132,5 +132,67 @@ ___
       class="cui__illustration__fill"
       points="51 36 76 79 26 79 "></polygon>
   </svg>
+</div>
+```
+
+<a name="Illustration/button"></a>
+## Button
+
+<a name="Illustration/button/gray"></a>
+### Gray
+
+```html
+<svg
+  class="cui__illustration button gray"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg>
+```
+
+<a name="Illustration/button/blue"></a>
+### Blue
+
+```html
+<svg
+  class="cui__illustration button blue"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg>
+```
+
+<a name="Illustration/button/inverse"></a>
+### Inverse
+
+```html
+<div class="cui__block blue">
+	<svg
+	  class="cui__illustration button inverse"
+	  width="100px"
+	  height="100px"
+	  viewBox="0 0 100 100"
+	  xmlns="http://www.w3.org/2000/svg">
+	  <polygon
+	    class="cui__illustration__stroke"
+	    points="50.5 9 98 90.7 3 90.7 "></polygon>
+	  <polygon
+	    class="cui__illustration__fill"
+	    points="51 36 76 79 26 79 "></polygon>
+	</svg>
 </div>
 ```

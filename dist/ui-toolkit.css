@@ -2188,9 +2188,13 @@
   -ms-transform: translate(0, -15px); }
 
 .cui__illustration__fill {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   fill: #3c3c3e; }
 
 .cui__illustration__stroke {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   stroke: #3c3c3e;
   fill: none; }
 
@@ -2201,6 +2205,20 @@
   fill: none;
   stroke: #cbcbcd; }
 
+.cui__illustration.gray.button:hover .cui__illustration__fill {
+  fill: #66aae0; }
+
+.cui__illustration.gray.button:hover .cui__illustration__stroke {
+  fill: none;
+  stroke: #66aae0; }
+
+.cui__illustration.gray.button:active .cui__illustration__fill {
+  fill: rgba(26, 140, 220, 0.8); }
+
+.cui__illustration.gray.button:active .cui__illustration__stroke {
+  fill: none;
+  stroke: rgba(26, 140, 220, 0.8); }
+
 .cui__illustration.blue .cui__illustration__fill {
   fill: #0074c8; }
 
@@ -2208,17 +2226,31 @@
   fill: none;
   stroke: #0074c8; }
 
-.cui__illustration.red .cui__illustration__fill {
+.cui__illustration.blue.button:hover .cui__illustration__fill {
+  fill: #0065ad; }
+
+.cui__illustration.blue.button:hover .cui__illustration__stroke {
+  fill: none;
+  stroke: #0065ad; }
+
+.cui__illustration.blue.button:active .cui__illustration__fill {
+  fill: #005694; }
+
+.cui__illustration.blue.button:active .cui__illustration__stroke {
+  fill: none;
+  stroke: #005694; }
+
+.cui__illustration.error .cui__illustration__fill {
   fill: #e63200; }
 
-.cui__illustration.red .cui__illustration__stroke {
+.cui__illustration.error .cui__illustration__stroke {
   fill: none;
   stroke: #e63200; }
 
-.cui__illustration.yellow .cui__illustration__fill {
+.cui__illustration.warning .cui__illustration__fill {
   fill: #ecb800; }
 
-.cui__illustration.yellow .cui__illustration__stroke {
+.cui__illustration.warning .cui__illustration__stroke {
   fill: none;
   stroke: #ecb800; }
 
