@@ -37,7 +37,18 @@ $colors: (
   light-blue: #61B2EB,
   ultramarine: #2CC4B0,
   yellow: #FFC000,
-  grey-label: #617788
+  grey-label: #617788,
+
+  blue-hover: #66aae0,
+  blue-focus: rgba(26, 140, 220, .8),
+  blue-shadow: rgba(26, 140, 220, .6),
+  error: #e63200,
+  error-hover: #ef8b6f,
+  error-border: #e6bebe,
+  error-shadow: rgba(230, 55, 6, .4),
+  warning: #ecb800,
+  warning-hover: #e2af4a,
+  warning-border: #e6c88c
 );
 
 // ================================================================
@@ -56,14 +67,3 @@ $font-weights: (
 $border-radius: $grid;
 $border-radius-checkbox: ($grid * .4);
 $border-color: map-get($colors, grey-lines);
-$border-color-error: #e6bebe;
-$border-color-warning: #e6c88c;
-$border-color-hover: #66aae0;
-$border-color-hover-error: #ef8b6f;
-$border-color-hover-warning: #e2af4a;
-$border-color-focus: rgba(26, 140, 220, .8);
-$border-color-focus-error: #e63200;
-$border-color-focus-warning: #e2af4a;
-$box-shadow-focus: rgba(26, 140, 220, .6);
-$box-shadow-focus-error: rgba(230, 55, 6, .4);
-$box-shadow-focus-warning: #e6c88c;
