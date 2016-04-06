@@ -6,6 +6,7 @@ The tooltip doesn't dictate positioning, only layout, so this must be implemente
 
 The implementation of tooltip's pointer relies on `transform: translate` rather than using `calc`, since calc known issues on IE9. Both are unsupported on IE8.
 
+Tooltip's width is limited to **250px**. To use wider Tooltip you will need to ovride the max-width css
 ___
 
 - [Tooltip](#Tooltip)
@@ -26,8 +27,6 @@ ___
 <a name="Tooltip/simple"></a>
 ### Simple
 
-Tooltip's width is limited to 250px.
-
 ```html
 <div class="cui__tooltip">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
@@ -36,8 +35,6 @@ Tooltip's width is limited to 250px.
 
 <a name="Tooltip/small"></a>
 ### Small
-
-If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.
 
 ```html
 <div class="cui__tooltip">
@@ -121,8 +118,6 @@ All the arrows above also work with small tooltips.
 <a name="Tooltip/simple-border"></a>
 ### Simple
 
-Tooltip's width is limited to 250px.
-
 ```html
 <div class="cui__tooltip border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
@@ -131,8 +126,6 @@ Tooltip's width is limited to 250px.
 
 <a name="Tooltip/small-border"></a>
 ### Small
-
-If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.
 
 ```html
 <div class="cui__tooltip border">
