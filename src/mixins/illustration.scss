@@ -1,0 +1,19 @@
+@mixin illustration__stroke ($color) {
+    stroke: $color;
+    fill: none;
+}
+
+@mixin illustration__fill ($color) {
+    fill: $color;
+}
+
+@mixin illustration__inner ($color) {
+    & .cui__illustration__fill {
+        fill: $color;
+    }
+
+    & .cui__illustration__stroke {
+        fill: none;
+        stroke: $color;
+    }
+}

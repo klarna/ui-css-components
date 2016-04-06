@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Illustration" class="cui__link">Illustration</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -2558,7 +2558,206 @@ space for the icon with a background colored placeholder.</p>
                 floatingLabel(input)
         })
 </script>
-</div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
+</div><div id="Illustration" class="docs__section"><h1 class="cui__title--primary">Illustration</h1>
+<p class="cui__paragraph--primary">Illustration refers to any embeded SVG illustration. They can be found in the <span class="code">ui-illustrations</span> repo, but the styling of them is done directly in CSS.</p>
+<hr>
+<ul class="summary">
+<li><a class="cui__link" href="#Illustration/regular">Regular</a><ul class="summary">
+<li><a class="cui__link" href="#Illustration/regular/black">black</a></li>
+<li><a class="cui__link" href="#Illustration/regular/gray">gray</a></li>
+<li><a class="cui__link" href="#Illustration/regular/red">red</a></li>
+<li><a class="cui__link" href="#Illustration/regular/yellow">yellow</a></li>
+<li><a class="cui__link" href="#Illustration/regular/blue">blue</a></li>
+<li><a class="cui__link" href="#Illustration/regular/inverse">inverse</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Illustration/button">Button</a><ul class="summary">
+<li><a class="cui__link" href="#Illustration/regular/gray">gray</a></li>
+<li><a class="cui__link" href="#Illustration/regular/blue">blue</a></li>
+<li><a class="cui__link" href="#Illustration/regular/inverse">inverse</a></li>
+</ul>
+</li>
+</ul>
+<a name="Illustration/regular"></a><h2 class="cui__title--secondary">Regular</h2>
+<a name="Illustration/regular/black"></a><h3 class="cui__subtitle">Black</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+  class="cui__illustration"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+  class=&quot;cui__illustration&quot;
+  width=&quot;100px&quot;
+  height=&quot;100px&quot;
+  viewBox=&quot;0 0 100 100&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__stroke&quot;
+    points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__fill&quot;
+    points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/regular/gray"></a><h3 class="cui__subtitle">Gray</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+  class="cui__illustration gray"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+  class=&quot;cui__illustration gray&quot;
+  width=&quot;100px&quot;
+  height=&quot;100px&quot;
+  viewBox=&quot;0 0 100 100&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__stroke&quot;
+    points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__fill&quot;
+    points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/regular/red"></a><h3 class="cui__subtitle">Red</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+  class="cui__illustration red"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+  class=&quot;cui__illustration red&quot;
+  width=&quot;100px&quot;
+  height=&quot;100px&quot;
+  viewBox=&quot;0 0 100 100&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__stroke&quot;
+    points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__fill&quot;
+    points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/regular/yellow"></a><h3 class="cui__subtitle">Yellow</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+  class="cui__illustration yellow"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+  class=&quot;cui__illustration yellow&quot;
+  width=&quot;100px&quot;
+  height=&quot;100px&quot;
+  viewBox=&quot;0 0 100 100&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__stroke&quot;
+    points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__fill&quot;
+    points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/regular/blue"></a><h3 class="cui__subtitle">Blue</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+  class="cui__illustration blue"
+  width="100px"
+  height="100px"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    class="cui__illustration__stroke"
+    points="50.5 9 98 90.7 3 90.7 "></polygon>
+  <polygon
+    class="cui__illustration__fill"
+    points="51 36 76 79 26 79 "></polygon>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+  class=&quot;cui__illustration blue&quot;
+  width=&quot;100px&quot;
+  height=&quot;100px&quot;
+  viewBox=&quot;0 0 100 100&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__stroke&quot;
+    points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+  &lt;polygon
+    class=&quot;cui__illustration__fill&quot;
+    points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/regular/inverse"></a><h3 class="cui__subtitle">Inverse</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__block blue">
+  <svg
+    class="cui__illustration inverse"
+    width="100px"
+    height="100px"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg">
+    <polygon
+      class="cui__illustration__stroke"
+      points="50.5 9 98 90.7 3 90.7 "></polygon>
+    <polygon
+      class="cui__illustration__fill"
+      points="51 36 76 79 26 79 "></polygon>
+  </svg>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;svg
+    class=&quot;cui__illustration inverse&quot;
+    width=&quot;100px&quot;
+    height=&quot;100px&quot;
+    viewBox=&quot;0 0 100 100&quot;
+    xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;polygon
+      class=&quot;cui__illustration__stroke&quot;
+      points=&quot;50.5 9 98 90.7 3 90.7 &quot;&gt;&lt;/polygon&gt;
+    &lt;polygon
+      class=&quot;cui__illustration__fill&quot;
+      points=&quot;51 36 76 79 26 79 &quot;&gt;&lt;/polygon&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;</div></code></pre>
+    </div></div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
 
     <div class="example-block">
       <div class="example"><p class="cui__paragraph--primary">

@@ -1,0 +1,31 @@
+@import '../mixins/index';
+
+.cui__illustration {
+    &__fill {
+        @include illustration__fill(map-get($colors, black));
+    }
+
+    &__stroke {
+        @include illustration__stroke(map-get($colors, black));
+    }
+
+    &.gray {
+        @include illustration__inner(map-get($colors, grey-lines));
+    }
+
+    &.blue {
+        @include illustration__inner(map-get($colors, klarna-blue));
+    }
+
+    &.red {
+        @include illustration__inner(map-get($colors, error));
+    }
+
+    &.yellow {
+        @include illustration__inner(map-get($colors, warning));
+    }
+
+    &.inverse {
+        @include illustration__inner(map-get($colors, white));
+    }
+}

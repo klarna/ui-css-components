@@ -2187,6 +2187,132 @@
           transform: translate(0, -15px);
   -ms-transform: translate(0, -15px); }
 
+.cui__illustration__fill {
+  fill: #3c3c3e; }
+
+.cui__illustration__stroke {
+  stroke: #3c3c3e;
+  fill: none; }
+
+.cui__illustration.gray .cui__illustration__fill {
+  fill: #cbcbcd; }
+
+.cui__illustration.gray .cui__illustration__stroke {
+  fill: none;
+  stroke: #cbcbcd; }
+
+.cui__illustration.blue .cui__illustration__fill {
+  fill: #0074c8; }
+
+.cui__illustration.blue .cui__illustration__stroke {
+  fill: none;
+  stroke: #0074c8; }
+
+.cui__illustration.red .cui__illustration__fill {
+  fill: #e63200; }
+
+.cui__illustration.red .cui__illustration__stroke {
+  fill: none;
+  stroke: #e63200; }
+
+.cui__illustration.yellow .cui__illustration__fill {
+  fill: #ecb800; }
+
+.cui__illustration.yellow .cui__illustration__stroke {
+  fill: none;
+  stroke: #ecb800; }
+
+.cui__illustration.inverse .cui__illustration__fill {
+  fill: #fff; }
+
+.cui__illustration.inverse .cui__illustration__stroke {
+  fill: none;
+  stroke: #fff; }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+/*******************************************************************************
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie { // Targets all IE browsers
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie(8) { // Targets only IE 8
+        padding-top: 22px;
+    }
+}
+
+.some-css-selector1,
+.some-css-selector2 {
+    padding: 20px;
+
+    @include respond-to-ie((8,9)) { // Targets both IE 8 and IE 9
+        padding-top: 22px;
+    }
+}
+*******************************************************************************/
+.cui__tooltip.top-left:after, .cui__tooltip.top:after, .cui__tooltip.top-right:after {
+  border-bottom: 5px solid #364759;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 0; }
+
+.cui__tooltip.bottom-left:after, .cui__tooltip.bottom:after, .cui__tooltip.bottom-right:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #364759;
+  top: 100%; }
+
+.cui__tooltip.right-top:after, .cui__tooltip.right:after, .cui__tooltip.right-bottom:after {
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #364759;
+  border-top: 5px solid transparent;
+  right: -5px; }
+
+.cui__tooltip.left-top:after, .cui__tooltip.left:after, .cui__tooltip.left-bottom:after {
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #364759;
+  border-top: 5px solid transparent;
+  left: -5px; }
+
+.cui__tooltip.top-left:after, .cui__tooltip.bottom-left:after {
+  left: 0; }
+
+.cui__tooltip.top:after, .cui__tooltip.bottom:after {
+  left: 50%; }
+
+.cui__tooltip.top-right:after, .cui__tooltip.bottom-right:after {
+  left: 100%; }
+
+.cui__tooltip.right-top:after, .cui__tooltip.left-top:after {
+  top: 0%;
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+  -ms-transform: translate(0, 5px); }
+
+.cui__tooltip.right:after, .cui__tooltip.left:after {
+  top: 50%;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px); }
+
+.cui__tooltip.right-bottom:after, .cui__tooltip.left-bottom:after {
+  top: 100%;
+  -webkit-transform: translate(0, -15px);
+          transform: translate(0, -15px);
+  -ms-transform: translate(0, -15px); }
+
 .cui__label {
   font-size: 12px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
