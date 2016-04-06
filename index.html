@@ -1447,9 +1447,14 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <li><a class="cui__link" href="#Field/centered/error">error</a></li>
 <li><a class="cui__link" href="#Field/centered/icon">icon</a></li>
 <li><a class="cui__link" href="#Field/centered/big">big</a></li>
+<li><a class="cui__link" href="#Field/centered/loading">loading</a></li>
 </ul>
 </li>
-<li><a class="cui__link" href="#Field/loading">Loading</a></li>
+<li><a class="cui__link" href="#Field/loading">Loading</a><ul class="summary">
+<li><a class="cui__link" href="#Field/loading/big">big</a></li>
+<li><a class="cui__link" href="#Field/loading/big centered">big centered</a></li>
+</ul>
+</li>
 </ul>
 <a name="Field/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
@@ -2330,7 +2335,22 @@ demo.</p>
     &lt;/label&gt;
     &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
-    </div><a name="Field/loading"></a><h3 class="cui__subtitle">Loading</h3>
+    </div><a name="Field/centered/loading"></a><h3 class="cui__subtitle">Loading</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field is-loading is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-loading is-centered is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading"></a><h2 class="cui__title--secondary">Loading</h2>
 
     <div class="example-block">
       <div class="example"><div class="cui__field is-loading">
@@ -2340,6 +2360,36 @@ demo.</p>
     <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-loading&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-loading&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading/big centered"></a><h3 class="cui__subtitle">Big centered</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-centered is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-centered is-loading&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
         ZIP Code
     &lt;/label&gt;

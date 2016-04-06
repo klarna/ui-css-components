@@ -54,7 +54,10 @@ ___
 	- [error](#Field/centered/error)
 	- [icon](#Field/centered/icon)
 	- [big](#Field/centered/big)
+	- [loading](#Field/centered/loading)
 - [Loading](#Field/loading)
+	- [big](#Field/loading/big)
+	- [big centered](#Field/loading/big centered)
 
 
 <a name="Field/examples"></a>
@@ -737,11 +740,47 @@ demo.
 </div>
 ```
 
-<a name="Field/loading"></a>
+<a name="Field/centered/loading"></a>
 ### Loading
 
 ```html
+<div class="cui__field is-loading is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading"></a>
+## Loading
+
+```html
 <div class="cui__field is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading/big"></a>
+### Big
+
+```html
+<div class="cui__field big is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div>
+```
+
+<a name="Field/loading/big centered"></a>
+### Big centered
+
+```html
+<div class="cui__field big is-centered is-loading">
     <label class="cui__field__label">
         ZIP Code
     </label>
