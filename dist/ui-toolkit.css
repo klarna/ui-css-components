@@ -1977,48 +1977,58 @@
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   background: #f5f5f7;
+  border: 1px solid #f5f5f7;
   border-radius: 5px;
   bottom: 1px;
-  box-sizing: border-box;
   color: #3c3c3e;
   display: inline-block;
   left: 4px;
-  line-height: 20px;
+  line-height: 18px;
   padding: 0 8px;
   position: relative; }
   .cui__label.warning {
     background: #F52727;
+    border-color: #F52727;
     color: #fff; }
   .cui__label.notice {
     background: #FF8932;
+    border-color: #FF8932;
     color: #fff; }
   .cui__label.success {
     background: #23BA73;
+    border-color: #23BA73;
     color: #fff; }
   .cui__label.brown {
     background: #B3815F;
+    border-color: #B3815F;
     color: #fff; }
   .cui__label.purple {
     background: #AC71CA;
+    border-color: #AC71CA;
     color: #fff; }
   .cui__label.light-blue {
     background: #61B2EB;
+    border-color: #61B2EB;
     color: #fff; }
   .cui__label.ultramarine {
     background: #2CC4B0;
+    border-color: #2CC4B0;
     color: #fff; }
   .cui__label.yellow {
     background: #FFC000;
+    border-color: #FFC000;
     color: #fff; }
   .cui__label.grey {
     background: #617788;
+    border-color: #617788;
     color: #fff; }
   .cui__label.black {
     background: #3c3c3e;
+    border-color: #3c3c3e;
     color: #fff; }
   .cui__label.outline {
     background: transparent;
-    border: 1px solid #9e9ea0;
+    border-color: #9e9ea0;
     color: #9e9ea0; }
     .cui__label.outline.warning {
       background: transparent;
