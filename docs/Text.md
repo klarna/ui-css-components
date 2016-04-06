@@ -20,6 +20,7 @@ These are the general text styles for the toolkit.
 - [Promo Label](#Text/promo label)
 - [Link](#Text/link)
 - [Text label](#Text/text label)
+- [Amount text](#Text/amount text)
 
 <a name="Text/example"></a>
 ## Example
@@ -239,4 +240,19 @@ paragraphs or secondary titles.
   94100 California<br />
   United States
 </p>
+```
+
+<a name="Text/amount text"></a>
+## Amount Text
+
+```html
+<p class="cui__amount-text">
+  €1500
+</p>
+
+<div class="cui__block blue">
+  <p class="cui__amount-text white">
+    $1800
+  </p>
+</div>
 ```

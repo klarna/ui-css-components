@@ -57,3 +57,8 @@
         padding-top: ($grid * .4);
     }
 }
+
+// AMOUNT TEXT
+.cui__amount-text {
+    @include amount-text;
+}

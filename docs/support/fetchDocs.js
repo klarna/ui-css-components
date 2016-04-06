@@ -12,10 +12,10 @@ const kmd = require('./kmd')
 const docFiles = [
   'Getting started',
   'Baseline',
+  'Block',
   'Button',
   'Dropdown',
   'Field',
-  'Icon',
   'Label',
   'Loader',
   'Navigation',

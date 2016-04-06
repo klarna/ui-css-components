@@ -1,7 +1,19 @@
+@mixin palette-colors ($default-color: map-get($colors, black)) {
+    color: $default-color;
+
+    &.blue {
+        color: map-get($colors, klarna-blue);
+    }
+
+    &.white {
+        color: map-get($colors, white);
+    }
+}
+
 @mixin title--primary {
     @include typography(($grid * 5.2), light);
+    @include palette-colors();
 
-    color: map-get($colors, black);
     line-height: ($grid * 7);
     margin: 0;
     padding: ($grid * 3.6) 0 ($grid * 3.4);
@@ -15,37 +27,25 @@
             @include typography(($grid * 4.4), regular);
         }
     }
-
-    &.blue {
-        color: map-get($colors, klarna-blue);
-    }
 }
 
 @mixin title--secondary {
     @include typography(($grid * 3), semi-bold);
+    @include palette-colors();
 
-    color: map-get($colors, black);
     line-height: ($grid * 3);
     margin: 0;
-
-    &.blue {
-        color: map-get($colors, klarna-blue);
-    }
 }
 
 @mixin subtitle {
     @include typography(($grid * 2.4), semi-bold);
+    @include palette-colors();
 
-    color: map-get($colors, black);
     height: ($grid * 4);
     line-height: ($grid * 4);
     margin: 0;
     padding: ($grid * 3.2) 0 ($grid * 1.8);
     text-transform: uppercase;
-
-    &.blue {
-        color: map-get($colors, klarna-blue);
-    }
 
     &.condensed {
         padding: ($grid * .2) 0 ($grid * 1.8);
@@ -67,35 +67,31 @@
 @mixin paragraph--primary {
     @include paragraph;
     @include typography(($grid * 2.6), regular);
-
-    color: map-get($colors, black);
+    @include palette-colors();
 }
 
 @mixin paragraph--primary-condensed {
     @include paragraph-condensed;
     @include typography(($grid * 2.6), regular);
-
-    color: map-get($colors, black);
+    @include palette-colors();
 }
 
 @mixin paragraph--secondary {
     @include paragraph;
     @include typography(($grid * 2.6), regular);
-
-    color: map-get($colors, grey-text);
+    @include palette-colors(map-get($colors, grey-text));
 }
 
 @mixin paragraph--secondary-condensed {
     @include paragraph-condensed;
     @include typography(($grid * 2.6), regular);
-
-    color: map-get($colors, grey-text);
+    @include palette-colors(map-get($colors, grey-text));
 }
 
 @mixin paragraph--legal {
     @include typography(($grid * 2.2), regular);
+    @include palette-colors(map-get($colors, grey-text));
 
-    color: map-get($colors, grey-text);
     line-height: ($grid * 4);
     margin: 0;
     padding: ($grid * .4) 0 ($grid * 2.6);
@@ -123,8 +119,17 @@
 @mixin text-label {
     @include typography(($grid * 2.4), regular);
 
-    color: map-get($colors, grey-text);
+    @include palette-colors(map-get($colors, grey-text));
     line-height: ($grid * 3);
     margin: 0;
     padding: ($grid * 1.6) 0 ($grid * .4);
+}
+
+@mixin amount-text {
+    @include typography(($grid * 9.6), light);
+    @include palette-colors();
+
+    line-height: ($grid * 10);
+    margin: 0;
+    padding: ($grid * 1.2) 0 ($grid * .8);
 }

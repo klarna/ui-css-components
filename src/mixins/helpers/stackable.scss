@@ -19,6 +19,36 @@ $stackable-border-width: $grid * .2;
         }
     }
 
+    &.eighty {
+        @include respond-to-wide {
+            width: calc(80% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(80% + #{$stackable-border-width});
+        }
+    }
+
+    &.three-quarters {
+        @include respond-to-wide {
+            width: calc(75% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(75% + #{$stackable-border-width});
+        }
+    }
+
+    &.two-thirds {
+        @include respond-to-wide {
+            width: calc(66.66666% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(66.66666% + #{$stackable-border-width});
+        }
+    }
+
     &.half {
         @include respond-to-wide {
             width: calc(50% + #{$stackable-border-width});
@@ -36,6 +66,16 @@ $stackable-border-width: $grid * .2;
 
         &.non-responsive {
             width: calc(40% + #{$stackable-border-width});
+        }
+    }
+
+    &.third {
+        @include respond-to-wide {
+            width: calc(33.33333% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(33.33333% + #{$stackable-border-width});
         }
     }
 
@@ -65,6 +105,36 @@ $stackable-border-width: $grid * .2;
         border-radius: 0;
     }
 
+    &.eighty {
+        @include respond-to-wide {
+            @include partial-width(80%);
+        }
+
+        &.non-responsive {
+            @include partial-width(80%);
+        }
+    }
+
+    &.three-quarters {
+        @include respond-to-wide {
+            @include partial-width(75%);
+        }
+
+        &.non-responsive {
+            @include partial-width(75%);
+        }
+    }
+
+    &.two-thirds {
+        @include respond-to-wide {
+            @include partial-width(66.66666%);
+        }
+
+        &.non-responsive {
+            @include partial-width(66.66666%);
+        }
+    }
+
     &.half {
         @include respond-to-wide {
             @include partial-width(50%);
@@ -74,17 +144,6 @@ $stackable-border-width: $grid * .2;
             @include partial-width(50%);
         }
     }
-
-    &.third {
-        @include respond-to-wide {
-            @include partial-width(33.333%);
-        }
-
-        &.non-responsive {
-            @include partial-width(33.333%);
-        }
-    }
-
     &.forty {
         @include respond-to-wide {
             @include partial-width(40%);
@@ -92,6 +151,16 @@ $stackable-border-width: $grid * .2;
 
         &.non-responsive {
             @include partial-width(40%);
+        }
+    }
+
+    &.third {
+        @include respond-to-wide {
+            @include partial-width(33.33333%);
+        }
+
+        &.non-responsive {
+            @include partial-width(33.33333%);
         }
     }
 
