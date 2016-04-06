@@ -17,6 +17,8 @@
         @include illustration__inner(map-get($colors, grey-lines));
 
         &.button {
+            cursor: pointer;
+
             &:hover {
                 @include illustration__inner(map-get($colors, blue-hover));
             }
@@ -31,6 +33,8 @@
         @include illustration__inner(map-get($colors, klarna-blue));
 
         &.button {
+            cursor: pointer;
+
             &:hover {
                 @include illustration__inner(darken(map-get($colors, klarna-blue), 5.2));
             }
