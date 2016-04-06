@@ -26,6 +26,7 @@ head
   <![endif]-->
   <!--[if gt IE 8]><!-->
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js")
+  script(src="docs/support/fx.js")
   script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
   <!--<![endif]-->
 
@@ -42,7 +43,7 @@ body
         != doc.parsedContent
 
   script.
-    
+
       // helpers for documentation
       $(document).keypress(function(e){
         if (e.which === 103) {
@@ -120,4 +121,30 @@ body
       if (Array.prototype.forEach) {
         hljs.initHighlightingOnLoad();
       }
+
+      function moveRight() {
+        $('.cui__tab-menu__selected').animate({
+          left: "66.6%"
+        }, {
+          duration: 'slow',
+          easing: 'ease-out',
+          complete: (() => setTimeout(moveLeft, 1000))
+        })
+      }
+
+      function moveLeft () {
+        $('.cui__tab-menu__selected').animate({
+          left: "0%"
+        }, {
+          duration: 'slow',
+          easing: 'ease-out',
+          complete: (() => setTimeout(moveRight, 1000))
+        })
+      }
+
+      $('.cui__tab-menu__selected').css({
+        width: "33.3%"
+      })
+      setTimeout(moveRight, 10)
+
 </html>

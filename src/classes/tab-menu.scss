@@ -2,56 +2,96 @@
 
 .cui__tab-menu {
     border-bottom: ($grid * .2) solid map-get($colors, grey-lines);
-    margin-bottom: ($grid * -.2);
+    box-sizing: border-box;
+    position: relative;
 
     &:after {
         clear: both;
         content: '';
         display: block;
     }
-}
 
-.cui__tab-menu__input {
-    display: none;
-}
+    &.white {
+        border-bottom: ($grid * .2) solid rgba(map-get($colors, white), .3);
+    }
 
-.cui__tab-menu__button {
-    @include typography(($grid * 2.8), regular);
-    @include stackable();
+    &__input {
+        display: none;
+    }
 
-    border-bottom: ($grid * .2) solid map-get($colors, grey-lines);
-    color: map-get($colors, grey-text);
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    height: ($grid * 6);
-    line-height: ($grid * 6);
-    margin-bottom: ($grid * -.2);
-    padding: $grid 0;
-    position: relative;
-    text-align: center;
-    transition: color .2s ease, border-color .4s ease;
-    z-index: 10;
+    &__button {
+        @include typography(($grid * 2.8), regular);
+        @include stackable();
 
-    .fluid & {
-        margin-left: ($grid * 4);
-        margin-right: ($grid * 4);
-        padding: ($grid * 2) 0;
+        color: map-get($colors, grey-text);
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        height: ($grid * 6);
+        line-height: ($grid * 6);
+        padding: $grid 0;
+        position: relative;
+        text-align: center;
+        transition: color .2s ease, border-color .4s ease;
+        z-index: 10;
 
-        &:nth-child(2) {
-            margin-left: 0;
+        .white & {
+            color: rgba(map-get($colors, white), .8);
+        }
+
+        .fluid & {
+            margin: 0 ($grid * 4);
+            padding: ($grid * 2) 0;
+
+            &:nth-child(2) {
+                margin-left: 0;
+            }
+        }
+
+        &:hover {
+            color: map-get($colors, klarna-blue);
+
+            .white & {
+                color: map-get($colors, white);
+            }
         }
     }
 }
 
-.cui__tab-menu__button:hover {
-    color: map-get($colors, klarna-blue);
+%selected {
+    background: map-get($colors, klarna-blue);
+    bottom: ($grid * -.2);
+    display: block;
+    height: ($grid * .4);
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.cui__tab-menu__selected {
+    @extend %selected;
+
+    .white & {
+        background: map-get($colors, white);
+    }
 }
 
 .cui__tab-menu__input:checked + .cui__tab-menu__button {
-    border-bottom-width: ($grid * .4);
-    border-color: map-get($colors, klarna-blue);
     color: map-get($colors, klarna-blue);
-    height: ($grid * 5.8);
-    margin-bottom: ($grid * -.4);
+
+    .is-selectable &:after {
+        @extend %selected;
+
+        content: '';
+    }
+
+    .white & {
+      color: map-get($colors, white);
+    }
+
+    .is-selectable.white &:after {
+        background: map-get($colors, white);
+    }
 }
+
+
