@@ -1455,6 +1455,16 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <li><a class="cui__link" href="#Field/regular/disabled">disabled</a></li>
 </ul>
 </li>
+<li><a class="cui__link" href="#Field/big">Big</a><ul class="summary">
+<li><a class="cui__link" href="#Field/big/focused">focused</a></li>
+<li><a class="cui__link" href="#Field/big/filled">filled</a></li>
+<li><a class="cui__link" href="#Field/big/error">error</a></li>
+<li><a class="cui__link" href="#Field/big/error focused">error focused</a></li>
+<li><a class="cui__link" href="#Field/big/warning">warning</a></li>
+<li><a class="cui__link" href="#Field/big/warning focused">warning focused</a></li>
+<li><a class="cui__link" href="#Field/big/disabled">disabled</a></li>
+</ul>
+</li>
 <li><a class="cui__link" href="#Field/stacked">Stacked</a><ul class="summary">
 <li><a class="cui__link" href="#Field/stacked/side by side">side by side</a></li>
 <li><a class="cui__link" href="#Field/stacked/top part">top part</a></li>
@@ -1470,6 +1480,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 </ul>
 </li>
 <li><a class="cui__link" href="#Field/icon">Icon</a><ul class="summary">
+<li><a class="cui__link" href="#Field/icon/big">big</a></li>
 <li><a class="cui__link" href="#Field/icon/focused">focused</a></li>
 <li><a class="cui__link" href="#Field/icon/filled">filled</a></li>
 <li><a class="cui__link" href="#Field/icon/error">error</a></li>
@@ -1480,9 +1491,15 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <li><a class="cui__link" href="#Field/centered/filled">filled</a></li>
 <li><a class="cui__link" href="#Field/centered/error">error</a></li>
 <li><a class="cui__link" href="#Field/centered/icon">icon</a></li>
+<li><a class="cui__link" href="#Field/centered/big">big</a></li>
+<li><a class="cui__link" href="#Field/centered/loading">loading</a></li>
 </ul>
 </li>
-<li><a class="cui__link" href="#Field/loading">Loading</a></li>
+<li><a class="cui__link" href="#Field/loading">Loading</a><ul class="summary">
+<li><a class="cui__link" href="#Field/loading/big">big</a></li>
+<li><a class="cui__link" href="#Field/loading/big centered">big centered</a></li>
+</ul>
+</li>
 </ul>
 <a name="Field/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
@@ -1635,6 +1652,158 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 &lt;/div&gt;
 
 &lt;div class=&quot;cui__field is-disabled right half&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__field__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big"></a><h2 class="cui__title--secondary">Big</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/focused"></a><h3 class="cui__subtitle">Focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/filling"></a><h3 class="cui__subtitle">Filling</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-filled is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/filled"></a><h3 class="cui__subtitle">Filled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-filled">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-filled&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/error"></a><h3 class="cui__subtitle">Error</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-error">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-error&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/error focused"></a><h3 class="cui__subtitle">Error focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-error is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/warning"></a><h3 class="cui__subtitle">Warning</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-warning&quot;&gt;
+    &lt;label class=&quot;cui__field__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/warning focused"></a><h3 class="cui__subtitle">Warning focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-warning is-focused">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-warning is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/big/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<p class="cui__paragraph--primary">Should be used when it&#39;s important to show the field to the user but she should not be able to edit it.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-disabled left half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__field big is-disabled right half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-disabled left half&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__field__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__field big is-disabled right half&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
         Enter your email address
     &lt;/label&gt;
@@ -2129,6 +2298,23 @@ space for the icon with a background colored placeholder.</p>
     &lt;/label&gt;
     &lt;input class=&quot;cui__field--icon__input&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
+    </div><a name="Field/icon/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field--icon big">
+    <span class="cui__field--icon__icon cui__icon--lock"></span>
+    <label class="cui__field--icon__label">
+        Enter your password
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon big&quot;&gt;
+    &lt;span class=&quot;cui__field--icon__icon cui__icon--lock&quot;&gt;&lt;/span&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        Enter your password
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Field/icon/focused"></a><h3 class="cui__subtitle">Focused</h3>
 
     <div class="example-block">
@@ -2276,7 +2462,37 @@ space for the icon with a background colored placeholder.</p>
     &lt;/label&gt;
     &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
-    </div><a name="Field/loading"></a><h3 class="cui__subtitle">Loading</h3>
+    </div><a name="Field/centered/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-centered is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/centered/loading"></a><h3 class="cui__subtitle">Loading</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field is-loading is-centered is-filled is-focused">
+    <label class="cui__field--icon__label">
+        ZIP Code
+    </label>
+    <input class="cui__field--icon__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-loading is-centered is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading"></a><h2 class="cui__title--secondary">Loading</h2>
 
     <div class="example-block">
       <div class="example"><div class="cui__field is-loading">
@@ -2286,6 +2502,36 @@ space for the icon with a background colored placeholder.</p>
     <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-loading&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-loading&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/loading/big centered"></a><h3 class="cui__subtitle">Big centered</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field big is-centered is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-centered is-loading&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
         ZIP Code
     &lt;/label&gt;

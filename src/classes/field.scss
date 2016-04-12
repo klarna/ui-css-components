@@ -245,6 +245,10 @@
     margin: ($grid * 3) 0 0 ($grid * 2.4);
     position: absolute;
     width: ($grid * 4);
+
+    .big & {
+        margin-top: ($grid * 4);
+    }
 }
 
 .cui__field--icon__placeholder {
