@@ -31,4 +31,4 @@ Then
 
 1. Open the PR and let people self assign to the PR and review.
 2. Once approved, bump the version accordingly on the `package.json`. You can use [npm version](https://docs.npmjs.com/cli/version).
-3. Merge and push to master and then also push a tag with your version: `git --tag vX.Y.Z` and `git push origin vX.Y.Z`.
+3. Merge and push to master and then also push a tag with your version: `git tag vX.Y.Z` and `git push origin vX.Y.Z`.
