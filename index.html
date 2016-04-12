@@ -3872,22 +3872,29 @@ paragraphs or secondary titles.</p>
   &lt;/p&gt;
 &lt;/div&gt;</div></code></pre>
     </div></div><div id="Tooltip" class="docs__section"><h1 class="cui__title--primary">Tooltip</h1>
-<p class="cui__paragraph--primary">The tooltip element is to be user to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
+<p class="cui__paragraph--primary">The tooltip element is to be used to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
 <p class="cui__paragraph--primary">The tooltip doesn&#39;t dictate positioning, only layout, so this must be implemented on your side. For some use cases, CSS will do, but you may need to use JavaScript for that.</p>
 <p class="cui__paragraph--primary">The implementation of tooltip&#39;s pointer relies on <span class="code">transform: translate</span> rather than using <span class="code">calc</span>, since calc known issues on IE9. Both are unsupported on IE8.</p>
+<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to <strong>250px</strong>. To use wider Tooltip you will need to ovride the max-width css</p>
 <hr>
 <ul class="summary">
 <li><a class="cui__link" href="#Tooltip">Tooltip</a><ul class="summary">
 <li><a class="cui__link" href="#Tooltip/simple">Simple</a></li>
 <li><a class="cui__link" href="#Tooltip/small">Small</a></li>
 <li><a class="cui__link" href="#Tooltip/arrows">Arrows</a></li>
-<li><a class="cui__link" href="#Tooltip/arrows/small">Small with arrows</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows/small">Small with arrows</a><ul class="summary">
+<li><a class="cui__link" href="#Tooltip-border">Tooltip with border</a></li>
+<li><a class="cui__link" href="#Tooltip/simple-border">Simple with border</a></li>
+<li><a class="cui__link" href="#Tooltip/small-border">Small with border</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows-border">Arrows with border</a></li>
+<li><a class="cui__link" href="#Tooltip/arrows/small-border">Small with arrows with border</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <a name="Tooltip"></a><h2 class="cui__title--secondary">Tooltip</h2>
 <a name="Tooltip/simple"></a><h3 class="cui__subtitle">Simple</h3>
-<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to 250px.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__tooltip">
@@ -3897,7 +3904,6 @@ paragraphs or secondary titles.</p>
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
 &lt;/div&gt;</div></code></pre>
     </div><a name="Tooltip/small"></a><h3 class="cui__subtitle">Small</h3>
-<p class="cui__paragraph--primary">If the content is smaller than 250 the tooltip will adapt to it, no need for extra classes.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__tooltip">
@@ -4020,6 +4026,139 @@ paragraphs or secondary titles.</p>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top&quot;&gt;
   Lorem Ipsum
 &lt;/div&gt;</div></code></pre>
+    </div><a name="Tooltip-border"></a><h2 class="cui__title--secondary">Tooltip with border</h2>
+<a name="Tooltip/simple-border"></a><h3 class="cui__subtitle">Simple</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__tooltip border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Tooltip/small-border"></a><h3 class="cui__subtitle">Small</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__tooltip border">
+  Lorem Ipsum
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip border&quot;&gt;
+  Lorem Ipsum
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Tooltip/arrows-border"></a><h3 class="cui__subtitle">Arrows</h3>
+<p class="cui__paragraph--primary">You can add arrows on 9 different positions.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__tooltip top-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div> 
+<hr />
+<div class="cui__tooltip top-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div> 
+
+<hr />
+<div class="cui__tooltip right-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip right-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />
+<div class="cui__tooltip bottom-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip bottom-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />    
+<div class="cui__tooltip left-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip left-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top-left border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip top border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt; 
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip top-right border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt; 
+
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip right-top border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip right border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;
+&lt;hr /&gt;    
+&lt;div class=&quot;cui__tooltip right-bottom border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip bottom-right border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip bottom border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;
+&lt;hr /&gt;    
+&lt;div class=&quot;cui__tooltip bottom-left border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+
+&lt;hr /&gt;    
+&lt;div class=&quot;cui__tooltip left-bottom border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;    
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip left border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;cui__tooltip left-top border&quot;&gt;
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Tooltip/arrows/small-border"></a><h3 class="cui__subtitle">Small with arrow</h3>
+<p class="cui__paragraph--primary">All the arrows above also work with small tooltips.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__tooltip top border">
+  Lorem Ipsum
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__tooltip top border&quot;&gt;
+  Lorem Ipsum
+&lt;/div&gt;</div></code></pre>
     </div></div></div><script>// helpers for documentation
 $(document).keypress(function(e){
   if (e.which === 103) {
@@ -4099,27 +4238,22 @@ if (Array.prototype.forEach) {
 }
 
 function moveRight() {
-  $('.cui__tab-menu__selected').animate({
+  $('.cui__tab-menu__selected').css({
     left: "66.6%"
-  }, {
-    duration: 'slow',
-    easing: 'ease-out',
-    complete: (() => setTimeout(moveLeft, 1000))
   })
+  setTimeout(moveLeft, 2000)
 }
 
 function moveLeft () {
-  $('.cui__tab-menu__selected').animate({
-    left: "0%"
-  }, {
-    duration: 'slow',
-    easing: 'ease-out',
-    complete: (() => setTimeout(moveRight, 1000))
+  $('.cui__tab-menu__selected').css({
+     left: "0%"
   })
+  setTimeout(moveRight, 2000)
 }
 
 $('.cui__tab-menu__selected').css({
-  width: "33.3%"
+  width: "33.3%",
+  transition: "left 1s ease-out"
 })
 setTimeout(moveRight, 10)
 </script></body></html>
