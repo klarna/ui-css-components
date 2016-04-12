@@ -97,7 +97,7 @@
     padding: ($grid * .4) 0 ($grid * 2.6);
 }
 
-@mixin label {
+@mixin promo-label {
     @include typography(($grid * 2), semi-bold);
 
     background: map-get($colors, klarna-blue);

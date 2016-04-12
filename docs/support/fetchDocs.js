@@ -16,6 +16,7 @@ const docFiles = [
   'Button',
   'Dropdown',
   'Field',
+  'Label',
   'Loader',
   'Navigation',
   'Preview',
