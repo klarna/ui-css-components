@@ -98,11 +98,18 @@
 }
 
 @mixin button__price ($border-color) {
-    display: inline-block;
     float: right;
     margin-left: $grid * 4;
     padding-left: $grid * 4;
-    border-left: 1px solid rgba($border-color, .1);
+    
+    &:before {
+        content: ' ';
+        border-left: 1px solid rgba($border-color, .1);
+        height: 20px;
+        position: relative;
+        right: 20px;
+        top: 1px;
+    }
 }
 
 

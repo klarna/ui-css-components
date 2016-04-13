@@ -533,11 +533,16 @@
     .cui__button--primary.is-loading:focus {
       background: #0074c8; }
   .cui__button--primary .cui__button__price {
-    display: inline-block;
     float: right;
     margin-left: 20px;
-    padding-left: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1); }
+    padding-left: 20px; }
+    .cui__button--primary .cui__button__price:before {
+      content: ' ';
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      height: 20px;
+      position: relative;
+      right: 20px;
+      top: 1px; }
   .cui__button--primary.is-loading:after {
     background-image: url("img/button--primary__loader.png");
     -webkit-animation: spin .8s linear infinite;
@@ -633,11 +638,16 @@
     .cui__button--secondary.is-loading:focus {
       background: white; }
   .cui__button--secondary .cui__button__price {
-    display: inline-block;
     float: right;
     margin-left: 20px;
-    padding-left: 20px;
-    border-left: 1px solid rgba(0, 116, 200, 0.1); }
+    padding-left: 20px; }
+    .cui__button--secondary .cui__button__price:before {
+      content: ' ';
+      border-left: 1px solid rgba(0, 116, 200, 0.1);
+      height: 20px;
+      position: relative;
+      right: 20px;
+      top: 1px; }
   .cui__button--secondary.is-loading:after {
     background-image: url("img/button--secondary__loader.png");
     -webkit-animation: spin .8s linear infinite;
