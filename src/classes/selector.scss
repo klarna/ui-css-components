@@ -1,0 +1,21 @@
+@import '../mixins/index';
+
+.cui__selector--direct__item {
+    @include selector__item;
+}
+
+.cui__selector--direct__label {
+    @include selector__label;
+}
+
+.cui__selector--direct__value {
+    @include selector__value;
+}
+
+.cui__selector--direct__caret {
+    @include selector__caret;
+}
+
+.cui__selector--direct__description {
+    @include selector__description;
+}

@@ -21,6 +21,7 @@ const docFiles = [
   'Loader',
   'Navigation',
   'Preview',
+  'Selector',
   'Switch',
   'Text',
   'Tooltip'
