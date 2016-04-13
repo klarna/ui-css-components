@@ -18,6 +18,10 @@ npm install
 make dev
 ```
 
+#### License
+
+Please check the [LICENSE](LICENSE) file.
+
 #### Contributing
 
 Make sure...
