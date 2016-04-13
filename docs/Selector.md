@@ -7,6 +7,7 @@ ___
 - [Direct](#Selector/direct)
   - [simple](#Selector/direct/simple)
   - [description](#Selector/direct/description)
+  - [title](#Selector/direct/title)
 
 <a name="Selector/direct"></a>
 ## Direct
@@ -23,9 +24,7 @@ ___
 
     <svg
       class="cui__selector--direct__caret"
-      width="20px"
-      height="20px" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
+      viewBox="0 0 20 20">
       <path d="M14,8 L10,12 L6,8"></path>
     </svg>
   </div>
@@ -37,9 +36,7 @@ ___
 
     <svg
       class="cui__selector--direct__caret"
-      width="20px"
-      height="20px" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
+      viewBox="0 0 20 20">
       <path d="M14,8 L10,12 L6,8"></path>
     </svg>
   </div>
@@ -55,9 +52,7 @@ ___
 
     <svg
       class="cui__selector--direct__caret"
-      width="20px"
-      height="20px" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
+      viewBox="0 0 20 20">
       <path d="M14,8 L10,12 L6,8"></path>
     </svg>
   </div>
@@ -84,9 +79,7 @@ ___
 
     <svg
       class="cui__selector--direct__caret"
-      width="20px"
-      height="20px" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
+      viewBox="0 0 20 20">
       <path d="M14,8 L10,12 L6,8"></path>
     </svg>
   </div>
@@ -102,9 +95,59 @@ ___
 
     <svg
       class="cui__selector--direct__caret"
-      width="20px"
-      height="20px" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
+      viewBox="0 0 20 20">
+      <path d="M14,8 L10,12 L6,8"></path>
+    </svg>
+  </div>
+</div>
+```
+
+
+<a name="Selector/direct/title"></a>
+### Title
+
+```html
+<div class="cui__selector--direct title">
+  <h2 class="cui__selector--direct__title">
+    Description
+  </h2>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 1
+    </div>
+
+    <svg
+      class="cui__selector--direct__caret"
+      viewBox="0 0 20 20">
+      <path d="M14,8 L10,12 L6,8"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 2
+    </div>
+
+    <svg
+      class="cui__selector--direct__caret"
+      viewBox="0 0 20 20">
+      <path d="M14,8 L10,12 L6,8"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 3
+    </div>
+
+    <div class="cui__selector--direct__value">
+      Current value
+    </div>
+
+    <svg
+      class="cui__selector--direct__caret"
+      viewBox="0 0 20 20">
       <path d="M14,8 L10,12 L6,8"></path>
     </svg>
   </div>

@@ -19,3 +19,12 @@
 .cui__selector--direct__description {
     @include selector__description;
 }
+
+.cui__selector--direct__description + .cui__selector--direct__description {
+    margin: ($grid * 1) 0 ($grid * .4) 0;
+}
+
+.cui__selector--direct__title {
+    @include subtitle;
+    margin-bottom: ($grid * 1.2);
+}
