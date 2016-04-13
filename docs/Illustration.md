@@ -6,8 +6,8 @@ ___
 
 - [Big](#Illustration/big)
 - [Button](#Illustration/button)
-  - [gray](#Illustration/button/default)
-  - [blue](#Illustration/button/gray)
+  - [default](#Illustration/button/default)
+  - [gray](#Illustration/button/gray)
   - [inverse](#Illustration/button/inverse)
 
 <a name="Illustration/big"></a>
