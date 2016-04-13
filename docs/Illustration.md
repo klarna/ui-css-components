@@ -1,6 +1,6 @@
 # Illustration
 
-Illustration refers to any embeded SVG illustration. They can be found in the `ui-illustrations` repo, but the styling of them is done directly in CSS.
+Illustration refers to any embedded SVG illustration. They can be found in the `ui-illustrations` repo, but the styling of them is done directly in CSS.
 
 ___
 
@@ -16,10 +16,7 @@ ___
 ```html
 <svg
 	class="cui__illustration big"
-	width="100px"
-	height="100px"
-	viewBox="0 0 100 100"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 100 100">
   <g
 		class="cui__illustration__fill"
 		transform="translate(24.000000, 20.000000)">
@@ -30,10 +27,7 @@ ___
 
 <svg
 	class="cui__illustration big gray"
-	width="100px"
-	height="100px"
-	viewBox="0 0 100 100"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 100 100">
   <g
 		class="cui__illustration__fill"
 		transform="translate(24.000000, 20.000000)">
@@ -44,10 +38,7 @@ ___
 
 <svg
 	class="cui__illustration big error"
-	width="100px"
-	height="100px"
-	viewBox="0 0 100 100"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 100 100">
   <g
 		class="cui__illustration__fill"
 		transform="translate(24.000000, 20.000000)">
@@ -58,10 +49,7 @@ ___
 
 <svg
 	class="cui__illustration big success"
-	width="100px"
-	height="100px"
-	viewBox="0 0 100 100"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 100 100">
   <g
 		class="cui__illustration__fill"
 		transform="translate(24.000000, 20.000000)">
@@ -96,10 +84,7 @@ ___
 ```html
 <svg
 	class="cui__illustration button"
-	width="25px"
-	height="25px"
-	viewBox="0 0 25 25"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 25 25">
   <g
 		class="cui__illustration__fill"
 		transform="translate(5.000000, 7.000000)">
@@ -116,10 +101,7 @@ ___
 ```html
 <svg
 	class="cui__illustration button gray"
-	width="25px"
-	height="25px"
-	viewBox="0 0 25 25"
-	xmlns="http://www.w3.org/2000/svg">
+	viewBox="0 0 25 25">
   <g
 		class="cui__illustration__fill"
 		transform="translate(5.000000, 7.000000)">
@@ -138,10 +120,7 @@ ___
 	<p class="cui__paragraph--primary" style="padding: 20px;">
 		<svg
 			class="cui__illustration button inverse"
-			width="25px"
-			height="25px"
-			viewBox="0 0 25 25"
-			xmlns="http://www.w3.org/2000/svg">
+			viewBox="0 0 25 25">
 		  <g
 				class="cui__illustration__fill"
 				transform="translate(5.000000, 7.000000)">

@@ -2471,51 +2471,54 @@
 
 .cui__illustration {
   -webkit-tap-highlight-color: transparent; }
-  .cui__illustration.big .cui__illustration__fill {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    fill: #0074c8; }
-  .cui__illustration.big .cui__illustration__stroke {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    stroke: #0074c8;
-    fill: none; }
-  .cui__illustration.big.gray .cui__illustration__fill {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    fill: #cbcbcd; }
-  .cui__illustration.big.gray .cui__illustration__stroke {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    stroke: #cbcbcd;
-    fill: none; }
-  .cui__illustration.big.error .cui__illustration__fill {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    fill: #e63200; }
-  .cui__illustration.big.error .cui__illustration__stroke {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    stroke: #e63200;
-    fill: none; }
-  .cui__illustration.big.success .cui__illustration__fill {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    fill: #23BA73; }
-  .cui__illustration.big.success .cui__illustration__stroke {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    stroke: #23BA73;
-    fill: none; }
-  .cui__illustration.big.inverse .cui__illustration__fill {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    fill: #fff; }
-  .cui__illustration.big.inverse .cui__illustration__stroke {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    stroke: #fff;
-    fill: none; }
+  .cui__illustration.big {
+    height: 100px;
+    width: 100px; }
+    .cui__illustration.big .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #0074c8; }
+    .cui__illustration.big .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #0074c8;
+      fill: none; }
+    .cui__illustration.big.gray .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #cbcbcd; }
+    .cui__illustration.big.gray .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #cbcbcd;
+      fill: none; }
+    .cui__illustration.big.error .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #e63200; }
+    .cui__illustration.big.error .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #e63200;
+      fill: none; }
+    .cui__illustration.big.success .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #23BA73; }
+    .cui__illustration.big.success .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #23BA73;
+      fill: none; }
+    .cui__illustration.big.inverse .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #fff; }
+    .cui__illustration.big.inverse .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #fff;
+      fill: none; }
   .cui__illustration.button {
     background: transparent;
     border: 10px solid transparent;

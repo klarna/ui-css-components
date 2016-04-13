@@ -5,6 +5,8 @@
 
     &.big {
         @include illustration(map-get($colors, klarna-blue));
+        height: ($grid * 20);
+        width: ($grid * 20);
 
         &.gray {
             @include illustration(map-get($colors, grey-lines));
