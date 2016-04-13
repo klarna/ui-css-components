@@ -4,12 +4,22 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
     &.big {
-        .cui__illustration__stroke {
-            @include illustration__stroke(map-get($colors, klarna-blue));
+        @include illustration(map-get($colors, klarna-blue));
+
+        &.gray {
+            @include illustration(map-get($colors, grey-lines));
         }
 
-        .cui__illustration__fill {
-            @include illustration__fill(map-get($colors, klarna-blue));
+        &.error {
+            @include illustration(map-get($colors, error));
+        }
+
+        &.success {
+            @include illustration(map-get($colors, green));
+        }
+
+        &.inverse {
+            @include illustration(map-get($colors, white));
         }
     }
 
@@ -25,22 +35,10 @@
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
 
-        .cui__illustration__stroke {
-            @include illustration__stroke(map-get($colors, klarna-blue));
-        }
-
-        .cui__illustration__fill {
-            @include illustration__fill(map-get($colors, klarna-blue));
-        }
+        @include illustration(map-get($colors, klarna-blue));
 
         &:hover {
-            .cui__illustration__stroke {
-                @include illustration__stroke(map-get($colors, klarna-blue-hover));
-            }
-
-            .cui__illustration__fill {
-                @include illustration__fill(map-get($colors, klarna-blue-hover));
-            }
+            @include illustration(map-get($colors, klarna-blue-hover));
         }
 
         &:active {
@@ -49,22 +47,10 @@
         }
 
         &.gray {
-            .cui__illustration__stroke {
-                @include illustration__stroke(map-get($colors, grey-lines));
-            }
-
-            .cui__illustration__fill {
-                @include illustration__fill(map-get($colors, grey-lines));
-            }
+            @include illustration(map-get($colors, grey-lines));
 
             &:hover {
-                .cui__illustration__stroke {
-                    @include illustration__stroke(map-get($colors, black));
-                }
-
-                .cui__illustration__fill {
-                    @include illustration__fill(map-get($colors, black));
-                }
+                @include illustration(map-get($colors, black));
             }
 
             &:active {
@@ -74,22 +60,10 @@
         }
 
         &.inverse {
-            .cui__illustration__stroke {
-                @include illustration__stroke(map-get($colors, white));
-            }
-
-            .cui__illustration__fill {
-                @include illustration__fill(map-get($colors, white));
-            }
+            @include illustration(map-get($colors, white));
 
             &:hover {
-                .cui__illustration__stroke {
-                    @include illustration__stroke(map-get($colors, white));
-                }
-
-                .cui__illustration__fill {
-                    @include illustration__fill(map-get($colors, white));
-                }
+                @include illustration(map-get($colors, white));
             }
 
             &:active {

@@ -10,3 +10,13 @@
     transition: all .2s ease;
     fill: $color;
 }
+
+@mixin illustration($color) {
+    .cui__illustration__fill {
+        @include illustration__fill($color);
+    }
+
+    .cui__illustration__stroke {
+        @include illustration__stroke($color);
+    }
+}

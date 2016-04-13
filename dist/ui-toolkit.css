@@ -2189,15 +2189,51 @@
 
 .cui__illustration {
   -webkit-tap-highlight-color: transparent; }
+  .cui__illustration.big .cui__illustration__fill {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    fill: #0074c8; }
   .cui__illustration.big .cui__illustration__stroke {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     stroke: #0074c8;
     fill: none; }
-  .cui__illustration.big .cui__illustration__fill {
+  .cui__illustration.big.gray .cui__illustration__fill {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    fill: #0074c8; }
+    fill: #cbcbcd; }
+  .cui__illustration.big.gray .cui__illustration__stroke {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    stroke: #cbcbcd;
+    fill: none; }
+  .cui__illustration.big.error .cui__illustration__fill {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    fill: #e63200; }
+  .cui__illustration.big.error .cui__illustration__stroke {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    stroke: #e63200;
+    fill: none; }
+  .cui__illustration.big.success .cui__illustration__fill {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    fill: #23BA73; }
+  .cui__illustration.big.success .cui__illustration__stroke {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    stroke: #23BA73;
+    fill: none; }
+  .cui__illustration.big.inverse .cui__illustration__fill {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    fill: #fff; }
+  .cui__illustration.big.inverse .cui__illustration__stroke {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    stroke: #fff;
+    fill: none; }
   .cui__illustration.button {
     background: transparent;
     border: 10px solid transparent;
@@ -2208,58 +2244,53 @@
     width: 25px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease; }
+    .cui__illustration.button .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #0074c8; }
     .cui__illustration.button .cui__illustration__stroke {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       stroke: #0074c8;
       fill: none; }
-    .cui__illustration.button .cui__illustration__fill {
+    .cui__illustration.button:hover .cui__illustration__fill {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
-      fill: #0074c8; }
+      fill: #0065ad; }
     .cui__illustration.button:hover .cui__illustration__stroke {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       stroke: #0065ad;
       fill: none; }
-    .cui__illustration.button:hover .cui__illustration__fill {
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
-      fill: #0065ad; }
     .cui__illustration.button:active {
       background: #f2f8fd;
       border-color: #f2f8fd; }
+    .cui__illustration.button.gray .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #cbcbcd; }
     .cui__illustration.button.gray .cui__illustration__stroke {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       stroke: #cbcbcd;
       fill: none; }
-    .cui__illustration.button.gray .cui__illustration__fill {
+    .cui__illustration.button.gray:hover .cui__illustration__fill {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
-      fill: #cbcbcd; }
+      fill: #3c3c3e; }
     .cui__illustration.button.gray:hover .cui__illustration__stroke {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       stroke: #3c3c3e;
       fill: none; }
-    .cui__illustration.button.gray:hover .cui__illustration__fill {
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
-      fill: #3c3c3e; }
     .cui__illustration.button.gray:active {
       background: #f6f6f6;
       border-color: #f6f6f6; }
-    .cui__illustration.button.inverse .cui__illustration__stroke {
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
-      stroke: #fff;
-      fill: none; }
     .cui__illustration.button.inverse .cui__illustration__fill {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       fill: #fff; }
-    .cui__illustration.button.inverse:hover .cui__illustration__stroke {
+    .cui__illustration.button.inverse .cui__illustration__stroke {
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       stroke: #fff;
@@ -2268,6 +2299,11 @@
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       fill: #fff; }
+    .cui__illustration.button.inverse:hover .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #fff;
+      fill: none; }
     .cui__illustration.button.inverse:active {
       background: #0065ad;
       border-color: #0065ad; }
