@@ -5,12 +5,6 @@ Illustration refers to any embeded SVG illustration. They can be found in the `u
 ___
 
 - [Big](#Illustration/big)
-	- [default](#Illustration/big/default)
-	- [gray](#Illustration/big/gray)
-	- [error](#Illustration/big/error)
-	- [warning](#Illustration/big/warning)
-	- [blue](#Illustration/big/blue)
-	- [inverse](#Illustration/big/inverse)
 - [Button](#Illustration/button)
   - [gray](#Illustration/button/default)
   - [blue](#Illustration/button/gray)
@@ -18,9 +12,6 @@ ___
 
 <a name="Illustration/big"></a>
 ## Big
-
-<a name="Illustration/big"></a>
-### Default
 
 ```html
 <svg
