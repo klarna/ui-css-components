@@ -4,175 +4,156 @@ Illustration refers to any embeded SVG illustration. They can be found in the `u
 
 ___
 
-- [Regular](#Illustration/regular)
-	- [black](#Illustration/regular/black)
-	- [gray](#Illustration/regular/gray)
-	- [error](#Illustration/regular/error)
-	- [warning](#Illustration/regular/warning)
-	- [blue](#Illustration/regular/blue)
-	- [inverse](#Illustration/regular/inverse)
+- [Big](#Illustration/big)
+	- [default](#Illustration/big/default)
+	- [gray](#Illustration/big/gray)
+	- [error](#Illustration/big/error)
+	- [warning](#Illustration/big/warning)
+	- [blue](#Illustration/big/blue)
+	- [inverse](#Illustration/big/inverse)
 - [Button](#Illustration/button)
-  - [gray](#Illustration/button/gray)
-  - [blue](#Illustration/button/blue)
+  - [gray](#Illustration/button/default)
+  - [blue](#Illustration/button/gray)
   - [inverse](#Illustration/button/inverse)
 
-<a name="Illustration/regular"></a>
-## Regular
+<a name="Illustration/big"></a>
+## Big
 
-<a name="Illustration/regular/black"></a>
-### Black
+<a name="Illustration/big/default"></a>
+### Default
 
 ```html
 <svg
-  class="cui__illustration"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration big"
+	width="100px"
+	height="100px"
+	viewBox="0 0 100 100"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
 </svg>
 ```
 
-<a name="Illustration/regular/gray"></a>
+<a name="Illustration/big/gray"></a>
 ### Gray
 
 ```html
 <svg
-  class="cui__illustration gray"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration big gray"
+	width="100px"
+	height="100px"
+	viewBox="0 0 100 100"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
 </svg>
 ```
 
-<a name="Illustration/regular/error"></a>
+<a name="Illustration/big/error"></a>
 ### Error
 
 ```html
 <svg
-  class="cui__illustration error"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration big error"
+	width="100px"
+	height="100px"
+	viewBox="0 0 100 100"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
 </svg>
 ```
 
-<a name="Illustration/regular/warning"></a>
-### Warning
+<a name="Illustration/big/success"></a>
+### Success
 
 ```html
 <svg
-  class="cui__illustration warning"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration big success"
+	width="100px"
+	height="100px"
+	viewBox="0 0 100 100"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
 </svg>
 ```
 
-<a name="Illustration/regular/blue"></a>
-### Blue
-
-```html
-<svg
-  class="cui__illustration blue"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
-</svg>
-```
-
-<a name="Illustration/regular/inverse"></a>
+<a name="Illustration/big/inverse"></a>
 ### Inverse
 
 ```html
-<div class="cui__block blue">
-  <svg
-    class="cui__illustration inverse"
-    width="100px"
-    height="100px"
-    viewBox="0 0 100 100"
-    xmlns="http://www.w3.org/2000/svg">
-    <polygon
-      class="cui__illustration__stroke"
-      points="50.5 9 98 90.7 3 90.7 "></polygon>
-    <polygon
-      class="cui__illustration__fill"
-      points="51 36 76 79 26 79 "></polygon>
-  </svg>
-</div>
+<svg
+	class="cui__illustration big inverse"
+	width="100px"
+	height="100px"
+	viewBox="0 0 100 100"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
 ```
 
 <a name="Illustration/button"></a>
 ## Button
 
-<a name="Illustration/button/gray"></a>
-### Gray
+<a name="Illustration/button/default"></a>
+### Default (blue)
 
 ```html
 <svg
-  class="cui__illustration button gray"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration button"
+	width="25px"
+	height="25px"
+	viewBox="0 0 25 25"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(5.000000, 7.000000)">
+      <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+      <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+      <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+  </g>
 </svg>
 ```
 
-<a name="Illustration/button/blue"></a>
+<a name="Illustration/button/gray"></a>
 ### Blue
 
 ```html
 <svg
-  class="cui__illustration button blue"
-  width="100px"
-  height="100px"
-  viewBox="0 0 100 100"
-  xmlns="http://www.w3.org/2000/svg">
-  <polygon
-    class="cui__illustration__stroke"
-    points="50.5 9 98 90.7 3 90.7 "></polygon>
-  <polygon
-    class="cui__illustration__fill"
-    points="51 36 76 79 26 79 "></polygon>
+	class="cui__illustration button gray"
+	width="25px"
+	height="25px"
+	viewBox="0 0 25 25"
+	xmlns="http://www.w3.org/2000/svg">
+  <g
+		class="cui__illustration__fill"
+		transform="translate(5.000000, 7.000000)">
+      <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+      <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+      <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+  </g>
 </svg>
 ```
 
@@ -181,18 +162,21 @@ ___
 
 ```html
 <div class="cui__block blue">
-	<svg
-	  class="cui__illustration button inverse"
-	  width="100px"
-	  height="100px"
-	  viewBox="0 0 100 100"
-	  xmlns="http://www.w3.org/2000/svg">
-	  <polygon
-	    class="cui__illustration__stroke"
-	    points="50.5 9 98 90.7 3 90.7 "></polygon>
-	  <polygon
-	    class="cui__illustration__fill"
-	    points="51 36 76 79 26 79 "></polygon>
-	</svg>
+	<p class="cui__paragraph--primary" style="padding: 20px;">
+		<svg
+			class="cui__illustration button inverse"
+			width="25px"
+			height="25px"
+			viewBox="0 0 25 25"
+			xmlns="http://www.w3.org/2000/svg">
+		  <g
+				class="cui__illustration__fill"
+				transform="translate(5.000000, 7.000000)">
+		      <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+		      <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+		      <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+		  </g>
+		</svg>
+	</p>
 </div>
 ```

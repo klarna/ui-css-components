@@ -93,7 +93,7 @@
   line-height: 25px;
   text-rendering: optimizeLegibility; }
   .cui__baseline body {
-    font-size: 14px;
+    font-size: 13px;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     text-rendering: geometricPrecision;
@@ -105,7 +105,7 @@
   background: transparent url("img/baseline__grid.png") repeat scroll 0% 0%; }
 
 .cui__baseline__content--main {
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: geometricPrecision;
@@ -2187,79 +2187,90 @@
           transform: translate(0, -15px);
   -ms-transform: translate(0, -15px); }
 
-.cui__illustration__fill {
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  fill: #3c3c3e; }
-
-.cui__illustration__stroke {
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  stroke: #3c3c3e;
-  fill: none; }
-
-.cui__illustration.gray .cui__illustration__fill {
-  fill: #cbcbcd; }
-
-.cui__illustration.gray .cui__illustration__stroke {
-  fill: none;
-  stroke: #cbcbcd; }
-
-.cui__illustration.gray.button:hover .cui__illustration__fill {
-  fill: #66aae0; }
-
-.cui__illustration.gray.button:hover .cui__illustration__stroke {
-  fill: none;
-  stroke: #66aae0; }
-
-.cui__illustration.gray.button:active .cui__illustration__fill {
-  fill: rgba(26, 140, 220, 0.8); }
-
-.cui__illustration.gray.button:active .cui__illustration__stroke {
-  fill: none;
-  stroke: rgba(26, 140, 220, 0.8); }
-
-.cui__illustration.blue .cui__illustration__fill {
-  fill: #0074c8; }
-
-.cui__illustration.blue .cui__illustration__stroke {
-  fill: none;
-  stroke: #0074c8; }
-
-.cui__illustration.blue.button:hover .cui__illustration__fill {
-  fill: #0065ad; }
-
-.cui__illustration.blue.button:hover .cui__illustration__stroke {
-  fill: none;
-  stroke: #0065ad; }
-
-.cui__illustration.blue.button:active .cui__illustration__fill {
-  fill: #005694; }
-
-.cui__illustration.blue.button:active .cui__illustration__stroke {
-  fill: none;
-  stroke: #005694; }
-
-.cui__illustration.error .cui__illustration__fill {
-  fill: #e63200; }
-
-.cui__illustration.error .cui__illustration__stroke {
-  fill: none;
-  stroke: #e63200; }
-
-.cui__illustration.warning .cui__illustration__fill {
-  fill: #ecb800; }
-
-.cui__illustration.warning .cui__illustration__stroke {
-  fill: none;
-  stroke: #ecb800; }
-
-.cui__illustration.inverse .cui__illustration__fill {
-  fill: #fff; }
-
-.cui__illustration.inverse .cui__illustration__stroke {
-  fill: none;
-  stroke: #fff; }
+.cui__illustration {
+  -webkit-tap-highlight-color: transparent; }
+  .cui__illustration.big .cui__illustration__stroke {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    stroke: #0074c8;
+    fill: none; }
+  .cui__illustration.big .cui__illustration__fill {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    fill: #0074c8; }
+  .cui__illustration.button {
+    background: transparent;
+    border: 10px solid transparent;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 25px;
+    margin: -10px;
+    width: 25px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    .cui__illustration.button .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #0074c8;
+      fill: none; }
+    .cui__illustration.button .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #0074c8; }
+    .cui__illustration.button:hover .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #0065ad;
+      fill: none; }
+    .cui__illustration.button:hover .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #0065ad; }
+    .cui__illustration.button:active {
+      background: #f2f8fd;
+      border-color: #f2f8fd; }
+    .cui__illustration.button.gray .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #cbcbcd;
+      fill: none; }
+    .cui__illustration.button.gray .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #cbcbcd; }
+    .cui__illustration.button.gray:hover .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #3c3c3e;
+      fill: none; }
+    .cui__illustration.button.gray:hover .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #3c3c3e; }
+    .cui__illustration.button.gray:active {
+      background: #f6f6f6;
+      border-color: #f6f6f6; }
+    .cui__illustration.button.inverse .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #fff;
+      fill: none; }
+    .cui__illustration.button.inverse .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #fff; }
+    .cui__illustration.button.inverse:hover .cui__illustration__stroke {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      stroke: #fff;
+      fill: none; }
+    .cui__illustration.button.inverse:hover .cui__illustration__fill {
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      fill: #fff; }
+    .cui__illustration.button.inverse:active {
+      background: #0065ad;
+      border-color: #0065ad; }
 
 @keyframes spin {
   to {

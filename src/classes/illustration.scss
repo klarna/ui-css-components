@@ -1,59 +1,101 @@
 @import '../mixins/index';
 
 .cui__illustration {
-    &__fill {
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        @include illustration__fill(map-get($colors, black));
-    }
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-    &__stroke {
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        @include illustration__stroke(map-get($colors, black));
-    }
+    &.big {
+        .cui__illustration__stroke {
+            @include illustration__stroke(map-get($colors, klarna-blue));
+        }
 
-    &.gray {
-        @include illustration__inner(map-get($colors, grey-lines));
-
-        &.button {
-            cursor: pointer;
-
-            &:hover {
-                @include illustration__inner(map-get($colors, blue-hover));
-            }
-
-            &:active {
-                @include illustration__inner(map-get($colors, blue-focus));
-            }
+        .cui__illustration__fill {
+            @include illustration__fill(map-get($colors, klarna-blue));
         }
     }
 
-    &.blue {
-        @include illustration__inner(map-get($colors, klarna-blue));
+    &.button {
+        background: transparent;
+        border: 10px solid transparent;
+        border-radius: 100%;
+        cursor: pointer;
+        height: 25px;
+        margin: -10px;
+        width: 25px;
 
-        &.button {
-            cursor: pointer;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+
+        .cui__illustration__stroke {
+            @include illustration__stroke(map-get($colors, klarna-blue));
+        }
+
+        .cui__illustration__fill {
+            @include illustration__fill(map-get($colors, klarna-blue));
+        }
+
+        &:hover {
+            .cui__illustration__stroke {
+                @include illustration__stroke(map-get($colors, klarna-blue-hover));
+            }
+
+            .cui__illustration__fill {
+                @include illustration__fill(map-get($colors, klarna-blue-hover));
+            }
+        }
+
+        &:active {
+            background: #f2f8fd;
+            border-color: #f2f8fd;
+        }
+
+        &.gray {
+            .cui__illustration__stroke {
+                @include illustration__stroke(map-get($colors, grey-lines));
+            }
+
+            .cui__illustration__fill {
+                @include illustration__fill(map-get($colors, grey-lines));
+            }
 
             &:hover {
-                @include illustration__inner(darken(map-get($colors, klarna-blue), 5.2));
+                .cui__illustration__stroke {
+                    @include illustration__stroke(map-get($colors, black));
+                }
+
+                .cui__illustration__fill {
+                    @include illustration__fill(map-get($colors, black));
+                }
             }
 
             &:active {
-                @include illustration__inner(darken(map-get($colors, klarna-blue), 10.1));
+                background: #f6f6f6;
+                border-color: #f6f6f6;
             }
         }
-    }
 
-    &.error {
-        @include illustration__inner(map-get($colors, error));
-    }
+        &.inverse {
+            .cui__illustration__stroke {
+                @include illustration__stroke(map-get($colors, white));
+            }
 
-    &.warning {
-        @include illustration__inner(map-get($colors, warning));
-    }
+            .cui__illustration__fill {
+                @include illustration__fill(map-get($colors, white));
+            }
 
-    &.inverse {
-        @include illustration__inner(map-get($colors, white));
+            &:hover {
+                .cui__illustration__stroke {
+                    @include illustration__stroke(map-get($colors, white));
+                }
+
+                .cui__illustration__fill {
+                    @include illustration__fill(map-get($colors, white));
+                }
+            }
+
+            &:active {
+                background: map-get($colors, klarna-blue-hover);
+                border-color: map-get($colors, klarna-blue-hover);
+            }
+        }
     }
 }
