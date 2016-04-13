@@ -15,7 +15,6 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var data = require('gulp-data');
 var fetchDocs = require('./docs/support/fetchDocs');
-var scsslint = require('gulp-scss-lint');
 
 // ====================================================================
 // DEVELOPMENT
@@ -109,13 +108,6 @@ gulp.task('publish', function () {
         .pipe(publisher.publish(headers, {createOnly: true}))
         .pipe(publisher.cache())
         .pipe(AWS.reporter());
-});
-
-gulp.task('lint', function() {
-  return gulp.src('src/**/*.scss')
-    .pipe(scsslint({
-      config: '.lint.yml',
-    }));
 });
 
 gulp.task('build', ['build:sass', 'build:jade', 'images']);
