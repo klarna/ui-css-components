@@ -821,15 +821,30 @@
   display: table;
   height: 100%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   width: 100%; }
+  @media screen and (min-width: 319px) {
+    .cui__dialog {
+      box-sizing: border-box;
+      display: table;
+      height: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      position: relative;
+      width: 100%; } }
 
 .cui__dialog__icon {
   position: absolute;
   display: block;
-  right: 25px;
-  top: 25px; }
+  right: 15px;
+  top: 15px; }
+  @media screen and (min-width: 319px) {
+    .cui__dialog__icon {
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 25px; } }
 
 .cui__dialog__content {
   display: table-row; }
@@ -837,11 +852,23 @@
     display: table-cell;
     height: 100%;
     vertical-align: middle; }
+  @media screen and (min-width: 319px) {
+    .cui__dialog__content {
+      display: table-row; }
+      .cui__dialog__content--inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle; } }
 
 .cui__dialog__footer {
   display: table-row; }
   .cui__dialog__footer--inner {
     display: table-cell; }
+  @media screen and (min-width: 319px) {
+    .cui__dialog__footer {
+      display: table-row; }
+      .cui__dialog__footer--inner {
+        display: table-cell; } }
 
 @keyframes spin {
   to {
