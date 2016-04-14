@@ -3,6 +3,7 @@
 .cui__baseline {
     color: map-get($colors, black);
     -webkit-font-smoothing: antialiased;
+    height: 100%;
     line-height: ($grid * 5);
     text-rendering: optimizeLegibility;
 

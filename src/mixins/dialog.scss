@@ -1,0 +1,34 @@
+@mixin dialog ($padding) {
+    box-sizing: border-box;
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    padding: $padding;
+    position: relative;
+    width: 100%;
+}
+
+@mixin dialog__icon ($padding) {
+    position: absolute;
+    display: block;
+    right: $padding - $grid;
+    top: $padding - $grid;
+}
+
+@mixin dialog__content ($padding) {
+    display: table-row;
+
+    &--inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+@mixin dialog__footer ($padding) {
+    display: table-row;
+
+    &--inner {
+        display: table-cell;
+    }
+}
