@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Checkout fieldsets</title>
+        <link rel="stylesheet" href="../../dist/ui-toolkit.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    </head>
+
+    <body style="height: 100%">
+
+        <div class="cui__dialog">
+            <svg
+                class="cui__dialog__icon" width="25px" height="25px" viewBox="0 0 25 25" stroke="#221F20" stroke-linecap="round" stroke-width="2">
+                <line
+                    style="transform-origin:50% 50%;transform:rotate(45deg);"
+                    x1="3.3" x2="21.7" y1="12.5" y2="12.5"></line>
+                <line
+                    style="transform-origin:50% 50%;transform:rotate(-45deg);" x1="3.3" x2="21.7" y1="12.5" y2="12.5"></line>
+            </svg>
+
+            <div class="cui__dialog__content">
+                <div class="cui__dialog__content--inner">
+                    <h1 class="cui__title--primary blue">
+                        The title is primary
+                    </h1>
+                    <h3 class="cui__subtitle">
+                        Resize your browser window…
+                    </h3>
+                    <p class="cui__paragraph--primary">
+                        …or try it out in different devices to see the layout changes in action
+                    </p>
+                    <p class="cui__paragraph--secondary">
+                        Some content is always useful for lorem ipsum dolor sit amet et consequetur maximum dolorem sic ultra.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cui__dialog__footer">
+                <div class="cui__dialog__footer--inner">
+                    <div class="cui__button--primary">
+                        Submit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function floatingLabel(input) {
+              if(input.value){
+                $(input).parent().addClass("is-filled");
+              } else {
+                $(input).parent().removeClass("is-filled");
+              }
+            }
+
+            function dofocus(component) {
+                $(component).parent().addClass('is-focused');
+            }
+
+            function doblur(component) {
+                $(component).parent().removeClass('is-focused');
+            }
+
+            $('input').each(function (index, input) {
+                floatingLabel(input)
+            })
+
+            $(document).keypress(function(e){
+              if (e.which === 103) {
+                $('body').toggleClass('cui__baseline__grid');
+              }
+            })
+        </script>
+    </body>
+</html>

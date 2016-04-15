@@ -3,6 +3,7 @@
 .cui__baseline {
     color: map-get($colors, black);
     -webkit-font-smoothing: antialiased;
+    height: 100%;
     line-height: ($grid * 5);
     text-rendering: optimizeLegibility;
 
@@ -15,7 +16,7 @@
 }
 
 .cui__baseline__grid {
-    background: transparent url('img/baseline__grid.png') repeat scroll 0% 0%;
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAB1JREFUGBljYBj8gPHN+///B78ziXMh462HxHkGADrEB5XhASgUAAAAAElFTkSuQmCC') repeat scroll 0% 0%;
 }
 
 .cui__baseline__content--main {

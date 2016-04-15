@@ -9,11 +9,16 @@ $root: '../';
 $base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $grid: 5px;
 $content-main-width: 102; // $grid * 102
+$dialog-padding: (
+    narrow: ($grid * 4),
+    wide: ($grid * 6)
+);
 
 // ================================================================
 //  Breakpoints
 // ================================================================
 $mobile-max-width: 569px;
+$mobile-narrow-max-width: 319px;
 
 // ================================================================
 //  General colors

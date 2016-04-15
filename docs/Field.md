@@ -659,8 +659,6 @@ Note: the icon and the CSS for changing its color according to the state of the
 input (`is-focused`, …) has to be added separately. Here we demonstrate taking the
 space for the icon with a background colored placeholder.
 
-All icons are available in [ui-illustrations](https://stash.int.klarna.net/projects/BOW/repos/ui-illustrations/browse)
-
 ```html
 <div class="cui__field--icon">
 	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
@@ -719,7 +717,7 @@ All icons are available in [ui-illustrations](https://stash.int.klarna.net/proje
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
-	<input type="password" class="cui__field--icon__input" value="email@exanple.com" />
+	<input class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
 
@@ -735,6 +733,7 @@ All icons are available in [ui-illustrations](https://stash.int.klarna.net/proje
 	<input class="cui__field--icon__input" value="email@exanple.com" />
 </div>
 ```
+
 <a name="Field/icon/disabled"></a>
 ### Disabled
 
@@ -754,7 +753,7 @@ All icons are available in [ui-illustrations](https://stash.int.klarna.net/proje
 ```html
 <div class="cui__field is-centered">
 	<label class="cui__field__label">
-		This is alligned to the center
+		This is aligned to the center
 	</label>
 	<input class="cui__field__input" />
 </div>

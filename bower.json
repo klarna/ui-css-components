@@ -1,9 +1,9 @@
 {
-  "name": "ui-toolkit",
+  "name": "ui-css-components",
   "authors": [
-    "Klarna"
+    "Klarna AB"
   ],
-  "description": "Klarna UI Toolkit",
+  "description": "Klarna UI CSS Components",
   "main": "dist/toolkit.css",
   "keywords": [
     "klarna",
