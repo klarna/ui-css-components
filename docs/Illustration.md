@@ -96,7 +96,7 @@ ___
 ```
 
 <a name="Illustration/button/gray"></a>
-### Blue
+### Gray
 
 ```html
 <svg
