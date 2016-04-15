@@ -36,56 +36,56 @@ ___
 <div class="cui__fieldset">
   <div class="cui__dropdown--native top">
     <label class="cui__dropdown--native__label">
-      Name
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Åke</option>
-      <option>Sven</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter square">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native half center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-left half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-right half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
 </div>

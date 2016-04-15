@@ -519,56 +519,56 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <div class="cui__fieldset">
   <div class="cui__dropdown--native top">
     <label class="cui__dropdown--native__label">
-      Name
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Åke</option>
-      <option>Sven</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter square">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native half center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-left half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-right half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
 </div>
@@ -2294,7 +2294,6 @@ demo.</p>
 <p class="cui__paragraph--primary">Note: the icon and the CSS for changing its color according to the state of the
 input (<span class="code">is-focused</span>, …) has to be added separately. Here we demonstrate taking the
 space for the icon with a background colored placeholder.</p>
-<p class="cui__paragraph--primary">All icons are available in <a class="cui__link" href="https://stash.int.klarna.net/projects/BOW/repos/ui-illustrations/browse">ui-illustrations</a></p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon">
@@ -2370,14 +2369,14 @@ space for the icon with a background colored placeholder.</p>
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
     </label>
-    <input type="password" class="cui__field--icon__input" value="email@exanple.com" />
+    <input class="cui__field--icon__input" value="email@exanple.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-error&quot;&gt;
     &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
     &lt;label class=&quot;cui__field--icon__label is-focused&quot;&gt;
         Are you sure the domain is example?
     &lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/icon/warning"></a><h3 class="cui__subtitle">Warning</h3>
 
@@ -2418,13 +2417,13 @@ space for the icon with a background colored placeholder.</p>
     <div class="example-block">
       <div class="example"><div class="cui__field is-centered">
     <label class="cui__field__label">
-        This is alligned to the center
+        This is aligned to the center
     </label>
     <input class="cui__field__input" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
-        This is alligned to the center
+        This is aligned to the center
     &lt;/label&gt;
     &lt;input class=&quot;cui__field__input&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
@@ -3657,14 +3656,14 @@ block.</p>
 
     <div class="example-block">
       <div class="example"><h2 class="cui__title--secondary condensed">
-  The User
+  Secondary condensed set
 </h2>
 
 <p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p></div>
       <pre><code class="lang-html"><div>&lt;h2 class=&quot;cui__title--secondary condensed&quot;&gt;
-  The User
+  Secondary condensed set
 &lt;/h2&gt;
 
 &lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
@@ -3888,7 +3887,7 @@ paragraphs or secondary titles.</p>
 <p class="cui__paragraph--primary">The tooltip element is to be used to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
 <p class="cui__paragraph--primary">The tooltip doesn&#39;t dictate positioning, only layout, so this must be implemented on your side. For some use cases, CSS will do, but you may need to use JavaScript for that.</p>
 <p class="cui__paragraph--primary">The implementation of tooltip&#39;s pointer relies on <span class="code">transform: translate</span> rather than using <span class="code">calc</span>, since calc known issues on IE9. Both are unsupported on IE8.</p>
-<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to <strong>250px</strong>. To use wider Tooltip you will need to ovride the max-width css</p>
+<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to <strong>250px</strong>. To use wider Tooltip you will need to override the <span class="code">max-width</span>.</p>
 <hr>
 <ul class="summary">
 <li><a class="cui__link" href="#Tooltip">Tooltip</a><ul class="summary">
@@ -3935,11 +3934,11 @@ paragraphs or secondary titles.</p>
 <hr />
 <div class="cui__tooltip top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top">
@@ -3985,11 +3984,11 @@ paragraphs or secondary titles.</p>
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top-right&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip right-top&quot;&gt;
@@ -4068,11 +4067,11 @@ paragraphs or secondary titles.</p>
 <hr />
 <div class="cui__tooltip top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top border">
@@ -4118,11 +4117,11 @@ paragraphs or secondary titles.</p>
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top-right border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip right-top border&quot;&gt;
