@@ -84,30 +84,4 @@ gulp.task('build:jade', function () {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('publish', function () {
-    var revAll = new RevAll();
-    var awsConfig = {
-        accessKeyId: process.env.AWS_ACCESS_KEY,
-        secretAccessKey: process.env.AWS_SECRET_KEY,
-        region: "eu-west-1",
-        params: {
-            Bucket: "klarna-static-assets"
-        }
-    };
-    var publisher = AWS.create(awsConfig);
-    var headers = {'Cache-Control': 'max-age=315360000, no-transform, public'};
-
-    gulp.src(['dist/ui-toolkit.css'])
-        .pipe(minifyCss())
-        .pipe(addsrc('img/**/*'))
-        .pipe(revAll.revision())
-        .pipe(rename(function (path) {
-            path.dirname = 'ui-toolkit/' + path.dirname;
-        }))
-        .pipe(AWS.gzip())
-        .pipe(publisher.publish(headers, {createOnly: true}))
-        .pipe(publisher.cache())
-        .pipe(AWS.reporter());
-});
-
 gulp.task('build', ['build:sass', 'build:jade', 'images']);
