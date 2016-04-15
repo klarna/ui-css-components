@@ -30,9 +30,3 @@ Make sure...
 2. ...your contribution doesn't break the grid. To avoid that use always the `$grid` variable to define your sizes, as in `line-height: ($grid * 4)`. As a rule of thumb, if your element total height (sum of content, paddings, margins, etc...) has an integer multiple of `$grid` you should be good.
 3. ... your code is linted: `npm run lint`.
 4. ... it works in the major browsers, the simplest way is to spawn [ngrok](https://ngrok.com/) and use the cloud service of your choice. Else, you can download IE virtual machines for virtualbox using `curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="9" bash`. 
-
-Then
-
-1. Open the PR and let people self assign to the PR and review.
-2. Once approved, bump the version accordingly on the `package.json`. You can use [npm version](https://docs.npmjs.com/cli/version).
-3. Merge and push to master and then also push a tag with your version: `git tag vX.Y.Z` and `git push origin vX.Y.Z`.

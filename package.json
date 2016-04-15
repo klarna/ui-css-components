@@ -1,7 +1,7 @@
 {
   "name": "@klarna/ui-css-components",
   "version": "5.2.0",
-  "description": "Klarna CSS Components",
+  "description": "Klarna UI CSS Components",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "autoprefixer": "^6.0.2",
