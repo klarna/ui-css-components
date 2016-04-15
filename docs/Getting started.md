@@ -1,4 +1,6 @@
-# Getting started
+# Klarna UI CSS components v5.2.0
+
+## Getting started
 
 Welcome to the ui-css-components guide. The goals of this document are:
 
@@ -50,3 +52,7 @@ breaks it in it's usage of some modifiers (e.g. 'big').
 The ui-css-components do not dictate how to build your layout. So things like
 widths, margins between elements (although all texts follow a grid) and
 responsiveness must be dealt in your project.
+
+## License
+
+See the [License](https://github.com/klarna/ui-css-components/blob/master/LICENSE) attached.
