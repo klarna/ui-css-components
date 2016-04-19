@@ -17,10 +17,12 @@ const docFiles = [
   'Dialog',
   'Dropdown',
   'Field',
+  'Illustration',
   'Label',
   'Loader',
   'Navigation',
   'Preview',
+  'Selector',
   'Switch',
   'Text',
   'Tooltip'

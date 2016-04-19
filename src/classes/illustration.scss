@@ -39,7 +39,6 @@
         transition: all .3s ease;
         width: ($grid * 5);
 
-
         &:hover {
             @include illustration(map-get($colors, klarna-blue-hover));
         }

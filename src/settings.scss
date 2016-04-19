@@ -76,14 +76,3 @@ $font-weights: (
 $border-radius: $grid;
 $border-radius-checkbox: ($grid * .4);
 $border-color: map-get($colors, grey-lines);
-$border-color-error: #e6bebe;
-$border-color-warning: #e6c88c;
-$border-color-hover: #66aae0;
-$border-color-hover-error: #ef8b6f;
-$border-color-hover-warning: #e2af4a;
-$border-color-focus: rgba(26, 140, 220, .8);
-$border-color-focus-error: #e63200;
-$border-color-focus-warning: #e2af4a;
-$box-shadow-focus: rgba(26, 140, 220, .6);
-$box-shadow-focus-error: rgba(230, 55, 6, .4);
-$box-shadow-focus-warning: #e6c88c;

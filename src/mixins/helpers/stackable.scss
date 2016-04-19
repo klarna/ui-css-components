@@ -49,6 +49,16 @@ $stackable-border-width: $grid * .2;
         }
     }
 
+    &.sixty {
+        @include respond-to-wide {
+            width: calc(60% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(60% + #{$stackable-border-width});
+        }
+    }
+
     &.half {
         @include respond-to-wide {
             width: calc(50% + #{$stackable-border-width});
@@ -132,6 +142,16 @@ $stackable-border-width: $grid * .2;
 
         &.non-responsive {
             @include partial-width(66.66666%);
+        }
+    }
+
+    &.sixty {
+        @include respond-to-wide {
+            @include partial-width(60%);
+        }
+
+        &.non-responsive {
+            @include partial-width(60%);
         }
     }
 

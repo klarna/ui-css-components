@@ -28,37 +28,37 @@
     }
 
     &:hover {
-        border-color: $border-color-hover;
+        border-color: map-get($colors, blue-hover);
         z-index: 10;
     }
 
     &.is-focused {
-        border-color: $border-color-focus;
-        box-shadow: 0 0 ($grid * .8) $box-shadow-focus;
+        border-color: map-get($colors, blue-focus);
+        box-shadow: 0 0 ($grid * .8) map-get($colors, blue-shadow);
         z-index: 20;
     }
 
     &.is-error {
         background-color: #fff8f7;
-        border-color: $border-color-error;
+        border-color: map-get($colors, error-border);
         box-shadow: none;
         z-index: 5;
 
         &:hover {
-            border-color: $border-color-hover-error;
+            border-color: map-get($colors, error-hover);
             z-index: 10;
         }
 
         &.is-focused {
-            border-color: $border-color-focus-error;
-            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-error;
+            border-color: map-get($colors, error);
+            box-shadow: 0 0 ($grid * .8) map-get($colors, error-shadow);
             z-index: 20;
         }
     }
 
     &.is-warning {
         background-color: #fffaf0;
-        border-color: $border-color-warning;
+        border-color: map-get($colors, warning-border);
         box-shadow: none;
         z-index: 5;
 
@@ -68,13 +68,13 @@
         }
 
         &:hover {
-            border-color: $border-color-hover-warning;
+            border-color: map-get($colors, warning-hover);
             z-index: 10;
         }
 
         &.is-focused {
-            border-color: $border-color-focus-warning;
-            box-shadow: 0 0 ($grid * .8) $box-shadow-focus-warning;
+            border-color: map-get($colors, warning-hover);
+            box-shadow: 0 0 ($grid * .8) map-get($colors, warning-border);
             z-index: 20;
         }
     }
@@ -123,6 +123,7 @@
     -webkit-transition: all .2s ease;
     color: map-get($colors, 'grey-text');
     line-height: ($grid * 10);
+    overflow: hidden;
     padding: 0 ($grid * 4);
     position: absolute;
     text-overflow: ellipsis;
@@ -158,11 +159,11 @@
     }
 
     .is-error & {
-        color: #e63200;
+        color: map-get($colors, error);
     }
 
     .is-warning & {
-        color: #ecb800;
+        color: map-get($colors, warning);
     }
 
     .is-disabled & {
@@ -277,11 +278,11 @@
     }
 
     .is-error & {
-        background: $border-color-error;
+        background: map-get($colors, error-border);
     }
 
     .is-warning & {
-        background: $border-color-warning;
+        background: map-get($colors, warning-border);
     }
 }
 

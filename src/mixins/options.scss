@@ -13,7 +13,7 @@
 
     @if $hover == true {
         &:hover {
-            border-color: $border-color-hover;
+            border-color: map-get($colors, blue-hover);
             z-index: 10;
         }
     }

@@ -8,7 +8,7 @@
     text-rendering: optimizeLegibility;
 
     body {
-        @include typography(($grid * 2.8), regular);
+        @include typography(($grid * 2.6), regular);
 
         margin: 0;
         padding: 0;
@@ -20,7 +20,7 @@
 }
 
 .cui__baseline__content--main {
-    @include typography(($grid * 2.8), regular);
+    @include typography(($grid * 2.6), regular);
 
     display: block;
     margin: 0 ($grid * 4);
