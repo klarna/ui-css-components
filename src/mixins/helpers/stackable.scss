@@ -1,9 +1,9 @@
 $stackable-border-width: $grid * .2;
 
 @mixin partial-width ($width) {
-    width: $width;
     clear: none;
     float: left;
+    width: $width;
 }
 
 @mixin stacked-responsiveness () {
@@ -202,6 +202,7 @@ $stackable-border-width: $grid * .2;
 
     &.right {
         @include stacked-responsiveness();
+
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
 
@@ -232,6 +233,7 @@ $stackable-border-width: $grid * .2;
 
     &.top-right {
         @include stacked-responsiveness();
+
         border-radius: 0;
         clear: right;
 
@@ -264,6 +266,7 @@ $stackable-border-width: $grid * .2;
 
     &.bottom-right {
         @include stacked-responsiveness();
+        
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 

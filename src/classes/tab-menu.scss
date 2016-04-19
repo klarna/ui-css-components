@@ -86,12 +86,10 @@
     }
 
     .white & {
-      color: map-get($colors, white);
+        color: map-get($colors, white);
     }
 
     .is-selectable.white &:after {
         background: map-get($colors, white);
     }
 }
-
-

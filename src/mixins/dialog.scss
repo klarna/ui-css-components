@@ -9,8 +9,8 @@
 }
 
 @mixin dialog__icon ($padding) {
-    position: absolute;
     display: block;
+    position: absolute;
     right: $padding - $grid;
     top: $padding - $grid;
 }
