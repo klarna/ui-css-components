@@ -3740,7 +3740,7 @@
   top: 17px;
   right: 25px; }
 
-.cui__selector--direct__caret {
+.cui__selector--direct__icon {
   fill: none;
   fill-rule: evenodd;
   height: 20px;
@@ -3750,8 +3750,6 @@
   stroke: #3c3c3e;
   stroke-linecap: round;
   stroke-width: 1;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
   top: 50%;
   width: 20px; }
 

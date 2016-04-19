@@ -23,9 +23,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M2,10 L7,16 L17,5"></path>
     </svg>
   </div>
 
@@ -35,9 +35,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 
@@ -51,9 +51,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 </div>
@@ -78,9 +78,9 @@ ___
     </p>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 
@@ -94,9 +94,9 @@ ___
     </p>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 </div>
@@ -118,9 +118,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 
@@ -130,9 +130,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 
@@ -146,9 +146,9 @@ ___
     </div>
 
     <svg
-      class="cui__selector--direct__caret"
+      class="cui__selector--direct__icon"
       viewBox="0 0 20 20">
-      <path d="M14,8 L10,12 L6,8"></path>
+      <path d="M8,6 l4,4 l-4,4"></path>
     </svg>
   </div>
 </div>

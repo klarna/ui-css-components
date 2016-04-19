@@ -12,8 +12,8 @@
     @include selector__value;
 }
 
-.cui__selector--direct__caret {
-    @include selector__caret;
+.cui__selector--direct__icon {
+    @include selector__icon;
 }
 
 .cui__selector--direct__description {

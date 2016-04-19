@@ -83,7 +83,7 @@
     right: ($grid * 5);
 }
 
-@mixin selector__caret {
+@mixin selector__icon {
     fill: none;
     fill-rule: evenodd;
     height: ($grid * 4);
@@ -93,7 +93,6 @@
     stroke: map-get($colors, black);
     stroke-linecap: round;
     stroke-width: 1;
-    transform: rotate(270deg);
     top: 50%;
     width: ($grid * 4);
 }
