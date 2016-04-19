@@ -21,7 +21,7 @@
     "gulp-sass": "2.0.4",
     "gulp-svg2png": "^0.3.0",
     "marked": "^0.3.5",
-    "sass-lint": "git+ssh://github.com/sasstools/sass-lint#45d5fb8fb1aa77b214007438599169ea4e8a0a90"
+    "sass-lint": "git://github.com/sasstools/sass-lint#45d5fb8fb1aa77b214007438599169ea4e8a0a90"
   },
   "scripts": {
     "start": "gulp",
