@@ -3,5 +3,4 @@ node_js:
   - "5"
 before_script:
   - npm install
-  - gulp build
-  - gulp style
+  - npm run lint
