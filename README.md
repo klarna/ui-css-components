@@ -1,4 +1,5 @@
 # Klarna UI CSS Components
+[![Build Status](https://travis-ci.org/klarna/ui-css-components.svg)](https://travis-ci.org/klarna/ui-css-components)
 
 This project contains CSS components to be used in all [Klarna](http://klarna.com/) user facing projects.
 
