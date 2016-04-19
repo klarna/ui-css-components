@@ -8,7 +8,7 @@
         transition: all .2s ease;
 
         &:hover {
-            border-color: $border-color-hover;
+            border-color: map-get($colors, blue-hover);
         }
     }
 }

@@ -109,7 +109,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -147,7 +147,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -185,7 +185,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -223,7 +223,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -261,7 +261,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -299,7 +299,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -337,7 +337,7 @@ ___
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 

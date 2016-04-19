@@ -1,0 +1,30 @@
+@import '../mixins/index';
+
+.cui__selector--direct__item {
+    @include selector__item;
+}
+
+.cui__selector--direct__label {
+    @include selector__label;
+}
+
+.cui__selector--direct__value {
+    @include selector__value;
+}
+
+.cui__selector--direct__icon {
+    @include selector__icon;
+}
+
+.cui__selector--direct__description {
+    @include selector__description;
+}
+
+.cui__selector--direct__description + .cui__selector--direct__description {
+    margin: ($grid * 1) 0 ($grid * .4) 0;
+}
+
+.cui__selector--direct__title {
+    @include subtitle;
+    margin-bottom: ($grid * 1.2);
+}
