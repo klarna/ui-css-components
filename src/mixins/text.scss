@@ -60,8 +60,8 @@
 
 @mixin paragraph-condensed {
     line-height: ($grid * 4);
-    padding-top: 0;
     padding-bottom: ($grid * 3);
+    padding-top: 0;
 }
 
 @mixin paragraph--primary {

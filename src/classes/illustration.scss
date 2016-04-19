@@ -5,6 +5,7 @@
 
     &.big {
         @include illustration(map-get($colors, klarna-blue));
+
         height: ($grid * 20);
         width: ($grid * 20);
 
@@ -26,18 +27,17 @@
     }
 
     &.button {
+        @include illustration(map-get($colors, klarna-blue));
+
+        -webkit-transition: all .3s ease;
         background: transparent;
         border: ($grid * 2) solid transparent;
         border-radius: 100%;
         cursor: pointer;
         height: ($grid * 5);
         margin: ($grid * -2);
-        width: ($grid * 5);
-
-        -webkit-transition: all .3s ease;
         transition: all .3s ease;
-
-        @include illustration(map-get($colors, klarna-blue));
+        width: ($grid * 5);
 
         &:hover {
             @include illustration(map-get($colors, klarna-blue-hover));

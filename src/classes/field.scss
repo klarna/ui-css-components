@@ -1,6 +1,6 @@
 @import '../mixins/index';
 
-.cui__field {
+%cui__field {
     @include stackable();
 
     border: ($grid * .2) solid $border-color;
@@ -117,19 +117,19 @@
     }
 }
 
-.cui__field__label {
+%cui__field__label {
     @include typography(($grid * 2.8), regular);
 
+    -webkit-transition: all .2s ease;
     color: map-get($colors, 'grey-text');
     line-height: ($grid * 10);
     overflow: hidden;
     padding: 0 ($grid * 4);
     position: absolute;
     text-overflow: ellipsis;
-    -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    width: calc(100% - #{($grid * 8)});
     white-space: nowrap;
+    width: calc(100% - #{($grid * 8)});
 
     .big & {
         line-height: ($grid * 12);
@@ -176,7 +176,7 @@
     }
 }
 
-.cui__field__input {
+%cui__field__input {
     @include typography(($grid * 2.8), semi-bold);
 
     appearance: none;
@@ -226,16 +226,28 @@
     }
 }
 
+.cui__field {
+    @extend %cui__field;
+}
+
+.cui__field__label {
+    @extend %cui__field__label;
+}
+
+.cui__field__input {
+    @extend %cui__field__input;
+}
+
 .cui__field--icon {
-    @extend .cui__field;
+    @extend %cui__field;
 }
 
 .cui__field--icon__label {
-    @extend .cui__field__label;
+    @extend %cui__field__label;
 }
 
 .cui__field--icon__input {
-    @extend .cui__field__input;
+    @extend %cui__field__input;
 }
 
 .cui__field--icon__label,

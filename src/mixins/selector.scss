@@ -3,8 +3,8 @@
 }
 
 @mixin selector__item {
-    border-top: ($grid * .2) solid map-get($colors, grey-selector-lines);
     border-bottom: ($grid * .2) solid map-get($colors, grey-selector-lines);
+    border-top: ($grid * .2) solid map-get($colors, grey-selector-lines);
     box-sizing: border-box;
     cursor: pointer;
     margin: ($grid * -.2) 0 0 0;
@@ -12,30 +12,30 @@
     position: relative;
 
     &::before {
-        border-top: ($grid * .2) solid transparent;
         border-bottom: ($grid * .2) solid transparent;
-        position: absolute;
-        top: ($grid * -.2);
+        border-top: ($grid * .2) solid transparent;
         bottom: ($grid * -.2);
-        left: 0;
-        right: 0;
         content: "";
         display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: ($grid * -.2);
         transition: all .2s ease;
         z-index: 10;
     }
 
     &:hover {
         &::before {
-            border-top: ($grid * .2) solid map-get($colors, blue-hover);
             border-bottom: ($grid * .2) solid map-get($colors, blue-hover);
-            position: absolute;
-            top: ($grid * -.2);
+            border-top: ($grid * .2) solid map-get($colors, blue-hover);
             bottom: ($grid * -.2);
-            left: 0;
-            right: 0;
             content: "";
             display: block;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: ($grid * -.2);
             z-index: 10;
         }
     }
@@ -79,8 +79,8 @@
 
     color: map-get($colors, klarna-blue);
     position: absolute;
-    top: ($grid * 3.4);
     right: ($grid * 5);
+    top: ($grid * 3.4);
 }
 
 @mixin selector__icon {
@@ -99,6 +99,7 @@
 
 @mixin selector__description {
     @include typography(($grid * 2.6), regular);
+
     color: map-get($colors, grey-text);
     line-height: ($grid * 4);
     margin: ($grid * -.4) 0 ($grid * .4) 0;
