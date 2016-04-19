@@ -4443,6 +4443,8 @@
     transition: all .2s ease;
     width: 20px;
     left: 1px; }
+  .cui__switch.is-error {
+    color: #e63200; }
   .cui__switch.is-pressed::after {
     width: 25px; }
   .is-disabled .cui__switch, .cui__switch.is-disabled {
@@ -4505,6 +4507,8 @@
       width: 20px;
       left: auto;
       right: 36px; }
+    .cui__switch.right.is-error {
+      color: #e63200; }
     .cui__switch.right.is-pressed::after {
       width: 25px;
       left: auto;
@@ -4688,6 +4692,8 @@
     width: 20px;
     left: auto;
     right: 36px; }
+  .cui__switch--multiple__option.is-error {
+    color: #e63200; }
   .cui__switch--multiple__option.is-pressed::after {
     width: 25px;
     left: auto;

@@ -9,6 +9,7 @@ ___
   - [right](#Switch/single/right)
   - [pressed](#Switch/single/pressed)
   - [checked](#Switch/single/checked)
+  - [error](#Switch/single/error)
   - [checked and pressed](#Switch/single/checked and pressed)
   - [checkbox](#Switch/single/checkbox)
   - [disabled](#Switch/single/disabled)
@@ -49,6 +50,15 @@ ___
 ```html
 <div class="cui__switch is-checked">
   This is a toggle switch checked
+</div>
+```
+
+<a name="Switch/single/error"></a>
+### Error
+
+```html
+<div class="cui__switch is-error">
+  This is a toggle switch in an error state
 </div>
 ```
 
