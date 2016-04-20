@@ -1,5 +1,10 @@
 # Field
 
+<div style="background: #eea; padding: 20px">
+	The Fields are deprecated. New projects will be designed using Input instead.
+</div>
+
+
 The field is a molecular element. It consists of a wrapper with the `cui__field` block, which should be added to a `div` tag, containing a `cui__field__label` added to a `label` tag and `cui__field__input` added to an `input` tag.
 
 The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it's the same element 2) there's an issue that some browsers don't respect input padding 3) that's the standard way many libraries that have floating label components implement it, like [material-ui](http://material-ui.com/#/components/text-fields) and [polymer](https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html) and 4) it eliminates the need for fake placeholders on older browsers.
