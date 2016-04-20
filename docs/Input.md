@@ -36,10 +36,6 @@ ___
 	- [disabled](#Input/big/disabled)
 - [Stacked](#Input/stacked)
 	- [side by side](#Input/stacked/side by side)
-	- [top part](#Input/stacked/top part)
-	- [top part](#Input/stacked/top only)
-	- [bottom part](#Input/stacked/bottom part)
-	- [bottom part](#Input/stacked/bottom only)
 	- [center](#Input/stacked/center)
 	- [half and quarter sizes](#Input/stacked/half and quarter sizes)
 	- [three quarters](#Input/stacked/three quarters)
@@ -312,17 +308,15 @@ Should be used when it's important to show the field to the user but she should 
 Fields can be stacked together to form a single organic visual component.
 
 By default, side by side fields will be responsive, meaning that they will
-turn full width on thin screens. If you want fields to keep appearing side
-by side on thin viewports, add the `-non-responsive` class to the field. You
-can see an example of this in the [Billing Address](examples/base/checkout.html)
-demo.
+turn full width on thin screens. You can check this out by resizing the browser
+or using Chrome inspector's mobile mode.
 
 
 <div style="overflow: hidden">
   <ul class="overview">
     <li>
 				<div class="cui__fieldset">
-						<div class="cui__input top-left half non-responsive">
+						<div class="cui__input half left">
 							<label class="cui__input__label">
 								Name
 							</label>
@@ -333,7 +327,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input top-right half non-responsive">
+						<div class="cui__input half right">
 							<label class="cui__input__label">
 								Lastname
 							</label>
@@ -344,7 +338,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input square">
+						<div class="cui__input">
 							<label class="cui__input__label">
 								Address line 1
 							</label>
@@ -355,7 +349,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input square">
+						<div class="cui__input">
 							<label class="cui__input__label">
 								Address line 2
 							</label>
@@ -366,7 +360,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input square half">
+						<div class="cui__input half left">
 							<label class="cui__input__label">
 								City
 							</label>
@@ -388,7 +382,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input center quarter">
+						<div class="cui__input right quarter">
 							<label class="cui__input__label">
 								Zip
 							</label>
@@ -399,7 +393,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input bottom-left half">
+						<div class="cui__input left half">
 							<label class="cui__input__label">
 								Phone number
 							</label>
@@ -410,7 +404,7 @@ demo.
 										onblur="doblur(this)"
 								/>
 						</div>
-						<div class="cui__input bottom-right half">
+						<div class="cui__input right half">
 							<label class="cui__input__label">
 								Email
 							</label>
@@ -446,106 +440,12 @@ demo.
 </div>
 ```
 
-<a name="Input/stacked/top part"></a>
-### Top part
-
-```html
-<div class="cui__fielset">
-	<div class="cui__input top-left half">
-		<label class="cui__input__label">
-			Name
-		</label>
-		<input class="cui__input__input" />
-	</div>
-	<div class="cui__input top-right half">
-		<label class="cui__input__label">
-			Lastname
-		</label>
-		<input class="cui__input__input" />
-	</div>
-</div>
-```
-
-<a name="Input/stacked/top only"></a>
-### Top only
-
-```html
-<div class="cui__fielset">
-	<div class="cui__input top">
-		<label class="cui__input__label">
-			Email address
-		</label>
-		<input class="cui__input__input" />
-	</div>
-</div>
-```
-
-<a name="Input/stacked/bottom part"></a>
-### Bottom part
-
-```html
-<div class="cui__fielset">
-	<div class="cui__input bottom-left half">
-		<label class="cui__input__label">
-			City
-		</label>
-		<input class="cui__input__input" />
-	</div>
-	<div class="cui__input bottom-right half">
-		<label class="cui__input__label">
-			Country
-		</label>
-		<input class="cui__input__input" />
-	</div>
-</div>
-```
-
-<a name="Input/stacked/bottom only"></a>
-### Bottom only
-
-```html
-<div class="cui__fielset">
-	<div class="cui__input bottom">
-		<label class="cui__input__label">
-			Password
-		</label>
-		<input type="password" class="cui__input__input" />
-	</div>
-</div>
-```
-
-<a name="Input/stacked/square"></a>
-### Square
-
-```html
-<div class="cui__fielset">
-	<div class="cui__input top-left half">
-		<label class="cui__input__label">
-			City
-		</label>
-		<input class="cui__input__input" />
-	</div>
-	<div class="cui__input top-right half">
-		<label class="cui__input__label">
-			Country
-		</label>
-		<input class="cui__input__input" />
-	</div>
-	<div class="cui__input square">
-		<label class="cui__input__label">
-			Country
-		</label>
-		<input class="cui__input__input" />
-	</div>
-</div>
-```
-
 <a name="Input/stacked/half and quarter sizes"></a>
 ### Half and Quarter sizes
 
 ```html
-<div class="cui__fielset">
-	<div class="cui__input top-left half">
+<div class="cui__fieldset">
+	<div class="cui__input left half">
 		<label class="cui__input__label">
 			City
 		</label>
@@ -557,7 +457,7 @@ demo.
 		</label>
 		<input class="cui__input__input" />
 	</div>
-	<div class="cui__input top-right quarter">
+	<div class="cui__input right quarter">
 		<label class="cui__input__label">
 			Country
 		</label>
@@ -570,7 +470,7 @@ demo.
 ### Three quarters
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__input left quarter">
 		<label class="cui__input__label">
 			City
@@ -590,8 +490,8 @@ demo.
 ### Twenty - Forty
 
 ```html
-<div class="cui__fielset">
-	<div class="cui__input top-left twenty">
+<div class="cui__fieldset">
+	<div class="cui__input left twenty">
 		<label class="cui__input__label">
 			Title
 		</label>
@@ -603,7 +503,7 @@ demo.
 		</label>
 		<input class="cui__input__input" />
 	</div>
-	<div class="cui__input top-right forty">
+	<div class="cui__input right forty">
 		<label class="cui__input__label">
 			Lastname
 		</label>
@@ -616,7 +516,7 @@ demo.
 ### Twenty - Eighty
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__input left twenty">
 		<label class="cui__input__label">
 			Title
@@ -636,7 +536,7 @@ demo.
 ### One third - Two thirds
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__input left third">
 		<label class="cui__input__label">
 			Title

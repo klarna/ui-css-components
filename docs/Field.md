@@ -435,7 +435,7 @@ demo.
 ### Side by side
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field left half">
 		<label class="cui__field__label">
 			Name
@@ -455,7 +455,7 @@ demo.
 ### Top part
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			Name
@@ -475,7 +475,7 @@ demo.
 ### Top only
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field top">
 		<label class="cui__field__label">
 			Email address
@@ -489,7 +489,7 @@ demo.
 ### Bottom part
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field bottom-left half">
 		<label class="cui__field__label">
 			City
@@ -509,7 +509,7 @@ demo.
 ### Bottom only
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field bottom">
 		<label class="cui__field__label">
 			Password
@@ -523,7 +523,7 @@ demo.
 ### Square
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			City
@@ -549,7 +549,7 @@ demo.
 ### Half and Quarter sizes
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field top-left half">
 		<label class="cui__field__label">
 			City
@@ -575,7 +575,7 @@ demo.
 ### Three quarters
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field left quarter">
 		<label class="cui__field__label">
 			City
@@ -595,7 +595,7 @@ demo.
 ### Twenty - Forty
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field top-left twenty">
 		<label class="cui__field__label">
 			Title
@@ -621,7 +621,7 @@ demo.
 ### Twenty - Eighty
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field left twenty">
 		<label class="cui__field__label">
 			Title
@@ -641,7 +641,7 @@ demo.
 ### One third - Two thirds
 
 ```html
-<div class="cui__fielset">
+<div class="cui__fieldset">
 	<div class="cui__field left third">
 		<label class="cui__field__label">
 			Title

@@ -1,7 +1,90 @@
 @import '../mixins/index';
 
+$stackable-border-width: $grid * .2;
+
+@mixin partial-width-input ($width) {
+    @include respond-to-wide {
+        @include partial-width(calc(#{$width} - 12.5px));
+    }
+
+    &.center {
+        @include respond-to-wide {
+            @include partial-width(calc(#{$width} - 25px));
+        }
+    }
+}
+
+@mixin stackable-input () {
+    &.eighty {
+        @include partial-width-input(80%);
+    }
+
+    &.three-quarters {
+        @include partial-width-input(75%);
+    }
+
+    &.two-thirds {
+        @include partial-width-input(66.66666%);
+    }
+
+    &.sixty {
+        @include partial-width-input(66%);
+    }
+
+    &.half {
+        @include partial-width-input(50%);
+    }
+
+    &.forty {
+        @include partial-width-input(40%);
+    }
+
+    &.third {
+        @include partial-width-input(33.33333%);
+    }
+
+    &.quarter {
+        @include partial-width-input(25%);
+    }
+
+    &.twenty {
+        @include partial-width-input(20%);
+    }
+
+    &.left {
+        @include respond-to-wide {
+            margin-right: 12.5px;
+        }
+    }
+
+    &.center {
+        @include respond-to-wide {
+            margin: 0 12.5px;
+        }
+
+        &::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+
+    &.right {
+        @include respond-to-wide {
+          margin-left: 12.5px;
+        }
+
+        &::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+    }
+}
+
 %cui__input {
-    @include stackable();
+    /*@include stackable();*/
+    @include stackable-input();
 
     border-bottom: ($grid * .2) solid $border-color;
     box-sizing: border-box;
@@ -11,8 +94,6 @@
     margin-bottom: ($grid * -.2);
     position: relative;
     text-align: left;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
 
     &.big {
         height: ($grid * 12);
