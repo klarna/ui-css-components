@@ -3801,16 +3801,10 @@
   top: 17px; }
 
 .cui__selector--direct__icon {
-  fill: none;
-  fill-rule: evenodd;
-  height: 20px;
   margin-top: -10px;
   position: absolute;
   right: -5px;
-  stroke-linecap: round;
-  stroke-width: 1;
-  top: 50%;
-  width: 20px; }
+  top: 50%; }
 
 .cui__selector--direct__description {
   -webkit-font-smoothing: antialiased;

@@ -84,16 +84,10 @@
 }
 
 @mixin selector__icon {
-    fill: none;
-    fill-rule: evenodd;
-    height: ($grid * 4);
     margin-top: ($grid * -2);
     position: absolute;
     right: ($grid * -1);
-    stroke-linecap: round;
-    stroke-width: 1;
     top: 50%;
-    width: ($grid * 4);
 }
 
 @mixin selector__description {
