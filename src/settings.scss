@@ -11,14 +11,14 @@ $grid: 5px;
 $content-main-width: 102; // $grid * 102
 $dialog-padding: (
     narrow: ($grid * 4),
-    wide: ($grid * 6)
+    wide: ($grid * 12)
 );
 
 // ================================================================
 //  Breakpoints
 // ================================================================
 $mobile-max-width: 569px;
-$mobile-narrow-max-width: 319px;
+$mobile-narrow-max-width: 321px;
 
 // ================================================================
 //  General colors
