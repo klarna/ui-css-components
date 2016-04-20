@@ -1,0 +1,282 @@
+@import '../mixins/index';
+
+%cui__input {
+    @include stackable();
+
+    border-bottom: ($grid * .2) solid $border-color;
+    box-sizing: border-box;
+    clear: both;
+    display: block;
+    height: ($grid * 10.2);
+    margin-bottom: ($grid * -.2);
+    position: relative;
+    text-align: left;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+    &.big {
+        height: ($grid * 12);
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom-width: ($grid * .4)
+    }
+
+    &:hover {
+        border-color: map-get($colors, blue-hover);
+        z-index: 10;
+    }
+
+    &.is-focused {
+        border-bottom-width: ($grid * .4);
+        border-color: map-get($colors, blue-focus);
+        z-index: 20;
+    }
+
+    &.is-error {
+        border-color: map-get($colors, error-border);
+        box-shadow: none;
+        z-index: 5;
+
+        &:hover {
+            border-color: map-get($colors, error-hover);
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: map-get($colors, error);
+            z-index: 20;
+        }
+    }
+
+    &.is-warning {
+        border-color: map-get($colors, warning-border);
+        box-shadow: none;
+        z-index: 5;
+
+        @include respond-to-ie(8) {
+            $ie-hex: ie-hex-str(#fffaf0);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
+        }
+
+        &:hover {
+            border-color: map-get($colors, warning-hover);
+            z-index: 10;
+        }
+
+        &.is-focused {
+            border-color: map-get($colors, warning-hover);
+            z-index: 20;
+        }
+    }
+
+    &.is-disabled {
+        border-color: map-get($colors, grey-lines);
+
+        &:hover {
+            border-color: map-get($colors, grey-lines);
+        }
+    }
+
+    &.is-centered {
+        .cui__input__label {
+            padding: 0;
+            width: 100%;
+        }
+
+        .cui__input--icon__input {
+            padding: 0 40px;
+
+        }
+
+        .cui__input__input,
+        .cui__input__label {
+            text-align: center;
+        }
+    }
+
+    &.is-loading {
+        &:after {
+            @include button__loader('button--secondary__loader');
+            content: '';
+            margin-top: -10px;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+        }
+    }
+}
+
+%cui__input__label {
+    @include typography(($grid * 2.8), regular);
+
+    -webkit-transition: all .2s ease;
+    color: map-get($colors, 'grey-text');
+    line-height: ($grid * 10);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-overflow: ellipsis;
+    transition: all .2s ease;
+    white-space: nowrap;
+    width: calc(100% - #{($grid * 8)});
+
+    .big & {
+        line-height: ($grid * 12);
+    }
+
+    .big.is-filled &,
+    .big.is-error &,
+    .big.is-warning & {
+        transform: translate(0, ($grid * -2.2));
+    }
+
+    .is-filled &,
+    .is-error &,
+    .is-warning & {
+        @include typography(($grid * 2.2), regular);
+
+        transform: translate(0, ($grid * -2));
+
+        .ie9 &,
+        .ie8 & {
+            margin-top: ($grid * -2);
+        }
+    }
+
+    .is-filled & {
+        color: map-get($colors, 'grey-text');
+    }
+
+    .is-error & {
+        color: map-get($colors, error);
+    }
+
+    .is-warning & {
+        color: map-get($colors, warning);
+    }
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
+
+    .ie9 &,
+    .ie8 & {
+        z-index: 1;
+    }
+}
+
+%cui__input__input {
+    @include typography(($grid * 2.8), semi-bold);
+
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: #3c3c3e;
+    height: ($grid * 10);
+    outline: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+
+    .ie9 &,
+    .ie8 & {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+        position: relative;
+        top: ($grid * 3);
+        z-index: 10;
+    }
+
+    .big & {
+        height: ($grid * 12);
+    }
+
+    .big.is-filled &,
+    .big.is-error &,
+    .big.is-warning & {
+        height: ($grid * 9.8);
+        top: ($grid * 2.2);
+    }
+
+    .is-filled &,
+    .is-error &,
+    .is-warning & {
+        height: ($grid * 9);
+        top: ($grid * 1.6);
+    }
+
+    .is-disabled & {
+        color: map-get($colors, grey-lines);
+    }
+
+    .safari &,
+    .ios & {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.cui__input {
+    @extend %cui__input;
+}
+
+.cui__input__label {
+    @extend %cui__input__label;
+}
+
+.cui__input__input {
+    @extend %cui__input__input;
+}
+
+.cui__input--icon {
+    @extend %cui__input;
+}
+
+.cui__input--icon__label {
+    @extend %cui__input__label;
+}
+
+.cui__input--icon__input {
+    @extend %cui__input__input;
+}
+
+.cui__input--icon__label,
+.cui__input--icon__input {
+    padding-left: ($grid * 8.4);
+}
+
+.cui__input--icon__icon {
+    display: block;
+    height: ($grid * 4);
+    margin: ($grid * 3) 0 0 ($grid * 2.4);
+    position: absolute;
+    width: ($grid * 4);
+
+    .big & {
+        margin-top: ($grid * 4);
+    }
+}
+
+.cui__input--icon__placeholder {
+    background: map-get($colors, grey-lines);
+    display: block;
+    height: ($grid * 4);
+    width: ($grid * 4);
+
+    .is-focused & {
+        background: map-get($colors, klarna-blue);
+    }
+
+    .is-error & {
+        background: map-get($colors, error-border);
+    }
+
+    .is-warning & {
+        background: map-get($colors, warning-border);
+    }
+}
