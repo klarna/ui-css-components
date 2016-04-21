@@ -1,9 +1,9 @@
 $stackable-border-width: $grid * .2;
 
 @mixin partial-width ($width) {
-    width: $width;
     clear: none;
     float: left;
+    width: $width;
 }
 
 @mixin stacked-responsiveness () {
@@ -46,6 +46,16 @@ $stackable-border-width: $grid * .2;
 
         &.non-responsive {
             width: calc(66.66666% + #{$stackable-border-width});
+        }
+    }
+
+    &.sixty {
+        @include respond-to-wide {
+            width: calc(60% + #{$stackable-border-width});
+        }
+
+        &.non-responsive {
+            width: calc(60% + #{$stackable-border-width});
         }
     }
 
@@ -135,6 +145,16 @@ $stackable-border-width: $grid * .2;
         }
     }
 
+    &.sixty {
+        @include respond-to-wide {
+            @include partial-width(60%);
+        }
+
+        &.non-responsive {
+            @include partial-width(60%);
+        }
+    }
+
     &.half {
         @include respond-to-wide {
             @include partial-width(50%);
@@ -202,6 +222,7 @@ $stackable-border-width: $grid * .2;
 
     &.right {
         @include stacked-responsiveness();
+
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
 
@@ -232,6 +253,7 @@ $stackable-border-width: $grid * .2;
 
     &.top-right {
         @include stacked-responsiveness();
+
         border-radius: 0;
         clear: right;
 
@@ -264,6 +286,7 @@ $stackable-border-width: $grid * .2;
 
     &.bottom-right {
         @include stacked-responsiveness();
+        
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 

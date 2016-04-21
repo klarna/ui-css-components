@@ -88,7 +88,7 @@ These are the general text styles for the toolkit.
 
 ```html
 <h2 class="cui__title--secondary condensed">
-  The User
+  Secondary condensed set
 </h2>
 
 <p class="cui__paragraph--primary condensed">

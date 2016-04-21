@@ -1,4 +1,6 @@
-# Getting started
+# Klarna UI CSS components v5.3.3
+
+## Getting started
 
 Welcome to the ui-css-components guide. The goals of this document are:
 
@@ -14,8 +16,7 @@ Enjoy!
 ## Instructions
 
 Press `G` on any screen in this showroom to trigger the grid. Everything should
-be aligned with the grid. If something is not, please report it in the #front_end
-channel.
+be aligned with the grid.
 
 ## Requirements
 
@@ -50,3 +51,7 @@ breaks it in it's usage of some modifiers (e.g. 'big').
 The ui-css-components do not dictate how to build your layout. So things like
 widths, margins between elements (although all texts follow a grid) and
 responsiveness must be dealt in your project.
+
+## License
+
+See the [License](https://github.com/klarna/ui-css-components/blob/master/LICENSE) attached.

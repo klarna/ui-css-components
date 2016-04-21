@@ -6,7 +6,7 @@ The tooltip doesn't dictate positioning, only layout, so this must be implemente
 
 The implementation of tooltip's pointer relies on `transform: translate` rather than using `calc`, since calc known issues on IE9. Both are unsupported on IE8.
 
-Tooltip's width is limited to **250px**. To use wider Tooltip you will need to ovride the max-width css
+Tooltip's width is limited to **250px**. To use wider Tooltip you will need to override the `max-width`.
 ___
 
 - [Tooltip](#Tooltip)
@@ -30,7 +30,7 @@ ___
 ```html
 <div class="cui__tooltip">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 ```
 
 <a name="Tooltip/small"></a>
@@ -39,7 +39,7 @@ ___
 ```html
 <div class="cui__tooltip">
   Lorem Ipsum
-</div> 
+</div>
 ```
 
 <a name="Tooltip/arrows"></a>
@@ -54,11 +54,11 @@ You can add arrows on 9 different positions.
 <hr />
 <div class="cui__tooltip top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top">
@@ -109,7 +109,7 @@ All the arrows above also work with small tooltips.
 ```html
 <div class="cui__tooltip top">
   Lorem Ipsum
-</div> 
+</div>
 ```
 
 <a name="Tooltip-border"></a>
@@ -121,7 +121,7 @@ All the arrows above also work with small tooltips.
 ```html
 <div class="cui__tooltip border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 ```
 
 <a name="Tooltip/small-border"></a>
@@ -130,7 +130,7 @@ All the arrows above also work with small tooltips.
 ```html
 <div class="cui__tooltip border">
   Lorem Ipsum
-</div> 
+</div>
 ```
 
 <a name="Tooltip/arrows-border"></a>
@@ -145,11 +145,11 @@ You can add arrows on 9 different positions.
 <hr />
 <div class="cui__tooltip top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top border">
@@ -200,5 +200,5 @@ All the arrows above also work with small tooltips.
 ```html
 <div class="cui__tooltip top border">
   Lorem Ipsum
-</div> 
+</div>
 ```

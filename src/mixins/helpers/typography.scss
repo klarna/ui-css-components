@@ -2,12 +2,11 @@
 // Adds all atributes to define the best typography as possible
 // ***
 @mixin typography($size, $weight) {
-    font-size: $size;
-
+    -webkit-font-smoothing: antialiased;
     font-family: $base-font-family;
+    font-size: $size;
     font-weight: map-get($font-weights, $weight);
     text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
 }
 
 @mixin font-size($size) {

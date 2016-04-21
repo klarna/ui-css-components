@@ -6,8 +6,6 @@ var reload = browserSync.reload;
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var svg2png = require('gulp-svg2png');
-var RevAll = require('gulp-rev-all');
-var AWS = require('gulp-awspublish');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var addsrc = require('gulp-add-src');
@@ -15,7 +13,6 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var data = require('gulp-data');
 var fetchDocs = require('./docs/support/fetchDocs');
-var scsslint = require('gulp-scss-lint');
 
 // ====================================================================
 // DEVELOPMENT
@@ -83,39 +80,6 @@ gulp.task('build:jade', function () {
         .pipe(data(fetchDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
-});
-
-gulp.task('publish', function () {
-    var revAll = new RevAll();
-    var awsConfig = {
-        accessKeyId: process.env.AWS_ACCESS_KEY,
-        secretAccessKey: process.env.AWS_SECRET_KEY,
-        region: "eu-west-1",
-        params: {
-            Bucket: "klarna-static-assets"
-        }
-    };
-    var publisher = AWS.create(awsConfig);
-    var headers = {'Cache-Control': 'max-age=315360000, no-transform, public'};
-
-    gulp.src(['dist/ui-toolkit.css'])
-        .pipe(minifyCss())
-        .pipe(addsrc('img/**/*'))
-        .pipe(revAll.revision())
-        .pipe(rename(function (path) {
-            path.dirname = 'ui-toolkit/' + path.dirname;
-        }))
-        .pipe(AWS.gzip())
-        .pipe(publisher.publish(headers, {createOnly: true}))
-        .pipe(publisher.cache())
-        .pipe(AWS.reporter());
-});
-
-gulp.task('lint', function() {
-  return gulp.src('src/**/*.scss')
-    .pipe(scsslint({
-      config: '.lint.yml',
-    }));
 });
 
 gulp.task('build', ['build:sass', 'build:jade', 'images']);

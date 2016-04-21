@@ -7,7 +7,8 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Getting started</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dialog" class="cui__link">Dialog</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Illustration" class="cui__link">Illustration</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Selector" class="cui__link">Selector</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Klarna UI CSS components v5.3.3</h1>
+<h2 class="cui__title--secondary">Getting started</h2>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
 <li>To explain the usage of all components;</li>
@@ -19,8 +20,7 @@ achieve a better user experience;</li>
 <p class="cui__paragraph--primary">Enjoy!</p>
 <h2 class="cui__title--secondary">Instructions</h2>
 <p class="cui__paragraph--primary">Press <span class="code">G</span> on any screen in this showroom to trigger the grid. Everything should
-be aligned with the grid. If something is not, please report it in the #front_end
-channel.</p>
+be aligned with the grid.</p>
 <h2 class="cui__title--secondary">Requirements</h2>
 <p class="cui__paragraph--primary">The ui-css-components depends on Open Sans font. You&#39;ll probably want to
 include it directly in your HTML, so you&#39;ll benefit from Google&#39;s CDN.</p>
@@ -42,6 +42,8 @@ breaks it in it&#39;s usage of some modifiers (e.g. &#39;big&#39;).</p>
 <p class="cui__paragraph--primary">The ui-css-components do not dictate how to build your layout. So things like
 widths, margins between elements (although all texts follow a grid) and
 responsiveness must be dealt in your project.</p>
+<h2 class="cui__title--secondary">License</h2>
+<p class="cui__paragraph--primary">See the <a class="cui__link" href="https://github.com/klarna/ui-css-components/blob/master/LICENSE">License</a> attached.</p>
 </div><div id="Baseline" class="docs__section"><h1 class="cui__title--primary">Baseline</h1>
 <p class="cui__paragraph--primary">The baseline is a root component that serves as the grid system for the Toolkit.
 A <span class="code">cui__baseline</span> class is provided for typography and grid reset, to be used in
@@ -467,7 +469,17 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
     $1.20
   &lt;/span&gt;
 &lt;/button&gt;</div></code></pre>
-    </div></div><div id="Dropdown" class="docs__section"><h1 class="cui__title--primary">Dropdown</h1>
+    </div></div><div id="Dialog" class="docs__section"><h1 class="cui__title--primary">Dialog</h1>
+<p class="cui__paragraph--primary">Dialogs are screens meant to be blocking and require an interaction for the user to proceed. There are several formats of them, but they more or less follow the same rules:</p>
+<ul class="summary">
+<li>On mobile, dialogs take up the full screen, and are designed to look like native applications and mimic the native interactions.</li>
+<li>On desktop, dialogs are formatted with more or less the same structure as in mobile, but the are positioned in the center of the screen with a black or white semi transparent overlay covering the rest of the screen so it&#39;s not possible to interact with whatever is in the background.</li>
+</ul>
+<p class="cui__paragraph--primary">Given their fullscreen nature, dialogs cannot be shown inline in the showroom.</p>
+<ul class="summary">
+<li><a class="cui__link" href="examples/base/dialog.html">Default dialog</a></li>
+</ul>
+</div><div id="Dropdown" class="docs__section"><h1 class="cui__title--primary">Dropdown</h1>
 <p class="cui__paragraph--primary">Dropdowns are family of components that present the user with multiple options. The basic version is just a styling over the HTML <span class="code">&lt;select&gt;</span> element, but more advanced versions include a combination of select with radio buttons, a radio button selector and a checkbox group.</p>
 <hr>
 <ul class="summary">
@@ -506,56 +518,56 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <div class="cui__fieldset">
   <div class="cui__dropdown--native top">
     <label class="cui__dropdown--native__label">
-      Name
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Åke</option>
-      <option>Sven</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter square">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native half center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native quarter center">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-left half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
   <div class="cui__dropdown--native bottom-right half">
     <label class="cui__dropdown--native__label">
-      Title
+      Dropdown
     </label>
     <select class="cui__dropdown--native__select">
-      <option>Dr</option>
-      <option>Eng</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
     </select>
   </div>
 </div>
@@ -841,7 +853,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -873,7 +885,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -908,7 +920,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -940,7 +952,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -975,7 +987,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1007,7 +1019,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1042,7 +1054,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1074,7 +1086,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1109,7 +1121,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--custom__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1141,7 +1153,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--custom__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1176,7 +1188,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1208,7 +1220,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--radio__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1243,7 +1255,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1275,7 +1287,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--radio__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1310,7 +1322,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1342,7 +1354,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--radio__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1377,7 +1389,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     <div class="cui__dropdown--radio__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -1409,7 +1421,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 
     &lt;div class=&quot;cui__dropdown--radio__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -2281,7 +2293,6 @@ demo.</p>
 <p class="cui__paragraph--primary">Note: the icon and the CSS for changing its color according to the state of the
 input (<span class="code">is-focused</span>, …) has to be added separately. Here we demonstrate taking the
 space for the icon with a background colored placeholder.</p>
-<p class="cui__paragraph--primary">All icons are available in <a class="cui__link" href="https://stash.int.klarna.net/projects/BOW/repos/ui-illustrations/browse">ui-illustrations</a></p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon">
@@ -2357,14 +2368,14 @@ space for the icon with a background colored placeholder.</p>
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
     </label>
-    <input type="password" class="cui__field--icon__input" value="email@exanple.com" />
+    <input class="cui__field--icon__input" value="email@exanple.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-error&quot;&gt;
     &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
     &lt;label class=&quot;cui__field--icon__label is-focused&quot;&gt;
         Are you sure the domain is example?
     &lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/icon/warning"></a><h3 class="cui__subtitle">Warning</h3>
 
@@ -2405,13 +2416,13 @@ space for the icon with a background colored placeholder.</p>
     <div class="example-block">
       <div class="example"><div class="cui__field is-centered">
     <label class="cui__field__label">
-        This is alligned to the center
+        This is aligned to the center
     </label>
     <input class="cui__field__input" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-centered&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
-        This is alligned to the center
+        This is aligned to the center
     &lt;/label&gt;
     &lt;input class=&quot;cui__field__input&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
@@ -2558,7 +2569,224 @@ space for the icon with a background colored placeholder.</p>
                 floatingLabel(input)
         })
 </script>
-</div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
+</div><div id="Illustration" class="docs__section"><h1 class="cui__title--primary">Illustration</h1>
+<p class="cui__paragraph--primary">Illustration refers to any embedded SVG illustration. They can be found in the <span class="code">ui-illustrations</span> repo, but the styling of them is done directly in CSS.</p>
+<hr>
+<ul class="summary">
+<li><a class="cui__link" href="#Illustration/big">Big</a></li>
+<li><a class="cui__link" href="#Illustration/button">Button</a><ul class="summary">
+<li><a class="cui__link" href="#Illustration/button/default">default</a></li>
+<li><a class="cui__link" href="#Illustration/button/gray">gray</a></li>
+<li><a class="cui__link" href="#Illustration/button/inverse">inverse</a></li>
+</ul>
+</li>
+</ul>
+<a name="Illustration/big"></a><h2 class="cui__title--secondary">Big</h2>
+
+    <div class="example-block">
+      <div class="example"><svg
+    class="cui__illustration big"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big gray"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big error"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big success"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<div class="cui__block blue">
+    <svg
+        class="cui__illustration big inverse"
+        width="100px"
+        height="100px"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg">
+      <g
+            class="cui__illustration__fill"
+            transform="translate(24.000000, 20.000000)">
+        <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+        <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+      </g>
+    </svg>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;svg
+    class=&quot;cui__illustration big&quot;
+    viewBox=&quot;0 0 100 100&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(24.000000, 20.000000)&quot;&gt;
+    &lt;path d=&quot;M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611&quot;&gt;&lt;/path&gt;
+    &lt;path d=&quot;M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;svg
+    class=&quot;cui__illustration big gray&quot;
+    viewBox=&quot;0 0 100 100&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(24.000000, 20.000000)&quot;&gt;
+    &lt;path d=&quot;M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611&quot;&gt;&lt;/path&gt;
+    &lt;path d=&quot;M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;svg
+    class=&quot;cui__illustration big error&quot;
+    viewBox=&quot;0 0 100 100&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(24.000000, 20.000000)&quot;&gt;
+    &lt;path d=&quot;M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611&quot;&gt;&lt;/path&gt;
+    &lt;path d=&quot;M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;svg
+    class=&quot;cui__illustration big success&quot;
+    viewBox=&quot;0 0 100 100&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(24.000000, 20.000000)&quot;&gt;
+    &lt;path d=&quot;M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611&quot;&gt;&lt;/path&gt;
+    &lt;path d=&quot;M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+    &lt;svg
+        class=&quot;cui__illustration big inverse&quot;
+        width=&quot;100px&quot;
+        height=&quot;100px&quot;
+        viewBox=&quot;0 0 100 100&quot;
+        xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;g
+            class=&quot;cui__illustration__fill&quot;
+            transform=&quot;translate(24.000000, 20.000000)&quot;&gt;
+        &lt;path d=&quot;M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z&quot;&gt;&lt;/path&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Illustration/button"></a><h2 class="cui__title--secondary">Button</h2>
+<a name="Illustration/button/default"></a><h3 class="cui__subtitle">Default (blue)</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+    class="cui__illustration button"
+    viewBox="0 0 25 25">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(5.000000, 7.000000)">
+      <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+      <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+      <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+  </g>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+    class=&quot;cui__illustration button&quot;
+    viewBox=&quot;0 0 25 25&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(5.000000, 7.000000)&quot;&gt;
+      &lt;path d=&quot;M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/button/gray"></a><h3 class="cui__subtitle">Gray</h3>
+
+    <div class="example-block">
+      <div class="example"><svg
+    class="cui__illustration button gray"
+    viewBox="0 0 25 25">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(5.000000, 7.000000)">
+      <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+      <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+      <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+  </g>
+</svg></div>
+      <pre><code class="lang-html"><div>&lt;svg
+    class=&quot;cui__illustration button gray&quot;
+    viewBox=&quot;0 0 25 25&quot;&gt;
+  &lt;g
+        class=&quot;cui__illustration__fill&quot;
+        transform=&quot;translate(5.000000, 7.000000)&quot;&gt;
+      &lt;path d=&quot;M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</div></code></pre>
+    </div><a name="Illustration/button/inverse"></a><h3 class="cui__subtitle">Inverse</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__block blue">
+    <p class="cui__paragraph--primary" style="padding: 20px;">
+        <svg
+            class="cui__illustration button inverse"
+            viewBox="0 0 25 25">
+          <g
+                class="cui__illustration__fill"
+                transform="translate(5.000000, 7.000000)">
+              <path d="M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2"></path>
+              <path d="M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5"></path>
+              <path d="M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10"></path>
+          </g>
+        </svg>
+    </p>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__block blue&quot;&gt;
+    &lt;p class=&quot;cui__paragraph--primary&quot; style=&quot;padding: 20px;&quot;&gt;
+        &lt;svg
+            class=&quot;cui__illustration button inverse&quot;
+            viewBox=&quot;0 0 25 25&quot;&gt;
+          &lt;g
+                class=&quot;cui__illustration__fill&quot;
+                transform=&quot;translate(5.000000, 7.000000)&quot;&gt;
+              &lt;path d=&quot;M1,2 L14,2 C14.553,2 15,1.553 15,1 C15,0.447 14.553,0 14,0 L1,0 C0.447,0 0,0.447 0,1 C0,1.553 0.447,2 1,2&quot;&gt;&lt;/path&gt;
+              &lt;path d=&quot;M14,5 L1,5 C0.447,5 0,5.447 0,6 C0,6.553 0.447,7 1,7 L14,7 C14.553,7 15,6.553 15,6 C15,5.447 14.553,5 14,5&quot;&gt;&lt;/path&gt;
+              &lt;path d=&quot;M14,10 L1,10 C0.447,10 0,10.447 0,11 C0,11.553 0.447,12 1,12 L14,12 C14.553,12 15,11.553 15,11 C15,10.447 14.553,10 14,10&quot;&gt;&lt;/path&gt;
+          &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
+    </div></div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
 
     <div class="example-block">
       <div class="example"><p class="cui__paragraph--primary">
@@ -2960,6 +3188,273 @@ block.</p>
     &lt;a class=&quot;cui__preview__footer__link&quot;&gt;Change address&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
+    </div></div><div id="Selector" class="docs__section"><h1 class="cui__title--primary">Selector</h1>
+<p class="cui__paragraph--primary">Selectors are lists of items optimized to be compatible with a mobile experience.</p>
+<hr>
+<ul class="summary">
+<li><a class="cui__link" href="#Selector/direct">Direct</a><ul class="summary">
+<li><a class="cui__link" href="#Selector/direct/simple">simple</a></li>
+<li><a class="cui__link" href="#Selector/direct/description">description</a></li>
+<li><a class="cui__link" href="#Selector/direct/title">title</a></li>
+</ul>
+</li>
+</ul>
+<a name="Selector/direct"></a><h2 class="cui__title--secondary">Direct</h2>
+<a name="Selector/direct/simple"></a><h3 class="cui__subtitle">Simple</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__selector--direct">
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 1
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M2,10 L7,16 L17,5"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 2
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 3
+    </div>
+
+    <div class="cui__selector--direct__value">
+      Current value
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__selector--direct&quot;&gt;
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 1
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M2,10 L7,16 L17,5&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 2
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 3
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__selector--direct__value&quot;&gt;
+      Current value
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Selector/direct/description"></a><h3 class="cui__subtitle">Description</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__selector--direct">
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Invoice
+    </div>
+
+    <p class="cui__selector--direct__description">
+      Klarna will send you an email with payment instructions.
+    </p>
+
+    <p class="cui__selector--direct__description">
+      <span class="cui__promo-label">One tap and you're done</span>
+    </p>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Credit or debit card
+    </div>
+
+    <p class="cui__selector--direct__description">
+      You'll have to enter your card details
+    </p>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__selector--direct&quot;&gt;
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Invoice
+    &lt;/div&gt;
+
+    &lt;p class=&quot;cui__selector--direct__description&quot;&gt;
+      Klarna will send you an email with payment instructions.
+    &lt;/p&gt;
+
+    &lt;p class=&quot;cui__selector--direct__description&quot;&gt;
+      &lt;span class=&quot;cui__promo-label&quot;&gt;One tap and you&#39;re done&lt;/span&gt;
+    &lt;/p&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Credit or debit card
+    &lt;/div&gt;
+
+    &lt;p class=&quot;cui__selector--direct__description&quot;&gt;
+      You&#39;ll have to enter your card details
+    &lt;/p&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Selector/direct/title"></a><h3 class="cui__subtitle">Title</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__selector--direct title">
+  <h2 class="cui__selector--direct__title">
+    Description
+  </h2>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 1
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 2
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 3
+    </div>
+
+    <div class="cui__selector--direct__value">
+      Current value
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20">
+      <path d="M8,6 l4,4 l-4,4"></path>
+    </svg>
+  </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__selector--direct title&quot;&gt;
+  &lt;h2 class=&quot;cui__selector--direct__title&quot;&gt;
+    Description
+  &lt;/h2&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 1
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 2
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;cui__selector--direct__item&quot;&gt;
+    &lt;div class=&quot;cui__selector--direct__label&quot;&gt;
+      Item 3
+    &lt;/div&gt;
+
+    &lt;div class=&quot;cui__selector--direct__value&quot;&gt;
+      Current value
+    &lt;/div&gt;
+
+    &lt;svg
+      class=&quot;cui__selector--direct__icon&quot;
+      viewBox=&quot;0 0 20 20&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
     </div></div><div id="Switch" class="docs__section"><h1 class="cui__title--primary">Switch</h1>
 <p class="cui__paragraph--primary">The Switch component are a set of checkbox-type components, both in list and standalone. In mobile the look and feel of the component is always the slider style switch, while in desktop there is the option of being either the same style as mobile or a more traditional checkbox mark.</p>
 <hr>
@@ -2969,6 +3464,7 @@ block.</p>
 <li><a class="cui__link" href="#Switch/single/right">right</a></li>
 <li><a class="cui__link" href="#Switch/single/pressed">pressed</a></li>
 <li><a class="cui__link" href="#Switch/single/checked">checked</a></li>
+<li><a class="cui__link" href="#Switch/single/error">error</a></li>
 <li><a class="cui__link" href="#Switch/single/checked and pressed">checked and pressed</a></li>
 <li><a class="cui__link" href="#Switch/single/checkbox">checkbox</a></li>
 <li><a class="cui__link" href="#Switch/single/disabled">disabled</a></li>
@@ -3014,6 +3510,15 @@ block.</p>
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-checked&quot;&gt;
   This is a toggle switch checked
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Switch/single/error"></a><h3 class="cui__subtitle">Error</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__switch is-error">
+  This is a toggle switch in an error state
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__switch is-error&quot;&gt;
+  This is a toggle switch in an error state
 &lt;/div&gt;</div></code></pre>
     </div><a name="Switch/single/pressed"></a><h3 class="cui__subtitle">Pressed</h3>
 
@@ -3071,7 +3576,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3103,7 +3608,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3138,7 +3643,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3170,7 +3675,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3205,7 +3710,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3237,7 +3742,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3272,7 +3777,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3304,7 +3809,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3339,7 +3844,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3371,7 +3876,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3406,7 +3911,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3438,7 +3943,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3473,7 +3978,7 @@ block.</p>
 
     <div class="cui__switch--multiple__option__description">
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      <div class="cui__label">promo</div>
+      <div class="cui__promo-label">promo</div>
     </div>
   </div>
 
@@ -3505,7 +4010,7 @@ block.</p>
 
     &lt;div class=&quot;cui__switch--multiple__option__description&quot;&gt;
       This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
-      &lt;div class=&quot;cui__label&quot;&gt;promo&lt;/div&gt;
+      &lt;div class=&quot;cui__promo-label&quot;&gt;promo&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -3644,14 +4149,14 @@ block.</p>
 
     <div class="example-block">
       <div class="example"><h2 class="cui__title--secondary condensed">
-  The User
+  Secondary condensed set
 </h2>
 
 <p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p></div>
       <pre><code class="lang-html"><div>&lt;h2 class=&quot;cui__title--secondary condensed&quot;&gt;
-  The User
+  Secondary condensed set
 &lt;/h2&gt;
 
 &lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
@@ -3875,7 +4380,7 @@ paragraphs or secondary titles.</p>
 <p class="cui__paragraph--primary">The tooltip element is to be used to show more information to a user either without occupying space on the page or by making the text more relevant visually.</p>
 <p class="cui__paragraph--primary">The tooltip doesn&#39;t dictate positioning, only layout, so this must be implemented on your side. For some use cases, CSS will do, but you may need to use JavaScript for that.</p>
 <p class="cui__paragraph--primary">The implementation of tooltip&#39;s pointer relies on <span class="code">transform: translate</span> rather than using <span class="code">calc</span>, since calc known issues on IE9. Both are unsupported on IE8.</p>
-<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to <strong>250px</strong>. To use wider Tooltip you will need to ovride the max-width css</p>
+<p class="cui__paragraph--primary">Tooltip&#39;s width is limited to <strong>250px</strong>. To use wider Tooltip you will need to override the <span class="code">max-width</span>.</p>
 <hr>
 <ul class="summary">
 <li><a class="cui__link" href="#Tooltip">Tooltip</a><ul class="summary">
@@ -3922,11 +4427,11 @@ paragraphs or secondary titles.</p>
 <hr />
 <div class="cui__tooltip top">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top">
@@ -3972,11 +4477,11 @@ paragraphs or secondary titles.</p>
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top-right&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip right-top&quot;&gt;
@@ -4055,11 +4560,11 @@ paragraphs or secondary titles.</p>
 <hr />
 <div class="cui__tooltip top border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 <hr />
 <div class="cui__tooltip top-right border">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-</div> 
+</div>
 
 <hr />
 <div class="cui__tooltip right-top border">
@@ -4105,11 +4610,11 @@ paragraphs or secondary titles.</p>
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip top-right border&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry
-&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;div class=&quot;cui__tooltip right-top border&quot;&gt;

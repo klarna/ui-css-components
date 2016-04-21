@@ -38,7 +38,7 @@
 
     &:hover {
         &::before {
-            border-color: $border-color-hover;
+            border-color: map-get($colors, blue-hover);
         }
 
         .is-disabled &,
