@@ -28,10 +28,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -47,10 +45,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -70,10 +66,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -104,10 +98,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1>
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -127,10 +119,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -158,10 +148,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -177,10 +165,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
@@ -200,10 +186,8 @@ ___
       stroke="#3c3c3e"
       fill="none"
       fill-rule="evenodd"
-      height="20"
       stroke-linecap="round"
-      stroke-width="1"
-      width="20">
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>

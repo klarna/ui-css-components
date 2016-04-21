@@ -3804,7 +3804,9 @@
   margin-top: -10px;
   position: absolute;
   right: -5px;
-  top: 50%; }
+  top: 50%;
+  width: 20px;
+  height: 20px; }
 
 .cui__selector--direct__description {
   -webkit-font-smoothing: antialiased;

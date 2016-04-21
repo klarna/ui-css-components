@@ -88,6 +88,8 @@
     position: absolute;
     right: ($grid * -1);
     top: 50%;
+    width: ($grid * 4);
+    height: ($grid * 4)
 }
 
 @mixin selector__description {
