@@ -3094,8 +3094,8 @@
   .is-hidden.cui__input, .is-hidden.cui__input--icon {
     display: none; }
   .cui__input:focus, .cui__input--icon:focus {
-    outline: none;
-    border-bottom-width: 2px; }
+    border-bottom-width: 2px;
+    outline: none; }
   .cui__input:hover, .cui__input--icon:hover {
     border-color: #66aae0;
     z-index: 10; }
