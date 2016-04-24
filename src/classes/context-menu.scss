@@ -19,7 +19,7 @@
         margin: ($grid * 1.9) 0;
     }
 
-    &__link {
+    &__item {
         @include paragraph--primary;
 
         display: block;

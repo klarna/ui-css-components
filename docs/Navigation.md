@@ -152,21 +152,26 @@ desktop component.
 ```html
 <ol class="cui__context-menu">
    <li>
-      <a href="#" class="cui__context-menu__link">
-        Item 1
+      <a href="#" class="cui__context-menu__item">
+        1 - Link
       </a>
    </li>
    <li>
-      <a href="#" class="cui__context-menu__link">
-        Item 2
+      <a href="#" class="cui__context-menu__item">
+        2 - Link
       </a>
    </li>
+   <li class="cui__context-menu__item">
+      <form>
+        3 - Form
+      </form>
+   </li>   
    <li class="cui__context-menu__separator"></li>
    <li>
-      <a href="#" class="cui__context-menu__link">
+      <a href="#" class="cui__context-menu__item">
         <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
         </div>
-        Item 3
+        4 - Link
       </a>
    </li>
 </ol>

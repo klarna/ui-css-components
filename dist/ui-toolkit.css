@@ -840,7 +840,7 @@
     border-top: 1px solid #e5e5e6;
     box-sizing: border-box;
     margin: 9.5px 0; }
-  .cui__context-menu__link {
+  .cui__context-menu__item {
     line-height: 25px;
     margin: 0;
     padding: 3px 0 17px;
@@ -854,11 +854,11 @@
     line-height: 40px;
     padding: 0 20px;
     text-decoration: none; }
-    .cui__context-menu__link.blue {
+    .cui__context-menu__item.blue {
       color: #0074c8; }
-    .cui__context-menu__link.white {
+    .cui__context-menu__item.white {
       color: #fff; }
-    .cui__context-menu__link:hover {
+    .cui__context-menu__item:hover {
       background: #f9f9f9; }
   .cui__context-menu__icon {
     display: inline-block;
@@ -3983,12 +3983,12 @@
   top: 17px; }
 
 .cui__selector--direct__icon {
+  height: 20px;
   margin-top: -10px;
   position: absolute;
   right: -5px;
   top: 50%;
-  width: 20px;
-  height: 20px; }
+  width: 20px; }
 
 .cui__selector--direct__description {
   -webkit-font-smoothing: antialiased;
