@@ -817,6 +817,7 @@
   left: -5px; }
 
 .cui__context-menu {
+  background: #fff;
   border-radius: 5px;
   border: 1px solid #cbcbcd;
   box-shadow: 0 0 0 3px rgba(203, 203, 205, 0.2);
