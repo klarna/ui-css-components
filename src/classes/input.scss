@@ -99,6 +99,10 @@ $stackable-border-width: $grid * .2;
         height: ($grid * 12);
     }
 
+    &.giant {
+        height: ($grid * 16);
+    }
+
     &.is-hidden {
         display: none;
     }
@@ -211,10 +215,22 @@ $stackable-border-width: $grid * .2;
         line-height: ($grid * 12);
     }
 
+    .giant & {
+        @include typography(($grid * 5.2), light);
+        line-height: ($grid * 16);
+        transform: translate(0, ($grid * 2));
+    }
+
     .big.is-filled &,
     .big.is-error &,
     .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
+    }
+
+    .giant.is-filled &,
+    .giant.is-error &,
+    .giant.is-warning & {
+        transform: translate(0, ($grid * -3.8));
     }
 
     .is-filled &,
@@ -275,7 +291,20 @@ $stackable-border-width: $grid * .2;
     }
 
     .big & {
-        height: ($grid * 12);
+        height: ($grid * 13);
+    }
+
+    .giant & {
+        @include typography(($grid * 5.2), light);
+        height: ($grid * 16);
+        top: ($grid * 2);
+    }
+
+    .is-filled &,
+    .is-error &,
+    .is-warning & {
+        height: ($grid * 9);
+        top: ($grid * 1.6);
     }
 
     .big.is-filled &,
@@ -285,11 +314,11 @@ $stackable-border-width: $grid * .2;
         top: ($grid * 2.2);
     }
 
-    .is-filled &,
-    .is-error &,
-    .is-warning & {
-        height: ($grid * 9);
-        top: ($grid * 1.6);
+    .giant.is-filled &,
+    .giant.is-error &,
+    .giant.is-warning & {
+        height: ($grid * 16);
+        top: ($grid * 2);
     }
 
     .is-disabled & {
@@ -329,6 +358,10 @@ $stackable-border-width: $grid * .2;
 .cui__input--icon__label,
 .cui__input--icon__input {
     padding-left: ($grid * 8.4);
+
+    .giant & {
+        padding-left: ($grid * 7);
+    }
 }
 
 .cui__input--icon__icon {
@@ -340,6 +373,12 @@ $stackable-border-width: $grid * .2;
 
     .big & {
         margin-top: ($grid * 4);
+    }
+
+    .giant & {
+        height: ($grid * 5);
+        margin: ($grid * 7.6) 0 0;
+        width: ($grid * 5);
     }
 }
 

@@ -34,6 +34,14 @@ ___
 	- [warning](#Input/big/warning)
 	- [warning focused](#Input/big/warning focused)
 	- [disabled](#Input/big/disabled)
+- [Giant](#Input/giant)
+	- [focused](#Input/giant/focused)
+	- [filled](#Input/giant/filled)
+	- [error](#Input/giant/error)
+	- [error focused](#Input/giant/error focused)
+	- [warning](#Input/giant/warning)
+	- [warning focused](#Input/giant/warning focused)
+	- [disabled](#Input/giant/disabled)
 - [Stacked](#Input/stacked)
 	- [side by side](#Input/stacked/side by side)
 	- [center](#Input/stacked/center)
@@ -295,6 +303,125 @@ Should be used when it's important to show the field to the user but she should 
 </div>
 
 <div class="cui__input big is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div>
+```
+
+<a name="Input/giant"></a>
+## Giant
+
+```html
+<div class="cui__input giant">
+	<label class="cui__input__label">
+		Please write your email address
+	</label>
+	<input class="cui__input__input" />
+</div>
+```
+
+<a name="Input/giant/focused"></a>
+### Focused
+
+```html
+<div class="cui__input giant is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div>
+```
+
+<a name="Input/giant/filling"></a>
+### Filling
+
+```html
+<div class="cui__input giant is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div>
+```
+
+<a name="Input/giant/filled"></a>
+### Filled
+
+```html
+<div class="cui__input giant is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div>
+```
+
+<a name="Input/giant/error"></a>
+### Error
+
+Should be used when there's a problem with the filled value that blocks the user to continue.
+
+```html
+<div class="cui__input giant is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div>
+```
+<a name="Input/giant/error focused"></a>
+### Error focused
+
+```html
+<div class="cui__input giant is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div>
+```
+
+<a name="Input/giant/warning"></a>
+### Warning
+
+Should be used when there's something that requires user's attention to the filled value, but doesn't block her to continue.
+
+```html
+<div class="cui__input giant is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div>
+```
+<a name="Input/giant/warning focused"></a>
+### Warning focused
+
+```html
+<div class="cui__input giant is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div>
+```
+
+<a name="Input/giant/disabled"></a>
+### Disabled
+
+Should be used when it's important to show the field to the user but she should not be able to edit it.
+
+```html
+<div class="cui__input giant is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input giant is-disabled right half">
     <label class="cui__input__label">
         Enter your email address
     </label>
@@ -574,7 +701,19 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__input--icon big">
-	<span class="cui__input--icon__icon cui__icon--lock"></span>
+	<span class="cui__input--icon__icon cui__input--icon__placeholder"></span>
+	<label class="cui__input--icon__label">
+		Enter your password
+	</label>
+	<input class="cui__input--icon__input" />
+</div>
+```
+<a name="Input/icon/ginat"></a>
+### Giant
+
+```html
+<div class="cui__input--icon giant">
+	<span class="cui__input--icon__icon cui__input--icon__placeholder"></span>
 	<label class="cui__input--icon__label">
 		Enter your password
 	</label>
