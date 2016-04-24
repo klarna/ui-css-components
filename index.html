@@ -2920,6 +2920,7 @@ space for the icon with a background colored placeholder.</p>
 <li><a class="cui__link" href="#Navigation/tab menu/non selectable">non selectable</a></li>
 </ul>
 </li>
+<li><a class="cui__link" href="#Navigation/context menu">Context menu</a></li>
 </ul>
 <a name="Navigation/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
@@ -3110,6 +3111,52 @@ selected bar using JS. You have to define widths, transition and position of the
      &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable3&quot;&gt;Three&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
+    </div><a name="Navigation/context menu"></a><h2 class="cui__title--secondary">Context menu</h2>
+<p class="cui__paragraph--primary">The context menu is to be used with direct interaction (aka links), usually as
+a user menu with things like preferences, logout and the like. It&#39;s mainly a
+desktop component.</p>
+
+    <div class="example-block">
+      <div class="example"><ol class="cui__context-menu">
+   <li>
+      <a href="#" class="cui__context-menu__link">
+        Item 1
+      </a>
+   </li>
+   <li>
+      <a href="#" class="cui__context-menu__link">
+        Item 2
+      </a>
+   </li>
+   <li class="cui__context-menu__separator"></li>
+   <li>
+      <a href="#" class="cui__context-menu__link">
+        <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+        </div>
+        Item 3
+      </a>
+   </li>
+</ol></div>
+      <pre><code class="lang-html"><div>&lt;ol class=&quot;cui__context-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__link&quot;&gt;
+        Item 1
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__link&quot;&gt;
+        Item 2
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;cui__context-menu__separator&quot;&gt;&lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__link&quot;&gt;
+        &lt;div class=&quot;cui__context-menu__icon&quot; style=&quot;outline: 1px dashed #ccc&quot;&gt;
+        &lt;/div&gt;
+        Item 3
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ol&gt;</div></code></pre>
     </div></div><div id="Preview" class="docs__section"><h1 class="cui__title--primary">Preview</h1>
 <p class="cui__paragraph--primary">Preview is a text component for previewing the already-filled content of a fieldset
 block.</p>
