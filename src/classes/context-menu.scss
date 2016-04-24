@@ -1,6 +1,7 @@
 @import '../mixins/index';
 
 .cui__context-menu {
+    background: map-get($colors, white);
     border-radius: $border-radius;
     border: ($grid * .2) solid map-get($colors, grey-lines);
     box-shadow: 0 0 0 3px rgba(map-get($colors, grey-lines), 0.2);
