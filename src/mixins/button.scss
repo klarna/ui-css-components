@@ -101,10 +101,10 @@
     float: right;
     margin-left: $grid * 4;
     padding-left: $grid * 4;
-    
+
     &:before {
-        content: ' ';
         border-left: 1px solid rgba($border-color, .1);
+        content: ' ';
         height: 20px;
         position: relative;
         right: 20px;

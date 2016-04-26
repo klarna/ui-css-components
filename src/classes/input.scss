@@ -23,8 +23,8 @@
     }
 
     &:focus {
+        border-bottom-width: ($grid * .4);
         outline: none;
-        border-bottom-width: ($grid * .4)
     }
 
     &:hover {
