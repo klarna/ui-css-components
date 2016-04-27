@@ -1,3 +1,7 @@
+# 5.4.3
+
+- Adds white likes and examples for white texts
+
 # 5.4.2
 
 - Adds `cui__context-menu`
