@@ -4079,6 +4079,7 @@ space for the icon with a background colored placeholder.</p>
 <li><a class="cui__link" href="#Navigation/tab menu/non selectable">non selectable</a></li>
 </ul>
 </li>
+<li><a class="cui__link" href="#Navigation/context menu">Context menu</a></li>
 </ul>
 <a name="Navigation/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
@@ -4269,6 +4270,62 @@ selected bar using JS. You have to define widths, transition and position of the
      &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable3&quot;&gt;Three&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
+    </div><a name="Navigation/context menu"></a><h2 class="cui__title--secondary">Context menu</h2>
+<p class="cui__paragraph--primary">The context menu is to be used with direct interaction (aka links), usually as
+a user menu with things like preferences, logout and the like. It&#39;s mainly a
+desktop component.</p>
+
+    <div class="example-block">
+      <div class="example"><ol class="cui__context-menu">
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        1 - Link
+      </a>
+   </li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        2 - Link
+      </a>
+   </li>
+   <li class="cui__context-menu__item">
+      <form>
+        3 - Form
+      </form>
+   </li>   
+   <li class="cui__context-menu__separator"></li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+        </div>
+        4 - Link
+      </a>
+   </li>
+</ol></div>
+      <pre><code class="lang-html"><div>&lt;ol class=&quot;cui__context-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        1 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        2 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;cui__context-menu__item&quot;&gt;
+      &lt;form&gt;
+        3 - Form
+      &lt;/form&gt;
+   &lt;/li&gt;   
+   &lt;li class=&quot;cui__context-menu__separator&quot;&gt;&lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        &lt;div class=&quot;cui__context-menu__icon&quot; style=&quot;outline: 1px dashed #ccc&quot;&gt;
+        &lt;/div&gt;
+        4 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ol&gt;</div></code></pre>
     </div></div><div id="Preview" class="docs__section"><h1 class="cui__title--primary">Preview</h1>
 <p class="cui__paragraph--primary">Preview is a text component for previewing the already-filled content of a fieldset
 block.</p>
@@ -4370,8 +4427,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M2,10 L7,16 L17,5"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -4382,8 +4444,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -4398,8 +4465,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -4411,8 +4483,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M2,10 L7,16 L17,5&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -4423,8 +4500,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -4439,8 +4521,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -4463,8 +4550,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1>
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -4479,8 +4571,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -4500,8 +4597,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -4516,8 +4618,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -4536,8 +4643,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -4548,8 +4660,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -4564,8 +4681,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -4581,8 +4703,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -4593,8 +4720,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -4609,8 +4741,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -5245,14 +5382,26 @@ block.</p>
 
 <h1 class="cui__title--primary blue">
   Primary title in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    Primary title in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary&quot;&gt;
   Primary title
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary blue&quot;&gt;
   Primary title in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary white&quot;&gt;
+    Primary title in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/primary/small"></a><h3 class="cui__subtitle">Small</h3>
 
     <div class="example-block">
@@ -5262,14 +5411,26 @@ block.</p>
 
 <h1 class="cui__title--primary small blue">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small  white">
+    Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary small&quot;&gt;
   Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary small blue&quot;&gt;
   Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary small  white&quot;&gt;
+    Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/primary/small and prominent"></a><h3 class="cui__subtitle">Small and prominent</h3>
 
     <div class="example-block">
@@ -5279,14 +5440,26 @@ block.</p>
 
 <h1 class="cui__title--primary small strong blue">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small strong white">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary small strong&quot;&gt;
   Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary small strong blue&quot;&gt;
   Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary small strong white&quot;&gt;
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/secondary"></a><h2 class="cui__title--secondary">Secondary</h2>
 
     <div class="example-block">
@@ -5296,14 +5469,26 @@ block.</p>
 
 <h2 class="cui__title--secondary blue">
   Secondary title in blue
-</h2></div>
+</h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary white">
+    Secondary title in white
+  </h2>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h2 class=&quot;cui__title--secondary&quot;&gt;
   Secondary title
 &lt;/h2&gt;
 
 &lt;h2 class=&quot;cui__title--secondary blue&quot;&gt;
   Secondary title in blue
-&lt;/h2&gt;</div></code></pre>
+&lt;/h2&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h2 class=&quot;cui__title--secondary white&quot;&gt;
+    Secondary title in white
+  &lt;/h2&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/secondary/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
 
     <div class="example-block">
@@ -5330,31 +5515,55 @@ block.</p>
 
 <h3 class="cui__subtitle blue">
   Subtitle in blue
-</h3></div>
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white">
+    Subtitle in white
+  </h3>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle&quot;&gt;
   Subtitle
 &lt;/h3&gt;
 
 &lt;h3 class=&quot;cui__subtitle blue&quot;&gt;
   Subtitle in blue
-&lt;/h3&gt;</div></code></pre>
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h3 class=&quot;cui__subtitle white&quot;&gt;
+    Subtitle in white
+  &lt;/h3&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/subtitle/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
 
     <div class="example-block">
       <div class="example"><h3 class="cui__subtitle condensed">
-  Subtitle
+  Subtitle condensed
 </h3>
 
 <h3 class="cui__subtitle blue condensed">
-  Subtitle in blue
-</h3></div>
+  Subtitle condensed in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white condensed">
+    Subtitle condensed in white
+  </h3>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle condensed&quot;&gt;
-  Subtitle
+  Subtitle condensed
 &lt;/h3&gt;
 
 &lt;h3 class=&quot;cui__subtitle blue condensed&quot;&gt;
-  Subtitle in blue
-&lt;/h3&gt;</div></code></pre>
+  Subtitle condensed in blue
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h3 class=&quot;cui__subtitle white condensed&quot;&gt;
+    Subtitle condensed in white
+  &lt;/h3&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph"></a><h2 class="cui__title--secondary">Paragraph</h2>
 <a name="Text/paragraph/primary"></a><h3 class="cui__subtitle">Primary</h3>
 
@@ -5364,13 +5573,29 @@ block.</p>
 </p>
 <p class="cui__paragraph--primary">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p></div>
+</p>
+<p class="cui__paragraph--primary blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 &lt;/p&gt;
 &lt;p class=&quot;cui__paragraph--primary&quot;&gt;
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-&lt;/p&gt;</div></code></pre>
+&lt;/p&gt;
+&lt;p class=&quot;cui__paragraph--primary blue&quot;&gt;
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+&lt;/p&gt;
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__paragraph--primary white&quot;&gt;
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph/primary/condensed"></a><h3 class="cui__subtitle">Primary condensed</h3>
 
     <div class="example-block">
@@ -5379,13 +5604,29 @@ block.</p>
 </p>
 <p class="cui__paragraph--primary condensed">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p></div>
+</p>
+<p class="cui__paragraph--primary blue condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white condensed">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 &lt;/p&gt;
 &lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-&lt;/p&gt;</div></code></pre>
+&lt;/p&gt;
+&lt;p class=&quot;cui__paragraph--primary blue condensed&quot;&gt;
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+&lt;/p&gt;
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__paragraph--primary white condensed&quot;&gt;
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph/secondary"></a><h3 class="cui__subtitle">Secondary</h3>
 
     <div class="example-block">
@@ -5439,15 +5680,33 @@ block.</p>
     </div><a name="Text/link"></a><h2 class="cui__title--secondary">Link</h2>
 
     <div class="example-block">
-      <div class="example"><p class="cui__paragraph--primary -condensed">
+      <div class="example"><p class="cui__paragraph--primary condensed">
   <a class="cui__link">
     Click here to go somewhere else
   </a>
+  <br />
+  <a class="cui__link black">
+    Click here to go somewhere else
+  </a>  
+  <div class="cui__block blue">  
+    <a class="cui__link white">
+      Click here to go somewhere else
+    </a>  
+  </div>  
 </a></div>
-      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary -condensed&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   &lt;a class=&quot;cui__link&quot;&gt;
     Click here to go somewhere else
   &lt;/a&gt;
+  &lt;br /&gt;
+  &lt;a class=&quot;cui__link black&quot;&gt;
+    Click here to go somewhere else
+  &lt;/a&gt;  
+  &lt;div class=&quot;cui__block blue&quot;&gt;  
+    &lt;a class=&quot;cui__link white&quot;&gt;
+      Click here to go somewhere else
+    &lt;/a&gt;  
+  &lt;/div&gt;  
 &lt;/a&gt;</div></code></pre>
     </div><a name="Text/text label"></a><h2 class="cui__title--secondary">Text Label</h2>
 <p class="cui__paragraph--primary">The text label is a small title to be used in combination with some other text styles, such as

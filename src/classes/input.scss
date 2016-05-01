@@ -83,7 +83,6 @@ $stackable-border-width: $grid * .2;
 }
 
 %cui__input {
-    /*@include stackable();*/
     @include stackable-input();
 
     border-bottom: ($grid * .2) solid $border-color;

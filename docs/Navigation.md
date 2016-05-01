@@ -9,6 +9,7 @@
   - [respect content width](#Navigation/tab menu/respect content width)
   - [inverted](#Navigation/tab menu/inverted)
   - [non selectable](#Navigation/tab menu/non selectable)
+- [Context menu](#Navigation/context menu)
 
 <a name="Navigation/examples"></a>
 ## Examples
@@ -140,4 +141,38 @@ selected bar using JS. You have to define widths, transition and position of the
      <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable3">Three</label>
   </div>
 </div>
+```
+<a name="Navigation/context menu"></a>
+## Context menu
+
+The context menu is to be used with direct interaction (aka links), usually as
+a user menu with things like preferences, logout and the like. It's mainly a
+desktop component.
+
+```html
+<ol class="cui__context-menu">
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        1 - Link
+      </a>
+   </li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        2 - Link
+      </a>
+   </li>
+   <li class="cui__context-menu__item">
+      <form>
+        3 - Form
+      </form>
+   </li>   
+   <li class="cui__context-menu__separator"></li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+        </div>
+        4 - Link
+      </a>
+   </li>
+</ol>
 ```
