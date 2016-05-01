@@ -1,4 +1,4 @@
-# 5.5.1
+# 5.5.0
 
 - Borderless input fields
 - Adds 'giant' input type
