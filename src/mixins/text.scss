@@ -1,6 +1,10 @@
 @mixin palette-colors ($default-color: map-get($colors, black)) {
     color: $default-color;
 
+    &.black {
+        color: map-get($colors, black);
+    }
+
     &.blue {
         color: map-get($colors, klarna-blue);
     }
