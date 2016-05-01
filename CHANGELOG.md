@@ -1,3 +1,8 @@
+# 5.5.1
+
+- Borderless input fields
+- Adds 'giant' input type
+
 # 5.4.3
 
 - Adds white likes and examples for white texts
