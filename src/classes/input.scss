@@ -71,7 +71,7 @@ $stackable-border-width: $grid * .2;
 
     &.right {
         @include respond-to-wide {
-          margin-left: 12.5px;
+            margin-left: 12.5px;
         }
 
         &::after {
