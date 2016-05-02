@@ -2772,6 +2772,36 @@
     -webkit-transition: all .2s ease;
     fill: #cbcbcd;
     transition: all .2s ease; }
+  .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #a9a9a9;
+    transition: all .2s ease; }
+  .cui__field--icon:hover .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #66aae0;
+    transition: all .2s ease; }
+  .cui__field--icon.is-focused .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #66aae0;
+    transition: all .2s ease; }
+  .cui__field--icon.is-error .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #f52727;
+    transition: all .2s ease; }
+  .cui__field--icon.is-warning .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #e6c88c;
+    transition: all .2s ease; }
+  .cui__field--icon.is-disabled .cui__field--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #cbcbcd;
+    transition: all .2s ease; }
 
 .cui__field--icon__placeholder {
   background: #cbcbcd;
@@ -3527,6 +3557,7 @@
 
 .cui__input--icon__icon {
   display: block;
+  fill-rule: evenodd;
   height: 20px;
   margin: 15px 0 0 12px;
   position: absolute;
@@ -3537,6 +3568,60 @@
     height: 25px;
     margin: 38px 0 0;
     width: 25px; }
+  .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #a9a9a9;
+    transition: all .2s ease; }
+  .cui__input--icon:hover .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #66aae0;
+    transition: all .2s ease; }
+  .cui__input--icon.is-focused .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #66aae0;
+    transition: all .2s ease; }
+  .cui__input--icon.is-error .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #f52727;
+    transition: all .2s ease; }
+  .cui__input--icon.is-warning .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #e6c88c;
+    transition: all .2s ease; }
+  .cui__input--icon.is-disabled .cui__input--icon__icon__fill {
+    -webkit-transition: all .2s ease;
+    fill: #cbcbcd;
+    transition: all .2s ease; }
+  .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #a9a9a9;
+    transition: all .2s ease; }
+  .cui__input--icon:hover .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #66aae0;
+    transition: all .2s ease; }
+  .cui__input--icon.is-focused .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #66aae0;
+    transition: all .2s ease; }
+  .cui__input--icon.is-error .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #f52727;
+    transition: all .2s ease; }
+  .cui__input--icon.is-warning .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #e6c88c;
+    transition: all .2s ease; }
+  .cui__input--icon.is-disabled .cui__input--icon__icon__stroke {
+    -webkit-transition: all .2s ease;
+    fill: none;
+    stroke: #cbcbcd;
+    transition: all .2s ease; }
 
 .cui__input--icon__placeholder {
   background: #cbcbcd;

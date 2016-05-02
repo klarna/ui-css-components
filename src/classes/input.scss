@@ -365,6 +365,7 @@ $stackable-border-width: $grid * .2;
 
 .cui__input--icon__icon {
     display: block;
+    fill-rule: evenodd;
     height: ($grid * 4);
     margin: ($grid * 3) 0 0 ($grid * 2.4);
     position: absolute;
@@ -378,6 +379,54 @@ $stackable-border-width: $grid * .2;
         height: ($grid * 5);
         margin: ($grid * 7.6) 0 0;
         width: ($grid * 5);
+    }
+
+    &__fill {
+        @include illustration__fill(map-get($colors, grey-icon));
+    }
+
+    .cui__input--icon:hover &__fill {
+        @include illustration__fill(map-get($colors, blue-hover));
+    }
+
+    .cui__input--icon.is-focused &__fill {
+        @include illustration__fill(map-get($colors, blue-hover));
+    }
+
+    .cui__input--icon.is-error &__fill {
+        @include illustration__fill(map-get($colors, red));
+    }
+
+    .cui__input--icon.is-warning &__fill {
+        @include illustration__fill(map-get($colors, warning-border));
+    }
+
+    .cui__input--icon.is-disabled &__fill {
+        @include illustration__fill(map-get($colors, grey-lines));
+    }
+
+    &__stroke {
+        @include illustration__stroke(map-get($colors, grey-icon));
+    }
+
+    .cui__input--icon:hover &__stroke {
+        @include illustration__stroke(map-get($colors, blue-hover));
+    }
+
+    .cui__input--icon.is-focused &__stroke {
+        @include illustration__stroke(map-get($colors, blue-hover));
+    }
+
+    .cui__input--icon.is-error &__stroke {
+        @include illustration__stroke(map-get($colors, red));
+    }
+
+    .cui__input--icon.is-warning &__stroke {
+        @include illustration__stroke(map-get($colors, warning-border));
+    }
+
+    .cui__input--icon.is-disabled &__stroke {
+        @include illustration__stroke(map-get($colors, grey-lines));
     }
 }
 
