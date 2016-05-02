@@ -1,4 +1,4 @@
-# Klarna UI CSS components v5.3.3
+# Klarna UI CSS components
 
 ## Getting started
 
