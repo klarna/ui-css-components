@@ -96,7 +96,6 @@
 
         .cui__field--icon__input {
             padding: 0 40px;
-
         }
 
         .cui__field__input,
@@ -257,6 +256,7 @@
 
 .cui__field--icon__icon {
     display: block;
+    fill-rule: evenodd;
     height: ($grid * 4);
     margin: ($grid * 3) 0 0 ($grid * 2.4);
     position: absolute;
@@ -264,6 +264,54 @@
 
     .big & {
         margin-top: ($grid * 4);
+    }
+
+    &__fill {
+        @include illustration__fill(map-get($colors, grey-icon));
+    }
+
+    .cui__field--icon:hover &__fill {
+        @include illustration__fill(map-get($colors, blue-hover));
+    }
+
+    .cui__field--icon.is-focused &__fill {
+        @include illustration__fill(map-get($colors, blue-hover));
+    }
+
+    .cui__field--icon.is-error &__fill {
+        @include illustration__fill(map-get($colors, red));
+    }
+
+    .cui__field--icon.is-warning &__fill {
+        @include illustration__fill(map-get($colors, warning-border));
+    }
+
+    .cui__field--icon.is-disabled &__fill {
+        @include illustration__fill(map-get($colors, grey-lines));
+    }
+
+    &__stroke {
+        @include illustration__stroke(map-get($colors, grey-icon));
+    }
+
+    .cui__field--icon:hover &__stroke {
+        @include illustration__stroke(map-get($colors, blue-hover));
+    }
+
+    .cui__field--icon.is-focused &__stroke {
+        @include illustration__stroke(map-get($colors, blue-hover));
+    }
+
+    .cui__field--icon.is-error &__stroke {
+        @include illustration__stroke(map-get($colors, red));
+    }
+
+    .cui__field--icon.is-warning &__stroke {
+        @include illustration__stroke(map-get($colors, warning-border));
+    }
+
+    .cui__field--icon.is-disabled &__stroke {
+        @include illustration__stroke(map-get($colors, grey-lines));
     }
 }
 
