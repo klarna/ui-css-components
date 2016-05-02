@@ -666,7 +666,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label">
 		Enter your postal code
 	</label>
@@ -679,7 +685,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon big">
-	<span class="cui__field--icon__icon cui__icon--lock"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label">
 		Enter your password
 	</label>
@@ -692,7 +704,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-focused">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder is-focused"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label is-focused">
 		Enter your password
 	</label>
@@ -705,7 +723,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-filled is-focused">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label">
 		Please write your email address
 	</label>
@@ -718,7 +742,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-error">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
@@ -731,7 +761,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-warning">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label is-focused">
 		Are you sure the domain is example?
 	</label>
@@ -744,7 +780,13 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-disabled">
-	<span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+	<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+	</svg>
+
 	<label class="cui__field--icon__label">
 		Are you sure the domain is example?
 	</label>
@@ -793,11 +835,16 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field--icon is-centered is-filled is-focused">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
-    <label class="cui__field--icon__label">
-        ZIP Code
+		<svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+	    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+	        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+	        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+	    </g>
+		</svg>
+    <label class="cui__field__label">
+      ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div>
 ```
 
@@ -806,10 +853,10 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field big is-centered is-filled is-focused">
-    <label class="cui__field--icon__label">
+    <label class="cui__field__label">
         ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div>
 ```
 
@@ -818,10 +865,10 @@ space for the icon with a background colored placeholder.
 
 ```html
 <div class="cui__field is-loading is-centered is-filled is-focused">
-    <label class="cui__field--icon__label">
+    <label class="cui__field__label">
         ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div>
 ```
 
@@ -855,7 +902,7 @@ space for the icon with a background colored placeholder.
 ```html
 <div class="cui__field big is-centered is-loading">
     <label class="cui__field__label">
-        ZIP Code
+      ZIP Code
     </label>
     <input class="cui__field__input" value="94027" />
 </div>
