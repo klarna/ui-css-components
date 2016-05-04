@@ -24,9 +24,9 @@
     }
 
     &.big {
+        height: ($grid * 12);
         letter-spacing: ($grid * .01);
         line-height: ($grid * 12) - ($grid * .4);
-        height: ($grid * 12);
         padding: 0 ($grid * 14);
         text-transform: uppercase;
     }
@@ -124,10 +124,10 @@
     display: inline-block;
     font-size: 0;
     height: ($grid * 4);
-    vertical-align: text-bottom;
-    width: ($grid * 4);
     position: relative;
     top: 1px;
+    vertical-align: text-bottom;
+    width: ($grid * 4);
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8, 9)) {
