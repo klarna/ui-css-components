@@ -31,11 +31,6 @@
             @include typography(($grid * 4.4), regular);
         }
     }
-
-    &:first-child {
-        // TODO: But will it blend with the grid?
-        padding-top: 0;
-    }
 }
 
 @mixin title--secondary {

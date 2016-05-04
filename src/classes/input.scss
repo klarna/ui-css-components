@@ -89,17 +89,16 @@ $stackable-border-width: $grid * .2;
     box-sizing: border-box;
     clear: both;
     display: block;
-    height: ($grid * 10.2);
-    margin-bottom: ($grid * -.2);
+    height: ($grid * 10);
     position: relative;
     text-align: left;
 
     &.big {
-        height: ($grid * 12.2);
+        height: ($grid * 12);
     }
 
     &.giant {
-        height: ($grid * 16.2);
+        height: ($grid * 16);
     }
 
     &.is-hidden {
@@ -211,7 +210,8 @@ $stackable-border-width: $grid * .2;
     width: calc(100% - #{($grid * 8)});
 
     .big & {
-        line-height: ($grid * 12);
+        height: ($grid * 12);
+        line-height: ($grid * 13);
     }
 
     .giant & {

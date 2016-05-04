@@ -3268,8 +3268,7 @@
   box-sizing: border-box;
   clear: both;
   display: block;
-  height: 51px;
-  margin-bottom: -1px;
+  height: 50px;
   position: relative;
   text-align: left; }
   @media screen and (min-width: 569px) {
@@ -3380,9 +3379,9 @@
     content: '';
     display: block; }
   .big.cui__input, .big.cui__input--icon {
-    height: 61px; }
+    height: 60px; }
   .giant.cui__input, .giant.cui__input--icon {
-    height: 81px; }
+    height: 80px; }
   .is-hidden.cui__input, .is-hidden.cui__input--icon {
     display: none; }
   .cui__input:focus, .cui__input--icon:focus {
@@ -3476,7 +3475,8 @@
   white-space: nowrap;
   width: calc(100% - 40px); }
   .big .cui__input__label, .big .cui__input--icon__label {
-    line-height: 60px; }
+    height: 60px;
+    line-height: 65px; }
   .giant .cui__input__label, .giant .cui__input--icon__label {
     -webkit-font-smoothing: antialiased;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -6645,8 +6645,6 @@
       font-size: 22px;
       font-weight: 400;
       text-rendering: geometricPrecision; }
-  .cui__title--primary:first-child {
-    padding-top: 0; }
   .cui__title--primary + .cui__subtitle {
     margin-top: -10px; }
 
