@@ -34,10 +34,10 @@
         border: ($grid * 2) solid transparent;
         border-radius: 100%;
         cursor: pointer;
-        height: ($grid * 5);
+        height: ($grid * 4);
         margin: ($grid * -2);
         transition: all .3s ease;
-        width: ($grid * 5);
+        width: ($grid * 4);
 
         &:hover {
             @include illustration(map-get($colors, klarna-blue-hover));

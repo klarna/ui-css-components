@@ -1076,12 +1076,12 @@
 .cui__dialog__icon {
   display: block;
   position: absolute;
-  right: 15px;
-  top: 15px; }
+  right: 20px;
+  top: 20px; }
   @media screen and (min-width: 321px) {
     .cui__dialog__icon {
-      right: 25px;
-      top: 25px; } }
+      right: 30px;
+      top: 30px; } }
 
 .cui__dialog__content {
   display: table-row; }
@@ -1089,6 +1089,8 @@
     display: table-cell;
     height: 100%;
     vertical-align: middle; }
+    .cui__dialog__content--inner > .cui__title--primary:first-child {
+      padding-top: 3px; }
   @media screen and (min-width: 569px) {
     .cui__dialog__content {
       display: block; }
@@ -3064,10 +3066,10 @@
     border: 10px solid transparent;
     border-radius: 100%;
     cursor: pointer;
-    height: 25px;
+    height: 20px;
     margin: -10px;
     transition: all .3s ease;
-    width: 25px; }
+    width: 20px; }
     .cui__illustration.button .cui__illustration__fill {
       -webkit-transition: all .2s ease;
       fill: #0074c8;

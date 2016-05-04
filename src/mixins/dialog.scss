@@ -36,12 +36,12 @@
 @mixin dialog__icon {
     display: block;
     position: absolute;
-    right: ($grid * 3);
-    top: ($grid * 3);
+    right: ($grid * 4);
+    top: ($grid * 4);
 
     @include respond-to-wide ($mobile-narrow-max-width) {
-        right: ($grid * 5);
-        top: ($grid * 5);
+        right: ($grid * 6);
+        top: ($grid * 6);
     }
 }
 
@@ -52,6 +52,10 @@
         display: table-cell;
         height: 100%;
         vertical-align: middle;
+
+        & > .cui__title--primary:first-child {
+            padding-top: ($grid * .6);
+        }
     }
 
     @include respond-to-wide {
