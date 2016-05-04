@@ -26,6 +26,7 @@
     &.big {
         letter-spacing: ($grid * .01);
         line-height: ($grid * 12) - ($grid * .4);
+        height: ($grid * 12);
         padding: 0 ($grid * 14);
         text-transform: uppercase;
     }
