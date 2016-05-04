@@ -2552,7 +2552,7 @@
     .bottom-right.non-responsive.cui__field, .bottom-right.non-responsive.cui__field--icon {
       border-bottom-left-radius: 0; }
   .big.cui__field, .big.cui__field--icon {
-    height: 60px; }
+    height: 61px; }
   .is-hidden.cui__field, .is-hidden.cui__field--icon {
     display: none; }
   .cui__field:focus, .cui__field--icon:focus {
@@ -3338,9 +3338,9 @@
     content: '';
     display: block; }
   .big.cui__input, .big.cui__input--icon {
-    height: 60px; }
+    height: 61px; }
   .giant.cui__input, .giant.cui__input--icon {
-    height: 80px; }
+    height: 81px; }
   .is-hidden.cui__input, .is-hidden.cui__input--icon {
     display: none; }
   .cui__input:focus, .cui__input--icon:focus {

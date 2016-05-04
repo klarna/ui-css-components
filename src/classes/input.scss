@@ -95,11 +95,11 @@ $stackable-border-width: $grid * .2;
     text-align: left;
 
     &.big {
-        height: ($grid * 12);
+        height: ($grid * 12.2);
     }
 
     &.giant {
-        height: ($grid * 16);
+        height: ($grid * 16.2);
     }
 
     &.is-hidden {
