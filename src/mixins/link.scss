@@ -1,5 +1,6 @@
 @mixin link {
-    color: map-get($colors, klarna-blue);
+    @include palette-colors(map-get($colors, klarna-blue));
+
     cursor: pointer;
     -webkit-transition: all .2s ease;
     text-decoration: none;
@@ -7,5 +8,13 @@
 
     &:hover {
         color: #005694;
+
+        &.black {
+            color: map-get($colors, black);
+        }
+
+        &.white {
+            color: map-get($colors, white);
+        }
     }
 }

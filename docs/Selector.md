@@ -24,8 +24,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M2,10 L7,16 L17,5"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -36,8 +41,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -52,8 +62,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div>
@@ -79,8 +94,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1>
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -95,8 +115,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div>
@@ -119,8 +144,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -131,8 +161,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -147,8 +182,13 @@ ___
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div>

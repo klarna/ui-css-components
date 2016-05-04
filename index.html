@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!-->
 <html class="cui__baseline" lang="en">
 <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/hljs.css"><!--[if IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><![endif]-->
-<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dialog" class="cui__link">Dialog</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Illustration" class="cui__link">Illustration</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Selector" class="cui__link">Selector</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Klarna UI CSS components v5.3.3</h1>
+<!--[if gt IE 8]><!--><script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script><script src="docs/support/fx.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script><!--<![endif]--></head><body><div class="docs__nav"><ul id="menu"><li class="cui__paragraph--primary condensed"><a href="#Getting started" class="cui__link">Getting started</a></li><li class="cui__paragraph--primary condensed"><a href="#Baseline" class="cui__link">Baseline</a></li><li class="cui__paragraph--primary condensed"><a href="#Block" class="cui__link">Block</a></li><li class="cui__paragraph--primary condensed"><a href="#Button" class="cui__link">Button</a></li><li class="cui__paragraph--primary condensed"><a href="#Dialog" class="cui__link">Dialog</a></li><li class="cui__paragraph--primary condensed"><a href="#Dropdown" class="cui__link">Dropdown</a></li><li class="cui__paragraph--primary condensed"><a href="#Field" class="cui__link">Field</a></li><li class="cui__paragraph--primary condensed"><a href="#Illustration" class="cui__link">Illustration</a></li><li class="cui__paragraph--primary condensed"><a href="#Input" class="cui__link">Input</a></li><li class="cui__paragraph--primary condensed"><a href="#Label" class="cui__link">Label</a></li><li class="cui__paragraph--primary condensed"><a href="#Loader" class="cui__link">Loader</a></li><li class="cui__paragraph--primary condensed"><a href="#Navigation" class="cui__link">Navigation</a></li><li class="cui__paragraph--primary condensed"><a href="#Preview" class="cui__link">Preview</a></li><li class="cui__paragraph--primary condensed"><a href="#Selector" class="cui__link">Selector</a></li><li class="cui__paragraph--primary condensed"><a href="#Switch" class="cui__link">Switch</a></li><li class="cui__paragraph--primary condensed"><a href="#Text" class="cui__link">Text</a></li><li class="cui__paragraph--primary condensed"><a href="#Tooltip" class="cui__link">Tooltip</a></li></ul></div><div class="docs__main cui__baseline__content--main"><div id="Getting started" class="docs__section"><h1 class="cui__title--primary">Klarna UI CSS components</h1>
 <h2 class="cui__title--secondary">Getting started</h2>
 <p class="cui__paragraph--primary">Welcome to the ui-css-components guide. The goals of this document are:</p>
 <ul class="summary">
@@ -1448,6 +1448,11 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
     </div></div><div id="Field" class="docs__section"><h1 class="cui__title--primary">Field</h1>
+<div style="background: #eea; padding: 20px">
+    The Fields are deprecated. New projects will be designed using Input instead.
+</div>
+
+
 <p class="cui__paragraph--primary">The field is a molecular element. It consists of a wrapper with the <span class="code">cui__field</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__field__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__field__input</span> added to an <span class="code">input</span> tag.</p>
 <p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a class="cui__link" href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a class="cui__link" href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
 <p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
@@ -1941,7 +1946,7 @@ demo.</p>
 <a name="Field/stacked/side by side"></a><h3 class="cui__subtitle">Side by side</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field left half">
         <label class="cui__field__label">
             Name
@@ -1955,7 +1960,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field left half&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Name
@@ -1972,7 +1977,7 @@ demo.</p>
     </div><a name="Field/stacked/top part"></a><h3 class="cui__subtitle">Top part</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             Name
@@ -1986,7 +1991,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field top-left half&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Name
@@ -2003,7 +2008,7 @@ demo.</p>
     </div><a name="Field/stacked/top only"></a><h3 class="cui__subtitle">Top only</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field top">
         <label class="cui__field__label">
             Email address
@@ -2011,7 +2016,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field top&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Email address
@@ -2022,7 +2027,7 @@ demo.</p>
     </div><a name="Field/stacked/bottom part"></a><h3 class="cui__subtitle">Bottom part</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field bottom-left half">
         <label class="cui__field__label">
             City
@@ -2036,7 +2041,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field bottom-left half&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             City
@@ -2053,7 +2058,7 @@ demo.</p>
     </div><a name="Field/stacked/bottom only"></a><h3 class="cui__subtitle">Bottom only</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field bottom">
         <label class="cui__field__label">
             Password
@@ -2061,7 +2066,7 @@ demo.</p>
         <input type="password" class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field bottom&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Password
@@ -2072,7 +2077,7 @@ demo.</p>
     </div><a name="Field/stacked/square"></a><h3 class="cui__subtitle">Square</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             City
@@ -2092,7 +2097,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field top-left half&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             City
@@ -2115,7 +2120,7 @@ demo.</p>
     </div><a name="Field/stacked/half and quarter sizes"></a><h3 class="cui__subtitle">Half and Quarter sizes</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field top-left half">
         <label class="cui__field__label">
             City
@@ -2135,7 +2140,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field top-left half&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             City
@@ -2158,7 +2163,7 @@ demo.</p>
     </div><a name="Field/stacked/three quarters"></a><h3 class="cui__subtitle">Three quarters</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field left quarter">
         <label class="cui__field__label">
             City
@@ -2172,7 +2177,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field left quarter&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             City
@@ -2189,7 +2194,7 @@ demo.</p>
     </div><a name="Field/stacked/twenty - forty"></a><h3 class="cui__subtitle">Twenty - Forty</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field top-left twenty">
         <label class="cui__field__label">
             Title
@@ -2209,7 +2214,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field top-left twenty&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Title
@@ -2232,7 +2237,7 @@ demo.</p>
     </div><a name="Field/stacked/twenty - eighty"></a><h3 class="cui__subtitle">Twenty - Eighty</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field left twenty">
         <label class="cui__field__label">
             Title
@@ -2246,7 +2251,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field left twenty&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Title
@@ -2263,7 +2268,7 @@ demo.</p>
     </div><a name="Field/stacked/one third - two thirds"></a><h3 class="cui__subtitle">One third - Two thirds</h3>
 
     <div class="example-block">
-      <div class="example"><div class="cui__fielset">
+      <div class="example"><div class="cui__fieldset">
     <div class="cui__field left third">
         <label class="cui__field__label">
             Title
@@ -2277,7 +2282,7 @@ demo.</p>
         <input class="cui__field__input" />
     </div>
 </div></div>
-      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fielset&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
     &lt;div class=&quot;cui__field left third&quot;&gt;
         &lt;label class=&quot;cui__field__label&quot;&gt;
             Title
@@ -2292,20 +2297,60 @@ demo.</p>
     &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/icon"></a><h2 class="cui__title--secondary">With Icon</h2>
-<p class="cui__paragraph--primary">Note: the icon and the CSS for changing its color according to the state of the
-input (<span class="code">is-focused</span>, …) has to be added separately. Here we demonstrate taking the
-space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label">
         Enter your postal code
     </label>
     <input class="cui__field--icon__input" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+        Enter your postal code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__field--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Field/icon/stroke"></a><h3 class="cui__subtitle">Icon with stroke style</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__field--icon">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g transform="translate(2, 2)" class="cui__field--icon__icon__stroke">
+      <circle cx="8" cy="8" r="7.5"></circle>
+      <path d="M6.5,11 L4.5,9" stroke-linecap="round"></path>
+      <path d="M11.5,11 L6.5,6" stroke-linecap="round" transform="translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) "></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon&quot;&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g transform=&quot;translate(2, 2)&quot; class=&quot;cui__field--icon__icon__stroke&quot;&gt;
+      &lt;circle cx=&quot;8&quot; cy=&quot;8&quot; r=&quot;7.5&quot;&gt;&lt;/circle&gt;
+      &lt;path d=&quot;M6.5,11 L4.5,9&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M11.5,11 L6.5,6&quot; stroke-linecap=&quot;round&quot; transform=&quot;translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) &quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label&quot;&gt;
         Enter your postal code
     &lt;/label&gt;
@@ -2315,14 +2360,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon big">
-    <span class="cui__field--icon__icon cui__icon--lock"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label">
         Enter your password
     </label>
     <input class="cui__field--icon__input" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon big&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__icon--lock&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label&quot;&gt;
         Enter your password
     &lt;/label&gt;
@@ -2332,14 +2389,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-focused">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder is-focused"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label is-focused">
         Enter your password
     </label>
     <input class="cui__field--icon__input" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-focused&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder is-focused&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label is-focused&quot;&gt;
         Enter your password
     &lt;/label&gt;
@@ -2349,14 +2418,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-filled is-focused">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label">
         Please write your email address
     </label>
     <input class="cui__field--icon__input" value="email@example.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-filled is-focused&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label&quot;&gt;
         Please write your email address
     &lt;/label&gt;
@@ -2366,14 +2447,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-error">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
     </label>
     <input class="cui__field--icon__input" value="email@exanple.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-error&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label is-focused&quot;&gt;
         Are you sure the domain is example?
     &lt;/label&gt;
@@ -2383,14 +2476,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-warning">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label is-focused">
         Are you sure the domain is example?
     </label>
     <input class="cui__field--icon__input" value="email@exanple.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-warning&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label is-focused&quot;&gt;
         Are you sure the domain is example?
     &lt;/label&gt;
@@ -2400,14 +2505,26 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-disabled">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
     <label class="cui__field--icon__label">
         Are you sure the domain is example?
     </label>
     <input disabled class="cui__field--icon__input" value="email@exanple.com" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-disabled&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
+    &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+        &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
     &lt;label class=&quot;cui__field--icon__label&quot;&gt;
         Are you sure the domain is example?
     &lt;/label&gt;
@@ -2462,48 +2579,58 @@ space for the icon with a background colored placeholder.</p>
 
     <div class="example-block">
       <div class="example"><div class="cui__field--icon is-centered is-filled is-focused">
-    <span class="cui__field--icon__icon cui__field--icon__placeholder"></span>
-    <label class="cui__field--icon__label">
-        ZIP Code
+        <svg class="cui__field--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+        </svg>
+    <label class="cui__field__label">
+      ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field--icon is-centered is-filled is-focused&quot;&gt;
-    &lt;span class=&quot;cui__field--icon__icon cui__field--icon__placeholder&quot;&gt;&lt;/span&gt;
-    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
-        ZIP Code
+        &lt;svg class=&quot;cui__field--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__field--icon__icon__fill&quot; transform=&quot;translate(2.000000, 4.000000)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
+      ZIP Code
     &lt;/label&gt;
-    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/centered/big"></a><h3 class="cui__subtitle">Big</h3>
 
     <div class="example-block">
       <div class="example"><div class="cui__field big is-centered is-filled is-focused">
-    <label class="cui__field--icon__label">
+    <label class="cui__field__label">
         ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-centered is-filled is-focused&quot;&gt;
-    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
         ZIP Code
     &lt;/label&gt;
-    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/centered/loading"></a><h3 class="cui__subtitle">Loading</h3>
 
     <div class="example-block">
       <div class="example"><div class="cui__field is-loading is-centered is-filled is-focused">
-    <label class="cui__field--icon__label">
+    <label class="cui__field__label">
         ZIP Code
     </label>
-    <input class="cui__field--icon__input" value="94027" />
+    <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field is-loading is-centered is-filled is-focused&quot;&gt;
-    &lt;label class=&quot;cui__field--icon__label&quot;&gt;
+    &lt;label class=&quot;cui__field__label&quot;&gt;
         ZIP Code
     &lt;/label&gt;
-    &lt;input class=&quot;cui__field--icon__input&quot; value=&quot;94027&quot; /&gt;
+    &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
     </div><a name="Field/loading"></a><h2 class="cui__title--secondary">Loading</h2>
 
@@ -2540,13 +2667,13 @@ space for the icon with a background colored placeholder.</p>
     <div class="example-block">
       <div class="example"><div class="cui__field big is-centered is-loading">
     <label class="cui__field__label">
-        ZIP Code
+      ZIP Code
     </label>
     <input class="cui__field__input" value="94027" />
 </div></div>
       <pre><code class="lang-html"><div>&lt;div class=&quot;cui__field big is-centered is-loading&quot;&gt;
     &lt;label class=&quot;cui__field__label&quot;&gt;
-        ZIP Code
+      ZIP Code
     &lt;/label&gt;
     &lt;input class=&quot;cui__field__input&quot; value=&quot;94027&quot; /&gt;
 &lt;/div&gt;</div></code></pre>
@@ -2788,7 +2915,1298 @@ space for the icon with a background colored placeholder.</p>
         &lt;/svg&gt;
     &lt;/p&gt;
 &lt;/div&gt;</div></code></pre>
-    </div></div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
+    </div></div><div id="Input" class="docs__section"><h1 class="cui__title--primary">Input</h1>
+<p class="cui__paragraph--primary">The input is a molecular element. It consists of a wrapper with the <span class="code">cui__input</span> block, which should be added to a <span class="code">div</span> tag, containing a <span class="code">cui__input__label</span> added to a <span class="code">label</span> tag and <span class="code">cui__input__input</span> added to an <span class="code">input</span> tag.</p>
+<p class="cui__paragraph--primary">The reasons to use a label as a placeholder are 1) makes it easier to transition from the placeholder to the floarint label, because it&#39;s the same element 2) there&#39;s an issue that some browsers don&#39;t respect input padding 3) that&#39;s the standard way many libraries that have floating label components implement it, like <a class="cui__link" href="http://material-ui.com/#/components/text-fields">material-ui</a> and <a class="cui__link" href="https://elements.polymer-project.org/elements/paper-input?view=demo:demo/index.html">polymer</a> and 4) it eliminates the need for fake placeholders on older browsers.</p>
+<p class="cui__paragraph--primary">The trade-off is that we can&#39;t rely on <span class="code">focus</span> and <span class="code">active</span> pseudo-selectors for the input, so we need to programatically add classes to the wrapper.</p>
+<h2 class="cui__title--secondary">Floating label</h2>
+<p class="cui__paragraph--primary">When inputs are blank, their labels will behave as placeholders. When the input is being filled, the label should move to the top.</p>
+<h2 class="cui__title--secondary">Stackable</h2>
+<p class="cui__paragraph--primary">When inputs are <em>stacked</em> together, they should be wrapped in a <span class="code">cui__fieldset</span> component, which provides the proper spacings before and after and solves the issues related to floats.
+<span class="code">cui__input</span>s can be stacked together with <span class="code">cui__dropdown--native</span>.</p>
+<hr>
+<ul class="summary">
+<li><a class="cui__link" href="#Input/examples">Examples</a></li>
+<li><a class="cui__link" href="#Input/regular">Regular</a><ul class="summary">
+<li><a class="cui__link" href="#Input/regular/focused">focused</a></li>
+<li><a class="cui__link" href="#Input/regular/filled">filled</a></li>
+<li><a class="cui__link" href="#Input/regular/error">error</a></li>
+<li><a class="cui__link" href="#Input/regular/error focused">error focused</a></li>
+<li><a class="cui__link" href="#Input/regular/warning">warning</a></li>
+<li><a class="cui__link" href="#Input/regular/warning focused">warning focused</a></li>
+<li><a class="cui__link" href="#Input/regular/disabled">disabled</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/big">Big</a><ul class="summary">
+<li><a class="cui__link" href="#Input/big/focused">focused</a></li>
+<li><a class="cui__link" href="#Input/big/filled">filled</a></li>
+<li><a class="cui__link" href="#Input/big/error">error</a></li>
+<li><a class="cui__link" href="#Input/big/error focused">error focused</a></li>
+<li><a class="cui__link" href="#Input/big/warning">warning</a></li>
+<li><a class="cui__link" href="#Input/big/warning focused">warning focused</a></li>
+<li><a class="cui__link" href="#Input/big/disabled">disabled</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/giant">Giant</a><ul class="summary">
+<li><a class="cui__link" href="#Input/giant/focused">focused</a></li>
+<li><a class="cui__link" href="#Input/giant/filled">filled</a></li>
+<li><a class="cui__link" href="#Input/giant/error">error</a></li>
+<li><a class="cui__link" href="#Input/giant/error focused">error focused</a></li>
+<li><a class="cui__link" href="#Input/giant/warning">warning</a></li>
+<li><a class="cui__link" href="#Input/giant/warning focused">warning focused</a></li>
+<li><a class="cui__link" href="#Input/giant/disabled">disabled</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/stacked">Stacked</a><ul class="summary">
+<li><a class="cui__link" href="#Input/stacked/side by side">side by side</a></li>
+<li><a class="cui__link" href="#Input/stacked/center">center</a></li>
+<li><a class="cui__link" href="#Input/stacked/half and quarter sizes">half and quarter sizes</a></li>
+<li><a class="cui__link" href="#Input/stacked/three quarters">three quarters</a></li>
+<li><a class="cui__link" href="#Input/stacked/twenty - forty">twenty - forty</a></li>
+<li><a class="cui__link" href="#Input/stacked/twenty - eighty">twenty - eighty</a></li>
+<li><a class="cui__link" href="#Input/stacked/one third - two thirds">one third - two thirds</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/icon">Icon</a><ul class="summary">
+<li><a class="cui__link" href="#Input/icon/stroke">stroke style</a></li>
+<li><a class="cui__link" href="#Input/icon/big">big</a></li>
+<li><a class="cui__link" href="#Input/icon/focused">focused</a></li>
+<li><a class="cui__link" href="#Input/icon/filled">filled</a></li>
+<li><a class="cui__link" href="#Input/icon/error">error</a></li>
+<li><a class="cui__link" href="#Input/icon/warning">warning</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/centered">Centered</a><ul class="summary">
+<li><a class="cui__link" href="#Input/centered/filled">filled</a></li>
+<li><a class="cui__link" href="#Input/centered/error">error</a></li>
+<li><a class="cui__link" href="#Input/centered/icon">icon</a></li>
+<li><a class="cui__link" href="#Input/centered/big">big</a></li>
+<li><a class="cui__link" href="#Input/centered/loading">loading</a></li>
+</ul>
+</li>
+<li><a class="cui__link" href="#Input/loading">Loading</a><ul class="summary">
+<li><a class="cui__link" href="#Input/loading/big">big</a></li>
+<li><a class="cui__link" href="#Input/loading/big centered">big centered</a></li>
+</ul>
+</li>
+</ul>
+<a name="Input/examples"></a><h2 class="cui__title--secondary">Examples</h2>
+<ul class="summary">
+<li><a class="cui__link" href="examples/base/checkout.html">Checkout form</a></li>
+</ul>
+<a name="Input/regular"></a><h2 class="cui__title--secondary">Regular</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/focused"></a><h3 class="cui__subtitle">Focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/filling"></a><h3 class="cui__subtitle">Filling</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/filled"></a><h3 class="cui__subtitle">Filled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-filled&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/error"></a><h3 class="cui__subtitle">Error</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-error&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/error focused"></a><h3 class="cui__subtitle">Error focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-error is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/warning"></a><h3 class="cui__subtitle">Warning</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-warning&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/warning focused"></a><h3 class="cui__subtitle">Warning focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-warning is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/regular/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<p class="cui__paragraph--primary">Should be used when it&#39;s important to show the field to the user but she should not be able to edit it.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-disabled left half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__input is-disabled right half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big"></a><h2 class="cui__title--secondary">Big</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/focused"></a><h3 class="cui__subtitle">Focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/filling"></a><h3 class="cui__subtitle">Filling</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/filled"></a><h3 class="cui__subtitle">Filled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-filled&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/error"></a><h3 class="cui__subtitle">Error</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-error&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/error focused"></a><h3 class="cui__subtitle">Error focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-error is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/warning"></a><h3 class="cui__subtitle">Warning</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-warning&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/warning focused"></a><h3 class="cui__subtitle">Warning focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-warning is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/big/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<p class="cui__paragraph--primary">Should be used when it&#39;s important to show the field to the user but she should not be able to edit it.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input big is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-disabled left half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__input big is-disabled right half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant"></a><h2 class="cui__title--secondary">Giant</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/focused"></a><h3 class="cui__subtitle">Focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/filling"></a><h3 class="cui__subtitle">Filling</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/filled"></a><h3 class="cui__subtitle">Filled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-filled&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/error"></a><h3 class="cui__subtitle">Error</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s a problem with the filled value that blocks the user to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-error&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/error focused"></a><h3 class="cui__subtitle">Error focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-error is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Invalid email
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid@&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/warning"></a><h3 class="cui__subtitle">Warning</h3>
+<p class="cui__paragraph--primary">Should be used when there&#39;s something that requires user&#39;s attention to the filled value, but doesn&#39;t block her to continue.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-warning&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/warning focused"></a><h3 class="cui__subtitle">Warning focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-warning is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label is-focused&quot;&gt;
+        Are you sure the domain is exanple?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/giant/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+<p class="cui__paragraph--primary">Should be used when it&#39;s important to show the field to the user but she should not be able to edit it.</p>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input giant is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input giant is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input giant is-disabled left half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cui__input giant is-disabled right half&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        Enter your email address
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked"></a><h2 class="cui__title--secondary">Stacked fields</h2>
+<p class="cui__paragraph--primary">Fields can be stacked together to form a single organic visual component.</p>
+<p class="cui__paragraph--primary">By default, side by side fields will be responsive, meaning that they will
+turn full width on thin screens. You can check this out by resizing the browser
+or using Chrome inspector&#39;s mobile mode.</p>
+<div style="overflow: hidden">
+  <ul class="overview">
+    <li>
+                <div class="cui__fieldset">
+                        <div class="cui__input half left">
+                            <label class="cui__input__label">
+                                Name
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input half right">
+                            <label class="cui__input__label">
+                                Lastname
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input">
+                            <label class="cui__input__label">
+                                Address line 1
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input">
+                            <label class="cui__input__label">
+                                Address line 2
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input half left">
+                            <label class="cui__input__label">
+                                City
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input center quarter">
+                            <label class="cui__input__label">
+                                State
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input right quarter">
+                            <label class="cui__input__label">
+                                Zip
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input left half">
+                            <label class="cui__input__label">
+                                Phone number
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                        <div class="cui__input right half">
+                            <label class="cui__input__label">
+                                Email
+                            </label>
+                            <input
+                                        class="cui__input__input"
+                                        oninput="floatingLabel(this)"
+                                        onfocus="dofocus(this)"
+                                        onblur="doblur(this)"
+                                />
+                        </div>
+                </div>
+    </li>
+    </ul>
+</div>
+
+<a name="Input/stacked/side by side"></a><h3 class="cui__subtitle">Side by side</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left half">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right half">
+        <label class="cui__input__label">
+            Lastname
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left half&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right half&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Lastname
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked/half and quarter sizes"></a><h3 class="cui__subtitle">Half and Quarter sizes</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left half">
+        <label class="cui__input__label">
+            City
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input center quarter">
+        <label class="cui__input__label">
+            Zip
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right quarter">
+        <label class="cui__input__label">
+            Country
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left half&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            City
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input center quarter&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Zip
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right quarter&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Country
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked/three quarters"></a><h3 class="cui__subtitle">Three quarters</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left quarter">
+        <label class="cui__input__label">
+            City
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right three-quarters">
+        <label class="cui__input__label">
+            Zip
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left quarter&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            City
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right three-quarters&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Zip
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked/twenty - forty"></a><h3 class="cui__subtitle">Twenty - Forty</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left twenty">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input center forty">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right forty">
+        <label class="cui__input__label">
+            Lastname
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left twenty&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Title
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input center forty&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right forty&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Lastname
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked/twenty - eighty"></a><h3 class="cui__subtitle">Twenty - Eighty</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left twenty">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right eighty">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left twenty&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Title
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right eighty&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/stacked/one third - two thirds"></a><h3 class="cui__subtitle">One third - Two thirds</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__fieldset">
+    <div class="cui__input left third">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right two-thirds">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__fieldset&quot;&gt;
+    &lt;div class=&quot;cui__input left third&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Title
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui__input right two-thirds&quot;&gt;
+        &lt;label class=&quot;cui__input__label&quot;&gt;
+            Name
+        &lt;/label&gt;
+        &lt;input class=&quot;cui__input__input&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon"></a><h2 class="cui__title--secondary">With Icon</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Enter your postal code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/stroke"></a><h3 class="cui__subtitle">Icon with stroke style</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+    <g transform="translate(2, 2)" class="cui__input--icon__icon__stroke">
+      <circle cx="8" cy="8" r="7.5"></circle>
+      <path d="M6.5,11 L4.5,9" stroke-linecap="round"></path>
+      <path d="M11.5,11 L6.5,6" stroke-linecap="round" transform="translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) "></path>
+    </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+    &lt;g transform=&quot;translate(2, 2)&quot; class=&quot;cui__input--icon__icon__stroke&quot;&gt;
+      &lt;circle cx=&quot;8&quot; cy=&quot;8&quot; r=&quot;7.5&quot;&gt;&lt;/circle&gt;
+      &lt;path d=&quot;M6.5,11 L4.5,9&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M11.5,11 L6.5,6&quot; stroke-linecap=&quot;round&quot; transform=&quot;translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) &quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Enter your postal code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon big">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your password
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon big&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Enter your password
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/ginat"></a><h3 class="cui__subtitle">Giant</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon giant">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your password
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon giant&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Enter your password
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/focused"></a><h3 class="cui__subtitle">Focused</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Enter your password
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-focused&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label is-focused&quot;&gt;
+        Enter your password
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/filling"></a><h3 class="cui__subtitle">Filling</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-filled is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Please write your email address
+    </label>
+    <input class="cui__input--icon__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-filled is-focused&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Please write your email address
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/error"></a><h3 class="cui__subtitle">Error</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-error">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__input--icon__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-error&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label is-focused&quot;&gt;
+        Are you sure the domain is example?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/warning"></a><h3 class="cui__subtitle">Warning</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-warning">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__input--icon__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-warning&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label is-focused&quot;&gt;
+        Are you sure the domain is example?
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/icon/disabled"></a><h3 class="cui__subtitle">Disabled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-disabled">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Are you sure the domain is example?
+    </label>
+    <input disabled class="cui__input--icon__input" value="email@exanple.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-disabled&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input--icon__label&quot;&gt;
+        Are you sure the domain is example?
+    &lt;/label&gt;
+    &lt;input disabled class=&quot;cui__input--icon__input&quot; value=&quot;email@exanple.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered"></a><h2 class="cui__title--secondary">Centered</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-centered">
+    <label class="cui__input__label">
+        This is aligned to the center
+    </label>
+    <input class="cui__input__input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-centered&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        This is aligned to the center
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered/filled"></a><h3 class="cui__subtitle">Filled</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-centered is-filled">
+    <label class="cui__input__label">
+        This centered field is filled
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-centered is-filled&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        This centered field is filled
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;email@example.com&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered/error"></a><h3 class="cui__subtitle">Error</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-centered is-error">
+    <label class="cui__input__label">
+      Something went wrong!
+    </label>
+    <input class="cui__input__input" value="invalid input" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-centered is-error&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+      Something went wrong!
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;invalid input&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered/icon"></a><h3 class="cui__subtitle">Icon</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input--icon is-centered is-filled is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input--icon is-centered is-filled is-focused&quot;&gt;
+    &lt;svg class=&quot;cui__input--icon__icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+        &lt;g class=&quot;cui__input--icon__icon__fill&quot; transform=&quot;translate(2, 4)&quot;&gt;
+            &lt;path d=&quot;M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8&quot;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-centered is-filled is-focused">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-centered is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/centered/loading"></a><h3 class="cui__subtitle">Loading</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-loading is-centered is-filled is-focused">
+    <label class="cui__input__label">
+      ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-loading is-centered is-filled is-focused&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+      ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/loading"></a><h2 class="cui__title--secondary">Loading</h2>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input is-loading&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/loading/big"></a><h3 class="cui__subtitle">Big</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-loading&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><a name="Input/loading/big centered"></a><h3 class="cui__subtitle">Big centered</h3>
+
+    <div class="example-block">
+      <div class="example"><div class="cui__input big is-centered is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div>
+      <pre><code class="lang-html"><div>&lt;div class=&quot;cui__input big is-centered is-loading&quot;&gt;
+    &lt;label class=&quot;cui__input__label&quot;&gt;
+        ZIP Code
+    &lt;/label&gt;
+    &lt;input class=&quot;cui__input__input&quot; value=&quot;94027&quot; /&gt;
+&lt;/div&gt;</div></code></pre>
+    </div><script>
+        function floatingLabel(input) {
+            if(input.value){
+                $(input).parent().addClass("is-filled");
+            } else {
+                $(input).parent().removeClass("is-filled");
+            }
+        }
+
+        function dofocus(input) {
+                $(input).parent().addClass('is-focused');
+        }
+
+        function doblur(input) {
+                $(input).parent().removeClass('is-focused');
+        }
+
+        $('input').each(function (index, input) {
+                floatingLabel(input)
+        })
+</script>
+</div><div id="Label" class="docs__section"><h1 class="cui__title--primary">Label</h1>
 
     <div class="example-block">
       <div class="example"><p class="cui__paragraph--primary">
@@ -2922,6 +4340,7 @@ space for the icon with a background colored placeholder.</p>
 <li><a class="cui__link" href="#Navigation/tab menu/non selectable">non selectable</a></li>
 </ul>
 </li>
+<li><a class="cui__link" href="#Navigation/context menu">Context menu</a></li>
 </ul>
 <a name="Navigation/examples"></a><h2 class="cui__title--secondary">Examples</h2>
 <ul class="summary">
@@ -3112,6 +4531,62 @@ selected bar using JS. You have to define widths, transition and position of the
      &lt;label class=&quot;cui__tab-menu__button third&quot; for=&quot;tab-menu-inverted-non-selectable3&quot;&gt;Three&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
+    </div><a name="Navigation/context menu"></a><h2 class="cui__title--secondary">Context menu</h2>
+<p class="cui__paragraph--primary">The context menu is to be used with direct interaction (aka links), usually as
+a user menu with things like preferences, logout and the like. It&#39;s mainly a
+desktop component.</p>
+
+    <div class="example-block">
+      <div class="example"><ol class="cui__context-menu">
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        1 - Link
+      </a>
+   </li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        2 - Link
+      </a>
+   </li>
+   <li class="cui__context-menu__item">
+      <form>
+        3 - Form
+      </form>
+   </li>   
+   <li class="cui__context-menu__separator"></li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+        </div>
+        4 - Link
+      </a>
+   </li>
+</ol></div>
+      <pre><code class="lang-html"><div>&lt;ol class=&quot;cui__context-menu&quot;&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        1 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        2 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;cui__context-menu__item&quot;&gt;
+      &lt;form&gt;
+        3 - Form
+      &lt;/form&gt;
+   &lt;/li&gt;   
+   &lt;li class=&quot;cui__context-menu__separator&quot;&gt;&lt;/li&gt;
+   &lt;li&gt;
+      &lt;a href=&quot;#&quot; class=&quot;cui__context-menu__item&quot;&gt;
+        &lt;div class=&quot;cui__context-menu__icon&quot; style=&quot;outline: 1px dashed #ccc&quot;&gt;
+        &lt;/div&gt;
+        4 - Link
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ol&gt;</div></code></pre>
     </div></div><div id="Preview" class="docs__section"><h1 class="cui__title--primary">Preview</h1>
 <p class="cui__paragraph--primary">Preview is a text component for previewing the already-filled content of a fieldset
 block.</p>
@@ -3213,8 +4688,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M2,10 L7,16 L17,5"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -3225,8 +4705,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -3241,8 +4726,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -3254,8 +4744,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M2,10 L7,16 L17,5&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -3266,8 +4761,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -3282,8 +4782,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -3306,8 +4811,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1>
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -3322,8 +4832,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -3343,8 +4858,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -3359,8 +4879,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -3379,8 +4904,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -3391,8 +4921,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 
@@ -3407,8 +4942,13 @@ block.</p>
 
     <svg
       class="cui__selector--direct__icon"
-      viewBox="0 0 20 20">
-      <path d="M8,6 l4,4 l-4,4"></path>
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
 </div></div>
@@ -3424,8 +4964,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -3436,8 +4981,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 
@@ -3452,8 +5002,13 @@ block.</p>
 
     &lt;svg
       class=&quot;cui__selector--direct__icon&quot;
-      viewBox=&quot;0 0 20 20&quot;&gt;
-      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;&gt;&lt;/path&gt;
+      viewBox=&quot;0 0 20 20&quot;
+      stroke=&quot;#3c3c3e&quot;
+      fill=&quot;none&quot;
+      fill-rule=&quot;evenodd&quot;
+      stroke-linecap=&quot;round&quot;
+      stroke-width=&quot;1&quot;&gt;
+      &lt;path d=&quot;M8,6 l4,4 l-4,4&quot;/&gt;
     &lt;/svg&gt;
   &lt;/div&gt;
 &lt;/div&gt;</div></code></pre>
@@ -4088,14 +5643,26 @@ block.</p>
 
 <h1 class="cui__title--primary blue">
   Primary title in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    Primary title in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary&quot;&gt;
   Primary title
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary blue&quot;&gt;
   Primary title in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary white&quot;&gt;
+    Primary title in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/primary/small"></a><h3 class="cui__subtitle">Small</h3>
 
     <div class="example-block">
@@ -4105,14 +5672,26 @@ block.</p>
 
 <h1 class="cui__title--primary small blue">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small  white">
+    Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary small&quot;&gt;
   Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary small blue&quot;&gt;
   Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary small  white&quot;&gt;
+    Small primary title to fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/primary/small and prominent"></a><h3 class="cui__subtitle">Small and prominent</h3>
 
     <div class="example-block">
@@ -4122,14 +5701,26 @@ block.</p>
 
 <h1 class="cui__title--primary small strong blue">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
-</h1></div>
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small strong white">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h1 class=&quot;cui__title--primary small strong&quot;&gt;
   Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long
 &lt;/h1&gt;
 
 &lt;h1 class=&quot;cui__title--primary small strong blue&quot;&gt;
   Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in blue
-&lt;/h1&gt;</div></code></pre>
+&lt;/h1&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h1 class=&quot;cui__title--primary small strong white&quot;&gt;
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn&#39;t look as visually cluttered if the title is too long in white
+  &lt;/h1&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/secondary"></a><h2 class="cui__title--secondary">Secondary</h2>
 
     <div class="example-block">
@@ -4139,14 +5730,26 @@ block.</p>
 
 <h2 class="cui__title--secondary blue">
   Secondary title in blue
-</h2></div>
+</h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary white">
+    Secondary title in white
+  </h2>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h2 class=&quot;cui__title--secondary&quot;&gt;
   Secondary title
 &lt;/h2&gt;
 
 &lt;h2 class=&quot;cui__title--secondary blue&quot;&gt;
   Secondary title in blue
-&lt;/h2&gt;</div></code></pre>
+&lt;/h2&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h2 class=&quot;cui__title--secondary white&quot;&gt;
+    Secondary title in white
+  &lt;/h2&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/secondary/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
 
     <div class="example-block">
@@ -4173,31 +5776,55 @@ block.</p>
 
 <h3 class="cui__subtitle blue">
   Subtitle in blue
-</h3></div>
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white">
+    Subtitle in white
+  </h3>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle&quot;&gt;
   Subtitle
 &lt;/h3&gt;
 
 &lt;h3 class=&quot;cui__subtitle blue&quot;&gt;
   Subtitle in blue
-&lt;/h3&gt;</div></code></pre>
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h3 class=&quot;cui__subtitle white&quot;&gt;
+    Subtitle in white
+  &lt;/h3&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/title/subtitle/condensed"></a><h3 class="cui__subtitle">Condensed</h3>
 
     <div class="example-block">
       <div class="example"><h3 class="cui__subtitle condensed">
-  Subtitle
+  Subtitle condensed
 </h3>
 
 <h3 class="cui__subtitle blue condensed">
-  Subtitle in blue
-</h3></div>
+  Subtitle condensed in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white condensed">
+    Subtitle condensed in white
+  </h3>
+</div></div>
       <pre><code class="lang-html"><div>&lt;h3 class=&quot;cui__subtitle condensed&quot;&gt;
-  Subtitle
+  Subtitle condensed
 &lt;/h3&gt;
 
 &lt;h3 class=&quot;cui__subtitle blue condensed&quot;&gt;
-  Subtitle in blue
-&lt;/h3&gt;</div></code></pre>
+  Subtitle condensed in blue
+&lt;/h3&gt;
+
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;h3 class=&quot;cui__subtitle white condensed&quot;&gt;
+    Subtitle condensed in white
+  &lt;/h3&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph"></a><h2 class="cui__title--secondary">Paragraph</h2>
 <a name="Text/paragraph/primary"></a><h3 class="cui__subtitle">Primary</h3>
 
@@ -4207,13 +5834,29 @@ block.</p>
 </p>
 <p class="cui__paragraph--primary">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p></div>
+</p>
+<p class="cui__paragraph--primary blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 &lt;/p&gt;
 &lt;p class=&quot;cui__paragraph--primary&quot;&gt;
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-&lt;/p&gt;</div></code></pre>
+&lt;/p&gt;
+&lt;p class=&quot;cui__paragraph--primary blue&quot;&gt;
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+&lt;/p&gt;
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__paragraph--primary white&quot;&gt;
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph/primary/condensed"></a><h3 class="cui__subtitle">Primary condensed</h3>
 
     <div class="example-block">
@@ -4222,13 +5865,29 @@ block.</p>
 </p>
 <p class="cui__paragraph--primary condensed">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p></div>
+</p>
+<p class="cui__paragraph--primary blue condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white condensed">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div>
       <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 &lt;/p&gt;
 &lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-&lt;/p&gt;</div></code></pre>
+&lt;/p&gt;
+&lt;p class=&quot;cui__paragraph--primary blue condensed&quot;&gt;
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+&lt;/p&gt;
+&lt;div class=&quot;cui__block blue&quot;&gt;
+  &lt;p class=&quot;cui__paragraph--primary white condensed&quot;&gt;
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</div></code></pre>
     </div><a name="Text/paragraph/secondary"></a><h3 class="cui__subtitle">Secondary</h3>
 
     <div class="example-block">
@@ -4282,15 +5941,33 @@ block.</p>
     </div><a name="Text/link"></a><h2 class="cui__title--secondary">Link</h2>
 
     <div class="example-block">
-      <div class="example"><p class="cui__paragraph--primary -condensed">
+      <div class="example"><p class="cui__paragraph--primary condensed">
   <a class="cui__link">
     Click here to go somewhere else
   </a>
+  <br />
+  <a class="cui__link black">
+    Click here to go somewhere else
+  </a>  
+  <div class="cui__block blue">  
+    <a class="cui__link white">
+      Click here to go somewhere else
+    </a>  
+  </div>  
 </a></div>
-      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary -condensed&quot;&gt;
+      <pre><code class="lang-html"><div>&lt;p class=&quot;cui__paragraph--primary condensed&quot;&gt;
   &lt;a class=&quot;cui__link&quot;&gt;
     Click here to go somewhere else
   &lt;/a&gt;
+  &lt;br /&gt;
+  &lt;a class=&quot;cui__link black&quot;&gt;
+    Click here to go somewhere else
+  &lt;/a&gt;  
+  &lt;div class=&quot;cui__block blue&quot;&gt;  
+    &lt;a class=&quot;cui__link white&quot;&gt;
+      Click here to go somewhere else
+    &lt;/a&gt;  
+  &lt;/div&gt;  
 &lt;/a&gt;</div></code></pre>
     </div><a name="Text/text label"></a><h2 class="cui__title--secondary">Text Label</h2>
 <p class="cui__paragraph--primary">The text label is a small title to be used in combination with some other text styles, such as

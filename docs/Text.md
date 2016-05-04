@@ -42,6 +42,13 @@ These are the general text styles for the toolkit.
 <h1 class="cui__title--primary blue">
   Primary title in blue
 </h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    Primary title in white
+  </h1>
+</div>
+
 ```
 
 <a name="Text/title/primary/small"></a>
@@ -55,6 +62,13 @@ These are the general text styles for the toolkit.
 <h1 class="cui__title--primary small blue">
   Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
 </h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small  white">
+    Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div>
+
 ```
 
 <a name="Text/title/primary/small and prominent"></a>
@@ -68,6 +82,12 @@ These are the general text styles for the toolkit.
 <h1 class="cui__title--primary small strong blue">
   Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
 </h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small strong white">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div>
 ```
 
 <a name="Text/title/secondary"></a>
@@ -81,6 +101,12 @@ These are the general text styles for the toolkit.
 <h2 class="cui__title--secondary blue">
   Secondary title in blue
 </h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary white">
+    Secondary title in white
+  </h2>
+</div>
 ```
 
 <a name="Text/title/secondary/condensed"></a>
@@ -107,6 +133,12 @@ These are the general text styles for the toolkit.
 <h3 class="cui__subtitle blue">
   Subtitle in blue
 </h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white">
+    Subtitle in white
+  </h3>
+</div>
 ```
 
 <a name="Text/title/subtitle/condensed"></a>
@@ -114,12 +146,18 @@ These are the general text styles for the toolkit.
 
 ```html
 <h3 class="cui__subtitle condensed">
-  Subtitle
+  Subtitle condensed
 </h3>
 
 <h3 class="cui__subtitle blue condensed">
-  Subtitle in blue
+  Subtitle condensed in blue
 </h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white condensed">
+    Subtitle condensed in white
+  </h3>
+</div>
 ```
 
 <a name="Text/paragraph"></a>
@@ -135,6 +173,14 @@ These are the general text styles for the toolkit.
 <p class="cui__paragraph--primary">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
+<p class="cui__paragraph--primary blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
 ```
 
 <a name="Text/paragraph/primary/condensed"></a>
@@ -147,6 +193,14 @@ These are the general text styles for the toolkit.
 <p class="cui__paragraph--primary condensed">
   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
+<p class="cui__paragraph--primary blue condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white condensed">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
 ```
 
 <a name="Text/paragraph/secondary"></a>
@@ -196,10 +250,19 @@ These are the general text styles for the toolkit.
 ## Link
 
 ```html
-<p class="cui__paragraph--primary -condensed">
+<p class="cui__paragraph--primary condensed">
   <a class="cui__link">
     Click here to go somewhere else
   </a>
+  <br />
+  <a class="cui__link black">
+    Click here to go somewhere else
+  </a>  
+  <div class="cui__block blue">  
+    <a class="cui__link white">
+      Click here to go somewhere else
+    </a>  
+  </div>  
 </a>
 ```
 
