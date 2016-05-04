@@ -43,6 +43,11 @@
         right: ($grid * 6);
         top: ($grid * 6);
     }
+
+    @include respond-to-wide {
+        right: ($grid * 4);
+        top: ($grid * 4);
+    }
 }
 
 @mixin dialog__content {
@@ -55,6 +60,7 @@
 
         & > .cui__title--primary:first-child {
             padding-top: ($grid * .6);
+            margin-top: ($grid * -2);
         }
     }
 

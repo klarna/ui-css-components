@@ -1082,6 +1082,10 @@
     .cui__dialog__icon {
       right: 30px;
       top: 30px; } }
+  @media screen and (min-width: 569px) {
+    .cui__dialog__icon {
+      right: 20px;
+      top: 20px; } }
 
 .cui__dialog__content {
   display: table-row; }
@@ -1090,7 +1094,8 @@
     height: 100%;
     vertical-align: middle; }
     .cui__dialog__content--inner > .cui__title--primary:first-child {
-      padding-top: 3px; }
+      padding-top: 3px;
+      margin-top: -10px; }
   @media screen and (min-width: 569px) {
     .cui__dialog__content {
       display: block; }
