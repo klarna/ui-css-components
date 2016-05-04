@@ -19,7 +19,7 @@
 
     &.small {
         font-size: ($grid * 2.8);
-        line-height: ($grid * 7) - ($grid * .4);
+        line-height: ($grid * 8) - ($grid * .4);
         padding: 0 ($grid * 5.6);
     }
 
@@ -85,14 +85,17 @@
 
         &:hover {
             background: $background;
+            border-color: map-get($colors, klarna-blue);
         }
 
         &:active {
             background: $background;
+            border-color: map-get($colors, klarna-blue);
         }
 
         &:focus {
             background: $background;
+            border-color: map-get($colors, klarna-blue);
         }
     }
 }
@@ -122,6 +125,8 @@
     height: ($grid * 4);
     vertical-align: text-bottom;
     width: ($grid * 4);
+    position: relative;
+    top: 1px;
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
     @include respond-to-ie((8, 9)) {

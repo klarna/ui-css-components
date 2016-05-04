@@ -489,7 +489,7 @@
   vertical-align: top; }
   .cui__button--primary.small {
     font-size: 14px;
-    line-height: 33px;
+    line-height: 38px;
     padding: 0 28px; }
   .cui__button--primary.big {
     letter-spacing: 0.05px;
@@ -528,11 +528,14 @@
   .cui__button--primary.is-loading {
     cursor: progress; }
     .cui__button--primary.is-loading:hover {
-      background: #0074c8; }
+      background: #0074c8;
+      border-color: #0074c8; }
     .cui__button--primary.is-loading:active {
-      background: #0074c8; }
+      background: #0074c8;
+      border-color: #0074c8; }
     .cui__button--primary.is-loading:focus {
-      background: #0074c8; }
+      background: #0074c8;
+      border-color: #0074c8; }
   .cui__button--primary .cui__button__price {
     float: right;
     margin-left: 20px;
@@ -553,6 +556,8 @@
     height: 20px;
     vertical-align: text-bottom;
     width: 20px;
+    position: relative;
+    top: 1px;
     content: ''; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--primary.is-loading:after {
@@ -594,7 +599,7 @@
   vertical-align: top; }
   .cui__button--secondary.small {
     font-size: 14px;
-    line-height: 33px;
+    line-height: 38px;
     padding: 0 28px; }
   .cui__button--secondary.big {
     letter-spacing: 0.05px;
@@ -633,11 +638,14 @@
   .cui__button--secondary.is-loading {
     cursor: progress; }
     .cui__button--secondary.is-loading:hover {
-      background: white; }
+      background: white;
+      border-color: #0074c8; }
     .cui__button--secondary.is-loading:active {
-      background: white; }
+      background: white;
+      border-color: #0074c8; }
     .cui__button--secondary.is-loading:focus {
-      background: white; }
+      background: white;
+      border-color: #0074c8; }
   .cui__button--secondary .cui__button__price {
     float: right;
     margin-left: 20px;
@@ -658,6 +666,8 @@
     height: 20px;
     vertical-align: text-bottom;
     width: 20px;
+    position: relative;
+    top: 1px;
     content: ''; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .cui__button--secondary.is-loading:after {
@@ -2601,6 +2611,8 @@
     height: 20px;
     vertical-align: text-bottom;
     width: 20px;
+    position: relative;
+    top: 1px;
     content: '';
     margin-top: -10px;
     position: absolute;
@@ -3383,6 +3395,8 @@
     height: 20px;
     vertical-align: text-bottom;
     width: 20px;
+    position: relative;
+    top: 1px;
     content: '';
     margin-top: -10px;
     position: absolute;

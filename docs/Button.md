@@ -83,6 +83,16 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	</tr>
 	<tr>
 		<td>
+			<button class="cui__button--primary small is-loading">
+			</button>
+		</td>
+		<td>
+			<button class="cui__button--secondary small is-loading">
+			</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			<button class="cui__button--primary is-loading">
 			</button>
 		</td>
@@ -363,4 +373,3 @@ This should be used for your secondary actions.
   </span>
 </button>
 ```
-
