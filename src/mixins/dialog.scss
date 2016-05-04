@@ -1,21 +1,51 @@
-@mixin dialog ($padding) {
+@mixin dialog ($color: map-get($colors, white)) {
+    background: $color;
     box-sizing: border-box;
     display: table;
     height: 100%;
     margin: 0 auto;
-    padding: $padding;
+    padding: ($grid * 4);
     position: relative;
     width: 100%;
+    transform: translateY(($grid * 10));
+    transition: transform 0.3s ease;
+
+    @include respond-to-wide ($mobile-narrow-max-width) {
+        padding: ($grid * 6);
+    }
+
+    @include respond-to-wide {
+        display: block;
+        border-radius: ($grid * 2);
+        padding: $grid * 12;
+        width: ($grid * 87);
+        height: auto;
+    }
+
+    .wide & {
+        @include respond-to-wide {
+            width: ($grid * 108);
+        }
+    }
+
+    .is-visible & {
+        transform: translateY(0);
+    }
 }
 
-@mixin dialog__icon ($padding) {
+@mixin dialog__icon {
     display: block;
     position: absolute;
-    right: $padding - $grid;
-    top: $padding - $grid;
+    right: ($grid * 3);
+    top: ($grid * 3);
+
+    @include respond-to-wide ($mobile-narrow-max-width) {
+        right: ($grid * 5);
+        top: ($grid * 5);
+    }
 }
 
-@mixin dialog__content ($padding) {
+@mixin dialog__content {
     display: table-row;
 
     &--inner {
@@ -23,12 +53,62 @@
         height: 100%;
         vertical-align: middle;
     }
+
+    @include respond-to-wide {
+        display: block;
+
+        &--inner {
+            display: block;
+        }
+    }
 }
 
-@mixin dialog__footer ($padding) {
+@mixin dialog__footer {
     display: table-row;
 
     &--inner {
         display: table-cell;
+    }
+
+    @include respond-to-wide {
+        display: block;
+
+        &--inner {
+            display: block;
+        }
+    }
+}
+
+@mixin dialog__wrapper {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+
+    .is-visible & {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@mixin dialog__overlay {
+    background: transparentize(map-get($colors, black), .2);
+    bottom: 0;
+    display: table;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    &.is-visible {
+        opacity: 1;
+        z-index: 100;
     }
 }
