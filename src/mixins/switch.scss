@@ -1,4 +1,5 @@
 @mixin switch($padding: ($grid * 4), $side: left) {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     cursor: pointer;
     position: relative;
     -moz-user-select: none;

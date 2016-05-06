@@ -471,6 +471,7 @@
   font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-transition: all .2s ease;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -576,6 +577,7 @@
   font-weight: 600;
   text-rendering: geometricPrecision;
   -webkit-transition: all .2s ease;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1186,6 +1188,7 @@
   left: -5px; }
 
 .cui__dropdown--native {
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
@@ -1197,6 +1200,7 @@
   padding: 0;
   position: relative;
   transition: all .2s ease;
+  -webkit-tap-highlight-color: transparent;
   height: 51px;
   margin: 0 0 -1px;
   position: relative; }
@@ -1713,6 +1717,7 @@
   z-index: 2; }
 
 .cui__dropdown--custom {
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
@@ -1917,6 +1922,7 @@
     color: #cbcbcd; }
 
 .cui__dropdown--radio {
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
@@ -2693,6 +2699,7 @@
   font-size: 14px;
   font-weight: 600;
   text-rendering: geometricPrecision;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -3491,6 +3498,7 @@
   font-size: 14px;
   font-weight: 600;
   text-rendering: geometricPrecision;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -4008,8 +4016,9 @@
 
 .cui__link {
   color: #0074c8;
-  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
+  cursor: pointer;
   text-decoration: none;
   transition: all .2s ease; }
   .cui__link.black {
@@ -4349,6 +4358,7 @@
   left: -5px; }
 
 .cui__preview {
+  -webkit-tap-highlight-color: transparent;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
   box-sizing: border-box;
@@ -4402,8 +4412,9 @@
   font-weight: 400;
   text-rendering: geometricPrecision;
   color: #0074c8;
-  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
+  cursor: pointer;
   text-decoration: none;
   transition: all .2s ease;
   background: white;
@@ -4556,6 +4567,7 @@
   left: -5px; }
 
 .cui__selector--direct__item {
+  -webkit-tap-highlight-color: transparent;
   border-bottom: 1px solid #e5e5e6;
   border-top: 1px solid #e5e5e6;
   box-sizing: border-box;
@@ -4805,6 +4817,7 @@
     font-size: 14px;
     font-weight: 400;
     text-rendering: geometricPrecision;
+    -webkit-tap-highlight-color: transparent;
     border: 1px solid #cbcbcd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -5308,6 +5321,7 @@
   font-size: 14px;
   font-weight: 400;
   text-rendering: geometricPrecision;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   position: relative;
   -moz-user-select: none;
@@ -5372,6 +5386,7 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1; }
   .cui__switch.right {
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     position: relative;
     -moz-user-select: none;
@@ -5498,6 +5513,7 @@
         top: 8px; } }
 
 .cui__switch--multiple {
+  -webkit-tap-highlight-color: transparent;
   -webkit-transition: all .2s ease;
   border: 1px solid #cbcbcd;
   border-radius: 5px;
@@ -5537,6 +5553,7 @@
   padding-top: 9px;
   position: relative;
   transition: all .2s ease;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   position: relative;
   -moz-user-select: none;
@@ -6040,6 +6057,7 @@
     font-size: 14px;
     font-weight: 400;
     text-rendering: geometricPrecision;
+    -webkit-tap-highlight-color: transparent;
     color: #9e9ea0;
     cursor: pointer;
     display: inline-block;
