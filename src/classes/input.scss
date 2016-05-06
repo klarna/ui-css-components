@@ -270,6 +270,7 @@ $stackable-border-width: $grid * .2;
 %cui__input__input {
     @include typography(($grid * 2.8), semi-bold);
 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     appearance: none;
     background-color: transparent;
     border: 0;
