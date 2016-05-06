@@ -143,11 +143,6 @@ $stackable-border-width: $grid * .2;
         box-shadow: none;
         z-index: 5;
 
-        @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str(#fffaf0);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        }
-
         &:hover {
             border-color: map-get($colors, warning-hover);
             z-index: 10;

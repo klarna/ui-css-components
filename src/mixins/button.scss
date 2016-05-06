@@ -124,7 +124,7 @@
     width: ($grid * 4);
 
     // IE8 and 9 don't support CSS animations, show the loader text instead.
-    @include respond-to-ie((8, 9)) {
+    @include respond-to-ie(9) {
         @include font-size(($grid * 3));
     }
 
