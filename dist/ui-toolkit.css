@@ -2712,6 +2712,9 @@
   padding: 0 20px;
   position: absolute;
   width: 100%; }
+  .cui__field__input::-ms-clear, .cui__field--icon__input::-ms-clear {
+    height: 0;
+    width: 0; }
   .ie9 .cui__field__input, .ie9 .cui__field--icon__input,
   .ie8 .cui__field__input,
   .ie8 .cui__field--icon__input {
@@ -3511,6 +3514,9 @@
   padding: 0;
   position: absolute;
   width: 100%; }
+  .cui__input__input::-ms-clear, .cui__input--icon__input::-ms-clear {
+    height: 0;
+    width: 0; }
   .ie9 .cui__input__input, .ie9 .cui__input--icon__input,
   .ie8 .cui__input__input,
   .ie8 .cui__input--icon__input {
