@@ -284,8 +284,8 @@ $stackable-border-width: $grid * .2;
 
     // Disable clear field icon for IE10+
     &::-ms-clear {
-        width : 0;
         height: 0;
+        width : 0;
     }
 
     .ie9 &,

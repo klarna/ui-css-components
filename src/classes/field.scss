@@ -192,10 +192,10 @@
 
     // Disable clear field icon for IE10+
     &::-ms-clear {
-        width : 0;
         height: 0;
+        width : 0;
     }
-    
+
     .ie9 &,
     .ie8 & {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
