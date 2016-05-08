@@ -4189,6 +4189,12 @@
       .cui__loader.blue {
         background-image: url("img/loader-blue@2x.png");
         background-size: 20px 20px; } }
+  .cui__loader.white {
+    background-image: url("img/loader-white.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .cui__loader.white {
+        background-image: url("img/loader-white@2x.png");
+        background-size: 20px 20px; } }
   .cui__loader.big {
     background-image: url("img/loader-big.png");
     height: 30px;
@@ -4202,6 +4208,12 @@
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__loader.big.blue {
           background-image: url("img/loader-blue-big@2x.png");
+          background-size: 30px 30px; } }
+    .cui__loader.big.white {
+      background-image: url("img/loader-white-big.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .cui__loader.big.white {
+          background-image: url("img/loader-white-big@2x.png");
           background-size: 30px 30px; } }
   .cui__loader.small {
     background-image: url("img/loader-small.png");
@@ -4217,6 +4229,12 @@
         .cui__loader.small.blue {
           background-image: url("img/loader-blue-small@2x.png");
           background-size: 15px 15px; } }
+    .cui__loader.small.white {
+      background-image: url("img/loader-white-small.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .cui__loader.small.white {
+          background-image: url("img/loader-white-small@2x.png");
+          background-size: 15px 15px; } }
   .cui__loader.tiny {
     background-image: url("img/loader-tiny.png");
     height: 10px;
@@ -4230,6 +4248,12 @@
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .cui__loader.tiny.blue {
           background-image: url("img/loader-blue-tiny@2x.png");
+          background-size: 10px 10px; } }
+    .cui__loader.tiny.white {
+      background-image: url("img/loader-white-tiny.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .cui__loader.tiny.white {
+          background-image: url("img/loader-white-tiny@2x.png");
           background-size: 10px 10px; } }
 
 @keyframes spin {

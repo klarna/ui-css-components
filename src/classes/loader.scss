@@ -13,6 +13,10 @@
         @include retina-image-compat($root + 'img/loader-blue', ($grid * 4) ($grid * 4));
     }
 
+    &.white {
+        @include retina-image-compat($root + 'img/loader-white', ($grid * 4) ($grid * 4));
+    }
+
     &.big {
         @include retina-image-compat($root + 'img/loader-big', ($grid * 6) ($grid * 6));
 
@@ -21,6 +25,10 @@
 
         &.blue {
             @include retina-image-compat($root + 'img/loader-blue-big', ($grid * 6) ($grid * 6));
+        }
+
+        &.white {
+            @include retina-image-compat($root + 'img/loader-white-big', ($grid * 6) ($grid * 6));
         }
     }
 
@@ -33,6 +41,10 @@
         &.blue {
             @include retina-image-compat($root + 'img/loader-blue-small', ($grid * 3) ($grid * 3));
         }
+
+        &.white {
+            @include retina-image-compat($root + 'img/loader-white-small', ($grid * 3) ($grid * 3));
+        }
     }
 
     &.tiny {
@@ -43,6 +55,10 @@
 
         &.blue {
             @include retina-image-compat($root + 'img/loader-blue-tiny', ($grid * 2) ($grid * 2));
+        }
+
+        &.white {
+            @include retina-image-compat($root + 'img/loader-white-tiny', ($grid * 2) ($grid * 2));
         }
     }
 }
