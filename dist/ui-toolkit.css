@@ -3428,7 +3428,7 @@
   text-overflow: ellipsis;
   transition: all .2s ease;
   white-space: nowrap;
-  width: calc(100% - 40px); }
+  width: 100%; }
   .big .cui__input__label, .big .cui__input--icon__label {
     line-height: 60px; }
   .giant .cui__input__label, .giant .cui__input--icon__label {
