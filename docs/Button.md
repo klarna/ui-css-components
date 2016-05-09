@@ -16,6 +16,7 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big & disabled](#Button/primary/big/disabled)
 	- [with price](#Button/primary/price)
 	- [with price big](#Button/primary/price/big)
+	- [dynamic styling](#Button/primary/dynamic-styling)
 - [Secondary](#Button/secondary)
 	- [loading](#Button/secondary/loading)
 	- [disabled](#Button/secondary/disabled)
@@ -266,7 +267,26 @@ Every time a user submits a form, you should change the current submit button to
 </button>
 ```
 
+<a name="Button/primary/dynamic-styling"></a>
+### Dynamic styling
 
+```html
+<button
+	class="cui__button--primary dynamic-styling"
+	style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
+</button>
+
+<button
+	class="cui__button--primary dynamic-styling is-disabled"
+	style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
+</button>
+```
 
 <a name="Button/secondary"></a>
 ## Secondary
@@ -364,3 +384,27 @@ This should be used for your secondary actions.
 </button>
 ```
 
+<a name="Button/seconda/dynamic-styling"></a>
+### Dynamic styling
+
+```html
+<button
+	class="cui__button--secondary dynamic-styling"
+	style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+	<div class="cui__button__label">			
+	  Pay now
+		<span class="cui__button__label--alt" style="color: #F9FF3C;">
+			Pay now
+		</span>
+	</div>
+
+</button>
+
+<button
+	class="cui__button--secondary dynamic-styling is-disabled"
+	style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
+</button>
+```

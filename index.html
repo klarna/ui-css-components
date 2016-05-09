@@ -126,6 +126,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <li><a class="cui__link" href="#Button/primary/big/disabled">big &amp; disabled</a></li>
 <li><a class="cui__link" href="#Button/primary/price">with price</a></li>
 <li><a class="cui__link" href="#Button/primary/price/big">with price big</a></li>
+<li><a class="cui__link" href="#Button/primary/dynamic-styling">dynamic styling</a></li>
 </ul>
 </li>
 <li><a class="cui__link" href="#Button/secondary">Secondary</a><ul class="summary">
@@ -370,6 +371,39 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
     $1.20
   &lt;/span&gt;
 &lt;/button&gt;</div></code></pre>
+    </div><a name="Button/primary/dynamic-styling"></a><h3 class="cui__subtitle">Dynamic styling</h3>
+
+    <div class="example-block">
+      <div class="example"><button
+    class="cui__button--primary dynamic-styling"
+    style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button>
+
+<button
+    class="cui__button--primary dynamic-styling is-disabled"
+    style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button></div>
+      <pre><code class="lang-html"><div>&lt;button
+    class=&quot;cui__button--primary dynamic-styling&quot;
+    style=&quot;color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;&quot;&gt;
+    &lt;span class=&quot;cui__button__label&quot;&gt;
+      Pay now
+    &lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;cui__button--primary dynamic-styling is-disabled&quot;
+    style=&quot;color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;&quot;&gt;
+    &lt;span class=&quot;cui__button__label&quot;&gt;
+      Pay now
+    &lt;/span&gt;
+&lt;/button&gt;</div></code></pre>
     </div><a name="Button/secondary"></a><h2 class="cui__title--secondary">Secondary</h2>
 <p class="cui__paragraph--primary">This should be used for your secondary actions.</p>
 
@@ -468,6 +502,47 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
   &lt;span class=&quot;cui__button__price&quot;&gt;
     $1.20
   &lt;/span&gt;
+&lt;/button&gt;</div></code></pre>
+    </div><a name="Button/seconda/dynamic-styling"></a><h3 class="cui__subtitle">Dynamic styling</h3>
+
+    <div class="example-block">
+      <div class="example"><button
+    class="cui__button--secondary dynamic-styling"
+    style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+    <div class="cui__button__label">            
+      Pay now
+        <span class="cui__button__label--alt" style="color: #F9FF3C;">
+            Pay now
+        </span>
+    </div>
+
+</button>
+
+<button
+    class="cui__button--secondary dynamic-styling is-disabled"
+    style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button></div>
+      <pre><code class="lang-html"><div>&lt;button
+    class=&quot;cui__button--secondary dynamic-styling&quot;
+    style=&quot;color: #3500C8; background-color: #3500C8; border-color: #3500C8;&quot;&gt;
+    &lt;div class=&quot;cui__button__label&quot;&gt;            
+      Pay now
+        &lt;span class=&quot;cui__button__label--alt&quot; style=&quot;color: #F9FF3C;&quot;&gt;
+            Pay now
+        &lt;/span&gt;
+    &lt;/div&gt;
+
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;cui__button--secondary dynamic-styling is-disabled&quot;
+    style=&quot;color: #3500C8; background-color: #3500C8; border-color: #3500C8;&quot;&gt;
+    &lt;span class=&quot;cui__button__label&quot;&gt;
+      Pay now
+    &lt;/span&gt;
 &lt;/button&gt;</div></code></pre>
     </div></div><div id="Dialog" class="docs__section"><h1 class="cui__title--primary">Dialog</h1>
 <p class="cui__paragraph--primary">Dialogs are screens meant to be blocking and require an interaction for the user to proceed. There are several formats of them, but they more or less follow the same rules:</p>
