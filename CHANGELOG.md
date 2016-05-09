@@ -1,6 +1,10 @@
-# 5.7.0
+# 5.6.5
 
 - Remove left from the `label` mixin
+
+# 5.6.3
+
+- Remove margins from input field labels
 
 # 5.5.0
 
