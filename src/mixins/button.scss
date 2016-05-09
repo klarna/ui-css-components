@@ -164,7 +164,7 @@
         z-index: 2;
     }
 
-    .dynamic-styling.cui__button--secondary:hover & {
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):hover & {
         color: rgba(0,0,0,0);
 
         &--alt {
@@ -172,8 +172,8 @@
         }
     }
 
-    .dynamic-styling.cui__button--secondary:active &,
-    .dynamic-styling.cui__button--secondary:focus & {
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):active &,
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):focus & {
         color: rgba(0,0,0,0);
 
         &--alt {

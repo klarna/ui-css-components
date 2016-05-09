@@ -92,6 +92,21 @@
                 opacity: .2;
             }
         }
+
+        &.is-disabled {
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:focus, &:active {
+                &:after {
+                    background: white;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 

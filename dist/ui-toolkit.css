@@ -742,6 +742,11 @@
     .cui__button--secondary.dynamic-styling:focus:after, .cui__button--secondary.dynamic-styling:active:after {
       background: black;
       opacity: .2; }
+    .cui__button--secondary.dynamic-styling.is-disabled:hover:after {
+      opacity: 1; }
+    .cui__button--secondary.dynamic-styling.is-disabled:focus:after, .cui__button--secondary.dynamic-styling.is-disabled:active:after {
+      background: white;
+      opacity: 1; }
 
 .cui__button__menu {
   padding-bottom: 20px; }
@@ -763,15 +768,15 @@
     -webkit-transition: opacity .2s ease;
     transition: opacity .2s ease;
     z-index: 2; }
-  .dynamic-styling.cui__button--secondary:hover .cui__button__label {
+  .dynamic-styling.cui__button--secondary:not(.is-disabled):hover .cui__button__label {
     color: transparent; }
-    .dynamic-styling.cui__button--secondary:hover .cui__button__label--alt {
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):hover .cui__button__label--alt {
       opacity: 1; }
-  .dynamic-styling.cui__button--secondary:active .cui__button__label,
-  .dynamic-styling.cui__button--secondary:focus .cui__button__label {
+  .dynamic-styling.cui__button--secondary:not(.is-disabled):active .cui__button__label,
+  .dynamic-styling.cui__button--secondary:not(.is-disabled):focus .cui__button__label {
     color: transparent; }
-    .dynamic-styling.cui__button--secondary:active .cui__button__label--alt,
-    .dynamic-styling.cui__button--secondary:focus .cui__button__label--alt {
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):active .cui__button__label--alt,
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):focus .cui__button__label--alt {
       opacity: 1; }
 
 @keyframes spin {
