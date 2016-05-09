@@ -14,3 +14,14 @@ dev:
 tag:
 	git tag v${VERSION}
 	git push origin v${VERSION}
+
+gh-pages:
+	git branch -D gh-pages
+	git checkout -b gh-pages
+	git reset --hard master
+	echo node_modules > .gitignore
+	npm install
+	npm run build
+	git add --all
+	git commit -m "Update GH pages"
+	git push origin --force gh-pages

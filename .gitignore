@@ -5,3 +5,5 @@ npm-debug.log
 bower_components
 .idea
 .DS_Store
+dist
+index.html
