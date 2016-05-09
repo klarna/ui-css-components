@@ -573,18 +573,18 @@
     position: relative; }
     .cui__button--primary.dynamic-styling:after {
       background: black;
+      bottom: 0;
       content: "";
       display: block;
+      height: 100%;
+      left: 0;
       opacity: 0;
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
       right: 0;
+      top: 0;
       -webkit-transition: opacity .2s ease;
-      transition: opacity .2s ease; }
+      transition: opacity .2s ease;
+      width: 100%; }
     .cui__button--primary.dynamic-styling:hover:after {
       opacity: .2; }
     .cui__button--primary.dynamic-styling:focus:after {
@@ -715,18 +715,18 @@
     position: relative; }
     .cui__button--secondary.dynamic-styling:after {
       background: black;
+      bottom: 0;
       content: "";
       display: block;
+      height: 100%;
+      left: 0;
       opacity: 0;
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
       right: 0;
+      top: 0;
       -webkit-transition: opacity .2s ease;
-      transition: opacity .2s ease; }
+      transition: opacity .2s ease;
+      width: 100%; }
     .cui__button--secondary.dynamic-styling:hover:after {
       opacity: .2; }
     .cui__button--secondary.dynamic-styling:focus:after {
@@ -752,16 +752,16 @@
 
 .cui__button__label {
   position: relative;
-  z-index: 1;
   -webkit-transition: color .2s ease;
-  transition: color .2s ease; }
+  transition: color .2s ease;
+  z-index: 1; }
   .cui__button__label--alt {
+    left: 0;
     opacity: 0;
-    -webkit-transition: opacity .2s ease;
-    transition: opacity .2s ease;
     position: absolute;
     top: 0;
-    left: 0;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
     z-index: 2; }
   .dynamic-styling.cui__button--secondary:hover .cui__button__label {
     color: transparent; }
