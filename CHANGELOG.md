@@ -1,3 +1,7 @@
+# 5.7.0
+
+- Remove left from the `label` mixin
+
 # 5.5.0
 
 - Borderless input fields
