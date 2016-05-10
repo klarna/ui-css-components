@@ -98,6 +98,43 @@
     }
 }
 
+@mixin button-dynamic-styling {
+    position: relative;
+
+    &:after {
+        background: black;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity .2s ease;
+        width: 100%;
+    }
+
+    &:hover {
+        &:after {
+            opacity: .2;
+        }
+    }
+
+    &:focus {
+        &:after {
+            opacity: .3;
+        }
+    }
+
+    &:active {
+        &:after {
+            opacity: .3;
+        }
+    }
+}
+
 @mixin button__price ($border-color) {
     float: right;
     margin-left: $grid * 4;
@@ -113,6 +150,38 @@
     }
 }
 
+@mixin button__label {
+    position: relative;
+    transition: color .2s ease;
+    z-index: 1;
+
+    .cui__button--secondary &--alt:after {
+        content: attr(title);
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity .2s ease;
+        z-index: 2;
+    }
+
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):hover & {
+        color: rgba(0,0,0,0);
+
+        &--alt:after {
+            opacity: 1;
+        }
+    }
+
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):active &,
+    .dynamic-styling.cui__button--secondary:not(.is-disabled):focus & {
+        color: rgba(0,0,0,0);
+
+        &--alt:after {
+            opacity: 1;
+        }
+    }
+}
 
 @mixin button__loader($image-name) {
     @include retina-image-compat($root + 'img/' + $image-name, ($grid * 4) ($grid * 4));
