@@ -16,7 +16,7 @@ tag:
 	git push origin v${VERSION}
 
 gh-pages:
-	git branch -D gh-pages
+	-git branch -D gh-pages 
 	git checkout -b gh-pages
 	git reset --hard master
 	echo node_modules > .gitignore
