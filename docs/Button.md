@@ -270,6 +270,10 @@ Every time a user submits a form, you should change the current submit button to
 <a name="Button/primary/dynamic-styling"></a>
 ### Dynamic styling
 
+Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it's only background/border color and text color.
+
+In primary buttons, the `dynamic-styling` class creates a darkened layer on top of the button for displaying on the hover and focus/active states, so that any color can have those states (as long as is not too dark). Given that the darkening is done with a layer on top, the text itself needs to live in a different layer above the darkened overlay. That's why it needs to be a wrapped in a class with a different style.
+
 ```html
 <button
 	class="cui__button--primary dynamic-styling"
@@ -386,6 +390,10 @@ This should be used for your secondary actions.
 
 <a name="Button/seconda/dynamic-styling"></a>
 ### Dynamic styling
+
+Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it's only background/border color and text color.
+
+In secondary buttons, the `dynamic-styling` class creates a white layer on top of the button for masking the background color and then showing it on the hover and focus/active states, so that any color can have those states (as long as is not too dark). Like in the primary button dynamic styling, the label needs to be on a separate element, but since the color of the label will change from the same as the background to the foreground color when getting hover and focus/active, there is the need for two versions of the label: one that has the background color and it's displayed by default, and another one that has the foreground color and it's invisible until the button is hovered/focus/activated.
 
 ```html
 <button
