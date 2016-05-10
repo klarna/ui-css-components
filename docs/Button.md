@@ -27,6 +27,7 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big & disabled](#Button/secondary/big/disabled)
 	- [with price](#Button/secondary/price)
 	- [with price big](#Button/secondary/price/big)
+	- [dynamic styling](#Button/secondary/dynamic-styling)
 
 <a name="Button/overview"></a>
 ## Overview
@@ -388,7 +389,7 @@ This should be used for your secondary actions.
 </button>
 ```
 
-<a name="Button/seconda/dynamic-styling"></a>
+<a name="Button/secondary/dynamic-styling"></a>
 ### Dynamic styling
 
 Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it's only background/border color and text color.
