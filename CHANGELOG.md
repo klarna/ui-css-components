@@ -1,3 +1,11 @@
+# 5.7.1
+
+- Add dynamic styling for button
+
+# 5.7.0-alpha
+
+- Add build task for gh-pages
+
 # 5.6.5
 
 - Remove left from the `label` mixin
