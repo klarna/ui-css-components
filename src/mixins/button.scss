@@ -155,7 +155,8 @@
     transition: color .2s ease;
     z-index: 1;
 
-    &--alt {
+    .cui__button--secondary &--alt:after {
+        content: attr(title);
         left: 0;
         opacity: 0;
         position: absolute;
@@ -167,7 +168,7 @@
     .dynamic-styling.cui__button--secondary:not(.is-disabled):hover & {
         color: rgba(0,0,0,0);
 
-        &--alt {
+        &--alt:after {
             opacity: 1;
         }
     }
@@ -176,7 +177,7 @@
     .dynamic-styling.cui__button--secondary:not(.is-disabled):focus & {
         color: rgba(0,0,0,0);
 
-        &--alt {
+        &--alt:after {
             opacity: 1;
         }
     }

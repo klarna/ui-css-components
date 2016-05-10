@@ -139,6 +139,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
 <li><a class="cui__link" href="#Button/secondary/big/disabled">big &amp; disabled</a></li>
 <li><a class="cui__link" href="#Button/secondary/price">with price</a></li>
 <li><a class="cui__link" href="#Button/secondary/price/big">with price big</a></li>
+<li><a class="cui__link" href="#Button/secondary/dynamic-styling">dynamic styling</a></li>
 </ul>
 </li>
 </ul>
@@ -505,7 +506,7 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
     $1.20
   &lt;/span&gt;
 &lt;/button&gt;</div></code></pre>
-    </div><a name="Button/seconda/dynamic-styling"></a><h3 class="cui__subtitle">Dynamic styling</h3>
+    </div><a name="Button/secondary/dynamic-styling"></a><h3 class="cui__subtitle">Dynamic styling</h3>
 <p class="cui__paragraph--primary">Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it&#39;s only background/border color and text color.</p>
 <p class="cui__paragraph--primary">In secondary buttons, the <span class="code">dynamic-styling</span> class creates a white layer on top of the button for masking the background color and then showing it on the hover and focus/active states, so that any color can have those states (as long as is not too dark). Like in the primary button dynamic styling, the label needs to be on a separate element, but since the color of the label will change from the same as the background to the foreground color when getting hover and focus/active, there is the need for two versions of the label: one that has the background color and it&#39;s displayed by default, and another one that has the foreground color and it&#39;s invisible until the button is hovered/focus/activated.</p>
 
@@ -515,8 +516,10 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
     style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
     <div class="cui__button__label">            
       Pay now
-        <span class="cui__button__label--alt" style="color: #F9FF3C;">
-            Pay now
+        <span
+            class="cui__button__label--alt"
+            title="Pay now"
+            style="color: #F9FF3C;">
         </span>
     </div>
 
@@ -534,8 +537,10 @@ and its modifiers <span class="code">.x2</span> <span class="code">.x3</span> <s
     style=&quot;color: #3500C8; background-color: #3500C8; border-color: #3500C8;&quot;&gt;
     &lt;div class=&quot;cui__button__label&quot;&gt;            
       Pay now
-        &lt;span class=&quot;cui__button__label--alt&quot; style=&quot;color: #F9FF3C;&quot;&gt;
-            Pay now
+        &lt;span
+            class=&quot;cui__button__label--alt&quot;
+            title=&quot;Pay now&quot;
+            style=&quot;color: #F9FF3C;&quot;&gt;
         &lt;/span&gt;
     &lt;/div&gt;
 

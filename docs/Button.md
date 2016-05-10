@@ -402,8 +402,10 @@ In secondary buttons, the `dynamic-styling` class creates a white layer on top o
 	style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
 	<div class="cui__button__label">			
 	  Pay now
-		<span class="cui__button__label--alt" style="color: #F9FF3C;">
-			Pay now
+		<span
+			class="cui__button__label--alt"
+			title="Pay now"
+			style="color: #F9FF3C;">
 		</span>
 	</div>
 
