@@ -72,6 +72,7 @@ gulp.task('default', ['reload:sass', 'reload:docs', 'browser-sync', 'images'], f
 gulp.task('build:sass', function () {
     gulp.src('src/builds/ui-toolkit.scss')
         .pipe(sass())
+        .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('./dist/'));
 });
 

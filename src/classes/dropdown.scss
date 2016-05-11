@@ -5,6 +5,7 @@
     @include stackable();
     @include options(true);
 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     height: ($grid * 10.2);
     margin: 0 0 ($grid * -.2);
     position: relative;

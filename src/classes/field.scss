@@ -179,6 +179,7 @@
 %cui__field__input {
     @include typography(($grid * 2.8), semi-bold);
 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     appearance: none;
     background-color: transparent;
     border: 0;
@@ -189,6 +190,12 @@
     padding: 0 ($grid * 4);
     position: absolute;
     width: 100%;
+
+    // Disable clear field icon for IE10+
+    &::-ms-clear {
+        height: 0;
+        width : 0;
+    }
 
     .ie9 &,
     .ie8 & {

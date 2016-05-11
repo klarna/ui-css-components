@@ -16,6 +16,7 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big & disabled](#Button/primary/big/disabled)
 	- [with price](#Button/primary/price)
 	- [with price big](#Button/primary/price/big)
+	- [dynamic styling](#Button/primary/dynamic-styling)
 - [Secondary](#Button/secondary)
 	- [loading](#Button/secondary/loading)
 	- [disabled](#Button/secondary/disabled)
@@ -26,6 +27,7 @@ Buttons use the `cui__button` block, and only `button` tags should be used.
 	- [big & disabled](#Button/secondary/big/disabled)
 	- [with price](#Button/secondary/price)
 	- [with price big](#Button/secondary/price/big)
+	- [dynamic styling](#Button/secondary/dynamic-styling)
 
 <a name="Button/overview"></a>
 ## Overview
@@ -276,7 +278,30 @@ Every time a user submits a form, you should change the current submit button to
 </button>
 ```
 
+<a name="Button/primary/dynamic-styling"></a>
+### Dynamic styling
 
+Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it's only background/border color and text color.
+
+In primary buttons, the `dynamic-styling` class creates a darkened layer on top of the button for displaying on the hover and focus/active states, so that any color can have those states (as long as is not too dark). Given that the darkening is done with a layer on top, the text itself needs to live in a different layer above the darkened overlay. That's why it needs to be a wrapped in a class with a different style.
+
+```html
+<button
+	class="cui__button--primary dynamic-styling"
+	style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
+</button>
+
+<button
+	class="cui__button--primary dynamic-styling is-disabled"
+	style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
+</button>
+```
 
 <a name="Button/secondary"></a>
 ## Secondary
@@ -371,5 +396,36 @@ This should be used for your secondary actions.
   <span class="cui__button__price">
     $1.20
   </span>
+</button>
+```
+
+<a name="Button/secondary/dynamic-styling"></a>
+### Dynamic styling
+
+Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Buttons, it's only background/border color and text color.
+
+In secondary buttons, the `dynamic-styling` class creates a white layer on top of the button for masking the background color and then showing it on the hover and focus/active states, so that any color can have those states (as long as is not too dark). Like in the primary button dynamic styling, the label needs to be on a separate element, but since the color of the label will change from the same as the background to the foreground color when getting hover and focus/active, there is the need for two versions of the label: one that has the background color and it's displayed by default, and another one that has the foreground color and it's invisible until the button is hovered/focus/activated.
+
+```html
+<button
+	class="cui__button--secondary dynamic-styling"
+	style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+	<div class="cui__button__label">			
+	  Pay now
+		<span
+			class="cui__button__label--alt"
+			title="Pay now"
+			style="color: #F9FF3C;">
+		</span>
+	</div>
+
+</button>
+
+<button
+	class="cui__button--secondary dynamic-styling is-disabled"
+	style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+	<span class="cui__button__label">
+	  Pay now
+	</span>
 </button>
 ```

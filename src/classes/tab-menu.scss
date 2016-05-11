@@ -23,6 +23,7 @@
         @include typography(($grid * 2.8), regular);
         @include stackable();
 
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         color: map-get($colors, grey-text);
         cursor: pointer;
         display: inline-block;
