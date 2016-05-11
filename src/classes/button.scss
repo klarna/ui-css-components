@@ -20,6 +20,10 @@
             content: '';
         }
     }
+
+    &.dynamic-styling {
+        @include button-dynamic-styling;
+    }
 }
 
 .cui__button--secondary {
@@ -66,6 +70,44 @@
             margin-top: 0;
         }
     }
+
+    &.dynamic-styling {
+        @include button-dynamic-styling;
+
+        &:after {
+            background: white;
+            border-radius: $border-radius - ($grid * .2);
+            opacity: 1;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 0;
+            }
+        }
+
+        &:focus, &:active {
+            &:after {
+                background: black;
+                opacity: .2;
+            }
+        }
+
+        &.is-disabled {
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:focus, &:active {
+                &:after {
+                    background: white;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 .cui__button__menu {
@@ -76,4 +118,8 @@
         content: '';
         display: block;
     }
+}
+
+.cui__button__label {
+    @include button__label;
 }
