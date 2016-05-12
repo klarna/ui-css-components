@@ -15,7 +15,7 @@
     }
 
     @include respond-to-wide {
-        border-radius: ($grid * 2);
+        border-radius: ($grid * 1.6);
         display: block;
         height: auto;
         padding: $grid * 12;
