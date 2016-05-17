@@ -1,34 +1,25 @@
 @import '../mixins/index';
 
 .cui__dialog {
-    @include dialog(map-get($dialog-padding, narrow));
+    @include dialog;
+}
 
-    @include respond-to-wide($mobile-narrow-max-width) {
-        @include dialog(map-get($dialog-padding, wide));
-    }
+.cui__dialog__wrapper {
+    @include dialog__wrapper;
+}
+
+.cui__dialog__overlay {
+    @include dialog__overlay;
 }
 
 .cui__dialog__icon {
-    // TODO Use the styles of the icon buttons from the other branch
-    @include dialog__icon(map-get($dialog-padding, narrow));
-
-    @include respond-to-wide($mobile-narrow-max-width) {
-        @include dialog__icon(map-get($dialog-padding, wide));
-    }
+    @include dialog__icon;
 }
 
 .cui__dialog__content {
-    @include dialog__content(map-get($dialog-padding, narrow));
-
-    @include respond-to-wide($mobile-narrow-max-width) {
-        @include dialog__content(map-get($dialog-padding, wide));
-    }
+    @include dialog__content;
 }
 
 .cui__dialog__footer {
-    @include dialog__footer(map-get($dialog-padding, narrow));
-
-    @include respond-to-wide($mobile-narrow-max-width) {
-        @include dialog__footer(map-get($dialog-padding, wide));
-    }
+    @include dialog__footer;
 }

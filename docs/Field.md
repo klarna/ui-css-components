@@ -1,6 +1,6 @@
 # Field
 
-<div style="background: #eea; padding: 20px">
+<div style="background: #eea; margin-top: 3px; padding: 20px">
 	The Fields are deprecated. New projects will be designed using Input instead.
 </div>
 
