@@ -1,3 +1,7 @@
+# 5.8.0
+
+- Add Overlay component wrapping the Dialog
+
 # 5.7.1
 
 - Add dynamic styling for button
