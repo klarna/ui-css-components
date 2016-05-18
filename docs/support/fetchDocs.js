@@ -14,6 +14,7 @@ const docFiles = [
   'Baseline',
   'Block',
   'Button',
+  'Checklist',
   'Dialog',
   'Dropdown',
   'Field',
