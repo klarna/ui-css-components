@@ -1,3 +1,7 @@
+# 6.1.0
+
+- Add Checklist component
+
 # 6.0.0
 
 - Remove cui__dropdown--custom component
