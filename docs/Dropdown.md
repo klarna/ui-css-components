@@ -15,6 +15,7 @@ ___
   - [error](#Dropdown/native/error)
   - [warning](#Dropdown/native/warning)
 - [Radio](#Dropdown/radio)
+  - [dynamic styling](#Dropdown/radio/dynamic-styling)
   - [borderless](#Dropdown/radio/borderless)
   - [disabled](#Dropdown/radio/disabled)
   - [borderless disabled](#Dropdown/radio/borderless disabled)
@@ -288,6 +289,69 @@ Stacking Dropdowns is done in the same way that Fields. Please go to the "Field"
   </div>
 
   <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div>
+```
+
+<a name="Dropdown/radio/dynamic-styling"></a>
+### Dynamic styling
+
+```html
+<div class="cui__dropdown--radio dynamic-styling">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div
+        class="cui__promo-label"
+        style="color: #F9FF3C; background-color: #3500C8;">
+        promo
+      </div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
     <div class="cui__dropdown--radio__option__heading">
       Third item
     </div>
