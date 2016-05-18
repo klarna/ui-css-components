@@ -59,6 +59,20 @@ body
         $(this).parent().removeClass('is-focused');
       })
 
+      function setFilled(_, input) {
+        if($(input).val()){
+          $(input).parent().addClass("is-filled");
+        } else {
+          $(input).parent().removeClass("is-filled");
+        }
+      }
+
+      $('input').keyup(function(event){
+        setFilled(null, event.target)
+      })
+
+      $('input').each(setFilled)
+
       $('.cui__switch--multiple__option, .cui__switch').mousedown(function () {
         $(this).addClass('is-pressed')
       })
@@ -84,14 +98,6 @@ body
           $(this).parent().addClass('is-collapsed');
         }
       })
-
-      function floatingLabel(input) {
-        if(input.value){
-          $(input).parent().addClass("is-filled");
-        } else {
-          $(input).parent().removeClass("is-filled");
-        }
-      }
 
       function anchor(url) {
         var matches = url.match(/#(.+)/);

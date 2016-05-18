@@ -448,100 +448,55 @@ or using Chrome inspector's mobile mode.
 							<label class="cui__input__label">
 								Name
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input half right">
 							<label class="cui__input__label">
 								Lastname
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input">
 							<label class="cui__input__label">
 								Address line 1
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input">
 							<label class="cui__input__label">
 								Address line 2
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input half left">
 							<label class="cui__input__label">
 								City
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input center quarter">
 							<label class="cui__input__label">
 								State
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input right quarter">
 							<label class="cui__input__label">
 								Zip
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input left half">
 							<label class="cui__input__label">
 								Phone number
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 						<div class="cui__input right half">
 							<label class="cui__input__label">
 								Email
 							</label>
-							<input
-										class="cui__input__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__input__input" />
 						</div>
 				</div>
     </li>
@@ -947,25 +902,3 @@ or using Chrome inspector's mobile mode.
     <input class="cui__input__input" value="94027" />
 </div>
 ```
-
-<script>
-		function floatingLabel(input) {
-			if(input.value){
-				$(input).parent().addClass("is-filled");
-			} else {
-				$(input).parent().removeClass("is-filled");
-			}
-		}
-
-		function dofocus(input) {
-				$(input).parent().addClass('is-focused');
-		}
-
-		function doblur(input) {
-				$(input).parent().removeClass('is-focused');
-		}
-
-		$('input').each(function (index, input) {
-				floatingLabel(input)
-		})
-</script>
