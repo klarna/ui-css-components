@@ -8,6 +8,7 @@
 
 const fs = require('fs')
 const kmd = require('./kmd')
+const plainReporter = require('./plainReporter')
 
 const docFiles = [
   'Getting started',
@@ -37,4 +38,14 @@ module.exports = function fetchDocs () {
   })
 
   return { docs }
+}
+
+module.exports.altDocs = function () {
+    const docs = docFiles.map((name) => {
+        const parsedContent = plainReporter(fs.readFileSync(`docs/${name}.md`, { encoding: 'utf8' }))
+
+        return { name, parsedContent }
+    })
+
+    return { docs }
 }
