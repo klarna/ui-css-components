@@ -1,3 +1,7 @@
+# 6.0.0
+
+- Remove cui__dropdown--custom component
+
 # 5.8.0
 
 - Add Overlay component wrapping the Dialog
