@@ -13,6 +13,7 @@ ___
   - [checked and pressed](#Switch/single/checked and pressed)
   - [checkbox](#Switch/single/checkbox)
   - [disabled](#Switch/single/disabled)
+  - [dynamic styling](#Switch/single/dynamic-styling)
 - [Multiple](#Switch/multiple)
   - [checkbox](#Switch/multiple/checkbox)
   - [borderless](#Switch/multiple/borderless)
@@ -104,6 +105,97 @@ ___
 ```html
 <div class="cui__switch is-disabled">
   This is a toggle switch disabled
+</div>
+```
+
+<a name="Switch/single/dynamic-styling"></a>
+### Dynamic styling
+
+```html
+<div class="cui__switch dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark"
+    style="background-color: #F9FF3C;"></div>
+  This is a toggle switch with custom styles
+</div>
+
+<div class="cui__switch is-checked dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark"
+    style="background-color: #F9FF3C;"></div>
+  This is a toggle switch with custom styles
+</div>
+
+<div class="cui__switch checkbox dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark">
+    <svg
+      width="14px"
+      height="14px"
+      viewBox="0 0 14 14"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0, -1508)">
+              <g transform="translate(0, 1457)">
+                <g transform="translate(0, 33)">
+                  <g transform="translate(0, 14)">
+                    <g transform="translate(0, 4)"><g>
+                      <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                      <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                      stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+  </div>
+  This is a checkbox switch with custom styles
+</div>
+
+<div class="cui__switch checkbox is-checked dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark">
+    <svg
+      width="14px"
+      height="14px"
+      viewBox="0 0 14 14"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0, -1508)">
+              <g transform="translate(0, 1457)">
+                <g transform="translate(0, 33)">
+                  <g transform="translate(0, 14)">
+                    <g transform="translate(0, 4)"><g>
+                      <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                      <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                      stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+  </div>
+  This is a checkbox switch with custom styles
 </div>
 ```
 
