@@ -1,0 +1,13 @@
+@import '../mixins/index';
+
+.cui__checklist {
+    @include checklist;
+
+    &__item {
+        @include checklist__item;
+    }
+
+    &__checkmark {
+        @include checklist__checkmark;
+    }
+}
