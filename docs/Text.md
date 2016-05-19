@@ -18,7 +18,6 @@ These are the general text styles for the toolkit.
     - [condensed](#Text/paragraph/secondary/condensed)
   - [Legal](#Text/paragraph/legal)
 - [Promo Label](#Text/promo-label)
-  - [dynamic styling](#Text/promo-label/dynamic-styling)
 - [Link](#Text/link)
   - [dynamic styling](#Text/link/dynamic-styling)
 - [Text label](#Text/text-label)
@@ -245,20 +244,6 @@ These are the general text styles for the toolkit.
 <p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
   <span class="cui__promo-label">Promo</span>
-</p>
-```
-
-<a name="Text/promo-label/dynamic-styling"></a>
-### Dynamic styling
-
-```html
-<p class="cui__paragraph--primary condensed">
-  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  <span
-    class="cui__promo-label dynamic-styling"
-    style="color: #F9FF3C; background-color: #3500C8;">
-    Promo
-  </span>
 </p>
 ```
 
