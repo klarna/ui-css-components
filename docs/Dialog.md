@@ -11,4 +11,5 @@ Given their fullscreen nature, dialogs cannot be shown inline in the showroom.
 
 - [Default dialog](examples/base/dialog.html)
 - [Default dialog in overlay](examples/base/overlay.html)
+- [Default dialog in white overlay](examples/base/overlay-white.html)
 - [Wide dialog in overlay](examples/base/overlay-wide.html)

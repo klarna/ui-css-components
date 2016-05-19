@@ -121,4 +121,8 @@
         opacity: 1;
         z-index: 100;
     }
+
+    &.white {
+        background: transparentize(map-get($colors, white), .2);
+    }
 }
