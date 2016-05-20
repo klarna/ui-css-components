@@ -1,0 +1,26 @@
+doctype html
+<!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]-->
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+  link(rel='shortcut icon' href='favicon.ico')
+  title UI CSS Components
+
+  link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600")
+
+  link(rel='stylesheet' href='dist/ui-toolkit.css')
+  link(rel='stylesheet' href='docs/support/doc.css')
+  link(rel='stylesheet' href='docs/support/standalone.css')
+
+body
+  each doc in docs
+    section(id="#{doc.name}")
+      != doc.parsedContent

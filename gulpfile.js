@@ -39,9 +39,15 @@ gulp.task('reload:sass', function () {
 });
 
 gulp.task('reload:docs', function () {
-    gulp.src('*.jade')
+    gulp.src('index.jade')
         .pipe(plumber(notify.onError("Error: <%= error.message %>")))
         .pipe(data(fetchDocs))
+        .pipe(jade())
+        .pipe(gulp.dest('./'))
+        .pipe(reload({stream: true}));
+    gulp.src('standalone.jade')
+        .pipe(plumber(notify.onError("Error: <%= error.message %>")))
+        .pipe(data(fetchDocs.altDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream: true}));
@@ -77,8 +83,12 @@ gulp.task('build:sass', function () {
 });
 
 gulp.task('build:jade', function () {
-    gulp.src('*.jade')
+    gulp.src('index.jade')
         .pipe(data(fetchDocs))
+        .pipe(jade())
+        .pipe(gulp.dest('./'));
+    gulp.src('standalone.jade')
+        .pipe(data(fetchDocs.altDocs))
         .pipe(jade())
         .pipe(gulp.dest('./'));
 });
