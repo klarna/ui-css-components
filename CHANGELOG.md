@@ -1,3 +1,7 @@
+# 6.2.0
+
+- Add standalone.html generation for simple visual regression testing
+
 # 6.1.1
 
 - Fix line-height in Checklist component
