@@ -18,4 +18,10 @@
             color: map-get($colors, white);
         }
     }
+
+    &.dynamic-styling {
+        &:hover, &:focus, &:active {
+            text-decoration: underline;
+        }
+    }
 }

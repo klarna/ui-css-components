@@ -6,7 +6,7 @@ These are the general text styles for the toolkit.
 - [Title](#Text/title)
   - [Primary](#Text/title/primary)
     - [small](#Text/title/primary/small)
-    - [small and prominent](#Text/title/primary/small and prominent)
+    - [small and prominent](#Text/title/primary/small-and-prominent)
   - [Secondary](#Text/title/secondary)
     - [condensed](#Text/title/secondary/condensed)
   - [Subtitle](#Text/title/subtitle)
@@ -17,10 +17,11 @@ These are the general text styles for the toolkit.
   - [Secondary](#Text/paragraph/secondary)
     - [condensed](#Text/paragraph/secondary/condensed)
   - [Legal](#Text/paragraph/legal)
-- [Promo Label](#Text/promo label)
+- [Promo Label](#Text/promo-label)
 - [Link](#Text/link)
-- [Text label](#Text/text label)
-- [Amount text](#Text/amount text)
+  - [dynamic styling](#Text/link/dynamic-styling)
+- [Text label](#Text/text-label)
+- [Amount text](#Text/amount-text)
 
 <a name="Text/example"></a>
 ## Example
@@ -71,7 +72,7 @@ These are the general text styles for the toolkit.
 
 ```
 
-<a name="Text/title/primary/small and prominent"></a>
+<a name="Text/title/primary/small-and-prominent"></a>
 ### Small and prominent
 
 ```html
@@ -236,7 +237,7 @@ These are the general text styles for the toolkit.
 </p>
 ```
 
-<a name="Text/promo label"></a>
+<a name="Text/promo-label"></a>
 ## Promo Label
 
 ```html
@@ -266,7 +267,22 @@ These are the general text styles for the toolkit.
 </a>
 ```
 
-<a name="Text/text label"></a>
+<a name="Text/link/dynamic-styling"></a>
+### Dynamic styling
+
+Dynamic styling is the feature of allowing for override of the background and foreground colors. Not all styles overrides are supported: for Links, only the "blue" link's text color.
+
+In links, the `dynamic-styling` modifies the `hover`, `focus` and `active` states to have an underline instead of a darkened color. You can see the effect in the link below.
+
+```html
+<a
+  class="cui__link dynamic-styling"
+  style="color: #3500C8">
+  Click here to go somewhere else
+</a>
+```
+
+<a name="Text/text-label"></a>
 ## Text Label
 
 The text label is a small title to be used in combination with some other text styles, such as
@@ -305,7 +321,7 @@ paragraphs or secondary titles.
 </p>
 ```
 
-<a name="Text/amount text"></a>
+<a name="Text/amount-text"></a>
 ## Amount Text
 
 ```html

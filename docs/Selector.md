@@ -99,7 +99,7 @@ ___
       fill="none"
       fill-rule="evenodd"
       stroke-linecap="round"
-      stroke-width="1>
+      stroke-width="1">
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>

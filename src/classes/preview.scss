@@ -2,15 +2,6 @@
 
 .cui__preview {
     @include preview;
-
-    &.has-link {
-        cursor: pointer;
-        transition: all .2s ease;
-
-        &:hover {
-            border-color: map-get($colors, blue-hover);
-        }
-    }
 }
 
 .cui__preview__title {
@@ -36,4 +27,12 @@
     line-height: ($grid * 4);
     margin: 0 auto;
     padding: 0 ($grid * 1);
+}
+
+.cui__preview__border {
+    @include preview__border;
+}
+
+.cui__preview__border--selected {
+    @include preview__border--selected;
 }
