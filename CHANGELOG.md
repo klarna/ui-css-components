@@ -1,3 +1,7 @@
+# 6.3.0
+
+- Add partial support for dynamic-styling
+
 # 6.2.0
 
 - Add standalone.html generation for simple visual regression testing
