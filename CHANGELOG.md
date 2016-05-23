@@ -1,3 +1,7 @@
+# 6.4.0
+
+- Add legal variation of checkbox
+
 # 6.3.0
 
 - Add partial support for dynamic-styling
