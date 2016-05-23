@@ -12,6 +12,7 @@ ___
   - [error](#Switch/single/error)
   - [checked and pressed](#Switch/single/checked and pressed)
   - [checkbox](#Switch/single/checkbox)
+    - [legal](#Switch/single/checkbox/legal)
   - [disabled](#Switch/single/disabled)
   - [dynamic styling](#Switch/single/dynamic-styling)
 - [Multiple](#Switch/multiple)
@@ -88,6 +89,15 @@ ___
 ```html
 <div class="cui__switch checkbox">
   This is a toggle switch with checkbox styles on desktop
+</div>
+```
+
+<a name="Switch/single/checkbox/legal"></a>
+#### Legal
+
+```html
+<div class="cui__switch checkbox legal">
+  This is checkbox that signals approving legally required text that is too long to be rendered with a regular size and needs to be slightly smaller to fit.
 </div>
 ```
 
