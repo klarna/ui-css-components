@@ -1,5 +1,6 @@
 @keyframes spin {
     to {
         transform: rotate(1turn);
+        -ms-transform: rotate(1turn);
     }
 }

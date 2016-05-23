@@ -139,6 +139,7 @@
     .big.is-error &,
     .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
+        -ms-transform: translate(0, ($grid * -2.2));
     }
 
     .is-filled &,
@@ -147,6 +148,7 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
+        -ms-transform: translate(0, ($grid * -2));
 
         .ie9 &,
         .ie8 & {

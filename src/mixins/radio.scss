@@ -27,6 +27,7 @@
         position: absolute;
         top: ($grid * 3.4);
         transform: scale(3, 3);
+        -ms-transform: scale(3, 3);
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: ($grid * .8);
@@ -81,6 +82,7 @@
             position: absolute;
             top: ($grid * 3.4);
             transform: scale(3, 3);
+            -ms-transform: scale(3, 3);
             -webkit-transition: all .2s ease;
             transition: all .2s ease;
             width: ($grid * .8);
@@ -109,6 +111,7 @@
 
             top: ($grid * 3.4);
             transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
         }
 
         &:first-child {

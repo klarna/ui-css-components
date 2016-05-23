@@ -218,18 +218,21 @@ $stackable-border-width: $grid * .2;
         @include typography(($grid * 5.2), light);
         line-height: ($grid * 16);
         transform: translate(0, ($grid * 2));
+        -ms-transform: translate(0, ($grid * 2));
     }
 
     .big.is-filled &,
     .big.is-error &,
     .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
+        -ms-transform: translate(0, ($grid * -2.2));
     }
 
     .giant.is-filled &,
     .giant.is-error &,
     .giant.is-warning & {
         transform: translate(0, ($grid * -3.8));
+        -ms-transform: translate(0, ($grid * -3.8));
     }
 
     .is-filled &,
@@ -238,6 +241,7 @@ $stackable-border-width: $grid * .2;
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
+        -ms-transform: translate(0, ($grid * -2));
 
         .ie9 &,
         .ie8 & {

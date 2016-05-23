@@ -106,6 +106,7 @@
 
         color: map-get($colors, 'grey-text');
         transform: translate(0, ($grid * -2));
+        -ms-transform: translate(0, ($grid * -2));
 
         .ie9 &,
         .ie8 & {
@@ -156,6 +157,7 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
+        -ms-transform: translate(0, ($grid * -2));
 
         .ie9 &,
         .ie8 & {
