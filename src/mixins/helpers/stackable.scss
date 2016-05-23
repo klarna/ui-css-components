@@ -13,10 +13,6 @@ $stackable-border-width: $grid * .2;
 
     &.non-responsive {
         margin-left: ($grid * -.2);
-
-        .ie8 & {
-            margin-left: 0;
-        }
     }
 
     &.eighty {
@@ -286,7 +282,7 @@ $stackable-border-width: $grid * .2;
 
     &.bottom-right {
         @include stacked-responsiveness();
-        
+
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 
