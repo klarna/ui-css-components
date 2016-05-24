@@ -1,3 +1,8 @@
+# 6.5.0
+
+- Remove support for IE 8
+- Add -ms- prefix in transforms for IE 9
+
 # 6.4.0
 
 - Add legal variation of checkbox
