@@ -63,11 +63,6 @@
         box-shadow: none;
         z-index: 5;
 
-        @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str(#fffaf0);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        }
-
         &:hover {
             border-color: map-get($colors, warning-hover);
             z-index: 10;
@@ -139,6 +134,7 @@
     .big.is-error &,
     .big.is-warning & {
         transform: translate(0, ($grid * -2.2));
+        -ms-transform: translate(0, ($grid * -2.2));
     }
 
     .is-filled &,
@@ -147,11 +143,7 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
-
-        .ie9 &,
-        .ie8 & {
-            margin-top: ($grid * -2);
-        }
+        -ms-transform: translate(0, ($grid * -2));
     }
 
     .is-filled & {
@@ -168,11 +160,6 @@
 
     .is-disabled & {
         color: map-get($colors, grey-lines);
-    }
-
-    .ie9 &,
-    .ie8 & {
-        z-index: 1;
     }
 }
 
@@ -197,8 +184,7 @@
         width : 0;
     }
 
-    .ie9 &,
-    .ie8 & {
+    .ie9 & {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
         position: relative;
         top: ($grid * 3);

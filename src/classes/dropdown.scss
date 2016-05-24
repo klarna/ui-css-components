@@ -45,11 +45,6 @@
         box-shadow: none;
         z-index: 5;
 
-        @include respond-to-ie(8) {
-            $ie-hex: ie-hex-str(#fffaf0);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex}, endColorstr=#{$ie-hex})";
-        }
-
         &:hover {
             border-color: map-get($colors, warning-hover);
             z-index: 10;
@@ -82,10 +77,6 @@
             width: ($grid * 3);
         }
     }
-
-    .ie8 &:after {
-        background: url($root + 'img/dropdown-expand.png');
-    }
 }
 
 .cui__dropdown--native__label {
@@ -106,20 +97,11 @@
 
         color: map-get($colors, 'grey-text');
         transform: translate(0, ($grid * -2));
-
-        .ie9 &,
-        .ie8 & {
-            margin-top: ($grid * -2);
-        }
+        -ms-transform: translate(0, ($grid * -2));
     }
 
     .is-disabled & {
         color: map-get($colors, grey-lines);
-    }
-
-    .ie9 &,
-    .ie8 & {
-        z-index: -1;
     }
 }
 
@@ -156,11 +138,7 @@
         @include typography(($grid * 2.2), regular);
 
         transform: translate(0, ($grid * -2));
-
-        .ie9 &,
-        .ie8 & {
-            margin-top: ($grid * -2);
-        }
+        -ms-transform: translate(0, ($grid * -2));
     }
 
 

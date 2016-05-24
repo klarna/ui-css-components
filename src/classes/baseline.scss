@@ -30,11 +30,6 @@
         margin: 0 auto;
         width: ($grid * $content-main-width);
     }
-
-    .ie8 & {
-        margin: 0 auto;
-        width: ($grid * $content-main-width);
-    }
 }
 
 .cui__baseline__spacer {
