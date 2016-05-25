@@ -7,20 +7,27 @@ These are the general text styles for the toolkit.
   - [Primary](#Text/title/primary)
     - [small](#Text/title/primary/small)
     - [small and prominent](#Text/title/primary/small-and-prominent)
+    - [default margins](#Text/title/primary/default-margins)
   - [Secondary](#Text/title/secondary)
     - [condensed](#Text/title/secondary/condensed)
+    - [default margins](#Text/title/secondary/default-margins)
   - [Subtitle](#Text/title/subtitle)
     - [condensed](#Text/title/subtitle/condensed)
+    - [default margins](#Text/title/subtitle/default-margins)
 - [Paragraph](#Text/paragraph)
   - [Primary](#Text/paragraph/primary)
     - [condensed](#Text/paragraph/primary/condensed)
+    - [default margins](#Text/paragraph/primary/default-margins)
   - [Secondary](#Text/paragraph/secondary)
     - [condensed](#Text/paragraph/secondary/condensed)
+    - [default margins](#Text/paragraph/secondary/default-margins)
   - [Legal](#Text/paragraph/legal)
+    - [default margins](#Text/paragraph/legal/default-margins)
 - [Promo Label](#Text/promo-label)
 - [Link](#Text/link)
   - [dynamic styling](#Text/link/dynamic-styling)
 - [Text label](#Text/text-label)
+  - [default margins](#Text/text-label/default-margins)
 - [Amount text](#Text/amount-text)
 
 <a name="Text/example"></a>
@@ -49,7 +56,6 @@ These are the general text styles for the toolkit.
     Primary title in white
   </h1>
 </div>
-
 ```
 
 <a name="Text/title/primary/small"></a>
@@ -91,6 +97,25 @@ These are the general text styles for the toolkit.
 </div>
 ```
 
+<a name="Text/title/primary/default-margins"></a>
+### Defaut margins
+
+```html
+<h1 class="cui__title--primary default-margins">
+  Primary title
+</h1>
+
+<h1 class="cui__title--primary default-margins blue">
+  Primary title in blue
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary default-margins white">
+    Primary title in white
+  </h1>
+</div>
+```
+
 <a name="Text/title/secondary"></a>
 ## Secondary
 
@@ -121,6 +146,25 @@ These are the general text styles for the toolkit.
 <p class="cui__paragraph--primary condensed">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </p>
+```
+
+<a name="Text/title/secondary/default-margins"></a>
+### Default margins
+
+```html
+<h2 class="cui__title--secondary default-margins">
+  Secondary title
+</h2>
+
+<h2 class="cui__title--secondary default-margins blue">
+  Secondary title in blue
+</h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary default-margins white">
+    Secondary title in white
+  </h2>
+</div>
 ```
 
 <a name="Text/title/subtitle"></a>
@@ -157,6 +201,25 @@ These are the general text styles for the toolkit.
 <div class="cui__block blue">
   <h3 class="cui__subtitle white condensed">
     Subtitle condensed in white
+  </h3>
+</div>
+```
+
+<a name="Text/title/subtitle/default-margins"></a>
+### Defaut margins
+
+```html
+<h3 class="cui__subtitle default-margins">
+  Subtitle default margins
+</h3>
+
+<h3 class="cui__subtitle blue default-margins">
+  Subtitle default margins in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white default-margins">
+    Subtitle default margins in white
   </h3>
 </div>
 ```
@@ -204,6 +267,26 @@ These are the general text styles for the toolkit.
 </div>
 ```
 
+<a name="Text/paragraph/primary/default-margins"></a>
+### Default margins
+
+```html
+<p class="cui__paragraph--primary default-margins">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--primary default-margins">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p class="cui__paragraph--primary default-margins blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary default-margins white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
+```
+
 <a name="Text/paragraph/secondary"></a>
 ### Secondary
 
@@ -228,11 +311,32 @@ These are the general text styles for the toolkit.
 </p>
 ```
 
+<a name="Text/paragraph/secondary/default-margins"></a>
+### Default margins
+
+```html
+<p class="cui__paragraph--secondary default-margins">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--secondary default-margins">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+```
+
 <a name="Text/paragraph/legal"></a>
 ### Legal
 
 ```html
 <p class="cui__paragraph--legal">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+```
+
+<a name="Text/paragraph/legal/default-margins"></a>
+#### Default margins
+
+```html
+<p class="cui__paragraph--legal default-margins">
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
 ```
@@ -306,6 +410,43 @@ paragraphs or secondary titles.
 </h2>
 
 <h4 class="cui__text-label">
+  Billing address
+</h4>
+
+<h2 class="cui__title--secondary condensed">
+  Jonathan Konstantin Smithsson
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  15 Northeast Longname Industrial Parkway<br />
+  San Francisco<br />
+  94100 California<br />
+  United States
+</p>
+```
+
+<a name="Text/text-label/default-margins"></a>
+### Default margins
+
+
+```html
+<h4 class="cui__text-label default-margins">
+  Klarna ID
+</h4>
+
+<p class="cui__paragraph--primary condensed">
+  123456-454-8953-34984-39834
+</p>
+
+<h4 class="cui__text-label default-margins">
+  Original amount
+</h4>
+
+<h2 class="cui__title--secondary default-margins">
+  1.600 kr
+</h2>
+
+<h4 class="cui__text-label default-margins">
   Billing address
 </h4>
 

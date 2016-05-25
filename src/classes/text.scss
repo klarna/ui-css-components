@@ -11,12 +11,6 @@
 
 .cui__title--secondary {
     @include title--secondary;
-
-    padding: ($grid * 4.4) 0 ($grid * 2.6);
-
-    &.condensed {
-        padding: ($grid * .4) 0 ($grid * 1.6);
-    }
 }
 
 // SUBTITLE
