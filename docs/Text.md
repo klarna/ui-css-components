@@ -98,7 +98,7 @@ These are the general text styles for the toolkit.
 ```
 
 <a name="Text/title/primary/default-margins"></a>
-### Defaut margins
+### Default margins
 
 ```html
 <h1 class="cui__title--primary default-margins">
@@ -206,7 +206,7 @@ These are the general text styles for the toolkit.
 ```
 
 <a name="Text/title/subtitle/default-margins"></a>
-### Defaut margins
+### Default margins
 
 ```html
 <h3 class="cui__subtitle default-margins">
