@@ -82,6 +82,7 @@
 .cui__dropdown--native__label {
     @include typography(($grid * 2.8), regular);
 
+    color: map-get($colors, 'grey-text');
     line-height: ($grid * 10);
     padding: 0 ($grid * 4);
     position: absolute;
@@ -95,7 +96,6 @@
     .is-selected & {
         @include typography(($grid * 2.2), regular);
 
-        color: map-get($colors, 'grey-text');
         transform: translate(0, ($grid * -2));
         -ms-transform: translate(0, ($grid * -2));
     }
