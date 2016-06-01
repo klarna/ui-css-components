@@ -331,55 +331,55 @@ demo.
 							<label class="cui__field__label">
 								Name
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field top-right half non-responsive">
 							<label class="cui__field__label">
 								Lastname
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 1
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 2
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square half">
 							<label class="cui__field__label">
 								City
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								State
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								Zip
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field bottom-left half">
 							<label class="cui__field__label">
 								Phone number
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field bottom-right half">
 							<label class="cui__field__label">
 								Email
 							</label>
-							<input class="cui__input__input" />
+							<input class="cui__field__input" />
 						</div>
 				</div>
     </li>
