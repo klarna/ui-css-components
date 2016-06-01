@@ -10,6 +10,8 @@
   - [inverted](#Navigation/tab menu/inverted)
   - [non selectable](#Navigation/tab menu/non selectable)
 - [Context menu](#Navigation/context menu)
+  - [regular](#Navigation/context menu/regular)
+  - [blue bg](#Navigation/context menu/blue bg)
 
 <a name="Navigation/examples"></a>
 ## Examples
@@ -149,6 +151,8 @@ The context menu is to be used with direct interaction (aka links), usually as
 a user menu with things like preferences, logout and the like. It's mainly a
 desktop component.
 
+### regular
+
 ```html
 <ol class="cui__context-menu">
    <li>
@@ -165,7 +169,7 @@ desktop component.
       <form>
         3 - Form
       </form>
-   </li>   
+   </li>
    <li class="cui__context-menu__separator"></li>
    <li>
       <a href="#" class="cui__context-menu__item">
@@ -175,4 +179,36 @@ desktop component.
       </a>
    </li>
 </ol>
+```
+
+### blue bg
+
+```html
+<div style="background: #0074c8; padding: 20px;">
+  <ol class="cui__context-menu">
+     <li>
+        <a href="#" class="cui__context-menu__item">
+          1 - Link
+        </a>
+     </li>
+     <li>
+        <a href="#" class="cui__context-menu__item">
+          2 - Link
+        </a>
+     </li>
+     <li class="cui__context-menu__item">
+        <form>
+          3 - Form
+        </form>
+     </li>
+     <li class="cui__context-menu__separator"></li>
+     <li>
+        <a href="#" class="cui__context-menu__item">
+          <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+          </div>
+          4 - Link
+        </a>
+     </li>
+  </ol>
+</div>
 ```
