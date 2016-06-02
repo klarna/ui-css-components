@@ -321,6 +321,9 @@ $stackable-border-width: $grid * .2;
 
     .is-disabled & {
         color: map-get($colors, grey-lines);
+        /* Override webkit font color change */
+        -webkit-text-fill-color: map-get($colors, grey-lines);
+        -webkit-opacity: 1;
     }
 
     .safari &,
