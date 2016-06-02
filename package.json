@@ -1,6 +1,6 @@
 {
   "name": "@klarna/ui-css-components",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "description": "Klarna UI CSS Components",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
