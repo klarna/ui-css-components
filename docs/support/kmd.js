@@ -20,9 +20,9 @@ function escape (html, encode) {
 }
 
 const headingLevelClass = {
-  '1': 'cui__title--primary',
-  '2': 'cui__title--secondary',
-  '3': 'cui__subtitle'
+  '1': 'cui__title--primary default-margins',
+  '2': 'cui__title--secondary default-margins',
+  '3': 'cui__subtitle default-margins'
 }
 
 renderer.heading = (text, level) => (
