@@ -1,3 +1,7 @@
+# 7.0.0
+
+- Put all default text margins behind a `default-margins` class. By default, text styles now have only the required margin to fit the grid, but no extra margins for layout. This was deemed necessary since the different templates require different margins to fit the designs.
+
 # 6.5.0
 
 - Remove support for IE 8
