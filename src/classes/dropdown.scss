@@ -3,12 +3,21 @@
 // NATIVE
 .cui__dropdown--native {
     @include stackable();
-    @include options(true);
+    // @include options(true);
 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-transition: all .2s ease;
+    border-radius: $border-radius;
+    border: ($grid * .2) solid $border-color;
+    box-sizing: border-box;
+    clear: both;
+    display: block;
     height: ($grid * 10.2);
-    margin: 0 0 ($grid * -.2);
+    margin-bottom: ($grid * -.2);
     position: relative;
+    text-align: left;
+    top: ($grid * -.2);
+    transition: all .2s ease;
 
     &:after {
         background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTQgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ4OCwgLTQyOCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ4OCwgNDI5KSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0Ij48L3JlY3Q+PHBhdGggZD0iTTExLDUgTDcsOSBMMyw1IiBzdHJva2U9IiMzQzNDM0UiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==');
