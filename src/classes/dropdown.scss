@@ -134,6 +134,7 @@
 .cui__dropdown--native__current-option {
     @include typography(($grid * 2.8), semi-bold);
 
+    color: map-get($colors, black);
     line-height: ($grid * 10);
     padding: 0 ($grid * 4);
     position: absolute;
