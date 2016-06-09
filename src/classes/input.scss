@@ -268,7 +268,7 @@ $stackable-border-width: $grid * .2;
     background-color: transparent;
     border: 0;
     box-sizing: border-box;
-    color: #3c3c3e;
+    color: map-get($colors, black);
     height: ($grid * 10);
     outline: none;
     padding: 0;
