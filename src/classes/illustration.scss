@@ -21,6 +21,14 @@
             @include illustration(map-get($colors, green));
         }
 
+        &.warning {
+            @include illustration(map-get($colors, non-standard-orange));
+        }
+
+        &.black {
+            @include illustration(map-get($colors, black));
+        }
+
         &.inverse {
             @include illustration(map-get($colors, white));
         }
