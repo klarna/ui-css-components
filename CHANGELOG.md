@@ -1,4 +1,4 @@
-# 7.1.0
+# 7.3.0
 
 - Add tiny illustration size
 
