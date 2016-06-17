@@ -5,6 +5,7 @@ Illustration refers to any embedded SVG illustration. They can be found in the `
 ___
 
 - [Big](#Illustration/big)
+- [Tiny](#Illustration/tiny)
 - [Button](#Illustration/button)
   - [default](#Illustration/button/default)
   - [gray](#Illustration/button/gray)
@@ -94,6 +95,76 @@ ___
 	    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
 	  </g>
 	</svg>
+</div>
+```
+
+<a name="Illustration/tiny"></a>
+## Tiny
+
+```html
+<svg
+  class='cui__illustration tiny'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny gray'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny error'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny success'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny warning'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny black'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<div class='cui__block blue'>
+  <svg
+    class='cui__illustration tiny inverse'
+    viewBox='0 0 21 21'>
+    <path
+      class='cui__illustration__stroke'
+      d='M6.5,9.3l4,4l4,-4'
+      strokeLinecap='round' />
+  </svg>
 </div>
 ```
 
