@@ -1,3 +1,7 @@
+# 7.3.1
+
+- Fix bounding box of tiny illustration
+
 # 7.3.0
 
 - Add tiny illustration size
