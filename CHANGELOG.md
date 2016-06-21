@@ -1,3 +1,7 @@
+# 7.4.0
+
+- Add error alert box
+
 # 7.3.1
 
 - Fix bounding box of tiny illustration
