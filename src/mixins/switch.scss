@@ -22,6 +22,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: ($grid * 7.4);
@@ -45,6 +46,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
         width: ($grid * 4);
@@ -120,6 +122,104 @@
 
             &::after {
                 @include opacity(1);
+            }
+        }
+    }
+
+    &.dynamic-styling {
+        &:after {
+            opacity: 0;
+        }
+
+        .cui__switch__bullet {
+            background: map-get($colors, grey-text);
+            border-radius: ($grid * 4);
+            content: '';
+            display: block;
+            height: ($grid * 4.4);
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            width: ($grid * 7.4);
+
+            @if $side == left {
+                left: 0;
+            } @else {
+                left: auto;
+                right: ($grid * 4);
+            }
+        }
+
+        .cui__switch__bullet__checkmark {
+            @include opacity(1);
+
+            background: white;
+            border-radius: ($grid * 5);
+            content: '';
+            display: block;
+            height: ($grid * 4);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            width: ($grid * 4);
+
+            @if $side == left {
+                left: ($grid * .2);
+            } @else {
+                left: auto;
+                right: ($grid * 7.2);
+            }
+        }
+
+        &.is-pressed {
+            .cui__switch__bullet__checkmark {
+                width: ($grid * 5);
+
+                @if $side == left {
+                } @else {
+                    left: auto;
+                    right: ($grid * 6.2);
+                }
+            }
+        }
+
+        &.is-checked {
+            &::before {
+                background: map-get($colors, grey-text);
+                border-color: map-get($colors, grey-text);
+            }
+
+            .cui__switch__bullet__checkmark {
+                @include opacity(1);
+
+                @if $side == left {
+                    left: ($grid * 3.2);
+                } @else {
+                    left: auto;
+                    right: ($grid * 4.2);
+                }
+            }
+
+            .cui__switch__bullet {
+                opacity: 1;
+            }
+
+            &.is-pressed {
+                .cui__switch__bullet__checkmark {
+                    @if $side == left {
+                        left: ($grid * 2.2);
+                    } @else {
+                        left: auto;
+                        right: ($grid * 4.2);
+                    }
+                }
             }
         }
     }

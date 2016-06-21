@@ -15,6 +15,9 @@ tag:
 	git tag v${VERSION}
 	git push origin v${VERSION}
 
+lint:
+	npm run lint
+
 gh-pages:
 	-git branch -D gh-pages 
 	git checkout -b gh-pages

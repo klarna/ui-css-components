@@ -5,6 +5,26 @@
     box-sizing: border-box;
     margin-bottom: ($grid * 5);
     padding: ($grid * 2.8) ($grid * 4);
+
+    &.has-link {
+        cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+            border-color: map-get($colors, blue-hover);
+        }
+    }
+
+    &.dynamic-styling {
+        border: ($grid * .2) solid transparent;
+        position: relative;
+
+        &.has-link {
+            &:hover {
+                border: ($grid * .2) solid transparent;
+            }
+        }
+    }
 }
 
 @mixin preview__title {
@@ -20,4 +40,40 @@
 
     margin: 0;
     padding: 0;
+}
+
+@mixin preview__border {
+    border: ($grid * .2) solid map-get($colors, grey-lines);
+    border-radius: $border-radius;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: ($grid * -.2) 0 0 ($grid * -.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+@mixin preview__border--selected {
+    border: ($grid * .2) solid map-get($colors, grey-lines);
+    border-radius: $border-radius;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: ($grid * -.2) 0 0 ($grid * -.2);
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .2s ease;
+    width: 100%;
+    z-index: -1;
+
+    .cui__preview.dynamic-styling:hover & {
+        opacity: 1;
+    }
 }

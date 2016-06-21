@@ -20,15 +20,23 @@
 
     line-height: ($grid * 7);
     margin: 0;
-    padding: ($grid * 3.6) 0 ($grid * 3.4);
+    padding: ($grid * .4) 0 ($grid * .6);
 
     &.small {
         @include typography(($grid * 4.4), light);
 
-        padding: ($grid * 3.8) 0 ($grid * 3.2);
+        padding: ($grid * .6) 0 ($grid * .4);
 
         &.strong {
             @include typography(($grid * 4.4), regular);
+        }
+    }
+
+    &.default-margins {
+        padding: ($grid * 3.6) 0 ($grid * 3.4);
+
+        &.small {
+            padding: ($grid * 3.8) 0 ($grid * 3.2);
         }
     }
 }
@@ -39,6 +47,19 @@
 
     line-height: ($grid * 3);
     margin: 0;
+    padding: ($grid * .4) 0 ($grid * .6);
+
+    &.condensed {
+        padding: ($grid * .4) 0 ($grid * 1.6);
+    }
+
+    &.default-margins {
+        padding: ($grid * 4.4) 0 ($grid * 2.6);
+
+        &.condensed {
+            padding: ($grid * .4) 0 ($grid * 1.6);
+        }
+    }
 }
 
 @mixin subtitle {
@@ -48,18 +69,26 @@
     height: ($grid * 4);
     line-height: ($grid * 4);
     margin: 0;
-    padding: ($grid * 3.2) 0 ($grid * 1.8);
+    padding: ($grid * .2) 0 ($grid * .8);
     text-transform: uppercase;
 
     &.condensed {
         padding: ($grid * .2) 0 ($grid * 1.8);
+    }
+
+    &.default-margins {
+        padding: ($grid * 3.2) 0 ($grid * 1.8);
     }
 }
 
 @mixin paragraph {
     line-height: ($grid * 5);
     margin: 0;
-    padding: ($grid * .6) 0 ($grid * 3.4);
+    padding: ($grid * .6) 0 ($grid * .4);
+
+    &.default-margins {
+        padding: ($grid * .6) 0 ($grid * 3.4);
+    }
 }
 
 @mixin paragraph-condensed {
@@ -98,7 +127,11 @@
 
     line-height: ($grid * 4);
     margin: 0;
-    padding: ($grid * .2) 0 ($grid * 2.8);
+    padding: ($grid * .2) 0 ($grid * .8);
+
+    &.default-margins {
+        padding: ($grid * .2) 0 ($grid * 2.8);
+    }
 }
 
 @mixin promo-label {
@@ -126,7 +159,11 @@
     @include palette-colors(map-get($colors, grey-text));
     line-height: ($grid * 3);
     margin: 0;
-    padding: ($grid * 1.6) 0 ($grid * .4);
+    padding: ($grid * .6) 0 ($grid * .4);
+
+    &.default-margins {
+        padding: ($grid * 1.6) 0 ($grid * .4);
+    }
 }
 
 @mixin amount-text {

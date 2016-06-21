@@ -7,6 +7,7 @@
     padding: ($grid * 4);
     position: relative;
     transform: translateY(($grid * 10));
+    -ms-transform: translateY(($grid * 10));
     transition: transform 0.3s ease;
     width: 100%;
 
@@ -30,6 +31,7 @@
 
     .is-visible & {
         transform: translateY(0);
+        -ms-transform: translateY(0);
     }
 }
 

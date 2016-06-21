@@ -1,3 +1,40 @@
+# 7.3.1
+
+- Fix bounding box of tiny illustration
+
+# 7.3.0
+
+- Add tiny illustration size
+
+# 7.0.0
+
+- Put all default text margins behind a `default-margins` class. By default, text styles now have only the required margin to fit the grid, but no extra margins for layout. This was deemed necessary since the different templates require different margins to fit the designs.
+
+# 6.5.0
+
+- Remove support for IE 8
+- Add -ms- prefix in transforms for IE 9
+
+# 6.4.0
+
+- Add legal variation of checkbox
+
+# 6.3.0
+
+- Add partial support for dynamic-styling
+
+# 6.2.0
+
+- Add standalone.html generation for simple visual regression testing
+
+# 6.1.1
+
+- Fix line-height in Checklist component
+
+# 6.1.0
+
+- Add Checklist component
+
 # 6.0.0
 
 - Remove cui__dropdown--custom component
