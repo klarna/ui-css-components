@@ -1,3 +1,7 @@
+# 7.4.1
+
+- Fix yellow background on fields with autocomplete on webkit
+
 # 7.4.0
 
 - Add error alert box
