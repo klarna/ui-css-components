@@ -331,100 +331,55 @@ demo.
 							<label class="cui__field__label">
 								Name
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field top-right half non-responsive">
 							<label class="cui__field__label">
 								Lastname
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 1
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square">
 							<label class="cui__field__label">
 								Address line 2
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field square half">
 							<label class="cui__field__label">
 								City
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								State
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field center quarter">
 							<label class="cui__field__label">
 								Zip
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field bottom-left half">
 							<label class="cui__field__label">
 								Phone number
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 						<div class="cui__field bottom-right half">
 							<label class="cui__field__label">
 								Email
 							</label>
-							<input
-										class="cui__field__input"
-										oninput="floatingLabel(this)"
-										onfocus="dofocus(this)"
-										onblur="doblur(this)"
-								/>
+							<input class="cui__field__input" />
 						</div>
 				</div>
     </li>
@@ -923,25 +878,3 @@ demo.
     <input class="cui__field__input" value="94027" />
 </div>
 ```
-
-<script>
-		function floatingLabel(input) {
-			if(input.value){
-				$(input).parent().addClass("is-filled");
-			} else {
-				$(input).parent().removeClass("is-filled");
-			}
-		}
-
-		function dofocus(input) {
-				$(input).parent().addClass('is-focused');
-		}
-
-		function doblur(input) {
-				$(input).parent().removeClass('is-focused');
-		}
-
-		$('input').each(function (index, input) {
-				floatingLabel(input)
-		})
-</script>
