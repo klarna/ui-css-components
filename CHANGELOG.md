@@ -1,3 +1,7 @@
+# 7.3.2
+
+- Fix yellow background on fields with autocomplete on webkit
+
 # 7.3.1
 
 - Fix bounding box of tiny illustration
