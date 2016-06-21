@@ -13,6 +13,7 @@ const plainReporter = require('./plainReporter')
 const docFiles = [
   'Getting started',
   'Baseline',
+  'Alert',
   'Block',
   'Button',
   'Checklist',
