@@ -99,6 +99,10 @@
     vertical-align: middle;
     width: 0;
 
+    @include respond-to-wide {
+        padding: ($grid * 6);
+    }
+
     .is-visible & {
         height: 100%;
         width: 100%;
