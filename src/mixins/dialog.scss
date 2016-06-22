@@ -3,9 +3,7 @@
     box-sizing: border-box;
     display: table;
     height: 100%;
-    margin: 0 auto;
     padding: ($grid * 4);
-    position: relative;
     transform: translateY(($grid * 10));
     -ms-transform: translateY(($grid * 10));
     transition: transform 0.3s ease;
@@ -17,9 +15,9 @@
 
     @include respond-to-wide {
         border-radius: ($grid * 1.6);
-        display: block;
         height: auto;
-        padding: $grid * 12;
+        margin: ($grid * 12) auto;
+        padding: ($grid * 12);
         width: ($grid * 87);
     }
 
@@ -92,30 +90,17 @@
 }
 
 @mixin dialog__wrapper {
-    display: table-cell;
-    height: 0;
-    overflow: hidden;
-    position: relative;
-    vertical-align: middle;
-    width: 0;
-
-    @include respond-to-wide {
-        padding: ($grid * 6);
-    }
-
-    .is-visible & {
-        height: 100%;
-        width: 100%;
-    }
+  margin: auto;
 }
 
 @mixin dialog__overlay {
     background: transparentize(map-get($colors, black), .2);
     bottom: 0;
-    display: table;
+    display: flex;
     height: 100%;
     left: 0;
     opacity: 0;
+    overflow-y: scroll;
     position: fixed;
     right: 0;
     top: 0;
