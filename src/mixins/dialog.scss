@@ -7,7 +7,6 @@
     transform: translateY(($grid * 10));
     -ms-transform: translateY(($grid * 10));
     transition: transform 0.3s ease;
-    width: 100%;
 
     @include respond-to-wide ($mobile-narrow-max-width) {
         padding: ($grid * 6);
@@ -17,13 +16,14 @@
         border-radius: ($grid * 1.6);
         height: auto;
         margin: ($grid * 12) auto;
+        max-width: ($grid * 87);
         padding: ($grid * 12);
-        width: ($grid * 87);
+        width: 100%;
     }
 
     .wide & {
         @include respond-to-wide {
-            width: ($grid * 108);
+            max-width: ($grid * 108);
         }
     }
 
@@ -90,13 +90,17 @@
 }
 
 @mixin dialog__wrapper {
-  margin: auto;
+  height: 100%;
+
+  @include respond-to-wide {
+    height: auto;
+    padding: 0 ($grid * 6);
+  }
 }
 
 @mixin dialog__overlay {
     background: transparentize(map-get($colors, black), .2);
     bottom: 0;
-    display: flex;
     height: 100%;
     left: 0;
     opacity: 0;
