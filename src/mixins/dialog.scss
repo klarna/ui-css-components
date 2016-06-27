@@ -4,7 +4,6 @@
     display: table;
     height: 100%;
     padding: ($grid * 4);
-    text-align: left;
     transform: translateY(($grid * 10));
     -ms-transform: translateY(($grid * 10));
     transition: transform 0.3s ease;
@@ -17,13 +16,14 @@
         border-radius: ($grid * 1.6);
         height: auto;
         margin: ($grid * 12) auto;
-        max-width: ($grid * 87);
+        width: ($grid * 87);
         padding: ($grid * 12);
+        text-align: left; // override wrapper text-align
     }
 
     .wide & {
         @include respond-to-wide {
-            max-width: ($grid * 108);
+            width: ($grid * 108);
         }
     }
 
