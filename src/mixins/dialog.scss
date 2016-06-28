@@ -103,6 +103,7 @@
 }
 
 @mixin dialog__overlay {
+    -webkit-overflow-scrolling: touch;
     background: transparentize(map-get($colors, black), .2);
     bottom: 0;
     height: 100%;
