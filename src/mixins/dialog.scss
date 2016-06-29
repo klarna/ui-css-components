@@ -17,14 +17,14 @@
         border-radius: ($grid * 1.6);
         height: auto;
         margin: ($grid * 6) auto;
+        max-width: ($grid * 87);
         padding: ($grid * 12);
         text-align: left; // override dialog__wrapper text-align
-        width: ($grid * 87);
     }
 
     .wide & {
         @include respond-to-wide {
-            width: ($grid * 108);
+            max-width: ($grid * 108);
         }
     }
 
