@@ -1,3 +1,8 @@
+# 8.0.0
+
+- Add SVG `cui__illustration__loader`
+- Use SVG for the icon of the loading `cui__button--primary` and `cui__button--secondary`
+
 # 7.4.1
 
 - Fix yellow background on fields with autocomplete on webkit
