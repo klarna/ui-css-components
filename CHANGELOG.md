@@ -1,3 +1,7 @@
+# 8.0.3
+
+- Fix hover, focus and active states of dynamically styled buttons with loader
+
 # 8.0.2
 
 - Add support for long dialog 
