@@ -102,7 +102,7 @@
 
     &.is-loading {
         &:after {
-            @include button__loader('button--secondary__loader');
+            @include button__loader;
             content: '';
             margin-top: -10px;
             position: absolute;
