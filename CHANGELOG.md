@@ -1,3 +1,7 @@
+# 8.0.2
+
+- Add support for long dialog 
+
 # 8.0.1
 
 - Fix missing loaders for Field, Input and Dropdown
