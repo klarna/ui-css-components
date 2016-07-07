@@ -1,3 +1,7 @@
+# 8.0.1
+
+- Fix missing loaders for Field, Input and Dropdown
+
 # 8.0.0
 
 - Add SVG `cui__illustration__loader`
