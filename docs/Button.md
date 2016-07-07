@@ -637,6 +637,53 @@ In primary buttons, the `dynamic-styling` class creates a darkened layer on top 
 	  Pay now
 	</span>
 </button>
+
+<button
+	class="cui__button--primary dynamic-styling is-loading"
+	style="background-color: #3500C8; border-color: #3500C8;">
+	<svg
+		width="20"
+		height="20"
+		class="cui__illustration__loader"
+		viewBox="-1 -1 22 22">
+		<defs>
+			<linearGradient id="gradient-primary-dynamic-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="rgba(249,255,60, 0)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 0.2)"></stop>
+			</linearGradient>
+			<linearGradient
+				id="gradient-primary-dynamic-1"
+				gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="rgba(249,255,60, 0.2)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 0.4)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-primary-dynamic-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+				<stop offset="0%" stop-color="rgba(249,255,60, 0.4)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 0.6)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-primary-dynamic-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+				<stop offset="0%" stop-color="rgba(249,255,60, 0.6)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 0.8)"></stop></linearGradient>
+			<linearGradient id="gradient-primary-dynamic-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+				<stop offset="0%" stop-color="rgba(249,255,60, 0.8)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 1)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-primary-dynamic-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+				<stop offset="0%" stop-color="rgba(249,255,60, 1)"></stop>
+				<stop offset="100%" stop-color="rgba(249,255,60, 1.2)"></stop>
+			</linearGradient>
+		</defs>
+
+		<g fill="none" stroke-width="2" transform="translate(10,10)">
+			<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-primary-dynamic-0)"></path>
+			<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-primary-dynamic-1)"></path>
+			<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-primary-dynamic-2)"></path>
+			<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-primary-dynamic-3)"></path>
+			<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-primary-dynamic-4)"></path>
+			<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-primary-dynamic-5)" stroke-linecap="round"></path>
+		</g>
+	</svg>
+</button>
 ```
 
 <a name="Button/secondary"></a>
@@ -847,5 +894,52 @@ In secondary buttons, the `dynamic-styling` class creates a white layer on top o
 	<span class="cui__button__label">
 	  Pay now
 	</span>
+</button>
+
+<button
+	class="cui__button--secondary dynamic-styling is-loading"
+	style="color: #3500C8; border-color: #3500C8;">
+	<svg
+		width="20"
+		height="20"
+		class="cui__illustration__loader"
+		viewBox="-1 -1 22 22">
+		<defs>
+			<linearGradient id="gradient-secondary-dynamic-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="rgba(53,0,200, 0)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 0.2)"></stop>
+			</linearGradient>
+			<linearGradient
+				id="gradient-secondary-dynamic-1"
+				gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="rgba(53,0,200, 0.2)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 0.4)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-secondary-dynamic-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+				<stop offset="0%" stop-color="rgba(53,0,200, 0.4)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 0.6)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-secondary-dynamic-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+				<stop offset="0%" stop-color="rgba(53,0,200, 0.6)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 0.8)"></stop></linearGradient>
+			<linearGradient id="gradient-secondary-dynamic-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+				<stop offset="0%" stop-color="rgba(53,0,200, 0.8)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 1)"></stop>
+			</linearGradient>
+			<linearGradient id="gradient-secondary-dynamic-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+				<stop offset="0%" stop-color="rgba(53,0,200, 1)"></stop>
+				<stop offset="100%" stop-color="rgba(53,0,200, 1.2)"></stop>
+			</linearGradient>
+		</defs>
+
+		<g fill="none" stroke-width="2" transform="translate(10,10)">
+			<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-secondary-dynamic-0)"></path>
+			<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-secondary-dynamic-1)"></path>
+			<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-secondary-dynamic-2)"></path>
+			<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-secondary-dynamic-3)"></path>
+			<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-secondary-dynamic-4)"></path>
+			<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-secondary-dynamic-5)" stroke-linecap="round"></path>
+		</g>
+	</svg>
 </button>
 ```
