@@ -15,9 +15,12 @@
     }
 
     &.is-loading {
-        &:after {
-            @include button__loader('button--primary__loader');
-            content: '';
+        padding-bottom: ($grid * 2.8);
+        padding-top: ($grid * 2.8);
+
+        &.small {
+            padding-bottom: ($grid * 1.8);
+            padding-top: ($grid * 1.8);
         }
     }
 
@@ -41,9 +44,12 @@
     }
 
     &.is-loading {
-        &:after {
-            @include button__loader('button--secondary__loader');
-            content: '';
+        padding-bottom: ($grid * 2.8);
+        padding-top: ($grid * 2.8);
+
+        &.small {
+            padding-bottom: ($grid * 1.8);
+            padding-top: ($grid * 1.8);
         }
     }
 

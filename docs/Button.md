@@ -86,20 +86,188 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	<tr>
 		<td>
 			<button class="cui__button--primary small is-loading">
+				<svg
+					width="20"
+					height="20"
+					class="cui__illustration__loader"
+					viewBox="-1 -1 22 22">
+					<defs>
+						<linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+						</linearGradient>
+						<linearGradient
+							id="gradient-white-1"
+							gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+						<linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+						</linearGradient>
+					</defs>
+
+					<g fill="none" stroke-width="2" transform="translate(10,10)">
+						<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+						<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+						<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+						<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+						<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+						<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+					</g>
+				</svg>
 			</button>
 		</td>
 		<td>
 			<button class="cui__button--secondary small is-loading">
+				<svg
+				  width="20"
+				  height="20"
+				  class="cui__illustration__loader"
+				  viewBox="-1 -1 22 22">
+				  <defs>
+				    <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+				    </linearGradient>
+				    <linearGradient
+				      id="gradient-1"
+				      gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+				    </linearGradient>
+				    <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+				    </linearGradient>
+				    <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+				    <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+				    </linearGradient>
+				    <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+				      <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+				      <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+				    </linearGradient>
+				  </defs>
+
+				  <g fill="none" stroke-width="2" transform="translate(10,10)">
+				    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+				    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+				    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+				    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+				    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+				    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+				  </g>
+				</svg>
 			</button>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<button class="cui__button--primary is-loading">
+				<svg
+					width="20"
+					height="20"
+					class="cui__illustration__loader"
+					viewBox="-1 -1 22 22">
+					<defs>
+						<linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+						</linearGradient>
+						<linearGradient
+							id="gradient-white-1"
+							gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+						<linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+							<stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+							<stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+						</linearGradient>
+					</defs>
+
+					<g fill="none" stroke-width="2" transform="translate(10,10)">
+						<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+						<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+						<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+						<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+						<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+						<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+					</g>
+				</svg>
 			</button>
 		</td>
 		<td>
 			<button class="cui__button--secondary is-loading">
+				<svg
+					width="20"
+					height="20"
+					class="cui__illustration__loader"
+					viewBox="-1 -1 22 22">
+					<defs>
+						<linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+						</linearGradient>
+						<linearGradient
+							id="gradient-1"
+							gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+						<linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+						</linearGradient>
+					</defs>
+
+					<g fill="none" stroke-width="2" transform="translate(10,10)">
+						<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+						<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+						<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+						<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+						<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+						<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+					</g>
+				</svg>
 			</button>
 		</td>
 	</tr>
@@ -130,10 +298,94 @@ Here's a showcase of all buttons. Pass your mouse over and click the elements to
 	<tr>
 		<td>
 			<button class="cui__button--primary big is-loading">
+			<svg
+				width="20"
+				height="20"
+				class="cui__illustration__loader"
+				viewBox="-1 -1 22 22">
+				<defs>
+					<linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+						<stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+					</linearGradient>
+					<linearGradient
+						id="gradient-white-1"
+						gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+						<stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+					</linearGradient>
+					<linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+						<stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+					</linearGradient>
+					<linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+						<stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+					<linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+						<stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+					</linearGradient>
+					<linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+						<stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+						<stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+					</linearGradient>
+				</defs>
+
+				<g fill="none" stroke-width="2" transform="translate(10,10)">
+					<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+					<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+					<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+					<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+					<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+					<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+				</g>
+			</svg>
 			</button>
 		</td>
 		<td>
 			<button class="cui__button--secondary big is-loading">
+				<svg
+					width="20"
+					height="20"
+					class="cui__illustration__loader"
+					viewBox="-1 -1 22 22">
+					<defs>
+						<linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+						</linearGradient>
+						<linearGradient
+							id="gradient-1"
+							gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+						<linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+							<stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+						</linearGradient>
+						<linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+							<stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+						</linearGradient>
+					</defs>
+
+					<g fill="none" stroke-width="2" transform="translate(10,10)">
+						<path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+						<path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+						<path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+						<path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+						<path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+						<path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+					</g>
+				</svg>
 			</button>
 		</td>
 	</tr>
@@ -198,6 +450,48 @@ Every time a user submits a form, you should change the current submit button to
 
 ```html
 <button class="cui__button--primary is-loading">
+	<svg
+    width="20"
+    height="20"
+    class="cui__illustration__loader"
+    viewBox="-1 -1 22 22">
+    <defs>
+      <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+      </linearGradient>
+      <linearGradient
+        id="gradient-white-1"
+        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+      <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+      </linearGradient>
+    </defs>
+
+    <g fill="none" stroke-width="2" transform="translate(10,10)">
+      <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+      <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+      <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+      <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+      <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+      <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+    </g>
+  </svg>
 </button>
 ```
 
@@ -242,6 +536,48 @@ Every time a user submits a form, you should change the current submit button to
 
 ```html
 <button class="cui__button--primary big is-loading">
+	<svg
+    width="20"
+    height="20"
+    class="cui__illustration__loader"
+    viewBox="-1 -1 22 22">
+    <defs>
+      <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+      </linearGradient>
+      <linearGradient
+        id="gradient-white-1"
+        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+      <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+      </linearGradient>
+    </defs>
+
+    <g fill="none" stroke-width="2" transform="translate(10,10)">
+      <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+      <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+      <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+      <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+      <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+      <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+    </g>
+  </svg>
 </button>
 ```
 
@@ -319,6 +655,48 @@ This should be used for your secondary actions.
 
 ```html
 <button class="cui__button--secondary is-loading">
+	<svg
+	  width="20"
+	  height="20"
+	  class="cui__illustration__loader"
+	  viewBox="-1 -1 22 22">
+	  <defs>
+	    <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+	    </linearGradient>
+	    <linearGradient
+	      id="gradient-1"
+	      gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+	    <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+	    </linearGradient>
+	  </defs>
+
+	  <g fill="none" stroke-width="2" transform="translate(10,10)">
+	    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+	    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+	    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+	    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+	    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+	    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+	  </g>
+	</svg>
 </button>
 ```
 
@@ -363,6 +741,48 @@ This should be used for your secondary actions.
 
 ```html
 <button class="cui__button--secondary big is-loading">
+	<svg
+	  width="20"
+	  height="20"
+	  class="cui__illustration__loader"
+	  viewBox="-1 -1 22 22">
+	  <defs>
+	    <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+	    </linearGradient>
+	    <linearGradient
+	      id="gradient-1"
+	      gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+	    <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+	    </linearGradient>
+	    <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+	      <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+	      <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+	    </linearGradient>
+	  </defs>
+
+	  <g fill="none" stroke-width="2" transform="translate(10,10)">
+	    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+	    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+	    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+	    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+	    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+	    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+	  </g>
+	</svg>
 </button>
 ```
 
