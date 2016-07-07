@@ -60,3 +60,14 @@
         }
     }
 }
+
+@keyframes cui__illustration__loader__spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cui__illustration__loader {
+    animation: cui__illustration__loader__spin .8s linear infinite;
+    display: block;
+    margin: 0;
+}
