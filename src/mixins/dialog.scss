@@ -92,9 +92,8 @@
 
 @mixin dialog__scroll {
     background-color: crimson;
-    // display: block;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
     width: 100%;
 
     @include respond-to-wide {
