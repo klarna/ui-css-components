@@ -5,7 +5,7 @@
 }
 
 .cui__dialog__content {
-  @include dialog__content;
+    @include dialog__content;
 }
 
 .cui__dialog__cell {
@@ -13,11 +13,11 @@
 }
 
 .cui__dialog__footer {
-  @include dialog__footer;
+    @include dialog__footer;
 }
 
 .cui__dialog__icon {
-  @include dialog__icon;
+    @include dialog__icon;
 }
 
 .cui__dialog__overlay {
