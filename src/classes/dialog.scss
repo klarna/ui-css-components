@@ -8,6 +8,10 @@
   @include dialog__content;
 }
 
+.cui__dialog__cell {
+    @include dialog__cell;
+}
+
 .cui__dialog__footer {
   @include dialog__footer;
 }
@@ -20,10 +24,6 @@
     @include dialog__overlay;
 }
 
-.cui__dialog__scroll {
-    @include dialog__scroll;
-}
-
-.cui__dialog__wrapper {
-  @include dialog__wrapper;
+.cui__dialog__table {
+    @include dialog__table;
 }
