@@ -17,14 +17,14 @@
         border-radius: ($grid * 1.6);
         height: auto;
         margin: ($grid * 6) auto;
-        max-width: ($grid * 87);
         padding: ($grid * 12);
         text-align: left; // override dialog__wrapper text-align
+        width: ($grid * 87);
     }
 
     .wide & {
         @include respond-to-wide {
-            max-width: ($grid * 108);
+            width: ($grid * 108);
         }
     }
 
@@ -90,16 +90,23 @@
     }
 }
 
-@mixin dialog__wrapper {
+@mixin dialog__cell {
     height: 100%;
+    width: 100%;
 
     @include respond-to-wide {
         display: table-cell;
-        height: 100vh;
-        padding: 0 ($grid * 6);
         text-align: center;
         vertical-align: middle;
-        width: 100vw;
+    }
+}
+
+@mixin dialog__table {
+    height: 100%;
+    width: 100%;
+
+    @include respond-to-wide {
+        display: table;
     }
 }
 
