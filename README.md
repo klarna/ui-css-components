@@ -30,4 +30,13 @@ Make sure...
 1. ...your contribution is aligned with the styleguide.
 2. ...your contribution doesn't break the grid. To avoid that use always the `$grid` variable to define your sizes, as in `line-height: ($grid * 4)`. As a rule of thumb, if your element total height (sum of content, paddings, margins, etc...) has an integer multiple of `$grid` you should be good.
 3. ... your code is linted: `npm run lint`.
-4. ... it works in the major browsers, the simplest way is to spawn [ngrok](https://ngrok.com/) and use the cloud service of your choice. Else, you can download IE virtual machines for virtualbox using `curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="9" bash`. 
+4. ... it works in the major browsers, the simplest way is to spawn [ngrok](https://ngrok.com/) and use the cloud service of your choice. Else, you can download IE virtual machines for virtualbox using `curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="9" bash`.
+
+Then:
+
+1. Send a PR to GitHub.
+2. Once approved:
+  1. Update the version using npm version (tag will have v prefix) & update CHANGELOG.md.
+  2. Merge to master and push (with the new tag as well).
+
+Travis will take care of publishing your new version to npm.
