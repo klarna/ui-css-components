@@ -133,8 +133,7 @@
     .big.is-filled &,
     .big.is-error &,
     .big.is-warning & {
-        transform: translate(0, ($grid * -2.2));
-        -ms-transform: translate(0, ($grid * -2.2));
+        margin-top: ($grid * -2.2);
     }
 
     .is-filled &,
@@ -142,8 +141,7 @@
     .is-warning & {
         @include typography(($grid * 2.2), regular);
 
-        transform: translate(0, ($grid * -2));
-        -ms-transform: translate(0, ($grid * -2));
+        margin-top: ($grid * -2.2);
     }
 
     .is-filled & {
