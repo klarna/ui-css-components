@@ -8,6 +8,7 @@ ___
   - [simple](#Selector/direct/simple)
   - [description](#Selector/direct/description)
   - [title](#Selector/direct/title)
+- [Installments](#Selector/installments)
 
 <a name="Selector/direct"></a>
 ## Direct
@@ -191,5 +192,33 @@ ___
       <path d="M8,6 l4,4 l-4,4"/>
     </svg>
   </div>
+</div>
+```
+
+<a name="Selector/installments"></a>
+## Installments
+
+```html
+<div class="cui__selector--installments">
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments1" />
+   <label class="cui__selector--installments__label third" for="installments1">
+     <span class="cui__selector--installments__label__value">$64.17/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">6 months</span>
+   </label>
+
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments2" />
+   <label class="cui__selector--installments__label third" for="installments2">
+     <span class="cui__selector--installments__label__value">$32.09/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">12 months</span>
+   </label>
+
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments3" />
+   <label class="cui__selector--installments__label third" for="installments3">
+     <span class="cui__selector--installments__label__value">$16.05/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">24 months</span>
+   </label>
 </div>
 ```
