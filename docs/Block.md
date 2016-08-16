@@ -2,6 +2,11 @@
 
 Blocks are the layout blocks available to place content.
 
+- [Simple](#Block/simple)
+	- [Blue](#Block/simple/blue)
+- [Installments](#Block/installments)
+
+<a name="Block/simple"></a>
 ## Simple
 
 ```html
@@ -15,6 +20,7 @@ Blocks are the layout blocks available to place content.
 </div>
 ```
 
+<a name="Block/simple/blue"></a>
 ### Blue
 
 ```html
@@ -26,5 +32,32 @@ Blocks are the layout blocks available to place content.
   <p class="cui__paragraph--primary white">
     And some lorem ipsum dolor sit amet et consequetur niman sulan anima lontana.
   </p>
+</div>
+```
+
+<a name="Block/installments"></a>
+## Installments
+
+```html
+<div class="cui__block--installments">
+  <h3 class="cui__block--installments__title">
+    Your Installments
+  </h3>
+
+  <div class="cui__block--installments__values">
+    <div class="cui__block--installments__value">
+      <h4 class="cui__block--installments__value__title">Estimated total</h4>
+      <p class="cui__block--installments__value__content">
+          €100
+      </p>
+    </div>
+
+    <div class="cui__block--installments__value">
+      <h4 class="cui__block--installments__value__title">APR</h4>
+      <p class="cui__block--installments__value__content">
+          9.99%<span class="cui__block--installments__value__content__clarification">†</span>
+      </p>
+    </div>  
+  </div>
 </div>
 ```

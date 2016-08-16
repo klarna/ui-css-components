@@ -8,6 +8,9 @@ install:
 build:
 	npm run build
 
+clean:
+	rm -rf node_modules
+
 dev:
 	npm start
 
@@ -19,7 +22,7 @@ lint:
 	npm run lint
 
 gh-pages:
-	-git branch -D gh-pages 
+	-git branch -D gh-pages
 	git checkout -b gh-pages
 	git reset --hard master
 	echo node_modules > .gitignore
