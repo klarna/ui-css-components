@@ -7,3 +7,49 @@
         @include block(map-get($colors, klarna-blue), map-get($colors, white));
     }
 }
+
+.cui__block--installments {
+    background: map-get($colors, light-grey);
+    border-radius: $border-radius;
+    display: block;
+    overflow: auto;
+    padding: ($grid * 3) 10% ($grid * 3) 10%;
+}
+
+.cui__block--installments__title {
+    @include subtitle;
+
+    text-align: center;
+}
+
+.cui__block--installments__values {
+    padding-top: $grid;
+}
+
+.cui__block--installments__value {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.cui__block--installments__value__title {
+    @include text-label;
+    @include typography(($grid * 2.2), semi-bold);
+}
+
+.cui__block--installments__value__content {
+    @include typography(($grid * 2.8), semi-bold);
+
+    line-height: ($grid * 3);
+    margin: 0;
+    padding: ($grid * .4) 0 ($grid * .6) 0;
+}
+
+.cui__block--installments__value__content__clarification {
+    @include typography(($grid * 2), regular);
+
+    color: map-get($colors, grey-text);
+    position: relative;
+    top: ($grid * -.8);
+}
