@@ -12,8 +12,8 @@
     background: map-get($colors, light-grey);
     border-radius: $border-radius;
     display: block;
-    padding: ($grid * 3) 10% ($grid * 3) 10%;
     overflow: auto;
+    padding: ($grid * 3) 10% ($grid * 3) 10%;
 }
 
 .cui__block--installments__title {
@@ -42,8 +42,8 @@
     @include typography(($grid * 2.8), semi-bold);
 
     line-height: ($grid * 3);
-    padding: ($grid * .4) 0 ($grid * .6) 0;
     margin: 0;
+    padding: ($grid * .4) 0 ($grid * .6) 0;
 }
 
 .cui__block--installments__value__content__clarification {
