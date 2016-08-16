@@ -1,3 +1,7 @@
+# 9.2.0
+
+- Add Block Installments component
+
 # 9.0.0
 
 - Refactor dialogs, for cross-browser support
