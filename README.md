@@ -1,6 +1,8 @@
 # Klarna UI CSS Components
 [![Build Status](https://travis-ci.org/klarna/ui-css-components.svg?branch=master)](https://travis-ci.org/klarna/ui-css-components)
 
+**Note: This project and it's sister project [Klarna UI React Components](https://github.com/klarna/ui-react-components) are in their way to being deprecated in favor of the unified [Klarna UI Components](https://github.com/klarna/ui). There will be a migration guide once the new Klarna UI Components hit 1.0 and we expect the migration effort for consumers to be small.**
+
 This project contains CSS components to be used in all [Klarna](http://klarna.com/) user facing projects.
 
 The showroom of these components is available online at
