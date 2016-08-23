@@ -1,3 +1,7 @@
+# 9.2.1
+
+- Better Dialog layout for landscape viewports
+
 # 9.2.0
 
 - Add Block Installments component

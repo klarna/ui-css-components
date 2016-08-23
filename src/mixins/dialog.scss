@@ -13,7 +13,7 @@
         padding: ($grid * 6);
     }
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         border-radius: ($grid * 1.6);
         height: auto;
         margin: ($grid * 6) auto;
@@ -23,7 +23,7 @@
     }
 
     .wide & {
-        @include respond-to-wide {
+        @include respond-to-wide-and-tall {
             width: ($grid * 108);
         }
     }
@@ -45,7 +45,7 @@
         top: ($grid * 6);
     }
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         right: ($grid * 4);
         top: ($grid * 4);
     }
@@ -65,7 +65,7 @@
         }
     }
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         display: block;
 
         &--inner {
@@ -81,7 +81,7 @@
         display: table-cell;
     }
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         display: block;
 
         &--inner {
@@ -94,7 +94,7 @@
     height: 100%;
     width: 100%;
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         display: table-cell;
         text-align: center;
         vertical-align: middle;
@@ -105,7 +105,7 @@
     height: 100%;
     width: 100%;
 
-    @include respond-to-wide {
+    @include respond-to-wide-and-tall {
         display: table;
     }
 }

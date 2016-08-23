@@ -26,6 +26,7 @@ rules:
         - breakpoint
         - mq
         - respond-to-wide
+        - respond-to-wide-and-tall
         - respond-to-ie
         - hidpi
 
