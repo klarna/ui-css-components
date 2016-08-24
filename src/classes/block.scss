@@ -35,7 +35,7 @@
 
 .cui__block--installments__value__title {
     @include text-label;
-    @include typography(($grid * 2.2), semi-bold);
+    @include typography(($grid * 2.2), regular);
 }
 
 .cui__block--installments__value__content {
