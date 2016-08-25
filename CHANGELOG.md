@@ -1,3 +1,7 @@
+# 9.2.2
+
+- Use regular font-weight for installments component
+
 # 9.2.1
 
 - Better Dialog layout for landscape viewports
