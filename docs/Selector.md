@@ -205,6 +205,7 @@ ___
      <span class="cui__selector--installments__label__value">$64.17/mo.</span>
      <span class="cui__selector--installments__label__connector">for</span>
      <span class="cui__selector--installments__label__info">6 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
    </label>
 
    <input class="cui__selector--installments__input" type="radio" name="installments" id="installments2" />
@@ -212,6 +213,7 @@ ___
      <span class="cui__selector--installments__label__value">$32.09/mo.</span>
      <span class="cui__selector--installments__label__connector">for</span>
      <span class="cui__selector--installments__label__info">12 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
    </label>
 
    <input class="cui__selector--installments__input" type="radio" name="installments" id="installments3" />
@@ -219,6 +221,7 @@ ___
      <span class="cui__selector--installments__label__value">$16.05/mo.</span>
      <span class="cui__selector--installments__label__connector">for</span>
      <span class="cui__selector--installments__label__info">24 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
    </label>
 </div>
 ```
