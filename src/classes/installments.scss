@@ -23,10 +23,11 @@
         color: map-get($colors, black);
         cursor: pointer;
         display: block;
-        line-height: ($grid * 8) - ($grid * .4);
+        line-height: ($grid * 10) - ($grid * .4);
         margin-top: ($grid * -.2);
+        margin-left: ($grid * 4)
         position: relative;
-        text-align: center;
+        text-align: left;
         vertical-align: top;
 
 
@@ -43,6 +44,7 @@
             margin-left: ($grid * -.2);
             margin-top: 0;
             padding: ($grid * 3.8) 0;
+            text-align: center;
 
             &:first-of-type {
                 border-left-width: 0px;
