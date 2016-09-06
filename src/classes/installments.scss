@@ -24,8 +24,8 @@
         cursor: pointer;
         display: block;
         line-height: ($grid * 10) - ($grid * .4);
+        margin-left: ($grid * 4);
         margin-top: ($grid * -.2);
-        margin-left: ($grid * 4)
         position: relative;
         text-align: left;
         vertical-align: top;
@@ -68,12 +68,8 @@
         }
     }
 
-    .cui__selector--installments__label__highlight {
-        display: none;
-    }
-
     .cui__selector--installments__input:checked +
-    .cui__selector--installments__label .cui__selector--installments__label__highlight {
+    .cui__selector--installments__label:after {
         border: ($grid * .4) solid map-get($colors, klarna-blue);
         border-radius: 5px;
         bottom: -1px;
