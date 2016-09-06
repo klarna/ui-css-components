@@ -68,8 +68,12 @@
         }
     }
 
+    .cui__selector--installments__label__highlight {
+        display: none;
+    }
+
     .cui__selector--installments__input:checked +
-    .cui__selector--installments__label:after {
+    .cui__selector--installments__label .cui__selector--installments__label__highlight {
         border: ($grid * .4) solid map-get($colors, klarna-blue);
         border-radius: 5px;
         bottom: -1px;
