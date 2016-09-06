@@ -1,3 +1,7 @@
+# 9.4.0
+
+- Add mobile specific layout styles for Installments.
+
 # 9.3.0
 
 - Make Installments customizable. This required a restructure so that the component uses an actual element instead of a pseudo:after.
