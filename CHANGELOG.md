@@ -1,3 +1,7 @@
+# 9.4.1
+
+- Fix issue with select border on installments in mobile view.
+
 # 9.4.0
 
 - Add mobile specific layout styles for Installments.
