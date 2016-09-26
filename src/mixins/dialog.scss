@@ -19,10 +19,10 @@
         width: ($grid * 87);
 
         @include respond-to-tall {
-            padding: ($grid * 12);
             border-radius: ($grid * 1.6);
             height: auto;
             margin: ($grid * 6) auto;
+            padding: ($grid * 12);
         }
     }
 
