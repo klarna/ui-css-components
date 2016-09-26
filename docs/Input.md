@@ -66,7 +66,6 @@ ___
 - [Loading](#Input/loading)
 	- [big](#Input/loading/big)
 	- [big centered](#Input/loading/big centered)
-- [Autocomplete background](#Input/autocomplete-background)
 
 
 <a name="Input/examples"></a>
@@ -901,17 +900,5 @@ or using Chrome inspector's mobile mode.
         ZIP Code
     </label>
     <input class="cui__input__input" value="94027" />
-</div>
-```
-
-<a name="Input/autocomplete-background"></a>
-## Autocomplete background
-
-```html
-<div class="cui__input">
-    <label class="cui__input__label">
-      Type your email
-    </label>
-    <input name="email" class="cui__input__input" type="email" />
 </div>
 ```

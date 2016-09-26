@@ -66,7 +66,6 @@ ___
 - [Loading](#Field/loading)
 	- [big](#Field/loading/big)
 	- [big centered](#Field/loading/big centered)
-- [Autocomplete background](#Field/autocomplete-background)
 
 
 <a name="Field/examples"></a>
@@ -877,17 +876,5 @@ demo.
       ZIP Code
     </label>
     <input class="cui__field__input" value="94027" />
-</div>
-```
-
-<a name="Field/autocomplete-background"></a>
-## Autocomplete background
-
-```html
-<div class="cui__field">
-    <label class="cui__field__label">
-      Type your email
-    </label>
-    <input name="email" class="cui__field__input" type="email" />
 </div>
 ```
