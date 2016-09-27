@@ -1,3 +1,7 @@
+# 9.5.0
+
+- Revert yellow background fix, so auto-filled fields are yellow again.
+
 # 9.4.1
 
 - Fix issue with select border on installments in mobile view.
