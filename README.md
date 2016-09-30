@@ -38,7 +38,7 @@ Then:
 
 1. Send a PR to GitHub.
 2. Once approved:
-	1. Update the version using `npm version` (tag will have `v` prefix) & update `CHANGELOG.md`.
-	2. Merge to master and push (with the new tag as well).
+	1. Merge your PR to master.
+	2. Update the version using `npm version` (tag will have `v` prefix) & update `CHANGELOG.md`.
 
 Travis will take care of publishing your new version to npm.
