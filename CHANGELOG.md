@@ -1,3 +1,7 @@
+# 9.6.0
+
+- Improve layout for dialogs in landscape devices.
+
 # 9.5.0
 
 - Revert yellow background fix, so auto-filled fields are yellow again.
