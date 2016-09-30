@@ -13,17 +13,21 @@
         padding: ($grid * 6);
     }
 
-    @include respond-to-wide-and-tall {
-        border-radius: ($grid * 1.6);
-        height: auto;
-        margin: ($grid * 6) auto;
-        padding: ($grid * 12);
+    @include respond-to-wide {
+        margin: 0 auto;
         text-align: left; // override dialog__wrapper text-align
         width: ($grid * 87);
+
+        @include respond-to-tall {
+            border-radius: ($grid * 1.6);
+            height: auto;
+            margin: ($grid * 6) auto;
+            padding: ($grid * 12);
+        }
     }
 
     .wide & {
-        @include respond-to-wide-and-tall {
+        @include respond-to-wide {
             width: ($grid * 108);
         }
     }
@@ -40,14 +44,9 @@
     right: ($grid * 4);
     top: ($grid * 4);
 
-    @include respond-to-wide ($mobile-narrow-max-width) {
+    @include respond-to-wide-and-tall {
         right: ($grid * 6);
         top: ($grid * 6);
-    }
-
-    @include respond-to-wide-and-tall {
-        right: ($grid * 4);
-        top: ($grid * 4);
     }
 }
 

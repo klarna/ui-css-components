@@ -25,6 +25,7 @@ rules:
       exclude:
         - breakpoint
         - mq
+        - respond-to-tall
         - respond-to-wide
         - respond-to-wide-and-tall
         - respond-to-ie
