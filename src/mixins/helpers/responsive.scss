@@ -7,12 +7,6 @@ $mobile-max-height: 500px !default;
     }
 }
 
-@mixin respond-to-tall($mobile-max-height: $mobile-max-height) {
-    @media screen and (min-height: $mobile-max-height) {
-        @content;
-    }
-}
-
 @mixin respond-to-wide-and-tall($mobile-max-width: $mobile-max-width, $mobile-max-height: $mobile-max-height) {
     @media screen and (min-width: $mobile-max-width) and (min-height: $mobile-max-height) {
         @content;
