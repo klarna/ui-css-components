@@ -1,7 +1,7 @@
 # Klarna UI CSS Components
 [![Build Status](https://travis-ci.org/klarna/ui-css-components.svg?branch=master)](https://travis-ci.org/klarna/ui-css-components)
 
-## Note: This project and it's sister project [klarna/ui-react-components](https://github.com/klarna/ui-react-components) are deprecated. Use [@klarna/ui](https://github.com/klarna/ui) instead
+## Note: This project and its sister project [klarna/ui-react-components](https://github.com/klarna/ui-react-components) are deprecated. Use [@klarna/ui](https://github.com/klarna/ui) instead
 
 This project contains CSS components to be used in all [Klarna](http://klarna.com/) user facing projects.
 
