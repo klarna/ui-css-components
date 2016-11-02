@@ -1,0 +1,3624 @@
+<!DOCTYPE html><!--[if IE 8]>
+<html lang="en" class="ie8 cui__baseline">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 cui__baseline">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="cui__baseline" lang="en">
+<!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="favicon.ico"><title>UI CSS Components</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="dist/ui-toolkit.css"><link rel="stylesheet" href="docs/support/doc.css"><link rel="stylesheet" href="docs/support/standalone.css"></head><body><section id="Getting started"><hr>
+<p style="background:#ffc; padding: 30px;">
+  Please note that if you&#39;re using SASS the default behaviour will be to
+  download and append the font to your package, so you will not benefit from
+  caching.
+</p>
+
+</section><section id="Baseline"></section><section id="Alert"><div class="example"><div class="cui__alert--error">
+  <h1 class="cui__alert__title">
+    An error alert box heading
+  </h1>
+  <p class="cui__alert__paragraph">
+    Some text inside helps to get an idea of how the alert would look like. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  </p>
+  <p class="cui__alert__paragraph">
+    Correlation ID: <em>a4c531de-e35d-4901-93ae-44e32639b4b1</em>
+  </p>
+</div></div></section><section id="Block"><div class="example"><div class="cui__block">
+  <h1 class="cui__title--primary">
+    The default block has a white background
+  </h1>
+  <p class="cui__paragraph--primary">
+    Some text inside helps to get an idea of how the block would look like.
+  </p>
+</div></div><div class="example"><div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    When background is dark text color needs to be inverted manually
+  </h1>
+
+  <p class="cui__paragraph--primary white">
+    And some lorem ipsum dolor sit amet et consequetur niman sulan anima lontana.
+  </p>
+</div></div><div class="example"><div class="cui__block--installments">
+  <h3 class="cui__block--installments__title">
+    Your Installments
+  </h3>
+
+  <div class="cui__block--installments__values">
+    <div class="cui__block--installments__value">
+      <h4 class="cui__block--installments__value__title">Estimated total</h4>
+      <p class="cui__block--installments__value__content">
+          €100
+      </p>
+    </div>
+
+    <div class="cui__block--installments__value">
+      <h4 class="cui__block--installments__value__title">APR</h4>
+      <p class="cui__block--installments__value__content">
+          9.99%<span class="cui__block--installments__value__content__clarification">†</span>
+      </p>
+    </div>  
+  </div>
+</div></div></section><section id="Button"><table cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <button class="cui__button--primary small">
+                Small
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary small">
+                Small
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary small is-disabled">
+                Small
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary small is-disabled">
+                Small
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary is-disabled">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary is-disabled">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary small is-loading">
+                <svg
+                    width="20"
+                    height="20"
+                    class="cui__illustration__loader"
+                    viewBox="-1 -1 22 22">
+                    <defs>
+                        <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                        </linearGradient>
+                        <linearGradient
+                            id="gradient-white-1"
+                            gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+                        <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <g fill="none" stroke-width="2" transform="translate(10,10)">
+                        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+                        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+                        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+                        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+                        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+                        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary small is-loading">
+                <svg
+                  width="20"
+                  height="20"
+                  class="cui__illustration__loader"
+                  viewBox="-1 -1 22 22">
+                  <defs>
+                    <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="gradient-1"
+                      gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+                    <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+                      <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+                    </linearGradient>
+                  </defs>
+
+                  <g fill="none" stroke-width="2" transform="translate(10,10)">
+                    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+                    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+                    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+                    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+                    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+                    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary is-loading">
+                <svg
+                    width="20"
+                    height="20"
+                    class="cui__illustration__loader"
+                    viewBox="-1 -1 22 22">
+                    <defs>
+                        <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                        </linearGradient>
+                        <linearGradient
+                            id="gradient-white-1"
+                            gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+                        <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+                            <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <g fill="none" stroke-width="2" transform="translate(10,10)">
+                        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+                        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+                        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+                        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+                        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+                        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary is-loading">
+                <svg
+                    width="20"
+                    height="20"
+                    class="cui__illustration__loader"
+                    viewBox="-1 -1 22 22">
+                    <defs>
+                        <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                        </linearGradient>
+                        <linearGradient
+                            id="gradient-1"
+                            gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+                        <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <g fill="none" stroke-width="2" transform="translate(10,10)">
+                        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+                        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+                        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+                        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+                        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+                        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary big">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary big">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary big is-disabled">
+                Primary
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary big is-disabled">
+                Secondary
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="cui__button--primary big is-loading">
+            <svg
+                width="20"
+                height="20"
+                class="cui__illustration__loader"
+                viewBox="-1 -1 22 22">
+                <defs>
+                    <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                    </linearGradient>
+                    <linearGradient
+                        id="gradient-white-1"
+                        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+                    <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+                    </linearGradient>
+                    <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+                    </linearGradient>
+                </defs>
+
+                <g fill="none" stroke-width="2" transform="translate(10,10)">
+                    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+                    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+                    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+                    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+                    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+                    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+                </g>
+            </svg>
+            </button>
+        </td>
+        <td>
+            <button class="cui__button--secondary big is-loading">
+                <svg
+                    width="20"
+                    height="20"
+                    class="cui__illustration__loader"
+                    viewBox="-1 -1 22 22">
+                    <defs>
+                        <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                        </linearGradient>
+                        <linearGradient
+                            id="gradient-1"
+                            gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+                        <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+                            <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <g fill="none" stroke-width="2" transform="translate(10,10)">
+                        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+                        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+                        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+                        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+                        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+                        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </button>
+        </td>
+    </tr>
+</table>
+
+<div class="example-block" style="text-align: center;">
+    <div class="example">
+        <button class="cui__button--secondary">
+            Cancel
+        </button>
+        <button class="cui__button--primary">
+            Save
+        </button>
+    </div>
+</div>
+
+<div class="example-block" style="text-align: center;">
+    <div class="example">
+        <button class="cui__button--primary big">
+            Buy now!
+        </button>
+        <button class="cui__button--primary">
+            Finish
+        </button>
+        <button class="cui__button--primary small">
+            Continue
+        </button>
+    </div>
+</div>
+
+<div class="example"><button class="cui__button--primary">
+  Primary
+</button></div><div class="example"><button class="cui__button--primary is-loading">
+    <svg
+    width="20"
+    height="20"
+    class="cui__illustration__loader"
+    viewBox="-1 -1 22 22">
+    <defs>
+      <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+      </linearGradient>
+      <linearGradient
+        id="gradient-white-1"
+        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+      <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+      </linearGradient>
+    </defs>
+
+    <g fill="none" stroke-width="2" transform="translate(10,10)">
+      <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+      <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+      <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+      <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+      <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+      <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+    </g>
+  </svg>
+</button></div><div class="example"><button class="cui__button--primary is-disabled">
+  Primary disabled
+</button></div><div class="example"><button class="cui__button--primary small">
+  Primary small
+</button></div><div class="example"><button class="cui__button--primary small is-disabled">
+  Primary small disabled
+</button></div><div class="example"><button class="cui__button--primary big">
+  Primary big
+</button></div><div class="example"><button class="cui__button--primary big is-loading">
+    <svg
+    width="20"
+    height="20"
+    class="cui__illustration__loader"
+    viewBox="-1 -1 22 22">
+    <defs>
+      <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+      </linearGradient>
+      <linearGradient
+        id="gradient-white-1"
+        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+      <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+      </linearGradient>
+    </defs>
+
+    <g fill="none" stroke-width="2" transform="translate(10,10)">
+      <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+      <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+      <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+      <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+      <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+      <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+    </g>
+  </svg>
+</button></div><div class="example"><button class="cui__button--primary big is-disabled">
+  Primary big disabled
+</button></div><div class="example"><button class="cui__button--primary has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button></div><div class="example"><button class="cui__button--primary big has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button></div><div class="example"><button
+    class="cui__button--primary dynamic-styling"
+    style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button>
+
+<button
+    class="cui__button--primary dynamic-styling is-disabled"
+    style="color: #F9FF3C; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button>
+
+<button
+    class="cui__button--primary dynamic-styling is-loading"
+    style="background-color: #3500C8; border-color: #3500C8;">
+    <svg
+        width="20"
+        height="20"
+        class="cui__illustration__loader"
+        viewBox="-1 -1 22 22">
+        <defs>
+            <linearGradient id="gradient-primary-dynamic-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(249,255,60, 0)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 0.2)"></stop>
+            </linearGradient>
+            <linearGradient
+                id="gradient-primary-dynamic-1"
+                gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(249,255,60, 0.2)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 0.4)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-primary-dynamic-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="rgba(249,255,60, 0.4)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 0.6)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-primary-dynamic-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="rgba(249,255,60, 0.6)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 0.8)"></stop></linearGradient>
+            <linearGradient id="gradient-primary-dynamic-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="rgba(249,255,60, 0.8)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 1)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-primary-dynamic-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="rgba(249,255,60, 1)"></stop>
+                <stop offset="100%" stop-color="rgba(249,255,60, 1.2)"></stop>
+            </linearGradient>
+        </defs>
+
+        <g fill="none" stroke-width="2" transform="translate(10,10)">
+            <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-primary-dynamic-0)"></path>
+            <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-primary-dynamic-1)"></path>
+            <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-primary-dynamic-2)"></path>
+            <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-primary-dynamic-3)"></path>
+            <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-primary-dynamic-4)"></path>
+            <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-primary-dynamic-5)" stroke-linecap="round"></path>
+        </g>
+    </svg>
+</button></div><div class="example"><button class="cui__button--secondary">
+  Secondary
+</button></div><div class="example"><button class="cui__button--secondary is-loading">
+    <svg
+      width="20"
+      height="20"
+      class="cui__illustration__loader"
+      viewBox="-1 -1 22 22">
+      <defs>
+        <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+        </linearGradient>
+        <linearGradient
+          id="gradient-1"
+          gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+        <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+        </linearGradient>
+      </defs>
+
+      <g fill="none" stroke-width="2" transform="translate(10,10)">
+        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+      </g>
+    </svg>
+</button></div><div class="example"><button class="cui__button--secondary is-disabled">
+  Secondary disabled
+</button></div><div class="example"><button class="cui__button--secondary small">
+  Secondary small
+</button></div><div class="example"><button class="cui__button--secondary small is-disabled">
+  Secondary small disabled
+</button></div><div class="example"><button class="cui__button--secondary big">
+  Secondary big
+</button></div><div class="example"><button class="cui__button--secondary big is-loading">
+    <svg
+      width="20"
+      height="20"
+      class="cui__illustration__loader"
+      viewBox="-1 -1 22 22">
+      <defs>
+        <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+        </linearGradient>
+        <linearGradient
+          id="gradient-1"
+          gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+        <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+          <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+        </linearGradient>
+      </defs>
+
+      <g fill="none" stroke-width="2" transform="translate(10,10)">
+        <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+        <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+        <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+        <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+        <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+        <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+      </g>
+    </svg>
+</button></div><div class="example"><button class="cui__button--secondary big is-disabled">
+  Secondary big disabled
+</button></div><div class="example"><button class="cui__button--secondary has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button></div><div class="example"><button class="cui__button--secondary big has-price">
+  Pay now
+  <span class="cui__button__price">
+    $1.20
+  </span>
+</button></div><div class="example"><button
+    class="cui__button--secondary dynamic-styling"
+    style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+    <div class="cui__button__label">            
+      Pay now
+        <span
+            class="cui__button__label--alt"
+            title="Pay now"
+            style="color: #F9FF3C;">
+        </span>
+    </div>
+
+</button>
+
+<button
+    class="cui__button--secondary dynamic-styling is-disabled"
+    style="color: #3500C8; background-color: #3500C8; border-color: #3500C8;">
+    <span class="cui__button__label">
+      Pay now
+    </span>
+</button>
+
+<button
+    class="cui__button--secondary dynamic-styling is-loading"
+    style="color: #3500C8; border-color: #3500C8;">
+    <svg
+        width="20"
+        height="20"
+        class="cui__illustration__loader"
+        viewBox="-1 -1 22 22">
+        <defs>
+            <linearGradient id="gradient-secondary-dynamic-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(53,0,200, 0)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 0.2)"></stop>
+            </linearGradient>
+            <linearGradient
+                id="gradient-secondary-dynamic-1"
+                gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(53,0,200, 0.2)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 0.4)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-secondary-dynamic-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="rgba(53,0,200, 0.4)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 0.6)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-secondary-dynamic-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="rgba(53,0,200, 0.6)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 0.8)"></stop></linearGradient>
+            <linearGradient id="gradient-secondary-dynamic-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="rgba(53,0,200, 0.8)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 1)"></stop>
+            </linearGradient>
+            <linearGradient id="gradient-secondary-dynamic-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="rgba(53,0,200, 1)"></stop>
+                <stop offset="100%" stop-color="rgba(53,0,200, 1.2)"></stop>
+            </linearGradient>
+        </defs>
+
+        <g fill="none" stroke-width="2" transform="translate(10,10)">
+            <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-secondary-dynamic-0)"></path>
+            <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-secondary-dynamic-1)"></path>
+            <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-secondary-dynamic-2)"></path>
+            <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-secondary-dynamic-3)"></path>
+            <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-secondary-dynamic-4)"></path>
+            <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-secondary-dynamic-5)" stroke-linecap="round"></path>
+        </g>
+    </svg>
+</button></div></section><section id="Checklist"><div class="example"><ul class="cui__checklist">
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark"
+      class="cui__selector--direct__icon">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Just one click and you're done
+  </li>
+
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Very little hassle
+  </li>
+
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Just do it! It can be done today, so why wait for tomorrow?
+  </li>
+</ul></div><div class="example"><ul class="cui__checklist chromeless">
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark"
+      class="cui__selector--direct__icon">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Just one click and you're done
+  </li>
+
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Very little hassle
+  </li>
+
+  <li class="cui__checklist__item">
+    <svg
+      class="cui__checklist__checkmark"
+      viewBox="0 0 25 25"
+      version="1.1"
+      aria-labelledby="Checkmark">
+      <path d="M5 13.69l4.49 4.23L19.37 8"></path>
+    </svg>Just do it! It can be done today, so why wait for tomorrow?
+  </li>
+</ul></div></section><section id="Dialog"></section><section id="Dropdown"><hr>
+<div class="cui__fieldset">
+  <div class="cui__dropdown--native top">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+  <div class="cui__dropdown--native quarter square">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+  <div class="cui__dropdown--native half center">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+  <div class="cui__dropdown--native quarter center">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+  <div class="cui__dropdown--native bottom-left half">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+  <div class="cui__dropdown--native bottom-right half">
+    <label class="cui__dropdown--native__label">
+      Dropdown
+    </label>
+    <select class="cui__dropdown--native__select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+</div>
+
+<div class="example"><div class="cui__dropdown--native">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--native is-focused">
+  <label class="cui__dropdown--native__label">
+    This is a focused dropdown
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--native is-loading">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is loading
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--native is-selected">
+  <label class="cui__dropdown--native__label">
+    The Dropdown
+  </label>
+
+  <div class="cui__dropdown--native__current-option">
+    And this is an option
+  </div>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--native is-disabled">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
+</div></div><div class="example"><div class="cui__dropdown--native is-disabled is-selected">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
+
+  <div class="cui__dropdown--native__current-option">
+    And this is the selected option
+  </div>
+</div></div><div class="example"><div class="cui__dropdown--native is-disabled is-loading">
+  <label class="cui__dropdown--native__label">
+    This is a dropdown that is disabled
+  </label>
+</div></div><div class="example"><div class="cui__dropdown--native is-error half left">
+  <div class="cui__dropdown--native__floating-label">
+    You need to select some of the options
+  </div>
+
+  <label class="cui__dropdown--native__label">
+    A dropdown
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div>
+
+<div class="cui__dropdown--native is-error half right">
+  <div class="cui__dropdown--native__floating-label">
+    Sorry, the option you selected is not available
+  </div>
+
+  <label class="cui__dropdown--native__current-option">
+    Non-available option
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--native is-warning half left">
+  <div class="cui__dropdown--native__floating-label">
+    It is important that you select an option
+  </div>
+
+  <label class="cui__dropdown--native__label">
+    A dropdown
+  </label>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div>
+
+<div class="cui__dropdown--native is-warning half right">
+  <div class="cui__dropdown--native__floating-label">
+    The option you selected is not recommended
+  </div>
+
+  <div class="cui__dropdown--native__current-option">
+    A non-ideal option
+  </div>
+
+  <select class="cui__dropdown--native__select">
+    <option>And this is an option</option>
+    <option>A second alternative</option>
+  </select>
+</div></div><div class="example"><div class="cui__dropdown--radio">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__dropdown--radio dynamic-styling">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div
+        class="cui__promo-label"
+        style="color: #F9FF3C; background-color: #3500C8;">
+        promo
+      </div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div
+      class="cui__dropdown--radio__option__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__dropdown--radio__option__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__dropdown--radio borderless">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__dropdown--radio is-disabled">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__dropdown--radio is-disabled">
+  <div class="cui__dropdown--radio__option is-selected">
+    <div class="cui__dropdown--radio__option__heading">
+      This is a radio selector
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__dropdown--radio__option">
+    <div class="cui__dropdown--radio__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__dropdown--radio__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div></section><section id="Field"><div style="background: #eea; margin-top: 3px; padding: 20px">
+    The Fields are deprecated. New projects will be designed using Input instead.
+</div>
+
+
+<hr>
+<div class="example"><div class="cui__field">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field is-filled is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field is-filled">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field is-error">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__field is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__field is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field is-warning is-focused">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field is-disabled left half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__field is-disabled right half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field big">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field big is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field big is-filled is-focused">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field big is-filled">
+    <label class="cui__field__label">
+        Please write your email address
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field big is-error">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__field big is-error is-focused">
+    <label class="cui__field__label">
+        Invalid email
+    </label>
+    <input class="cui__field__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__field big is-warning">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field big is-warning is-focused">
+    <label class="cui__field__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__field__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field big is-disabled left half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__field big is-disabled right half">
+    <label class="cui__field__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__field__input" />
+</div></div><div style="overflow: hidden">
+  <ul class="overview">
+    <li>
+                <div class="cui__fieldset">
+                        <div class="cui__field top-left half non-responsive">
+                            <label class="cui__field__label">
+                                Name
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field top-right half non-responsive">
+                            <label class="cui__field__label">
+                                Lastname
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field square">
+                            <label class="cui__field__label">
+                                Address line 1
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field square">
+                            <label class="cui__field__label">
+                                Address line 2
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field square half">
+                            <label class="cui__field__label">
+                                City
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field center quarter">
+                            <label class="cui__field__label">
+                                State
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field center quarter">
+                            <label class="cui__field__label">
+                                Zip
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field bottom-left half">
+                            <label class="cui__field__label">
+                                Phone number
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                        <div class="cui__field bottom-right half">
+                            <label class="cui__field__label">
+                                Email
+                            </label>
+                            <input class="cui__field__input" />
+                        </div>
+                </div>
+    </li>
+    </ul>
+</div>
+
+<div class="example"><div class="cui__fieldset">
+    <div class="cui__field left half">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field right half">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field top-left half">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field top-right half">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field top">
+        <label class="cui__field__label">
+            Email address
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field bottom-left half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field bottom-right half">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field bottom">
+        <label class="cui__field__label">
+            Password
+        </label>
+        <input type="password" class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field top-left half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field top-right half">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field square">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field top-left half">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field center quarter">
+        <label class="cui__field__label">
+            Zip
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field top-right quarter">
+        <label class="cui__field__label">
+            Country
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field left quarter">
+        <label class="cui__field__label">
+            City
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field right three-quarters">
+        <label class="cui__field__label">
+            Zip
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field top-left twenty">
+        <label class="cui__field__label">
+            Title
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field center forty">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field top-right forty">
+        <label class="cui__field__label">
+            Lastname
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field left twenty">
+        <label class="cui__field__label">
+            Title
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field right eighty">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__field left third">
+        <label class="cui__field__label">
+            Title
+        </label>
+        <input class="cui__field__input" />
+    </div>
+    <div class="cui__field right two-thirds">
+        <label class="cui__field__label">
+            Name
+        </label>
+        <input class="cui__field__input" />
+    </div>
+</div></div><div class="example"><div class="cui__field--icon">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div><div class="example"><div class="cui__field--icon">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g transform="translate(2, 2)" class="cui__field--icon__icon__stroke">
+      <circle cx="8" cy="8" r="7.5"></circle>
+      <path d="M6.5,11 L4.5,9" stroke-linecap="round"></path>
+      <path d="M11.5,11 L6.5,6" stroke-linecap="round" transform="translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) "></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div><div class="example"><div class="cui__field--icon big">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Enter your password
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div><div class="example"><div class="cui__field--icon is-focused">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label is-focused">
+        Enter your password
+    </label>
+    <input class="cui__field--icon__input" />
+</div></div><div class="example"><div class="cui__field--icon is-filled is-focused">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Please write your email address
+    </label>
+    <input class="cui__field--icon__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field--icon is-error">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__field--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field--icon is-warning">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__field--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field--icon is-disabled">
+    <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+        <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+        <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+    </g>
+    </svg>
+
+    <label class="cui__field--icon__label">
+        Are you sure the domain is example?
+    </label>
+    <input disabled class="cui__field--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__field is-centered">
+    <label class="cui__field__label">
+        This is aligned to the center
+    </label>
+    <input class="cui__field__input" />
+</div></div><div class="example"><div class="cui__field is-centered is-filled">
+    <label class="cui__field__label">
+        This centered field is filled
+    </label>
+    <input class="cui__field__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__field is-centered is-error">
+    <label class="cui__field__label">
+        Something went wrong!
+    </label>
+    <input class="cui__field__input" value="invalid input" />
+</div></div><div class="example"><div class="cui__field--icon is-centered is-filled is-focused">
+        <svg class="cui__field--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__field--icon__icon__fill" transform="translate(2.000000, 4.000000)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+        </svg>
+    <label class="cui__field__label">
+      ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div><div class="example"><div class="cui__field big is-centered is-filled is-focused">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div><div class="example"><div class="cui__field is-loading is-centered is-filled is-focused">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div><div class="example"><div class="cui__field is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div><div class="example"><div class="cui__field big is-loading">
+    <label class="cui__field__label">
+        ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div><div class="example"><div class="cui__field big is-centered is-loading">
+    <label class="cui__field__label">
+      ZIP Code
+    </label>
+    <input class="cui__field__input" value="94027" />
+</div></div></section><section id="Illustration"><hr>
+<div class="example"><svg
+    class="cui__illustration big"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big gray"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big error"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big success"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big warning"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<svg
+    class="cui__illustration big black"
+    viewBox="0 0 100 100">
+  <g
+        class="cui__illustration__fill"
+        transform="translate(24.000000, 20.000000)">
+    <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+    <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+  </g>
+</svg>
+
+<div class="cui__block blue">
+    <svg
+        class="cui__illustration big inverse"
+        width="100px"
+        height="100px"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg">
+      <g
+            class="cui__illustration__fill"
+            transform="translate(24.000000, 20.000000)">
+        <path d="M37.8369,27.6611 L20.3199,45.3481 L13.2359,38.6241 C12.8359,38.2441 12.2039,38.2621 11.8219,38.6611 C11.4419,39.0611 11.4589,39.6941 11.8589,40.0751 L20.3629,48.1471 L39.2589,29.0691 C39.6479,28.6771 39.6439,28.0431 39.2519,27.6541 C38.8579,27.2661 38.2269,27.2691 37.8369,27.6611"></path>
+        <path d="M50,53 C50,55.757 47.757,58 45,58 L7,58 C4.243,58 2,55.757 2,53 L2,15 C2,12.243 4.243,10 7,10 L13,10 L13,20 L39,20 L39,10 L45,10 C47.757,10 50,12.243 50,15 L50,53 Z M17,10 L18,10 L34,10 L35,10 L37,10 L37,18 L15,18 L15,10 L17,10 Z M26,2 C29.521,2 32.442,4.612 32.929,8 L19.071,8 C19.558,4.612 22.479,2 26,2 L26,2 Z M45,8 L39,8 L34.941,8 C34.442,3.507 30.625,0 26,0 C21.375,0 17.558,3.507 17.059,8 L13,8 L7,8 C3.141,8 0,11.141 0,15 L0,53 C0,56.859 3.141,60 7,60 L45,60 C48.859,60 52,56.859 52,53 L52,15 C52,11.141 48.859,8 45,8 L45,8 Z"></path>
+      </g>
+    </svg>
+</div></div><div class="example"><svg
+  class='cui__illustration tiny'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny gray'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny error'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny success'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny warning'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<svg
+  class='cui__illustration tiny black'
+  viewBox='0 0 21 21'>
+  <path
+    class='cui__illustration__stroke'
+    d='M6.5,9.3l4,4l4,-4'
+    strokeLinecap='round' />
+</svg>
+
+<div class='cui__block blue'>
+  <svg
+    class='cui__illustration tiny inverse'
+    viewBox='0 0 21 21'>
+    <path
+      class='cui__illustration__stroke'
+      d='M6.5,9.3l4,4l4,-4'
+      strokeLinecap='round' />
+  </svg>
+</div></div><div class="example"><svg
+    class="cui__illustration button"
+    viewBox="0 0 20 20">
+    <path class="cui__illustration__fill" d="M4.70710678,16.7071068 L16.7071068,4.70710678 C17.0976311,4.31658249 17.0976311,3.68341751 16.7071068,3.29289322 C16.3165825,2.90236893 15.6834175,2.90236893 15.2928932,3.29289322 L3.29289322,15.2928932 C2.90236893,15.6834175 2.90236893,16.3165825 3.29289322,16.7071068 C3.68341751,17.0976311 4.31658249,17.0976311 4.70710678,16.7071068 L4.70710678,16.7071068 Z" id="line"></path>
+    <path class="cui__illustration__fill" d="M16.7071068,15.2928932 L4.70710678,3.29289322 C4.31658249,2.90236893 3.68341751,2.90236893 3.29289322,3.29289322 C2.90236893,3.68341751 2.90236893,4.31658249 3.29289322,4.70710678 L15.2928932,16.7071068 C15.6834175,17.0976311 16.3165825,17.0976311 16.7071068,16.7071068 C17.0976311,16.3165825 17.0976311,15.6834175 16.7071068,15.2928932 L16.7071068,15.2928932 Z" id="line"></path>
+</svg></div><div class="example"><svg
+    class="cui__illustration button gray"
+    viewBox="0 0 20 20">
+    <path class="cui__illustration__fill" d="M4.70710678,16.7071068 L16.7071068,4.70710678 C17.0976311,4.31658249 17.0976311,3.68341751 16.7071068,3.29289322 C16.3165825,2.90236893 15.6834175,2.90236893 15.2928932,3.29289322 L3.29289322,15.2928932 C2.90236893,15.6834175 2.90236893,16.3165825 3.29289322,16.7071068 C3.68341751,17.0976311 4.31658249,17.0976311 4.70710678,16.7071068 L4.70710678,16.7071068 Z" id="line"></path>
+    <path class="cui__illustration__fill" d="M16.7071068,15.2928932 L4.70710678,3.29289322 C4.31658249,2.90236893 3.68341751,2.90236893 3.29289322,3.29289322 C2.90236893,3.68341751 2.90236893,4.31658249 3.29289322,4.70710678 L15.2928932,16.7071068 C15.6834175,17.0976311 16.3165825,17.0976311 16.7071068,16.7071068 C17.0976311,16.3165825 17.0976311,15.6834175 16.7071068,15.2928932 L16.7071068,15.2928932 Z" id="line"></path>
+</svg></div><div class="example"><div class="cui__block blue">
+    <p class="cui__paragraph--primary" style="padding: 20px;">
+    <svg
+        class="cui__illustration button inverse"
+        viewBox="0 0 20 20">
+        <path class="cui__illustration__fill" d="M4.70710678,16.7071068 L16.7071068,4.70710678 C17.0976311,4.31658249 17.0976311,3.68341751 16.7071068,3.29289322 C16.3165825,2.90236893 15.6834175,2.90236893 15.2928932,3.29289322 L3.29289322,15.2928932 C2.90236893,15.6834175 2.90236893,16.3165825 3.29289322,16.7071068 C3.68341751,17.0976311 4.31658249,17.0976311 4.70710678,16.7071068 L4.70710678,16.7071068 Z" id="line"></path>
+        <path class="cui__illustration__fill" d="M16.7071068,15.2928932 L4.70710678,3.29289322 C4.31658249,2.90236893 3.68341751,2.90236893 3.29289322,3.29289322 C2.90236893,3.68341751 2.90236893,4.31658249 3.29289322,4.70710678 L15.2928932,16.7071068 C15.6834175,17.0976311 16.3165825,17.0976311 16.7071068,16.7071068 C17.0976311,16.3165825 17.0976311,15.6834175 16.7071068,15.2928932 L16.7071068,15.2928932 Z" id="line"></path>
+    </svg>
+    </p>
+</div></div><div class="example"><svg
+  width="20"
+  height="20"
+  class="cui__illustration__loader"
+  viewBox="-1 -1 22 22">
+  <defs>
+    <linearGradient id="gradient-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,116,200, 0)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 0.2)"></stop>
+    </linearGradient>
+    <linearGradient
+      id="gradient-1"
+      gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,116,200, 0.2)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 0.4)"></stop>
+    </linearGradient>
+    <linearGradient id="gradient-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="rgba(0,116,200, 0.4)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 0.6)"></stop>
+    </linearGradient>
+    <linearGradient id="gradient-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="rgba(0,116,200, 0.6)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 0.8)"></stop></linearGradient>
+    <linearGradient id="gradient-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,116,200, 0.8)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 1)"></stop>
+    </linearGradient>
+    <linearGradient id="gradient-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(0,116,200, 1)"></stop>
+      <stop offset="100%" stop-color="rgba(0,116,200, 1.2)"></stop>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke-width="2" transform="translate(10,10)">
+    <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-0)"></path>
+    <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-1)"></path>
+    <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-2)"></path>
+    <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-3)"></path>
+    <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-4)"></path>
+    <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-5)" stroke-linecap="round"></path>
+  </g>
+</svg>
+
+<div class="cui__block blue">
+  <svg
+    width="20"
+    height="20"
+    class="cui__illustration__loader"
+    viewBox="-1 -1 22 22">
+    <defs>
+      <linearGradient id="gradient-white-0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.2)"></stop>
+      </linearGradient>
+      <linearGradient
+        id="gradient-white-1"
+        gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.2)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.4)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-2" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.4)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.6)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.6)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 0.8)"></stop></linearGradient>
+      <linearGradient id="gradient-white-4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="rgba(255,255,255, 0.8)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1)"></stop>
+      </linearGradient>
+      <linearGradient id="gradient-white-5" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(255,255,255, 1.2)"></stop>
+      </linearGradient>
+    </defs>
+
+    <g fill="none" stroke-width="2" transform="translate(10,10)">
+      <path d="M 8.66,-5 A 10,10 0 0,1 8.66,5" stroke="url(#gradient-white-0)"></path>
+      <path d="M 8.66,5 A 10,10 0 0,1 0,10" stroke="url(#gradient-white-1)"></path>
+      <path d="M 0,10 A 10,10 0 0,1 -8.66,5" stroke="url(#gradient-white-2)"></path>
+      <path d="M -8.66,5 A 10,10 0 0,1 -8.66,-5" stroke="url(#gradient-white-3)"></path>
+      <path d="M -8.66,-5 A 10,10 0 0,1 0,-10" stroke="url(#gradient-white-4)"></path>
+      <path d="M 0,-10 A 10,10 0 0,1 8.66,-5" stroke="url(#gradient-white-5)" stroke-linecap="round"></path>
+    </g>
+  </svg>
+</div></div></section><section id="Input"><hr>
+<div class="example"><div class="cui__input">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input big">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input big is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input big is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input big is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input big is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input big is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input big is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input big is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input big is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input big is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input giant">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input giant is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input giant is-filled is-focused">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input giant is-filled">
+    <label class="cui__input__label">
+        Please write your email address
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input giant is-error">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input giant is-error is-focused">
+    <label class="cui__input__label">
+        Invalid email
+    </label>
+    <input class="cui__input__input" value="invalid@" />
+</div></div><div class="example"><div class="cui__input giant is-warning">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input giant is-warning is-focused">
+    <label class="cui__input__label is-focused">
+        Are you sure the domain is exanple?
+    </label>
+    <input class="cui__input__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input giant is-disabled left half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" value="email@exanple.com" />
+</div>
+
+<div class="cui__input giant is-disabled right half">
+    <label class="cui__input__label">
+        Enter your email address
+    </label>
+    <input disabled class="cui__input__input" />
+</div></div><div style="overflow: hidden">
+  <ul class="overview">
+    <li>
+                <div class="cui__fieldset">
+                        <div class="cui__input half left">
+                            <label class="cui__input__label">
+                                Name
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input half right">
+                            <label class="cui__input__label">
+                                Lastname
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input">
+                            <label class="cui__input__label">
+                                Address line 1
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input">
+                            <label class="cui__input__label">
+                                Address line 2
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input half left">
+                            <label class="cui__input__label">
+                                City
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input center quarter">
+                            <label class="cui__input__label">
+                                State
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input right quarter">
+                            <label class="cui__input__label">
+                                Zip
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input left half">
+                            <label class="cui__input__label">
+                                Phone number
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                        <div class="cui__input right half">
+                            <label class="cui__input__label">
+                                Email
+                            </label>
+                            <input class="cui__input__input" />
+                        </div>
+                </div>
+    </li>
+    </ul>
+</div>
+
+<div class="example"><div class="cui__fieldset">
+    <div class="cui__input left half">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right half">
+        <label class="cui__input__label">
+            Lastname
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__input left half">
+        <label class="cui__input__label">
+            City
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input center quarter">
+        <label class="cui__input__label">
+            Zip
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right quarter">
+        <label class="cui__input__label">
+            Country
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__input left quarter">
+        <label class="cui__input__label">
+            City
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right three-quarters">
+        <label class="cui__input__label">
+            Zip
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__input left twenty">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input center forty">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right forty">
+        <label class="cui__input__label">
+            Lastname
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__input left twenty">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right eighty">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__fieldset">
+    <div class="cui__input left third">
+        <label class="cui__input__label">
+            Title
+        </label>
+        <input class="cui__input__input" />
+    </div>
+    <div class="cui__input right two-thirds">
+        <label class="cui__input__label">
+            Name
+        </label>
+        <input class="cui__input__input" />
+    </div>
+</div></div><div class="example"><div class="cui__input--icon">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div><div class="example"><div class="cui__input--icon">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+    <g transform="translate(2, 2)" class="cui__input--icon__icon__stroke">
+      <circle cx="8" cy="8" r="7.5"></circle>
+      <path d="M6.5,11 L4.5,9" stroke-linecap="round"></path>
+      <path d="M11.5,11 L6.5,6" stroke-linecap="round" transform="translate(9, 8.500000) scale(1, -1) translate(-9, -8.500000) "></path>
+    </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your postal code
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div><div class="example"><div class="cui__input--icon big">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Enter your password
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div><div class="example"><div class="cui__input--icon is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Enter your password
+    </label>
+    <input class="cui__input--icon__input" />
+</div></div><div class="example"><div class="cui__input--icon is-filled is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Please write your email address
+    </label>
+    <input class="cui__input--icon__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input--icon is-error">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__input--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input--icon is-warning">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label is-focused">
+        Are you sure the domain is example?
+    </label>
+    <input class="cui__input--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input--icon is-disabled">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input--icon__label">
+        Are you sure the domain is example?
+    </label>
+    <input disabled class="cui__input--icon__input" value="email@exanple.com" />
+</div></div><div class="example"><div class="cui__input is-centered">
+    <label class="cui__input__label">
+        This is aligned to the center
+    </label>
+    <input class="cui__input__input" />
+</div></div><div class="example"><div class="cui__input is-centered is-filled">
+    <label class="cui__input__label">
+        This centered field is filled
+    </label>
+    <input class="cui__input__input" value="email@example.com" />
+</div></div><div class="example"><div class="cui__input is-centered is-error">
+    <label class="cui__input__label">
+      Something went wrong!
+    </label>
+    <input class="cui__input__input" value="invalid input" />
+</div></div><div class="example"><div class="cui__input--icon is-centered is-filled is-focused">
+    <svg class="cui__input--icon__icon" viewBox="0 0 20 20" focusable="false">
+        <g class="cui__input--icon__icon__fill" transform="translate(2, 4)">
+            <path d="M13,11 L3,11 C1.897,11 1,10.103 1,9 L1,4 L15,4 L15,9 C15,10.103 14.103,11 13,11 M3,1 L13,1 C14.103,1 15,1.897 15,3 L1,3 C1,1.897 1.897,1 3,1 M13,0 L3,0 C1.35,0 0,1.35 0,3 L0,9 C0,10.65 1.35,12 3,12 L13,12 C14.65,12 16,10.65 16,9 L16,3 C16,1.35 14.65,0 13,0"></path>
+            <path d="M8.5,8 L3.5,8 C3.224,8 3,8.224 3,8.5 C3,8.776 3.224,9 3.5,9 L8.5,9 C8.776,9 9,8.776 9,8.5 C9,8.224 8.776,8 8.5,8"></path>
+        </g>
+    </svg>
+
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div><div class="example"><div class="cui__input big is-centered is-filled is-focused">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div><div class="example"><div class="cui__input is-loading is-centered is-filled is-focused">
+    <label class="cui__input__label">
+      ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div><div class="example"><div class="cui__input is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div><div class="example"><div class="cui__input big is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div><div class="example"><div class="cui__input big is-centered is-loading">
+    <label class="cui__input__label">
+        ZIP Code
+    </label>
+    <input class="cui__input__input" value="94027" />
+</div></div></section><section id="Label"><div class="example"><p class="cui__paragraph--primary">
+  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  <span class="cui__label">More information</span>
+</p>
+
+<p class="cui__paragraph--primary">
+  <span class="cui__label information">Information</span>
+  <span class="cui__label warning">Warning</span>
+  <span class="cui__label notice">Notice</span>
+  <span class="cui__label success">Success</span>
+  <span class="cui__label brown">Brown</span>
+  <span class="cui__label purple">Purple</span>
+  <span class="cui__label light-blue">Light Blue</span>
+  <span class="cui__label ultramarine">Ultramarine</span>
+  <span class="cui__label yellow">Yellow</span>
+  <span class="cui__label grey">Grey</span>
+  <span class="cui__label black">Black</span>
+</p>
+
+<p class="cui__paragraph--primary">
+  <span class="cui__label outline information">Information</span>
+  <span class="cui__label outline warning">Warning</span>
+  <span class="cui__label outline notice">Notice</span>
+  <span class="cui__label outline success">Success</span>
+  <span class="cui__label outline brown">Brown</span>
+  <span class="cui__label outline purple">Purple</span>
+  <span class="cui__label outline light-blue">Light Blue</span>
+  <span class="cui__label outline ultramarine">Ultramarine</span>
+  <span class="cui__label outline yellow">Yellow</span>
+  <span class="cui__label outline grey">Grey</span>
+  <span class="cui__label outline black">Black</span>
+</p>
+
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    <span class="cui__label inverted">Information</span>
+    <span class="cui__label outline inverted">Information</span>
+  </p>
+</div></div></section><section id="Loader"><hr>
+<div class="example"><div class="cui__loader"></div>
+<div class="cui__loader blue"></div>
+<div class="cui__loader white"></div></div><div class="example"><div class="cui__loader big"></div>
+<div class="cui__loader big blue"></div>
+<div class="cui__loader big white"></div></div><div class="example"><div class="cui__loader small"></div>
+<div class="cui__loader small blue"></div>
+<div class="cui__loader small white"></div></div><div class="example"><div class="cui__loader tiny"></div>
+<div class="cui__loader tiny blue"></div>
+<div class="cui__loader tiny white"></div></div></section><section id="Navigation"><div class="example"><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left third" for="test1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test2" />
+   <label class="cui__segmentedcontrol__button center third" for="test2">Two</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="test" id="test3" />
+   <label class="cui__segmentedcontrol__button right third" for="test3">Three</label>
+</div></div><div class="example"><div class="cui__segmentedcontrol">
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid1" checked="checked" />
+   <label class="cui__segmentedcontrol__button left" for="fluid1">One</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid2" />
+   <label class="cui__segmentedcontrol__button center" for="fluid2">A very very long title</label>
+
+   <input class="cui__segmentedcontrol__input" type="radio" name="fluid" id="fluid3" />
+   <label class="cui__segmentedcontrol__button right" for="fluid3">Three</label>
+</div></div><div class="example"><div class="cui__tab-menu is-selectable">
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu1" checked="checked" />
+   <label class="cui__tab-menu__button third" for="tab-menu1">One</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu2" />
+   <label class="cui__tab-menu__button third" for="tab-menu2">Two</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu3" />
+   <label class="cui__tab-menu__button third" for="tab-menu3">Three</label>
+</div></div><div class="example"><div class="cui__tab-menu fluid is-selectable">
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid1" checked="checked" />
+   <label class="cui__tab-menu__button" for="tab-menu-fluid1">One</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid2" />
+   <label class="cui__tab-menu__button" for="tab-menu-fluid2">A very very long title</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu-fluid" id="tab-menu-fluid3" />
+   <label class="cui__tab-menu__button" for="tab-menu-fluid3">Three</label>
+</div></div><div class="example"><div style="background: #0074c8; padding: 20px;">
+    <div class="cui__tab-menu white is-selectable">
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted1" checked="checked" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted1">One</label>
+
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted2" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted2">Two</label>
+
+       <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted" id="tab-menu-inverted3" />
+       <label class="cui__tab-menu__button third" for="tab-menu-inverted3">Three</label>
+    </div>
+</div></div><div class="example"><div class="cui__tab-menu">
+   <div class="cui__tab-menu__selected"></div>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu1" checked="checked" />
+   <label class="cui__tab-menu__button third" for="tab-menu1">One</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu2" />
+   <label class="cui__tab-menu__button third" for="tab-menu2">Two</label>
+
+   <input class="cui__tab-menu__input" type="radio" name="tab-menu" id="tab-menu3" />
+   <label class="cui__tab-menu__button third" for="tab-menu3">Three</label>
+</div></div><div class="example"><div style="background: #0074c8; padding: 20px;">
+
+  <div class="cui__tab-menu white">
+     <div class="cui__tab-menu__selected"></div>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable1" checked="checked" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable1">One</label>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable2" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable2">Two</label>
+
+     <input class="cui__tab-menu__input" type="radio" name="tab-menu-inverted-non-selectable" id="tab-menu-inverted-non-selectable3" />
+     <label class="cui__tab-menu__button third" for="tab-menu-inverted-non-selectable3">Three</label>
+  </div>
+</div></div><div class="example"><ol class="cui__context-menu">
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        1 - Link
+      </a>
+   </li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        2 - Link
+      </a>
+   </li>
+   <li class="cui__context-menu__item">
+      <form>
+        3 - Form
+      </form>
+   </li>   
+   <li class="cui__context-menu__separator"></li>
+   <li>
+      <a href="#" class="cui__context-menu__item">
+        <div class="cui__context-menu__icon" style="outline: 1px dashed #ccc">
+        </div>
+        4 - Link
+      </a>
+   </li>
+</ol></div></section><section id="Preview"><div class="example"><h3 class="cui__subtitle condensed">
+  Billing Address
+</h3>
+
+<div class="cui__preview">
+  <h2 class="cui__preview__title">John Smith</h2>
+  <p class="cui__preview__content">
+    1425 North Avenue Street<br />
+    San Francisco<br />
+    94100 California<br />
+    United States
+  </p>
+</div></div><div class="example"><h3 class="cui__subtitle condensed">
+  Billing Address
+</h3>
+
+<div class="cui__preview has-link">
+  <h2 class="cui__preview__title">John Smith</h2>
+  <p class="cui__preview__content">
+    1425 North Avenue Street<br />
+    San Francisco<br />
+    94100 California<br />
+    United States
+  </p>
+  <div class="cui__preview__footer">
+    <a class="cui__preview__footer__link">Change address</a>
+  </div>
+</div></div><div class="example"><h3 class="cui__subtitle condensed">
+  Billing Address
+</h3>
+
+<div class="cui__preview has-link dynamic-styling">
+  <div class="cui__preview__border"></div>
+  <div class="cui__preview__border--selected" style="border-color: #3500C8;"></div>
+
+  <h2 class="cui__preview__title">John Smith</h2>
+  <p class="cui__preview__content">
+    1425 North Avenue Street<br />
+    San Francisco<br />
+    94100 California<br />
+    United States
+  </p>
+  <div class="cui__preview__footer">
+    <a class="cui__preview__footer__link dynamic-styling" style="color: #3500C8;">Change address</a>
+  </div>
+</div></div></section><section id="Selector"><hr>
+<div class="example"><div class="cui__selector--direct">
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 1
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 2
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 3
+    </div>
+
+    <div class="cui__selector--direct__value">
+      Current value
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+</div></div><div class="example"><div class="cui__selector--direct">
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Invoice
+    </div>
+
+    <p class="cui__selector--direct__description">
+      Klarna will send you an email with payment instructions.
+    </p>
+
+    <p class="cui__selector--direct__description">
+      <span class="cui__promo-label">One tap and you're done</span>
+    </p>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Credit or debit card
+    </div>
+
+    <p class="cui__selector--direct__description">
+      You'll have to enter your card details
+    </p>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+</div></div><div class="example"><div class="cui__selector--direct title">
+  <h2 class="cui__selector--direct__title">
+    Description
+  </h2>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 1
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 2
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+
+  <div class="cui__selector--direct__item">
+    <div class="cui__selector--direct__label">
+      Item 3
+    </div>
+
+    <div class="cui__selector--direct__value">
+      Current value
+    </div>
+
+    <svg
+      class="cui__selector--direct__icon"
+      viewBox="0 0 20 20"
+      stroke="#3c3c3e"
+      fill="none"
+      fill-rule="evenodd"
+      stroke-linecap="round"
+      stroke-width="1">
+      <path d="M8,6 l4,4 l-4,4"/>
+    </svg>
+  </div>
+</div></div><div class="example"><div class="cui__selector--installments">
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments1" />
+   <label class="cui__selector--installments__label third" for="installments1">
+     <span class="cui__selector--installments__label__value">$64.17/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">6 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
+   </label>
+
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments2" />
+   <label class="cui__selector--installments__label third" for="installments2">
+     <span class="cui__selector--installments__label__value">$32.09/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">12 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
+   </label>
+
+   <input class="cui__selector--installments__input" type="radio" name="installments" id="installments3" />
+   <label class="cui__selector--installments__label third" for="installments3">
+     <span class="cui__selector--installments__label__value">$16.05/mo.</span>
+     <span class="cui__selector--installments__label__connector">for</span>
+     <span class="cui__selector--installments__label__info">24 months</span>
+     <span class="cui__selector--installments__label__highlight"></span>
+   </label>
+</div></div></section><section id="Switch"><hr>
+<div class="example"><div class="cui__switch">
+  This is a toggle switch
+</div></div><div class="example"><div class="cui__switch right">
+  This is a toggle switch on the right side
+</div></div><div class="example"><div class="cui__switch is-checked">
+  This is a toggle switch checked
+</div></div><div class="example"><div class="cui__switch is-error">
+  This is a toggle switch in an error state
+</div></div><div class="example"><div class="cui__switch is-pressed">
+  This is a toggle switch checked
+</div></div><div class="example"><div class="cui__switch is-pressed is-checked">
+  This is a toggle switch checked
+</div></div><div class="example"><div class="cui__switch checkbox">
+  This is a toggle switch with checkbox styles on desktop
+</div></div><div class="example"><div class="cui__switch checkbox legal">
+  This is checkbox that signals approving legally required text that is too long to be rendered with a regular size and needs to be slightly smaller to fit.
+</div></div><div class="example"><div class="cui__switch checkbox is-disabled">
+  This is a disabled toggle switch with checkbox styles on desktop
+</div></div><div class="example"><div class="cui__switch is-disabled">
+  This is a toggle switch disabled
+</div></div><div class="example"><div class="cui__switch dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark"
+    style="background-color: #F9FF3C;"></div>
+  This is a toggle switch with custom styles
+</div>
+
+<div class="cui__switch is-checked dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark"
+    style="background-color: #F9FF3C;"></div>
+  This is a toggle switch with custom styles
+</div>
+
+<div class="cui__switch checkbox dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark">
+    <svg
+      width="14px"
+      height="14px"
+      viewBox="0 0 14 14"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0, -1508)">
+              <g transform="translate(0, 1457)">
+                <g transform="translate(0, 33)">
+                  <g transform="translate(0, 14)">
+                    <g transform="translate(0, 4)"><g>
+                      <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                      <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                      stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+  </div>
+  This is a checkbox switch with custom styles
+</div>
+
+<div class="cui__switch checkbox is-checked dynamic-styling">
+  <div
+    class="cui__switch__bullet"
+    style="background-color: #3500C8; border-color: #3500C8;"></div>
+  <div
+    class="cui__switch__bullet__checkmark">
+    <svg
+      width="14px"
+      height="14px"
+      viewBox="0 0 14 14"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+            <g transform="translate(0, -1508)">
+              <g transform="translate(0, 1457)">
+                <g transform="translate(0, 33)">
+                  <g transform="translate(0, 14)">
+                    <g transform="translate(0, 4)"><g>
+                      <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                      <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                      stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+  </div>
+  This is a checkbox switch with custom styles
+</div></div><div class="example"><div class="cui__switch--multiple">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple checkbox">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple borderless">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple borderless checkbox">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple checkbox is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple checkbox borderless is-disabled">
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div class="cui__promo-label">promo</div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option is-checked">
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option">
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div><div class="example"><div class="cui__switch--multiple">
+  <div class="cui__switch--multiple__option is-checked dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div
+        class="cui__promo-label"
+        style="background-color: #3500C8; color: #F9FF3C;">
+        promo
+      </div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark"
+      style="background-color: #F9FF3C;"></div>
+
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div>
+
+<div class="cui__switch--multiple checkbox">
+  <div class="cui__switch--multiple__option is-checked dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark">
+      <svg
+        width="14px"
+        height="14px"
+        viewBox="0 0 14 14"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0, -1508)">
+                <g transform="translate(0, 1457)">
+                  <g transform="translate(0, 33)">
+                    <g transform="translate(0, 14)">
+                      <g transform="translate(0, 4)"><g>
+                        <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                        <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                        stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </div>
+
+    <div class="cui__switch--multiple__option__heading">
+      This is a multiple choice
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      This is a description Sed tristique ex lectus, bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+      <div
+        class="cui__promo-label"
+        style="background-color: #3500C8; color: #F9FF3C;">
+        promo
+      </div>
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark">
+      <svg
+        width="14px"
+        height="14px"
+        viewBox="0 0 14 14"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0, -1508)">
+                <g transform="translate(0, 1457)">
+                  <g transform="translate(0, 33)">
+                    <g transform="translate(0, 14)">
+                      <g transform="translate(0, 4)"><g>
+                        <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                        <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                        stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </div>
+
+    <div class="cui__switch--multiple__option__heading">
+      Second item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Bibendum aliquet orci facilisis nec. Lorem ipsum sit amet mercuri.
+    </div>
+  </div>
+
+  <div class="cui__switch--multiple__option dynamic-styling">
+    <div
+      class="cui__switch__bullet"
+      style="background-color: #3500C8; border-color: #3500C8;"></div>
+    <div
+      class="cui__switch__bullet__checkmark">
+      <svg
+        width="14px"
+        height="14px"
+        viewBox="0 0 14 14"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0, -1508)">
+                <g transform="translate(0, 1457)">
+                  <g transform="translate(0, 33)">
+                    <g transform="translate(0, 14)">
+                      <g transform="translate(0, 4)"><g>
+                        <rect x="0" y="0" width="14" height="14" rx="2"></rect>
+                        <path d="M3.8,6.67583361 L6.40484483,9.5982824 L10.7279517,4.2"
+                        stroke="#F9FF3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </div>
+
+    <div class="cui__switch--multiple__option__heading">
+      Third item
+    </div>
+
+    <div class="cui__switch--multiple__option__description">
+      Facilisis nec. Lorem ipsum sit amet mercuri. Tristique ex lectus, bibendum aliquet orci facilisis nec.
+    </div>
+  </div>
+</div></div></section><section id="Text"><div class="example"><h1 class="cui__title--primary">
+  Primary title
+</h1>
+
+<h1 class="cui__title--primary blue">
+  Primary title in blue
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary white">
+    Primary title in white
+  </h1>
+</div></div><div class="example"><h1 class="cui__title--primary small">
+  Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long
+</h1>
+
+<h1 class="cui__title--primary small blue">
+  Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small  white">
+    Small primary title to fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div><div class="example"><h1 class="cui__title--primary small strong">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long
+</h1>
+
+<h1 class="cui__title--primary small strong blue">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in blue
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary small strong white">
+  Small but visually prominent primary title that could also fit in several lines so that there it doesn't look as visually cluttered if the title is too long in white
+  </h1>
+</div></div><div class="example"><h1 class="cui__title--primary default-margins">
+  Primary title
+</h1>
+
+<h1 class="cui__title--primary default-margins blue">
+  Primary title in blue
+</h1>
+
+<div class="cui__block blue">
+  <h1 class="cui__title--primary default-margins white">
+    Primary title in white
+  </h1>
+</div></div><div class="example"><h2 class="cui__title--secondary">
+  Secondary title
+</h2>
+
+<h2 class="cui__title--secondary blue">
+  Secondary title in blue
+</h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary white">
+    Secondary title in white
+  </h2>
+</div></div><div class="example"><h2 class="cui__title--secondary condensed">
+  Secondary condensed set
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p></div><div class="example"><h2 class="cui__title--secondary default-margins">
+  Secondary title
+</h2>
+
+<h2 class="cui__title--secondary default-margins blue">
+  Secondary title in blue
+</h2>
+
+<div class="cui__block blue">
+  <h2 class="cui__title--secondary default-margins white">
+    Secondary title in white
+  </h2>
+</div></div><div class="example"><h3 class="cui__subtitle">
+  Subtitle
+</h3>
+
+<h3 class="cui__subtitle blue">
+  Subtitle in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white">
+    Subtitle in white
+  </h3>
+</div></div><div class="example"><h3 class="cui__subtitle condensed">
+  Subtitle condensed
+</h3>
+
+<h3 class="cui__subtitle blue condensed">
+  Subtitle condensed in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white condensed">
+    Subtitle condensed in white
+  </h3>
+</div></div><div class="example"><h3 class="cui__subtitle default-margins">
+  Subtitle default margins
+</h3>
+
+<h3 class="cui__subtitle blue default-margins">
+  Subtitle default margins in blue
+</h3>
+
+<div class="cui__block blue">
+  <h3 class="cui__subtitle white default-margins">
+    Subtitle default margins in white
+  </h3>
+</div></div><div class="example"><p class="cui__paragraph--primary">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--primary">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p class="cui__paragraph--primary blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div><div class="example"><p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--primary condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p class="cui__paragraph--primary blue condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary white condensed">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div><div class="example"><p class="cui__paragraph--primary default-margins">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--primary default-margins">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p class="cui__paragraph--primary default-margins blue">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<div class="cui__block blue">
+  <p class="cui__paragraph--primary default-margins white">
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div></div><div class="example"><p class="cui__paragraph--secondary">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--secondary">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p></div><div class="example"><p class="cui__paragraph--secondary condensed">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--secondary condensed">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p></div><div class="example"><p class="cui__paragraph--secondary default-margins">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="cui__paragraph--secondary default-margins">
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p></div><div class="example"><p class="cui__paragraph--legal">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p></div><div class="example"><p class="cui__paragraph--legal default-margins">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p></div><div class="example"><p class="cui__paragraph--primary condensed">
+  Lorem Ipsum is simply dummy text typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  <span class="cui__promo-label">Promo</span>
+</p></div><div class="example"><p class="cui__paragraph--primary condensed">
+  <a class="cui__link">
+    Click here to go somewhere else
+  </a>
+  <br />
+  <a class="cui__link black">
+    Click here to go somewhere else
+  </a>  
+  <div class="cui__block blue">  
+    <a class="cui__link white">
+      Click here to go somewhere else
+    </a>  
+  </div>  
+</a></div><div class="example"><a
+  class="cui__link dynamic-styling"
+  style="color: #3500C8">
+  Click here to go somewhere else
+</a></div><div class="example"><h4 class="cui__text-label">
+  Klarna ID
+</h4>
+
+<p class="cui__paragraph--primary condensed">
+  123456-454-8953-34984-39834
+</p>
+
+<h4 class="cui__text-label">
+  Original amount
+</h4>
+
+<h2 class="cui__title--secondary">
+  1.600 kr
+</h2>
+
+<h4 class="cui__text-label">
+  Billing address
+</h4>
+
+<h2 class="cui__title--secondary condensed">
+  Jonathan Konstantin Smithsson
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  15 Northeast Longname Industrial Parkway<br />
+  San Francisco<br />
+  94100 California<br />
+  United States
+</p></div><div class="example"><h4 class="cui__text-label default-margins">
+  Klarna ID
+</h4>
+
+<p class="cui__paragraph--primary condensed">
+  123456-454-8953-34984-39834
+</p>
+
+<h4 class="cui__text-label default-margins">
+  Original amount
+</h4>
+
+<h2 class="cui__title--secondary default-margins">
+  1.600 kr
+</h2>
+
+<h4 class="cui__text-label default-margins">
+  Billing address
+</h4>
+
+<h2 class="cui__title--secondary condensed">
+  Jonathan Konstantin Smithsson
+</h2>
+
+<p class="cui__paragraph--primary condensed">
+  15 Northeast Longname Industrial Parkway<br />
+  San Francisco<br />
+  94100 California<br />
+  United States
+</p></div><div class="example"><p class="cui__amount-text">
+  €1500
+</p>
+
+<div class="cui__block blue">
+  <p class="cui__amount-text white">
+    $1800
+  </p>
+</div></div></section><section id="Tooltip"><hr>
+<div class="example"><div class="cui__tooltip">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div><div class="example"><div class="cui__tooltip">
+  Lorem Ipsum
+</div></div><div class="example"><div class="cui__tooltip top-left">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip top">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip top-right">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+
+<hr />
+<div class="cui__tooltip right-top">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip right">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip right-bottom">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />
+<div class="cui__tooltip bottom-right">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip bottom">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip bottom-left">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />    
+<div class="cui__tooltip left-bottom">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip left">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip left-top">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div><div class="example"><div class="cui__tooltip top">
+  Lorem Ipsum
+</div></div><div class="example"><div class="cui__tooltip border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div><div class="example"><div class="cui__tooltip border">
+  Lorem Ipsum
+</div></div><div class="example"><div class="cui__tooltip top-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip top-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+
+<hr />
+<div class="cui__tooltip right-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip right-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />
+<div class="cui__tooltip bottom-right border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />    
+<div class="cui__tooltip bottom-left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+
+<hr />    
+<div class="cui__tooltip left-bottom border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>    
+<hr />
+<div class="cui__tooltip left border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div>
+<hr />
+<div class="cui__tooltip left-top border">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+</div></div><div class="example"><div class="cui__tooltip top border">
+  Lorem Ipsum
+</div></div></section></body>
